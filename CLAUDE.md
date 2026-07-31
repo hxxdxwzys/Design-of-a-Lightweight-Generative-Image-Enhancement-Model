@@ -95,7 +95,8 @@ workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图�
 - ✅ 配置并初始化云 GPU 服务器（V100 32GB, 驱动570, torch2.13+cu126, /data 500G）
 - ✅ 获取 OSEDiff 仓库(含osediff.pkl/DAPE.pth) + SD2.1 VAE + DIV2K(548张已提取)
 - ✅ 设计轻量一步潜扩散架构（SD2.1 VAE冻结 + 56M UNet + 显式x0 t=500，无RAM/CLIP）
-- ✅ 训练/蒸馏/出图/打包（**v3=DF2K+PatchGAN 最优**: clipiqa0.344/musiq31.5/lpips0.387/niqe6.56, psnr24.88; v2(clipiqa0.291)/v1(0.296)保底; submit_v3.zip 就绪 526MB, 已验JIT+runner端到端OK）
+- ✅ 训练/蒸馏/出图/打包（v3=DF2K+PatchGAN: clipiqa0.344/musiq31.5, 20.27分; v2/v1保底; submit_v3.zip 就绪）
+- ⏳ **v4 训练中**（上海V100 32GB, LoRA微调SD2.1 UNet 5.93M+conv_in, 去RAM固定prompt, PatchGAN, DF2K 3450张, 10k iter ~4h, GAN稳定d~1.99）— 解决v3从零小模型无SD先验的质量瓶颈
 - ⬜ 复现 OSEDiff 基线 + 测 512 时延（加速比分母，延后；教师权重SD21+RAM已下好备用）
 - ⬜ 复现 OSEDiff 基线 + 测 512 时延（加速比分母，延后；需完整SD21+RAM+旧deps）
 - ⬜ 4K 分块推理出图（100 张）

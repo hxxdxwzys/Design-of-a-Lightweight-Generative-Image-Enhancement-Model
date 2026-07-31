@@ -34,6 +34,14 @@ C:\生成式图像增强轻量模型设计挑战\           ← cwd / 项目根 
         └── results\*.json   ← 评测结果
 ```
 
+## GitHub 仓库
+- 远程: https://github.com/hxxdxwzys/Design-of-a-Lightweight-Generative-Image-Enhancement-Model （建议 Private）
+- 本地 git 根 = 项目根 (C:\生成式图像增强轻量模型设计挑战)，分支 main。
+- PAT 在 `~/.claude/settings.json` 的 `GITHUB_PERSONAL_ACCESS_TOKEN`，已写入 `.git/config` 的 remote URL（push 免密）。
+- `.gitignore` 排除：`赛题二/` 数据、`workspace/submit_v3.zip`(526MB)、`preview/`、`.secrets`(服务器密码/HF token)。
+- 提交工作流：改代码 → `git add -A && git commit -m "..."` → `git push`。
+- 服务器密码/IP 已从 CLAUDE.md 移至本地 `.secrets`（不入库）。
+
 ## 常用命令
 ```bash
 # 本地评测（必须原生 4K，勿加 --max-side）

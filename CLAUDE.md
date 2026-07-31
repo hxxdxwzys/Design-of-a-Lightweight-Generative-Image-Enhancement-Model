@@ -78,12 +78,12 @@ python eval.py --pred-dir ../赛题二/验证集 --pred-pattern '*_lq.*' \
 - 4K 出图：512 分块带重叠拼接（3072×4096 = 6×8 块）。
 - 训练在云 GPU；合成真实退化(JPEG+噪声+模糊+下采样)于 HQ 数据集，或从 OSEDiff 蒸馏。
 
-## 云 GPU 服务器（训练/出图/测速在此）
-- **腾讯云 CVM**，实例 `GN10Xp.2XLARGE40`（Tesla **V100 32GB**，10核40G），香港二区，按量计费。
-- **公网 IP / 密码：见本地 `.secrets`（未入库，已 gitignore）**　SSH 端口 22。
-- 镜像为 TencentOS Server 4 **纯系统（无 CUDA）** → 需先装 NVIDIA 驱动 + CUDA 12.x + PyTorch(cu121)。
-- 数据盘 500G 挂载点待确认（通常 `/data`）。香港区访问 HuggingFace/GitHub 顺畅。
-- ⚠️ **本文件含服务器密码，严禁打入提交 zip 或外传**；用完/换机后改密。
+## 云 GPU 服务器（v4 用，上海）
+- **腾讯云 CVM**，实例 `GN10X.2XLARGE40`（Tesla **V100 32GB**，8核40G），上海五区，按量计费。
+- **公网 IP / 密码 / SSH 端口：见本地 `.secrets`**（端口 **2222**，非 22——22 入站被拦）。
+- 镜像 Ubuntu 22.04 + 驱动 580 + CUDA 13 + cuDNN 预装。Python 3.10.12。
+- 数据盘 500G 挂载 `/data`。上海区用 `hf-mirror.com` 镜像下 HF 资源（设 `HF_ENDPOINT=https://hf-mirror.com`）。
+- ⚠️ 密码在 `.secrets`（不入库）；用完关机或销毁。
 
 ## 本地环境
 Windows 11，Python 3.13，torch 2.13.0+cpu（CPU-only）。本地只跑评测(3对)与写代码；训练/出图上云。

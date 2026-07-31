@@ -11,7 +11,7 @@ python3 -m venv /data/env
 /data/env/bin/python -c "import torch; print('TORCH', torch.__version__, 'CUDA', torch.cuda.is_available(), torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NO_GPU')"
 
 # 3) 项目依赖 (clipiqa 需 setuptools<81)
-/data/env/bin/pip install pyiqa lpips opencv-python-headless tqdm einops pyyaml scikit-image matplotlib accelerate diffusers transformers timm safetensors huggingface_hub "setuptools<81"
+/data/env/bin/pip install pyiqa lpips opencv-python-headless tqdm einops pyyaml scikit-image matplotlib accelerate diffusers transformers timm safetensors huggingface_hub peft "setuptools<81"
 
 # 4) 验证导入
 /data/env/bin/python -c "import torch,torchvision,pyiqa,lpips,cv2,transformers,diffusers,timm,accelerate,einops; print('ALL_IMPORTS_OK')"

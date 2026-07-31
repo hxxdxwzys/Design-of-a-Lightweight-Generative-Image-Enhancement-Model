@@ -1,0 +1,21 @@
+# 大文件 / 数据 / 二进制（不入库：超 GitHub 100MB 限制或属赛题提供数据）
+生成式图像增强轻量模型设计挑战/赛题二/
+生成式图像增强轻量模型设计挑战/workspace/submit_v3.zip
+生成式图像增强轻量模型设计挑战/workspace/preview/
+生成式图像增强轻量模型设计挑战/workspace/val_lq_local/
+__MACOSX/
+
+# 截图 / 临时
+8.1 分数截图.png
+*.log
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+env/
+
+# 敏感（本地保留，不入库）
+.secrets

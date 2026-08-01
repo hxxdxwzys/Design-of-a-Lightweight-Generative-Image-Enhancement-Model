@@ -14,8 +14,7 @@ def main():
     ck = torch.load(ckpt, map_location='cpu')
     model = LightLatentDiffV4(sd, lora_rank=ck.get('lora_rank', 16))
     model.unet.load_state_dict(ck['lora_state'], strict=False)
-    model.unet = model.unet.merge_and_unload()  # 合并 LoRA
-    # 推理只用 vae+unet+prompt_embeds(buffer), 移除 text_encoder/scheduler 减体积
+    # 不合并 LoRA(diffusers UNet 无 merge_and_unload); 保留 LoRA. 推理只用 vae+unet+prompt_embeds
     model._modules.pop('text_encoder', None)
     model._modules.pop('scheduler', None)
     model = model.to(device).eval().half()  # fp16

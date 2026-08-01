@@ -16,7 +16,7 @@ def load_v4_model(sd_path, ckpt_path, device='cuda'):
     ck = torch.load(ckpt_path, map_location='cpu')
     model = LightLatentDiffV4(sd_path, lora_rank=ck.get('lora_rank', 16))
     model.unet.load_state_dict(ck['lora_state'], strict=False)
-    model.unet = model.unet.merge_and_unload()  # 合并 LoRA, 推理无额外开销
+    # 不合并 LoRA(diffusers UNet 无 merge_and_unload); 保留 LoRA 推理, 开销极小
     return model.to(device).eval()
 
 

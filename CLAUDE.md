@@ -96,7 +96,7 @@ workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图�
 - ✅ 获取 OSEDiff 仓库(含osediff.pkl/DAPE.pth) + SD2.1 VAE + DIV2K(548张已提取)
 - ✅ 设计轻量一步潜扩散架构（SD2.1 VAE冻结 + 56M UNet + 显式x0 t=500，无RAM/CLIP）
 - ✅ 训练/蒸馏/出图/打包（v3=DF2K+PatchGAN: clipiqa0.344/musiq31.5, 20.27分; v2/v1保底; submit_v3.zip 就绪）
-- ⏳ **v4 训练中**（上海V100 32GB, LoRA微调SD2.1 UNet 5.93M+conv_in, 去RAM固定prompt, PatchGAN, DF2K 3450张, 10k iter ~4h, GAN稳定d~1.99）— 解决v3从零小模型无SD先验的质量瓶颈
+- ✅ v4 结果（上海V100, LoRA微调SD UNet 5.93M+PatchGAN, DF2K 3450张, 10k iter）: **clipiqa 0.311 < v3 0.344** —— 直接微调SD UNet不利用SD先验(去噪先验与增强冲突), 需VSD/蒸馏才有效。v3仍最佳(20.27分)。上海服务器已关机(/data全保留)。
 - ⬜ 复现 OSEDiff 基线 + 测 512 时延（加速比分母，延后；教师权重SD21+RAM已下好备用）
 - ⬜ 复现 OSEDiff 基线 + 测 512 时延（加速比分母，延后；需完整SD21+RAM+旧deps）
 - ⬜ 4K 分块推理出图（100 张）

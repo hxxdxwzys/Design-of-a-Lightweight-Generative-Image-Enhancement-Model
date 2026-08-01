@@ -79,7 +79,7 @@ python eval.py --pred-dir ../赛题二/验证集 --pred-pattern '*_lq.*' \
 - 4K 出图：512 分块带重叠拼接（3072×4096 = 6×8 块）。
 - 训练在云 GPU；合成真实退化(JPEG+噪声+模糊+下采样)于 HQ 数据集，或从 OSEDiff 蒸馏。
 
-## 云 GPU 服务器（v4 用，上海）
+## 云 GPU 服务器（v4 用，南京）
 - **腾讯云 CVM**，实例 `GN10X.2XLARGE40`（Tesla **V100 32GB**，8核40G），上海五区，按量计费。
 - **公网 IP / 密码 / SSH 端口：见本地 `.secrets`**（端口 **2222**，非 22——22 入站被拦）。
 - 镜像 Ubuntu 22.04 + 驱动 580 + CUDA 13 + cuDNN 预装。Python 3.10.12。

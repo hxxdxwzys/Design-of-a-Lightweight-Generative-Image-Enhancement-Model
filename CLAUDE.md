@@ -79,15 +79,14 @@ python eval.py --pred-dir ../赛题二/验证集 --pred-pattern '*_lq.*' \
 - 4K 出图：512 分块带重叠拼接（3072×4096 = 6×8 块）。
 - 训练在云 GPU；合成真实退化(JPEG+噪声+模糊+下采样)于 HQ 数据集，或从 OSEDiff 蒸馏。
 
-## 云 GPU 服务器（v4 用，南京）
-- **腾讯云 CVM**，实例 `GN10X.2XLARGE40`（Tesla **V100 32GB**，8核40G），上海五区，按量计费。
-- **公网 IP / 密码 / SSH 端口：见本地 `.secrets`**（端口 **2222**，非 22——22 入站被拦）。
-- 镜像 Ubuntu 22.04 + 驱动 580 + CUDA 13 + cuDNN 预装。Python 3.10.12。
-- 数据盘 500G 挂载 `/data`。上海区用 `hf-mirror.com` 镜像下 HF 资源（设 `HF_ENDPOINT=https://hf-mirror.com`）。
-- ⚠️ 密码在 `.secrets`（不入库）；用完关机或销毁。
+## 云 GPU 服务器（v4 用，上海）【已弃用 2026-08-01】
+- **不再使用云端 GPU**（用户决定：算力受限反而逼算法创新，本地训练）。已关机，凭据仅存档。
+- 历史：腾讯云 CVM `GN10X.2XLARGE40`（V100 32GB，上海五区，按量计费，SSH 端口 2222）。曾存 sd21base/DF2K/RAM/osediff，关机不计费后公网 IP 会变。
+- 教训：官方 osediff.pkl/DAPE 在 Google Drive（国内不可达）；GitHub clone TLS 不稳；v3 ckpt 曾丢（可从提交 zip 的 your_model.pt 提取 UNet 恢复）。
 
 ## 本地环境
-Windows 11，Python 3.13，torch 2.13.0+cpu（CPU-only）。本地只跑评测(3对)与写代码；训练/出图上云。
+Windows 11，Python 3.13，**RTX 4060 8GB**（需装 CUDA 版 torch；当前 2.13.0+cpu 是旧 CPU 版待升级）。
+**训练策略（2026-08-01 起）**：全部本地 4060 训练，不再用云 GPU。8GB 显存 → 靠算法省显存（latent 预编码把 VAE 移出训练、小 batch+梯度累积、fp16、离线教师），不硬堆大模型。
 workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\`
 
 ## 进度（任务清单）
@@ -129,4 +128,7 @@ workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图�
 - HK 连接偶发 10054 重置，ssh_helper 已加连接重试(6次)。
 
 ## 下一步
-提交 v3：下载 submit_v3.zip → 重命名为 `赛题二_<作品名>_<队名>_<电话>.zip`（无中文符号）→ 上传赛事网站（每周1次）。上传后看官方分数反馈，再定是否迭代 v4（平衡psnr / OSEDiff蒸馏提质量）。
+- ✅ v3 已提交（官方 20.27 分）。本周上传额度空着。
+- ⏳ v3+（warm start 自 v3 + GAN强化）云端训练已终止（用户决定转本地）；代码 `train_v3_plus.py` 就绪，可在本地 4060 重跑。
+- ⏳ SD 教师感知蒸馏（`train_sd_distill.py`，SDS-lite）已写好，需本地 4060 适配（latent 预编码省显存）。
+- 本地准备：装 CUDA torch → 从 hf-mirror 下 sd21base + DF2K（本地可达已验证）→ latent 预编码 → 训练 v3+/SD蒸馏。

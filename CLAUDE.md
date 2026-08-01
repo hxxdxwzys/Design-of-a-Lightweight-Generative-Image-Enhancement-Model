@@ -3,6 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 > 本文件是项目的"自我提醒"——任务定义、约束、资源、服务器访问、基线、技术路线与进度。新会话先读这里。
+> **完整全程记录见 `HANDOFF.md`（事无巨细：任务/过程/教训/未来方向/密钥位置），务必一并阅读。**
 
 ## 项目是什么
 **赛道二：生成式图像增强轻量模型设计挑战**。设计**轻量化 Diffusion 模型**对低质量图做清晰度增强，评分 = 感知质量 + 推理时延加速比。

@@ -11,15 +11,19 @@ import os
 import re
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_here = os.path.dirname(os.path.abspath(__file__))
+ROOT = _here
+while ROOT and not os.path.exists(os.path.join(ROOT, '.secrets')):
+    ROOT = os.path.dirname(ROOT)
 
 
 def load_secrets():
     sec = {}
     with open(os.path.join(ROOT, '.secrets'), encoding='utf-8') as f:
         for line in f:
-            m = re.match(r'\s*(\w+)\s*=\s*(\S.*?)\s*$', line)
-            if m and not line.strip().startswith('#'):
+            line = line.split('#', 1)[0]  # 去掉行尾注释
+            m = re.match(r'\s*(\w+)\s*=\s*(.*?)\s*$', line)
+            if m:
                 sec[m.group(1)] = m.group(2).strip()
     return sec
 

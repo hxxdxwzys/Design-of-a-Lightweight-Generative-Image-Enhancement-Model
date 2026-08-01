@@ -65,7 +65,9 @@ def load_model(sd_path, ckpt_path, device='cuda'):
     ck = torch.load(ckpt_path, map_location='cpu')
     unet_ch = ck.get('unet_ch', (64, 128, 256, 512))
     model = LightLatentDiff(sd_path, unet_ch=unet_ch)
-    model.unet.load_state_dict(ck['unet'])
+    # 优先 EMA 权重 (v3+ 训练产物); 旧 ckpt 无 ema_unet 则回退 unet
+    sd = ck.get('ema_unet', ck['unet'])
+    model.unet.load_state_dict(sd)
     model = model.to(device).eval()
     return model
 

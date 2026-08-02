@@ -21,3 +21,11 @@ env/
 .secrets
 neural-enhance-master/
 submit_v3/
+
+# 第三方仓库 (用户放置, 不入库)
+DreamLite-main/
+
+# 提交件 (大文件)
+赛题二_OSEDiff校准_4060队_13000000000/
+赛题二_OSEDiff校准_4060队_13000000000.zip
+submit_osediff/

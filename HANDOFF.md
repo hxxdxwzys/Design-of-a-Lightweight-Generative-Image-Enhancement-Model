@@ -158,6 +158,8 @@ model_dir/runner.py                    ← 保留 Runner(model_dir) + infer(imag
 14. **SD2.1 通用教师蒸馏失败**（train_sd_distill.py 8000 步 0.281 < 0.343）：SDS-lite 拉向通用文生图先验与增强任务冲突（v4 教训重演）。**增强教师必须用 OSEDiff 这类增强专用模型。**
 15. **OSEDiff 兼容坑**（2026-08-02）：osediff.pkl 是 LoRA 权重（非完整权重）。diffusers 0.39 的 `add_adapter` 只给 target_modules 建 LoRA → vae decoder LoRA 缺失 → 输出压平（std 12 vs 官方 benchmark 50）。**必须用官方环境（Python 3.11 + diffusers 0.25 + transformers 4.28 + peft 0.9）复现**。torch 2.7 兼容 diffusers 0.25（>=1.4 无上限）。官方 benchmark 输出在仓库 preset/datasets/benchmark_realsr/results_osediff/（本地可查，std=50 为正常参考）。**环境已搭好（D:/venv_osediff311）且跑通。**
 15b. **OSEDiff 1x 同分辨率证伪**（2026-08-02 决定性验证）：官方环境 4K 1x 评测 clipiqa 0.279/musiq 29.9/psnr 11.1 < v3。根因：**OSEDiff 是 4x 超分模型**，1x 输入不在训练分布内 → 输出内容漂移（LQ-GT diff 11.3 vs OSEDiff-GT diff 53.9，亮度偏 22）。直接出图和作教师蒸馏都不可靠。**勿重走此路**。v3（0.343）仍是"内容保持+感知提升"最佳平衡。
+15c. **官方评分校准完成**（2026-08-02）：方案A（OSEDiff 1x 出图提交）官方 **10.13 分** vs v3 的 **20.27 分**，与本地 clipiqa 排序一致 → **本地 eval.py 8 指标可作官方分可靠代理**。已用 2 次提交，剩 8 次。
+15d. **v5 蒸馏（带 GT 锚定）证伪**（2026-08-02）：train_v5_gt.py 2000 步 clipiqa 0.283/musiq 29.9 < v3 0.343。GT 锚定保住 psnr 但教师"过度锐化"污染感知。**教师蒸馏（SD2.1/OSEDiff）在同分辨率轻退化任务上全部证伪**。
 16. **下载类事情自己下不好就列清单让用户手动下**（用户 2026-08-02 明确要求）：如 Python 安装包（python.org 可达）、大 wheel。清单模板见 workspace/download_checklist.md。**原则：自己下不了不要硬下（浪费时间+hash 校验失败），也不要回避跳过（会导致后续步骤卡死）——立刻事无巨细告知用户下载需求（文件名/大小/URL/放置路径/安装命令）。** 用户有代理且愿意手动下载。实例：torch cp311 wheel（download.pytorch.org 直连不稳，自动下载 hash 失败 → 用户手动下到 D:/models/）。
 17. **提交规则更正**：实际是**总共 10 次机会无每周限制**（用户确认）。出图(output_dir 100 张 4K jpg)与测速(model_dir your_model.pt+runner.py)独立评分——**出图可离线慢跑任意方法，测速用轻量模型**。
 

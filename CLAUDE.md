@@ -150,8 +150,7 @@ workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图�
 - 长任务用 nohup 后台 + 轮询日志(/data/*.log)。
 - HK 连接偶发 10054 重置，ssh_helper 已加连接重试(6次)。
 
-## 下一步
-- ✅ v3 已提交（官方 20.27 分）。本周上传额度空着。
-- ⏳ v3+（warm start 自 v3 + GAN强化）云端训练已终止（用户决定转本地）；代码 `train_v3_plus.py` 就绪，可在本地 4060 重跑。
-- ⏳ SD 教师感知蒸馏（`train_sd_distill.py`，SDS-lite）已写好，需本地 4060 适配（latent 预编码省显存）。
-- 本地准备：装 CUDA torch → 从 hf-mirror 下 sd21base + DF2K（本地可达已验证）→ latent 预编码 → 训练 v3+/SD蒸馏。
+## 下一步（2026-08-02 起）
+- **🚀 最高优先：OSEDiff 教师复现**。新会话先读 `workspace/OSEDIFF_START.md`（启动指南）→ `bash workspace/setup_osediff_env.sh`（官方环境，Python 3.11 已装好）→ 跑通官方 test_osediff.py（--upscale 1）→ 3 张验证集对比 v3 → 超 0.343 则出 100 张 4K + v3 测速提交。
+- 旧路线已证伪（勿重走）：v3 继续训练(全败)、SD2.1 蒸馏(0.281)、TinyVAE 换 VAE(0.171)、时延优化(VAE 架构瓶颈)。
+- v3 保底不动（20.27 分，剩 9 次机会）。

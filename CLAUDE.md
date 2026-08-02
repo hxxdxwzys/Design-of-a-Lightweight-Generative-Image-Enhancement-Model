@@ -98,12 +98,11 @@ workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图�
   - **教训：不要再对 v3 权重做普通微调/继续训练。** 要么直接用 v3 权重，要么走 SD 蒸馏（改变分布方向）。
 - **SD 蒸馏（train_sd_distill.py，本地 4060 适配版）**：warm start v3 + 低 LR(3e-5) + w_distill 0.05（distill loss 量级 ~5-50，保真项 ~0.05-0.2，需小权重平衡）+ t∈[100,700]（t 接近 900 时 1/√a 放大误差导致梯度爆炸）。patch192 batch2，teacher SD21 UNet fp16。**已跑 2000 步(0.288)与 8000 步(0.281)均 < v3 0.343 → SD2.1 通用教师先验与增强冲突(v4 教训重演)，此路失败。**
 
-## OSEDiff 教师 (2026-08-02，进行中)
-- **权重已全部下载**: osediff.pkl(20MB LoRA) + DAPE.pth(7MB) + RAM(5.6GB) 在 D:/models/OSEDiff-main/ + D:/models/ram_swin_large_14m.pth。
-- **本地适配版** `models/osediff_teacher_local.py`: 用 diffusers 0.39 官方类重建 OSEDiff_test (unet/vae LoRA 注入 + tiled 4K + RAM 可选)。
-- **关键坑**: diffusers 0.39 的 add_adapter 只给 target_modules 建 LoRA → vae decoder LoRA 缺失 → 输出压平 (std 12 vs 官方 benchmark 50)。unet-only 版输出正常但无增强 (clipiqa 0.218)。
-- **结论**: 需装官方环境复现 (Python 3.11 + diffusers 0.25 + transformers 4.28 + peft 0.9)。清单在 workspace/download_checklist.md。torch 2.7 兼容 diffusers 0.25 (>=1.4 无上限)。
-- **教训: 下载类事情自己下不好就列清单让用户手动下** (Python 安装包等)。
+## OSEDiff 教师 (2026-08-02，已证伪)
+- **权重全齐**: osediff.pkl(20MB LoRA) + DAPE.pth(7MB) + RAM(5.6GB)。官方环境 venv `D:/venv_osediff311` (Python 3.11 + diffusers 0.25 + transformers 4.28 + peft 0.9) 已搭好且跑通。
+- **官方环境验证**: 512 输出正常 (std 65.7, RAM 标签正常 "building, city, sea...")。4K 用 512 tile 分块推理 (官方整图 OOM, `run_osediff_tiled_4k.py`)。
+- **❌ 1x 同分辨率评测失败**: clipiqa 0.279 / musiq 29.9 / psnr 11.1 < v3 (0.343/31.5/24.9)。根因: **OSEDiff 是 4x 超分模型, 1x 输入不在训练分布内, 输出内容漂移** (LQ-GT diff 11.3 vs OSEDiff-GT diff 53.9, 亮度偏 22)。直接出图与作教师蒸馏均不可靠。**此路证伪, 勿重走。**
+- 教训: 下载类事情自己下不好就列清单让用户手动下 (Python 安装包等)。
 
 ## 提交规则更正 (重要)
 - **实际规则: 总共 10 次提交机会, 无每周限制** (用户 2026-08-02 确认, 赛题 txt 写"每周一次"是旧信息)。v3 已用 1 次, 剩 9 次。

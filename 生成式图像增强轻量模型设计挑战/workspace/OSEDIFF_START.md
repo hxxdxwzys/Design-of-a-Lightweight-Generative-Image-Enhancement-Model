@@ -1,6 +1,8 @@
 # OSEDiff 教师复现 — 新会话启动指南 (2026-08-02)
 
 > 这是**新会话第一条要读的文件**。旧会话已把一切准备妥当，按此执行即可。
+>
+> ⚠️ **下载原则（用户明确要求）**：任何下载需求（依赖装不上、wheel 版本不对、网络不可达），自己下不了**不要硬下也不要回避**——立刻把文件名/大小/URL/放置路径/安装命令**事无巨细**列给用户，用户手动下载。示例见本文件第 1 节（torch cp311 wheel）。
 
 ## 0. 当前状态快照
 
@@ -18,10 +20,17 @@ bash setup_osediff_env.sh
 
 - Python 3.11.9 已装好: `C:/Users/Yuki Nagato/AppData/Local/Programs/Python/Python311/python.exe`
 - 脚本创建 `D:/venv_osediff311` + 装 diffusers 0.25 官方依赖
-- **torch 可能需手动下载 cp311 wheel**（本地 wheel 是 cp313 的）：
-  - https://download.pytorch.org/whl/cu126/torch-2.7.0%2Bcu126-cp311-cp311-win_amd64.whl (~2.8GB)
-  - https://download.pytorch.org/whl/cu126/torchvision-0.22.0%2Bcu126-cp311-cp311-win_amd64.whl (~6MB)
-  - 若脚本报 torch 缺失，让用户手动下这两个文件放 `D:/models/`
+- **torch 必须手动下载 cp311 wheel**（本地 wheel 是 cp313 的; 自动下载会 hash 校验失败）：
+  - torch: https://download.pytorch.org/whl/cu126/torch-2.7.0%2Bcu126-cp311-cp311-win_amd64.whl (~2.8GB) → 放 `D:/models/`
+  - torchvision: https://download.pytorch.org/whl/cu126/torchvision-0.22.0%2Bcu126-cp311-cp311-win_amd64.whl (~6MB) → 放 `D:/models/`
+  - **建议用代理/浏览器下载**（download.pytorch.org 直连不稳）
+- **装完后用户告知 Claude → 运行**：
+  ```bash
+  D:/venv_osediff311/Scripts/pip.exe install D:/models/torch-2.7.0+cu126-cp311-cp311-win_amd64.whl
+  D:/venv_osediff311/Scripts/pip.exe install D:/models/torchvision-0.22.0+cu126-cp311-cp311-win_amd64.whl
+  # 然后小依赖(清华源):
+  D:/venv_osediff311/Scripts/pip.exe install -i https://pypi.tuna.tsinghua.edu.cn/simple diffusers==0.25.0 transformers==4.28.1 peft==0.9.0 loralib fairscale einops==0.7.0 open-clip-torch==2.20.0 huggingface-hub==0.25.0 accelerate==0.20.3
+  ```
 
 ## 2. 第二步：跑通官方 test_osediff.py
 

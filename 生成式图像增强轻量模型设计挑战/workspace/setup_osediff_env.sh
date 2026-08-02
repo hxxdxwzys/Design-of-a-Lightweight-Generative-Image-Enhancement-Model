@@ -41,12 +41,12 @@ else
   echo "==> torch 已装: $("$VPY" -c "import torch; print(torch.__version__)")"
 fi
 
-# 3. 官方依赖 (清华源)
+# 3. 官方依赖 (清华源; huggingface_hub 按官方 requirements.txt 锁 0.25.0)
 echo "==> 安装 diffusers 0.25 / transformers 4.28 / peft 0.9 等"
 "$VPIP" install -i "$MIRROR" \
   "diffusers==0.25.0" "transformers==4.28.1" "peft==0.9.0" \
-  "loralib" "fairscale" "einops" "open-clip-torch" \
-  "huggingface-hub==0.20.3" "accelerate==0.20.3" \
+  "loralib" "fairscale" "einops==0.7.0" "open-clip-torch==2.20.0" \
+  "huggingface-hub==0.25.0" "accelerate==0.20.3" \
   "torchvision" 2>&1 | tail -3
 
 # 4. 验证

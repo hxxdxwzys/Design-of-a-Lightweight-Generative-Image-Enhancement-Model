@@ -1,8 +1,10 @@
 # 用户手动下载清单 (OSEDiff 官方环境复现)
 
+> **原则（用户 2026-08-02 明确要求）**：Claude 自己下载不了/下不动时，**不硬下、不回避**，把下载需求事无巨细列在这里交给用户。用户有代理且愿意手动下载。
+
 **背景**: OSEDiff 官方代码需要 diffusers 0.25 + transformers 4.28 + peft 0.9, 仅支持 Python 3.11。
 本地 Python 3.13 装不了 (tokenizers 编译失败 + huggingface_hub API 冲突)。
-**torch 不需要下载** — diffusers 0.25 兼容 torch>=1.4, 直接用本地 torch 2.7。
+**torch 需要 cp311 版**（本地 wheel 是 cp313，Python 3.11 用不了；download.pytorch.org 直连自动下载 hash 校验失败 → 必须用户手动下）。
 
 ## 唯一需要下载的
 

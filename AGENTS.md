@@ -49,6 +49,7 @@ python eval.py --pred-dir ../赛题二/验证集 --pred-pattern '*_lq.*' \
 - **评测必须原生 4K**：长边缩到 512 会让 PSNR 从 25.79 虚高到 31.13（下采样掩盖 JPEG 退化）。`--max-side 512` 仅用于跑通冒烟，不可作基线。
 - **clipiqa 依赖 `pkg_resources`**：`setuptools>=81` 移除了它 → `requirements.txt` 锁 `setuptools<81`，否则 clipiqa 创建报 `ModuleNotFoundError`。
 - 本地 torch 是 **CPU-only**，4K 上跑 lpips/dists/maniqa 较慢（3 对约 5–8 分钟），正常。
+- **下载需求必须明确告知用户（用户要求）**：自己下不了/下不动时（网络限制、版本不兼容、hash 校验失败），**不要硬下也不要回避**——立刻把文件名/大小/URL/放置路径/安装命令事无巨细列给用户手动下载。参考 `workspace/download_checklist.md`。
 
 ## 基线（原生 4K，3 对验证集均值）
 | 指标 | 方向 | LQ基线 | GT天花板 |

@@ -157,7 +157,7 @@ model_dir/runner.py                    ← 保留 Runner(model_dir) + infer(imag
 13. **不要再对 v3 权重做任何本地继续训练/微调**（2026-08-01 本地验证）：v3plus_local(0.293)/v3plus_v2(0.282)/sd_distill_2000(0.288)/sd_distill_8000(0.281) 全部 < v3 原始 0.343。原因：(a) LR 未对齐 cosine（v3 训完 lr≈0，重新 1e-4 踢它）；(b) 保真损失与生成分布冲突（perception-distortion tradeoff）；(c) 本地数据/退化与 v3 训练分布偏移。**要超越 v3 只能换分布方向（真正的增强教师蒸馏）或换出图方法。**
 14. **SD2.1 通用教师蒸馏失败**（train_sd_distill.py 8000 步 0.281 < 0.343）：SDS-lite 拉向通用文生图先验与增强任务冲突（v4 教训重演）。**增强教师必须用 OSEDiff 这类增强专用模型。**
 15. **OSEDiff 兼容坑**（2026-08-02）：osediff.pkl 是 LoRA 权重（非完整权重）。diffusers 0.39 的 `add_adapter` 只给 target_modules 建 LoRA → vae decoder LoRA 缺失 → 输出压平（std 12 vs 官方 benchmark 50）。**必须用官方环境（Python 3.11 + diffusers 0.25 + transformers 4.28 + peft 0.9）复现**。torch 2.7 兼容 diffusers 0.25（>=1.4 无上限）。官方 benchmark 输出在仓库 preset/datasets/benchmark_realsr/results_osediff/（本地可查，std=50 为正常参考）。
-16. **下载类事情自己下不好就列清单让用户手动下**（用户 2026-08-02 明确要求）：如 Python 安装包（python.org 可达）、大 wheel。清单模板见 workspace/download_checklist.md。
+16. **下载类事情自己下不好就列清单让用户手动下**（用户 2026-08-02 明确要求）：如 Python 安装包（python.org 可达）、大 wheel。清单模板见 workspace/download_checklist.md。**原则：自己下不了不要硬下（浪费时间+hash 校验失败），也不要回避跳过（会导致后续步骤卡死）——立刻事无巨细告知用户下载需求（文件名/大小/URL/放置路径/安装命令）。** 用户有代理且愿意手动下载。实例：torch cp311 wheel（download.pytorch.org 直连不稳，自动下载 hash 失败 → 用户手动下到 D:/models/）。
 17. **提交规则更正**：实际是**总共 10 次机会无每周限制**（用户确认）。出图(output_dir 100 张 4K jpg)与测速(model_dir your_model.pt+runner.py)独立评分——**出图可离线慢跑任意方法，测速用轻量模型**。
 
 ---

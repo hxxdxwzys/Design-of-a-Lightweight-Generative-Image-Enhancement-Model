@@ -27,23 +27,25 @@ def main():
     ap.add_argument('--sd_path', default='D:/models/sd21base')
     ap.add_argument('--data_dir', default='D:/datasets/div2k')
     ap.add_argument('--output_dir', default='D:/models/runs/v3plus_local')
+    ap.add_argument('--progress_file', action='store_true',
+                    help='每次 log_every 写一行到 <output_dir>/train_progress.txt (供 train_progress.py 平滑显示)')
     ap.add_argument('--resume', default='D:/models/unet_v3.pth', help='warm start v3')
     ap.add_argument('--unet_ch', type=str, default='64,128,256,512')
     ap.add_argument('--patch_size', type=int, default=192)
     ap.add_argument('--batch_size', type=int, default=4)
     ap.add_argument('--g_lr', type=float, default=1e-4)
     ap.add_argument('--d_lr', type=float, default=1e-4)
-    ap.add_argument('--iters', type=int, default=5000)
-    ap.add_argument('--save_every', type=int, default=500)
+    ap.add_argument('--iters', type=int, default=12000)
+    ap.add_argument('--save_every', type=int, default=1000)
     ap.add_argument('--log_every', type=int, default=100)
     ap.add_argument('--num_workers', type=int, default=2)
     ap.add_argument('--w_pix', type=float, default=1.0)
     ap.add_argument('--w_lpips', type=float, default=1.0)
     ap.add_argument('--w_lat', type=float, default=0.5)
-    ap.add_argument('--w_adv', type=float, default=0.15)
+    ap.add_argument('--w_adv', type=float, default=0.05, help='v3 原始配方')
     ap.add_argument('--w_fm', type=float, default=1.0)
-    ap.add_argument('--r1_lambda', type=float, default=0.5)
-    ap.add_argument('--gan_start', type=int, default=1500)
+    ap.add_argument('--r1_lambda', type=float, default=0.0, help='v3 无 R1')
+    ap.add_argument('--gan_start', type=int, default=2000, help='v3 原始')
     ap.add_argument('--ema_decay', type=float, default=0.999)
     args = ap.parse_args()
 
@@ -133,11 +135,16 @@ def main():
 
             if step % args.log_every == 0:
                 el = time.time() - t0
-                print(f'step {step}/{args.iters} g {g_loss.item():.4f} '
-                      f'pix {loss_pix.item():.4f} lpips {loss_lpips.item():.4f} '
-                      f'lat {loss_lat.item():.4f} adv {g_adv.item():.4f} '
-                      f'fm {fm.item():.4f} d {d_loss.item():.4f} '
-                      f'{el/max(1, step):.2f}s/it', flush=True)
+                line = (f'step {step}/{args.iters} g {g_loss.item():.4f} '
+                        f'pix {loss_pix.item():.4f} lpips {loss_lpips.item():.4f} '
+                        f'lat {loss_lat.item():.4f} adv {g_adv.item():.4f} '
+                        f'fm {fm.item():.4f} d {d_loss.item():.4f} '
+                        f'{el/max(1, step):.2f}s/it')
+                print(line, flush=True)
+                if args.progress_file:
+                    with open(os.path.join(args.output_dir, 'train_progress.txt'), 'a',
+                              encoding='utf-8') as pf:
+                        pf.write(line + '\n')
             if step % args.save_every == 0:
                 torch.save({'unet': model.unet.state_dict(), 'ema_unet': ema_unet.state_dict(),
                             'disc': disc.state_dict(), 'step': step, 'args': vars(args),

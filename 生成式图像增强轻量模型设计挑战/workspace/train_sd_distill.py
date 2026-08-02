@@ -30,28 +30,33 @@ PROMPT = 'a high-quality, detailed, sharp, clean photograph'
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--sd_path', required=True)
-    ap.add_argument('--data_dir', required=True)
-    ap.add_argument('--output_dir', required=True)
-    ap.add_argument('--resume', default=None, help='warm start unet (v3 unet_v3.pth)')
+    ap.add_argument('--sd_path', default='D:/models/sd21base')
+    ap.add_argument('--data_dir', default='D:/datasets/div2k')
+    ap.add_argument('--output_dir', default='D:/models/runs/sd_distill')
+    ap.add_argument('--resume', default='D:/models/unet_v3.pth', help='warm start unet (v3 unet_v3.pth)')
     ap.add_argument('--unet_ch', type=str, default='64,128,256,512')
-    ap.add_argument('--patch_size', type=int, default=256)
-    ap.add_argument('--batch_size', type=int, default=8)
-    ap.add_argument('--g_lr', type=float, default=1e-4)
-    ap.add_argument('--iters', type=int, default=15000)
+    ap.add_argument('--patch_size', type=int, default=192)
+    ap.add_argument('--batch_size', type=int, default=2)
+    ap.add_argument('--g_lr', type=float, default=3e-5,
+                    help='低 LR: v3 已收敛, 蒸馏是微调方向不是重训')
+    ap.add_argument('--iters', type=int, default=8000)
     ap.add_argument('--save_every', type=int, default=1000)
     ap.add_argument('--log_every', type=int, default=100)
-    ap.add_argument('--num_workers', type=int, default=6)
-    ap.add_argument('--w_distill', type=float, default=1.0)
-    ap.add_argument('--w_pix', type=float, default=0.5)
-    ap.add_argument('--w_lpips', type=float, default=0.5)
+    ap.add_argument('--num_workers', type=int, default=2)
+    ap.add_argument('--w_distill', type=float, default=0.05,
+                    help='蒸馏温和引导: distill loss 量级 ~5-50, 保真项 ~0.05-0.2, 需小权重平衡')
+    ap.add_argument('--w_pix', type=float, default=1.0)
+    ap.add_argument('--w_lpips', type=float, default=1.0)
     ap.add_argument('--w_lat', type=float, default=0.5)
-    ap.add_argument('--t_min', type=int, default=200)
-    ap.add_argument('--t_max', type=int, default=900)
+    ap.add_argument('--t_min', type=int, default=100,
+                    help='小 t 更多: 避免 t~900 时 1/sqrt(a) 放大误差导致梯度爆炸')
+    ap.add_argument('--t_max', type=int, default=700)
     ap.add_argument('--cfg_scale', type=float, default=1.0,
                     help='teacher 分类器自由引导; 1.0=纯cond, >1 加 uncond 反相')
     ap.add_argument('--ema_decay', type=float, default=0.999)
     ap.add_argument('--prompt', type=str, default=PROMPT)
+    ap.add_argument('--progress_file', action='store_true',
+                    help='写 <output_dir>/train_progress.txt 供 train_progress.py 平滑显示')
     args = ap.parse_args()
 
     os.makedirs(args.output_dir, exist_ok=True)
@@ -167,11 +172,16 @@ def main():
 
             if step % args.log_every == 0:
                 el = time.time() - t0
-                print(f'step {step}/{args.iters} g {g_loss.item():.4f} '
-                      f'distill {loss_distill.item():.4f} pix {loss_pix.item():.4f} '
-                      f'lpips {loss_lpips.item():.4f} lat {loss_lat.item():.4f} '
-                      f't={t.mean().item():.0f} lr {g_sched.get_last_lr()[0]:.2e} '
-                      f'{el/max(1, step):.2f}s/it', flush=True)
+                line = (f'step {step}/{args.iters} g {g_loss.item():.4f} '
+                        f'distill {loss_distill.item():.4f} pix {loss_pix.item():.4f} '
+                        f'lpips {loss_lpips.item():.4f} lat {loss_lat.item():.4f} '
+                        f't={t.float().mean().item():.0f} lr {g_sched.get_last_lr()[0]:.2e} '
+                        f'{el/max(1, step):.2f}s/it')
+                print(line, flush=True)
+                if args.progress_file:
+                    with open(os.path.join(args.output_dir, 'train_progress.txt'), 'a',
+                              encoding='utf-8') as pf:
+                        pf.write(line + '\n')
             if step % args.save_every == 0:
                 torch.save({'unet': model.unet.state_dict(),
                             'ema_unet': ema_unet.state_dict(),

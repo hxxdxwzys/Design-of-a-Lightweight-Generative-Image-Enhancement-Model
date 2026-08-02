@@ -85,9 +85,28 @@ python eval.py --pred-dir ../赛题二/验证集 --pred-pattern '*_lq.*' \
 - 教训：官方 osediff.pkl/DAPE 在 Google Drive（国内不可达）；GitHub clone TLS 不稳；v3 ckpt 曾丢（可从提交 zip 的 your_model.pt 提取 UNet 恢复）。
 
 ## 本地环境
-Windows 11，Python 3.13，**RTX 4060 8GB**（需装 CUDA 版 torch；当前 2.13.0+cpu 是旧 CPU 版待升级）。
+Windows 11，Python 3.13，**RTX 4060 8GB**，**torch 2.7.0+cu126**（已装 CUDA 版）。
 **训练策略（2026-08-01 起）**：全部本地 4060 训练，不再用云 GPU。8GB 显存 → 靠算法省显存（latent 预编码把 VAE 移出训练、小 batch+梯度累积、fp16、离线教师），不硬堆大模型。
 workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\`
+
+## 关键教训（v3 本地复现 2026-08-01，重要）
+- **v3 权重(D:/models/unet_v3.pth) 本地评测 clipiqa 0.343/musiq31.5 = 官方 20.27 分**（与 CLAUDE.md 记录一致），本地评测管线可靠。
+- **本地继续训练 v3 权重 = 自毁**：v3plus_local(5000步) 0.293、v3plus_v2(12000步) 0.282，全 < 原始 0.343。**1000 步内已掉到 0.307**（纯保真损失无 GAN 时就掉）。
+  - 原因1：**LR 未对齐**。train_v3.py resume 会 `for _ in range(start_step): g_sched.step()` 对齐 cosine；我改的 train_local.py 漏了这步 → v3 训练完 lr≈0，却用 lr1e-4 重新踢它。
+  - 原因2：**保真损失与生成分布冲突**（perception-distortion tradeoff）：L1/LPIPS/L2 把模型拉向 GT 平滑方向，牺牲 clipiqa 感知分。
+  - **教训：不要再对 v3 权重做普通微调/继续训练。** 要么直接用 v3 权重，要么走 SD 蒸馏（改变分布方向）。
+- **SD 蒸馏（train_sd_distill.py，本地 4060 适配版）**：warm start v3 + 低 LR(3e-5) + w_distill 0.05（distill loss 量级 ~5-50，保真项 ~0.05-0.2，需小权重平衡）+ t∈[100,700]（t 接近 900 时 1/√a 放大误差导致梯度爆炸）。patch192 batch2，teacher SD21 UNet fp16。**已跑 2000 步(0.288)与 8000 步(0.281)均 < v3 0.343 → SD2.1 通用教师先验与增强冲突(v4 教训重演)，此路失败。**
+
+## OSEDiff 教师 (2026-08-02，进行中)
+- **权重已全部下载**: osediff.pkl(20MB LoRA) + DAPE.pth(7MB) + RAM(5.6GB) 在 D:/models/OSEDiff-main/ + D:/models/ram_swin_large_14m.pth。
+- **本地适配版** `models/osediff_teacher_local.py`: 用 diffusers 0.39 官方类重建 OSEDiff_test (unet/vae LoRA 注入 + tiled 4K + RAM 可选)。
+- **关键坑**: diffusers 0.39 的 add_adapter 只给 target_modules 建 LoRA → vae decoder LoRA 缺失 → 输出压平 (std 12 vs 官方 benchmark 50)。unet-only 版输出正常但无增强 (clipiqa 0.218)。
+- **结论**: 需装官方环境复现 (Python 3.11 + diffusers 0.25 + transformers 4.28 + peft 0.9)。清单在 workspace/download_checklist.md。torch 2.7 兼容 diffusers 0.25 (>=1.4 无上限)。
+- **教训: 下载类事情自己下不好就列清单让用户手动下** (Python 安装包等)。
+
+## 提交规则更正 (重要)
+- **实际规则: 总共 10 次提交机会, 无每周限制** (用户 2026-08-02 确认, 赛题 txt 写"每周一次"是旧信息)。v3 已用 1 次, 剩 9 次。
+- **战略: 出图与测速解耦**。100 张 4K jpg (output_dir) 决定感知分, 可离线慢跑任意方法; model_dir (your_model.pt + runner.py) 决定加速比, 用轻量 v3。两者独立评分。
 
 ## 进度（任务清单）
 - ✅ 搭建本地评测闭环（eval.py，8 指标）
@@ -97,6 +116,10 @@ workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图�
 - ✅ 设计轻量一步潜扩散架构（SD2.1 VAE冻结 + 56M UNet + 显式x0 t=500，无RAM/CLIP）
 - ✅ 训练/蒸馏/出图/打包（v3=DF2K+PatchGAN: clipiqa0.344/musiq31.5, 20.27分; v2/v1保底; submit_v3.zip 就绪）
 - ✅ v4 结果（上海V100, LoRA微调SD UNet 5.93M+PatchGAN, DF2K 3450张, 10k iter）: **clipiqa 0.311 < v3 0.344** —— 直接微调SD UNet不利用SD先验(去噪先验与增强冲突), 需VSD/蒸馏才有效。v3仍最佳(20.27分)。上海服务器已关机(/data全保留)。
+- ✅ v3 本地复现（2026-08-01）: **本地 4K 评测 unet_v3.pth = clipiqa 0.343/musiq31.5，与官方 20.27 分一致**，本地评测管线可靠。
+- ✅ 本地 v3 继续训练全部失败（v3plus_local 0.293 / v3plus_v2 0.282 < 原始 0.343）→ 详见"关键教训"。
+- ✅ SD 蒸馏验证（train_sd_distill.py 本地适配版）: **失败** — 2000步 0.288 / 8000步 0.281 < v3 0.343。SD2.1 通用教师先验与增强冲突。
+- ⏳ OSEDiff 教师 (2026-08-02): 权重已下齐, 本地 0.39 适配完成但 vae LoRA 输出压平 (diffusers 版本差异)。待装 Python 3.11 官方环境复现。清单见 download_checklist.md。
 - ⬜ 复现 OSEDiff 基线 + 测 512 时延（加速比分母，延后；教师权重SD21+RAM已下好备用）
 - ⬜ 复现 OSEDiff 基线 + 测 512 时延（加速比分母，延后；需完整SD21+RAM+旧deps）
 - ⬜ 4K 分块推理出图（100 张）

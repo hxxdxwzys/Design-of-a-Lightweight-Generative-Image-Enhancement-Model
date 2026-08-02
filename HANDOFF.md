@@ -154,6 +154,11 @@ model_dir/runner.py                    ← 保留 Runner(model_dir) + infer(imag
 10. **SFTP 不可用**：走 exec+cat。
 11. **GAN 会失稳**（D 可能压过 G）：监控 d_loss/g_adv，必要时提前停或调 w_adv/加 EMA。
 12. **long 任务用 nohup + 日志轮询**，避免前台超时被杀。
+13. **不要再对 v3 权重做任何本地继续训练/微调**（2026-08-01 本地验证）：v3plus_local(0.293)/v3plus_v2(0.282)/sd_distill_2000(0.288)/sd_distill_8000(0.281) 全部 < v3 原始 0.343。原因：(a) LR 未对齐 cosine（v3 训完 lr≈0，重新 1e-4 踢它）；(b) 保真损失与生成分布冲突（perception-distortion tradeoff）；(c) 本地数据/退化与 v3 训练分布偏移。**要超越 v3 只能换分布方向（真正的增强教师蒸馏）或换出图方法。**
+14. **SD2.1 通用教师蒸馏失败**（train_sd_distill.py 8000 步 0.281 < 0.343）：SDS-lite 拉向通用文生图先验与增强任务冲突（v4 教训重演）。**增强教师必须用 OSEDiff 这类增强专用模型。**
+15. **OSEDiff 兼容坑**（2026-08-02）：osediff.pkl 是 LoRA 权重（非完整权重）。diffusers 0.39 的 `add_adapter` 只给 target_modules 建 LoRA → vae decoder LoRA 缺失 → 输出压平（std 12 vs 官方 benchmark 50）。**必须用官方环境（Python 3.11 + diffusers 0.25 + transformers 4.28 + peft 0.9）复现**。torch 2.7 兼容 diffusers 0.25（>=1.4 无上限）。官方 benchmark 输出在仓库 preset/datasets/benchmark_realsr/results_osediff/（本地可查，std=50 为正常参考）。
+16. **下载类事情自己下不好就列清单让用户手动下**（用户 2026-08-02 明确要求）：如 Python 安装包（python.org 可达）、大 wheel。清单模板见 workspace/download_checklist.md。
+17. **提交规则更正**：实际是**总共 10 次机会无每周限制**（用户确认）。出图(output_dir 100 张 4K jpg)与测速(model_dir your_model.pt+runner.py)独立评分——**出图可离线慢跑任意方法，测速用轻量模型**。
 
 ---
 
@@ -165,13 +170,13 @@ model_dir/runner.py                    ← 保留 Runner(model_dir) + infer(imag
 
 ---
 
-## 8. 未来方向（按优先级）
+## 8. 未来方向（按优先级，2026-08-02 更新）
 
-1. **提交 v3（20.27）**：本周上传保底，下周再攻质量。
-2. **蒸馏（v5）**：SD 教师（OSEDiff 的 SD UNet + osediff.pkl，或直接 SD UNet）生成高质量目标 → 小学生（v3 的 56M 或小 VAE+小 UNet）模仿。这是正确利用 SD 先验的路。教师权重已在 /data（SD21 + RAM + osediff.pkl + DAPE）。需重开服务器 + 跑通教师（VSD 或像素蒸馏）+ 蒸馏训练（~3-5h）。
-3. **预训练 SD-SR 模型**（DiffBIR/SupIR/StableSR）：直接用+微调，需下载 + 适配同分辨率 + 模型重（加速比低）。
-4. **测 512 时延/加速比**（任务 #4）：复现 OSEDiff 基线（需完整 SD21+RAM+旧 deps，或直接用官方 test_inference_time.py），明确加速比分母。
-5. **调 v3**：更大模型/更多 iter/调 GAN 权重——边际提升，v3 已 plateau。
+1. **OSEDiff 教师复现（最高优先）**：装 Python 3.11 + diffusers 0.25 官方环境（用户手动下 Python，清单 workspace/download_checklist.md）→ 跑通官方 test_osediff.py 验证 1x 同分辨率出图质量 → 若超 v3（clipiqa 0.343）则：(a) OSEDiff 直接出 100 张 4K 图 + v3 测速提交；(b) 或 train_v5.py 蒸馏学生。
+2. **提交 v3（20.27 保底）**：还剩 9 次机会，随时可提交，不急着用。
+3. **预训练 SD-SR 模型**（DiffBIR 支持 scale=1 bid 模式，权重 hf-mirror 可达）：出图端备选。已验证 DiffBIR 支持同分辨率增强。
+4. **测 512 时延/加速比**：OSEDiff A100 官方时延 104.6ms（README 确认）。v3 本地 218ms(JIT)——同卡加速比需等评测卡明确。
+5. **调 v3**：已证伪（见教训 13），不再尝试。
 
 ---
 
@@ -184,9 +189,11 @@ model_dir/runner.py                    ← 保留 Runner(model_dir) + infer(imag
 
 ---
 
-## 10. 下一步行动清单
+## 10. 下一步行动清单（2026-08-02 更新）
 
-1. 用户决定：**提交 v3**（本周）还是**上蒸馏 v5**。
-2. 若蒸馏：重开服务器（控制台开机，IP/密码见 .secrets，端口 2222）→ 装驱动若有需 → 复用 /data/env → 跑通 OSEDiff 教师 → 写蒸馏训练脚本 → 训练 v5。
-3. 若提交 v3：重命名 + 上传 `submit_v3.zip`。
+1. **用户手动下载 Python 3.11.9**（清单 workspace/download_checklist.md）→ 装好后创建 D:/venv_osediff311。
+2. **装官方依赖**：diffusers 0.25 + transformers 4.28 + peft 0.9 + loralib/fairscale/einops/open-clip（清华源）。torch 用本地 2.7 或下 cp311 版。
+3. **跑通官方 OSEDiff**：venv 里跑官方 test_osediff.py（--upscale 1 同分辨率）→ 3 张验证集 4K 出图 → eval.py 对比 v3（clipiqa 0.343）。若超 v3 → 出 100 张 4K 提交。
+4. **或 v5 蒸馏**：官方 OSEDiff 跑通后 gen_teacher_targets.py 生成教师目标 → train_v5.py 蒸馏学生（LR 对齐已内置）。
+5. 期间 v3 保底不动，随时可提交（剩 9 次机会）。
 4. 新会话：先读本文件 + CLAUDE.md，再看 workspace 代码。

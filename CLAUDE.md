@@ -17,6 +17,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - 出图：100 张 **4K**，离线分块生成提交 jpg，不计入测速。
 - **评分**：有参(对GT: PSNR/SSIM/LPIPS/DISTS)+无参(CLIPIQA/MUSIQ/MANIQA/NIQE)加权 + 加速比。具体权重决赛入围时公布。**每周仅 1 次上传**。
 - **提交格式**：`zip≤10GB`，结构 `output_dir/case1.jpg...case100.jpg` + `model_dir/{your_model.pt, runner.py}`。命名 `赛题二_xxx作品_xx队_13000000000.zip`，名中无中文符号。
+- **⚠️ 上传文件名绝对不能含中文**（2026-08-05 用户实测确认）：zip 文件名含中文会导致上传失败（曾因此浪费 3 次提交机会）。赛题示例"赛题二_xxx"有中文是坑。**用纯 ASCII 文件名**，如 `Track2_SpeedV2_Team4060_13000000000.zip`。全角破折号"——"可用（已成功上传多次），中文不行。
 - **runner 可自定义**：官方 `runner.py` 是 OSEDiff 样例（4 个 JIT：osediff_core/clip_text_encoder/ram_dape_encoder/ram_tag_decoder + config.yaml + ram_tag_params.pth + tokenizer）。**不强制用 4 文件接口**，可写自己的 runner，但保留评测 harness 统一调用的 `Runner(model_dir)` + `infer(image_tensor, prompt="")` 接口（输入输出 [1,3,H,W]∈[-1,1]）。
 
 ## 仓库结构

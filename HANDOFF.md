@@ -162,6 +162,7 @@ model_dir/runner.py                    ← 保留 Runner(model_dir) + infer(imag
 15d. **v5 蒸馏（带 GT 锚定）证伪**（2026-08-02）：train_v5_gt.py 2000 步 clipiqa 0.283/musiq 29.9 < v3 0.343。GT 锚定保住 psnr 但教师"过度锐化"污染感知。**教师蒸馏（SD2.1/OSEDiff）在同分辨率轻退化任务上全部证伪**。
 16. **下载类事情自己下不好就列清单让用户手动下**（用户 2026-08-02 明确要求）：如 Python 安装包（python.org 可达）、大 wheel。清单模板见 workspace/download_checklist.md。**原则：自己下不了不要硬下（浪费时间+hash 校验失败），也不要回避跳过（会导致后续步骤卡死）——立刻事无巨细告知用户下载需求（文件名/大小/URL/放置路径/安装命令）。** 用户有代理且愿意手动下载。实例：torch cp311 wheel（download.pytorch.org 直连不稳，自动下载 hash 失败 → 用户手动下到 D:/models/）。
 17. **提交规则更正**：实际是**总共 10 次机会无每周限制**（用户确认）。出图(output_dir 100 张 4K jpg)与测速(model_dir your_model.pt+runner.py)独立评分——**出图可离线慢跑任意方法，测速用轻量模型**。
+17b. **上传文件名绝对不能含中文**（2026-08-05 用户实测确认）：zip 文件名含中文 → 上传失败（曾因此浪费 3 次提交机会）。赛题示例"赛题二_xxx"含中文是坑。**必须用纯 ASCII 文件名**，如 `Track2_SpeedV2_Team4060_13000000000.zip`。全角破折号"——"可用（已成功上传多次），中文不行。提交件统一放 `提交历史/`（已 gitignore）。
 
 ---
 

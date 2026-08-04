@@ -1,0 +1,12 @@
+{
+  "mean": {
+    "clipiqa": 0.5043,
+    "musiq": 33.525,
+    "maniqa": 0.3359,
+    "niqe": 5.1787,
+    "psnr": 23.7501,
+    "ssim": 0.5734,
+    "lpips": 0.6227
+  },
+  "note": "DiffBIR v2.1 denoise upscale1 steps10 \u5185\u7f6etiled 4K, \u65e0\u53c2\u66b4\u6da8(clipiqa 0.504), \u6709\u53c2\u7565\u964d"
+}

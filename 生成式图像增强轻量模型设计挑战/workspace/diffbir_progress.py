@@ -19,6 +19,8 @@ import subprocess
 
 LOG = 'D:/models/diffbir/test100_run2.log'
 TOTAL = 100
+LOG2 = 'D:/models/diffbir/val4k_s10.log'  # steps10 验证集 (3张)
+TOTAL2 = 3
 
 
 def done_count():
@@ -64,11 +66,19 @@ def bar(done):
 
 
 def snapshot():
+    lines = ['  ' + gpu_info()]
+    # steps4 100张 (主任务)
     done = done_count()
+    lines.append(bar(done))
+    # steps10 验证集 (3张, 若有进行)
+    if os.path.exists(LOG2):
+        d2 = 0
+        with open(LOG2, 'r', encoding='utf-8', errors='replace') as f:
+            d2 = f.read().count('save result')
+        lines.append(f'  steps10验证集 [{ "#" * min(30, d2)}{"-" * (30 - min(30, d2))}] '
+                     f'{d2}/{TOTAL2}')
     cur, tot = current_tile_progress()
-    lines = ['  ' + gpu_info(), bar(done)]
     if cur is not None and tot and done < TOTAL:
-        # 估算: 每张约 3 分钟, 已完成 done 张 + 当前张 cur/tot
         frac = cur / tot if tot else 0
         est_min = (TOTAL - done - frac) * 3
         lines.append(f'  当前张: tile {cur}/{tot} | 预计剩余 {est_min:.0f} 分钟')

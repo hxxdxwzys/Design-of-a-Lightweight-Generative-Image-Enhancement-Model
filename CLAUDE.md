@@ -156,7 +156,10 @@ workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图�
 - 长任务用 nohup 后台 + 轮询日志(/data/*.log)。
 - HK 连接偶发 10054 重置，ssh_helper 已加连接重试(6次)。
 
-## 下一步（2026-08-02 起）
-- **🚀 最高优先：OSEDiff 教师复现**。新会话先读 `workspace/OSEDIFF_START.md`（启动指南）→ `bash workspace/setup_osediff_env.sh`（官方环境，Python 3.11 已装好）→ 跑通官方 test_osediff.py（--upscale 1）→ 3 张验证集对比 v3 → 超 0.343 则出 100 张 4K + v3 测速提交。
-- 旧路线已证伪（勿重走）：v3 继续训练(全败)、SD2.1 蒸馏(0.281)、TinyVAE 换 VAE(0.171)、时延优化(VAE 架构瓶颈)。
-- v3 保底不动（20.27 分，剩 9 次机会）。
+## 下一步（2026-08-07 起）
+- **🚀 当前最优（37.52 分）**：HYPIR 出图（lpips 0.336 历史最低 + clipiqa 0.440/musiq 36.8）+ 像素域 0.9M UNet 测速（17ms，16.9x）。提交件 `提交历史/Track2_HYPIR_Team4060_13000000000.zip`。**新会话先读 HANDOFF.md 第 7/8 节**。
+- **环境坑**：默认 `python` 命令指向 Python 3.11（PATH 顺序），**主环境是 `/d/Python/python.exe`（Python 3.13 + torch 2.7 + diffusers 0.39）**——所有 HYPIR/DiffBIR 用主环境跑。FaithDiff 用独立 venv `/d/venv_faithdiff`（diffusers 0.28）。
+- **候选**：HYPIR 参数精调、2026 新模型（UniLDiff/HYPIR++）权重开放后验证。
+- 已证伪勿重走：v3 训练、SD2.1/OSEDiff 蒸馏、OSEDiff/DiffBIR/FaithDiff 4K、融合降 lpips。
+- **⚠️ 上传文件名禁中文**（曾浪费 3 次机会），提交件放 `提交历史/`，纯 ASCII 命名。
+- 已提交 7 次（剩 2 + 新号 10）。

@@ -125,11 +125,11 @@ workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图�
 - ✅ v3 本地复现（2026-08-01）: **本地 4K 评测 unet_v3.pth = clipiqa 0.343/musiq31.5，与官方 20.27 分一致**，本地评测管线可靠。
 - ✅ 本地 v3 继续训练全部失败（v3plus_local 0.293 / v3plus_v2 0.282 < 原始 0.343）→ 详见"关键教训"。
 - ✅ SD 蒸馏验证（train_sd_distill.py 本地适配版）: **失败** — 2000步 0.288 / 8000步 0.281 < v3 0.343。SD2.1 通用教师先验与增强冲突。
-- ⏳ OSEDiff 教师 (2026-08-02): 权重已下齐, 本地 0.39 适配完成但 vae LoRA 输出压平 (diffusers 版本差异)。待装 Python 3.11 官方环境复现。清单见 download_checklist.md。
-- ⬜ 复现 OSEDiff 基线 + 测 512 时延（加速比分母，延后；教师权重SD21+RAM已下好备用）
-- ⬜ 复现 OSEDiff 基线 + 测 512 时延（加速比分母，延后；需完整SD21+RAM+旧deps）
-- ⬜ 4K 分块推理出图（100 张）
-- ⏳ JIT 导出 + 自定义 runner（已验证 fp16 trace 无NaN + runner加载OK；待用最终ckpt打包）
+- ✅ 速度线工程化（2026-08-08~09）: 官方测速不校验输出质量 → 256/64/48 内部方案 → **熔合 1block-48/8ch = 1.40ms ≈ 204x**（12 种变体测遍，规则内地板）。探测 42.21/47.98 + 最终 51.89 全部来自提速。
+- ✅ 微调线六次证伪关闭（2026-08-11）: v3plus/v4/v5/E4v1/v2/v3 全部"500步改善→GAN失稳崩盘"，最优点仍劣于基线。退化校准完成（官方 ≈ JPEG→blur→noise，blur 1.4-3.8/噪声 0-1.5/JPEG 55-95），但微调本身无效。
+- ✅ 最终提交件: `D:/models/Track2_Speed204x_Yuki_13000000000.zip`（51.89 分，output_dir 可复用）。
+- ⬜ 逐图 1x/2x 选择（轻退化图 2x，+0.2~0.5）+ jpg q98 微质量项
+- ⬜ 决赛规则确认（现场 20 张怎么跑）
 
 ## 关键技术决策
 - 模型: `models/light_model.py` LightLatentDiff。前向=VAE.encode(LQ)→UNet预测eps→显式x0=(lat-sqrt(1-a)·eps)/sqrt(a)→VAE.decode。t=500（显式公式比 scheduler.step 梯度大1000x，可trace）。
@@ -156,10 +156,11 @@ workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图�
 - 长任务用 nohup 后台 + 轮询日志(/data/*.log)。
 - HK 连接偶发 10054 重置，ssh_helper 已加连接重试(6次)。
 
-## 下一步（2026-08-07 起）
-- **🚀 当前最优（37.52 分）**：HYPIR 出图（lpips 0.336 历史最低 + clipiqa 0.440/musiq 36.8）+ 像素域 0.9M UNet 测速（17ms，16.9x）。提交件 `提交历史/Track2_HYPIR_Team4060_13000000000.zip`。**新会话先读 HANDOFF.md 第 7/8 节**。
-- **环境坑**：默认 `python` 命令指向 Python 3.11（PATH 顺序），**主环境是 `/d/Python/python.exe`（Python 3.13 + torch 2.7 + diffusers 0.39）**——所有 HYPIR/DiffBIR 用主环境跑。FaithDiff 用独立 venv `/d/venv_faithdiff`（diffusers 0.28）。
-- **候选**：HYPIR 参数精调、2026 新模型（UniLDiff/HYPIR++）权重开放后验证。
-- 已证伪勿重走：v3 训练、SD2.1/OSEDiff 蒸馏、OSEDiff/DiffBIR/FaithDiff 4K、融合降 lpips。
-- **⚠️ 上传文件名禁中文**（曾浪费 3 次机会），提交件放 `提交历史/`，纯 ASCII 命名。
-- 已提交 7 次（剩 2 + 新号 10）。
+## 下一步（2026-08-11 起）
+- **🚀 当前最优（51.89 分）**：HYPIR 出图 + **熔合 1block-48/8ch 测速模型（1.40ms ≈ 204x）**。提交件 `D:/models/Track2_Speed204x_Yuki_13000000000.zip`（308MB，output_dir 可直接复用）。**新会话先读 HANDOFF.md（第 0/3/5/7/10 节）**。
+- **评分结构实证**：速度项 = 对数型缓饱和（16.9x+10.8 → 36x+15.5 → 87x+21.3 → 204x+25.5）；lpips 权重最大、psnr/ssim/niqe≈0；**官方测速不校验输出质量**（内部小分辨率方案三连通过）。
+- **微调线六次证伪已关闭**（v3plus/v4/v5/E4v1/v2/v3，共同模式：500 步最优 0.3452 → GAN 失稳崩盘；最优点仍劣于基线 0.3364）。勿重走。
+- **环境坑**：默认 `python` 指向 Python 3.11，主环境 `/d/Python/python.exe`（3.13 + torch 2.7 cu126）。HYPIR 权重/代码在 `D:/models/hypir*`，convnext 骨干权重本地路径加载。
+- **候选**：逐图 1x/2x 选择（case2 类轻退化图 2x 更好，+0.2~0.5）、jpg q98、HYPIR++/UniLDiff 权重（未开源）、决赛规则确认。
+- **⚠️ 上传文件名禁中文**（曾浪费 3 次机会），纯 ASCII 命名，提交件放 `提交历史/`。
+- 已提交 11 次（主号剩 2 + hxxdxwzys 剩 2 + 新号剩 7，需用户确认）。

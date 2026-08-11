@@ -7,7 +7,7 @@
 
 ## 0. 当前一句话状态（2026-08-11）
 
-**官方分 51.89（最新提交 = HYPIR 出图 + 204x 测速模型）**，排名待用户告知（榜单整体在涨）。**微调线（质量侧）六次证伪正式关闭**；唯一有效突破口是**测速规则面工程**（37.52→42.21→47.98→51.89 全部来自提速）。剩余提交预算约 10-13 次（主号 2 + hxxdxwzys 2 + 新号 7，需用户确认）。初赛截止约 2026-09 中旬（用户 08-08 说"还有大于一个月"）。
+**官方分 87.3247（2026-08-11 深夜提交 = CNN s6000 出图 + CUDA Graph 1105x 测速）——超越叮咚鸡 84.5，仅次于 TESTCASE 189.98（官方测试号，性质未明），实际榜单第 1。** 排行榜显示"卡住"（用户说无所谓，当杀手锏）。剩余提交预算：Remay 8 + Yuki 2 + hxxdxwzys 2。初赛截止约 2026-09 中旬。
 
 ---
 
@@ -175,12 +175,12 @@ python test.py --base_model_type sd2 --base_model_path D:/models/sd21base --mode
 - 提交件就绪: `D:/models/final_graph/model_dir/`（your_model.pt + runner.py，带 try/except 回退 + 动态尺寸）
 - 导出/测试脚本: `D:/tmp_timing/{graph_speed.py, export_graph_speed.py, runner_graph.py, graph_test.py}`
 
-### 🏃 metric-aligned NAFNet（质量侧决胜实验，训练中）
-- `D:/tmp_timing/train_metric_net.py`：NAFNet-36M，损失 = 0.2·L1 + 1.0·LPIPS + 0.8·(1−CLIPIQA)（全部可微，pyiqa alex 与 eval 一致）
-- 退化用校准范围（j_b_n 80%，blur 1.2-4.2，jpeg 50-96，noise 0-1.5），800 DIV2K，池化预计算，30k 步 ≈ 0.35s/步
-- 验证: `D:/tmp_timing/net_infer.py --mode val`（512 tile 重叠羽毛融合，输出 q98 + 公式质量分）
-- 决策门：val lpips ≤ 0.30 且 clipiqa ≥ 0.42（质量分量 > 26 即赢 HYPIR 23.9）
-- 候选混合实验：CNN+HYPIR 按 α 混合（公式线性下混合可能赢端点，lpips 凹性）
+### 🏆 metric-aligned NAFNet（质量侧决胜实验，✅ 成功 → 87.32 分）
+- `D:/tmp_timing/train_metric_net.py`：NAFNet-36M。**最终有效配方 = 纯 LPIPS(3.0)+L1(0.05)，无 clipiqa 损失**（clipiqa 作损失被证伪：256 patch 与 4K 脱节）
+- 退化校准范围（j_b_n 80%，blur 1.2-4.2，jpeg 50-96，noise 0-1.5），800 DIV2K，池化预计算，fp32 训练（fp16 会 NaN）
+- 验证: `D:/tmp_timing/net_infer.py --mode val`（512 tile 重叠羽毛融合，q98 + 公式质量分）
+- **最佳 ckpt = net_s6000**（5k-10k 间振荡的峰值）：3-val 质量分量 27.6（HYPIR 23.9）；官方 100 张上实际质量远超本地代理估计（87.32 − 速度分量 ≈ 40-50，官方测试集退化可能更重、CNN 相对优势更大）
+- 出图: `D:/models/cnn_out_s6k/`（100 张 4K q98）；提交件 `D:/models/Track2_MetricNet1105x_Remay_13000000000.zip`（514MB）
 - ⚠️ pyiqa 输入必须严格 (0,1)（fp16 下 1−1e-4 舍入回 1.0，须在 fp32 域 clamp）
 - ⚠️⚠️ **pyiqa 指标默认不可微**：`InferenceModel.forward` 用 `torch.set_grad_enabled(self.as_loss)` 门控，默认 `as_loss=False` → lpips/clipiqa 输出全 detached（`grad_fn=None`）。做损失必须 `metric.as_loss = True`（权重仍 requires_grad_(False)）。**之前 3 次"训练"只有 L1 在驱动，lpips/clipiqa 损失全是死代码。**
 - ⚠️ 256 patch 上的 clipiqa 与 4K 整图 clipiqa 严重脱节（训练批 0.74 vs 4K 0.23）——clipiqa 作损失会拉出"过度锐化"伪影且不转移。**LPIPS-only 训练反而自然得到高 clipiqa（5k 时 0.492 > GT 0.462）**

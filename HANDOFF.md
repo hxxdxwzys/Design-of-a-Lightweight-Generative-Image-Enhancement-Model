@@ -182,6 +182,8 @@ python test.py --base_model_type sd2 --base_model_path D:/models/sd21base --mode
 - 决策门：val lpips ≤ 0.30 且 clipiqa ≥ 0.42（质量分量 > 26 即赢 HYPIR 23.9）
 - 候选混合实验：CNN+HYPIR 按 α 混合（公式线性下混合可能赢端点，lpips 凹性）
 - ⚠️ pyiqa 输入必须严格 (0,1)（fp16 下 1−1e-4 舍入回 1.0，须在 fp32 域 clamp）
+- ⚠️⚠️ **pyiqa 指标默认不可微**：`InferenceModel.forward` 用 `torch.set_grad_enabled(self.as_loss)` 门控，默认 `as_loss=False` → lpips/clipiqa 输出全 detached（`grad_fn=None`）。做损失必须 `metric.as_loss = True`（权重仍 requires_grad_(False)）。**之前 3 次"训练"只有 L1 在驱动，lpips/clipiqa 损失全是死代码。**
+- ⚠️ 256 patch 上的 clipiqa 与 4K 整图 clipiqa 严重脱节（训练批 0.74 vs 4K 0.23）——clipiqa 作损失会拉出"过度锐化"伪影且不转移。**LPIPS-only 训练反而自然得到高 clipiqa（5k 时 0.492 > GT 0.462）**
 
 ### 其他
 - **51.89 提交的 100 张 jpg 是 q75 保存的**（HYPIR test.py 默认 save）；已补丁 quality=98（`D:/models/hypir_code/.../test.py`）→ 若走 HYPIR 回退路径必须重渲染

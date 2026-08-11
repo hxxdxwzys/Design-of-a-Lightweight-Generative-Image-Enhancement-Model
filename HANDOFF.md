@@ -181,6 +181,9 @@ python test.py --base_model_type sd2 --base_model_path D:/models/sd21base --mode
 - 验证: `D:/tmp_timing/net_infer.py --mode val`（512 tile 重叠羽毛融合，q98 + 公式质量分）
 - **最佳 ckpt = net_s6000**（5k-10k 间振荡的峰值）：3-val 质量分量 27.6（HYPIR 23.9）；官方 100 张上实际质量远超本地代理估计（87.32 − 速度分量 ≈ 40-50，官方测试集退化可能更重、CNN 相对优势更大）
 - 出图: `D:/models/cnn_out_s6k/`（100 张 4K q98）；提交件 `D:/models/Track2_MetricNet1105x_Remay_13000000000.zip`（514MB）
+- ⭐ **第二轮集成发现（2026-08-11 深夜）**：多 ckpt 输出 RGB 平均 → s6000+s9000 集成 = 质量分量 **29.6**（单 s6000 27.6；clipiqa 0.548→0.599，lpips 0.358→0.357，集成消除 ckpt 特定伪影）。集成出图 `D:/models/cnn_out_ens69/`（100 张 q98）；提交件 `D:/models/Track2_MetricEns69_Remay_13000000000.zip`（493MB，待提交）
+- 测试集 LQ clipiqa 分布: mean 0.279（0.10~0.63，方差大——有近干净图，CNN 对易图可能掉分，逐图 Δ 分析中）
+- pyiqa lpips 在 4K 全分辨率算（无内部下采样）→ 训练 patch 越大与 4K 越对齐；512 patch 训练已启动过但被 HYPIR 渲染挤掉，待重跑
 - ⚠️ pyiqa 输入必须严格 (0,1)（fp16 下 1−1e-4 舍入回 1.0，须在 fp32 域 clamp）
 - ⚠️⚠️ **pyiqa 指标默认不可微**：`InferenceModel.forward` 用 `torch.set_grad_enabled(self.as_loss)` 门控，默认 `as_loss=False` → lpips/clipiqa 输出全 detached（`grad_fn=None`）。做损失必须 `metric.as_loss = True`（权重仍 requires_grad_(False)）。**之前 3 次"训练"只有 L1 在驱动，lpips/clipiqa 损失全是死代码。**
 - ⚠️ 256 patch 上的 clipiqa 与 4K 整图 clipiqa 严重脱节（训练批 0.74 vs 4K 0.23）——clipiqa 作损失会拉出"过度锐化"伪影且不转移。**LPIPS-only 训练反而自然得到高 clipiqa（5k 时 0.492 > GT 0.462）**

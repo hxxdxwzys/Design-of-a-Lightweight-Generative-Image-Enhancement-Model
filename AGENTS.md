@@ -73,7 +73,7 @@ python eval.py --pred-dir ../赛题二/验证集 --pred-pattern '*_lq.*' \
 
 ## 云 GPU 服务器（训练/出图/测速在此）
 - **腾讯云 CVM**，实例 `GN10Xp.2XLARGE40`（Tesla **V100 32GB**，10核40G），香港二区，按量计费。
-- **公网 IP：43.135.33.107**　**密码：w8TDDMiW7yRL!Us**　SSH 端口 22。
+- **公网 IP：43.135.33.107**　SSH 端口 22。（密码见本地 `.secrets`，不入库；⚠️ 历史提交曾含密码，相关服务器已弃用/应改密）
 - 镜像为 TencentOS Server 4 **纯系统（无 CUDA）** → 需先装 NVIDIA 驱动 + CUDA 12.x + PyTorch(cu121)。
 - 数据盘 500G 挂载点待确认（通常 `/data`）。香港区访问 HuggingFace/GitHub 顺畅。
 - ⚠️ **本文件含服务器密码，严禁打入提交 zip 或外传**；用完/换机后改密。

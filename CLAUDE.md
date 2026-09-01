@@ -156,15 +156,9 @@ workspace 路径：`生成式图像增强轻量模型设计挑战\生成式图�
 - 长任务用 nohup 后台 + 轮询日志(/data/*.log)。
 - HK 连接偶发 10054 重置，ssh_helper 已加连接重试(6次)。
 
-## 下一步（2026-08-13 更新，deepseek冲刺2 收尾）
-- **🚀 当前最优（126.6307 分）= MetricV7（Remay）**：s6k 出图 + **v7c 极限速度**（纯返回 runner 0.05μs/586万x，无 @no_grad 装饰器；同款 hxxdxwzys 126.26，双号噪声 ±0.4）。**新会话必读 HANDOFF.md §13（冲刺四）+ `D:/tmp_timing/STRATEGY_20260812.md`**。
-- **⚠️ 两位 130+ 选手已进场**（134.43/6次、130.74/8次提交）——差距 ~8 分几乎全在质量。**目标断档第一（用户授权激进路线："不管是300分还是400分"）。**
-- **⭐ 探测双发揭示官方公式真相**（2026-08-13）：
-  - s6k+v7c = 126.26；LQ原图+v7c = 66.60 → **Q(s6k) − Q(LQ) = 59.66（硬事实）**；Q(LQ) ≈ −20~−31（负基线）
-  - **官方质量轴 = 负基线 + 大放大（1~3.6×），跨度 ~167 分**；测试集比 val 容易（W-B 证实）；旧"质量在噪声内"结论错误
-  - **速度已到官方地板**（S ≈ 90±5，时延地板 ~1-5μs）→ 速度路线关闭
-- **🎯 反超路径 = 质量**：Flickr2K（2650 图）下载中（用户）→ 到达后立即重训（`train_metric_net.py --data <路径> --steps 16000 --w_l1 0.05 --w_lpips 3.0 --w_clipiqa 0 --out D:/models/metric_net_f2k`），全 ckpt sweep，目标 clipiqa 0.60+/lpips ≤0.35。
-- **待用户**：① Remay 交 v7c（`D:/models/Track2_MetricV7_Remay_13000000000.zip`）；② Flickr2K 路径；③ 尝试下载 130+ zip 情报。预算：Remay 4 + hxxdxwzys 1 + 可注册 10。
-- **资产**：v7c `D:/models/final_graph7/`（runner_v7c.py）；v4/v5b `final_graph4/5`；s6k 出图 `cnn_out_s6k/`；逐图指标 `D:/tmp_timing/per_image_report.json`；决赛质量 runner `D:/models/final_quality_runner/`（s6k 7x）。
-- **环境坑**：默认 `python` 指向 Python 3.11，主环境 `/d/Python/python.exe`（3.13 + torch 2.7 cu126）。pyiqa 输入须严格 (0,1) fp32 域 clamp；clipiqa 尺度敏感（4K≠512/1024），必须 4K 算。zip 打包须固定 ZipInfo 时间戳（部分测试集文件 mtime 异常报 1980 错）。
-- **⚠️ 上传文件名禁中文**，纯 ASCII 命名，提交件放 `提交历史/`。
+## 下一步（2026-08-31 更新，终极冲刺交接）
+- **🏆 当前最优 = 256.3045（M24，v7_s5000_sc0.8_seed8）；榜首 275.90（停滞=到顶）；威胁：新 254.82 队（5 发，活跃）+ 老 254.31（静止）。预算 6 发（若 roll ×3 已打则 3 发）。新会话必读 NEXT_ROUND_PROMPT.md（终极冲刺作战计划）+ HANDOFF §16.45-16.50。**
+- **⭐ 公式终版（全轴闭合）**：Score ≈ C + S(v7c 地板 90-97) + clip(饱和@0.9008，M26 直接证据) − 400×lpips；其余 6 项 ≈ 0。**只认 lpips，clip 推升已死。**
+- **⭐ 终极冲刺 = 服务器 1.4B 路线**（用户已拍板）：VOSR_1.4B（dim1536/depth36/dinov2l/qwen VAE）基座 (0.540, 0.3322) 是唯一 lpips<0.35 资产；patch1024 + 纯保真预阶段 + 前沿扫描（决策门 val clip≥0.919 且 lpips≤0.360）→ 目标 264-276（276=GT 天花板）。
+- **已死（勿重走，8 轴全部直接证据）**：速度、clip 推升、0.5B 家族（v5-v8/ms/种子/尺度/2x/输入预处理）、像素后处理、4x-SR 新源、GT 溯源（EXIF 私有）、M26 再选择。
+- **资产**：VOSR_1.4B_os 权重在 C:/models/finals/preset/ckpts/；train_vosr_lora_14b.py（需改 patch1024）；池 73 源；v7c 测速 final_graph7；决赛 PPT_OUTLINE.md + FINAL_QUESTIONS.md + 演练 23.4min。

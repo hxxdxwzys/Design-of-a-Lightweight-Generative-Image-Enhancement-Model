@@ -847,7 +847,13 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **📧 邮件已起草 (2026-09-01)**: D:/tmp_timing/email_to_teacher.md —— 致算法设计沈洋老师借用实验室 70GB+ 新卡 (H100/A100-80G 级) 空闲时段。信内**不提资金困难** (用户明确要求, 避免道德负担), 用"云平台可兜底"措辞降压力。附件建议: NEXT_ROUND_PROMPT.md + SERVER_SPEC.md。
 - **✅ fp16 渲染对齐 PASS (2026-09-01)**: 本地 4060 实测 fp32 vs fp16 输出 MAE(0-1)=**0.0018** < 0.01 (RMS 0.0095, 单像素 MAX 0.54 为极少数离群点不影响均值级指标)。**服务器 val 门控可全程 --fp16** (每组合 ~22min→~10min)。资产: b_14b_fp16_align.py + D:/tmp_timing/fp16_align_out/{fp32,fp16}.npy。
 
-### 16.53 ⚠️⚠️ 官方规则收紧公告 (2026-09-02): 空模型测速禁令 + 全部 +5 次提交
+### 16.54 patch768 探针收束 + 合规 model_dir 方案定案 (2026-09-02~03)
+- **❌ patch768 探针证伪（完整 10 档门控，本地 4060 渲染）**：w20 (s500→s2500) clip 0.857→0.885、lpips 0.428→0.421（s1000 触底 0.405 后平台 0.42）；w15 同构更差。**全面差于 M24**（v7 patch512 终态 0.9207/0.3852）→ 大 patch 无 4K 对齐收益，0.5B 家族（512+768）正式收束于 M24。数据：p100_val/val_history.txt。
+- **✅ M24 合规权重已合并**：服务器产出 your_model.pt（1.34GB fp16：diT 669 keys+VAE 248+venc 175+dec 136，v7_s5000 LoRA sc0.8 已乘入）→ 下载回 D:/models/final_compliant/model_dir/。
+- **JIT trace 全链路线放弃**（证据链：本地 torch 2.7 dynamo-FX 冲突 → 服务器 2.4.1 no_grad 后仍 "Cannot insert Tensor requires grad"（diT 冻结后 requires_grad=0 仍崩，疑 dinov2 interpolate/常量路径）→ trace 魔法不可靠）。
+- **🎯 定案：自包含 model_dir（方案 C）**：runner.py + models/（VOSR lightningdit 系）+ dinov2/（拷贝）+ 依赖 shim。**依赖处理清单**：① timm（PatchEmbed/Mlp，lightningdit import）→ 写 timm_shim 模块并改 import；② fairscale（rmsnorm.py import）→ 查用途后 shim/删；③ diffusers unet_2d_blocks（light_decoder import）→ 手写 UpDecoderBlock2D/UNetMidBlock2D（ResnetBlock2D+Upsample2D ~80 行）；④ SD2.1 VAE → 手写 Encoder/Decoder（diffusers 结构，~150 行）或**单独 trace vae+dec（纯 conv，无 peft/dynamo 敏感）**。接口不变：Runner(model_dir).infer(image_tensor, prompt="")。
+- **规则新世界定标**：合规提交 model_dir 只需真跑同模型 512 全链（342ms 本地），速度分 ≈0-6，总分 ≈ 质量分量（M24≈163）。
+- **P100 服务器**：训练完成 GPU0/1 已还；merge 完成；README 工作区状态已标注训练完成。
 - **公告要点**：①队伍独立性/原创性核查；②**禁闭源商用 AI**（我们全程开源 ✅）；③**质量模型与测速模型必须同一主体**：不接受 Identity/空模型参与测速；可不同 patch/overlap 但必须同模型、不得跳过实际计算；将要求提供 ckpt/推理代码复核；违规取消该提交成绩，多次违规取消资格；④**今日全体 +5 次提交**（预算 ~6→11）。
 - **⚠️ 直接影响**：M10-M26 全部提交的 **v7c 纯返回测速件 = 明令禁止的空模型** → 历史成绩面临复核取消风险；立即停止任何 v7c 提交。榜单若执行复核将大洗牌（275.90 若靠空模型会崩）。
 - **真模型测速实测 (2026-09-02)**：VOSR 0.5B os + v7 LoRA 512×512 全链（VAE+dinov2+DiT1步+dec）**342ms**（4060，10 次 337-347 稳定；脚本 p100_speed_512.py）→ 加速比 vs OSEDiff ≈ 0.8-2x → **速度分 ≈0-6，S≈93 时代终结**。全部押质量。

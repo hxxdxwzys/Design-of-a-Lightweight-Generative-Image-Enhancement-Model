@@ -847,6 +847,17 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **📧 邮件已起草 (2026-09-01)**: D:/tmp_timing/email_to_teacher.md —— 致算法设计沈洋老师借用实验室 70GB+ 新卡 (H100/A100-80G 级) 空闲时段。信内**不提资金困难** (用户明确要求, 避免道德负担), 用"云平台可兜底"措辞降压力。附件建议: NEXT_ROUND_PROMPT.md + SERVER_SPEC.md。
 - **✅ fp16 渲染对齐 PASS (2026-09-01)**: 本地 4060 实测 fp32 vs fp16 输出 MAE(0-1)=**0.0018** < 0.01 (RMS 0.0095, 单像素 MAX 0.54 为极少数离群点不影响均值级指标)。**服务器 val 门控可全程 --fp16** (每组合 ~22min→~10min)。资产: b_14b_fp16_align.py + D:/tmp_timing/fp16_align_out/{fp32,fp16}.npy。
 
+### 16.52 📧 沈老师回复 + P100 方案落实 (2026-09-01)
+- **老师回复**：组内 GPU 主攻 LLM/RL 无余量（4090 排满、Pro5000 采购中）；**提供教学服务器 2× P100 16GB 临时账号**（相对空闲），要求先落实 sm_60 兼容性。
+- **✅ sm_60 兼容性已落实（证据）**：torch **cu124 线 wheel（2.5/2.6 +cu124）内置 sm_60 SASS kernel**（官方构建矩阵 pytorch_compute_capabilities 实锤：`2.5.1-py3.11_cuda12.4_cudnn9.1.0_0 → sm_50, sm_60, sm_61, ...`）；**cu128+/cu129 弃 Pascal**；CUDA 13 / cuDNN 9.11 / TRT10 弃 Pascal。驱动 ≥550.54 用 cu124，450-549 退 cu118（同样含 sm_60）。pip wheel 自带 cuDNN ≤9.8 无坑。参考：Pascal-Era GPU Survival Guide（D:/tmp_timing/pascal_survival.md + torch_cc_table.md）。
+- **实验定位**：P100 = 降级方案最后一个未试维度 —— **0.5B 家族 patch768/1024 探针**（4060 8GB 只能 patch512；patch 越大与 4K 对齐越好，v14 patch512 失败点必须靠 patch1024 击败）。16GB 装得下 0.5B patch1024 batch1。
+- **速度预期**：P100 无 Tensor Core（V100 才有），fp16 ≈21 TFLOPS ≈ 4060 的 1/5-1/6；patch1024 ≈ 60-100s/步 → 2500 步 ≈ 2-3 天，晚上周末分片跑（暂停续训协议已有）。
+- **已备好**：① train_vosr_lora.py 打 dinov2 离线补丁（compile OK）；② SERVER_P100.md 部署清单（验收/安装/上传/训练命令/纪律）；③ 回复邮件草稿 email_to_teacher_reply.md（兼容性结论+显存新维度+速度预期+需求清单，无退路话术）。
+- **纪律**：P100 太慢 → 训练在 P100、渲染/入池回本地 4060 做；不过门绝不全量渲染；教学系统需要算力秒停。
+- **待用户**：发回复邮件给老师；拿到账号后（IP/端口/用户/密码）先跑 10 分钟验收（nvidia-smi/驱动/python/磁盘/sudo）。
+- **✅ 账号已到位 + 验收完成 (2026-09-02)**：bigdata.dynu.net:9077（凭据见 `.secrets`，不入库）。实际 **4× P100-16GB**（老师以为 2 张，验收发现 4 张）；**GPU0/1 完全空闲（0MiB），GPU2/3 被教学系统 llama-server 占用 → 只用 0/1，勿碰 2/3**。Ubuntu 20.04 / 72 核 / 251GB 内存 / 磁盘 175GB 空闲 / 无 sudo（用户级 conda）/ SFTP 可用（**chroot 到家目录，路径必须相对**）。驱动 535.247 → **torch 2.4.1+cu121**（535≥530 满足 cu121；cu124 需 ≥550 不行；cu121 官方构建含 sm_60）。
+- **✅ 部署管线启动 (2026-09-02)**：train_vosr_lora.py 升级（env 路径覆盖 + --half 基座fp16 + 全状态续训/暂停协议，compile OK）；p100_setup.sh（miniconda+torch cu121+依赖，TUNA 镜像）；p100_upload.py（SFTP 跳过同大小）。上传 ~8GB（0.5B 权重/VOSR 仓库/dinov2+pyiqa 缓存/SD2 VAE/DIV2K 3.4GB）+ 服务器侧 Flickr2K 11.6GB（hf-mirror）。训练计划：GPU0 patch1024 w_clip2.0 / GPU1 patch1024 w_clip1.5，2500 步，~60-100s/步。
+
 ### 16.49 ⭐ 决策: 彩票 roll ×3 (2026-08-31, 用户确认 best-of + 新 254.82 队 5 发)
 - 用户确认: ① 榜单取最优成绩 (best-of) → roll 只加不减; ② 新 254.82 队 5 发 (余 ~5, 活跃威胁, 距 1.48); ③ 老 254.31 (8 发, 余 ≤2, 静止)。
 - **roll 数学 (官方噪声 σ≈0.45-0.75, 同 zip 重交独立测量)**: E[max] — 1 发 +0.2~0.3 / 3 发 +0.5~0.8 / 5 发 +0.7~1.1 (边际递减)。

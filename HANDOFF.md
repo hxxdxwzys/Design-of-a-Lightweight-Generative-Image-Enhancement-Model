@@ -847,6 +847,14 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **📧 邮件已起草 (2026-09-01)**: D:/tmp_timing/email_to_teacher.md —— 致算法设计沈洋老师借用实验室 70GB+ 新卡 (H100/A100-80G 级) 空闲时段。信内**不提资金困难** (用户明确要求, 避免道德负担), 用"云平台可兜底"措辞降压力。附件建议: NEXT_ROUND_PROMPT.md + SERVER_SPEC.md。
 - **✅ fp16 渲染对齐 PASS (2026-09-01)**: 本地 4060 实测 fp32 vs fp16 输出 MAE(0-1)=**0.0018** < 0.01 (RMS 0.0095, 单像素 MAX 0.54 为极少数离群点不影响均值级指标)。**服务器 val 门控可全程 --fp16** (每组合 ~22min→~10min)。资产: b_14b_fp16_align.py + D:/tmp_timing/fp16_align_out/{fp32,fp16}.npy。
 
+### 16.55 合规提交件完成 + 服务器失联事件 (2026-09-03)
+- **✅ 合规 model_dir 完成并验证**：`D:/models/Track2_CompliantM24_Remay_13000000000.zip`（1.79GB：M24 output_dir 100 张 + 自包含 model_dir 43 文件）。自包含方案：VOSR models 拷贝 + **零第三方依赖 shim**（timm/einops/fairscale/diffusers 伪装层 + 本地删 @torch.compile ×5）+ dinov2 推理子集（13 文件逐字节一致）+ vae_shim（SD2.1 VAE+LightDecoder 手抽，与 diffusers 逐位 MAE=0）。**验证链全 PASS**：组件级逐位一致、Runner E2E 326ms、zip 解压模拟官方 harness HARNESS_PASS。Runner 顶部 setdefault TORCHDYNAMO_SUPPRESS_ERRORS=1（无 triton 环境自保）。
+- **✅ 服务器脚本健壮性加固**：p100_guard.sh 综合守护（训练崩溃 240s 内自动从最新存档续训 + 1.4B 下载守护 + GPU 占用防护 + 单例锁）—— **实测通过**（杀 w15 进程 240s 自动恢复 PID 306093）。
+- **⚠️ 服务器失联事件（16:30 起）**：bigdata.dynu.net:9077 被校园网封禁（非服务器故障，老师确认实验一直在跑）。老师提供校园网隧道 `ssh -p 2222 tempuser@10.96.138.171`（10.x 内网，校外不可达，需校园网/VPN）。恢复预案：guard 自愈 + 续训无缝。
+- **P100 双线**：0.5B patch768 续训 2500→6000（断线前 ~s4000，服务器上持续运行中）；1.4B 权重下载中（VOSR_1.4B_os 6GB + Qwen VAE，服务器侧）。
+- **本地磁盘清理**：D 盘释放 10.4GB（div2k.tar/torch_cache.tar/git backup/vosr_lora_smoke 已删，git backup 于远端确认后删）。
+- **1.4B 接棒文件就绪**：train_vosr_lora_14b.py（已入上传清单）+ p100_launch_14b.sh（patch512 batch1 双卡，w_clip 2.0/1.5，2500 步起步）。
+
 ### 16.54 patch768 探针收束 + 合规 model_dir 方案定案 (2026-09-02~03)
 - **❌ patch768 探针证伪（完整 10 档门控，本地 4060 渲染）**：w20 (s500→s2500) clip 0.857→0.885、lpips 0.428→0.421（s1000 触底 0.405 后平台 0.42）；w15 同构更差。**全面差于 M24**（v7 patch512 终态 0.9207/0.3852）→ 大 patch 无 4K 对齐收益，0.5B 家族（512+768）正式收束于 M24。数据：p100_val/val_history.txt。
 - **✅ M24 合规权重已合并**：服务器产出 your_model.pt（1.34GB fp16：diT 669 keys+VAE 248+venc 175+dec 136，v7_s5000 LoRA sc0.8 已乘入）→ 下载回 D:/models/final_compliant/model_dir/。

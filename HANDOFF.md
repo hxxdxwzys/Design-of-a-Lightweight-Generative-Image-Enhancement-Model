@@ -886,6 +886,25 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - 观察: 254.82 若 >255.5 即逼近, 告知; 254.31 静止。
 
 
+### 16.56 1.4B 首训完成 + 续训中 + 全面交接 (2026-09-04 08:55)
+> **新会话必读: NEXT_ROUND_PROMPT_20260904.md (首轮提示词, 整段可用)。本段为状态快照。**
+
+- **🏆 规则新世界 (2026-09-02 公告)**: 空模型测速禁令 → **v7c 时代全部作废** (历史 M10-M26 成绩面临复核取消); 速度分 ≈0-6 (真模型 342ms/512); **纯质量战场**, 质量分量 M24≈163。完整分析: `RULE_UPDATE_20260902.md`。预算: +5 后 ~11 发, 全部合规。
+- **✅ 合规提交件就绪**: `D:/models/Track2_CompliantM24_Remay_13000000000.zip` (1.79GB: M24 output_dir 100 张 + 自包含 model_dir)。自包含 runner 方案 (零第三方依赖 shim: timm/einops/fairscale/diffusers 伪装 + dinov2 子集 13 文件 + vae_shim 9 文件, 组件逐位验证 MAE=0, zip 解压模拟官方 harness PASS)。**随时可交 (未交)**。
+- **✅ 0.5B 家族正式收束**: patch768 长训 6000 步完成 (w20/w15) → lpips 平台 0.42 铁证 → 0.5B (512+768+全 w_clip/scale/seed) 全部收束于 M24。
+- **🎯 1.4B 首训完成 (2500 步, 昨晚 23:38) + 双卡续训中 (2500→6000, 08:53 启动, ~12:30 完成)**。全档门控 (本地 4060 fp16):
+  - w20: s500(0.738,0.351) s1000(0.803,0.364) s1500(0.844,0.384) s2000(0.841,0.380) s2500(0.853,0.388)
+  - w15: s500(0.736,0.355) s1000(0.786,0.375) s1500(0.819,0.389) s2000(0.837,0.395) s2500(0.845,0.397)
+  - 形态: lpips 起点 0.351 (低于 0.5B 地板 0.379, 基座天赋) 但随 clip 推升恶化; clip 2500 步仅 0.853 → 续训 6000 验证能否到 0.90。
+- **P100 教学服务器 (沈老师提供)**: 校园网隧道 `10.96.138.171:2222` (tempuser/temp76, 域名 bigdata.dynu.net:9077 被校园网封禁); 4×P100 只用 GPU0/1 (2/3 教学系统)。代码 `~/p100/{tools,VOSR,weights,data,runs,logs}`; 守护 `p100_guard.sh` (崩溃 240s 自动续训); 训练全状态续训协议 + PAUSE.flag。
+- **本地自动链**: `p100_watch_local.py` 守护 (健康=进程在 AND (心跳新 OR GPU忙), 防误杀长渲染) → `p100_autoval_14b.py` (轮询新档→子进程化下载 300s 超时→4060 fp16 渲染→门控, 心跳每轮/渲染前后)。教训: already_done 跨家族误判 (加 vpre)、sftp.get 挂起 (子进程化)、守护误杀长任务 (GPU 忙判定)。
+- **连接配置**: p100_exec.py/p100_upload.py 默认 `10.96.138.171:2222` (env P100_HOST/PORT 可覆盖)。
+- **1.4B 训练文件**: train_vosr_lora_14b.py (argparse 参数化, 需显式传路径) + p100_resume_14b.sh (续训命令模板)。步速 3.7s/步 (P100, 意外快; v14 在 4060 15.3s 是显存瓶颈)。
+- **待办**: ① 续训 12:30 完成 → autoval 自动门控 s3000-6000 → 1.4B 战略终判 (scale 插值 / w_clip 3.0 / 提交决策) ② 榜单更新定标 (规则洗牌) ③ 决赛准备 (PPT 去速度神话)。
+- **资产**: M24 zip (提交历史/), v7 LoRA (D:/models/vosr_lora/v7/lora_s5000.pt), M24 合并权重 (D:/models/final_compliant/model_dir/your_model.pt), 合规 zip (D:/models/)。
+
+
+
 - **2026-08-25 补记: 准备全部完成**。SD2.1 组件全到位 (unet 3.3GB safetensors 等, 冗余 .bin 已清 6.7GB); FiDeSR CPU 冒烟 SMOKE_ALL_OK: 0.39 兼容补丁 4 处 (autoencoder_kl: FromOriginalVAEMixin->FromOriginalModelMixin 别名; unet_2d_condition: 移除 PositionNet 导入 + unet_2d_blocks->models.unets.unet_2d_blocks; fidesr.py: 新增 merge_lora_into_unet 直接合并 258 模块 + 绕开 add_adapter/set_weights_and_activate_adapters/merge_and_unload)。全链验证: UNet 372 权重 + LoRA 合并 + LRRB + 小前向 + CLIP + VAE。
 - **等待用户'开始'** -> b_fidesr_val.py 跑 val 3 (upscale=1, lf 0.2/hf 0.3 起步) -> 门控 (clip>=0.90, lpips<=0.376) -> 不过则 lf/hf/upscale4 旋钮扫描。OFTSR DIV2K 一步 357MB 备选就绪。
 

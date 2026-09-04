@@ -928,6 +928,15 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **交接守护 bug**: w30_handoff.py 用 `ls <dir> | tail -1` 命中了字母序更大的 train.log → s6000 判定恒 False, 12:30 误报 CRITICAL (w30 已手动补启动, 无损失)。修复版 w30_monitor.py (lora_s*.pt glob) 已在岗 (后台 job), 盯 w30/w31 至 2500。
 - 资产: 合规 M24 zip `D:/models/Track2_CompliantM24.zip` 待命 (重开即交); w30 launch 脚本 ~/p100/tools/p100_w30_launch.sh; 监控 w30_monitor.py。
 
+### 16.59 w30/w31 完成 (15:04) + autoval done-set bug 修复 (2026-09-04 15:45)
+> 15:34 pwsh-21 CRITICAL 告警 → 排查后是**两重误报/真 bug 叠加**, 现全部澄清并修复。
+
+- **✅ w30/w31 双双正常完成 2500 步** (15:04:26/15:04:37, lora_s2500.pt + [done]); GPU0/1 已释放; 服务器 uptime 38 天无重启; PAUSE.flag 不存在。13:30-15:32 是**校园网隧道断连** (autoval 与 monitor 均连不上, 服务器本身无恙 — 训练照常跑完)。
+- **w30 s500 已门控 (13:08): (0.7442, 0.3576)** — 与 w20 s500 (0.738,0.351) 同构 (w_clip↑ → clip 略高 lpips 略劣)。
+- **🐛 autoval done-set 跨 variant 碰撞 (真 bug, 已修)**: `done.add(name)` 只记文件名不带 variant → w20 先门控的 `lora_s3500.pt` 等让 w15/w31 同名档被误跳过。后果: w15 s3500-s6000 (6 档) 与 w31 s500-s2500 (5 档) 从未门控。修复: done 键控 `{variant}_{name}` + already_done 改精确 outdir 匹配 (删 substring 匹配)。15:38:54 重启生效, 15 档补测中 (job pwsh-22 盯 15/15)。
+- **🐛 monitor ls 字母序坑 (二次踩)**: `ls | tail -1` 字母序下 `lora_s500.pt` > `lora_s2500.pt` ('5'>'2') → 误判未完成。w30_handoff.py 也曾被 train.log 坑。**教训: 服务器文件列表一律 `ls lora_s*.pt | sort -V | tail -1` 或按修改时间 `ls -t | head -1`; 完成判定以日志 `[done]` + save 行为准。**
+- 待办: 15 档门控落地 (~16:45-17:00) → 1.4B 终判 (预计: 全点劣于 M24, 收束, 等重开交合规 M24)。
+
 
 
 

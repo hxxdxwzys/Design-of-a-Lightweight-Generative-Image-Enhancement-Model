@@ -908,6 +908,16 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **2026-08-25 补记: 准备全部完成**。SD2.1 组件全到位 (unet 3.3GB safetensors 等, 冗余 .bin 已清 6.7GB); FiDeSR CPU 冒烟 SMOKE_ALL_OK: 0.39 兼容补丁 4 处 (autoencoder_kl: FromOriginalVAEMixin->FromOriginalModelMixin 别名; unet_2d_condition: 移除 PositionNet 导入 + unet_2d_blocks->models.unets.unet_2d_blocks; fidesr.py: 新增 merge_lora_into_unet 直接合并 258 模块 + 绕开 add_adapter/set_weights_and_activate_adapters/merge_and_unload)。全链验证: UNet 372 权重 + LoRA 合并 + LRRB + 小前向 + CLIP + VAE。
 - **等待用户'开始'** -> b_fidesr_val.py 跑 val 3 (upscale=1, lf 0.2/hf 0.3 起步) -> 门控 (clip>=0.90, lpips<=0.376) -> 不过则 lf/hf/upscale4 旋钮扫描。OFTSR DIV2K 一步 357MB 备选就绪。
 
+### 16.57 1.4B w30 探针自动化部署 (2026-09-04 10:00, deepseek 会话; 结果待续)
+> 会话 09:49 检查进度: w20/w15 续训 2500→6000 双双推进到 s3400 (3.7s/步, ETA ~12:30)。autoval 已门控全档, 趋势 = clip 平台 0.85-0.86 + lpips 漂向 0.39, 斜率推算 w_clip 轴无法过门 (clip 0.90 时 lpips 已 ~0.41)。用户确认: ① 榜单变化稍后主动告知 ② **启动 w_clip 3.0 新训探针**。
+
+- **已部署 (全自动, 无需值守)**:
+  - 服务器: `~/p100/tools/p100_w30_launch.sh` (新训 2500 步: GPU0 p512_14b_w30 w3.0 seed0 + GPU1 p512_14b_w31 w3.0 seed1, 与首训同配置仅 w_clip/seed 不同)
+  - 本地: `w30_handoff.py` 后台守护 (等 w20/w15 进程消失 + 双 lora_s6000.pt + 2 轮稳定 → 自动 launch → verify; 崩溃/超时 7h CRITICAL 退出) — 本次会话后台 job
+  - autoval VARIANTS 已扩至 4 variant (w20/w15/w30/w31), 09:57:44 已重启生效; w30/w31 的 s500-s2500 自动门控无需干预
+- **结论预判**: 斜率分析 w30 过门 (clip≥0.919 & lpips≤0.360) 概率极低, 探针价值 = 封闭 w_clip 轴留证; 若 6000 + w30 全档确认平台 → 1.4B 线收束, 动作 = 首发合规 M24 (`D:/models/Track2_CompliantM24.zip` 1.67GB, 提交时改纯 ASCII 名 + 电话) 校准官方质量分。
+- 教训: p100_guard.sh 只守护 p768 旧线 (1.4B 续训崩溃无人恢复) — 本次 handoff 守护兼做崩溃告警。
+
 
 
 

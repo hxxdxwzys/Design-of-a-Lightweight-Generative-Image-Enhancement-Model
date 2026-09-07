@@ -1037,6 +1037,14 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **战略 (以不变应万变, 操作化)**: ① 资产池 > 单点押注: 世代 3 继续 + 每个候选版本建全 8 指标档案 (公式未知 → 全档案是唯一决策依据) ② 提交序列 = 判别点设计: 第 1 发 M24 合规件 (健康轴优基线) → 第 2 发 m0s1-sc0.93 (lpips 主轴) → 两点官方分差直接判别 lpips vs 健康轴权重 → 第 3 发起按 F' 决定 ③ 预算纪律: 剩余次数未知 (欺诈取消是否返次未知), 每发必带判别目的 ④ 官方重开前只备弹药, 不抢跑。
 - **世代 3 继续的理由强化**: 多版本资产 = 判别点组合; w1.8 线若修好 dists → 第三画像 (健康轴判别) 就位。
 
+### 16.69 🔧 合规件提交报错修复: 官方环境 Py<3.10 的 `X | None` 注解兼容 (2026-09-07 10:30)
+> 用户首次提交合规件 M24 报错: `Failed to pass the speedup test: TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'` (非欺诈检测失败)。该错误 = **运行时求值的 `X | None` 类型联合注解在 Python 3.8/3.9 崩** (type.__or__ 是 3.10 才加的)。本地 3.13 PASS/官方 FAIL 的经典环境差异。
+
+- **修复 (D:/models/final_compliant/model_dir)**: 42 个 .py 全部加 `from __future__ import annotations` (注解字符串化, 3.7+ 兼容)。踩坑: ① v1 脚本把 future 插到 UTF-8 BOM 与 docstring 之间 → BOM 变行中字符 SyntaxError ② v2 用 utf-8-sig 只剥文件头 BOM, 而 BOM 已被挤到中间 → 残留 ③ **v3 正解: 清除所有位置 U+FEFF + 去重 future + tokenize 定位 docstring 后插入 + 统一无 BOM UTF-8 写回**。
+- **验证链**: py_compile 42/42 PASS → E2E 冒烟 (Runner import 2.7s + 512 infer OK, dynamo 警告为本地无 triton 噪音) → 重打包 PACK_PASS (1.79GB, 100 jpg + 43 model_dir 文件) → zip 内 42/42 含 future + 0 BOM + 无 match/case 高版本语法。
+- **新 zip 就绪**: `D:/models/Track2_CompliantM24_Remay_13000000000.zip` (可重交)。若再报错, 新错误信息发回继续修 (下一候选: 运行时 `|` 表达式/typing 运行时依赖)。
+- **教训**: ① 自包含包必须做低版本 Python 兼容审查 (future annotations 是标配) ② 修 BOM 文件时先统一字节级处理 ③ 环境差异类报错先查 Python 版本敏感语法。
+
 
 
 

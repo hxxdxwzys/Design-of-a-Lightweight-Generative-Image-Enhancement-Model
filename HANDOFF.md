@@ -1077,6 +1077,15 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **P2 待办**: package_compliant.py 参数化 (现硬编码 M24)。
 - **关键信息**: 服务器 v7 lora 备份在位 (~/p100/tools/v7/lora_s5000.pt 67MB); qwen VAE 无 attention (纯 conv) 是裁剪可行根因; venc pos_embed 518 (vitl14 官方) + dinov2_size 448 (推理 resize)。
 
+### 16.73 战备完成度 (2026-09-08 12:40): m0s1 包全验证链 PASS + 预建队列运行中
+> 用户确认"安排前两项" (g3/m0s7 包预建 + 渲染质检)。渲染/merge/打包/质检/harness 模拟全部参数化 (render_test100.py/merge_14b.py/package_generic.py/qc_test100.py/harness_sim_zip.py)。
+
+- **✅ m0s1-sc0.93 提交包完成**: `D:/models/Track2_14B_M0S1_SC093.zip` (3.62GB: 100 jpg q95 + model_dir 44 文件)。验证链: 100 张渲染 (164.6min 无跳过) → QC_PASS (亮度 45.9-177.7/std 24-78.6 健康) → zip 打包 PACK_PASS → **zip 级 harness 模拟 HARNESS_ZIP_SIM_PASS** (解压→纯净 import 5.4s→512 infer→输出正常)。**可交**。
+- **🔄 g3w18s1 预建运行中** (12:25 启动, render tag=g3w18s1 sc0.93, ETA ~16:30) → merge (merge_14b.py 参数化) → 组装 model_dir (拷 m0s1 包公共文件+换 your_model.pt) → 打包 → zip 模拟。
+- **⏳ m0s7-sc1.0 预建排队** (g3 完成后, sc1.0) → 同流程。
+- **四包目标**: M24 (✅ 可交) + m0s1 (✅ 可交) + g3w18s1 (~今天) + m0s7 (~今天) — 官方开放随时按判别序列提交。
+- **渲染脚本经验**: case6/93 首试 SSL 超时 (渲染内某网络调用) 重试即过; case20 曾卡死 1h (重试机制已加, 2×900s); 平均 ~2min/张 4K fp16。
+
 
 
 

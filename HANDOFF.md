@@ -1086,6 +1086,21 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **四包目标**: M24 (✅ 可交) + m0s1 (✅ 可交) + g3w18s1 (~今天) + m0s7 (~今天) — 官方开放随时按判别序列提交。
 - **渲染脚本经验**: case6/93 首试 SSL 超时 (渲染内某网络调用) 重试即过; case20 曾卡死 1h (重试机制已加, 2×900s); 平均 ~2min/张 4K fp16。
 
+### 16.74 🏁 四包战备全满 (2026-09-08 19:55)
+> g3w18s1 + m0s7 预建完成, 四包全部通过 zip 级 harness 模拟。
+
+- **四包清单 (D:/models/)**:
+  | zip | 大小 | 模型 | val (clip, lpips, dists) | 验证 |
+  |---|---|---|---|---|
+  | Track2_CompliantM24.zip | 1.67GB | 0.5B v7-sc0.8 | (0.9207, 0.3852, 0.3299) | HARNESS_SIM_PASS |
+  | Track2_14B_M0S1_SC093.zip | 3.37GB | 1.4B m0s1-s4000-sc0.93 | (0.9261, **0.3571**, 0.3414) | HARNESS_ZIP_SIM_PASS |
+  | Track2_14B_G3W18S1_SC093.zip | 3.35GB | 1.4B g3w18s1-s4500-sc0.93 | (0.9251, 0.3618, **0.3192**) | HARNESS_ZIP_SIM_PASS |
+  | Track2_14B_M0S7_SC10.zip | 3.34GB | 1.4B m0s7-s5000-sc1.0 | (0.9229, 0.3571, ~0.34) | HARNESS_ZIP_SIM_PASS |
+- **每包内容**: output_dir 100 张 4K jpg (q95, 逐包 QC_PASS 无坏图) + model_dir 44 文件自包含 runner (3.49GB fp16 pkg)。
+- **过程事件**: 磁盘满 (D: 0.2GB) → 清理 harness 临时 + render_png + sweep_test_out(31.6GB) + new_src(5.9GB) 释放 42GB; 双 driver 并行 (旧 driver 磁盘满时卡死) → 杀旧保新; 渲染偶发 SSL 超时/卡死 → 重试机制全部自愈, 无 SKIP。
+- **提交序列 (重开时)**: ① M24 (校准弹) → ② m0s1-sc0.93 (lpips 主轴判别, 预期 +11 分) → ③ g3w18s1-sc0.93 (dists 加权判别) → ④ m0s7 (备选/免 scale)。每发分数喂 f_invert.py 反演 F'。
+- **剩余**: 官方通道/欺诈名单/提交次数 (等用户); 决赛材料去速度神话 (入围后)。
+
 
 
 

@@ -1066,6 +1066,17 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **🔄 多阶段探针 m0s1w1 运行中 (20:38 启动, ETA ~22:40)**: 从 m0s1-s4000 resume w_clip 2.0→1.0 续至 6000 (resume 368 keys 确认, T_max 6000 一致)。假设: clip 已高位 (0.934) 后弱化推力 → lpips 回落而 clip 守住。框架标注的最后未试杠杆。
 - **⚠️ 资源调度教训**: 启动本地渲染前必须确认 autoval 空闲 (20:00 双渲染并行爆内存事件); autoval 渲染失败会 done.add 永久跳过 (v3 缺陷, 遇失败需手动清 gate 重测)。
 
+### 16.72 战备补全 (2026-09-08 08:10): P0a/P0b 完成 + P1 1.4B 合规包主体完成
+> 战备审计缺口修复: A(1.4B 合规包) B(F' 反演器) C(M24 当前档案) D(打包参数化) E(100张渲染)。
+
+- **P0a ✅ M24 zip harness 模拟重验**: 修复版 Track2_CompliantM24.zip 解压→纯净环境 import (17.4s)→512 infer→输出校验 PASS (HARNESS_SIM_PASS)。
+- **P0b ✅ M24 当前管线档案 (重要修正)**: **M24 lpips = 0.3852 (非历史 0.3789!)** clip 0.9207/dists 0.3299/musiq 47.4/niqe 5.20/psnr 24.54/ssim 0.737。**管线漂移 +0.006 lpips → m0s1-sc0.93 优势实为 0.028 lpips ≈ +11 分 (非 8.7)**。判别三角基准全面修正。
+- **P0c ✅ f_invert.py**: F' 反演器框架 (候选公式族 H1-H4 + 最小二乘 + 判别设计), 等官方分填充。
+- **P1 ✅ 1.4B 合规包主体 (final_compliant_14b/model_dir/)**: ① merge_14b.py → your_model.pt 3.49GB (14b_compliant_v1: diT 853 keys (LoRA sc0.93 合并) + qwen vae 186 + dinov2l 343) ② qwen_vae_lite.py 自包含裁剪 (去 diffusers, **与官方逐位一致 MAE=0**) ③ runner.py (vit_large/dinov2_size 448/layer [17]/qwen mode() 归一化/无 dec) ④ future annotations 43 文件 + 编译全过 ⑤ E2E smoke PASS (512 infer 4.7s, 真实图 std 0.51)。**CPU half 前向是 torch 坑 (卡死), runner 走 GPU half 无碍**。
+- **P1 待办**: zip 组装 (需 P3: m0s1-sc0.93 100 张 4K 渲染 ~2.5-4h) + harness 模拟重验 14b 包。
+- **P2 待办**: package_compliant.py 参数化 (现硬编码 M24)。
+- **关键信息**: 服务器 v7 lora 备份在位 (~/p100/tools/v7/lora_s5000.pt 67MB); qwen VAE 无 attention (纯 conv) 是裁剪可行根因; venc pos_embed 518 (vitl14 官方) + dinov2_size 448 (推理 resize)。
+
 
 
 

@@ -131,7 +131,7 @@ Copy-Item D:\models\Track2_CompliantM24.zip D:\models\upload\Track2_CompliantM24
 
 | # | 任务 | 成本 | 状态 |
 |---|---|---|---|
-| 1 | 三个未试训练轴：rank 8/16 收缩 → w_lpips 2–3 → 早切换多阶段 | 各 6.2 h 双卡（P100 空闲） | 待授权 |
+| 1 | 三个未试训练轴：rank 8/16 收缩 → w_lpips 2–3 → 早切换多阶段 | 各 6.2 h 双卡（P100 空闲） | 🔄 **rank 8/16 已于 2026-09-09 09:56 双卡启动**（`p512_14b_m0s1r8` / `m0s1r16`，ETA ~15:30） |
 | 2 | 全 100 张无参升级（4 包 × clipiqa/musiq/niqe） | ~30 min 本地 4060 | 🔄 运行中（`nr_full100_all.py`） |
 | 3 | VAE 往返扩测 3 → 9 张（lpips 地板成因确认） | ~1 h | 待排 |
 | 4 | 决赛材料去速度神话（`PPT_OUTLINE.md`） | — | 入围后 |

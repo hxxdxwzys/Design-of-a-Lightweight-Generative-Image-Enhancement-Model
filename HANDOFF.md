@@ -1117,6 +1117,23 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **未完成/排队**: ① 三个未试训练轴 (rank 8/16 收缩 → w_lpips 2-3 → 早切换多阶段, 各 6.2h 双卡) ② VAE 往返仅测 3 张 (可扩) ③ 官方消息。
 - **新工具清单 (本轮产出)**: `nr_metrics_test100.py` / `nr_metrics_one.py` / `nr_full100_clipiqa.py` (测试集无参直证) / `vae_roundtrip_tiled.py` (架构上限) / `explore_final.py` (混合上界+亮度归因) / `package_generic.py` / `render_test100.py` (参数化) / `merge_14b.py` (参数化) / `qc_test100.py` / `harness_sim_zip.py`。
 
+### 16.76 🎯 战备复验 + 判别执行器就绪 (2026-09-09 上午, 通道开放前的最后准备)
+> 用户指令: 读 NEXT_ROUND_PROMPT_20260909 → 等官方消息 → 通道开放按判别序列执行。本轮 = 把"执行"这一步工具化/机械化, 使通道一开零思考。
+
+- **四包复验 PASS**: 4 个 zip `testzip()` 全 OK; 结构 = 100 张 4K jpg + 43 (M24) / 44 (1.4B) 个 model_dir 文件; 大小 1.67/3.37/3.35/3.34GB (限 10GB 安全); 磁盘 C 44GB / D 36GB 空闲。
+- **🆕 单一数据源 `D:/tmp_timing/asset_profiles.json`**: 四包 val 8 指标 (含 M24 修正档 lpips 0.3852) + 测试集无参 (100 张 clipiqa / 30 张 musiq+niqe) + 官方分记录槽 + 预算。以后不再在多个脚本里硬编码数字。
+- **🆕 判别执行器 `discriminate.py`**（**破衡权重法**, 不依赖公式点数, 只依赖符号）:
+  - Δ 向量 (m0s1 − M24): lpips **−0.02812** / test clipiqa **−0.02280** / musiq −7.50 / niqe +0.76 / dists +0.0115 / 速度 −1.5
+  - 情景预测: T ≥ 0.9008 (双方 clip 饱和) → **Δ = +9.75 (lpips 主轴)**; T ≤ 0.878 (仅 M24 饱和) → **Δ = −20.48 (M24/clip 主轴)**
+  - 破衡权重: `w_clipiqa = +427.5`（低于则 m0s1 赢）/ `w_dists = −84.1` / `w_musiq = +1.3` / `w_niqe = −12.8`
+  - 判读阈值 **|Δ| ≥ 6 分**（≈8σ）才算显著; 结论自动映射到"1.4B 主线复活 / 补发 ③ / M24 终局"
+- **`f_invert.py` 重写**: 数据源统一到 `asset_profiles.json`（消除与 discriminate.py 的数字分叉），保留 H1–H4 假设最小二乘。
+- **🆕 `SUBMIT_RUNBOOK_20260909.md`**（项目根）: 触发前置确认 → 每发 5 步 SOP → 判别序列（含预测值/破衡权重/决策规则）→ 失败模式修复表 → 每发回传清单 → 预算纪律。
+- **⚠️ 解释器坑（新记录）**: 默认 `python` = `C:\Users\...\Python311`（**无 numpy/torch**），`D:\Python\python.exe` 才是 3.13+numpy2.4.6+torch2.7.0+cu126。所有脚本必须显式用后者（已写入 runbook）。本轮首次跑 nr 脚本即因此 ModuleNotFoundError。
+- **🔄 后台**: `nr_full100_all.py` 把 4 包无参指标从 30 张升级到 100 张（clipiqa/musiq/niqe，断点续跑）→ 为"无参权重"假设与 ③④ 判别提供决定性数据。
+- **状态**: 四包 = 弹药满; 工具 = 就绪; **唯一缺口 = 官方消息**（通道是否开放 / 剩余次数 / 欺诈名单 / 榜单）。
+
+
 
 
 

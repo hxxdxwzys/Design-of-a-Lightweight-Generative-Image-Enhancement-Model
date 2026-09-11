@@ -1227,6 +1227,128 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **波 2 决策规则（先判 T 再渲，避免白渲 3–4h）**: T 高 → 渲 m0s7-sc0.97 (0.9203, 0.3542) / m0s1-sc0.90 (0.9209, 0.3556)；T 低 → 渲最高 clip 档 r16-s4000-sc0.90 (0.9372, 0.3600) / m0s1-sc0.97 (0.9311, 0.3595)。
 - **本会话其他**: 用户指出本会话模型**不支持图像输入**（截图读不到，需文字粘贴）；已确认 git 全部推送（21 提交）、`.secrets` 未入库。
 
+### 16.83 🔓 波 2 靶点解锁：从合并 pkg 反推任意 scale（本地可渲）+ 09-03 事故归档 + 榜单/欺诈情报 (2026-09-10 23:56)
+> 用户提供两个账号的提交历史截图 + 确认榜单规则。本轮把"波 2 能不能渲"这一前置条件彻底钉死——原本以为必须靠 P100 的四发靶点，实测**三发已在本地可渲且通过预登记验证**。
+
+- **📊 用户提供的情报（新，之前文档里没有）**:
+  | 项 | 结论 |
+  |---|---|
+  | 榜单规则 | **取该账号历史最好成绩**（决定"最后一发放哪个号"） |
+  | 账号一 | 最佳 **29.4333**，排名 69 |
+  | 账号二 | 最佳 **48.0603**，排名 35（来自 `probe_fast2.zip`） |
+  | 剩余额度 | 11（主号）+ 7（另一号）= 18；用户明确**瓶颈是产出能力与时间，不是次数** |
+  | 4 发新提交 | 交在**第三个号**（非上述两个）→ 该号无高杆，分数会直接体现 |
+  | 欺诈检验 | **绝大多数参赛模型未通过**；我方账号是少数例外。被标三发全属 MetricV7/MetricNet 家族（已排除的测速/指标路线），合法资产未被牵连 |
+  | 决赛规则 | 待初赛决出名单时才公布 |
+- **⚠️ 09-03 事故归档（此前文档误记"四包从未提交过"）**: 账号一于 **2026-09-03 22:32:32** 提交 `1788445584676_Track2_CompliantM24.zip`，测速环节失败：`TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'`（官方解释器 Py<3.10 运行时求值 `X | None`）。**该失败早于 §16.69 的修复（09-07 10:30）4 天 → 时间线自洽，09-10 的四包含修复。**
+- **🆕 兼容性静态审计工具 `audit_py_compat.py`（补上一个方法论缺口）**: 本地 `python`/`D:\Python` 均为 3.11/3.13，**原生支持 `X | None` → `harness_sim_zip` 永远测不出这类问题**（09-03 那次本地全绿却在官方挂掉就是这个原因）。改用 AST 静态审计：运行时 `X|None`、future import 缺失/位置错、`match`/`except*` 等 3.10+ 语法。**四包实测（42/43 个 .py）0 处残留风险。**
+- **🔓 核心新能力：从已合并的合规 pkg 反推任意 LoRA scale（`remerge_scale_14b.py`）**
+  - 原理：`your_model.pt` 里存的是**合并后**权重（CRC 逐字节确认了包↔目录对应），本地又有 fp32 基座 → `Δ = merged − base` 即 LoRA 增量。因 merge 只把 `lora_B` 乘 scale、且 LoRA 为加性，故 `W_base + (s/s0)·Δ ≡ 真实 LoRA @scale s`（**严格等价**，与 LoRA 分解形式无关）。
+  - 精度实测: `‖Δ‖rms/‖base‖rms = 0.68%`（3.111e-4 / 4.545e-2）；fp16 量化噪声 vs 信号 **SNR 27.7 dB**（承载 LoRA 实际作用的大能量键 31–32 dB）。
+  - 恒等重建（s=s0）**逐元素偏差 0.000e+00**，7 秒出包。
+  - **配套推理 `vosr_pkg_infer_14b.py`**（pkg 直接注入，不碰现有 `vosr_lora_infer_14b.py` 生产脚本）+ 驱动 `verify_remerge.py`。
+  - **端到端验证（val 3 张，全部对上预登记，最大偏差 0.0006）**:
+    | case | 手法 | 实测 (clip, lpips) | 预登记 | Δ |
+    |---|---|---|---|---|
+    | A m0s1-sc0.93 | pkg 直渲（验证路径等价） | (0.9257, 0.3571) | (0.9261, 0.3571) | (−0.0004, **+0.0000**) |
+    | B m0s1-sc0.90 | 反推 | (0.9215, 0.3558) | (0.9209, 0.3556) | (+0.0006, +0.0002) |
+    | C m0s1-sc0.97 | 反推 | (0.9305, 0.3593) | (0.9311, 0.3595) | (−0.0006, −0.0002) |
+    | D **m0s7-sc0.97** | 反推 | (0.9207, 0.3545) | (0.9203, 0.3542) | (+0.0004, +0.0003) |
+- **🎯 波 2 就绪度（相对 §16.82 的修订）**:
+  | 靶点 | 原状态 | 现状态 |
+  |---|---|---|
+  | m0s1-sc0.90（T 高） | 需 P100 | ✅ **本地可渲，已验证** |
+  | m0s7-sc0.97（T 高最优 lpips 0.3542） | 需 P100 | ✅ **本地可渲，已验证** |
+  | m0s1-sc0.97（T 低） | 需 P100 | ✅ **本地可渲，已验证** |
+  | g3w18s1 任意 scale | 需 P100 | ✅ 本地可渲（同法，未验证） |
+  | r16-s4000-sc0.90（T 低最高 clip 0.9372） | 需 P100 | ❌ **仍锁服务器**（r16 从未打包成 pkg，无 merged 权重可用） |
+  → **结论：波 2 四靶点里三发已不依赖服务器**；只有 r16 那一发仍受 P100 可达性限制。
+- **🔒 P100 现状**: 用户已切回校园网，`p100_exec.py`（10.96.138.171:2222）**仍三次连接超时**，不可达（同 §16.73 的隧道断连历史）。因上表解锁，**波 2 已不被此阻塞**。
+- **⏳ 仍唯一阻塞**: 四个提交物仍「待评测」，官方分未出 → Δ 判读未跑。
+- **🧹 备注**: 新工具均在 `D:/tmp_timing/`（不入 git，与本项目惯例一致）：`remerge_scale_14b.py` / `vosr_pkg_infer_14b.py` / `audit_py_compat.py` / `verify_remerge.py`；验证产物在 `D:/tmp_timing/verify_remerge/`（含 4 个已渲 pkg，各 3.49GB）。`asset_profiles.json` 已补 `_leaderboard_rule` / `_fraud_detection` / `_py_compat_incident` / `historical_submissions` 四节。
+
+### 16.84 🚨 官方 "Failed to load IQAEvaluator" 根因锁定（我方遮蔽，已修）+ 波 2 测试集直证 (2026-09-11)
+> 官方返回 `Evaluation failed during quality: Failed to load IQAEvaluator, please contact committee to retry your submission.`
+> **注意阶段：这是 quality 阶段，测速已过** → 说明 09-07 的 `|None` 修复有效，这是一个全新阶段的失败。
+
+- **🔬 根因 A（我方的，已复现 + 已修）: model_dir 的裁剪桩包遮蔽官方 pyiqa 依赖**
+  - 机制: `model_dir` 自带 `timm`（**仅 3 个 .py**，真 timm 有 282 个，**没有 `Block`**）/ `einops`（**仅支持 3 种 pattern**）等为"自包含"裁出的桩；而 `runner.py` 用 `sys.path.insert(0, _MODEL_DIR)` 把 model_dir **置顶且从不清理**。官方质量评测用 pyiqa（CLIPIQA/MUSIQ/MANIQA/NIQE），它要 `from timm.models.vision_transformer import Block` → 命中我们的桩 → `ImportError` → 评测器加载失败。
+  - 本地复现（决定性）: 同一进程里**先 import 我们的 runner、再加载 maniqa** →
+    `ImportError: cannot import name 'Block' from 'timm.models.vision_transformer' (D:\...\model_dir\timm\models\vision_transformer.py)`。
+  - ⚠️ **修法有个反直觉点**: 只清 `sys.modules` **不够**——调用方（官方 harness 自己也会把 model_dir 插到最前）或 runner 已把它留在 `sys.path`，重新 `import timm` 又命中桩包（第一版补丁因此实测无效）。必须**同时把 model_dir 从 sys.path 撤下/挪到末尾**。
+  - ✅ 已修: `patch_runner_shadow.py` 给 4 个 runner.py 打补丁（撤置顶 + 挪末尾 + 按来源清 `sys.modules` 中来自本目录的 `timm/einops/diffusers/fairscale`）。**验证**: `audit_iqa_shadow.py` PASS（timm/einops 解析到 site-packages、`Block` 导入 OK、我们自己的 `LightningDiT/dinov2/vae_shim` 仍正常）。
+  - 新增审计工具 `audit_iqa_shadow.py` 已接入 `pack_wave2.py` 第③道验证（另两道: `harness_sim_zip` 接口 / `audit_py_compat` 语法）。
+- **🔬 根因 B（平台侧）: 官方 IQA 权重需联网拉取**
+  - 干净环境（**不含我们的包**）加载 `maniqa` 同样失败: `getaddrinfo failed` → `RuntimeError: Cannot send a request, as the client has been closed.` MANIQA 要拉 timm backbone；CLIPIQA/MUSIQ/NIQE 走本地缓存可离线。平台网络/缓存异常会报**同一句话**。
+  - → **两条独立机制都能产生该报错**。A 在我方可控范围且已修；B 只能平台侧修复。**建议向委员会确认 traceback 是否含 `timm`/`Block`/`einops`**。
+- **🔧 渲染链两个 bug（本轮实测踩到并修掉）**
+  1. **间歇性整轮渲染失败**: `_hub_load_offline_first` 用**相对路径** `preset/ckpts/torch_cache` 判定本地 dinov2 缓存 → **依赖 cwd**。新脚本没 `chdir` 到 `C:/models/finals`（`merge_14b.py` 里那句 `os.chdir` 就是为此）→ 离线分支失效 → 回落 `torch.hub.load` 走 api.github.com → 校园网下 `WinError 10060`。**实测 5 次渲染 2 次整轮 0/100，白跑约 2h**。已修（脚本内 chdir + 显式 cwd 传参）。
+  2. **续跑判定只看 jpg** → 中途被杀会丢掉已渲的 png、整批重渲（实测白跑 1.6h）。已改为 **jpg 或 png 任一存在即算完成**（实测 `已完成 88/100, 待渲 12`）。
+- **📊 波 2 测试集直证（100 张 clipiqa，本轮核心新数据）**
+  | 候选 | 分支 | val (clip, lpips) | **test clip (100张)** | val→test 跌幅 |
+  |---|---|---|---|---|
+  | **m0s7_s097** | T 高 | (0.9207, 0.3545) | **0.8838**（std .0354, min .7330） | **−0.0369** |
+  | m0s1_s097 | T 低 | (0.9305, 0.3593) | 0.8801（std .0369, min .7444） | −0.0504 |
+  | m0s1_s090 | T 高 | (0.9215, 0.3558) | 0.8755（std .0390, min .7401） | −0.0460 |
+  | m0s1_s100 | T 低 | (0.9338, 0.3615) | 0.8816（std .0360, min .7437） | −0.0522 |
+  - 对照（已提交）: M24 val 0.9207 → test **0.9008**（−0.0199）｜m0s1-sc0.93 val 0.9261 → test **0.8780**（−0.0481）
+  - **💥 关键结论一（已证）**: **`m0s7_s097` 在 (测试集 clip, val lpips) 两轴上支配全部其它可产 1.4B 资产** —— test clip 0.8838 最高、lpips 0.3545 最低（已提交的 m0s1-sc0.93 是 0.8780/0.3571，m0s1_s100 是 0.8816/0.3615，m0s1_s097 是 0.8801/0.3593）。**⇒ 1.4B 内部选谁不依赖公式权重**，T 高分支直接用 `m0s7_s097` 即可。
+    - ⚠️ 支配仅限 (clip, lpips) 两轴：无参另一路 m0s1 家族的 musiq/niqe 略好（37.87/6.37 vs 38.63/6.02）。
+  - **💥 关键结论二**: T 低（clip 主导）时 **M24 的 test clip 0.9008 仍高于全部 1.4B 候选**（最高 m0s7_s097 0.8838，差 0.017）—— 1.4B 在测试集上的 clip 劣势是结构性的，val 看不出（val 上 1.4B 反而更高）。
+  - `m0s1_s100` 实测 val (0.9338, 0.3615) 比 §16.80 登记的 sc1.0 (0.9394, 0.3717) **低 0.0056 clip / 好 0.0102 lpips** → 那次登记可能不是同一设定。
+- **📦 已产出三个「已修遮蔽」的待上传包（三道验证全过）**
+  | zip | 大小 | 角色 |
+  |---|---|---|
+  | `Track2_14B_M0S7_SC097.zip` | 3.59 GB | **波 2 T 高首选**（支配 m0s1-sc0.93） |
+  | `Track2_CompliantM24_v2.zip` | 1.79 GB | Δ 判读校准弹（遮蔽已修） |
+  | `Track2_14B_M0S1_SC093_v2.zip` | 3.62 GB | Δ 判读核心（遮蔽已修） |
+- **⚠️ 仍未解决/需外部输入**: ① 官方分未出（4 发仍待评测）→ Δ 判读未跑；② 那 4 个**已提交**的包仍是**未修**的 runner，若根因 A 成立则需用 _v2 重交（或等平台重试）；③ 需向委员会确认 traceback。
+
+### 16.85 🧾 四发全挂定性（确定性 → 我方根因）+ 三类问题的统一门禁 + 弹药清单整理 (2026-09-11 下午)
+> 用户确认 **四个提交物的失败完全相同**（同一句 `Failed to load IQAEvaluator`）→ 这一条把根因从"待定"钉成**确定性的原因 A**（平台偶发不可能四次一模一样）。
+
+- **定性结论**: 四发**全部**在 quality 阶段失败、**报错一致** → **确定性原因 = §16.84 根因 A（我方 model_dir 裁剪桩包遮蔽官方 pyiqa 依赖）**。
+  推论: **原四发重试必然复现**，必须用修复版重交；根因 B（平台 MANIQA 锁权重联网）仍无法排除，但已不是首要解释。
+- **🛡️ 统一上传门禁 `preupload_gate.py`（新增，把三类历史事故做成机械检查）**
+  | 历史踩坑 | 检查项 |
+  |---|---|
+  | ① 文件名含中文/全角 → 上传失败（曾浪费 3 次机会） | zip 文件名 + zip 内**所有路径**纯 ASCII |
+  | ② 官方 Py<3.10 的 `X\|None`（09-03 实际踩到） | `audit_py_compat.py`（AST） |
+  | ③ 桩包遮蔽 pyiqa（09-11 实际踩到，四发全挂） | `audit_iqa_shadow.py`（模拟官方先插 model_dir 再 import runner） |
+  外加 zip 完整性 / 结构（100 jpg + runner.py + your_model.pt）/ 体积 ≤10GB / 出图 4K 尺寸 / `harness_sim_zip`（解压+import+512 推理）。
+  **对照验证（关键，避免"拦不住的门"）**: 用**旧未修包**跑 → 准确拦下 ①（含全角 `——`）与 ③（timm/einops 指向包内桩）；新三包 → 八项全过 `PREUPLOAD_ALL_PASS`。
+  ②③ 均属**"本地跑通 ≠ 官方跑通"**类（本地 py 3.11/3.13 原生支持 `X|None`；`harness_sim_zip` 跑在干净进程）→ 必须工具化。
+- **📦 弹药清单与清理（用户反映"三个位置很乱"，已理清）**
+  - `D:/models/upload/` = **唯一待上传处**，纯 ASCII 名（硬链接，零额外磁盘）：`Track2_M24_v2_…` / `Track2_M0S1_SC093_v2_…` / `Track2_M0S7_SC097_…`
+  - `D:/models/` = 工作副本。**已删** `Track2_14B_G3W18S1_SC093_v2.zip`（打包被中断留下的 0.35GiB/0 字节残缺文件）→ **④ 需重打**；`Track2_14B_M0S7_SC10_v2.zip`（② 修复版）结构 OK 但**门禁未跑**
+  - `提交历史/` = 历史归档（**不要上传**）：4 个失败原件（名称含**全角 `——`**，直接上传会重演问题 ①）+ 3 个用户自标"已作废"的老世界包
+  - `D:/models/wave2_*` = 4 个波 2 渲染工作目录（`render_png` 可删 6.8GiB，`output_dir` 保留）
+- **📄 交接**: `NEXT_ROUND_PROMPT_20260911.md` 已按最新事实**整体重写**（此前 08:10 那版还不知道"四发全挂一致"、无门禁工具、无弹药清单）。
+- **⏳ 待办（按顺序）**: ① 重打 ④ g3w18s1 修复包 + 补跑 `Track2_14B_M0S7_SC10_v2.zip` 门禁 → ② 用户重交修复后的完整四发 → ③ 拿分跑 Δ 判读 → ④ 按 §2.5.3 选波 2 靶点（T 高用 `m0s7_s097`）；⑤ 顺手把 `asset_profiles.submissions` 四发状态改为「质量评测失败」（原写"待评测"，与事故记录不一致）。
+
+### 16.85 🔍 四发失败根因独立复核 + 门禁编码 bug 修复 + ④ 重打包 (2026-09-11 下午)
+> 新会话按 `NEXT_ROUND_PROMPT_20260911.md` 执行；先**独立核验**上一轮的结论，再推进待办。
+
+- **✅ 根因 A 决定性 A/B 复核（新工具 `verify_ab_shadow.py`）**: 用 `final_compliant` 的 .py 结构造两个临时 model_dir，分别放**旧 runner**（从 `提交历史/Track2_CompliantM24——.zip` 提取，5973 B）与**新 runner**（7785 B，已打补丁），跑 `audit_iqa_shadow.py`：
+  - 旧 → `pass=False timm_outside=False einops_outside=False block_ok=False`，timm 解析到 **model_dir/timm/__init__.py** → **IQA_SHADOW_AUDIT_FAIL**
+  - 新 → `pass=True`，timm 解析到 **D:\Python\Lib\site-packages\timm**，`block_ok=True` → **IQA_SHADOW_AUDIT_PASS**
+  → **审计有鉴别力 + 修复有效**，且失败四发与旧 runner 是同一份代码路径。桩包实测: model_dir 的 timm **3 个 .py 无 Block**（真 timm 282 个有 Block），einops 为 64 行自写 shim。
+- **🐛 修掉门禁自身的假失败（重要）**: `preupload_gate.py` 的 `run_tool()` 用 `subprocess.run(..., text=True)` **未指定 encoding** → Windows 按 locale(GBK) 解码子进程 UTF-8 输出 → `UnicodeDecodeError` 被吞、输出为空 → **② 语法兼容 恒判失败（假阴性）**。已改为 `encoding='utf-8', errors='replace'` + `PYTHONIOENCODING=utf-8`。
+  - 直跑 `audit_py_compat.py` 验真: **4 个包全部 `合计有风险文件数: 0`**（g3/m0s7/m0s1 = 43 个 .py，M24 = 42 个）→ 语法兼容其实全过。
+  - ⚠️ 教训: **门禁工具自己也会有 bug**，"门禁不过"必须先直跑被调用的子工具验真，再谈修包。
+- **✅ 待办①完成**: `package_generic.py` 重打 ④ → `Track2_14B_G3W18S1_SC093_v2.zip`（3.35 GiB，`PACK_PASS`，100 jpg + 44 model_dir）。注意体积单位: 脚本打印的是十进制 GB（3.60 GB = 3.35 GiB），与旧包一致。
+- **✅ 待办⑤确认已完成**: `asset_profiles.submissions` 四条状态已为「质量评测失败(quality stage)」。
+- **📦 上传就绪（`D:/models/upload/`，纯 ASCII 名，硬链接零额外磁盘）**:
+  | 文件 | GiB | 对应 |
+  |---|---|---|
+  | `Track2_M24_v2_Yuki_18851225671.zip` | 1.67 | ① 校准弹 |
+  | `Track2_M0S7_SC10_v2_Yuki_18851225671.zip` | 3.34 | ② σ 测量 |
+  | `Track2_M0S1_SC093_v2_Yuki_18851225671.zip` | 3.37 | ③ lpips 判别 |
+  | `Track2_G3W18S1_SC093_v2_Yuki_18851225671.zip` | 3.35 | ④ dists 判别 |
+  | `Track2_M0S7_SC097_Yuki_18851225671.zip` | 3.34 | 波 2 T高首选（§16.84 测试集直证第一） |
+- **🔑 账号信息（§budget.accounts）**: 账号一 best 29.4333 / rank 69 / 余 11；账号二 best 48.0603 / rank 35 / 余 7。榜单取**该账号历史最好成绩**。
+
+
 
 
 

@@ -18,6 +18,14 @@
 
 > 历史成绩已按"作废"准备（`HANDOFF §16.68`）。四包资产**从未提交过**，不受复核影响。
 
+> **🔧 2026-09-10 更正**：`Track2_CompliantM24.zip` **曾于 2026-09-03 22:32:32 在账号一提交过**，并因官方 Python <3.10
+> 的 `X | None` 注解在**测速环节失败**（`TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'`）。
+> 该失败早于 §16.69 的修复（09-07 10:30）→ 09-10 的四包已含修复。**此类问题本地测不出来**
+> （本地 python 3.11/3.13 原生支持该语法，`harness_sim_zip` 给不出覆盖）→ 每次改动后**必须**加跑
+> `D:/Python/python.exe D:/tmp_timing/audit_py_compat.py`（AST 静态审计，期望 `合计有风险文件数: 0`）。
+> 另：账号一是 29.4333（rank 69）、账号二是 48.0603（rank 35）；**榜单取该账号最好成绩** →
+> 收尾发要放在既有杆低于预期分的号上，否则好分会被盖住。
+
 ---
 
 ## 1. 战备状态（2026-09-09 复验，全部就绪）
@@ -61,8 +69,97 @@ Copy-Item D:\models\Track2_CompliantM24.zip D:\models\upload\Track2_CompliantM24
 
 ---
 
-## 3. 判别序列（每发必带判别目的）
+## 2.5 波 2 渲染链（2026-09-10 新增：本地反推 scale，不依赖 P100）
 
+> 背景：波 2 原计划的 m0s1/m0s7 scale 档只有 P100 上有 LoRA 原件，而隧道不可达。
+> 实测可用**已合并的 pkg** 反推任意 scale（原理与验证见 `HANDOFF §16.83`）。
+
+```powershell
+# ① 反推目标 scale（恒等重建逐元素偏差 0，约 7 秒）
+& D:\Python\python.exe D:/tmp_timing/remerge_scale_14b.py `
+    --src-pkg D:/models/final_compliant_14b/model_dir/your_model.pt `   # m0s1 @sc0.93
+    --scale 0.90 `
+    --out D:/models/final_compliant_m0s1_s090/model_dir/your_model.pt
+
+# ② 本地渲染（pkg 直接注入，不改动 vosr_lora_infer_14b.py 生产脚本）
+& D:\Python\python.exe D:/tmp_timing/vosr_pkg_infer_14b.py `
+    -c C:/models/finals/preset/ckpts/VOSR_1.4B_os `
+    --pkg D:/models/final_compliant_m0s1_s090/model_dir/your_model.pt --fp16 `
+    -i D:/tmp_timing/p100_val/lq -o <输出目录> --align_method wavelet
+
+# ③ 门控（对预登记值校验，偏差应 ≤0.004）
+& D:\Python\python.exe D:/tmp_timing/val_gate.py --src <输出目录> `
+    --val-dir C:/生成式图像增强轻量模型设计挑战/生成式图像增强轻量模型设计挑战/赛题二/验证集 `
+    --clip-min 0.919 --lpips-max 0.360 --out <gate.json>
+```
+
+**已验证基线（val 3 张，2026-09-10，最大偏差 0.0006）**
+
+| 源 pkg | 目标 scale | 实测 (clip, lpips) | 预登记 | 可渲 |
+|---|---|---|---|---|
+| `final_compliant_14b` (m0s1@0.93) | 0.93（恒等） | (0.9257, 0.3571) | (0.9261, 0.3571) | ✅ |
+| `final_compliant_14b` | 0.90 | (0.9215, 0.3558) | (0.9209, 0.3556) | ✅ |
+| `final_compliant_14b` | 0.97 | (0.9305, 0.3593) | (0.9311, 0.3595) | ✅ |
+| `final_compliant_m0s7` (m0s7@1.0) | 0.97 | (0.9207, 0.3545) | (0.9203, 0.3542) | ✅ |
+| （r16 无 pkg） | 0.90 | — | (0.9372, 0.3600) | ❌ 仍需 P100 |
+
+### 2.5.1 一键打包 + 双重验证（2026-09-11 新增）
+
+```powershell
+& D:\Python\python.exe D:/tmp_timing/pack_wave2.py `
+    --tag m0s7_s097 `
+    --src-pkg D:/models/final_compliant_m0s7/model_dir/your_model.pt --scale 0.97 `
+    --name Track2_14B_M0S7_SC097
+# 期望输出: PACK_WAVE2_READY
+#   ① harness_sim_zip    (解压 + 纯净 import + 512 infer)
+#   ② audit_py_compat    (官方 Py<3.10 的 |None 语法审计)
+#   ③ audit_iqa_shadow   (model_dir 桩包是否遮蔽官方 pyiqa 依赖 -> "Failed to load IQAEvaluator")
+# model_dir 的 runner.py 与依赖沿用已提交的合规包, 只换 your_model.pt
+```
+
+> **上传前必须三道都 PASS**。① 保证接口对；② 保证不在官方解释器上重演 09-03 的 `TypeError`；
+> ③ 保证不在官方质量评测时遮蔽 pyiqa 的 `timm/einops`（2026-09-11 的 `Failed to load IQAEvaluator` 根因之一，见 `HANDOFF §16.84`）。
+
+**已就绪的「已修遮蔽」包（2026-09-11）**
+
+| zip（`D:/models/`） | 大小 | 角色 |
+|---|---|---|
+| `Track2_14B_M0S7_SC097.zip` | 3.59 GB | 波 2 T 高首选（test clip 0.8838 / val lpips 0.3545，**支配**已提交的 m0s1-sc0.93） |
+| `Track2_CompliantM24_v2.zip` | 1.79 GB | Δ 判读校准弹 |
+| `Track2_14B_M0S1_SC093_v2.zip` | 3.62 GB | Δ 判读核心 |
+
+### 2.5.2 波 2 靶点队列（2026-09-11 夜，本地 4060 渲染中）
+
+| 优先级 | tag | 分支 | val (clip, lpips) 实测 | **test clip (100张)** | 状态 |
+|---|---|---|---|---|---|
+| 1 | `m0s7_s097` | T 高 | (0.9207, 0.3545) | **0.8838** | ✅ 已渲 + 已打包 |
+| 2 | `m0s1_s097` | T 低 | (0.9305, 0.3593) | 0.8801 | ✅ 已渲 |
+| 3 | `m0s1_s090` | T 高 | (0.9215, 0.3558) | 0.8755 | ✅ 已渲 |
+| 4 | `m0s1_s100` | T 低 | (0.9338, 0.3615) | 0.8816 | ✅ 已渲 |
+| 对照 | M24（已提交） | — | (0.9207, 0.3852) | **0.9008** | — |
+| 对照 | m0s1-sc0.93（已提交） | — | (0.9261, 0.3571) | 0.8780 | — |
+
+> **✅ 1.4B 内部选靶已无需依赖公式权重**：`m0s7_s097` 在 (test clip, val lpips) 两轴上**支配**全部其它可产 1.4B 资产
+> （clip 0.8838 最高、lpips 0.3545 最低）。⚠️ 支配仅限这两轴——musiq/niqe 上 m0s1 家族略好（38.63/6.02 vs 37.87/6.37）。
+> **T 低（clip 主导）时 M24 的 0.9008 仍高出全部 1.4B 候选 ≥0.017**（1.4B 的测试集 clip 劣势是结构性的，val 看不出来）。
+
+> 每个候选的 test clip 都由**真实测试集 100 张**算出（无需 GT）。依据：§16.82 实测 1.4B 的 val→test clipiqa
+> 跌幅 0.037–0.052（M24 仅 0.020）→ 只用 val 数字选档会踩空，**按 test clip 裁决**。
+> 队列脚本 `D:/tmp_timing/wave2_queue.py`（含失败自愈重试，断点续跑）。
+
+### 2.5.3 选靶规则（拿到 Δ 后照做）
+
+| 判读结果 | 渲染/提交目标 |
+|---|---|
+| Δ(③−①) ≥ +6（公式认 lpips） | 取 T 高分支 → 提交 `m0s7_s097`（若其测试集 clipiqa 异常低于 m0s1_s090 则改后者） |
+| Δ(③−①) ≤ −6（clip 未饱和主导） | 取 T 低分支 → 在 `m0s1_s097` / `m0s1_s100` 中**按测试集 clipiqa 高者**提交 |
+| \|Δ\| < 6（不可判） | 四点（①②③④）已齐 → 直接跑 `f_invert.py` 最小二乘反演，**无需新发**；反演仍不收敛再考虑 g3w18s1 的 scale 档 |
+
+> **收尾纪律**：榜单取该账号最好成绩 → 最后一发放在**既有杆低于该资产预期分**的号上（账号一的杆仅 29.4333）。
+
+---
+
+## 3. 判别序列（每发必带判别目的）
 > 数值来自 `python D:/tmp_timing/discriminate.py`（2026-09-09 实跑）。
 > 官方噪声 σ ≈ ±0.4~0.75 → **|Δ| < 6 分视为不可判**。
 

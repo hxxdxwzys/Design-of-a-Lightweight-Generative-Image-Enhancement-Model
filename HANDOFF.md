@@ -1366,6 +1366,38 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **清理后**: C: 44.8 GB / D: 32.1 GB 空闲。**唯一上传位置 = `D:\models\upload\`**；台账新增 `asset_profiles._upload_ready` + `_cleanup_20260911`。
 - ⚠️ 记账提醒: 删除 11.73 GiB 在 C: 上，但 C: 空闲变化远小于预期 → 说明**跨会话的磁盘基线不可比**（两次测量之间别的进程也写过盘）；**判断释放量要看当次前后对比，不要用旧基线**。
 
+### 16.87 ✅ 回到官方原格式核对 + 发现并堵死"对抗性遮蔽" (2026-09-11 下午)
+> 用户提示: ① 别的队伍 9/10 已出分 ② "要严格按照官方给的格式提交"。
+
+- **📖 官方原文格式（`生成式图像增强轻量模型设计挑战.txt` L36–55）**: zip 内必须是
+  `output_dir/caseN.jpg`（名字严格匹配测试图）+ `model_dir/{your_model.pt, runner.py}`；命名=技术领域+作品名称+团队个人名称+联系方式；≤10GB。
+- **✅ 逐条核对结果（我们全部合规）**:
+  | 官方要求 | 我们 | 结论 |
+  |---|---|---|
+  | output_dir 内 caseN.jpg 且严格匹配测试图名 | 100 张 `case1.jpg…case100.jpg`，与官方测试集 100 个文件名**集合完全一致** | ✅ |
+  | 顶层恰为 output_dir + model_dir | 顶层仅这两项 | ✅ |
+  | model_dir 含 your_model.pt + runner.py | 都有；runner 实现同一接口 `Runner(model_dir)`+`infer(image_tensor,prompt="")`，[1,3,H,W]∈[-1,1]，fp16 | ✅ |
+  | ≤10GB | 1.67/3.34/3.37/3.35/3.34 GiB | ✅ |
+  | 命名不含汉字符号 | 纯 ASCII（是否含队名+联系方式待用户定） | ⚠️ 待定 |
+- **🔑 关键证据: 格式不是问题**。官方报错原文是 `Evaluation failed during **quality**` → **测速阶段已经通过**，说明平台接受我们的自定义 runner + `torch.save` 权重包（非 TorchScript）。加上"别的队伍 9/10 出分"→ 平台 IQA 正常 → **根因 B（平台侧）排除，四发失败 = 根因 A（我方遮蔽）**。
+- **📖 官方样例 runner.py（183 行）读完后的三个决定性事实**:
+  1. 它**从不把 model_dir 加进 `sys.path`**（只有一句 `sys.path.append(os.getcwd())`）——全部按**路径**加载（`torch.jit.load(os.path.join(model_dir, f))`、`torch.load(pth)`、`AutoTokenizer.from_pretrained(os.path.join(model_dir,...))`）。
+  2. 它 model_dir 里**只有数据文件**（4 个 JIT + config.yaml + ram_tag_params.pth + tokenizer/），**没有任何 .py 包** → 官方设计上不可能遮蔽别人的依赖。
+  3. 接口与我们完全一致（`Runner(model_dir)` / `infer(image_tensor, prompt="")` / fp16 / [-1,1]）。
+- **🆕 对抗性审计 `audit_iqa_shadow_hard.py`（本轮关键发现）**: 原审计只模拟"先插 model_dir 再 import runner"（我们的补丁能治）；新审计再补一步"**import 完 runner 之后再插一次 model_dir**"（官方 harness 完全可能这么干）。
+  - 结果: **v2 五包全部 HARD_AUDIT_FAIL**（桩包依旧遮蔽 MANIQA 的 `timm...Block`）→ 说明 09-11 上午的补丁**不是结构性修复**，只是治了已知触发路径。
+- **🔧 结构性加固 `harden_vendor.py`**: 把 `timm/einops/diffusers/fairscale` 四个桩包**移入 `model_dir/_vendor/`**；runner 在导入自身模块期间把 `_vendor` 置顶（行为不变），导入完成后撤掉 `model_dir` 与 `_vendor`，再把 `_vendor` **追加到末尾**作回落。
+  - 效果: **model_dir 根目录不再有同名包** → 无论官方何时把 model_dir 插到 sys.path 最前都遮蔽不了真包。
+  - 必须保留"末尾回落"的原因: `models/lightningdit.py:2142` 有一处**函数内惰性导入** `from einops import repeat`，真包缺失时仍需回落到桩。
+  - 单点验证: 标准审计 PASS + **对抗审计 PASS** + 512 推理 PASS（std 0.811, 3.8s）。
+- **🆕 门禁升级为 9 项**: `preupload_gate.py` 新增 **④ IQA 遮蔽(对抗)**；并存 ① 文件名/内部路径 ASCII ② 语法兼容 ③ 结构体积尺寸 ④ 接口 512 推理。
+- **📦 重建 5 个 v3 加固包 + 全过门禁**: `Track2_{M24,M0S1_SC093,M0S7_SC10,G3W18S1_SC093,M0S7_SC097}_v3.zip` → **PREUPLOAD_ALL_PASS（9/9，含对抗审计）**；已硬链接归位到 `D:/models/upload/`，**被取代的 v2 已删**（v2 的源目录已被加固，无法也不需重现）。
+- **⚠️ 踩坑两则（新）**:
+  1. **`os.link` 造的"副本"不是副本**: 用硬链接复制 model_dir 做加固试验时，`write_text` 会**原地改写共享 inode** → 把生产目录 `final_compliant/model_dir/runner.py` 一起改了（该文件现为 LF + 部分空行被doubled）。**教训: 打算改文件的"副本"必须真复制（copy2），硬链接只适合只读/纯占位。**（功能无损: 门禁 9/9 通过）
+  2. **重建脚本路径 bug**: `base.parent/'output_dir'` 指到 `D:/models/output_dir`（不存在）→ 前 4 个 job 被静默"源缺失, 跳过"（`rebuild_hardened.py` 已修）。**教训: 批量脚本必须校验每个 job 真的产出了文件。**
+- **📌 待用户确认**: ① 上传文件名的队名+联系方式（现在是纯 `Track2_*_v3.zip`）② `D:/models/upload/` 里 v2 文件名在 14:54 被改过（去掉了 `_Yuki_18851225671` 后缀）——若是用户手动改的，请告知目标命名规范。
+
+
 
 
 

@@ -1397,6 +1397,30 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
   2. **重建脚本路径 bug**: `base.parent/'output_dir'` 指到 `D:/models/output_dir`（不存在）→ 前 4 个 job 被静默"源缺失, 跳过"（`rebuild_hardened.py` 已修）。**教训: 批量脚本必须校验每个 job 真的产出了文件。**
 - **📌 待用户确认**: ① ~~上传文件名的队名+联系方式~~ → **用户 2026-09-11 决定: 文件名不要队名/电话后缀**（形如 `Track2_M24_v3.zip`），已同步改 `SUBMIT_RUNBOOK`/`NEXT_ROUND_PROMPT_20260911`/`asset_profiles`；② 原 `upload/` 里 v2 文件名 14:54 被去后缀一事已随 v2 删除而终结（v3 已是无后缀命名）。
 
+### 16.88 ✅ 官方格式严格审计 5/5 通过 + 二轮清理 (2026-09-11 傍晚, 用户: "确保格式严格按照官方要求")
+> 用户指示: **只看 `D:/models/upload/` 作为上传源**，格式严格对齐官方（参照 `生成式图像增强轻量模型设计挑战/runner.py` + 赛题 txt L36–55）。
+
+- **🆕 `audit_official_format.py`（6 项严格比对）→ 5 个 v3 包全部 `FORMAT_PASS`（`FORMAT_ALL_PASS`）**:
+  | # | 检查 | 结果 |
+  |---|---|---|
+  | ① | 顶层恰为 `model_dir` + `output_dir` | ✅ 5/5（`['model_dir','output_dir']`） |
+  | ② | output_dir 恰 100 个 jpg、**名字集合与官方测试集完全一致**、零杂质 | ✅ 5/5 |
+  | ③ | model_dir 含 `your_model.pt` + `runner.py` | ✅（1.4B 44 项 / M24 43 项） |
+  | ④ | 无 `__pycache__`/`.pyc` 杂质 | ✅ 5/5（0 个） |
+  | ⑤ | **接口签名与官方样例一致** | ✅ `Runner.__init__(self, model_dir: 'str')`、`infer(self, image_tensor, prompt='')` |
+  | ⑥ | 512×512 `[1,3,H,W]∈[-1,1]` 实跑 → 同尺寸、有限、非退化 | ✅ 5/5 |
+- **🔎 唯一与官方样例的差异（已判定无害，未改）**: 官方样例的 `core_model` 输出通常为 fp16，我们 `infer` 末尾返回 `.float().clamp(-1,1)`（fp32）。度量/测速都不受 dtype 影响，且 fp32 无精度损失 → **保留**。
+- **🔧 门禁再升级（10 项）**: `preupload_gate.py` 新增 **⑤ 官方格式严格审计**（调用上面的 6 项）→ 现在一条命令覆盖: ① 文件名/内部路径 ASCII ② 语法兼容 ③ 结构/体积/出图尺寸 ④ 接口 512 推理 ⑤ **官方格式严格审计** ⑥ 标准 IQA 遮蔽 ⑦ **对抗 IQA 遮蔽**。
+- **🧹 二轮清理（`cleanup_round2.py --apply --harness-sim`）**:
+  | 删除项 | 实释放 |
+  |---|---|
+  | `D:/models` 顶层 5 个 zip 名（与 `upload/` 硬链接） | 0（纯降噪: **顶层现在只剩目录，不再有 zip**） |
+  | 老世界产物 `cnn_out_*`×5 + `final_graph{,7}` + `final_dryrun_out` + `final_quality_runner` | 2.76 GiB |
+  | `_harness_zip_sim`（门禁临时解压，自动重建） | 1.76 GiB |
+  → **D 盘 28.5 → 34.9 GB 空闲**；保留 `upload/` 5 包、`final_compliant*`/`wave2_*` 打包源、权重资产。
+- **📌 上传源单一化**: `D:/models/upload/` 是**唯一**上传位置（5 个 v3 包，无后缀命名）；顶层不再放 zip，避免"同一份字节多个名字"的混乱。
+
+
 
 
 

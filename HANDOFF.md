@@ -1348,6 +1348,25 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
   | `Track2_M0S7_SC097_Yuki_18851225671.zip` | 3.34 | 波 2 T高首选（§16.84 测试集直证第一） |
 - **🔑 账号信息（§budget.accounts）**: 账号一 best 29.4333 / rank 69 / 余 11；账号二 best 48.0603 / rank 35 / 余 7。榜单取**该账号历史最好成绩**。
 
+### 16.86 🧹 zip 大扫除 (2026-09-11 下午, 用户:"太乱了，不要的清理掉")
+> 用户视角混乱: `D:\models` 顶层 5 个 + `D:\models\upload` 5 个 + `提交历史` 7 个 = 17 个 zip 名字，但**实际只有 12 份不同字节**（5 对硬链接 + 7 个独立）。
+
+- **归并工具 `zip_inventory.py`**: 按 `(st_dev, st_ino)` 归并 → 一眼看清"同一份字节起了几个名字"。踩坑: ROOTS 同时含父目录与子目录会把同一文件列两次（首版误显示 "2 个名字"）→ 应只列叶子目录。
+- **磁盘实况**: 全部 zip 去重后 **28.35 GiB**；真正的大户是 `D:\models\wave2_m0s7_s097`（8.77 GiB: model_dir 3.25 + pack_model_dir 3.25 + render_png 1.63 + output_dir 0.34）。
+- **✅ 已删（`cleanup_zips.py --apply`，释放约 25 GiB）**:
+  | 删除项 | 量 | 理由 |
+  |---|---|---|
+  | `D:\models\Track2_*.zip` × 5 | 0 B | 与 `upload/` **硬链接**（同 inode），纯降噪 |
+  | `提交历史\Track2_*——.zip` × 4 | 11.73 GiB | 失败四发原件，已被 `_v2` 取代 |
+  | `D:\models\wave2_*\render_png` × 4 | 6.76 GiB | 无损母版，提交用 jpg 仍在 `output_dir`（可重渲） |
+  | `D:\models\_harness_zip_sim` | 3.60 GiB | 门禁临时解压，每次自动重建 |
+  | `wave2_m0s7_s097\model_dir` | 3.25 GiB | `your_model.pt` 裸副本，`pack_model_dir` 内有同一份 |
+- **🛡️ 删前归档证据**: 4 个失败原件的 `runner.py` → `提交历史/_失败原件_runner快照/runner_*_v1_FAILED.py`（各 5.4–5.8 KB，**已入 git**）。这是"我们到底交过什么"的最小充分凭据。
+- **保留**: `upload/` 5 个待上传包 ｜ `wave2_*/output_dir`（重打包所需）｜ `final_compliant*` 打包源 ｜ `提交历史` 3 个老世界归档（1.53 GiB，历史凭据）。
+- **清理后**: C: 44.8 GB / D: 32.1 GB 空闲。**唯一上传位置 = `D:\models\upload\`**；台账新增 `asset_profiles._upload_ready` + `_cleanup_20260911`。
+- ⚠️ 记账提醒: 删除 11.73 GiB 在 C: 上，但 C: 空闲变化远小于预期 → 说明**跨会话的磁盘基线不可比**（两次测量之间别的进程也写过盘）；**判断释放量要看当次前后对比，不要用旧基线**。
+
+
 
 
 

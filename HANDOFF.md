@@ -1395,7 +1395,7 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
 - **⚠️ 踩坑两则（新）**:
   1. **`os.link` 造的"副本"不是副本**: 用硬链接复制 model_dir 做加固试验时，`write_text` 会**原地改写共享 inode** → 把生产目录 `final_compliant/model_dir/runner.py` 一起改了（该文件现为 LF + 部分空行被doubled）。**教训: 打算改文件的"副本"必须真复制（copy2），硬链接只适合只读/纯占位。**（功能无损: 门禁 9/9 通过）
   2. **重建脚本路径 bug**: `base.parent/'output_dir'` 指到 `D:/models/output_dir`（不存在）→ 前 4 个 job 被静默"源缺失, 跳过"（`rebuild_hardened.py` 已修）。**教训: 批量脚本必须校验每个 job 真的产出了文件。**
-- **📌 待用户确认**: ① 上传文件名的队名+联系方式（现在是纯 `Track2_*_v3.zip`）② `D:/models/upload/` 里 v2 文件名在 14:54 被改过（去掉了 `_Yuki_18851225671` 后缀）——若是用户手动改的，请告知目标命名规范。
+- **📌 待用户确认**: ① ~~上传文件名的队名+联系方式~~ → **用户 2026-09-11 决定: 文件名不要队名/电话后缀**（形如 `Track2_M24_v3.zip`），已同步改 `SUBMIT_RUNBOOK`/`NEXT_ROUND_PROMPT_20260911`/`asset_profiles`；② 原 `upload/` 里 v2 文件名 14:54 被去后缀一事已随 v2 删除而终结（v3 已是无后缀命名）。
 
 
 

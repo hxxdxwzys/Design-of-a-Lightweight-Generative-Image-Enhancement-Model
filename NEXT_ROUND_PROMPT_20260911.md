@@ -76,23 +76,26 @@ MANIQA 要联网拉 timm backbone；CLIPIQA/MUSIQ/NIQE 走本地缓存可离线�
 & D:\Python\python.exe D:/tmp_timing/preupload_gate.py <zip> [more.zip ...]
 # 顺便归位成纯 ASCII 上传名（硬链接，零额外磁盘）
 & D:\Python\python.exe D:/tmp_timing/preupload_gate.py --stage-upload `
-    --upload-name Track2_XXX_Yuki_18851225671.zip <zip>
+    --upload-name Track2_XXX_v3.zip <zip>
 ```
 
 ---
 
 ## 三、📦 弹药清单（**哪份是哪份，务必分清** ★）
 
-### 待上传（`D:/models/upload/`，纯 ASCII 名，**已过门禁**）
+### 待上传（`D:/models/upload/`，纯 ASCII 名，**9/9 门禁全过**）
 
 | 文件 | 大小 | 角色 |
 |---|---|---|
-| `Track2_M24_v2_Yuki_18851225671.zip` | 1.67 GiB | ① 校准弹（重打·已修） |
-| `Track2_M0S1_SC093_v2_Yuki_18851225671.zip` | 3.37 GiB | ③ lpips 主轴判别（重打·已修） |
-| `Track2_M0S7_SC097_Yuki_18851225671.zip` | 3.34 GiB | **波 2 T 高首选**（新资产，非重打） |
+| `Track2_M24_v3.zip` | 1.67 GiB | ① 校准弹（0.5B 基准） |
+| `Track2_M0S7_SC10_v3.zip` | 3.34 GiB | ② σ 测量 |
+| `Track2_M0S1_SC093_v3.zip` | 3.37 GiB | ③ lpips 主轴判别（核心） |
+| `Track2_G3W18S1_SC093_v3.zip` | 3.35 GiB | ④ dists 判别 |
+| `Track2_M0S7_SC097_v3.zip` | 3.34 GiB | **波 2 T 高首选**（测试集直证第一） |
 
-> ⚠️ 队名/电话取自历史提交里出现过的 `Yuki` / `18851225671`。**与报名信息不符就改名 ——
-> 改名不影响 zip 内容，不要重新打包。**
+> **📛 命名规范（用户 2026-09-11 决定）：文件名不要队名/电话后缀**，如 `Track2_M24_v3.zip` 即可。
+> `_v3` = 结构加固版（桩包移入 `model_dir/_vendor/`，标准+对抗两种 IQA 遮蔽审计均 PASS）。
+> **改名不影响 zip 内容，也不需要重新过门禁（只要新名仍纯 ASCII）。**
 
 ### `D:/models/`（工作副本）
 

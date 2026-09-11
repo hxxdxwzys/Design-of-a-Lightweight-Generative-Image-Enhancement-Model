@@ -49,13 +49,13 @@
 > `D:\Python\python.exe`（3.13 + numpy 2.4.6 + torch 2.7.0+cu126 + CUDA）。
 
 ```powershell
-# ── 步骤 1｜预检（可选，首次提交或改动后必做）────────────────────────
-& D:\Python\python.exe D:/tmp_timing/harness_sim_zip.py D:/models/Track2_CompliantM24.zip  # 期望 HARNESS_ZIP_SIM_PASS
-& D:\Python\python.exe D:/tmp_timing/qc_test100.py D:/models/final_compliant/output_dir    # 期望 QC_PASS
+# ── 步骤 1｜预检（必做：9 项门禁，含对抗性 IQA 遮蔽审计）──────────────
+& D:\Python\python.exe D:/tmp_timing/preupload_gate.py D:/models/upload/Track2_M24_v3.zip
+#   期望: PREUPLOAD_GATE_PASS（9 项全 ✅）; 多包可一次传入
 
-# ── 步骤 2｜复制为"纯 ASCII"上传名（严禁中文，全角破折号可用）────────
-Copy-Item D:\models\Track2_CompliantM24.zip D:\models\upload\Track2_CompliantM24_Yuki_13000000000.zip
-#   命名规范：Track2_<作品名>_<队名>_<电话>.zip（队名/电话按报名信息核对一次）
+# ── 步骤 2｜命名为纯 ASCII（严禁中文；**不要队名/电话后缀**）────────────
+#   用户 2026-09-11 决定: 文件名形如 Track2_M24_v3.zip 即可
+#   改名不影响 zip 内容, 也不需要重新过门禁（只要新名仍纯 ASCII）
 
 # ── 步骤 3｜上传（用户在赛事网站操作）────────────────────────────────
 

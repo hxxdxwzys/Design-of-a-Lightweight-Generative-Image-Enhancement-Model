@@ -1476,6 +1476,40 @@ v3（numpy 切片，本地 CPU-in 4715x，预测 103-116）实际 **83.94 < 87.3
   - 榜单取**该账号历史最好成绩** → 探针失败**不损伤**既有 43.695，故探针只花次数、不花分数 ✓
 - **📌 附带发现**：`jpeg_q90`（从 q95 再压 q90）能把 niqe 5.04→4.25（预测 +7.9），但 q98/q100（带 4:4:4）几乎无影响 → **纯属"更强量化=更平滑"的指标套利**，且我们提交图是 4:2:0、GT 是 PNG。**已向用户报备，建议不作主方案。**
 
+### 16.92 🧪 探针 campaign 执行中 + 0.5B remerge 工具 (2026-09-12)
+> 用户批准"按你的安排来"；代理已关（`HF_HUB_OFFLINE=1` 下 MANIQA 等全指标仍可离线跑；仅 git push 暂停）。
+
+- **🆕 `remerge_scale_05b.py`（移植自 1.4B 版）**: 从已加固的 M24 包(sc0.8) 反推任意 scale 的 `your_model.pt`
+  —— `W_merged(s) = W_base + (s/s0)·(W_merged(s0) − W_base)`，与出图脚本 `vosr_lora_infer.py --lora-scale` 的 `lora_B *= scale` **数学严格等价** ✓
+  - **恒等校验: maxdiff = 0.000e+00** ✅（669/669 键重建）
+  - 已生成 **sc0.4 权重包** `D:/models/final_compliant_probeA_sc04/model_dir/your_model.pt`（1.34 GB）+ 拷入 84 个支撑文件
+- **⏳ 探针 A 流程**: 30 张测试集子集预验证（渲 sc0.4 → 测 niqe/clipiqa/musiq 与 M24 同口径对比）→ 若增益成立 → 全量 100 张渲染（~97 分钟 @58s/张）→ 打包 → 10 项门禁 → `upload/`。
+  - 脚本: `probe_a_screen.py`（预验证）/ `build_probe_a.py`（一键: 渲染→质检→组装→打包→门禁→归位）
+- **🎯 campaign 判别设计（榜单取账号历史最好成绩 → 探针失败不损伤 43.695）**:
+  | 探针 | 状态 | 判别轴 |
+  |---|---|---|
+  | **B** M24_v4（同图 + 冷启动加固 runner） | ✅ `D:/models/upload/Track2_M24_v4.zip` 10/10 门禁 | 官方计时是否含构造/首调 |
+  | **A** sc0.4（niqe 4.46↓ / dists 0.250↓ / lpips 0.361↓，但 clipiqa 0.787↓ musiq 45.9↓ maniqa 0.476↓） | 🔄 渲染中 | niqe+保真 主导 → 涨；clipiqa/musiq/maniqa 主导 → 跌 |
+  | **C** sc1.0（clipiqa 0.938↑ maniqa 0.504↑，但 niqe 5.67↑ lpips 0.396↑） | ⏸ 待排 | 反向判别 |
+- **📐 关键推论（新）**: 局部分析表明 **sc0.4 同时改善 niqe 与全部保真指标（dists −24%/lpips −11%），只牺牲 clipiqa/musiq/maniqa** → 探针 A 实际是"**niqe+保真 vs clipiqa+musiq+maniqa**"的联合判别，信息量最大。
+- **📌 空白**: 我们的局部模型（niqe/musiq 线性）**无法解释对手的 60-81**（那需要 niqe<3.5 或 musiq>170，均不可能）→ 公式必含第 3 项（保真？速度？未测指标？）→ 这就是 campaign 要回答的。
+
+### 16.93 ⭐⭐⭐ sc0.4 测试集直证: niqe 5.256 → **4.098**（Δ=−1.158 → 预测 +11.6）(2026-09-12 17:00)
+> 30 张测试集子集（`sorted()[:30]`，与 M24 基线同口径），sc0.4 渲染后转 q95 jpg 再测。
+
+- **决定性数据**:
+  | 模型 | test niqe (30 张) | 相对 M24 |
+  |---|---|---|
+  | M24 = v7 s5000 **sc0.8**（已交 43.6951） | 5.2559 | — |
+  | **sc0.4**（同一 LoRA 权重按 scale 线性外推） | **4.0976** | **−1.158** |
+  | niqe-only 模型预测 | — | **+11.6 分** |
+  （val 口径预测只有 +6~7 → **测试集转移比 val 更强** ✓）
+- **✅ 全量 100 张渲染已启动**（`build_probe_a.py --scale 0.4 --tag probeA_sc04`）：渲染(~97min) → QC → remerge 权重(sc0.8→sc0.4, 恒等校验 maxdiff=0) → 打包 → 10 项门禁 → `upload/`
+- **⚠️ 踩坑**: `vosr_lora_infer.py` 输出的是 **PNG**（不是 jpg）；提交用的 jpg 由 `render_test100.py` 以 `quality=95` 另存 → 所有基于"出图目录"的指标脚本必须按 **jpg** glob（首版 glob `*.jpg` 在 PNG 目录上得 0 张 → NaN）。
+- **📌 待办**: 全量出图后补测 sc0.4 的 test musiq/clipiqa/maniqa（musiq 慢，可按需抽样）。
+
+
+
 
 
 

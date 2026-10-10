@@ -1,4 +1,4 @@
-param([ValidateSet('Backup','Protect','Verify','Release','Clean')][string]$Mode='Backup')
+param([ValidateSet('Backup','Protect','Verify','Release','Clean','Finish')][string]$Mode='Backup')
 $ErrorActionPreference='Stop'
 $repo='C:\生成式图像增强轻量模型设计挑战'
 $archive='D:\project_archive_20261010'
@@ -294,6 +294,7 @@ if($Mode -eq 'Release'){
 }
 
 if($Mode -eq 'Clean'){
+    if(Test-Path -LiteralPath (Join-Path $report 'cleanup_execution.json')){throw 'Cleanup execution already recorded; refuse to overwrite history or repeat this plan'}
     if(!(Test-Path -LiteralPath (Join-Path $archive 'release_upload_receipt.json'))){throw 'Verified release missing'}
     $receipt=Get-Content -LiteralPath (Join-Path $archive 'release_upload_receipt.json') -Raw|ConvertFrom-Json
     if(@($receipt.assets|Where-Object {!$_.verified}).Count -or $receipt.assets.Count -ne 5){throw 'Release incomplete'}
@@ -325,4 +326,30 @@ if($Mode -eq 'Clean'){
     Copy-Item -LiteralPath (Join-Path $report 'cleanup_execution.json') -Destination $archive
     Copy-Item -LiteralPath (Join-Path $report 'disk_after.json') -Destination $archive
     Write-Output 'CLEANUP_COMPLETE'
+}
+
+if($Mode -eq 'Finish'){
+    $records=@(Get-Content -LiteralPath (Join-Path $report 'cleanup_execution.json') -Raw|ConvertFrom-Json)
+    $links=@(
+        @{parent='D:\models\pkg_TinyV2g';target='D:\models\pkg_TinyV2\output_dir'},
+        @{parent='D:\models\pkg_TinyV4g';target='D:\models\pkg_TinyV4\output_dir'}
+    )
+    foreach($spec in $links){
+        $parent=SafeTarget $spec.parent
+        if(!(Test-Path -LiteralPath $parent)){continue}
+        $linkPath=Join-Path $parent 'output_dir'
+        $link=Get-Item -LiteralPath $linkPath -Force
+        if(!($link.Attributes -band [IO.FileAttributes]::ReparsePoint) -or $link.LinkType -ne 'Junction' -or $link.Target -ne $spec.target){throw 'Unexpected junction; leave untouched'}
+        # Remove only the junction entry, without recursively following its target.
+        Remove-Item -LiteralPath $linkPath -Force
+        if(@(Get-ChildItem -LiteralPath $parent -Recurse -Force|Where-Object {$_.Attributes -band [IO.FileAttributes]::ReparsePoint}).Count){throw 'Remaining link; leave parent untouched'}
+        $bytes=(Get-ChildItem -LiteralPath $parent -Recurse -File -Force|Measure-Object Length -Sum).Sum
+        Remove-Item -LiteralPath $parent -Recurse -Force
+        $records+=@{path=$parent;status='DELETED_AFTER_SAFE_JUNCTION_UNLINK';bytes=$bytes;unlinked_junction=$linkPath;junction_target=$spec.target;finished_utc=[DateTime]::UtcNow.ToString('o')}
+        Write-Output ('JUNCTION_PARENT_CLEANED '+$parent)
+    }
+    SaveJson $records (Join-Path $report 'cleanup_execution.json')
+    SaveJson @(Get-PSDrive C,D|Select-Object Name,Used,Free) (Join-Path $report 'disk_after.json')
+    Copy-Item -LiteralPath (Join-Path $report 'cleanup_execution.json') -Destination $archive -Force
+    Copy-Item -LiteralPath (Join-Path $report 'disk_after.json') -Destination $archive -Force
 }

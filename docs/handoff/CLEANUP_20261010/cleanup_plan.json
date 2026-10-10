@@ -634,5 +634,13 @@
   {
     "path": "D:\\tmp_v4.npy",
     "reason": "temporary inference array"
+  },
+  {
+    "reason": "every ZIP member matches retained raw DIV2K file by size and SHA-256",
+    "path": "D:\\datasets\\div2k.zip"
+  },
+  {
+    "path": "D:\\project_archive_20261010\\small_weights",
+    "reason": "unpacked backup duplicates verified local and GitHub checkpoint ZIP"
   }
 ]

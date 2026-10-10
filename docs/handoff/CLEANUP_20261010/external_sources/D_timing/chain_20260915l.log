@@ -1,0 +1,269 @@
+[09-15 12:56:33] === 链 L 启动 ===
+[09-15 12:56:33] >>> latency TinyV7gan
+[latency] median 8.23 ms -> 34.7x | mean 8.18 | min 3.93 | graph=True | std=0.379 nan=False
+LATENCY_DONE
+
+[09-15 12:56:42] <<< latency TinyV7gan rc=0 (0.1 min)
+[09-15 12:56:42] >>> latency TinyV9b
+[latency] median 55.01 ms -> 5.2x | mean 55.60 | min 39.57 | graph=True | std=0.642 nan=False
+LATENCY_DONE
+
+[09-15 12:57:00] <<< latency TinyV9b rc=0 (0.3 min)
+[09-15 12:57:00] >>> latency TinyV11b
+[latency] median 9.67 ms -> 29.5x | mean 9.17 | min 3.95 | graph=True | std=0.363 nan=False
+LATENCY_DONE
+
+[09-15 12:57:07] <<< latency TinyV11b rc=0 (0.1 min)
+[09-15 12:57:07] >>> render v11b_s8000
+[render_subset] 30 张 (order=lex) -> D:\models\traj_v11b\s8000
+[render_subset] done 1.5 min
+RENDER_SUBSET_DONE
+D:\tmp_timing\render_subset.py:48: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(patch_u8).permute(2, 0, 1)[None].to('cuda').float().div_(127.5).sub_(1)
+
+[09-15 12:59:10] <<< render v11b_s8000 rc=0 (2.0 min)
+[09-15 12:59:10] >>> measure v11b_s8000
+[measure] {"clipiqa": 0.4675, "niqe": 5.6863, "lapvar": 117.5258, "n": 30, "dir": "D:\\models\\traj_v11b\\s8000"}
+MEASURE_DIR_DONE
+D:\tmp_timing\measure_dir.py:36: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(im)).permute(2, 0, 1).unsqueeze(0).to(dev).float().div_(255)
+
+[09-15 13:01:23] <<< measure v11b_s8000 rc=0 (2.2 min)
+[09-15 13:01:23] >>> render v11b_s16000
+[render_subset] 30 张 (order=lex) -> D:\models\traj_v11b\s16000
+[render_subset] done 1.4 min
+RENDER_SUBSET_DONE
+D:\tmp_timing\render_subset.py:48: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(patch_u8).permute(2, 0, 1)[None].to('cuda').float().div_(127.5).sub_(1)
+
+[09-15 13:03:23] <<< render v11b_s16000 rc=0 (2.0 min)
+[09-15 13:03:23] >>> measure v11b_s16000
+[measure] {"clipiqa": 0.5561, "niqe": 5.4027, "lapvar": 148.1454, "n": 30, "dir": "D:\\models\\traj_v11b\\s16000"}
+MEASURE_DIR_DONE
+D:\tmp_timing\measure_dir.py:36: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(im)).permute(2, 0, 1).unsqueeze(0).to(dev).float().div_(255)
+
+[09-15 13:05:29] <<< measure v11b_s16000 rc=0 (2.1 min)
+[09-15 13:05:29] >>> render v11b_s24000
+[render_subset] 30 张 (order=lex) -> D:\models\traj_v11b\s24000
+[render_subset] done 1.4 min
+RENDER_SUBSET_DONE
+D:\tmp_timing\render_subset.py:48: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(patch_u8).permute(2, 0, 1)[None].to('cuda').float().div_(127.5).sub_(1)
+
+[09-15 13:07:31] <<< render v11b_s24000 rc=0 (2.0 min)
+[09-15 13:07:31] >>> measure v11b_s24000
+[measure] {"clipiqa": 0.5372, "niqe": 5.5396, "lapvar": 117.6252, "n": 30, "dir": "D:\\models\\traj_v11b\\s24000"}
+MEASURE_DIR_DONE
+D:\tmp_timing\measure_dir.py:36: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(im)).permute(2, 0, 1).unsqueeze(0).to(dev).float().div_(255)
+
+[09-15 13:08:37] <<< measure v11b_s24000 rc=0 (1.1 min)
+[09-15 13:08:37] [traj] v11b clipiqa: 8000=0.4675 16000=0.5561 24000=0.5372 25000=0.5481
+[09-15 13:08:37] [traj] s16000->s24000 斜率 = -0.00236 / 1000 步
+[09-15 13:08:37] [decide] 续训 v12 = False (阈值 +0.00125/1000步 = +0.01/8k)
+[09-15 13:08:37] >>> train v13 (3.5M 宽 + 512域损失 + bandlimitD)
+[13:08:39] [data] 2839 对 (256 域蒸馏对)
+Traceback (most recent call last):
+  File "D:\tmp_timing\train_tiny_gan.py", line 175, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\train_tiny_gan.py", line 106, in main
+    miss = G.load_state_dict(d0['unet'], strict=False)
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 2593, in load_state_dict
+    raise RuntimeError(
+    ...<3 lines>...
+    )
+RuntimeError: Error(s) in loading state_dict for UNet2DModel:
+	size mismatch for conv_in.weight: copying a param with shape torch.Size([32, 3, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 3, 3, 3]).
+	size mismatch for conv_in.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for time_embedding.linear_1.weight: copying a param with shape torch.Size([128, 32]) from checkpoint, the shape in current model is torch.Size([256, 64]).
+	size mismatch for time_embedding.linear_1.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for time_embedding.linear_2.weight: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([256, 256]).
+	size mismatch for time_embedding.linear_2.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for down_blocks.0.resnets.0.norm1.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.0.resnets.0.norm1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.0.resnets.0.conv1.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for down_blocks.0.resnets.0.conv1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.0.resnets.0.time_emb_proj.weight: copying a param with shape torch.Size([32, 128]) from checkpoint, the shape in current model is torch.Size([64, 256]).
+	size mismatch for down_blocks.0.resnets.0.time_emb_proj.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.0.resnets.0.norm2.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.0.resnets.0.norm2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.0.resnets.0.conv2.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for down_blocks.0.resnets.0.conv2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.0.downsamplers.0.conv.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for down_blocks.0.downsamplers.0.conv.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.1.resnets.0.norm1.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.1.resnets.0.norm1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.1.resnets.0.conv1.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for down_blocks.1.resnets.0.conv1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.1.resnets.0.time_emb_proj.weight: copying a param with shape torch.Size([32, 128]) from checkpoint, the shape in current model is torch.Size([64, 256]).
+	size mismatch for down_blocks.1.resnets.0.time_emb_proj.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.1.resnets.0.norm2.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.1.resnets.0.norm2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.1.resnets.0.conv2.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for down_blocks.1.resnets.0.conv2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.1.downsamplers.0.conv.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for down_blocks.1.downsamplers.0.conv.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.2.resnets.0.norm1.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.2.resnets.0.norm1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.2.resnets.0.conv1.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for down_blocks.2.resnets.0.conv1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.2.resnets.0.time_emb_proj.weight: copying a param with shape torch.Size([32, 128]) from checkpoint, the shape in current model is torch.Size([64, 256]).
+	size mismatch for down_blocks.2.resnets.0.time_emb_proj.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.2.resnets.0.norm2.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.2.resnets.0.norm2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.2.resnets.0.conv2.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for down_blocks.2.resnets.0.conv2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.2.downsamplers.0.conv.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for down_blocks.2.downsamplers.0.conv.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.3.resnets.0.norm1.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.3.resnets.0.norm1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for down_blocks.3.resnets.0.conv1.weight: copying a param with shape torch.Size([64, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 64, 3, 3]).
+	size mismatch for down_blocks.3.resnets.0.conv1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for down_blocks.3.resnets.0.time_emb_proj.weight: copying a param with shape torch.Size([64, 128]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for down_blocks.3.resnets.0.time_emb_proj.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for down_blocks.3.resnets.0.norm2.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for down_blocks.3.resnets.0.norm2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for down_blocks.3.resnets.0.conv2.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for down_blocks.3.resnets.0.conv2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for down_blocks.3.resnets.0.conv_shortcut.weight: copying a param with shape torch.Size([64, 32, 1, 1]) from checkpoint, the shape in current model is torch.Size([128, 64, 1, 1]).
+	size mismatch for down_blocks.3.resnets.0.conv_shortcut.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.0.norm1.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for up_blocks.0.resnets.0.norm1.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for up_blocks.0.resnets.0.conv1.weight: copying a param with shape torch.Size([64, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 256, 3, 3]).
+	size mismatch for up_blocks.0.resnets.0.conv1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.0.time_emb_proj.weight: copying a param with shape torch.Size([64, 128]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for up_blocks.0.resnets.0.time_emb_proj.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.0.norm2.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.0.norm2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.0.conv2.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for up_blocks.0.resnets.0.conv2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.0.conv_shortcut.weight: copying a param with shape torch.Size([64, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([128, 256, 1, 1]).
+	size mismatch for up_blocks.0.resnets.0.conv_shortcut.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.1.norm1.weight: copying a param with shape torch.Size([96]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for up_blocks.0.resnets.1.norm1.bias: copying a param with shape torch.Size([96]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for up_blocks.0.resnets.1.conv1.weight: copying a param with shape torch.Size([64, 96, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 192, 3, 3]).
+	size mismatch for up_blocks.0.resnets.1.conv1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.1.time_emb_proj.weight: copying a param with shape torch.Size([64, 128]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for up_blocks.0.resnets.1.time_emb_proj.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.1.norm2.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.1.norm2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.1.conv2.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for up_blocks.0.resnets.1.conv2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.resnets.1.conv_shortcut.weight: copying a param with shape torch.Size([64, 96, 1, 1]) from checkpoint, the shape in current model is torch.Size([128, 192, 1, 1]).
+	size mismatch for up_blocks.0.resnets.1.conv_shortcut.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.0.upsamplers.0.conv.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for up_blocks.0.upsamplers.0.conv.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.1.resnets.0.norm1.weight: copying a param with shape torch.Size([96]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for up_blocks.1.resnets.0.norm1.bias: copying a param with shape torch.Size([96]) from checkpoint, the shape in current model is torch.Size([192]).
+	size mismatch for up_blocks.1.resnets.0.conv1.weight: copying a param with shape torch.Size([32, 96, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 192, 3, 3]).
+	size mismatch for up_blocks.1.resnets.0.conv1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.resnets.0.time_emb_proj.weight: copying a param with shape torch.Size([32, 128]) from checkpoint, the shape in current model is torch.Size([64, 256]).
+	size mismatch for up_blocks.1.resnets.0.time_emb_proj.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.resnets.0.norm2.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.resnets.0.norm2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.resnets.0.conv2.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for up_blocks.1.resnets.0.conv2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.resnets.0.conv_shortcut.weight: copying a param with shape torch.Size([32, 96, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 192, 1, 1]).
+	size mismatch for up_blocks.1.resnets.0.conv_shortcut.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.resnets.1.norm1.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.1.resnets.1.norm1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.1.resnets.1.conv1.weight: copying a param with shape torch.Size([32, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 128, 3, 3]).
+	size mismatch for up_blocks.1.resnets.1.conv1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.resnets.1.time_emb_proj.weight: copying a param with shape torch.Size([32, 128]) from checkpoint, the shape in current model is torch.Size([64, 256]).
+	size mismatch for up_blocks.1.resnets.1.time_emb_proj.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.resnets.1.norm2.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.resnets.1.norm2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.resnets.1.conv2.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for up_blocks.1.resnets.1.conv2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.resnets.1.conv_shortcut.weight: copying a param with shape torch.Size([32, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 128, 1, 1]).
+	size mismatch for up_blocks.1.resnets.1.conv_shortcut.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.1.upsamplers.0.conv.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for up_blocks.1.upsamplers.0.conv.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.0.norm1.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.2.resnets.0.norm1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.2.resnets.0.conv1.weight: copying a param with shape torch.Size([32, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 128, 3, 3]).
+	size mismatch for up_blocks.2.resnets.0.conv1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.0.time_emb_proj.weight: copying a param with shape torch.Size([32, 128]) from checkpoint, the shape in current model is torch.Size([64, 256]).
+	size mismatch for up_blocks.2.resnets.0.time_emb_proj.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.0.norm2.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.0.norm2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.0.conv2.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for up_blocks.2.resnets.0.conv2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.0.conv_shortcut.weight: copying a param with shape torch.Size([32, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 128, 1, 1]).
+	size mismatch for up_blocks.2.resnets.0.conv_shortcut.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.1.norm1.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.2.resnets.1.norm1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.2.resnets.1.conv1.weight: copying a param with shape torch.Size([32, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 128, 3, 3]).
+	size mismatch for up_blocks.2.resnets.1.conv1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.1.time_emb_proj.weight: copying a param with shape torch.Size([32, 128]) from checkpoint, the shape in current model is torch.Size([64, 256]).
+	size mismatch for up_blocks.2.resnets.1.time_emb_proj.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.1.norm2.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.1.norm2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.1.conv2.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for up_blocks.2.resnets.1.conv2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.resnets.1.conv_shortcut.weight: copying a param with shape torch.Size([32, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 128, 1, 1]).
+	size mismatch for up_blocks.2.resnets.1.conv_shortcut.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.2.upsamplers.0.conv.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for up_blocks.2.upsamplers.0.conv.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.0.norm1.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.3.resnets.0.norm1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.3.resnets.0.conv1.weight: copying a param with shape torch.Size([32, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 128, 3, 3]).
+	size mismatch for up_blocks.3.resnets.0.conv1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.0.time_emb_proj.weight: copying a param with shape torch.Size([32, 128]) from checkpoint, the shape in current model is torch.Size([64, 256]).
+	size mismatch for up_blocks.3.resnets.0.time_emb_proj.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.0.norm2.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.0.norm2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.0.conv2.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for up_blocks.3.resnets.0.conv2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.0.conv_shortcut.weight: copying a param with shape torch.Size([32, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 128, 1, 1]).
+	size mismatch for up_blocks.3.resnets.0.conv_shortcut.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.1.norm1.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.3.resnets.1.norm1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for up_blocks.3.resnets.1.conv1.weight: copying a param with shape torch.Size([32, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 128, 3, 3]).
+	size mismatch for up_blocks.3.resnets.1.conv1.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.1.time_emb_proj.weight: copying a param with shape torch.Size([32, 128]) from checkpoint, the shape in current model is torch.Size([64, 256]).
+	size mismatch for up_blocks.3.resnets.1.time_emb_proj.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.1.norm2.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.1.norm2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.1.conv2.weight: copying a param with shape torch.Size([32, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3, 3]).
+	size mismatch for up_blocks.3.resnets.1.conv2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for up_blocks.3.resnets.1.conv_shortcut.weight: copying a param with shape torch.Size([32, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([64, 128, 1, 1]).
+	size mismatch for up_blocks.3.resnets.1.conv_shortcut.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for mid_block.attentions.0.group_norm.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.attentions.0.group_norm.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.attentions.0.to_q.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for mid_block.attentions.0.to_q.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.attentions.0.to_k.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for mid_block.attentions.0.to_k.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.attentions.0.to_v.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for mid_block.attentions.0.to_v.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.attentions.0.to_out.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for mid_block.attentions.0.to_out.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.0.norm1.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.0.norm1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.0.conv1.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for mid_block.resnets.0.conv1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.0.time_emb_proj.weight: copying a param with shape torch.Size([64, 128]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for mid_block.resnets.0.time_emb_proj.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.0.norm2.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.0.norm2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.0.conv2.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for mid_block.resnets.0.conv2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.1.norm1.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.1.norm1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.1.conv1.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for mid_block.resnets.1.conv1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.1.time_emb_proj.weight: copying a param with shape torch.Size([64, 128]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for mid_block.resnets.1.time_emb_proj.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.1.norm2.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.1.norm2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for mid_block.resnets.1.conv2.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+	size mismatch for mid_block.resnets.1.conv2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for conv_norm_out.weight: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for conv_norm_out.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for conv_out.weight: copying a param with shape torch.Size([3, 32, 3, 3]) from checkpoint, the shape in current model is torch.Size([3, 64, 3, 3]).
+
+[09-15 13:08:59] <<< train v13 (3.5M 宽 + 512域损失 + bandlimitD) rc=1 (0.4 min)
+[09-15 13:08:59] >>> train v9b2 (512域 0.38M 45k)

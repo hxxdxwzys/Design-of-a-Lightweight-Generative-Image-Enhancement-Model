@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\生成式图像增强轻量模型设计挑战\workspace\v3_fidelity27\full_eval.py", line 62, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\生成式图像增强轻量模型设计挑战\workspace\v3_fidelity27\full_eval.py", line 16, in main
+    if not json.loads((ROOT/'deployment_check_r1.json').read_text())['gate']:raise RuntimeError('Deployment identity/reload gate failed')
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Deployment identity/reload gate failed

@@ -1,0 +1,29 @@
+{
+  "model_sha256": "e6b440476f724dd3d2c13ee3e5b8cf5fd86b733c60b85eab549dd80d8c47309e",
+  "execution": "optimized_execution(False), deterministic=True, TF32=False",
+  "forward_calls_reserved": 9,
+  "reads": [
+    {
+      "input": 0,
+      "finite": true,
+      "u8max": 1.0,
+      "different_fraction": 1.52587890625e-05,
+      "repeat_exact": true
+    },
+    {
+      "input": 1,
+      "finite": true,
+      "u8max": 1.0,
+      "different_fraction": 0.0022939047776162624,
+      "repeat_exact": true
+    },
+    {
+      "input": 2,
+      "finite": true,
+      "u8max": 1.0,
+      "different_fraction": 1.271565793103946e-06,
+      "repeat_exact": true
+    }
+  ],
+  "pass": false
+}

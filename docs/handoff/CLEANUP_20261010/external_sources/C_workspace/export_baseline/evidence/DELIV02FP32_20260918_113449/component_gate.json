@@ -1,0 +1,207 @@
+{
+ "schema": "DELIV01-component-gate/1",
+ "checks": {},
+ "diffs": {
+  "enc_512": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "enc_1024": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    128,
+    128
+   ],
+   "passed": true
+  },
+  "dino_512": {
+   "max_abs": 0.000579833984375,
+   "mean_abs": 1.211819153468241e-06,
+   "finite": true,
+   "shape": [
+    1,
+    1024,
+    768
+   ],
+   "passed": false
+  },
+  "dec_64": {
+   "max_abs": 4.392117261886597e-06,
+   "mean_abs": 1.0893327129224417e-07,
+   "finite": true,
+   "shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "passed": true
+  },
+  "dec_128": {
+   "max_abs": 4.76837158203125e-06,
+   "mean_abs": 1.0954511253657984e-07,
+   "finite": true,
+   "shape": [
+    1,
+    3,
+    1024,
+    1024
+   ],
+   "passed": true
+  },
+  "wavelet": {
+   "max_abs": 1.1920928955078125e-07,
+   "mean_abs": 2.5111754453632784e-08,
+   "finite": true,
+   "shape": [
+    1,
+    3,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "enc_512_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "enc_1024_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "dec_64_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "dec_128_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "dino_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "wavelet_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "step_t1p0_r0p0": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "step_t1p0_r0p0_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "step_t0p5_r0p0": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "step_t0p5_r0p0_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "step_t1p0_r0p5": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "step_t1p0_r0p5_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  }
+ },
+ "execution_mode": {
+  "jit_optimized_execution": false,
+  "flags": {
+   "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+   "deterministic_algorithms": true,
+   "cudnn_benchmark": false,
+   "cudnn_deterministic": true,
+   "cudnn_allow_tf32": false,
+   "matmul_allow_tf32": false,
+   "torch": "2.7.0+cu126"
+  },
+  "reference_flags": {
+   "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+   "deterministic_algorithms": true,
+   "cudnn_benchmark": false,
+   "cudnn_deterministic": true,
+   "cudnn_allow_tf32": false,
+   "matmul_allow_tf32": false,
+   "torch": "2.7.0+cu126"
+  },
+  "flags_match": true,
+  "flags_diff": {}
+ },
+ "model_subdir": "model_dir_fp32",
+ "model_sha256": "613191d7955a8aab14846d2effe97f333c4b06e9492df3c46a13cda397c0bff8",
+ "input_fingerprints": {
+  "dec_128": "fd5d906cceff7b3a3804b34a0aa298cae4857234748f635d30889555689d2f2e",
+  "dec_64": "d5236e6e87e8f50e09e123aa35e2f06f1bf29ec055e858bf3235810616f24472",
+  "dino_512": "e91b5c02182952135787d140775319a9c4402bc0dd264d92f588994ebeec1109",
+  "enc_1024": "889812105001f5c11af1349c98d95029ff45043bc7681c366a5fd5cceacc0e3e",
+  "enc_512": "d095eb3940bbf487d8b78c76dac4b8597de61059cc737cb06cd61c371b3ea3e7",
+  "feats": "29349d96def13f4f01779ebf11530e5111675e7bee515949c6954f4083bf1a38",
+  "latent": "f0b871d27aac0476eacc11cc6af4502cef75f95c69dffdb7a2da2014f87ba546",
+  "noise": "3c5f05846155e3b479c88e46d98ac9fe7c905d0be0a315dcc73eb85783453672",
+  "wav_s": "6a9c69cb8178122717b34cf234408665728dead92c70ce65aacc3f48089b9734",
+  "wav_t": "2fc2fe681bd099be269f96f27c15dd5930ccef1709fa5408d35137d25c9769d2"
+ },
+ "repeat_selection": "ALL",
+ "finite_all": true,
+ "verdict": "FAIL"
+}

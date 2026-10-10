@@ -1,0 +1,36 @@
+{
+ "schema": "EXPORT01R-control-scenarios/1",
+ "scenarios": {
+  "happy": {
+   "exit": 0,
+   "worker_checks_pass": true,
+   "ledger_consistent": true,
+   "ALL": true,
+   "pass": true
+  },
+  "timeout": {
+   "exit": 1,
+   "wall_s": 3.1,
+   "timed_out": true,
+   "terminate_requested_at": "2026-09-17 14:57:17",
+   "supervisor_success": false,
+   "child_exit_confirmed": true,
+   "ALL": false,
+   "pass": true
+  },
+  "crash": {
+   "exit": 1,
+   "supervisor_success": false,
+   "open_attempt": true,
+   "ledger_consistent": false,
+   "ALL": false,
+   "pass": true
+  },
+  "prelock": {
+   "exit": 2,
+   "mentions_lock": true,
+   "pass": true
+  }
+ },
+ "all_pass": true
+}

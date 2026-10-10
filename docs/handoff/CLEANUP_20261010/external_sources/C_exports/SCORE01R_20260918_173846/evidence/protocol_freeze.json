@@ -1,0 +1,17 @@
+{
+ "schema": "SCORE01R-protocol-freeze/1",
+ "frozen_at": "2026-09-18 17:38:58",
+ "sha256": {
+  "score01r_bench.py": "5676b4809a6909f3b76b84ea3a3045f8b36033451a0e3bd3a87839154013df02",
+  "score01r_protocol.py": "f7e8622301a17f8fd9746c65b2f5e232d4734e2e4d97fcc2bf72c23f5d8b6390",
+  "score01r_profile.py": "1ab9f34135e3a24d80ee5587ad6eac1cf4680f33bc28fb765da3e1eda42e9838",
+  "score01_runner_v2.py": "cbbbac92cae3a73a0c7cc40313f065079cd35c5be0fa4a07573d19d8a1c0d0ca",
+  "baseline_runner.py": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314",
+  "candidate_runner.py": "cbbbac92cae3a73a0c7cc40313f065079cd35c5be0fa4a07573d19d8a1c0d0ca",
+  "baseline_model.pt": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+  "candidate_model.pt": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+  "prereg_score01r.json": "7c2e23aa6a59287082cc36c54e18aec955d3bcdddac64dd54053c7ce7e6bb352",
+  "ledger_score01r.json": "750622891fac35afd9cdaf9586f3f6088efa512173d68bac2f01265dc5343fe8"
+ },
+ "note": "GPU 调用前冻结：bench/profile/协议/候选/预登记/账本 SHA 在此固定，之后不改"
+}

@@ -1,0 +1,6 @@
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+== s6k val per-case ==
+  case1: lpips=0.4810 clipiqa=0.4620
+  case2: lpips=0.2368 clipiqa=0.5672
+  case3: lpips=0.3572 clipiqa=0.6141
+== test per-image clipiqa ==

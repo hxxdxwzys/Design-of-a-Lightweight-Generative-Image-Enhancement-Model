@@ -1,0 +1,15 @@
+[09-15 13:48:34] === Á´ M Æô¶¯ ===
+[09-15 13:48:34] >>> train v16 (res64 + 512ÓòËğÊ§ + bandlimitD)
+[09-15 15:16:05] <<< train v16 (res64 + 512ÓòËğÊ§ + bandlimitD) rc=0 (87.5 min)
+[09-15 15:16:05] === productize TinyV16 (down=8) ===
+[09-15 15:16:05] >>> TinyV16 export
+[09-15 15:16:34] <<< TinyV16 export rc=0 (0.5 min)
+[09-15 15:16:34] >>> TinyV16 render100
+[09-15 15:20:37] <<< TinyV16 render100 rc=0 (4.1 min)
+[09-15 15:20:37] >>> TinyV16 measure
+[09-15 15:21:28] <<< TinyV16 measure rc=0 (0.8 min)
+[09-15 15:21:28] >>> TinyV16 latency
+[09-15 15:21:32] <<< TinyV16 latency rc=0 (0.1 min)
+[09-15 15:21:32] >>> TinyV16 package
+[09-15 15:21:46] <<< TinyV16 package rc=0 (0.2 min)
+[09-15 15:21:46] >>> TinyV16 gate

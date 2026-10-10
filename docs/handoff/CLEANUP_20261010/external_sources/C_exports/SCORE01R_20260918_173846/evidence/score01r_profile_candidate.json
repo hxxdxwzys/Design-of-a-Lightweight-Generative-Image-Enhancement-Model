@@ -1,0 +1,81 @@
+{
+ "schema": "SCORE01R-profile/1",
+ "tag": "candidate",
+ "flags": {
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "deterministic_algorithms": true,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "cudnn_allow_tf32": false,
+  "matmul_allow_tf32": false,
+  "torch": "2.7.0+cu126"
+ },
+ "model_dir": "C:\\models\\exports\\SCORE01R_20260918_173846\\candidate\\model_dir",
+ "need_calls": 6,
+ "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+ "runner_sha256": "cbbbac92cae3a73a0c7cc40313f065079cd35c5be0fa4a07573d19d8a1c0d0ca",
+ "source_sha256": "1ab9f34135e3a24d80ee5587ad6eac1cf4680f33bc28fb765da3e1eda42e9838",
+ "per_input": {
+  "c1_512": {
+   "timing": {
+    "encode_s": 0.1932,
+    "features_s": 0.0274,
+    "dit_s": 0.1322,
+    "decode_s": 0.1733,
+    "postprocess_s": 0.0023,
+    "infer_s": 0.529
+   },
+   "wall_ms": 529.301,
+   "n_cuda_sync": 8,
+   "finite": true,
+   "out_shape": [
+    1,
+    3,
+    512,
+    512
+   ]
+  },
+  "c7_512": {
+   "timing": {
+    "encode_s": 0.1933,
+    "features_s": 0.0286,
+    "dit_s": 0.1349,
+    "decode_s": 0.1763,
+    "postprocess_s": 0.0029,
+    "infer_s": 0.5366
+   },
+   "wall_ms": 536.911,
+   "n_cuda_sync": 8,
+   "finite": true,
+   "out_shape": [
+    1,
+    3,
+    512,
+    512
+   ]
+  },
+  "c25_512": {
+   "timing": {
+    "encode_s": 0.1939,
+    "features_s": 0.0273,
+    "dit_s": 0.1347,
+    "decode_s": 0.1716,
+    "postprocess_s": 0.0039,
+    "infer_s": 0.5324
+   },
+   "wall_ms": 532.839,
+   "n_cuda_sync": 8,
+   "finite": true,
+   "out_shape": [
+    1,
+    3,
+    512,
+    512
+   ]
+  }
+ },
+ "started_at": "2026-09-18 17:55:07",
+ "budget_before": 162,
+ "status": "OK",
+ "finished_at": "2026-09-18 17:55:13"
+}

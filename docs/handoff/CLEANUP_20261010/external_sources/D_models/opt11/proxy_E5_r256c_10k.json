@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.679,
+ "niqe": 5.0841,
+ "musiq": 55.8809,
+ "maniqa": 0.3111,
+ "lapvar": 1299.3,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\e5_r256c",
+ "tag": "E5_r256c_10k"
+}

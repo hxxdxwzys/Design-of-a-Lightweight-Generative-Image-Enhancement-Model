@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.3897,
+ "niqe": 5.996,
+ "musiq": 41.2558,
+ "maniqa": 0.2188,
+ "lapvar": 96.1,
+ "n": 30,
+ "dir": "D:\\models\\pkg_TinyV5d\\output_dir",
+ "tag": "TinyV5d"
+}

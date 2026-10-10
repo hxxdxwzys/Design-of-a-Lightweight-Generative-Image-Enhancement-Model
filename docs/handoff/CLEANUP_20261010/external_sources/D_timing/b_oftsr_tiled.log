@@ -1,0 +1,11 @@
+[load] create guided_unet...
+[load] ckpt step=50001 missing=362 unexpected=3
+[boot] 3 images, up=1
+[done] case1_lq (63 tiles, 16s)
+[done] case2_lq (63 tiles, 16s)
+[done] case3_lq (63 tiles, 16s)
+[done] all
+1_lq (63 tiles, 16s)
+[08-26 02:13:06] [done] case2_lq (63 tiles, 16s)
+[08-26 02:13:22] [done] case3_lq (63 tiles, 16s)
+[08-26 02:13:22] [done] all

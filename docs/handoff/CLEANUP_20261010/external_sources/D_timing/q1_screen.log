@@ -1,0 +1,267 @@
+[09-15 15:21:58] input dir D:\models\q1_screen\in6 (6 imgs)
+--- render base_sc0.8_t512_wavelet rc=0 (8.0 min)
+kages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0915 15:23:15.706000 8072 site-packages\torch\_dynamo\convert_frame.py:1280] 
+
+--- measure base_sc0.8_t512_wavelet rc=1 (0.2 min)
+Traceback (most recent call last):
+  File "D:\tmp_timing\measure_dir.py", line 46, in <module>
+    out['n'] = len(next(iter([v for v in vals.values() if v])))
+                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+[09-15 15:30:09] base_sc0.8_t512_wavelet    clipiqa=None     lapvar=None     seam=1.054/1.006 n=6
+--- render sc1.0_t512_wavelet rc=1 (0.8 min)
+ected=0
+Traceback (most recent call last):
+  File "D:\tmp_timing\vosr_lora_infer.py", line 153, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\vosr_lora_infer.py", line 116, in main
+    venc = load_dinov2(args, device)
+  File "D:\models/finals/VOSR\inference_vosr_onestep.py", line 153, in load_dinov2
+    encoder = _hub_load_offline_first('dinov2_vitb14')
+  File "D:\models/finals/VOSR\inference_vosr_onestep.py", line 148, in _hub_load_offline_first
+    return torch.hub.load('facebookresearch/dinov2', name)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\hub.py", line 638, in load
+    repo_or_dir = _get_cache_or_reload(
+        repo_or_dir,
+    ...<4 lines>...
+        skip_validation=skip_validation,
+    )
+  File "D:\Python\Lib\site-packages\torch\hub.py", line 229, in _get_cache_or_reload
+    repo_owner, repo_name, ref = _parse_repo_info(github)
+                                 ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\hub.py", line 161, in _parse_repo_info
+    with urlopen(f"https://github.com/{repo_owner}/{repo_name}/tree/main/"):
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\urllib\request.py", line 489, in open
+    response = self._open(req, data)
+  File "D:\Python\Lib\urllib\request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "D:\Python\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "D:\Python\Lib\urllib\request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\urllib\request.py", line 1323, in do_open
+    r = h.getresponse()
+  File "D:\Python\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\Python\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\Python\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: [WinError 10060] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+[09-15 15:30:58] !! sc1.0_t512_wavelet 无出图 rc=1
+--- render sc1.2_t512_wavelet rc=0 (7.7 min)
+\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0915 15:31:55.087000 21276 site-packages\torch\_dynamo\convert_frame.py:1280] 
+
+--- measure sc1.2_t512_wavelet rc=1 (0.2 min)
+Traceback (most recent call last):
+  File "D:\tmp_timing\measure_dir.py", line 46, in <module>
+    out['n'] = len(next(iter([v for v in vals.values() if v])))
+                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+[09-15 15:38:50] sc1.2_t512_wavelet         clipiqa=None     lapvar=None     seam=1.055/0.998 n=6
+--- render sc0.8_t768_wavelet rc=1 (0.8 min)
+ected=0
+Traceback (most recent call last):
+  File "D:\tmp_timing\vosr_lora_infer.py", line 153, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\vosr_lora_infer.py", line 116, in main
+    venc = load_dinov2(args, device)
+  File "D:\models/finals/VOSR\inference_vosr_onestep.py", line 153, in load_dinov2
+    encoder = _hub_load_offline_first('dinov2_vitb14')
+  File "D:\models/finals/VOSR\inference_vosr_onestep.py", line 148, in _hub_load_offline_first
+    return torch.hub.load('facebookresearch/dinov2', name)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\hub.py", line 638, in load
+    repo_or_dir = _get_cache_or_reload(
+        repo_or_dir,
+    ...<4 lines>...
+        skip_validation=skip_validation,
+    )
+  File "D:\Python\Lib\site-packages\torch\hub.py", line 229, in _get_cache_or_reload
+    repo_owner, repo_name, ref = _parse_repo_info(github)
+                                 ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\hub.py", line 161, in _parse_repo_info
+    with urlopen(f"https://github.com/{repo_owner}/{repo_name}/tree/main/"):
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\urllib\request.py", line 489, in open
+    response = self._open(req, data)
+  File "D:\Python\Lib\urllib\request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "D:\Python\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "D:\Python\Lib\urllib\request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\urllib\request.py", line 1323, in do_open
+    r = h.getresponse()
+  File "D:\Python\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\Python\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\Python\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: [WinError 10060] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+[09-15 15:39:39] !! sc0.8_t768_wavelet 无出图 rc=1
+--- render sc0.8_t512_adain rc=0 (8.0 min)
+\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0915 15:40:55.947000 16248 site-packages\torch\_dynamo\convert_frame.py:1280] 
+
+--- measure sc0.8_t512_adain rc=1 (0.2 min)
+Traceback (most recent call last):
+  File "D:\tmp_timing\measure_dir.py", line 46, in <module>
+    out['n'] = len(next(iter([v for v in vals.values() if v])))
+                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+[09-15 15:47:48] sc0.8_t512_adain           clipiqa=None     lapvar=None     seam=1.049/1.005 n=6
+[09-15 15:47:48] === 汇总 ===
+[09-15 15:47:48] base_sc0.8_t512_wavelet    clipiqa=None     lapvar=None     seam=1.054/1.006
+[09-15 15:47:48] sc1.0_t512_wavelet         clipiqa=None     lapvar=None     seam=nan/nan
+[09-15 15:47:48] sc1.2_t512_wavelet         clipiqa=None     lapvar=None     seam=1.055/0.998
+[09-15 15:47:48] sc0.8_t768_wavelet         clipiqa=None     lapvar=None     seam=nan/nan
+[09-15 15:47:48] sc0.8_t512_adain           clipiqa=None     lapvar=None     seam=1.049/1.005
+[09-15 15:47:48] Q1_SCREEN_DONE
+[09-15 15:48:42] input dir D:\models\q1_screen\in6 (6 imgs)
+[09-15 15:49:09] input dir D:\models\q1_screen\in6 (6 imgs)
+--- measure base_sc0.8_t512_wavelet rc=0 (0.4 min)
+[measure] {"clipiqa": 0.911, "lapvar": 462.0452, "n": 6, "dir": "D:\\models\\q1_screen\\base_sc0.8_t512_wavelet"}
+MEASURE_DIR_DONE
+D:\tmp_timing\measure_dir.py:36: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(im)).permute(2, 0, 1).unsqueeze(0).to(dev).float().div_(255)
+
+[09-15 15:49:35] base_sc0.8_t512_wavelet    clipiqa=0.911    lapvar=462.0452 seam=1.054/1.006 n=6
+--- render sc1.0_t512_wavelet attempt1 rc=1
+ine 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "D:\Python\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "D:\Python\Lib\urllib\request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\urllib\request.py", line 1323, in do_open
+    r = h.getresponse()
+  File "D:\Python\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\Python\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\Python\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: [WinError 10060] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+[09-15 15:50:25]   retry sc1.0_t512_wavelet (0/6)

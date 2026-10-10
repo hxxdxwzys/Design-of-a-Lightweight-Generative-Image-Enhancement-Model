@@ -1,0 +1,42 @@
+{
+ "baseline_ms": 285.6,
+ "full_ms": 1100.1,
+ "ratio_now": 0.26,
+ "parts_ms": {
+  "DINOv2": 67.8,
+  "VAE_encode": 353.7,
+  "DiT": 317.5,
+  "LightDecoder": 385.0
+ },
+ "dit_prune": {
+  "21": {
+   "dit_ms": 233.7,
+   "full_est_ms": 1016.4,
+   "ratio_vs_baseline": 0.28
+  },
+  "14": {
+   "dit_ms": 164.1,
+   "full_est_ms": 946.7,
+   "ratio_vs_baseline": 0.3
+  },
+  "7": {
+   "dit_ms": 84.5,
+   "full_est_ms": 867.2,
+   "ratio_vs_baseline": 0.33
+  },
+  "4": {
+   "dit_ms": 51.7,
+   "full_est_ms": 834.3,
+   "ratio_vs_baseline": 0.34
+  }
+ },
+ "model": {
+  "dim": 1024,
+  "depth": 28,
+  "blocks": 28,
+  "enc": "dinov2b",
+  "enc_dim": 768
+ },
+ "lora": "D:/models/vosr_lora/v7/lora_s5000.pt",
+ "scale": 0.8
+}

@@ -1,0 +1,146 @@
+[
+ {
+  "tag": "v2_lora_s1500_sc0.3",
+  "variant": "v2",
+  "ck": "lora_s1500.pt",
+  "scale": 0.3,
+  "ok": true,
+  "clip": 0.7235,
+  "lpips": 0.3601,
+  "pass": true,
+  "per": {
+   "case1": {
+    "clipiqa": 0.7594,
+    "lpips": 0.504
+   },
+   "case2": {
+    "clipiqa": 0.6949,
+    "lpips": 0.1936
+   },
+   "case3": {
+    "clipiqa": 0.7162,
+    "lpips": 0.3828
+   }
+  }
+ },
+ {
+  "tag": "v2_lora_s1500_sc0.5",
+  "variant": "v2",
+  "ck": "lora_s1500.pt",
+  "scale": 0.5,
+  "ok": true,
+  "clip": 0.7906,
+  "lpips": 0.3701,
+  "pass": true,
+  "per": {
+   "case1": {
+    "clipiqa": 0.851,
+    "lpips": 0.5114
+   },
+   "case2": {
+    "clipiqa": 0.7446,
+    "lpips": 0.2131
+   },
+   "case3": {
+    "clipiqa": 0.7761,
+    "lpips": 0.3859
+   }
+  }
+ },
+ {
+  "tag": "v2_lora_s1500_sc0.7",
+  "variant": "v2",
+  "ck": "lora_s1500.pt",
+  "scale": 0.7,
+  "ok": true,
+  "clip": 0.8437,
+  "lpips": 0.3819,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.902,
+    "lpips": 0.5177
+   },
+   "case2": {
+    "clipiqa": 0.795,
+    "lpips": 0.239
+   },
+   "case3": {
+    "clipiqa": 0.8342,
+    "lpips": 0.3889
+   }
+  }
+ },
+ {
+  "tag": "v3_lora_s500_sc0.3",
+  "variant": "v3",
+  "ck": "lora_s500.pt",
+  "scale": 0.3,
+  "ok": true,
+  "clip": 0.7415,
+  "lpips": 0.3643,
+  "pass": true,
+  "per": {
+   "case1": {
+    "clipiqa": 0.7807,
+    "lpips": 0.5096
+   },
+   "case2": {
+    "clipiqa": 0.7143,
+    "lpips": 0.1975
+   },
+   "case3": {
+    "clipiqa": 0.7296,
+    "lpips": 0.3858
+   }
+  }
+ },
+ {
+  "tag": "v3_lora_s500_sc0.5",
+  "variant": "v3",
+  "ck": "lora_s500.pt",
+  "scale": 0.5,
+  "ok": true,
+  "clip": 0.8141,
+  "lpips": 0.3799,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.8684,
+    "lpips": 0.5242
+   },
+   "case2": {
+    "clipiqa": 0.7796,
+    "lpips": 0.2237
+   },
+   "case3": {
+    "clipiqa": 0.7943,
+    "lpips": 0.3917
+   }
+  }
+ },
+ {
+  "tag": "v3_lora_s500_sc0.7",
+  "variant": "v3",
+  "ck": "lora_s500.pt",
+  "scale": 0.7,
+  "ok": true,
+  "clip": 0.8596,
+  "lpips": 0.395,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9138,
+    "lpips": 0.5347
+   },
+   "case2": {
+    "clipiqa": 0.817,
+    "lpips": 0.2539
+   },
+   "case3": {
+    "clipiqa": 0.848,
+    "lpips": 0.3965
+   }
+  }
+ }
+]

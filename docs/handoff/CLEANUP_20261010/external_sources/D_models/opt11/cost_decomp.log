@@ -1,0 +1,10 @@
+[noref] export FAIL teps=%s" % (_arch, rd["ch"], rd["blocks"], rd.get("steps")), flush=True)
+                                                          ^^^^^
+NameError: name '_arch' is not defined. Did you mean: 'torch'?
+
+[thin16  ] median 6.40 ms best 6.07
+[w32     ] median 6.75 ms best 6.57
+[r256_32] export FAIL .bias", "net.2.weight", "net.2.bias", "net.4.weight", "net.4.bias", "net.6.weight", "net.6.bias". 
+	Unexpected key(s) in state_dict: "0.weight", "0.bias", "2.weight", "2.bias", "4.weight", "4.bias". 
+
+COST_DECOMP_DONE

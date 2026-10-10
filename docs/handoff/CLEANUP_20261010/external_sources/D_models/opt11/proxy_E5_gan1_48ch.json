@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.7594,
+ "niqe": 4.666,
+ "musiq": 58.0158,
+ "maniqa": 0.3719,
+ "lapvar": 1011.4,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\e5_gan1",
+ "tag": "E5_gan1_48ch"
+}

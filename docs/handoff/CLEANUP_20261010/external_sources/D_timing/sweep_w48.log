@@ -1,0 +1,26 @@
+[start] 31 jobs, limit=100, test_files=100
+[render] metric_net_w48_ema_s10000 step=? 开始 (0/100)
+  [10/100] 12.29s/img, eta 18.4min
+  [20/100] 12.44s/img, eta 16.6min
+  [30/100] 12.84s/img, eta 15.0min
+  [40/100] 13.14s/img, eta 13.1min
+  [50/100] 13.39s/img, eta 11.2min
+  [60/100] 13.47s/img, eta 9.0min
+  [70/100] 13.48s/img, eta 6.7min
+  [80/100] 13.55s/img, eta 4.5min
+  [90/100] 13.67s/img, eta 2.3min
+  [100/100] 13.78s/img, eta 0.0min
+[render] metric_net_w48_ema_s10000 完成 23.0min
+[metrics] metric_net_w48_ema_s10000: clipiqa=0.3934 niqe=5.09 (25.6min)
+[render] metric_net_w48_ema_s11000 step=? 开始 (0/100)
+  [10/100] 15.07s/img, eta 22.6min
+  [20/100] 15.15s/img, eta 20.2min
+  [30/100] 15.22s/img, eta 17.8min
+  [40/100] 15.27s/img, eta 15.3min
+  [50/100] 15.31s/img, eta 12.8min
+  [60/100] 15.34s/img, eta 10.2min
+  [70/100] 15.30s/img, eta 7.7min
+  [80/100] 15.27s/img, eta 5.1min
+  [90/100] 15.20s/img, eta 2.5min
+  [100/100] 15.13s/img, eta 0.0min
+[render] metric_net_w48_ema_s11000 完成 25.2min

@@ -1,0 +1,44 @@
+{
+ "schema": "DELIV01-p1-readings/1",
+ "status": "FAIL",
+ "error": "RuntimeError: 组件门槛未通过：{\"verdict\": \"FAIL\", \"max_abs\": 0.0084228515625}\n",
+ "traceback": "Traceback (most recent call last):\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\deliv_worker.py\", line 83, in main\n    raise RuntimeError(\"组件门槛未通过：%s\" % ((cp.stderr or cp.stdout or \"\")[-400:]))\nRuntimeError: 组件门槛未通过：{\"verdict\": \"FAIL\", \"max_abs\": 0.0084228515625}\n\n",
+ "ledger": {
+  "limits": {
+   "top": 24,
+   "top4k": 8,
+   "component": 96,
+   "wall_s": 2700.0,
+   "disk_gib": 8.0
+  },
+  "used": {
+   "top": 0,
+   "top4k": 0,
+   "component": 22
+  },
+  "n_events": 23,
+  "open_attempt": {
+   "attempt_id": "attempt_01",
+   "run_dir": "C:\\models\\exports\\DELIV01_20260917_211249",
+   "started_at": "2026-09-17 21:15:00",
+   "started_monotonic": 116919.3955004,
+   "prereg_sha256": "975b3cd85afef10ae84995366a8829e9ca1f2b04af2ba7bc30c51755ec8a9b96",
+   "source_sha256": "c7aa55f20cf6261a0b8bf7b3115a0e741f257fdb888dfe4d8c0ddd8f02dc683c",
+   "model_sha256": "c3946096bcda7513d1a100975f73e08aa8f6ce24f4c7837642484038dd3f543d",
+   "status": "RUNNING"
+  },
+  "attempts": [
+   {
+    "attempt_id": "attempt_01",
+    "run_dir": "C:\\models\\exports\\DELIV01_20260917_211249",
+    "started_at": "2026-09-17 21:15:00",
+    "started_monotonic": 116919.3955004,
+    "prereg_sha256": "975b3cd85afef10ae84995366a8829e9ca1f2b04af2ba7bc30c51755ec8a9b96",
+    "source_sha256": "c7aa55f20cf6261a0b8bf7b3115a0e741f257fdb888dfe4d8c0ddd8f02dc683c",
+    "model_sha256": "c3946096bcda7513d1a100975f73e08aa8f6ce24f4c7837642484038dd3f543d",
+    "status": "RUNNING"
+   }
+  ]
+ },
+ "elapsed_s": 51.057
+}

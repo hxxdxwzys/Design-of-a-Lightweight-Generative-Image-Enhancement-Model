@@ -1,0 +1,13 @@
+[09-15 15:21:58] input dir D:\models\q1_screen\in6 (6 imgs)
+[09-15 15:30:09] base_sc0.8_t512_wavelet    clipiqa=None     lapvar=None     seam=1.054/1.006 n=6
+[09-15 15:30:58] !! sc1.0_t512_wavelet 无出图 rc=1
+[09-15 15:38:50] sc1.2_t512_wavelet         clipiqa=None     lapvar=None     seam=1.055/0.998 n=6
+[09-15 15:39:39] !! sc0.8_t768_wavelet 无出图 rc=1
+[09-15 15:47:48] sc0.8_t512_adain           clipiqa=None     lapvar=None     seam=1.049/1.005 n=6
+[09-15 15:47:48] === 汇总 ===
+[09-15 15:47:48] base_sc0.8_t512_wavelet    clipiqa=None     lapvar=None     seam=1.054/1.006
+[09-15 15:47:48] sc1.0_t512_wavelet         clipiqa=None     lapvar=None     seam=nan/nan
+[09-15 15:47:48] sc1.2_t512_wavelet         clipiqa=None     lapvar=None     seam=1.055/0.998
+[09-15 15:47:48] sc0.8_t768_wavelet         clipiqa=None     lapvar=None     seam=nan/nan
+[09-15 15:47:48] sc0.8_t512_adain           clipiqa=None     lapvar=None     seam=1.049/1.005
+[09-15 15:47:48] Q1_SCREEN_DONE

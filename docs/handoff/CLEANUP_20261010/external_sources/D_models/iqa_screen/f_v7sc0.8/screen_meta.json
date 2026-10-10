@@ -1,0 +1,49 @@
+{
+ "schema": "LORA-screen/1",
+ "lora": "D:\\models\\vosr_lora\\v7\\lora_s5000.pt",
+ "scale": 0.8,
+ "seed": 42,
+ "base": "C:/models/finals/preset/ckpts/VOSR_0.5B_os/checkpoints/ema_model.safetensors",
+ "crops": "full",
+ "images": [
+  {
+   "case": 1,
+   "wall_ms": 25534.6,
+   "wh": [
+    4096,
+    3072
+   ],
+   "out_sha256": "5a92bfbb00b198e82bcc68a156cf048acc759dfdb4eadec4b2cafdc4f486ce04"
+  },
+  {
+   "case": 5,
+   "wall_ms": 24763.4,
+   "wh": [
+    4096,
+    3072
+   ],
+   "out_sha256": "11743553f7d758b216e5eca5a3c23acbfe7eb1d59cf155b65eed75ba2dbbc92c"
+  },
+  {
+   "case": 25,
+   "wall_ms": 24913.1,
+   "wh": [
+    3072,
+    4096
+   ],
+   "out_sha256": "51a88d27c83bc55bc5adc05ad8e75b6443275efae9b2898fafd42b6e203f981f"
+  },
+  {
+   "case": 88,
+   "wall_ms": 25180.0,
+   "wh": [
+    3072,
+    4096
+   ],
+   "out_sha256": "7994332294586e2f81e06f82024d8c69e1a0417ab763bed5c9acc77f351efcbc"
+  }
+ ],
+ "started_at": "2026-09-19 01:30:48",
+ "build_s": 36.0,
+ "total_s": 146.0
+}

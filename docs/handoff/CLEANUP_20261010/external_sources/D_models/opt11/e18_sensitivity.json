@@ -1,0 +1,66 @@
+{
+ "power_law": {
+  "A": 43.28755091062797,
+  "b": 0.9648272236174628,
+  "R2": 0.9063451329349006
+ },
+ "two_level": {
+  "A": 42.81004860478616,
+  "b": 0.9546861933796404,
+  "era_shift": 1.0149761784425162,
+  "R2": 0.9065685461094767
+ },
+ "hill": {
+  "ITmax": 55.78381270442028,
+  "g": 3.979999999999998,
+  "K": 19.105953728231174,
+  "R2": 0.8096996396616718
+ },
+ "candidates": [
+  {
+   "name": "V4(现行最佳)",
+   "ms": 6.61,
+   "clipiqa": 0.8042,
+   "ratio_power": 1.0,
+   "ratio_hill": 1.0,
+   "ratio_newera_b034": 1.0,
+   "local_slope": 6.082
+  },
+  {
+   "name": "L256",
+   "ms": 5.11,
+   "clipiqa": 0.6369,
+   "ratio_power": 0.8281,
+   "ratio_hill": 0.2253,
+   "ratio_newera_b034": 0.958,
+   "local_slope": 7.096
+  },
+  {
+   "name": "L192",
+   "ms": 3.04,
+   "clipiqa": 0.537,
+   "ratio_power": 0.7498,
+   "ratio_hill": 0.0651,
+   "ratio_newera_b034": 0.9651,
+   "local_slope": 8.314
+  },
+  {
+   "name": "L128",
+   "ms": 2.06,
+   "clipiqa": 0.4133,
+   "ratio_power": 0.6069,
+   "ratio_hill": 0.005,
+   "ratio_newera_b034": 0.9199,
+   "local_slope": 12.34
+  },
+  {
+   "name": "V21(裸学生)",
+   "ms": 5.12,
+   "clipiqa": 0.6306,
+   "ratio_power": 0.8199,
+   "ratio_hill": 0.2098,
+   "ratio_newera_b034": 0.9545,
+   "local_slope": 7.153
+  }
+ ]
+}

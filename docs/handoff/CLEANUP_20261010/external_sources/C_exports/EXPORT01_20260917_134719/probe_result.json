@@ -1,0 +1,62 @@
+{
+ "out_dir": "C:\\models\\exports\\EXPORT01_20260917_134719",
+ "assets_loaded_s": 40.459,
+ "env": {
+  "python": "3.13.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.7.0+cu126",
+  "torchvision": "0.22.0+cu126",
+  "diffusers": "0.39.0",
+  "peft": "0.20.0",
+  "safetensors": "0.8.0",
+  "numpy": "2.4.6",
+  "cv2": "5.0.0"
+ },
+ "lora_merge_s": 0.315,
+ "merged_type": "LightningDiT",
+ "has_forward_flexible": true,
+ "lora_merge_max_abs_diff": 0.5390138626098633,
+ "lora_merge_mean_abs_diff": 0.09936385601758957,
+ "patched_embedders": [
+  "t_embedder.mlp",
+  "r_embedder.mlp"
+ ],
+ "dino_blocks": 12,
+ "trace_s": 7.239,
+ "traced": [
+  "dec_128",
+  "dec_64",
+  "dino_feat",
+  "dit_step",
+  "vae_enc_1024",
+  "vae_enc_512",
+  "wavelet"
+ ],
+ "script_save_s": 2.496,
+ "ckpt_bytes": 1343304827,
+ "ckpt_sha256": "2f1b3ad869723d15c89932de54f03391b353b65d74f42a0fca0a0bc574fc46a7",
+ "reload_ok": true,
+ "crop_box": [
+  1792,
+  1280,
+  2304,
+  1792
+ ],
+ "input_sha256": "cf98a4984599bd7bbbde819200420736ad727888d179ee9023adcc1fe17fb43a",
+ "eager_512_s": 0.251,
+ "reloaded_512_s": 2.895,
+ "sr_dtype": "torch.float16",
+ "sr_max_abs_diff": 0.0,
+ "out_max_abs_diff": 0.0,
+ "out_mean_abs_diff": 0.0,
+ "out_shape": [
+  1,
+  3,
+  512,
+  512
+ ],
+ "out_finite": true,
+ "out_min": -1.0,
+ "out_max": 1.0,
+ "peak_vram_mib": 9611.9
+}

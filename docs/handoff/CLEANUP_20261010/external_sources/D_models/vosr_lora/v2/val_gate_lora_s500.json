@@ -1,0 +1,19 @@
+{
+ "clip": 0.8584,
+ "lpips": 0.4049,
+ "pass": false,
+ "per": {
+  "case1": {
+   "clipiqa": 0.9118,
+   "lpips": 0.5425
+  },
+  "case2": {
+   "clipiqa": 0.8181,
+   "lpips": 0.2751
+  },
+  "case3": {
+   "clipiqa": 0.8454,
+   "lpips": 0.3971
+  }
+ }
+}

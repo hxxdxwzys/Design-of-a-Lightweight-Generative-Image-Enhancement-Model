@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.7784,
+ "niqe": 4.4034,
+ "musiq": 58.6985,
+ "maniqa": 0.3848,
+ "lapvar": 1652.7,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\e8_render",
+ "tag": "E8_vosr1"
+}

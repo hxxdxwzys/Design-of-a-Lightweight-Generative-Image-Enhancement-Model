@@ -1,0 +1,5 @@
+
+### 3.1 续跑前的环境确认（暂停时实测 22:50）
+
+- `Get-Process python` = **0**；**GPU 无我方 compute app**；GPU 3.9 GiB 显存由 **StreetFighter6.exe（用户游戏）** 占用 ⇒ **恢复任何时延测量前必须先确认 GPU 真正空闲**，否则读数按 E4 的并发规则（+2.6×）失效。
+- 磁盘 D 8.42 GiB；E8 目标目录 `D:\models\refine_v1\tgt_vosr\`（1232 张）。

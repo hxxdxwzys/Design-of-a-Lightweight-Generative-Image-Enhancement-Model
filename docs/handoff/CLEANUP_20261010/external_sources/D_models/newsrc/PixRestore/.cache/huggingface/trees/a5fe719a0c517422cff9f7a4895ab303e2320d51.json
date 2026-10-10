@@ -1,0 +1,57 @@
+{
+ "format_version": 1,
+ "files": {
+  ".gitattributes": {
+   "size": 1519,
+   "blob_id": "a6344aac8c09253b3b630fb776ae94478aa0275b"
+  },
+  "README.md": {
+   "size": 28,
+   "blob_id": "154df8298fab5ecf322016157858e08cd1bccbe1"
+  },
+  "pixrestore-b/clean_weights/ema_model.safetensors": {
+   "size": 499371132,
+   "blob_id": "30c1b617871555b17dab2ad07e693448cf762512",
+   "lfs_sha256": "c541c7a21c0d200c81a8444a2463328044d7aa7c4b19c3acef139937eb83f07e",
+   "lfs_size": 499371132,
+   "xet_hash": "0063369245248e0533b5800bf54d536ce9032695918e43c59e5d18e603d7712d"
+  },
+  "pixrestore-b/config.json": {
+   "size": 2282,
+   "blob_id": "695ff1b05a45f6c291af6c5cc8745d5b5df68df8"
+  },
+  "pixrestore-l/clean_weights/ema_model.safetensors": {
+   "size": 1689091100,
+   "blob_id": "598512c8d9c16f4a75e80d5d2498493ebeac5803",
+   "lfs_sha256": "efef5fdcd748a42c313ab9130d14863100fe98211fb2602e6752bb331ef1f520",
+   "lfs_size": 1689091100,
+   "xet_hash": "8604f3930218d79dceccd9ff520e36912b767d11ab1cf1ac0915fcad251d4967"
+  },
+  "pixrestore-l/config.json": {
+   "size": 2286,
+   "blob_id": "ad2d8074bda32130f7ead145513819bf3f9c66f4"
+  },
+  "pixrestore-s/clean_weights/ema_model.safetensors": {
+   "size": 128709340,
+   "blob_id": "caa86cc1622b6080f15094dee544825f3cd8ad89",
+   "lfs_sha256": "13c10ca30fa865977de393457e731db9f2469159dbd69c85fb3c79b3edf06895",
+   "lfs_size": 128709340,
+   "xet_hash": "cd9cb2efae3c893f9e09e5616e410075e72df613bb07337e2971dee236a3d014"
+  },
+  "pixrestore-s/config.json": {
+   "size": 2281,
+   "blob_id": "7a7e7566b1e5c1ae2bbab71caa0b36f9fbf49af9"
+  },
+  "pixrestore-xl/clean_weights/ema_model.safetensors": {
+   "size": 2474624060,
+   "blob_id": "82ee73bd712fc87d186785ffa86c379ee2d90016",
+   "lfs_sha256": "37f0cf6365898ec1c33a25fd2d656a0f512fb26dc2637bde91fbac36a3d410e7",
+   "lfs_size": 2474624060,
+   "xet_hash": "d605a844028e408c09870cd5de5f02bb5608b0d9366e5a37ecdbeb4b27acd684"
+  },
+  "pixrestore-xl/config.json": {
+   "size": 2286,
+   "blob_id": "0f2996b57f3caf338bc3b840b23affab0d3cc911"
+  }
+ }
+}

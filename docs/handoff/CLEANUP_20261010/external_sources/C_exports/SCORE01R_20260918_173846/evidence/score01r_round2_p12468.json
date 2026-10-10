@@ -1,0 +1,718 @@
+{
+ "schema": "SCORE01R-bench/1",
+ "round": 2,
+ "order": [
+  "B",
+  "A",
+  "A",
+  "B"
+ ],
+ "warmup": 2,
+ "timed": 10,
+ "inputs": [
+  "c1_512",
+  "c7_512",
+  "c25_512"
+ ],
+ "attempt": "score01r_round2",
+ "pid": 12468,
+ "started_at": "2026-09-18 17:44:28",
+ "flags": {
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "deterministic_algorithms": true,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "cudnn_allow_tf32": false,
+  "matmul_allow_tf32": false,
+  "torch": "2.7.0+cu126"
+ },
+ "frozen_mode": true,
+ "need_calls": 144,
+ "torch": "2.7.0+cu126",
+ "cuda": "12.6",
+ "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+ "bench_source_sha256": "5676b4809a6909f3b76b84ea3a3045f8b36033451a0e3bd3a87839154013df02",
+ "protocol_source_sha256": "f7e8622301a17f8fd9746c65b2f5e232d4734e2e4d97fcc2bf72c23f5d8b6390",
+ "side": {
+  "A": {
+   "model_dir": "C:\\models\\exports\\SCORE01R_20260918_173846\\baseline\\model_dir",
+   "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+   "runner_sha256": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314",
+   "recipe_sha256": "77cfd28831d319b4af74fd0863030b4e6ea17d5cef4af28fe79a9196d9a6834d"
+  },
+  "B": {
+   "model_dir": "C:\\models\\exports\\SCORE01R_20260918_173846\\candidate\\model_dir",
+   "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+   "runner_sha256": "cbbbac92cae3a73a0c7cc40313f065079cd35c5be0fa4a07573d19d8a1c0d0ca",
+   "recipe_sha256": "77cfd28831d319b4af74fd0863030b4e6ea17d5cef4af28fe79a9196d9a6834d"
+  }
+ },
+ "gpu_before": {
+  "temp_c": "61",
+  "sm_mhz": "1890",
+  "power_w": "11.91",
+  "mem_used_mib": "548",
+  "compute_apps": "Field \"compute-apps\" is not a valid field to query."
+ },
+ "blocks": [
+  {
+   "label": "B",
+   "block_index": 0,
+   "gpu": {
+    "temp_c": "61",
+    "sm_mhz": "1890",
+    "power_w": "14.10",
+    "mem_used_mib": "3828",
+    "compute_apps": "Field \"compute-apps\" is not a valid field to query."
+   },
+   "inputs": {
+    "c1_512": {
+     "warmup_ms": [
+      1098.472,
+      516.329
+     ],
+     "timed_ms": [
+      499.112,
+      494.144,
+      509.639,
+      470.793,
+      462.839,
+      430.268,
+      439.544,
+      464.81,
+      479.754,
+      484.083
+     ],
+     "sync_internal_warmup": [
+      0,
+      0
+     ],
+     "sync_internal_timed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    },
+    "c7_512": {
+     "warmup_ms": [
+      542.369,
+      536.646
+     ],
+     "timed_ms": [
+      527.866,
+      494.239,
+      530.799,
+      465.829,
+      459.688,
+      457.107,
+      461.153,
+      454.284,
+      437.271,
+      436.884
+     ],
+     "sync_internal_warmup": [
+      0,
+      0
+     ],
+     "sync_internal_timed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    },
+    "c25_512": {
+     "warmup_ms": [
+      438.458,
+      508.823
+     ],
+     "timed_ms": [
+      446.733,
+      449.906,
+      475.425,
+      449.027,
+      519.649,
+      545.31,
+      501.625,
+      530.454,
+      509.901,
+      507.961
+     ],
+     "sync_internal_warmup": [
+      0,
+      0
+     ],
+     "sync_internal_timed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    }
+   }
+  },
+  {
+   "label": "A",
+   "block_index": 1,
+   "gpu": {
+    "temp_c": "72",
+    "sm_mhz": "1815",
+    "power_w": "62.97",
+    "mem_used_mib": "4602",
+    "compute_apps": "Field \"compute-apps\" is not a valid field to query."
+   },
+   "inputs": {
+    "c1_512": {
+     "warmup_ms": [
+      615.454,
+      475.622
+     ],
+     "timed_ms": [
+      521.432,
+      537.131,
+      529.828,
+      533.09,
+      538.119,
+      496.968,
+      497.726,
+      481.948,
+      474.67,
+      469.98
+     ],
+     "sync_internal_warmup": [
+      6,
+      6
+     ],
+     "sync_internal_timed": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    },
+    "c7_512": {
+     "warmup_ms": [
+      486.005,
+      476.229
+     ],
+     "timed_ms": [
+      501.295,
+      505.296,
+      488.349,
+      482.063,
+      487.004,
+      478.946,
+      479.239,
+      474.351,
+      470.104,
+      476.099
+     ],
+     "sync_internal_warmup": [
+      6,
+      6
+     ],
+     "sync_internal_timed": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    },
+    "c25_512": {
+     "warmup_ms": [
+      475.249,
+      478.12
+     ],
+     "timed_ms": [
+      483.07,
+      475.126,
+      478.773,
+      478.253,
+      471.075,
+      462.429,
+      476.57,
+      472.9,
+      463.444,
+      471.485
+     ],
+     "sync_internal_warmup": [
+      6,
+      6
+     ],
+     "sync_internal_timed": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    }
+   }
+  },
+  {
+   "label": "A",
+   "block_index": 2,
+   "gpu": {
+    "temp_c": "75",
+    "sm_mhz": "1815",
+    "power_w": "66.95",
+    "mem_used_mib": "4447",
+    "compute_apps": "Field \"compute-apps\" is not a valid field to query."
+   },
+   "inputs": {
+    "c1_512": {
+     "warmup_ms": [
+      489.366,
+      483.671
+     ],
+     "timed_ms": [
+      475.36,
+      447.797,
+      472.787,
+      486.883,
+      472.826,
+      466.861,
+      463.361,
+      473.442,
+      463.805,
+      461.893
+     ],
+     "sync_internal_warmup": [
+      6,
+      6
+     ],
+     "sync_internal_timed": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    },
+    "c7_512": {
+     "warmup_ms": [
+      440.408,
+      456.275
+     ],
+     "timed_ms": [
+      433.266,
+      441.765,
+      449.784,
+      438.02,
+      434.769,
+      449.098,
+      448.741,
+      456.528,
+      463.495,
+      488.399
+     ],
+     "sync_internal_warmup": [
+      6,
+      6
+     ],
+     "sync_internal_timed": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    },
+    "c25_512": {
+     "warmup_ms": [
+      474.969,
+      475.779
+     ],
+     "timed_ms": [
+      478.745,
+      455.302,
+      489.039,
+      466.409,
+      474.272,
+      496.941,
+      474.609,
+      484.421,
+      483.564,
+      479.541
+     ],
+     "sync_internal_warmup": [
+      6,
+      6
+     ],
+     "sync_internal_timed": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    }
+   }
+  },
+  {
+   "label": "B",
+   "block_index": 3,
+   "gpu": {
+    "temp_c": "77",
+    "sm_mhz": "2445",
+    "power_w": "57.98",
+    "mem_used_mib": "4467",
+    "compute_apps": "Field \"compute-apps\" is not a valid field to query."
+   },
+   "inputs": {
+    "c1_512": {
+     "warmup_ms": [
+      456.258,
+      455.964
+     ],
+     "timed_ms": [
+      473.03,
+      477.905,
+      528.958,
+      526.15,
+      533.888,
+      537.452,
+      503.979,
+      536.848,
+      509.257,
+      524.534
+     ],
+     "sync_internal_warmup": [
+      0,
+      0
+     ],
+     "sync_internal_timed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    },
+    "c7_512": {
+     "warmup_ms": [
+      505.972,
+      469.087
+     ],
+     "timed_ms": [
+      491.389,
+      476.988,
+      528.498,
+      535.746,
+      478.997,
+      522.477,
+      475.061,
+      465.944,
+      469.483,
+      466.852
+     ],
+     "sync_internal_warmup": [
+      0,
+      0
+     ],
+     "sync_internal_timed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    },
+    "c25_512": {
+     "warmup_ms": [
+      447.261,
+      454.842
+     ],
+     "timed_ms": [
+      479.305,
+      445.736,
+      456.179,
+      474.447,
+      485.571,
+      490.828,
+      474.216,
+      457.264,
+      476.898,
+      479.703
+     ],
+     "sync_internal_warmup": [
+      0,
+      0
+     ],
+     "sync_internal_timed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "timing_arg_all_none": true,
+     "input_shape": [
+      1,
+      3,
+      512,
+      512
+     ]
+    }
+   }
+  }
+ ],
+ "budget_before": {
+  "top": 456,
+  "top4k": 128
+ },
+ "load_s": {
+  "A": 2.422,
+  "B": 2.342
+ },
+ "mode": "interleaved",
+ "input_sha256": {
+  "c1_512": "e15df1edd679dd41fbaed3962aabe85d7f6e328956f989addf0e046f60b37298",
+  "c7_512": "cdff000f55b590f250cce58eb769a71f013f12567499b5e4e727e1ea9caa1e18",
+  "c25_512": "e2c028e1cb10a3da5afb3408f96d84d04eaf3c9addf09b140881b9cb4361cb7f"
+ },
+ "first_call_ms": {
+  "B": 1098.472,
+  "A": 615.454
+ },
+ "timing_arg_values": [
+  "None"
+ ],
+ "gpu_after": {
+  "temp_c": "78",
+  "sm_mhz": "2400",
+  "power_w": "63.52",
+  "mem_used_mib": "4465",
+  "compute_apps": "Field \"compute-apps\" is not a valid field to query."
+ },
+ "vram_allocated_mib": 3399.8,
+ "vram_reserved_mib": 3562.0,
+ "metrics": {
+  "inputs": {
+   "c1_512": {
+    "A": {
+     "n": 20,
+     "median": 475.015,
+     "p90": 533.4941,
+     "mean": 488.29535,
+     "min": 447.797,
+     "max": 538.119
+    },
+    "B": {
+     "n": 20,
+     "median": 496.62800000000004,
+     "p90": 534.1840000000001,
+     "mean": 494.34934999999996,
+     "min": 430.268,
+     "max": 537.452
+    },
+    "median_improvement": -0.045499615801606386,
+    "p90_rel_change": 0.0012931726892576312,
+    "median_ok": false,
+    "p90_ok": true
+   },
+   "c7_512": {
+    "A": {
+     "n": 20,
+     "median": 472.22749999999996,
+     "p90": 489.6886,
+     "mean": 467.33055,
+     "min": 433.266,
+     "max": 505.296
+    },
+    "B": {
+     "n": 20,
+     "median": 472.272,
+     "p90": 528.7281,
+     "mean": 481.82775000000004,
+     "min": 436.884,
+     "max": 535.746
+    },
+    "median_improvement": -9.423424091148386e-05,
+    "p90_rel_change": 0.07972311383193326,
+    "median_ok": false,
+    "p90_ok": false
+   },
+   "c25_512": {
+    "A": {
+     "n": 20,
+     "median": 475.84799999999996,
+     "p90": 484.8828,
+     "mean": 475.7984,
+     "min": 455.302,
+     "max": 496.941
+    },
+    "B": {
+     "n": 20,
+     "median": 478.1015,
+     "p90": 520.7295,
+     "mean": 482.8068999999999,
+     "min": 445.736,
+     "max": 545.31
+    },
+    "median_improvement": -0.004735755955683393,
+    "p90_rel_change": 0.07392858645429382,
+    "median_ok": false,
+    "p90_ok": false
+   }
+  },
+  "median_avg_A": 474.36349999999993,
+  "median_avg_B": 482.33383333333336,
+  "median_improvement": -0.0168021640225975,
+  "drift": 0.04531795610428038,
+  "verdict": "NO_GAIN",
+  "median_ok": false,
+  "p90_ok": false
+ },
+ "status": "OK",
+ "finished_at": "2026-09-18 17:45:48",
+ "budget_after": {
+  "top": 288,
+  "top4k": 0,
+  "component": 0
+ },
+ "calls_used": -168
+}

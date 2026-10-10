@@ -1,0 +1,8 @@
+full infer      : 5.81 ms   (GPU busy 7.24 ms)
+  x.to(cuda,fp16): 0.84 ms
+  downsample     : 0.04 ms
+  graph replay   : 0.01 ms
+  model eager    : 10.23 ms
+  upsample       : 0.04 ms
+  clamp/float    : 0.05 ms
+  合计(分段)     : 0.97 ms

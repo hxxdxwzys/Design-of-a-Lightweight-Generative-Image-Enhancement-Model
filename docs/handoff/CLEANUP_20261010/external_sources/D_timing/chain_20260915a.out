@@ -1,0 +1,5 @@
+[09-14 20:31:58] >>> sweep_val_fullref
+[09-14 20:32:40] <<< sweep_val_fullref rc=1 (0.7 min)
+[09-14 20:32:40] >>> hypir_test30
+[09-14 20:32:48] <<< hypir_test30 rc=0 (0.1 min)
+[09-14 20:32:48] CHAIN_A_DONE

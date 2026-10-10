@@ -1,0 +1,8 @@
+{
+  "selected_steps": 2000,
+  "selection_before_full_validation": true,
+  "reason": "6000-step LPIPS 0.1396172542590648 is worse than both 2000-step 0.1364303573500365 and parent 0.13959160482045263. Apply preregistered holdout-only selection; no official test or validation observations used.",
+  "selected_checkpoint": "conditional_s2000.pt",
+  "candidate_count": 2,
+  "further_training_authorized_by_protocol": false
+}

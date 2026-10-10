@@ -1,0 +1,51 @@
+{
+ "n": 30,
+ "names": [
+  "case1",
+  "case10",
+  "case100",
+  "case11",
+  "case12",
+  "case13",
+  "case14",
+  "case15",
+  "case16",
+  "case17",
+  "case18",
+  "case19",
+  "case2",
+  "case20",
+  "case21",
+  "case22",
+  "case23",
+  "case24",
+  "case25",
+  "case26",
+  "case27",
+  "case28",
+  "case29",
+  "case3",
+  "case30",
+  "case31",
+  "case32",
+  "case33",
+  "case34",
+  "case35"
+ ],
+ "res": {
+  "niqe": {
+   "m24": 5.2559,
+   "sc04": 4.0976,
+   "delta": -1.1583
+  },
+  "clipiqa": {
+   "m24": 0.9023,
+   "sc04": 0.77,
+   "delta": -0.1323
+  }
+ },
+ "pred": {
+  "m24": 43.49,
+  "sc04": 57.02
+ }
+}

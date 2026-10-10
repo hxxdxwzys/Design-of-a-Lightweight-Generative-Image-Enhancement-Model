@@ -1,0 +1,6 @@
+﻿=== verify_c2 ===
+{"verdict": "PASS", "n_checked_from_disk": 100, "n_ok": 100, "field_schema_uniform": true, "n_distinct_field_schemas": 1, "input_size_histogram": {"(4096, 3072)": 68, "(3072, 4096)": 32}, "errors": []}
+VERDICT=PASS
+=== make_zip ===
+{"zip_name": "Track2_OPT01_fp16full_v1.zip", "zip_bytes": 1964509744, "zip_sha256": "a8a74e205be6a33bcdd8119d908fe83335814c43aab69c7e9cbd0b9ba09f145a", "within_limit": true, "n_entries": 103, "n_jpg": 100, "n_model_files": 3}
+RC_make_zip=0

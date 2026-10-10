@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.7204,
+ "niqe": 5.4061,
+ "musiq": 56.286,
+ "maniqa": 0.3329,
+ "lapvar": 374.4,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\e5_v1l1",
+ "tag": "E5_v1_l1lpips"
+}

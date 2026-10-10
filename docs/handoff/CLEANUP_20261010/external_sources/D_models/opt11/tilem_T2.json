@@ -1,0 +1,61 @@
+{
+ "tag": "T2",
+ "n": 8,
+ "dir": "D:\\models\\opt11\\tile_T2",
+ "clipiqa": 0.665,
+ "niqe": 4.8013,
+ "lapvar": 234.0,
+ "clipiqa_std": 0.0659,
+ "niqe_std": 0.5632,
+ "per_image": [
+  {
+   "case": "case1.jpg",
+   "clipiqa": 0.6266,
+   "niqe": 5.2903,
+   "lapvar": 120.8
+  },
+  {
+   "case": "case2.jpg",
+   "clipiqa": 0.6418,
+   "niqe": 4.273,
+   "lapvar": 243.2
+  },
+  {
+   "case": "case3.jpg",
+   "clipiqa": 0.5639,
+   "niqe": 4.7939,
+   "lapvar": 151.6
+  },
+  {
+   "case": "case5.jpg",
+   "clipiqa": 0.7202,
+   "niqe": 5.7124,
+   "lapvar": 81.3
+  },
+  {
+   "case": "case7.jpg",
+   "clipiqa": 0.7698,
+   "niqe": 5.4008,
+   "lapvar": 236.4
+  },
+  {
+   "case": "case10.jpg",
+   "clipiqa": 0.7106,
+   "niqe": 4.5839,
+   "lapvar": 243.1
+  },
+  {
+   "case": "case12.jpg",
+   "clipiqa": 0.6962,
+   "niqe": 4.1268,
+   "lapvar": 337.6
+  },
+  {
+   "case": "case17.jpg",
+   "clipiqa": 0.5912,
+   "niqe": 4.229,
+   "lapvar": 458.5
+  }
+ ],
+ "sec": 11.4
+}

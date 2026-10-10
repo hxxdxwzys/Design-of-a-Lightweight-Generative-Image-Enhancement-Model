@@ -1,0 +1,5 @@
+[export] rc=0 25.7s :: [export] D:\models\pkg_Tinyv19\model_dir/your_model.pt  out=(1, 3, 256, 256) nan=False params=0.87M native=256 down=2 | EXPORT_TINY_DONE
+[render100] rc=0 250.9s :: [render] 100 张 -> D:\models\pkg_Tinyv19\output_dir (3.8 min) | RENDER_TINY_DONE
+[render] jpg = 100
+[package] rc=0 20.0s :: [ok] D:\models\opt11\Track2_Tinyv19.zip (545MB, 100 jpgs)
+[latency] 空闲态 median 5.36 ms (best 4.47) -> r=38.8 factor=2.101

@@ -1,0 +1,7 @@
+{
+ "tag": "E21_clip1",
+ "dir": "D:\\models\\opt11\\clip1_render",
+ "clipiqa_crop_mean": 0.6263,
+ "n": 30,
+ "crop": 512
+}

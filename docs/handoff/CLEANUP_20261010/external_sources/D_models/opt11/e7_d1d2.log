@@ -1,0 +1,47 @@
+== 参考点 ==
+   V4(已交)         IT= 35.63 factor=2.022 score= 72.05  (t=7.00 ms)
+   V3(已交)         IT= 33.69 factor=2.036 score= 68.58  (t=6.68 ms)
+   VOSR/OPT10 图   IT= 45.83 factor=1.022 score= 46.86  (t=324.00 ms)
+   M24 图          IT= 42.25 factor=0.999 score= 42.20  (t=366.20 ms)
+   r256c          IT= 32.43 factor=2.083 score= 67.57  (t=5.69 ms)
+
+== 达到目标分所需（括号内为对应 musiq）==
+   目标 83.62：
+      t=  2.0 ms (factor 2.359) -> 需 IT= 35.45 -> 需 musiq= 57.32  ← VOSR 档(65.9)可达
+      t=  3.0 ms (factor 2.261) -> 需 IT= 36.98 -> 需 musiq= 58.81  ← VOSR 档(65.9)可达
+      t=  5.0 ms (factor 2.121) -> 需 IT= 39.43 -> 需 musiq= 61.11  ← VOSR 档(65.9)可达
+      t=  7.0 ms (factor 2.022) -> 需 IT= 41.35 -> 需 musiq= 62.89  ← VOSR 档(65.9)可达
+      t= 15.0 ms (factor 1.792) -> 需 IT= 46.67 -> 需 musiq= 67.64
+   目标 98.96：
+      t=  2.0 ms (factor 2.359) -> 需 IT= 41.95 -> 需 musiq= 63.44  ← VOSR 档(65.9)可达
+      t=  3.0 ms (factor 2.261) -> 需 IT= 43.77 -> 需 musiq= 65.08  ← VOSR 档(65.9)可达
+      t=  5.0 ms (factor 2.121) -> 需 IT= 46.66 -> 需 musiq= 67.63
+      t=  7.0 ms (factor 2.022) -> 需 IT= 48.94 -> 需 musiq= 69.61
+      t= 15.0 ms (factor 1.792) -> 需 IT= 55.23 -> 需 musiq= 74.86
+   目标 120.00：
+      t=  2.0 ms (factor 2.359) -> 需 IT= 50.87 -> 需 musiq= 71.25
+      t=  3.0 ms (factor 2.261) -> 需 IT= 53.07 -> 需 musiq= 73.09
+      t=  5.0 ms (factor 2.121) -> 需 IT= 56.58 -> 需 musiq= 75.96
+      t=  7.0 ms (factor 2.022) -> 需 IT= 59.35 -> 需 musiq= 78.17
+      t= 15.0 ms (factor 1.792) -> 需 IT= 66.97 -> 需 musiq= 84.07
+   目标 217.21：
+      t=  2.0 ms (factor 2.359) -> 需 IT= 92.08 -> 需 musiq=101.84
+      t=  3.0 ms (factor 2.261) -> 需 IT= 96.07 -> 需 musiq=104.47
+      t=  5.0 ms (factor 2.121) -> 需 IT=102.41 -> 需 musiq=108.57
+      t=  7.0 ms (factor 2.022) -> 需 IT=107.42 -> 需 musiq=111.74
+      t= 15.0 ms (factor 1.792) -> 需 IT=121.22 -> 需 musiq=120.17
+
+== 本族上限推算（乐观但仍在数据范围内）==
+   若快线做到 clipiqa 0.85 / musiq 66：IT=45.20
+      t=  2.0 ms -> factor 2.359 -> score 106.62
+      t=  2.5 ms -> factor 2.307 -> score 104.26
+      t=  3.0 ms -> factor 2.261 -> score 102.19
+      t=  5.0 ms -> factor 2.121 -> score  95.87
+      t=  6.7 ms -> factor 2.035 -> score  91.99
+      t= 10.0 ms -> factor 1.914 -> score  86.53
+
+== 结论 ==
+   ① 10 名线 98.96 需要「musiq≈65 且 t≤3 ms」或「musiq≈69 且 t≈6.7 ms」
+   ② 我们当前最好 70.10 离它差 ~29 分；缺口 ~2/3 在图像项（musiq 58 → 65），~1/3 在时延（6.7 → 3 ms）
+   ③ 榜首 217 需 IT≈80（musiq>100）⇒ 超出本模型适用范围【UNKNOWN】，不能用我们的资产解释
+E7_DONE

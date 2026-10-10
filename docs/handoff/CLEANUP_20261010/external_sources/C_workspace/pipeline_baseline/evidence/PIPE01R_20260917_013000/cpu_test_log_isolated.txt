@@ -1,0 +1,82 @@
+test_boundary_last_unit_allowed_then_refused (__main__.TestBudgetLedger.test_boundary_last_unit_allowed_then_refused) ... ok
+test_concurrent_lock_refused (__main__.TestBudgetLedger.test_concurrent_lock_refused) ... ok
+test_cross_attempt_accumulates_and_interruption_counts (__main__.TestBudgetLedger.test_cross_attempt_accumulates_and_interruption_counts) ... ok
+test_disk_budget (__main__.TestBudgetLedger.test_disk_budget) ... ok
+test_missing_ledger_without_init_refuses (__main__.TestBudgetLedger.test_missing_ledger_without_init_refuses) ... ok
+test_new_process_cannot_reset_quota (__main__.TestBudgetLedger.test_new_process_cannot_reset_quota) ... ok
+test_reserve_is_persisted_before_call_and_not_refunded (__main__.TestBudgetLedger.test_reserve_is_persisted_before_call_and_not_refunded) ... ok
+test_wall_stop (__main__.TestBudgetLedger.test_wall_stop) ... ok
+test_zero_quota_refuses (__main__.TestBudgetLedger.test_zero_quota_refuses) ... ok
+test_args_ns_conflict_is_rejected (__main__.TestConfigFrozen.test_args_ns_conflict_is_rejected) ... ok
+test_frozen_config_loads_and_locks (__main__.TestConfigFrozen.test_frozen_config_loads_and_locks) ... ok
+test_rejects_tampered_switches (__main__.TestConfigFrozen.test_rejects_tampered_switches) ... ok
+test_rejects_unknown_and_missing_keys (__main__.TestConfigFrozen.test_rejects_unknown_and_missing_keys) ... ok
+test_tile_params_match_task_sheet (__main__.TestConfigFrozen.test_tile_params_match_task_sheet) ... ok
+test_tile_report_rejects_recipe_change (__main__.TestConfigFrozen.test_tile_report_rejects_recipe_change) ... ok
+test_gray_input_is_not_wrongly_saturated (__main__.TestDinoPreprocess.test_gray_input_is_not_wrongly_saturated) ... ok
+test_matches_reference_for_all_cases (__main__.TestDinoPreprocess.test_matches_reference_for_all_cases) ... ok
+test_old_wrong_order_would_differ (__main__.TestDinoPreprocess.test_old_wrong_order_would_differ) ... ok
+test_white_and_gradient_finite (__main__.TestDinoPreprocess.test_white_and_gradient_finite) ... ok
+test_criteria_fail_is_reported (__main__.TestDriverEndToEndCPU.test_criteria_fail_is_reported) ... ok
+test_driver_full_flow_passes_with_identical_entries (__main__.TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries) ... ok
+test_identity_mismatch_fails_even_with_zero_diff (__main__.TestDriverEndToEndCPU.test_identity_mismatch_fails_even_with_zero_diff) ... ok
+test_nonempty_run_dir_is_refused (__main__.TestDriverEndToEndCPU.test_nonempty_run_dir_is_refused) ... ok
+test_prereg_mismatch_blocks_before_any_load (__main__.TestDriverEndToEndCPU.test_prereg_mismatch_blocks_before_any_load) ... ok
+test_zero_quota_blocks_before_any_forward (__main__.TestDriverEndToEndCPU.test_zero_quota_blocks_before_any_forward) ... ok
+test_driver_refuses_without_prereg (__main__.TestFailurePropagation.test_driver_refuses_without_prereg) ... ok
+test_make_evidence_refuses_existing_run_dir_without_writing (__main__.TestFailurePropagation.test_make_evidence_refuses_existing_run_dir_without_writing)
+首版会先改写 evidence 再检查 run 目录；此测试固定在临时目录并核对无写入。 ... ok
+test_output_validation (__main__.TestFailurePropagation.test_output_validation) ... ok
+test_asset_fingerprint_covers_vae_and_dino_source (__main__.TestIdentityAndPrereg.test_asset_fingerprint_covers_vae_and_dino_source) ... ok
+test_identity_comparable_strips_entry_only (__main__.TestIdentityAndPrereg.test_identity_comparable_strips_entry_only) ... ok
+test_implementation_fingerprint_real (__main__.TestIdentityAndPrereg.test_implementation_fingerprint_real) ... ok
+test_cli_help_does_not_load_model_or_cuda (__main__.TestImportSafety.test_cli_help_does_not_load_model_or_cuda) ... ok
+test_imports_do_not_pull_torch (__main__.TestImportSafety.test_imports_do_not_pull_torch) ... ok
+test_infer_core_blocks_nan_latent (__main__.TestNaNBeforeQuantization.test_infer_core_blocks_nan_latent) ... ok
+test_require_finite_blocks (__main__.TestNaNBeforeQuantization.test_require_finite_blocks) ... ok
+test_uint8_quantization_would_hide_nan_but_precheck_blocks (__main__.TestNaNBeforeQuantization.test_uint8_quantization_would_hide_nan_but_precheck_blocks) ... D:\Python\Lib\site-packages\torchvision\transforms\functional.py:282: RuntimeWarning: invalid value encountered in cast
+  npimg = (npimg * 255).astype(np.uint8)
+ok
+test_lora_missing_file_fails (__main__.TestSafeLoading.test_lora_missing_file_fails) ... ok
+test_lora_unsafe_payload_fails_closed (__main__.TestSafeLoading.test_lora_unsafe_payload_fails_closed) ... ok
+test_missing_or_wrong_dino_never_goes_online (__main__.TestSafeLoading.test_missing_or_wrong_dino_never_goes_online) ... ok
+test_no_torch_hub_calls_in_sources (__main__.TestSafeLoading.test_no_torch_hub_calls_in_sources)
+只禁止真实调用（torch.hub.xxx(）；说明性文字里提到 hub 不算违规。 ... ok
+test_no_weights_only_false_in_sources (__main__.TestSafeLoading.test_no_weights_only_false_in_sources) ... ok
+test_wrong_checkpoint_fails_strict (__main__.TestSafeLoading.test_wrong_checkpoint_fails_strict)
+指向一个能安全加载但不是 DINO 的文件 -> strict 键集必须报错（不静默）。 ... C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+ok
+test_local_seed_is_order_independent (__main__.TestSeedAndShapes.test_local_seed_is_order_independent) ... ok
+test_pad_and_crop_for_non_multiple_shapes (__main__.TestSeedAndShapes.test_pad_and_crop_for_non_multiple_shapes) ... ok
+test_both_entries_call_same_core (__main__.TestSharedCoreAndEntries.test_both_entries_call_same_core) ... ok
+test_model_dir_must_exist (__main__.TestSharedCoreAndEntries.test_model_dir_must_exist) ... ok
+test_offline_records_separate_io_timing (__main__.TestSharedCoreAndEntries.test_offline_records_separate_io_timing) ... ok
+test_png_encoder_is_shared_and_pixel_identical (__main__.TestSharedCoreAndEntries.test_png_encoder_is_shared_and_pixel_identical) ... ok
+test_prompt_must_be_empty (__main__.TestSharedCoreAndEntries.test_prompt_must_be_empty) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 9.274s
+
+OK
+[pair] status=CRITERIA_FAIL calls=8 forwards_reserved=8 wall_total=1.0s
+[criteria] {"identity_equal": true, "all_calls_ok": true, "n_calls": 8, "pairs_ok": false, "repeat_ok": true, "budget_ok": true, "prereg_verified": true, "no_unsafe_load": true, "dino_loader": "local_source+local_ckpt(weights_only=True,strict=True), 无 torch.hub"}
+[pair] case1_crop512  max=1.000e-03 mean=1.000e-03 png_identical=False
+[pair] case1_full     max=1.000e-03 mean=1.000e-03 png_identical=False
+[pair] case7_full     max=1.000e-03 mean=1.000e-03 png_identical=False
+[pair] status=OK calls=8 forwards_reserved=8 wall_total=1.0s
+[criteria] {"identity_equal": true, "all_calls_ok": true, "n_calls": 8, "pairs_ok": true, "repeat_ok": true, "budget_ok": true, "prereg_verified": true, "no_unsafe_load": true, "dino_loader": "local_source+local_ckpt(weights_only=True,strict=True), 无 torch.hub"}
+[pair] case1_crop512  max=0.000e+00 mean=0.000e+00 png_identical=True
+[pair] case1_full     max=0.000e+00 mean=0.000e+00 png_identical=True
+[pair] case7_full     max=0.000e+00 mean=0.000e+00 png_identical=True
+[pair] status=CRITERIA_FAIL calls=8 forwards_reserved=8 wall_total=1.0s
+[criteria] {"identity_equal": false, "identity_diff_keys": ["effective_fingerprint"], "all_calls_ok": true, "n_calls": 8, "pairs_ok": true, "repeat_ok": true, "budget_ok": true, "prereg_verified": true, "no_unsafe_load": true, "dino_loader": "local_source+local_ckpt(weights_only=True,strict=True), 无 torch.hub"}
+[pair] case1_crop512  max=0.000e+00 mean=0.000e+00 png_identical=True
+[pair] case1_full     max=0.000e+00 mean=0.000e+00 png_identical=True
+[pair] case7_full     max=0.000e+00 mean=0.000e+00 png_identical=True
+[pair] status=BUDGET_STOP calls=0 forwards_reserved=0 wall_total=0.0s
+ISOLATED_RUN_DIR=C:\Users\YUKINA~1\AppData\Local\Temp\pipe01r_iso_001616

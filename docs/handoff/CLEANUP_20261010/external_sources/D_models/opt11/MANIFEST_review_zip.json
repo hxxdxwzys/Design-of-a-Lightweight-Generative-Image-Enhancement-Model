@@ -1,0 +1,20 @@
+{
+ "built": "2026-09-26 00:07:55",
+ "purpose": "初赛复核/决赛预选材料（推理工程+权重+requirements+一页PPT，单一 zip，无图片）",
+ "sha256": {
+  "infer.py": "512127570570c3327a4e03bdbde156116eaca1dc5ff28908ab3ce13c62fbbd83",
+  "model_dir/runner.py": "8e434e0240eed20b924e04f5f7338a037c8ec7821b8067159fe50ac7492ff70b",
+  "model_dir/your_model.pt": "2770215987e2b5585dc26870a8a6fee05672bbf514267336498a1bf9e6409b62",
+  "Proposal_OnePage.pptx": "85f88a01417c04599fe85afe051221ed22c1c945fc00016af326f88e4b7d4f09",
+  "README_CN.md": "5ffeae47edfa3415071d79296a61cf9aa59553fb08931fecb44cbe3d052c6d9d",
+  "requirements.txt": "c24637a9aa415011c3ce2a615c46927a547a59e2599bff16e65d0679166647a9",
+  "samples/case17_in.jpg": "aad92fc22db1a4872bcdd32dda17233c49344a127cdb0e2f30434726a94446e3",
+  "samples/case17_out.jpg": "dbba97374ff6a274805cb127dd1b6b1919bc6dc5557b27c6994689307d145b0a",
+  "samples/case3_in.jpg": "055d88cf9f33803e22a4474d0613e002d177975c98a3fa8b7d87b46d79bbf3f0",
+  "samples/case3_out.jpg": "7b959f862b2b630c9197613b07a11d666770aa87735d7d158ad24fdd80938c8c",
+  "selfcheck.py": "20f0a4d4cd3e5716d5dcc200144603dd61aba45198fb78aa7de479f325ece4b1",
+  "SUBMISSION_README.md": "e684cd7859036d5dd7b937c11f7a4f4f195a66063dc5e795968a6d23ca820ba5"
+ },
+ "zip_sha256": "de7408cd3f762257f371e7b53ab33270ee286ef8d063e533c3433b30010d0a96",
+ "zip_bytes": 23942123
+}

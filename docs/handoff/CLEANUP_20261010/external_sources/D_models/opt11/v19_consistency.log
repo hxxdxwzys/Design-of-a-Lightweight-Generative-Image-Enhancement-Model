@@ -1,0 +1,1 @@
+v19 runner vs ckpt (fp16 同路, case25 tile): max u8 = 1, mean = 0.00881

@@ -1,0 +1,11 @@
+[convert] vosr_seed0: 100 jpgs
+[ok] vosr_seed0: clipiqa=0.5963 niqe=3.85, entries=37
+[convert] vosr_seed123: 100 jpgs
+[ok] vosr_seed123: clipiqa=0.5931 niqe=3.86, entries=38
+[convert] vosr_seed7: 100 jpgs
+[ok] vosr_seed7: clipiqa=0.5931 niqe=3.87, entries=39
+[convert] vosr_seed999: 100 jpgs
+[ok] vosr_seed999: clipiqa=0.5966 niqe=3.85, entries=40
+[convert] vosr_seed2024: 100 jpgs
+[ok] vosr_seed2024: clipiqa=0.5938 niqe=3.85, entries=41
+[done]

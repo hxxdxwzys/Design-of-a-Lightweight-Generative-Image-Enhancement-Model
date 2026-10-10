@@ -1,0 +1,18 @@
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+== s6k val per-case ==
+  case1: lpips=0.4810 clipiqa=0.4620
+  case2: lpips=0.2368 clipiqa=0.5672
+  case3: lpips=0.3572 clipiqa=0.6141
+== test per-image clipiqa ==
+  10/100 (34s, 3.4s/img)
+  20/100 (69s, 3.4s/img)
+  30/100 (104s, 3.5s/img)
+  40/100 (139s, 3.5s/img)
+  50/100 (174s, 3.5s/img)
+  60/100 (209s, 3.5s/img)
+  70/100 (245s, 3.5s/img)
+  80/100 (280s, 3.5s/img)
+  90/100 (315s, 3.5s/img)
+  100/100 (351s, 3.5s/img)
+== done ==
+saved per_image_report.json

@@ -1,0 +1,39 @@
+{
+ "parents": [
+  {
+   "role": "base_weights",
+   "path": "C:\\models\\finals\\preset\\ckpts\\VOSR_0.5B_os\\checkpoints\\ema_model.safetensors",
+   "bytes": 1948337520,
+   "sha256": "45b6687b4ce59fa3451300f9e0fdcaf2e729c15e65f444af210a7851dfa13203"
+  },
+  {
+   "role": "lora",
+   "path": "D:\\models\\vosr_lora\\v7\\lora_s5000.pt",
+   "bytes": 67435697,
+   "sha256": "8b5193eddf0cb1fa26deaca1fd86e754cfaf2d778fdf5cb92b1de130a954771b"
+  },
+  {
+   "role": "vae_dir",
+   "path": "C:\\models\\finals\\preset\\ckpts\\stable-diffusion-2-1-base",
+   "kind": "directory",
+   "n_files": 27
+  },
+  {
+   "role": "light_decoder",
+   "path": "C:\\models\\finals\\preset\\ckpts\\sd21_lwdecoder.pth",
+   "bytes": 52086482,
+   "sha256": "a326a5e5c4a2445ce970987695979f3d5e5413d39b98c73a2ddac0055d2cdf59"
+  },
+  {
+   "role": "dinov2_ckpt",
+   "path": "C:\\models\\finals\\preset\\ckpts\\torch_cache\\checkpoints\\dinov2_vitb14_pretrain.pth",
+   "bytes": 346378731,
+   "sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73"
+  }
+ ],
+ "pipeline_config_sha256": "1a2e44d7709168187b28e30ffa15b35f9f0f5431205ec9b983d50a9c90aca42a",
+ "export_chain_py_sha256": "f6b3cf521a21dd19685f23426349394bbaf3e3a5327a426fbfa67583db2c9dbc",
+ "delivery_runner_py_sha256": "3b88b550b3d93fd8977a1e7a6a2c009e2659b8fd3f5a73688073bb2f2072ee32",
+ "build_export_py_sha256": "685bc48270a2045bedf1eff84af1a5f094eb67d8086fdc209557e1e1ce73b75c",
+ "export_config_sha256": "ae68e3660df7501e6fe3aa38021d7eeda7499adfdb5c5b1b381a8797c65e6f96"
+}

@@ -1,0 +1,9 @@
+== E4b：每项独立进程（模拟平台单次评测）==
+-- 先静置 90 秒让 GPU 回落 --
+   cold-first(fresh)      LAT median=7.17 min=5.21 p90=11.13 max=11.99 | clocks(before)=2580, 25.34, 67, 33 | 5s
+   fresh-2nd              LAT median=8.68 min=6.45 p90=11.13 max=11.95 | clocks(before)=2580, 23.12, 67, 32 | 5s
+   fresh-3rd              LAT median=9.13 min=6.25 p90=12.08 max=12.12 | clocks(before)=2520, 27.09, 68, 36 | 5s
+-- 并发负载 --
+   contended              LAT median=17.07 min=13.70 p90=19.09 max=19.13 | clocks(before)=2145, 80.14, 85, 100 | 8s
+   after-contention       LAT median=6.65 min=6.56 p90=7.01 max=7.11 | clocks(before)=2580, 19.16, 68, 10 | 4s
+E4B_DONE

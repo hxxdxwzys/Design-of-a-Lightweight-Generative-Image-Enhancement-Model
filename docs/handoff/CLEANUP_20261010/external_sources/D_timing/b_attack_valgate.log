@@ -1,0 +1,20 @@
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9614 lpips=0.5467
+[val] case2: clipiqa=0.9124 lpips=0.3484
+[val] case3: clipiqa=0.9385 lpips=0.4050
+[gate] clip=0.9374 lpips=0.4334 pass=False
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9611 lpips=0.5154
+[val] case2: clipiqa=0.9259 lpips=0.3288
+[val] case3: clipiqa=0.9314 lpips=0.3978
+[gate] clip=0.9395 lpips=0.414 pass=False
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9629 lpips=0.5075
+[val] case2: clipiqa=0.9294 lpips=0.3229
+[val] case3: clipiqa=0.9402 lpips=0.3907
+[gate] clip=0.9442 lpips=0.407 pass=False
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9659 lpips=0.5055
+[val] case2: clipiqa=0.9365 lpips=0.3297
+[val] case3: clipiqa=0.9456 lpips=0.3902
+[gate] clip=0.9493 lpips=0.4085 pass=False

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "start": 1790504404.5440223,
+  "sources": {
+    "amend_execution.py": "3cd2412c916ff519bb07c3bdaa51bca8ed168f2949147974d123be347d5802f4",
+    "check_reloads.py": "a8eefade88c5e49d4cfc32f9c86c587566c1bb1a4ad9aaac3bebd9d50cce518f",
+    "choose_checkpoint.py": "73cde2427dbd384358b7a9bd09384a7a2090313d52322be23f3c242f8b3d618f",
+    "common.py": "e3dbc8ffd43d9d0e9db11e97b2d71cb6e44efde828a8ff310d08ac5311777f41",
+    "deployment_check.py": "125154958546fe53648b219411a0459cafaca885012a8aaca9c0ff1be11d7ae0",
+    "full_eval.py": "9cfc459c7585843b9175c7380cf64246d2d413131df37c3fc73029779abbb415",
+    "prepare.py": "8f7c69f13de733a38a6c5e2a21189df2329af2498797655bae8c1e43cacf97a9",
+    "reload_decision.py": "029214b529930e144ccf538e92c5cd3e50a3f44e059f76946cb41b1549e073c5",
+    "reload_worker.py": "074668a903ef4dee812969c78516db2be645dd7f638d1371b9e9ddb857b376a3",
+    "supervise.py": "a1f4a24617acad6453848addcc470ac7932a80d7bb18993cbf9c4ec2d4838184",
+    "test_cpu.py": "50259b9562982a5728a6feabc5dd5a5245a76786ed7aee23b7449b99bf35509d",
+    "train.py": "ad3ee20279f411d1d16243d12223f7c828ec9e8362e7f9a5da07a2c51f2b1f3a",
+    "validate.py": "2674f1ec28832317d5e185aa756281bbd3be9d11497867624b98194c7f2afd07"
+  },
+  "exit_code": 0,
+  "wall_s": 29.02273988723755
+}

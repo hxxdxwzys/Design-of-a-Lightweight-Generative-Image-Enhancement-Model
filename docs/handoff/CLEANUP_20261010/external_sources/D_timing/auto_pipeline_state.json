@@ -1,0 +1,1 @@
+{"stage": 8, "results": {"heals": 1, "pool_seeds": "ok", "codiff": "CLOSED-2026-08-18", "note": "CODiff val gate failed: clipiqa 0.405 lpips 0.582 vs VOSR 0.629/0.342; 20 seeds pooled, M0.010=0.6333"}}

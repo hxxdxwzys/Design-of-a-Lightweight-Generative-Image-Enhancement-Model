@@ -1,0 +1,59 @@
+[09-04 12:35:05] [boot] w30/w31 monitor: 盯到 2500 步完成
+[09-04 12:35:05] [poll] procs=2 w30_newest=[09-04 12:34:18] [step 50] loss=1.0918 lp=0.1161 cq=0.3250 l1=0.0117 lr=3.00e-05 3.80s/step w31_newest=[09-04 12:34:20] [step 50] loss=1.9185 lp=0.2408 cq=0.5579 l1=0.0820 lr=3.00e-05 3.80s/step
+[09-04 12:38:06] [poll] procs=2 w30_newest=[09-04 12:37:22] [step 100] loss=1.7965 lp=0.4359 cq=0.4517 l1=0.1109 lr=2.99e-05 3.74s/step w31_newest=[09-04 12:37:25] [step 100] loss=1.9512 lp=0.1435 cq=0.6019 l1=0.0366 lr=2.99e-05 3.74s/step
+[09-04 12:41:06] [poll] procs=2 w30_newest=[09-04 12:40:26] [step 150] loss=2.5125 lp=0.4203 cq=0.6970 l1=0.0233 lr=2.97e-05 3.72s/step w31_newest=[09-04 12:40:28] [step 150] loss=1.7645 lp=0.2838 cq=0.4921 l1=0.0861 lr=2.97e-05 3.72s/step
+[09-04 12:44:07] [poll] procs=2 w30_newest=[09-04 12:43:29] [step 200] loss=0.8337 lp=0.3530 cq=0.1598 l1=0.0281 lr=2.95e-05 3.71s/step w31_newest=[09-04 12:43:32] [step 200] loss=1.5076 lp=0.4631 cq=0.3473 l1=0.0519 lr=2.95e-05 3.71s/step
+[09-04 12:47:08] [poll] procs=2 w30_newest=[09-04 12:46:33] [step 250] loss=1.0066 lp=0.1170 cq=0.2960 l1=0.0286 lr=2.93e-05 3.70s/step w31_newest=[09-04 12:46:36] [step 250] loss=0.8932 lp=0.1796 cq=0.2373 l1=0.0313 lr=2.93e-05 3.70s/step
+[09-04 12:50:08] [poll] procs=2 w30_newest=[09-04 12:49:37] [step 300] loss=0.8399 lp=0.4290 cq=0.1348 l1=0.1313 lr=2.90e-05 3.70s/step w31_newest=[09-04 12:49:40] [step 300] loss=1.5962 lp=0.4238 cq=0.3904 l1=0.0232 lr=2.90e-05 3.70s/step
+[09-04 12:53:10] [poll] procs=2 w30_newest=[09-04 12:52:41] [step 350] loss=1.4254 lp=0.4508 cq=0.3233 l1=0.0943 lr=2.86e-05 3.69s/step w31_newest=[09-04 12:52:44] [step 350] loss=1.5757 lp=0.3312 cq=0.4139 l1=0.0544 lr=2.86e-05 3.70s/step
+[09-04 12:56:10] [poll] procs=2 w30_newest=[09-04 12:55:45] [step 400] loss=0.7270 lp=0.4354 cq=0.0963 l1=0.0537 lr=2.82e-05 3.69s/step w31_newest=[09-04 12:55:48] [step 400] loss=1.1297 lp=0.2994 cq=0.2758 l1=0.0571 lr=2.82e-05 3.69s/step
+[09-04 12:59:11] [poll] procs=2 w30_newest=[09-04 12:58:48] [step 450] loss=0.6260 lp=0.2827 cq=0.1140 l1=0.0288 lr=2.77e-05 3.69s/step w31_newest=[09-04 12:58:52] [step 450] loss=0.8058 lp=0.3571 cq=0.1476 l1=0.1212 lr=2.77e-05 3.69s/step
+[09-04 13:02:11] [poll] procs=2 w30_newest=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31_newest=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt
+[09-04 13:05:12] [poll] procs=2 w30_newest=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31_newest=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt
+[09-04 13:08:13] [poll] procs=2 w30_newest=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31_newest=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt
+[09-04 13:11:13] [poll] procs=2 w30_newest=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31_newest=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt
+[09-04 13:14:13] [poll] procs=2 w30_newest=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31_newest=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt
+[09-04 13:17:14] [poll] procs=2 w30_newest=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31_newest=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt
+[09-04 13:20:14] [poll] procs=2 w30_newest=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31_newest=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt
+[09-04 13:23:15] [poll] procs=2 w30_newest=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31_newest=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt
+[09-04 13:26:15] [poll] procs=2 w30_newest=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31_newest=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt
+[09-04 13:29:16] [poll] procs=2 w30_newest=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31_newest=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt
+[09-04 13:33:34] [warn] poll 失败: 连不上服务器
+[09-04 13:36:52] [warn] poll 失败: 连不上服务器
+[09-04 13:40:10] [warn] poll 失败: 连不上服务器
+[09-04 13:43:28] [warn] poll 失败: 连不上服务器
+[09-04 13:46:46] [warn] poll 失败: 连不上服务器
+[09-04 13:50:04] [warn] poll 失败: 连不上服务器
+[09-04 13:53:22] [warn] poll 失败: 连不上服务器
+[09-04 13:56:41] [warn] poll 失败: 连不上服务器
+[09-04 13:59:59] [warn] poll 失败: 连不上服务器
+[09-04 14:03:17] [warn] poll 失败: 连不上服务器
+[09-04 14:06:35] [warn] poll 失败: 连不上服务器
+[09-04 14:09:53] [warn] poll 失败: 连不上服务器
+[09-04 14:13:11] [warn] poll 失败: 连不上服务器
+[09-04 14:16:29] [warn] poll 失败: 连不上服务器
+[09-04 14:19:48] [warn] poll 失败: 连不上服务器
+[09-04 14:23:06] [warn] poll 失败: 连不上服务器
+[09-04 14:26:24] [warn] poll 失败: 连不上服务器
+[09-04 14:29:42] [warn] poll 失败: 连不上服务器
+[09-04 14:33:00] [warn] poll 失败: 连不上服务器
+[09-04 14:36:18] [warn] poll 失败: 连不上服务器
+[09-04 14:39:36] [warn] poll 失败: 连不上服务器
+[09-04 14:42:54] [warn] poll 失败: 连不上服务器
+[09-04 14:46:12] [warn] poll 失败: 连不上服务器
+[09-04 14:49:31] [warn] poll 失败: 连不上服务器
+[09-04 14:52:49] [warn] poll 失败: 连不上服务器
+[09-04 14:56:07] [warn] poll 失败: 连不上服务器
+[09-04 14:59:25] [warn] poll 失败: 连不上服务器
+[09-04 15:02:43] [warn] poll 失败: 连不上服务器
+[09-04 15:06:01] [warn] poll 失败: 连不上服务器
+[09-04 15:09:19] [warn] poll 失败: 连不上服务器
+[09-04 15:12:37] [warn] poll 失败: 连不上服务器
+[09-04 15:15:56] [warn] poll 失败: 连不上服务器
+[09-04 15:19:14] [warn] poll 失败: 连不上服务器
+[09-04 15:22:32] [warn] poll 失败: 连不上服务器
+[09-04 15:25:50] [warn] poll 失败: 连不上服务器
+[09-04 15:29:08] [warn] poll 失败: 连不上服务器
+[09-04 15:32:26] [warn] poll 失败: 连不上服务器
+[09-04 15:34:27] [poll] procs=0 w30_newest=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31_newest=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt
+[09-04 15:34:27] [CRITICAL] w30/w31 进程消失但未完成: w30=/home/data/tempuser/p100/runs/p512_14b_w30/lora_s500.pt w31=/home/data/tempuser/p100/runs/p512_14b_w31/lora_s500.pt — 疑似崩溃, 人工介入

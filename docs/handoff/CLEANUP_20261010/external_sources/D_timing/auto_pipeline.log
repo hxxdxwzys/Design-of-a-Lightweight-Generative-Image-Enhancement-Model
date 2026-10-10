@@ -1,0 +1,30 @@
+[08-17 21:29:03] [boot] 从阶段 0 (WAIT_SEEDS) 继续
+[08-17 21:29:03] [stage 0] 等待种子渲染完成...
+[08-17 21:29:52] [boot] 从阶段 0 (WAIT_SEEDS) 继续
+[08-17 21:29:53] [stage 0] 等待种子渲染完成...
+[08-17 22:51:50] [warn] state 读取失败: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0), 从 0 开始
+[08-17 22:51:50] [boot] 从阶段 0 (WAIT_SEEDS) 继续
+[08-17 22:51:50] [stage 0] 等待种子渲染完成 (含自动续跑)...
+[08-17 22:51:50] [stage 0] runner(pid=58316) 死亡, 缺失种子: [4, 5, 6, 8, 9, 10, 11]
+[08-17 22:51:50] [stage 0] 已重启续跑: pid=42540 (第 1 次)
+[08-17 22:53:13] [boot] 从阶段 0 (WAIT_SEEDS) 继续
+[08-17 22:53:13] [stage 0] 等待种子渲染完成 (含自动续跑)...
+[08-17 22:53:13] [stage 0] runner(pid=58316) 死亡, 缺失种子: [4, 5, 6, 8, 9, 10, 11]
+[08-17 22:53:13] [stage 0] 已重启续跑: pid=56560 (第 1 次)
+[08-18 09:21:16] [stage 0] 全部 10 种子渲染完成
+[08-18 09:21:16] [stage 1] 种子入池 (vosr_seeds_to_pool2)
+[08-18 09:21:16] [run] pool_seeds: D:/Python/python.exe D:\tmp_timing\vosr_seeds_to_pool2.py --skip-existing...
+[08-18 09:49:13] [run] pool_seeds: exit=0 (1677s)
+[08-18 09:49:13] [stage 2] choice 重算 (compute_choice)
+[08-18 09:49:13] [run] choice1: D:/Python/python.exe D:\tmp_timing\compute_choice.py...
+[08-18 09:49:13] [run] choice1: exit=0 (0s)
+[08-18 09:49:13] [stage 3] CODiff val 3 张 (adain + nofix)
+[08-18 09:49:13] [run] codiff_val_adain: D:/Python/python.exe D:\tmp_timing\codiff_infer_4k.py -i D:\tmp_timing\codiff_val_in...
+[08-18 09:49:31] [run] codiff_val_adain: exit=1 (18s)
+[08-18 09:49:31]   |     model = CODiff_test(args)
+[08-18 09:49:31]   |   File "D:\models/finals/codiff/CODiff-main/CODiff-main\diffusion\codiff.py", line 165, in __init__
+[08-18 09:49:31]   |     self._init_tiled_vae(encoder_tile_size=args.vae_encoder_tiled_size,
+[08-18 09:49:31]   |                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[08-18 09:49:31]   | AttributeError: 'Namespace' object has no attribute 'vae_encoder_tiled_size'. Did you mean: 'vae_decoder_tiled_size'?
+[08-18 09:49:31] [err] CODiff val adain 失败, 唤醒代理
+[08-18 09:49:31] [summary] 已写入 auto_pipeline_summary.txt

@@ -1,0 +1,7 @@
+{
+ "schema": "DELIV02-isolation-charge/1",
+ "zip": "C:\\models\\exports\\DELIV02_20260918_073810\\Track2_A2_fp16_v1.zip",
+ "reserved_top_calls": 4,
+ "used_forward_calls": 1,
+ "isolated_precheck_rc": 0
+}

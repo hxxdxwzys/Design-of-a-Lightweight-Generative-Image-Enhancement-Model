@@ -1,0 +1,15 @@
+test_content_tamper_rejected (__main__.TestEdge.test_content_tamper_rejected) ... ok
+test_coverage (__main__.TestEdge.test_coverage) ... ok
+test_extra_file_rejected (__main__.TestEdge.test_extra_file_rejected) ... ok
+test_identity_all_levels (__main__.TestEdge.test_identity_all_levels) ... ok
+test_identity_white (__main__.TestEdge.test_identity_white) ... ok
+test_missing_entries_rejected (__main__.TestEdge.test_missing_entries_rejected) ... ok
+test_missing_manifest_rejected (__main__.TestEdge.test_missing_manifest_rejected) ... ok
+test_nonfinite_rejected (__main__.TestEdge.test_nonfinite_rejected) ... ok
+test_nonparent_model_rejected (__main__.TestEdge.test_nonparent_model_rejected) ... ok
+test_small_input_rejected (__main__.TestEdge.test_small_input_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.178s
+
+OK

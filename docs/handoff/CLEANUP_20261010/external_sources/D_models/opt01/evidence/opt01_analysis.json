@@ -1,0 +1,29 @@
+{
+ "schema": "OPT01-analysis/1",
+ "vs_fp32_reference": {
+  "c1_512": {
+   "cand_vs_fp32_max": 0.0627450942993164,
+   "cand_vs_fp32_mean": 0.0009378470733736322,
+   "cand_vs_fp32_u8max": 8,
+   "cand_vs_fp32_frac": 0.2939643859863281,
+   "a2_vs_fp32_max": 0.03921574354171753,
+   "a2_vs_fp32_mean": 0.0008574044
+  },
+  "case1_full": {
+   "cand_vs_fp32_max": 0.3294118046760559,
+   "cand_vs_fp32_mean": 0.0007657312787614501,
+   "cand_vs_fp32_u8max": 42,
+   "cand_vs_fp32_frac": 0.24469463030497232,
+   "a2_vs_fp32_max": 0.31372547149658203,
+   "a2_vs_fp32_mean": 0.000625035
+  },
+  "case7_full": {
+   "cand_vs_fp32_max": 0.09411770105361938,
+   "cand_vs_fp32_mean": 0.0006840334211249102,
+   "cand_vs_fp32_u8max": 12,
+   "cand_vs_fp32_frac": 0.22235925992329916,
+   "a2_vs_fp32_max": 0.141176,
+   "a2_vs_fp32_mean": 0.0006313825
+  }
+ }
+}

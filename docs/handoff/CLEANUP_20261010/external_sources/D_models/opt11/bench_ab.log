@@ -1,0 +1,4 @@
+[load] benchmark=False 2.7 s | True 1.8 s
+[benchmark=False ] median 6.20 ms best 2.49 -> r=34.8 factor=2.058
+[benchmark=True  ] median 6.47 ms best 5.43 -> r=33.7 factor=2.046
+BENCH_AB_DONE

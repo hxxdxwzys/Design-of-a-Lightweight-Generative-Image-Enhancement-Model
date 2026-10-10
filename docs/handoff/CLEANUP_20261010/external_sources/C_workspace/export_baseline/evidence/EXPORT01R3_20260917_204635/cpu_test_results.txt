@@ -1,0 +1,7 @@
+..........................................................C:\Users\Yuki Nagato\AppData\Local\Temp\export01r_gate_iat5noqe\export_baseline\chain.py:74: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if target.shape[2] != source.shape[2] or target.shape[3] != source.shape[3]:
+.
+----------------------------------------------------------------------
+Ran 59 tests in 18.759s
+
+OK

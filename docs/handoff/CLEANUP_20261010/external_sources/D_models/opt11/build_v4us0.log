@@ -1,0 +1,4 @@
+[export_us0] rc=0 30s :: [export] D:\models\pkg_TinyRefV4us0\model_dir  your_model.pt=1.99MB runner.py=2257B | EXPORT_COMBINED_DONE
+[render100] rc=0 187s ::   100/100 1.81 s/张 | RENDER_PKG_DONE
+[package] rc=0 28s :: [ok] D:\models\opt11\Track2_TinyRefV4us0.zip (665MB, 100 jpgs)
+BUILD_V4US0_DONE

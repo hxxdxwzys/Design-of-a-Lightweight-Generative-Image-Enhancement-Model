@@ -1,0 +1,23 @@
+test_4k_geometry_63 (__main__.ReviewTests.test_4k_geometry_63) ... ok
+test_case_omission_fails (__main__.ReviewTests.test_case_omission_fails) ... ok
+test_changed_runner_even_updated_manifest_fails (__main__.ReviewTests.test_changed_runner_even_updated_manifest_fails) ... ok
+test_changed_weight_fails (__main__.ReviewTests.test_changed_weight_fails) ... ok
+test_expired_deadline_fails (__main__.ReviewTests.test_expired_deadline_fails) ... ok
+test_historical_border_retained (__main__.ReviewTests.test_historical_border_retained) ... ok
+test_identity_complete_pass (__main__.ReviewTests.test_identity_complete_pass) ... ok
+test_jpeg_byte_and_pixel_different_levels (__main__.ReviewTests.test_jpeg_byte_and_pixel_different_levels) ... ok
+test_missing_manifest_entry_fails (__main__.ReviewTests.test_missing_manifest_entry_fails) ... ok
+test_missing_reference_fails (__main__.ReviewTests.test_missing_reference_fails) ... ok
+test_missing_samples_fails (__main__.ReviewTests.test_missing_samples_fails) ... ok
+test_path_escape_fails (__main__.ReviewTests.test_path_escape_fails) ... ok
+test_shared_budget_reserve_before_call_and_no_refund (__main__.ReviewTests.test_shared_budget_reserve_before_call_and_no_refund) ... ok
+test_small_pixel_difference_is_not_approximate_pass (__main__.ReviewTests.test_small_pixel_difference_is_not_approximate_pass) ... ok
+test_source_identity_fails (__main__.ReviewTests.test_source_identity_fails) ... ok
+test_undersized_input_rejected (__main__.ReviewTests.test_undersized_input_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.570s
+
+OK
+
+EXIT_CODE=0

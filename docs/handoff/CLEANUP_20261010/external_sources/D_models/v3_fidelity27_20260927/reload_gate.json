@@ -1,0 +1,17 @@
+{
+  "gate": true,
+  "cross_process_u8_exact": true,
+  "different_pids": true,
+  "same_model": true,
+  "model_sha256": "6166649cdf34669810c7e666e65c9ec27ab140c08187f5c5f3055198bfc6e351",
+  "conversion": {
+    "parent": "421be231d504b1e1d20656ff7aa1c45a377434ff4762cc79c05416a2c7b5306d",
+    "model_sha256": "6166649cdf34669810c7e666e65c9ec27ab140c08187f5c5f3055198bfc6e351",
+    "checkpoint_sha256": "06bf9390b63a428eec3b6167ca3abb9b14ae811249b1859c549c5df8b5597591",
+    "nonref_exact": true,
+    "ref_exact": true,
+    "graph_unchanged_in_memory": true,
+    "retrace": false
+  },
+  "shadow_reference_discrepancy_retained": "deployment_check.json and deployment_check_r1.json; not claimed as eager equivalence"
+}

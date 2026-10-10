@@ -1,0 +1,83 @@
+[start] 19 jobs, limit=100, test_files=100
+[render] metric_net_w48_ema_s3000 step=? 开始 (0/100)
+  [10/100] 14.41s/img, eta 21.6min
+  [20/100] 14.42s/img, eta 19.2min
+  [30/100] 14.40s/img, eta 16.8min
+  [40/100] 14.38s/img, eta 14.4min
+  [50/100] 14.19s/img, eta 11.8min
+  [60/100] 14.04s/img, eta 9.4min
+  [70/100] 13.93s/img, eta 7.0min
+  [80/100] 13.84s/img, eta 4.6min
+  [90/100] 13.77s/img, eta 2.3min
+  [100/100] 13.72s/img, eta 0.0min
+[render] metric_net_w48_ema_s3000 完成 22.9min
+[metrics] metric_net_w48_ema_s3000: clipiqa=0.3654 niqe=5.28 (25.2min)
+[render] metric_net_w48_ema_s4000 step=? 开始 (0/100)
+  [10/100] 13.27s/img, eta 19.9min
+  [20/100] 13.23s/img, eta 17.6min
+  [30/100] 13.22s/img, eta 15.4min
+  [40/100] 13.21s/img, eta 13.2min
+  [50/100] 13.20s/img, eta 11.0min
+  [60/100] 13.20s/img, eta 8.8min
+  [70/100] 13.20s/img, eta 6.6min
+  [80/100] 13.19s/img, eta 4.4min
+  [90/100] 13.19s/img, eta 2.2min
+  [100/100] 13.20s/img, eta 0.0min
+[render] metric_net_w48_ema_s4000 完成 22.0min
+[metrics] metric_net_w48_ema_s4000: clipiqa=0.3782 niqe=5.30 (24.3min)
+[skip] f2k_s1000 已有结果 (n=100)
+[skip] f2k_s2000 已有结果 (n=100)
+[skip] f2k_s3000 已有结果 (n=100)
+[skip] f2k_s5000 已有结果 (n=100)
+[skip] f2k_s6000 已有结果 (n=100)
+[skip] f2k_s7000 已有结果 (n=100)
+[skip] f2k_s8000 已有结果 (n=100)
+[skip] f2k_s9000 已有结果 (n=100)
+[skip] f2k_s10000 已有结果 (n=100)
+[skip] f2k_s11000 已有结果 (n=100)
+[skip] f2k_s12000 已有结果 (n=100)
+[skip] f2k_s13000 已有结果 (n=100)
+[skip] f2k_s14000 已有结果 (n=100)
+[skip] f2k_s15000 已有结果 (n=100)
+[skip] f2k_s16000 已有结果 (n=100)
+[skip] old_s6000 已有结果 (n=100)
+[skip] f2k_s4000 已有结果 (n=100)
+
+===== 汇总 (按 test clipiqa 降序) =====
+  vosr_05b_os    clipiqa=0.5949 niqe=3.86
+  old_s6000      clipiqa=0.5354 niqe=5.15
+  metric_net_v2b_ema_s3000 clipiqa=0.5287 niqe=4.67
+  metric_net_v2b_ema_s4000 clipiqa=0.5263 niqe=4.82
+  metric_net_v2b_ema_s5000 clipiqa=0.5087 niqe=4.94
+  f2k_s4000      clipiqa=0.5043 niqe=5.21
+  metric_net_v2b_net_s4000 clipiqa=0.4971 niqe=4.90
+  metric_net_v2b_ema_s6000 clipiqa=0.4968 niqe=4.98
+  metric_net_v2b_net_s2000 clipiqa=0.4965 niqe=4.95
+  old_s9000      clipiqa=0.4950 niqe=4.98
+  f2k_s7000      clipiqa=0.4871 niqe=5.22
+  metric_net_v2b_net_s3000 clipiqa=0.4850 niqe=4.90
+  f2k_s2000      clipiqa=0.4845 niqe=4.88
+  f2k_s3000      clipiqa=0.4837 niqe=5.11
+  old_s8000      clipiqa=0.4821 niqe=4.91
+  f2k_s10000     clipiqa=0.4718 niqe=5.41
+  f2k_s13000     clipiqa=0.4712 niqe=5.44
+  f2k_s1000      clipiqa=0.4709 niqe=4.79
+  f2k_s16000     clipiqa=0.4669 niqe=5.37
+  f2k_s15000     clipiqa=0.4663 niqe=5.37
+  metric_net_v2b_net_s6000 clipiqa=0.4634 niqe=4.91
+  f2k_s8000      clipiqa=0.4632 niqe=5.23
+  f2k_s12000     clipiqa=0.4631 niqe=5.38
+  old_s7000      clipiqa=0.4613 niqe=5.03
+  f2k_s14000     clipiqa=0.4611 niqe=5.41
+  f2k_s11000     clipiqa=0.4585 niqe=5.38
+  old_s10000     clipiqa=0.4566 niqe=5.10
+  f2k_s9000      clipiqa=0.4549 niqe=5.35
+  f2k_s5000      clipiqa=0.4543 niqe=5.24
+  f2k_s6000      clipiqa=0.4365 niqe=5.28
+  metric_net_v2b_ema_s2000 clipiqa=0.4292 niqe=4.67
+  old_s5000      clipiqa=0.4260 niqe=4.84
+  metric_net_w48_ema_s10000 clipiqa=0.3934 niqe=5.09
+  metric_net_w48_ema_s4000 clipiqa=0.3782 niqe=5.30
+  metric_net_v2b_net_s5000 clipiqa=0.3737 niqe=5.51
+  metric_net_w48_ema_s3000 clipiqa=0.3654 niqe=5.28
+[all done]

@@ -1,0 +1,13 @@
+[refiner] arch=default ch=32 blocks=2 steps=10000
+[render] 30 张
+C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\opt11_render_refined.py:74: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(patch_u8).permute(2, 0, 1)[None].to(dev).float().div_(127.5).sub_(1)
+  10/30 2.66 s/张
+  20/30 2.63 s/张
+  30/30 2.68 s/张
+RENDER_REFINED_DONE
+D:\tmp_timing\measure_test30.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(Image.open(p).convert('RGB'))).permute(2,0,1).unsqueeze(0).to(dev).float().div_(255)
+[measure] {"niqe": 4.8063, "clipiqa": 0.7775, "n": 30}
+  (参照: M24 clipiqa 0.9023 / niqe 5.2559 | TinyV1 0.3367 / 5.7899 | LQ 0.2752 / 7.8100)
+MEASURE_TEST30_DONE

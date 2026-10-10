@@ -1,0 +1,157 @@
+{
+ "schema": "LORA-screen/1",
+ "lora": "D:\\models\\vosr_lora\\v7\\lora_s5000.pt",
+ "scale": 0.8,
+ "seed": 42,
+ "base": "C:/models/finals/preset/ckpts/VOSR_0.5B_os/checkpoints/ema_model.safetensors",
+ "crops": "512",
+ "images": [
+  {
+   "case": 1,
+   "wall_ms": 721.0,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "680af3bd5b47abbddaa0a9129cfc88d6704d6c5b8309369e85ba8c3579ea6777"
+  },
+  {
+   "case": 10,
+   "wall_ms": 384.5,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "ff5b21b65bffb2895f1a8802cc7d1c0e800adcfad7e70059cac3bf5b134d7521"
+  },
+  {
+   "case": 11,
+   "wall_ms": 380.4,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "4555647dbc62850d65b29694058cfa6a717887a1eec5407666317c59b4a99864"
+  },
+  {
+   "case": 12,
+   "wall_ms": 375.9,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "8c80f11337f957a92bcbb95d78846b10a2d5ae7f9ac730f1ba39df9b4213de7d"
+  },
+  {
+   "case": 13,
+   "wall_ms": 377.1,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "59cac30d565bea9069f7b1a2e217151194a953866578b16db8c86e4ca2872822"
+  },
+  {
+   "case": 100,
+   "wall_ms": 384.0,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "c69d4909e5e32eac2e45375dec6d3ef77417cad3f81d1d9b5c7bbd30d328d44b"
+  },
+  {
+   "case": 2,
+   "wall_ms": 374.3,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "6096fea8755ef5d7ca4c2e938762956e9add23bdb88218845ea05fe26360da31"
+  },
+  {
+   "case": 5,
+   "wall_ms": 377.3,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "b2ce95f6a477fdf0ebe4306d99660483ba14e9f526576f11e7d5ec1073f47541"
+  },
+  {
+   "case": 20,
+   "wall_ms": 377.0,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "4c375d57bfcfe1d56dff34aec49b7bbbf1d369eaf629858a78cb5ca784a43945"
+  },
+  {
+   "case": 25,
+   "wall_ms": 371.0,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "911b3d5bff2057348ab1b3023715f3c1d7698236fdeff7b31ec2425f71fdcd89"
+  },
+  {
+   "case": 33,
+   "wall_ms": 369.1,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "aac60308e19299c00422adae607b70dfb369656f0d1d107dd14b671c9d076902"
+  },
+  {
+   "case": 50,
+   "wall_ms": 363.6,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "5f6241aa8a13bf802b049b8c17b2df639bc60f0ffe85cc014195fc9fbbaf9050"
+  },
+  {
+   "case": 66,
+   "wall_ms": 369.2,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "921e95c49c2afe041eb6f580e8427dd1788913e7d67a228f956e9fea8a037baf"
+  },
+  {
+   "case": 77,
+   "wall_ms": 367.4,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "18aafb0837c6f9da2a4385d4c9672f26e37539ec966a28942ee22c637ba89059"
+  },
+  {
+   "case": 88,
+   "wall_ms": 364.6,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "90fff971deb73c8c13d125d78455503cfe58f3ce785cabc9d35ae19ccc99ebc0"
+  },
+  {
+   "case": 99,
+   "wall_ms": 369.7,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "6141013da4a72aad0fb3d104825832777b0661a55a2706716e4f45b169dd0eeb"
+  }
+ ],
+ "started_at": "2026-09-19 00:30:28",
+ "build_s": 34.4,
+ "total_s": 45.4
+}

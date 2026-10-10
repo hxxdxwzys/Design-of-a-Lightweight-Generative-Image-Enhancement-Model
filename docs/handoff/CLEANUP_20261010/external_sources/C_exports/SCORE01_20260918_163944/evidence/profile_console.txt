@@ -1,0 +1,4 @@
+﻿[profile] c1_512   wall=423.1ms syncs=7 {'encode_s': 155.8, 'features_s': 21.6, 'dit_s': 109.5, 'decode_s': 133.0, 'postprocess_s': 2.2, 'infer_s': 422.8}
+[profile] c7_512   wall=490.4ms syncs=7 {'encode_s': 180.8, 'features_s': 25.3, 'dit_s': 119.3, 'decode_s': 160.6, 'postprocess_s': 3.3, 'infer_s': 490.0}
+[profile] c25_512  wall=459.1ms syncs=7 {'encode_s': 175.8, 'features_s': 25.5, 'dit_s': 114.6, 'decode_s': 140.3, 'postprocess_s': 2.1, 'infer_s': 458.9}
+[profile] FAIL RuntimeError: Expected a 'cpu' device type for generator but found 'cuda'

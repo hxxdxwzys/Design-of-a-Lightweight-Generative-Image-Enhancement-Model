@@ -1,0 +1,20 @@
+{
+ "c1_512": {
+  "npy": "D:\\models\\opt01\\npy\\c1_512_candidate_child.npy",
+  "npy_sha256": "f146364ce9bd6188972112e47fa8b9ac783066313596ec74da1cf3c556968343",
+  "finite": true,
+  "range": [
+   -1.0,
+   1.0
+  ]
+ },
+ "case1_full": {
+  "npy": "D:\\models\\opt01\\npy\\case1_full_candidate_child.npy",
+  "npy_sha256": "b35459a6e9fd426e4fd3c2fbe872b2a962128cc89b24c09987babe7c3516f7ae",
+  "finite": true,
+  "range": [
+   -1.0,
+   1.0
+  ]
+ }
+}

@@ -1,0 +1,149 @@
+[
+ {
+  "tag": "v7s5000_sc08_seed1",
+  "seed": 1,
+  "clip": 0.9201,
+  "lpips": 0.3847,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9472,
+    "lpips": 0.5017
+   },
+   "case2": {
+    "clipiqa": 0.8965,
+    "lpips": 0.274
+   },
+   "case3": {
+    "clipiqa": 0.9165,
+    "lpips": 0.3785
+   }
+  }
+ },
+ {
+  "tag": "v7s5000_sc08_seed2",
+  "seed": 2,
+  "clip": 0.9199,
+  "lpips": 0.3859,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9487,
+    "lpips": 0.5028
+   },
+   "case2": {
+    "clipiqa": 0.8963,
+    "lpips": 0.2752
+   },
+   "case3": {
+    "clipiqa": 0.9148,
+    "lpips": 0.3796
+   }
+  }
+ },
+ {
+  "tag": "v7s5000_sc08_seed3",
+  "seed": 3,
+  "clip": 0.9202,
+  "lpips": 0.3864,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.947,
+    "lpips": 0.5023
+   },
+   "case2": {
+    "clipiqa": 0.8995,
+    "lpips": 0.2782
+   },
+   "case3": {
+    "clipiqa": 0.9141,
+    "lpips": 0.3788
+   }
+  }
+ },
+ {
+  "tag": "v7s5000_sc08_seed4",
+  "seed": 4,
+  "clip": 0.9203,
+  "lpips": 0.386,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9475,
+    "lpips": 0.5022
+   },
+   "case2": {
+    "clipiqa": 0.8965,
+    "lpips": 0.2766
+   },
+   "case3": {
+    "clipiqa": 0.9168,
+    "lpips": 0.3791
+   }
+  }
+ },
+ {
+  "tag": "v7s5000_sc08_seed5",
+  "seed": 5,
+  "clip": 0.9207,
+  "lpips": 0.3875,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9483,
+    "lpips": 0.501
+   },
+   "case2": {
+    "clipiqa": 0.8955,
+    "lpips": 0.2815
+   },
+   "case3": {
+    "clipiqa": 0.9184,
+    "lpips": 0.3799
+   }
+  }
+ },
+ {
+  "tag": "v7s5000_sc08_seed6",
+  "seed": 6,
+  "clip": 0.9202,
+  "lpips": 0.3814,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9485,
+    "lpips": 0.5046
+   },
+   "case2": {
+    "clipiqa": 0.8946,
+    "lpips": 0.26
+   },
+   "case3": {
+    "clipiqa": 0.9174,
+    "lpips": 0.3796
+   }
+  }
+ },
+ {
+  "tag": "v7s5000_sc08_seed7",
+  "seed": 7,
+  "clip": 0.9211,
+  "lpips": 0.3882,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9483,
+    "lpips": 0.501
+   },
+   "case2": {
+    "clipiqa": 0.8977,
+    "lpips": 0.2844
+   },
+   "case3": {
+    "clipiqa": 0.9172,
+    "lpips": 0.3791
+   }
+  }
+ }
+]

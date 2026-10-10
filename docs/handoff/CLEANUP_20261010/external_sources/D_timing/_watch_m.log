@@ -1,0 +1,5 @@
+[09-15 15:21:46] v16 打包段已到 (done=True v17=False) -> 掐链 M
+[09-15 15:21:46] pwsh EXC [WinError 2] 系统找不到指定的文件。
+[09-15 15:21:46] killed via powershell
+[09-15 15:22:07] GPU now 508 MiB
+[09-15 15:22:07] WATCH_M_DONE

@@ -1,0 +1,16 @@
+[stage] start  0.0s
+[stage] assets_loaded  40.5s
+[stage] lora_merge_checked  41.5s
+[stage] fp16_cast_done  41.6s
+[stage] traced vae_enc_512  42.4s
+[stage] traced vae_enc_1024  43.3s
+[stage] traced dino_feat  43.8s
+[stage] traced dit_step  45.9s
+[stage] traced dec_64  46.3s
+[stage] traced dec_128  46.7s
+[stage] traced wavelet  48.9s
+[stage] scripted container  48.9s
+[stage] saved + hashed ckpt  52.9s
+[stage] reloaded  55.4s
+[stage] eager 512 done  55.8s
+[stage] reloaded 512 done  58.7s

@@ -1,0 +1,2 @@
+[cpu-gate] verdict=READY_FOR_RB_ATTEMPT_01 checks={'machine_runner_exit_0': True, 'unittest_verbose_exit_0': True, 'no_failures': True, 'no_errors': True, 'coverage_missing_empty': True, 'coverage_all_gates_ok': True, 'old_evidence_unchanged': True, 'config_unchanged_vs_ra2': True, 'runner_unchanged_vs_ra2': True}
+[cpu-gate] tests=86 failures=0 errors=0 missing=0

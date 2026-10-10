@@ -1,0 +1,116 @@
+﻿TEST_OK test_pipe01_cpu.TestBudgetLedger.test_boundary_last_unit_allowed_then_refused
+TEST_OK test_pipe01_cpu.TestBudgetLedger.test_concurrent_lock_refused
+TEST_OK test_pipe01_cpu.TestBudgetLedger.test_cross_attempt_accumulates_and_interruption_counts
+TEST_OK test_pipe01_cpu.TestBudgetLedger.test_disk_budget
+TEST_OK test_pipe01_cpu.TestBudgetLedger.test_missing_ledger_without_init_refuses
+TEST_OK test_pipe01_cpu.TestBudgetLedger.test_new_process_cannot_reset_quota
+TEST_OK test_pipe01_cpu.TestBudgetLedger.test_reserve_is_persisted_before_call_and_not_refunded
+TEST_OK test_pipe01_cpu.TestBudgetLedger.test_wall_stop
+TEST_OK test_pipe01_cpu.TestBudgetLedger.test_zero_quota_refuses
+TEST_OK test_pipe01_cpu.TestConfigFrozen.test_args_ns_conflict_is_rejected
+TEST_OK test_pipe01_cpu.TestConfigFrozen.test_frozen_config_loads_and_locks
+TEST_OK test_pipe01_cpu.TestConfigFrozen.test_rejects_tampered_switches
+TEST_OK test_pipe01_cpu.TestConfigFrozen.test_rejects_unknown_and_missing_keys
+TEST_OK test_pipe01_cpu.TestConfigFrozen.test_tile_params_match_task_sheet
+TEST_OK test_pipe01_cpu.TestConfigFrozen.test_tile_report_rejects_recipe_change
+TEST_OK test_pipe01_cpu.TestDinoPreprocess.test_gray_input_is_not_wrongly_saturated
+TEST_OK test_pipe01_cpu.TestDinoPreprocess.test_matches_reference_for_all_cases
+TEST_OK test_pipe01_cpu.TestDinoPreprocess.test_old_wrong_order_would_differ
+TEST_OK test_pipe01_cpu.TestDinoPreprocess.test_white_and_gradient_finite
+[pair] status=STOPPED calls=5/8 forwards_reserved=5 wall_total=1.1s
+[criteria] {"identity_equal": true, "all_calls_ok": true, "n_calls": 5, "n_expected_calls": 8, "completed_protocol": false, "pairs_ok": false, "repeat_ok": false, "timing_events_equal": true, "no_unsafe_load": true, "safety": null, "budget_ok": true, "disk_ok": true, "prereg_verified": true, "protocol_verified": true}
+TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_criteria_exceeded_stops_immediately
+[pair] status=OK calls=8/8 forwards_reserved=8 wall_total=1.5s
+[criteria] {"identity_equal": true, "all_calls_ok": true, "n_calls": 8, "n_expected_calls": 8, "completed_protocol": true, "pairs_ok": true, "repeat_ok": true, "timing_events_equal": true, "no_unsafe_load": true, "safety": null, "budget_ok": true, "disk_ok": true, "prereg_verified": true, "protocol_verified": true}
+TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries
+[pair] status=STOPPED calls=4/8 forwards_reserved=4 wall_total=0.9s
+[criteria] {"identity_equal": false, "all_calls_ok": true, "n_calls": 4, "n_expected_calls": 8, "completed_protocol": false, "pairs_ok": false, "repeat_ok": false, "timing_events_equal": null, "no_unsafe_load": true, "safety": null, "budget_ok": true, "disk_ok": true, "prereg_verified": true, "protocol_verified": true}
+TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_identity_mismatch_never_passes
+TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_nonempty_run_dir_is_refused
+TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_prereg_mismatch_blocks_before_any_load
+TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_zero_quota_blocks_before_any_load
+TEST_OK test_pipe01_cpu.TestFailurePropagation.test_driver_refuses_without_prereg
+TEST_OK test_pipe01_cpu.TestFailurePropagation.test_make_evidence_refuses_existing_run_dir_without_writing
+TEST_OK test_pipe01_cpu.TestFailurePropagation.test_output_validation
+TEST_OK test_pipe01_cpu.TestIdentityAndPrereg.test_asset_fingerprint_covers_vae_and_dino_source
+TEST_OK test_pipe01_cpu.TestIdentityAndPrereg.test_identity_comparable_strips_entry_only
+TEST_OK test_pipe01_cpu.TestIdentityAndPrereg.test_implementation_fingerprint_real
+[pair] status=STOPPED calls=4/8 forwards_reserved=4 wall_total=0.9s
+[criteria] {"identity_equal": false, "all_calls_ok": true, "n_calls": 4, "n_expected_calls": 8, "completed_protocol": false, "pairs_ok": false, "repeat_ok": false, "timing_events_equal": null, "no_unsafe_load": true, "safety": null, "budget_ok": true, "disk_ok": true, "prereg_verified": true, "protocol_verified": true}
+TEST_OK test_pipe01_cpu.TestImmediateStop.test_identity_mismatch_blocks_before_b_first_forward
+[pair] status=STOPPED calls=2/8 forwards_reserved=2 wall_total=0.4s
+[criteria] {"identity_equal": false, "all_calls_ok": false, "n_calls": 2, "n_expected_calls": 8, "completed_protocol": false, "pairs_ok": false, "repeat_ok": false, "timing_events_equal": null, "no_unsafe_load": true, "safety": null, "budget_ok": true, "disk_ok": true, "prereg_verified": true, "protocol_verified": true}
+TEST_OK test_pipe01_cpu.TestImmediateStop.test_stops_after_first_call_failure_and_keeps_charge
+[pair] status=STOPPED calls=5/8 forwards_reserved=5 wall_total=1.1s
+[criteria] {"identity_equal": true, "all_calls_ok": true, "n_calls": 5, "n_expected_calls": 8, "completed_protocol": false, "pairs_ok": false, "repeat_ok": false, "timing_events_equal": true, "no_unsafe_load": true, "safety": null, "budget_ok": true, "disk_ok": true, "prereg_verified": true, "protocol_verified": true}
+TEST_OK test_pipe01_cpu.TestImmediateStop.test_stops_at_first_threshold_exceeded
+TEST_OK test_pipe01_cpu.TestImportSafety.test_cli_help_does_not_load_model_or_cuda
+TEST_OK test_pipe01_cpu.TestImportSafety.test_imports_do_not_pull_torch
+[pair] status=OK calls=8/8 forwards_reserved=8 wall_total=1.4s
+[criteria] {"identity_equal": true, "all_calls_ok": true, "n_calls": 8, "n_expected_calls": 8, "completed_protocol": true, "pairs_ok": true, "repeat_ok": true, "timing_events_equal": true, "no_unsafe_load": true, "safety": null, "budget_ok": true, "disk_ok": true, "prereg_verified": true, "protocol_verified": true}
+TEST_OK test_pipe01_cpu.TestInstanceLifecycle.test_a_released_before_b_constructed
+[pair] status=STOPPED calls=2/8 forwards_reserved=2 wall_total=0.4s
+[criteria] {"identity_equal": false, "all_calls_ok": false, "n_calls": 2, "n_expected_calls": 8, "completed_protocol": false, "pairs_ok": false, "repeat_ok": false, "timing_events_equal": null, "no_unsafe_load": true, "safety": null, "budget_ok": true, "disk_ok": true, "prereg_verified": true, "protocol_verified": true}
+TEST_OK test_pipe01_cpu.TestInstanceLifecycle.test_a_released_even_when_a_fails
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_boundary_last_unit_allowed_then_refused
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_check_startable_refuses_when_time_exhausted
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_check_startable_refuses_zero_quota
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_concurrent_lock_refused
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_cross_attempt_accumulates_and_interruption_counts
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_disk_budget
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_disk_is_cumulative_across_attempts
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_end_attempt_records_disk_and_wall
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_exclusive_lock_and_stale_takeover
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_missing_ledger_without_init_refuses
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_new_process_cannot_reset_quota
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_pid_state_tristate_and_unknown_fails_closed
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_reserve_is_persisted_before_call_and_not_refunded
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_wall_stop
+TEST_OK test_pipe01_cpu.TestLedgerHardening.test_zero_quota_refuses
+[pair] status=STOPPED calls=3/8 forwards_reserved=3 wall_total=0.5s
+[criteria] {"identity_equal": false, "all_calls_ok": false, "n_calls": 3, "n_expected_calls": 8, "completed_protocol": false, "pairs_ok": false, "repeat_ok": false, "timing_events_equal": null, "no_unsafe_load": true, "safety": null, "budget_ok": true, "disk_ok": true, "prereg_verified": true, "protocol_verified": true}
+TEST_OK test_pipe01_cpu.TestManifestSemantics.test_failed_call_marks_artifacts_not_produced
+[pair] status=OK calls=8/8 forwards_reserved=8 wall_total=1.4s
+[criteria] {"identity_equal": true, "all_calls_ok": true, "n_calls": 8, "n_expected_calls": 8, "completed_protocol": true, "pairs_ok": true, "repeat_ok": true, "timing_events_equal": true, "no_unsafe_load": true, "safety": null, "budget_ok": true, "disk_ok": true, "prereg_verified": true, "protocol_verified": true}
+TEST_OK test_pipe01_cpu.TestManifestSemantics.test_tensor_and_npy_hashes_are_separately_recomputable
+TEST_OK test_pipe01_cpu.TestNaNBeforeQuantization.test_infer_core_blocks_nan_latent
+TEST_OK test_pipe01_cpu.TestNaNBeforeQuantization.test_require_finite_blocks
+.........................................................D:\Python\Lib\site-packages\torchvision\transforms\functional.py:282: RuntimeWarning: invalid value encountered in cast
+  npimg = (npimg * 255).astype(np.uint8)
+TEST_OK test_pipe01_cpu.TestNaNBeforeQuantization.test_uint8_quantization_would_hide_nan_but_precheck_blocks
+TEST_OK test_pipe01_cpu.TestProtocolBinding.test_accepts_matching_protocol
+TEST_OK test_pipe01_cpu.TestProtocolBinding.test_driver_blocks_on_protocol_mismatch_before_load
+TEST_OK test_pipe01_cpu.TestProtocolBinding.test_generator_freezes_eight_forwards_and_zero_warmups
+TEST_OK test_pipe01_cpu.TestProtocolBinding.test_ledger_binding_mismatch_blocks
+TEST_OK test_pipe01_cpu.TestProtocolBinding.test_rejects_crop_change_and_wrong_samples
+TEST_OK test_pipe01_cpu.TestRealAssetsAssembly.test_real_assets_init_control_flow
+TEST_OK test_pipe01_cpu.TestRealAssetsAssembly.test_real_assets_release_clears_modules
+TEST_OK test_pipe01_cpu.TestSafeLoading.test_lora_missing_file_fails
+TEST_OK test_pipe01_cpu.TestSafeLoading.test_lora_unsafe_payload_fails_closed
+TEST_OK test_pipe01_cpu.TestSafeLoading.test_missing_or_wrong_dino_never_goes_online
+TEST_OK test_pipe01_cpu.TestSafeLoading.test_no_torch_hub_calls_in_sources
+TEST_OK test_pipe01_cpu.TestSafeLoading.test_no_weights_only_false_in_sources
+.............C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+TEST_OK test_pipe01_cpu.TestSafeLoading.test_wrong_checkpoint_fails_strict
+TEST_OK test_pipe01_cpu.TestSeedAndShapes.test_local_seed_is_order_independent
+TEST_OK test_pipe01_cpu.TestSeedAndShapes.test_pad_and_crop_for_non_multiple_shapes
+TEST_OK test_pipe01_cpu.TestSharedCoreAndEntries.test_both_entries_call_same_core
+TEST_OK test_pipe01_cpu.TestSharedCoreAndEntries.test_model_dir_must_exist
+TEST_OK test_pipe01_cpu.TestSharedCoreAndEntries.test_offline_records_separate_io_timing
+TEST_OK test_pipe01_cpu.TestSharedCoreAndEntries.test_png_encoder_is_shared_and_pixel_identical
+TEST_OK test_pipe01_cpu.TestSharedCoreAndEntries.test_prompt_must_be_empty
+TEST_OK test_pipe01_cpu.TestSupervisorHardWall.test_child_within_deadline_completes
+TEST_OK test_pipe01_cpu.TestSupervisorHardWall.test_timeout_terminates_child
+..........
+----------------------------------------------------------------------
+Ran 80 tests in 38.797s
+System.Management.Automation.RemoteException
+MACHINE_SUMMARY tests=80 failures=0 errors=0 skipped=0
+OK
+ISOLATED_RUN_DIR=C:\Users\YUKINA~1\AppData\Local\Temp\pipe01ra2_iso_010219
+ISOLATED_EXIT=0

@@ -1,0 +1,57 @@
+[worker] flags {"CUBLAS_WORKSPACE_CONFIG": ":4096:8", "deterministic_algorithms": true, "cudnn_benchmark": false, "cudnn_deterministic": true, "cudnn_allow_tf32": false, "matmul_allow_tf32": false, "torch": "2.7.0+cu126", "pid": 2336}
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+There are modules in AutoencoderKL that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+[worker] FAIL RuntimeError: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/chain.py", line 64, in step
+    feats: Tensor) -> Tensor:
+    dit_step = self.dit_step
+    _3 = (dit_step).forward(lq_latent, z, t_cur, t_nxt, feats, )
+          ~~~~~~~~~~~~~~~~~ <--- HERE
+    return _3
+class VAEEncode(Module):
+  File "code/__torch__/chain.py", line 285, in forward
+    x = torch.cat([lq_latent, z], 1)
+    _28 = (x_embedder).forward(x, )
+    _29 = (t_embedder).forward(t_cur, )
+           ~~~~~~~~~~~~~~~~~~~ <--- HERE
+    _30 = (r_embedder).forward(t_nxt, )
+    _31 = torch.unsqueeze(torch.sub(t_cur, t_nxt), -1)
+  File "code/__torch__/models/lightningdit.py", line 25, in forward
+    mlp = self.mlp
+    _0 = torch.arange(0, 128, dtype=6, layout=None, device=torch.device("cpu"), pin_memory=False)
+    _1 = torch.div(torch.mul(_0, CONSTANTS.c6), CONSTANTS.c7)
+                   ~~~~~~~~~ <--- HERE
+    freqs = torch.to(torch.exp(_1), dtype=6, layout=0, device=torch.device("cuda:0"))
+    _2 = torch.slice(t_cur, 0, 0, 9223372036854775807)
+
+Traceback of TorchScript, original code (most recent call last):
+  File "C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\chain.py", line 251, in step
+    def step(self, lq_latent: torch.Tensor, z: torch.Tensor, t_cur: torch.Tensor,
+             t_nxt: torch.Tensor, feats: torch.Tensor) -> torch.Tensor:
+        return self.dit_step(lq_latent, z, t_cur, t_nxt, feats)
+               ~~~~~~~~~~~~~ <--- HERE
+D:\models/finals/VOSR\models\lightningdit.py(198): timestep_embedding
+D:\models/finals/VOSR\models\lightningdit.py(211): forward
+D:\Python\Lib\site-packages\torch\nn\modules\module.py(1741): _slow_forward
+D:\Python\Lib\site-packages\torch\nn\modules\module.py(1762): _call_impl
+D:\Python\Lib\site-packages\torch\nn\modules\module.py(1751): _wrapped_call_impl
+D:\models/finals/VOSR\models\lightningdit.py(576): forward_flexible
+C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\chain.py(204): forward
+D:\Python\Lib\site-packages\torch\nn\modules\module.py(1741): _slow_forward
+D:\Python\Lib\site-packages\torch\nn\modules\module.py(1762): _call_impl
+D:\Python\Lib\site-packages\torch\nn\modules\module.py(1751): _wrapped_call_impl
+D:\Python\Lib\site-packages\torch\jit\_trace.py(1279): trace_module
+D:\Python\Lib\site-packages\torch\jit\_trace.py(696): _trace_impl
+D:\Python\Lib\site-packages\torch\jit\_trace.py(1002): trace
+C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\r_build.py(121): <lambda>
+C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\r_build.py(136): build
+C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\r_worker.py(66): main
+C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\r_worker.py(95): <module>
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!
+

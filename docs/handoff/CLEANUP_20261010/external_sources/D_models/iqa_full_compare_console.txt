@@ -1,0 +1,41 @@
+﻿Loading pretrained model MANIQA from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\ckpt_koniq10k.pt
+  10/100  66s
+  20/100  131s
+  30/100  197s
+  40/100  264s
+  50/100  330s
+  60/100  405s
+  70/100  481s
+  80/100  547s
+  90/100  614s
+  100/100  681s
+{
+ "clipiqa": {
+  "A_mean": 0.9157691502571106,
+  "B_mean": 0.9156870639324188,
+  "A_median": 0.9194764196872711,
+  "B_median": 0.9186266958713531,
+  "mean_rel_change_%": -0.008963648171453276,
+  "n_B_better": 45,
+  "n": 100
+ },
+ "maniqa": {
+  "A_mean": 0.5170011976361275,
+  "B_mean": 0.5169029840826989,
+  "A_median": 0.5132468640804291,
+  "B_median": 0.5131636559963226,
+  "mean_rel_change_%": -0.018996774838764288,
+  "n_B_better": 46,
+  "n": 100
+ },
+ "niqe": {
+  "A_mean": 5.050581113416859,
+  "B_mean": 5.050429772782951,
+  "A_median": 5.120955920719425,
+  "B_median": 5.127017156537998,
+  "mean_rel_change_%": -0.002996499422737503,
+  "n_B_better": 45,
+  "n": 100
+ }
+}
+written D:\models\iqa_full_compare.json 680.6 s

@@ -1,0 +1,430 @@
+{
+ "log": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\evidence\\PIPE01RB_20260917\\cpu_test_results.txt",
+ "ran_tests": 86,
+ "failures": 0,
+ "errors": 0,
+ "log_verdict": "OK",
+ "mapped": {
+  "PIPE-R01_dino_preprocess": {
+   "tests": [
+    {
+     "test": "TestDinoPreprocess.test_matches_reference_for_all_cases",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDinoPreprocess.test_gray_input_is_not_wrongly_saturated",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDinoPreprocess.test_old_wrong_order_would_differ",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDinoPreprocess.test_white_and_gradient_finite",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE-R02_safe_load_offline": {
+   "tests": [
+    {
+     "test": "TestSafeLoading.test_no_weights_only_false_in_sources",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSafeLoading.test_no_torch_hub_calls_in_sources",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSafeLoading.test_lora_unsafe_payload_fails_closed",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSafeLoading.test_lora_missing_file_fails",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSafeLoading.test_missing_or_wrong_dino_never_goes_online",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSafeLoading.test_wrong_checkpoint_fails_strict",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE-R03_identity_and_prereg": {
+   "tests": [
+    {
+     "test": "TestIdentityAndPrereg.test_implementation_fingerprint_real",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestIdentityAndPrereg.test_asset_fingerprint_covers_vae_and_dino_source",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestIdentityAndPrereg.test_identity_comparable_strips_entry_only",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_identity_mismatch_never_passes",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_prereg_mismatch_blocks_before_any_load",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE-R04_budget_ledger": {
+   "tests": [
+    {
+     "test": "TestBudgetLedger.test_zero_quota_refuses",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_reserve_is_persisted_before_call_and_not_refunded",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_boundary_last_unit_allowed_then_refused",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_cross_attempt_accumulates_and_interruption_counts",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_new_process_cannot_reset_quota",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_missing_ledger_without_init_refuses",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_wall_stop",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_concurrent_lock_refused",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_disk_budget",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_zero_quota_blocks_before_any_load",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_nonempty_run_dir_is_refused",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE-R05_nan_before_quantization": {
+   "tests": [
+    {
+     "test": "TestNaNBeforeQuantization.test_require_finite_blocks",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestNaNBeforeQuantization.test_uint8_quantization_would_hide_nan_but_precheck_blocks",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestNaNBeforeQuantization.test_infer_core_blocks_nan_latent",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE-R06_timing_and_unique_artifacts": {
+   "tests": [
+    {
+     "test": "TestSharedCoreAndEntries.test_offline_records_separate_io_timing",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSharedCoreAndEntries.test_both_entries_call_same_core",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSharedCoreAndEntries.test_png_encoder_is_shared_and_pixel_identical",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_R08_generation_manifest": {
+   "tests": [
+    {
+     "test": "TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_criteria_exceeded_stops_immediately",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_RA01_real_assembly_control_flow": {
+   "tests": [
+    {
+     "test": "TestRealAssetsAssembly.test_real_assets_init_control_flow",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_RA02_immediate_stop": {
+   "tests": [
+    {
+     "test": "TestImmediateStop.test_stops_after_first_call_failure_and_keeps_charge",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestImmediateStop.test_identity_mismatch_blocks_before_b_first_forward",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestImmediateStop.test_stops_at_first_threshold_exceeded",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_RA03_instance_release_order": {
+   "tests": [
+    {
+     "test": "TestInstanceLifecycle.test_a_released_before_b_constructed",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestInstanceLifecycle.test_a_released_even_when_a_fails",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestRealAssetsAssembly.test_real_assets_release_clears_modules",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_RA04_lock_timeout_finalize": {
+   "tests": [
+    {
+     "test": "TestLedgerHardening.test_exclusive_lock_and_stale_takeover",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestLedgerHardening.test_pid_state_tristate_and_unknown_fails_closed",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestLedgerHardening.test_check_startable_refuses_zero_quota",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestLedgerHardening.test_check_startable_refuses_when_time_exhausted",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestLedgerHardening.test_disk_is_cumulative_across_attempts",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestLedgerHardening.test_end_attempt_records_disk_and_wall",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSupervisorHardWall.test_timeout_terminates_child",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSupervisorHardWall.test_child_within_deadline_completes",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_RA05_protocol_and_ledger_binding": {
+   "tests": [
+    {
+     "test": "TestProtocolBinding.test_accepts_matching_protocol",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestProtocolBinding.test_rejects_crop_change_and_wrong_samples",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestProtocolBinding.test_generator_freezes_eight_forwards_and_zero_warmups",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestProtocolBinding.test_driver_blocks_on_protocol_mismatch_before_load",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestProtocolBinding.test_ledger_binding_mismatch_blocks",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_RA06_shared_infer_timing_boundary": {
+   "tests": [
+    {
+     "test": "TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSharedCoreAndEntries.test_offline_records_separate_io_timing",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_RA07_manifest_hash_semantics": {
+   "tests": [
+    {
+     "test": "TestManifestSemantics.test_tensor_and_npy_hashes_are_separately_recomputable",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestManifestSemantics.test_failed_call_marks_artifacts_not_produced",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_RB01_single_owner_control_chain": {
+   "tests": [
+    {
+     "test": "TestParentChildIntegration.test_normal_run_charges_exactly_eight_and_passes_all_four_gates",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestParentChildIntegration.test_missing_prereg_and_protocol_mismatch_never_succeed",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_RB02_no_stale_ledger_overwrite": {
+   "tests": [
+    {
+     "test": "TestParentChildIntegration.test_supervisor_recovery_does_not_erase_child_reservations",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestParentChildIntegration.test_second_forward_failure_charges_two_and_never_builds_b",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestParentChildIntegration.test_timeout_confirms_child_exit_and_keeps_charge",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_RB03_strict_protocol_and_four_gate_verdict": {
+   "tests": [
+    {
+     "test": "TestParentChildIntegration.test_identity_mismatch_zero_b_forwards",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestParentChildIntegration.test_normal_run_charges_exactly_eight_and_passes_all_four_gates",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "retained_original_intent": {
+   "tests": [
+    {
+     "test": "TestConfigFrozen.test_frozen_config_loads_and_locks",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestConfigFrozen.test_rejects_tampered_switches",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestConfigFrozen.test_rejects_unknown_and_missing_keys",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestConfigFrozen.test_tile_params_match_task_sheet",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestConfigFrozen.test_tile_report_rejects_recipe_change",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestConfigFrozen.test_args_ns_conflict_is_rejected",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSharedCoreAndEntries.test_prompt_must_be_empty",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSharedCoreAndEntries.test_model_dir_must_exist",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestFailurePropagation.test_output_validation",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestFailurePropagation.test_driver_refuses_without_prereg",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestFailurePropagation.test_make_evidence_refuses_existing_run_dir_without_writing",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSeedAndShapes.test_local_seed_is_order_independent",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSeedAndShapes.test_pad_and_crop_for_non_multiple_shapes",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestImportSafety.test_imports_do_not_pull_torch",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestImportSafety.test_cli_help_does_not_load_model_or_cuda",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  }
+ },
+ "unmapped_tests": [],
+ "missing_tests": [],
+ "note": "手工映射（R 项 → 测试名），并用隔离复跑日志逐名核对；不宣称“全部覆盖”，未映射测试列在 unmapped_tests。"
+}

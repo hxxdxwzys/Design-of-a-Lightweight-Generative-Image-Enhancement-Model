@@ -1,0 +1,29 @@
+{
+ "schema": "EXPORT01-c2-verdict/1",
+ "n_images_manifest": 100,
+ "n_ok": 100,
+ "n_checked_from_disk": 100,
+ "manifest_status": "OK",
+ "field_schema_uniform": true,
+ "n_distinct_field_schemas": 1,
+ "input_size_histogram": {
+  "(4096, 3072)": 68,
+  "(3072, 4096)": 32
+ },
+ "errors": [],
+ "bundle": {
+  "model_sha256": "0a10f2c4f4a0fa7d9347288979a3f00ad4859be70a2ddd1c10cda48470b2fbbe",
+  "model_bytes": 1343349163,
+  "runner_sha256": "0d250021596f09eee169a4225b05e0827b9013409164d0c29ce524eb74547f12",
+  "recipe_sha256": "c0b8141dbe1e1e5dbcf45df9cab0567d0cba56e969a64b99e3b046503ea37b94"
+ },
+ "jpeg_params": {
+  "quality": 98,
+  "subsampling": 0,
+  "optimize": false,
+  "progressive": false
+ },
+ "elapsed_s": 3123.771,
+ "output_bytes_total": 830634997,
+ "verdict": "PASS"
+}

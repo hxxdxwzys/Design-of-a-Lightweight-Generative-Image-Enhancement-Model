@@ -1,0 +1,193 @@
+{
+ "ts": "2026-09-25 14:26:53",
+ "deleted": [
+  {
+   "path": "D:\\models\\opt11\\eval_b1_iter2",
+   "mb": 270.9,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_b1_iter4",
+   "mb": 479.1,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_b1_res2",
+   "mb": 255.1,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_b1_res3",
+   "mb": 295.4,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_b1_res4",
+   "mb": 284.2,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_ref_c512",
+   "mb": 235.4,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_ref_msd",
+   "mb": 217.6,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_ref_cap2",
+   "mb": 214.7,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_cand3",
+   "mb": 203.8,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_bcap64",
+   "mb": 203.4,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_s1b",
+   "mb": 197.5,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_s1",
+   "mb": 0.0,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_s1b_smoke",
+   "mb": 0.0,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_v4t1_ng",
+   "mb": 208.0,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_v4t1_samechain",
+   "mb": 208.0,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_v3_samechain",
+   "mb": 197.5,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_us40_s12_t3",
+   "mb": 195.9,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_us60_s08_t3",
+   "mb": 197.3,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_us60_s12_t1",
+   "mb": 208.0,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_us60_s12_t3",
+   "mb": 202.9,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_us60_s12_t6",
+   "mb": 200.2,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_us60_s20_t3",
+   "mb": 209.2,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_us80_s12_t3",
+   "mb": 209.7,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_d512",
+   "mb": 152.5,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_cap2",
+   "mb": 145.9,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_lrnd",
+   "mb": 140.7,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\opt11\\eval_thin2",
+   "mb": 201.8,
+   "why": "本会话渲染产物，指标已落盘 JSON"
+  },
+  {
+   "path": "D:\\models\\pkg_s1",
+   "mb": 2.0,
+   "why": "本会话临时导出包，可由权重重建"
+  },
+  {
+   "path": "D:\\models\\pkg_s1b",
+   "mb": 2.0,
+   "why": "本会话临时导出包，可由权重重建"
+  },
+  {
+   "path": "D:\\models\\pkg_s1b_smoke",
+   "mb": 2.0,
+   "why": "本会话临时导出包，可由权重重建"
+  },
+  {
+   "path": "D:\\models\\pkg_cap2ref",
+   "mb": 7.0,
+   "why": "本会话临时导出包，可由权重重建"
+  },
+  {
+   "path": "D:\\models\\pkg_c512ref",
+   "mb": 2.0,
+   "why": "本会话临时导出包，可由权重重建"
+  },
+  {
+   "path": "D:\\models\\pkg_msdref",
+   "mb": 2.0,
+   "why": "本会话临时导出包，可由权重重建"
+  },
+  {
+   "path": "D:\\models\\pkg_bcap64",
+   "mb": 2.3,
+   "why": "本会话临时导出包，可由权重重建"
+  },
+  {
+   "path": "D:\\models\\pkg_cap_test",
+   "mb": 8.9,
+   "why": "本会话临时导出包，可由权重重建"
+  },
+  {
+   "path": "D:\\models\\pkg_v4t1_ng",
+   "mb": 2.0,
+   "why": "本会话临时导出包，可由权重重建"
+  },
+  {
+   "path": "D:\\models\\pkg_final_t1",
+   "mb": 743.0,
+   "why": "本会话临时导出包，可由权重重建"
+  }
+ ],
+ "skipped": [],
+ "freed_bytes": 6613939461,
+ "freed_gb": 6.16
+}

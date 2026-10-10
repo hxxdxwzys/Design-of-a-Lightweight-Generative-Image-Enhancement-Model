@@ -1,0 +1,247 @@
+{
+ "schema": "EXPORT01R-ledger/1",
+ "created_at": "2026-09-17 22:00:12",
+ "limits": {
+  "top": 12,
+  "top4k": 4,
+  "component": 48,
+  "wall_s": 1800.0,
+  "disk_gib": 8.0
+ },
+ "prior_batch": null,
+ "used": {
+  "top": 12,
+  "top4k": 4,
+  "component": 2
+ },
+ "events": [
+  {
+   "seq": 1,
+   "kind": "top",
+   "is_4k": false,
+   "where": "A_512_1",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7481326,
+   "after": {
+    "top": 1,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 2,
+   "kind": "top",
+   "is_4k": false,
+   "where": "A_512_2",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7511478,
+   "after": {
+    "top": 2,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 3,
+   "kind": "top",
+   "is_4k": false,
+   "where": "A_512_3",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7541623,
+   "after": {
+    "top": 3,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 4,
+   "kind": "top",
+   "is_4k": false,
+   "where": "A_511x513",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7571979,
+   "after": {
+    "top": 4,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 5,
+   "kind": "top",
+   "is_4k": false,
+   "where": "B_512_1",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7600866,
+   "after": {
+    "top": 5,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 6,
+   "kind": "top",
+   "is_4k": false,
+   "where": "B_512_2",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7629387,
+   "after": {
+    "top": 6,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 7,
+   "kind": "top",
+   "is_4k": false,
+   "where": "B_512_3",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7653562,
+   "after": {
+    "top": 7,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 8,
+   "kind": "top",
+   "is_4k": false,
+   "where": "B_511x513",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7683626,
+   "after": {
+    "top": 8,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 9,
+   "kind": "top",
+   "is_4k": true,
+   "where": "case1_full_A",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7710223,
+   "after": {
+    "top": 9,
+    "top4k": 1,
+    "component": 0
+   }
+  },
+  {
+   "seq": 10,
+   "kind": "top",
+   "is_4k": true,
+   "where": "case1_full_B",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7734325,
+   "after": {
+    "top": 10,
+    "top4k": 2,
+    "component": 0
+   }
+  },
+  {
+   "seq": 11,
+   "kind": "top",
+   "is_4k": true,
+   "where": "case7_full_A",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7761418,
+   "after": {
+    "top": 11,
+    "top4k": 3,
+    "component": 0
+   }
+  },
+  {
+   "seq": 12,
+   "kind": "top",
+   "is_4k": true,
+   "where": "case7_full_B",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:12",
+   "monotonic": 119631.7788893,
+   "after": {
+    "top": 12,
+    "top4k": 4,
+    "component": 0
+   }
+  },
+  {
+   "seq": 13,
+   "kind": "component",
+   "is_4k": false,
+   "where": "merge_probe_peft_instance",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:14",
+   "monotonic": 119633.4761982,
+   "after": {
+    "top": 12,
+    "top4k": 4,
+    "component": 1
+   }
+  },
+  {
+   "seq": 14,
+   "kind": "component",
+   "is_4k": false,
+   "where": "merge_probe_merged_instance",
+   "pid": 6480,
+   "at": "2026-09-17 22:00:14",
+   "monotonic": 119633.4791589,
+   "after": {
+    "top": 12,
+    "top4k": 4,
+    "component": 2
+   }
+  },
+  {
+   "seq": 15,
+   "kind": "note",
+   "where": "A_512_1_prepare",
+   "detail": {
+    "input_sha256": "e15df1edd679dd41fbaed3962aabe85d7f6e328956f989addf0e046f60b37298"
+   },
+   "pid": 6480,
+   "at": "2026-09-17 22:01:46",
+   "monotonic": 119725.507755,
+   "after": {
+    "top": 12,
+    "top4k": 4,
+    "component": 2
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "attempt_id": "attempt_verify",
+   "run_dir": "C:\\models\\exports\\DELIV01R_A2_20260917_213518",
+   "started_at": "2026-09-17 22:00:12",
+   "started_monotonic": 119631.7439369,
+   "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+   "source_sha256": "6e21e31ce05919f57f871bb42d75bb756952cfb38d4d4c0d236a1b0fbfb89fe3",
+   "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+   "status": "FAIL",
+   "note": "BudgetExhausted: 顶层 infer 超限 12",
+   "finished_at": "2026-09-17 22:01:46",
+   "elapsed_s": 93.775
+  }
+ ],
+ "open_attempt": null
+}

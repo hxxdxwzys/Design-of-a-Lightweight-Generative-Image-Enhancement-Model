@@ -1,0 +1,47 @@
+[09-14 20:45:57] >>> train v9a (512域 GAN, 0.22M, bs4)
+[20:45:59] [data] 2839 对 (256 域蒸馏对)
+Traceback (most recent call last):
+  File "D:\tmp_timing\train_tiny_gan.py", line 152, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\train_tiny_gan.py", line 92, in main
+    G = UNet2DModel(sample_size=a.res, in_channels=3, out_channels=3, layers_per_block=1,
+        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    block_out_channels=ch, down_block_types=('DownBlock2D',) * len(ch),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    up_block_types=('UpBlock2D',) * len(ch)).to(dev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\diffusers\configuration_utils.py", line 735, in inner_init
+    init(self, *args, **init_kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\diffusers\models\unets\unet_2d.py", line 179, in __init__
+    down_block = get_down_block(
+        down_block_type,
+    ...<12 lines>...
+        dropout=dropout,
+    )
+  File "D:\Python\Lib\site-packages\diffusers\models\unets\unet_2d_blocks.py", line 79, in get_down_block
+    return DownBlock2D(
+        num_layers=num_layers,
+    ...<9 lines>...
+        resnet_time_scale_shift=resnet_time_scale_shift,
+    )
+  File "D:\Python\Lib\site-packages\diffusers\models\unets\unet_2d_blocks.py", line 1317, in __init__
+    ResnetBlock2D(
+    ~~~~~~~~~~~~~^
+        in_channels=in_channels,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        pre_norm=resnet_pre_norm,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Python\Lib\site-packages\diffusers\models\resnet.py", line 266, in __init__
+    self.norm1 = torch.nn.GroupNorm(num_groups=groups, num_channels=in_channels, eps=eps, affine=True)
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\nn\modules\normalization.py", line 292, in __init__
+    raise ValueError("num_channels must be divisible by num_groups")
+ValueError: num_channels must be divisible by num_groups
+
+[09-14 20:46:18] <<< train v9a (512域 GAN, 0.22M, bs4) rc=1 (0.4 min)
+[09-14 20:46:18] CHAIN_D_DONE

@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.5059,
+ "niqe": 5.3249,
+ "musiq": 43.6769,
+ "maniqa": 0.2357,
+ "lapvar": 145.7,
+ "n": 30,
+ "dir": "D:\\models\\pkg_TinyV7gan\\output_dir",
+ "tag": "TinyV7gan"
+}

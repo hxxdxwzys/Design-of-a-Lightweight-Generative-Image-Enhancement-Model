@@ -1,0 +1,11 @@
+[08:14:58] [data] 2839 对 (256 域蒸馏对)
+[08:15:18] [model] G=0.87M D=0.66M res=256 bs=6 w_gan=0.1
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[08:15:54] step 100/300 G=0.290 (l1=0.221 lp=0.317 gan=0.244) D=0.256 0.36s/step
+[08:16:29] step 200/300 G=0.265 (l1=0.145 lp=0.318 gan=0.236) D=0.251 0.35s/step
+[08:17:04] step 300/300 G=0.258 (l1=0.169 lp=0.277 gan=0.249) D=0.249 0.35s/step
+[08:17:04] [save] smoke_band_s300.pt
+[08:17:04] TRAIN_GAN_DONE

@@ -1,0 +1,3 @@
+[prep] 100 张 -> D:\models\hypir\lq_test100
+[prep] 输入 100 张
+>> D:\Python\python.exe test.py --base_model_type sd2 --base_model_path D:/models/sd21base --model_t 200 --coeff_t 200 --lora_rank 256 --lora_modules to_k,to_q,to_v,to_out.0,conv,conv1,conv2,conv_shortcut,conv_out,proj_in,proj_out,ff.net.2,ff.net.0.proj --weight_path D:/models/hypir/HYPIR_sd2.pth --patch_size 512 --stride 256 --lq_dir D:\models\hypir\lq_test100 --upscale 1 --captioner empty --output_dir D:\models\hypir\out_test100 --device cuda

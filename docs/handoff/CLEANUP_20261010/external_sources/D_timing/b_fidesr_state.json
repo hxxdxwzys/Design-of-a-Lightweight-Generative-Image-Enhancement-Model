@@ -1,0 +1,25 @@
+{
+ "phase": "paused",
+ "context": "FiDeSR 线评估完成: 1x/2x 模式 clip 均卡 0.65-0.71 (结构性上限), lpips 0.31-0.35 世界级但 clip 远低于 0.87 悬崖, 关闭",
+ "fidesr_results": {
+  "u1_lf02_hf03": {
+   "clip": 0.6496,
+   "lpips": 0.3142
+  },
+  "u1_lf05_hf03": {
+   "clip": 0.6485,
+   "lpips": 0.3155
+  },
+  "u1_lf05_hf05": {
+   "clip": 0.6514,
+   "lpips": 0.3158
+  },
+  "tiled2x_lf02_hf03": {
+   "clip": 0.6547,
+   "lpips": 0.3475
+  }
+ },
+ "fidesr_verdict": "关闭: 全模式 clip <0.72, 无法挑战 256.30",
+ "next_candidate": "OFTSR (DIV2K 一步, 像素空间小 UNet, 需适配 sample_fm.py + 分块 4K) - div2k_onestep.pth 357MB 已下载",
+ "resume_note": "续跑: 删 D:/tmp_timing/fidesr_pause.flag 后重新发起任务即可"
+}

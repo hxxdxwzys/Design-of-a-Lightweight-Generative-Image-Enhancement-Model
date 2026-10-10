@@ -1,0 +1,14 @@
+=== D:\models\wave2_m0s7_s097\pack_model_dir ===
+D:\models\wave2_m0s7_s097\pack_model_dir\dinov2\layers\swiglu_ffn.py:202: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+D:\models\wave2_m0s7_s097\pack_model_dir\dinov2\layers\attention.py:130: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+D:\models\wave2_m0s7_s097\pack_model_dir\dinov2\layers\block.py:158: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+  载入 22.6 s
+  第1次 1238.6 ms  out=(1, 3, 512, 512) std=0.1026
+  第2次 982.3 ms  out=(1, 3, 512, 512) std=0.1084
+  第3次 964.0 ms  out=(1, 3, 512, 512) std=0.0879
+=== D:\models\wave2_m0s1_s090\model_dir ===
+  !! 无 runner.py, 跳过
+LAT_W2_DONE

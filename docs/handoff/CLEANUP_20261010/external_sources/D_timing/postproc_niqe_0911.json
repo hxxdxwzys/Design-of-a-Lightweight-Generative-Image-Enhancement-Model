@@ -1,0 +1,25 @@
+{
+ "_doc": "M24 现有 100 张提交图的后处理/编码扫描 — niqe 部分 (2026-09-11, musiq 部分被跳过)",
+ "_baseline": "现状 = 渲染管线输出的 q95 jpg; niqe-only 模型 Score = 94.444 - 10.028*niqe",
+ "results": [
+  {"variant": "jpeg_q90",     "niqe": 4.2516, "pred_niqe_only": 51.81, "note": "双次压缩(从 q95 再压 q90) -> 最平滑"},
+  {"variant": "blur0.6",      "niqe": 4.9043, "pred_niqe_only": 45.26},
+  {"variant": "blur0.3",      "niqe": 4.9534, "pred_niqe_only": 44.77},
+  {"variant": "jpeg_q98",     "niqe": 5.0081, "pred_niqe_only": 44.22},
+  {"variant": "orig",         "niqe": 5.0377, "pred_niqe_only": 43.93, "note": "= 已提交的 43.6951"},
+  {"variant": "jpeg_q100",    "niqe": 5.0772, "pred_niqe_only": 43.53},
+  {"variant": "blend_lq0.05", "niqe": 5.1394, "pred_niqe_only": 42.91},
+  {"variant": "unsharp",      "niqe": 5.1568, "pred_niqe_only": 42.73},
+  {"variant": "blend_lq0.10", "niqe": 5.1729, "pred_niqe_only": 42.57},
+  {"variant": "blend_lq0.20", "niqe": 5.2318, "pred_niqe_only": 41.98},
+  {"variant": "blur1.0",      "niqe": 6.3431, "pred_niqe_only": 30.84, "note": "过度模糊被 NIQE 惩罚"}
+ ],
+ "_findings": [
+  "NIQE 明显奖励【更平滑/更自然】的图像: 轻平滑(JPEG q90 / blur 0.3-0.6)可把 niqe 5.04 -> 4.25-4.95",
+  "过度模糊(blur1.0)反而被惩罚 (niqe 6.34) -> 指标本身有'过度平滑'的边界, 不是单调鼓励糊图",
+  "jpeg_q98/q100 相对 orig 几乎无变化 (5.01/5.08 vs 5.04) -> 损失已发生在首次 q95 编码",
+  "与 LQ 混合会变差 (LQ 的 JPEG/噪声拉高 niqe)",
+  "unsharp 略差 -> 锐化不利于 NIQE"
+ ],
+ "_pending": "musiq 补测被跳过(78min); 由 2 参数模型 (0.245*musiq - 9.45*niqe) 估计: 即使 musiq 掉 10 分也仍净赚约 +5"
+}

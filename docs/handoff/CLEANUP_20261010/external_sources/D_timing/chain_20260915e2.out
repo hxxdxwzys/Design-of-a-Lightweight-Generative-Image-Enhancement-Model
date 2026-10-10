@@ -1,0 +1,21 @@
+[09-14 20:48:42] >>> train v9b (512域 GAN 0.38M bs4 25k)
+[09-15 01:48:38] <<< train v9b (512域 GAN 0.38M bs4 25k) rc=0 (299.9 min)
+[09-15 01:48:38] === productize TinyV9b (down=1) ===
+[09-15 01:48:38] >>> TinyV9b export
+[09-15 01:49:02] <<< TinyV9b export rc=0 (0.4 min)
+[09-15 01:49:02] >>> TinyV9b render100
+[09-15 01:57:16] <<< TinyV9b render100 rc=0 (8.2 min)
+[09-15 01:57:16] >>> TinyV9b measure
+[09-15 02:09:21] <<< TinyV9b measure rc=0 (12.1 min)
+[09-15 02:09:21] >>> TinyV9b latency
+[09-15 02:09:39] <<< TinyV9b latency rc=0 (0.3 min)
+[09-15 02:09:39] >>> TinyV9b package
+[09-15 02:10:02] <<< TinyV9b package rc=0 (0.4 min)
+[09-15 02:10:02] >>> TinyV9b gate
+[09-15 02:10:26] <<< TinyV9b gate rc=0 (0.4 min)
+[09-15 02:10:26] [upload] D:\models\upload\Track2_TinyV9b.zip
+[09-15 02:10:26] [branch] v9b test30 clipiqa = 0.6409 (判据 0.58)
+[09-15 02:10:26] [branch] 分辨率有效 -> v9a (512域, 0.87M, 8k 步)
+[09-15 02:10:26] >>> train v9a (512域 GAN 0.87M bs4 8k)
+[09-15 04:08:04] <<< train v9a (512域 GAN 0.87M bs4 8k) rc=1073807364 (117.6 min)
+[09-15 04:08:04] CHAIN_E2_DONE

@@ -1,0 +1,16 @@
+== 512 域 refiner（输入 512）==
+   ch=16 blocks=2 : 3.16 ms
+   ch=16 blocks=3 : 3.00 ms
+   ch=24 blocks=2 : 4.47 ms
+   ch=32 blocks=1 : 2.39 ms
+   ch=32 blocks=2 : 1.51 ms
+   ch=48 blocks=2 : 17.16 ms
+   ch=64 blocks=1 : 8.51 ms
+   ch=64 blocks=2 : 14.60 ms
+== 256 域 refiner + PixelShuffle（输入 256, 输出 512）==
+   ch=16 blocks=3 : 1.06 ms
+   ch=24 blocks=3 : 1.18 ms
+   ch=32 blocks=2 : 0.48 ms
+   ch=32 blocks=3 : 1.28 ms
+   ch=48 blocks=4 : 3.50 ms
+   ch=64 blocks=3 : 3.44 ms

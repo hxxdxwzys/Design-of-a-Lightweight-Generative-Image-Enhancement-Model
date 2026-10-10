@@ -1,0 +1,52 @@
+{
+  "phase": 1,
+  "status": "PASS",
+  "cases": {
+    "case3": {
+      "input_sha256": "055d88cf9f33803e22a4474d0613e002d177975c98a3fa8b7d87b46d79bbf3f0",
+      "output_sha256": "63978033dac09a821a6b57706abd61dfb652e4a5c7aea98174fa07ab7a419c3a",
+      "pre_jpeg_array_sha256": "c2ba2798e9d7389ec15b359a70ac408f6d1259f199292e927e669789d7ff430d",
+      "shape": [
+        3072,
+        4096,
+        3
+      ],
+      "wall_s": 1.5976238000000649,
+      "old_outer_all_black": true,
+      "new_outer_all_black": false,
+      "new_outer_mean": 51.01904828356126,
+      "interior_u8max": 1,
+      "jpeg_identical": true
+    },
+    "case17": {
+      "input_sha256": "aad92fc22db1a4872bcdd32dda17233c49344a127cdb0e2f30434726a94446e3",
+      "output_sha256": "dcf3ee1d390e09a7a4b85c63aa41524edabdb626f7a9400cf8e77d674d8282a5",
+      "pre_jpeg_array_sha256": "742eb638f0eae29e0cba2528aae3b9213c23051bf570b605f3986dc95dc9337e",
+      "shape": [
+        3072,
+        4096,
+        3
+      ],
+      "wall_s": 1.5743654000000333,
+      "old_outer_all_black": true,
+      "new_outer_all_black": false,
+      "new_outer_mean": 103.43343566843427,
+      "interior_u8max": 1,
+      "jpeg_identical": true
+    }
+  },
+  "pid": 25032,
+  "model_sha256": "2770215987e2b5585dc26870a8a6fee05672bbf514267336498a1bf9e6409b62",
+  "runner_sha256": "8e434e0240eed20b924e04f5f7338a037c8ec7821b8067159fe50ac7492ff70b",
+  "infer_sha256": "0bdd5e5ed08d6aad07219c97027d73c0c25be8f6d88abc76b1fb9b5bcd387a5a",
+  "environment": {
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "torch": "2.7.0+cu126",
+    "Pillow": "12.3.0",
+    "numpy": "2.4.6",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "cuda_graph_active": true
+}

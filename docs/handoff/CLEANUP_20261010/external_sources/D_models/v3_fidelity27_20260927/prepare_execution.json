@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "start": 1790503600.3926754,
+  "sources": {
+    "common.py": "b47cfaa8bcd95a4c891d73685ecc261b8a3659adfe7e9836d7c5764d205fff15",
+    "prepare.py": "8f7c69f13de733a38a6c5e2a21189df2329af2498797655bae8c1e43cacf97a9",
+    "supervise.py": "a1f4a24617acad6453848addcc470ac7932a80d7bb18993cbf9c4ec2d4838184",
+    "test_cpu.py": "c6c68b4355760cdadb997ff12ba1dd05ced9919a5c645781967fdcaf3cbdd728"
+  },
+  "exit_code": 0,
+  "wall_s": 84.14012265205383
+}

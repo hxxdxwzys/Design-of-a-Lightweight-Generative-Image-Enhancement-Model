@@ -1,0 +1,58 @@
+{
+ "s6k_in": {
+  "per": {
+   "case1": {
+    "clipiqa": 0.9571,
+    "lpips": 0.5047,
+    "psnr": 21.025,
+    "ssim": 0.6238
+   },
+   "case2": {
+    "clipiqa": 0.8939,
+    "lpips": 0.2716,
+    "psnr": 27.41,
+    "ssim": 0.804
+   },
+   "case3": {
+    "clipiqa": 0.9319,
+    "lpips": 0.3804,
+    "psnr": 23.303,
+    "ssim": 0.7642
+   }
+  },
+  "mean": {
+   "clipiqa": 0.9276,
+   "lpips": 0.3856,
+   "psnr": 23.913,
+   "ssim": 0.7307
+  }
+ },
+ "selfref_in": {
+  "per": {
+   "case1": {
+    "clipiqa": 0.9074,
+    "lpips": 0.4445,
+    "psnr": 21.862,
+    "ssim": 0.5946
+   },
+   "case2": {
+    "clipiqa": 0.8674,
+    "lpips": 0.2501,
+    "psnr": 25.744,
+    "ssim": 0.7754
+   },
+   "case3": {
+    "clipiqa": 0.8828,
+    "lpips": 0.3356,
+    "psnr": 23.118,
+    "ssim": 0.7235
+   }
+  },
+  "mean": {
+   "clipiqa": 0.8859,
+   "lpips": 0.3434,
+   "psnr": 23.575,
+   "ssim": 0.6978
+  }
+ }
+}

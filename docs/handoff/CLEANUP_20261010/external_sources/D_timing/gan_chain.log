@@ -1,0 +1,72 @@
+[09-14 18:27:50] ======================================================================
+[09-14 18:27:50] GAN/容量链启动: 等 v7 -> v7 productize -> 训 v8(3.5M宽) -> v8 productize -> 训 v9(512域) -> v9 productize
+[09-14 18:55:58] === productize TinyV7gan (down=2) ===
+[09-14 18:55:58] >>> TinyV7gan export
+[attn] 替换 1 个 attention processor; 打补丁前后最大差 = 0.000000
+[graph] 可 capture, replay maxdiff = 0.000000
+[export] D:\models\pkg_TinyV7gan\model_dir/your_model.pt  out=(1, 3, 256, 256) nan=False params=0.87M native=256 down=2
+EXPORT_TINY_DONE
+D:\Python\Lib\site-packages\diffusers\models\downsampling.py:134: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert hidden_states.shape[1] == self.channels
+D:\Python\Lib\site-packages\diffusers\models\downsampling.py:143: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert hidden_states.shape[1] == self.channels
+D:\Python\Lib\site-packages\diffusers\models\upsampling.py:145: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert hidden_states.shape[1] == self.channels
+D:\Python\Lib\site-packages\diffusers\models\upsampling.py:160: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if hidden_states.shape[0] >= 64:
+D:\Python\Lib\site-packages\diffusers\models\upsampling.py:171: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if hidden_states.numel() * scale_factor > pow(2, 31):
+
+[09-14 18:56:30] <<< TinyV7gan export rc=0 (0.5 min)
+[09-14 18:56:30] >>> TinyV7gan render100
+  20/100 2.74s/张
+  40/100 2.70s/张
+  60/100 2.66s/张
+  80/100 2.64s/张
+  100/100 2.61s/张
+[render] 100 张 -> D:\models\pkg_TinyV7gan\output_dir (4.4 min)
+RENDER_TINY_DONE
+D:\tmp_timing\render_tiny.py:44: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(patch_u8).permute(2, 0, 1)[None].to('cuda').float().div_(127.5).sub_(1)
+
+[09-14 19:01:19] <<< TinyV7gan render100 rc=0 (4.8 min)
+[09-14 19:01:19] >>> TinyV7gan measure
+[measure] {"niqe": 5.3249, "clipiqa": 0.5059, "n": 30}
+  (参照: M24 clipiqa 0.9023 / niqe 5.2559 | TinyV1 0.3367 / 5.7899 | LQ 0.2752 / 7.8100)
+MEASURE_TEST30_DONE
+D:\tmp_timing\measure_test30.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(Image.open(p).convert('RGB'))).permute(2,0,1).unsqueeze(0).to(dev).float().div_(255)
+
+[09-14 19:03:47] <<< TinyV7gan measure rc=0 (2.5 min)
+[09-14 19:03:47] >>> TinyV7gan latency
+[latency] 8.44 ms -> 33.8x | graph=True | std=0.387 nan=False
+LATENCY_DONE
+
+[09-14 19:03:54] <<< TinyV7gan latency rc=0 (0.1 min)
+[09-14 19:03:54] >>> TinyV7gan package
+[save] D:\models\Track2_TinyV7gan.zip (0.56 GB) | output 100 | model_dir 2
+PACK_PASS
+
+[09-14 19:04:16] <<< TinyV7gan package rc=0 (0.4 min)
+[09-14 19:04:16] >>> TinyV7gan gate
+==========================================================================
+门禁: D:\models\Track2_TinyV7gan.zip
+==========================================================================
+  ✅ ① 文件名 ASCII: 文件名纯 ASCII: Track2_TinyV7gan.zip
+  ✅    内部路径 ASCII: zip 内路径全部 ASCII
+  ✅    结构与完整性: testzip OK; output_dir 100 jpg; model_dir 2 项
+  ✅    体积: 0.52 GiB (上限 10.0 GB)
+  ✅    出图尺寸: case1.jpg 4096x3072; case54.jpg 4096x3072; case99.jpg 4096x3072
+  ✅ ② 语法兼容: 0 处风险
+  ✅   接口/512 推理: infer OK
+  ✅ ③ IQA 遮蔽: PASS
+  ✅ ④ IQA 遮蔽(对抗): PASS
+  ✅ ⑤ 官方格式严格审计: PASS
+  ==> PREUPLOAD_GATE_PASS
+==========================================================================
+总体: ✅ 全部通过，可以上传
+PREUPLOAD_ALL_PASS
+
+[09-14 19:04:47] <<< TinyV7gan gate rc=0 (0.5 min)
+[09-14 19:04:47] [upload] D:\models\upload\Track2_TinyV7gan.zip
+[09-14 19:04:47] >>> HYPIR 蒸馏数据

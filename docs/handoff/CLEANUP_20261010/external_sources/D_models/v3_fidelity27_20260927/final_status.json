@@ -1,0 +1,101 @@
+{
+  "status": "RESEARCH_CANDIDATE_PARTIAL_FIDELITY_GAIN_NOT_APPROVED_FOR_DELIVERY",
+  "created_utc": "2026-09-27T10:21:51.948546+00:00",
+  "selected_steps": 3000,
+  "model_sha256": "6166649cdf34669810c7e666e65c9ec27ab140c08187f5c5f3055198bfc6e351",
+  "runner_sha256": "8e434e0240eed20b924e04f5f7338a037c8ec7821b8067159fe50ac7492ff70b",
+  "full_val": {
+    "parent": {
+      "psnr": 23.705751893410383,
+      "lpips": 0.39771894613901776
+    },
+    "candidate": {
+      "psnr": 24.033985570028317,
+      "lpips": 0.3954564034938812
+    }
+  },
+  "psnr_mean_delta_db": 0.3282336766179341,
+  "lpips_relative_improvement": 0.0056887977480098995,
+  "delivery_gate": false,
+  "reason": "LPIPS full-image mean improvement below preregistered 2%; no retuning.",
+  "dev": {
+    "parent": {
+      "psnr": 23.3172472884142,
+      "lpips": 0.32705875975079834
+    },
+    "candidate": {
+      "psnr": 24.505497654728956,
+      "lpips": 0.2792838294990361
+    }
+  },
+  "holdout": {
+    "parent": {
+      "psnr": 23.618011793944415,
+      "lpips": 0.32573169097304344
+    },
+    "candidate": {
+      "psnr": 24.784234271498697,
+      "lpips": 0.2818912332877517
+    }
+  },
+  "cpu_tests": 5,
+  "reload_final_file_gate": true,
+  "shadow_reference_exact": false,
+  "resources": {
+    "caps": {
+      "cache": 400,
+      "train": 3000,
+      "infer": 10000,
+      "metrics": 350,
+      "export": 80,
+      "bench": 250
+    },
+    "used": {
+      "cache": 328,
+      "train": 3000,
+      "infer": 566,
+      "metrics": 166,
+      "export": 74,
+      "bench": 0
+    },
+    "deadline": 1790508600.0
+  },
+  "test30_performed": false,
+  "bench_performed": false,
+  "production100_performed": false,
+  "new_review_package_created": false,
+  "old_v3_unchanged": true,
+  "tree_bytes": 803644073,
+  "files": {
+    "data_manifest.json": "2225a1d9f7b9926b40b366ee7891476cce545f3798833dbfd7cccd62d02f5f87",
+    "deploymentr1_execution.json": "84356b5a169456c605015d3c91a124150023fdce26d0a279c823a00303d6e879",
+    "deployment_check.json": "84df849b0d9734ae9fe82dd7c7493833aa3269c06c73660944a20417571726dc",
+    "deployment_check_r1.json": "76a23b146dc763a569072ad65aebc232494fc7c9aea75f816334cdf51d8d7040",
+    "deployment_execution.json": "93152c0c4aa1d9b85ddfabdc3f1157f7969153586ed1575f9bcf5986675c18ed",
+    "dev1000_execution.json": "579208594b535af6c4ddc4fb410687e4e8741a15731eb6ff161f6d300406825d",
+    "dev3000r1_execution.json": "7fd0dd852e41111cd68109caf5a7962232a5bbb75946fa28939e48985ca6bac5",
+    "dev_1000.json": "3dd7b5780cf1e8bf1b267a0c669337a39dcbe33291c477e3b1735832c953f871",
+    "dev_3000.json": "299f5059117dba9f2299d34c5d81822721b4465f09543abbb1aa391663e765e2",
+    "execution_amendment.json": "dcf5e3bc10351f6032e381b888f9a5e9dc8aa46d51cbdd8b89f030f247d6b235",
+    "fullvalr1_execution.json": "d7501f16a1b65b7e9d50d54cc1d93a954629180203b61fe1d08ef44136af73b9",
+    "fullvalr2_execution.json": "96d19b0f35579ec3669fe553523f35f6a5a8f338ef81ee5634dd5290acf258bc",
+    "fullval_execution.json": "50073c4ad7100035ca0b2deed2f20b99f77973d69476364425b0e82c36fc2af5",
+    "full_val.json": "9fc8b5944fa4771a0b392a745676613c65721e4b6c3d059d56795fe0dd5a5491",
+    "full_val_partial.json": "ec71a280149b2ab645602a219a4241bdc65042933620ba187dd26102a2bfe40b",
+    "holdout_3000.json": "b4e0d3ae12d7cb9287520aeb2ee4f974897055d051767ce5f447a8e2a54fca60",
+    "holdout_execution.json": "6f0b300d4118e27d86e00da0fc122a9acd733965f7044c5cce926fdb773c3d6a",
+    "ledger.json": "b745737bc16aea323f67ce2cfda660b7cd3bda845c70d885e69007c0d348a224",
+    "prepare_execution.json": "228750f2c7fc5d91b2d8e317ffcd73818657b5688659bccc5548054b0317103d",
+    "preregistration.json": "903c1c3a86e9624c710910fdcf6daaddd8b54a8aac764a6fe75194e891125f14",
+    "reload1_execution.json": "0513fe452d88cfcbba391d7d426061bd23b2315dcac7058610756b24db133171",
+    "reload2_execution.json": "b46224f7e8db80fb686b6948e77f25ae838885d45d2d1be08e611b8c53795780",
+    "reload_1.json": "813750855b0ae26b1bf20ae79b7518158ea238f1ebc6ae7cb081731125d4cdfe",
+    "reload_2.json": "c716f520545a5b09ce4cafeeaeb8b184c08b2f7c727fc8b7e7576ebaba5cc354",
+    "reload_gate.json": "d102c6716f36742d1c7a25cc8fed39a401de8bbdd8654c4e35c626b00d62ae18",
+    "reload_protocol_clarification.json": "b3c03888eb49761ee2ef786bac48149f4311244d5b93e9246bd4aed1a1991b2f",
+    "selection.json": "0822c649bc992be70ff5910ebbafea00952db1cd134eeb95abfdb5f01176ae32",
+    "startup_failure_dev3000.json": "0056e9dfa7abe36de600f9541c9f30d8b488e5a85e691e5fe1e2b1dfd2d96756",
+    "train1000_execution.json": "6f82d97743471fb7bccb5189d01377e807e0a27149ee0bcb79b54f6a71af06c3",
+    "train3000_execution.json": "5566dd36c619274972f2bbf8eb785522cc747fee4857f2d5c45f7de4b8bc6e8e"
+  }
+}

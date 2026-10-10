@@ -1,0 +1,6 @@
+{"tag": "s8", "name": "case1", "niqe": 4.7206, "psnr": 21.4678, "ssim": 0.6302}
+{"tag": "s8", "name": "case2", "niqe": 5.0146, "psnr": 28.3368, "ssim": 0.8173}
+{"tag": "s8", "name": "case3", "niqe": 5.7814, "psnr": 24.0068, "ssim": 0.7777}
+{"tag": "avg4", "name": "case1", "niqe": 5.2162, "psnr": 21.6556, "ssim": 0.6394}
+{"tag": "avg4", "name": "case2", "niqe": 5.3948, "psnr": 28.8124, "ssim": 0.8278}
+{"tag": "avg4", "name": "case3", "niqe": 6.2955, "psnr": 24.218, "ssim": 0.7881}

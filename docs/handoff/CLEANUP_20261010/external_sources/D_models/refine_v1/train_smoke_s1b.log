@@ -1,0 +1,4 @@
+[00:09:43] [init] G <- refiner_thin2_s6000.pt (steps=6000) ; U = 恒等(zero-init) => 起点精确等于已提交 V4
+[00:09:43] [model] U=1763 params G=5523 params D=729025 params
+[00:09:46] [data] 2839 对（随机 256 裁剪，S 域）
+[00:09:58] step 100/150 G=0.1503 D=0.3064 (l1=0.1002 lp=0.1613 gan=0.269) 0.11 s/step

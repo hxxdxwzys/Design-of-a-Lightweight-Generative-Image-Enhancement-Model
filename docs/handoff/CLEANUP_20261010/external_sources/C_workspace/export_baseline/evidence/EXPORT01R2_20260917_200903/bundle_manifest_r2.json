@@ -1,0 +1,84 @@
+{
+ "schema_version": "EXPORT01R2-bundle-manifest/1",
+ "bundle_id": "EXPORT01R2-1fa79d8a32213e0dfe70eabfb827a796",
+ "created_at": "2026-09-17 20:09:04",
+ "model_reuse": {
+  "from_batch": "EXPORT-01R",
+  "hardlink": false,
+  "byte_identical": true,
+  "old_bundle_note": "旧 bundle_id 不复用：runner 与协议已变更"
+ },
+ "parents": [
+  {
+   "role": "model_from_EXPORT01R",
+   "sha256": "7b8152029e3d96cf90e0787b42949e680cdb3c1bdfce6f6be99452444283ccc6",
+   "bytes": 1343344555,
+   "reused": true,
+   "note": "同一转换产物，未重建；数值验收不因复用而通过"
+  }
+ ],
+ "conversion": {
+  "id": "EXPORT01R2-runner-fix-v1",
+  "status": "RUNNER_ONLY_FIX",
+  "note": "数值图未重建（未授权）；仅交付 runner 修复 + 新协议",
+  "script_sha256": "eae607c953ac503de592dd805d59c905170e0dc0cce2dd30a89b4f21d0a73d44"
+ },
+ "files": [
+  {
+   "path": "your_model.pt",
+   "role": "jit_model",
+   "sha256": "7b8152029e3d96cf90e0787b42949e680cdb3c1bdfce6f6be99452444283ccc6",
+   "bytes": 1343344555
+  },
+  {
+   "path": "runner.py",
+   "role": "delivery_runner",
+   "sha256": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314",
+   "bytes": 13032
+  },
+  {
+   "path": "models_export.json",
+   "role": "recipe",
+   "sha256": "a1f19d8e3e50d2be1213bc7b8555baf3c31dc3cef66e7fb4f549c56fbcc9f3ad"
+  }
+ ],
+ "numeric_recipe": {
+  "weight_dtype": "float16",
+  "seed": 42,
+  "t_start": 1.0,
+  "t_end": 0.0,
+  "dit_tile_size": 512,
+  "dit_tile_overlap_cli": 32,
+  "vae_tile_size": 1024,
+  "vae_tile_overlap_cli": 32,
+  "patch_size": 2,
+  "execution_mode": {
+   "jit_optimized_execution": false,
+   "deterministic_algorithms": "True(warn_only=False)",
+   "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+   "cudnn_benchmark": false,
+   "cudnn_deterministic": true,
+   "cudnn_allow_tf32": false,
+   "matmul_allow_tf32": false
+  },
+  "fusion_and_order": {
+   "step_semantics": "DitStep 返回更新后的 z1；分块融合 z1（EXP-R01）",
+   "decode_order": "逐块 raw decode -> finite 检查 -> clamp -> 加权融合 -> 最终 finite 检查 -> 最终 clamp（EXP-R08）"
+  }
+ },
+ "runtime_source_sha256": {
+  "chain.py": "9512049a5c7d310a2e376428af4d9a691f12e656b5b3c5093b6e99fed8a4eb15",
+  "delivery_runner.py": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314",
+  "r_verify.py": "2a8d69ec495e8a22c1220fc9b2fa9add353ceb1b504d07478e157f51bc4f7b1a",
+  "r_ledger.py": "bb5695e70df1c659140843929798c7a3b0df0f30395ffe05c94930a12e7c71b7",
+  "r_merge_probe.py": "4a731c90dd93b062feba52df7a9b553372ab2b0dd1910277949355f391bbb6ff",
+  "r_supervisor.py": "ed42130206b0c55b7add02a1d07b1613eb0c62d75ef932f8af694daca9a8465f"
+ },
+ "prior_batch": {
+  "ledger": "C:\\models\\exports\\EXPORT01R_20260917_150506\\ledger.json",
+  "ledger_sha256": "9db551f3d469db0d83b05949b6d5bbe3d346c0dbb8696a76ddcfee0d8238dd8b",
+  "component_used": 10,
+  "supervisor_wall_s": 71.083,
+  "note": "旧失败与扣款保留；新批 component 上限 38，旧+新≤48"
+ }
+}

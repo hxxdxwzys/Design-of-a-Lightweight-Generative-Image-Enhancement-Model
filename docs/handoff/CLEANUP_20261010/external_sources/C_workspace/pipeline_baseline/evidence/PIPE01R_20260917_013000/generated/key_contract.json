@@ -1,0 +1,54 @@
+{
+ "dit": {
+  "model_n_keys": 669,
+  "file_n_keys": 669,
+  "n_missing": 0,
+  "n_unexpected": 0,
+  "n_shape_mismatch": 0,
+  "missing_sample": [],
+  "unexpected_sample": [],
+  "strict_load_would_pass": true,
+  "method": "meta device 构造 + safetensors 头部读取；未加载权重、未前向"
+ },
+ "dino": {
+  "loader": "local source vit_base + torch.load(weights_only=True) + strict=True",
+  "uses_torch_hub": false,
+  "model_n_keys": 175,
+  "file_n_keys": 175,
+  "n_missing": 0,
+  "n_unexpected": 0,
+  "n_shape_mismatch": 0,
+  "strict_load_would_pass": true,
+  "method": "meta device 构造 + weights_only=True 读取（只读本地权重）"
+ },
+ "light_decoder": {
+  "weights_only": true,
+  "payload_keys": [
+   "config",
+   "global_step",
+   "model_state_dict"
+  ],
+  "config_keys": [
+   "block_out_channels",
+   "in_channels",
+   "layers_per_block",
+   "out_channels"
+  ],
+  "n_state_keys": 136,
+  "required_config_present": true,
+  "global_step": 500000
+ },
+ "lora": {
+  "weights_only": true,
+  "payload_keys": [
+   "lora_config",
+   "step",
+   "variant"
+  ],
+  "variant": "v7",
+  "step": 5000,
+  "n_state_dict": 288,
+  "n_lora_keys": 288,
+  "has_lora_config": true
+ }
+}

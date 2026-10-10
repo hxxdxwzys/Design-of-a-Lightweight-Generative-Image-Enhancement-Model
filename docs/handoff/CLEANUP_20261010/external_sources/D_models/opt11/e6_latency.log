@@ -1,0 +1,5 @@
+C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\opt11_probe_ref2.py:32: SyntaxWarning: invalid escape sequence '\m'
+  print("[cmd] 若质量好, 出包: python opt11_build_ref_pkg.py TinyRefV4 D:\models\tiny_v1\v21_s21000.pt %s" % refiner, flush=True)
+[export] rc=0 ['[export] D:\\models\\pkg_probe_e6r256d\\model_dir  your_model.pt=2.08MB runner.py=2257B', 'EXPORT_COMBINED_DONE']
+[verdict] tag=e6r256d graph=True median=6.14 ms best=5.82 -> r=35.1 factor=2.061
+[cmd] 若质量好, 出包: python opt11_build_ref_pkg.py TinyRefV4 D:\models	iny_v121_s21000.pt D:\models\refine_v1\refiner_r256d_s12000.pt

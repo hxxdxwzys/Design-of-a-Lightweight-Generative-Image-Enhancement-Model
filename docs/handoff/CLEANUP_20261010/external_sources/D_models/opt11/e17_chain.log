@@ -1,0 +1,12 @@
+[00:35:14] == E17 链启动 ==
+[00:35:39] [export_L256] rc=0 25s :: [export] D:\models\pkg_L256\model_dir  your_model.pt=1.97MB runner.py=2257B | EXPORT_COMBINED_DONE
+[00:36:03] [export_L192] rc=0 24s :: [export] D:\models\pkg_L192\model_dir  your_model.pt=1.97MB runner.py=2257B | EXPORT_COMBINED_DONE
+[00:36:27] [export_L128] rc=0 24s :: [export] D:\models\pkg_L128\model_dir  your_model.pt=1.97MB runner.py=2257B | EXPORT_COMBINED_DONE
+[00:37:24] [lat3] rc=0 57s :: LAT3 {"D:\\models\\pkg_TinyRefV4\\model_dir": {"median": 6.61, "min": 1.71, "p90": 9.48, "n": 60, "fac_median": 2.0391, "fac_min": 2.3926, "pred_E8": 74.23, "pred_V4": 72.69}, "D:\\models\\pkg_TinyV21\\model_dir": {"median": 5.12, "min": 3.72, "p90": 7.55, "n": 60, "fac_median": 2.114, "fac_min": 2.2043, "pred_E8": 76.95, "pred_V4": 75.35}, "D:\\models\\pkg_L256\\model_dir": {"median": 5.11, "min": 1.72, "p90": 7.64, "n": 60, "fac_median": 2.1145, "fac_min": 2.3912, "pred_E8": 76.97, "pred_V4": 75.37}, "D:\\models\\pkg_L192\\model_dir": {"median": 3.04, "min": 2.57, "p90": 5.41, "n": 60, "fac_median": 2.2578, "fac_min": 2.2996, "pred_E8": 82.19, "pred_V4": 80.48}, "D:\\models\\pkg_L128\\model_dir": {"median": 2.06, "min": 1.84, "p90": 4.61, "n": 60, "fac_median": 2.3524, "fac_min": 2.3767, "pred_E8": 85.63, "pred_V4": 83.85}} | LAT3_DONE
+[00:38:22] [render_L256] rc=0 58s ::   30/30 1.79 s/张 | RENDER_PKG_DONE
+[00:40:11] [suite_L256] rc=0 109s ::   (96.0 s, 30 张) | PROXY_SUITE_DONE
+[00:41:07] [render_L192] rc=0 56s ::   30/30 1.71 s/张 | RENDER_PKG_DONE
+[00:42:57] [suite_L192] rc=0 110s ::   (96.6 s, 30 张) | PROXY_SUITE_DONE
+[00:43:52] [render_L128] rc=0 55s ::   30/30 1.67 s/张 | RENDER_PKG_DONE
+[00:45:41] [suite_L128] rc=0 109s ::   (96.5 s, 30 张) | PROXY_SUITE_DONE
+[00:45:41] E17_CHAIN_DONE

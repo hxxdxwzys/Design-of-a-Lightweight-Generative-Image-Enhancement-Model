@@ -1,0 +1,532 @@
+{
+ "schema": "DELIV01R-a2-readings/1",
+ "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+ "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+ "order": [
+  "A_512_1",
+  "A_512_2",
+  "A_512_3",
+  "A_511x513",
+  "B_512_1"
+ ],
+ "phaseA": {
+  "patched_embedders": [
+   "t_embedder.mlp",
+   "r_embedder.mlp"
+  ],
+  "call_1": {
+   "call": "A_512_1",
+   "wall_s": 0.915,
+   "stages": {
+    "encode": {
+     "sha256": "5936da73b8bf49d9b318015d8f7bb89204a235a37ffcd23e189f40137ee3d224",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "features": {
+     "sha256": "4a3d17f6326a67228ce2187738f47f6536362b464d716bc7be171cd2f5895819",
+     "shape": [
+      1,
+      1024,
+      768
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "noise": {
+     "sha256": "ea92f6abbdf335c0073dbfdc58fd8f0684da525c686b951ac618da87a3b10082",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "step": {
+     "sha256": "1ffe0197912f9ed160c48f865cfa48a685422244dc3a001b6430c382f195d35a",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "decode_raw": {
+     "sha256": "4abefede07d71b28f60fbe7fb86955f6204f39e201ded04d0a0ded80de0cba79",
+     "shape": [
+      1,
+      3,
+      512,
+      512
+     ],
+     "dtype": "torch.float32",
+     "finite": true
+    },
+    "post": {
+     "sha256": "a6613ddecbdf19de54cb71a3a0fdafd00f7f1a875db04d235c2422fc652a21e2",
+     "shape": [
+      1,
+      3,
+      512,
+      512
+     ],
+     "dtype": "torch.float32",
+     "finite": true
+    }
+   },
+   "input_sha256": "e15df1edd679dd41fbaed3962aabe85d7f6e328956f989addf0e046f60b37298",
+   "npy": "C:\\models\\exports\\DELIV01R_A2_20260917_213518\\npy\\A_512_r1.npy",
+   "npy_sha256": "2ff237a59ec777bec3171553c6424eafa96e7cc5ef62b42adcd8ce0be3849c1a",
+   "tensor_sha256": "a6613ddecbdf19de54cb71a3a0fdafd00f7f1a875db04d235c2422fc652a21e2",
+   "shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "stage_raw": [
+    "decode_raw",
+    "encode",
+    "features",
+    "noise",
+    "post",
+    "step"
+   ]
+  },
+  "call_2": {
+   "call": "A_512_2",
+   "wall_s": 0.517,
+   "stages": {
+    "encode": {
+     "sha256": "5936da73b8bf49d9b318015d8f7bb89204a235a37ffcd23e189f40137ee3d224",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "features": {
+     "sha256": "4a3d17f6326a67228ce2187738f47f6536362b464d716bc7be171cd2f5895819",
+     "shape": [
+      1,
+      1024,
+      768
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "noise": {
+     "sha256": "ea92f6abbdf335c0073dbfdc58fd8f0684da525c686b951ac618da87a3b10082",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "step": {
+     "sha256": "1ffe0197912f9ed160c48f865cfa48a685422244dc3a001b6430c382f195d35a",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "decode_raw": {
+     "sha256": "4abefede07d71b28f60fbe7fb86955f6204f39e201ded04d0a0ded80de0cba79",
+     "shape": [
+      1,
+      3,
+      512,
+      512
+     ],
+     "dtype": "torch.float32",
+     "finite": true
+    },
+    "post": {
+     "sha256": "a6613ddecbdf19de54cb71a3a0fdafd00f7f1a875db04d235c2422fc652a21e2",
+     "shape": [
+      1,
+      3,
+      512,
+      512
+     ],
+     "dtype": "torch.float32",
+     "finite": true
+    }
+   },
+   "input_sha256": "e15df1edd679dd41fbaed3962aabe85d7f6e328956f989addf0e046f60b37298",
+   "npy": "C:\\models\\exports\\DELIV01R_A2_20260917_213518\\npy\\A_512_r2.npy",
+   "npy_sha256": "2ff237a59ec777bec3171553c6424eafa96e7cc5ef62b42adcd8ce0be3849c1a",
+   "tensor_sha256": "a6613ddecbdf19de54cb71a3a0fdafd00f7f1a875db04d235c2422fc652a21e2",
+   "shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "vs_first_A512": {
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "png_pixel_identical": true
+   }
+  },
+  "call_3": {
+   "call": "A_512_3",
+   "wall_s": 0.592,
+   "stages": {
+    "encode": {
+     "sha256": "5936da73b8bf49d9b318015d8f7bb89204a235a37ffcd23e189f40137ee3d224",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "features": {
+     "sha256": "4a3d17f6326a67228ce2187738f47f6536362b464d716bc7be171cd2f5895819",
+     "shape": [
+      1,
+      1024,
+      768
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "noise": {
+     "sha256": "ea92f6abbdf335c0073dbfdc58fd8f0684da525c686b951ac618da87a3b10082",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "step": {
+     "sha256": "1ffe0197912f9ed160c48f865cfa48a685422244dc3a001b6430c382f195d35a",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "decode_raw": {
+     "sha256": "4abefede07d71b28f60fbe7fb86955f6204f39e201ded04d0a0ded80de0cba79",
+     "shape": [
+      1,
+      3,
+      512,
+      512
+     ],
+     "dtype": "torch.float32",
+     "finite": true
+    },
+    "post": {
+     "sha256": "a6613ddecbdf19de54cb71a3a0fdafd00f7f1a875db04d235c2422fc652a21e2",
+     "shape": [
+      1,
+      3,
+      512,
+      512
+     ],
+     "dtype": "torch.float32",
+     "finite": true
+    }
+   },
+   "input_sha256": "e15df1edd679dd41fbaed3962aabe85d7f6e328956f989addf0e046f60b37298",
+   "npy": "C:\\models\\exports\\DELIV01R_A2_20260917_213518\\npy\\A_512_r3.npy",
+   "npy_sha256": "2ff237a59ec777bec3171553c6424eafa96e7cc5ef62b42adcd8ce0be3849c1a",
+   "tensor_sha256": "a6613ddecbdf19de54cb71a3a0fdafd00f7f1a875db04d235c2422fc652a21e2",
+   "shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "vs_first_A512": {
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "png_pixel_identical": true
+   }
+  },
+  "call_4": {
+   "call": "A_511x513",
+   "wall_s": 1.076,
+   "stages": {
+    "encode": {
+     "sha256": "02f34f23d2437ed2e599cef8fa93f588667cdb5dbb95e66d6dfb5d5437b52e78",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "features": {
+     "sha256": "23560ea562b9a941ffd2bdba358a1b005791f960c5ae263fd8b630975057eda5",
+     "shape": [
+      1,
+      1024,
+      768
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "noise": {
+     "sha256": "3e21a7714d7691d1e3657849a8d5ad96d6f7710de259c3d1b611afd1a759ee22",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "step": {
+     "sha256": "6dbccca46e1e5a30e163cd2e20a3a4b857a842eff31d260830dcd2ef1874eac8",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "decode_raw": {
+     "sha256": "3b42247573f18ef285187386baa73dac1a390898f7ba00f91c104264079df687",
+     "shape": [
+      1,
+      3,
+      512,
+      512
+     ],
+     "dtype": "torch.float32",
+     "finite": true
+    },
+    "post": {
+     "sha256": "906797d04bf1cd0c7699e04941206ba9555b5cd13b71ac87c3a632439af07fad",
+     "shape": [
+      1,
+      3,
+      511,
+      513
+     ],
+     "dtype": "torch.float32",
+     "finite": true
+    }
+   },
+   "input_sha256": "82df48e0b64675ef84f3bcd0772d0f1d80df0f1edd80a7debad05a133c4612c8",
+   "npy": "C:\\models\\exports\\DELIV01R_A2_20260917_213518\\npy\\A_511x513.npy",
+   "npy_sha256": "06c636028940fba28aeb8df6231171cfd0d62c9342803f5bcc826760d66de699",
+   "tensor_sha256": "906797d04bf1cd0c7699e04941206ba9555b5cd13b71ac87c3a632439af07fad",
+   "shape": [
+    1,
+    3,
+    511,
+    513
+   ]
+  },
+  "released": true
+ },
+ "phaseB": {
+  "call_1": {
+   "call": "B_512_1",
+   "wall_s": 0.702,
+   "stages": {
+    "encode": {
+     "sha256": "5936da73b8bf49d9b318015d8f7bb89204a235a37ffcd23e189f40137ee3d224",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "features": {
+     "sha256": "4a3d17f6326a67228ce2187738f47f6536362b464d716bc7be171cd2f5895819",
+     "shape": [
+      1,
+      1024,
+      768
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "noise": {
+     "sha256": "ea92f6abbdf335c0073dbfdc58fd8f0684da525c686b951ac618da87a3b10082",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "step": {
+     "sha256": "1ffe0197912f9ed160c48f865cfa48a685422244dc3a001b6430c382f195d35a",
+     "shape": [
+      1,
+      4,
+      64,
+      64
+     ],
+     "dtype": "torch.float16",
+     "finite": true
+    },
+    "decode_raw": {
+     "sha256": "51f42273222d9505b6a5816cb502a13ac483bfdbe4d892ac23254cf7bc8ea6e0",
+     "shape": [
+      1,
+      3,
+      512,
+      512
+     ],
+     "dtype": "torch.float32",
+     "finite": true
+    },
+    "post": {
+     "sha256": "348276f2e5015548c727314fec3976464769cf9fb9280ddcc72abfbcf832d431",
+     "shape": [
+      1,
+      3,
+      512,
+      512
+     ],
+     "dtype": "torch.float32",
+     "finite": true
+    }
+   },
+   "input_sha256": "e15df1edd679dd41fbaed3962aabe85d7f6e328956f989addf0e046f60b37298",
+   "vs_A": {
+    "max_abs": 0.007843255996704102,
+    "mean_abs": 4.108662778889993e-07,
+    "png_pixel_identical": false
+   },
+   "vs_first_B512": {
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "png_pixel_identical": true
+   },
+   "npy": "C:\\models\\exports\\DELIV01R_A2_20260917_213518\\npy\\B_512_r1.npy",
+   "npy_sha256": "6992946d10acfd4e7a1667dcdfb25e4447a02110ac322175e58f3ac468a29cad",
+   "tensor_sha256": "348276f2e5015548c727314fec3976464769cf9fb9280ddcc72abfbcf832d431",
+   "shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "stage_raw": [
+    "decode_raw",
+    "encode",
+    "features",
+    "noise",
+    "post",
+    "step"
+   ]
+  }
+ },
+ "pairs": [],
+ "migration": [],
+ "execution_mode": {
+  "cublas_workspace_config": ":4096:8",
+  "deterministic_algorithms": true,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "cudnn_allow_tf32": false,
+  "matmul_allow_tf32": false,
+  "jit_optimized_execution": false
+ },
+ "merge_probe": {
+  "schema": "EXPORT01R-merge-probe/1",
+  "design": "两个独立进程各自从父权重加载 fp32；peft 未合并 vs merged 已合并；同精度同输入",
+  "input_protocol": "latent(1,8,64,64)/feats(1,1024,768)/t=1/r=0，CPU Generator(seed=42) 重建",
+  "peft_npy_sha256": "710ef6889a7bf65ca3e7ca00042baac49516741f9ca544a48326376227491ea1",
+  "merged_npy_sha256": "35a98072c49a3d281763f627b36d53427510024eb2b1c041c852c0f0aa09dac2",
+  "max_abs": 1.862645149230957e-06,
+  "mean_abs": 3.336815552756889e-07,
+  "shape": [
+   1,
+   4,
+   64,
+   64
+  ],
+  "finite": true,
+  "readonly_reference": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\EXPORT01R2_20260917_200903\\merge_probe.json",
+  "component_calls_saved": 2
+ },
+ "status": "FAIL",
+ "error": "RuntimeError: B_512_1 vs A 未达同精度判据: max=7.843e-03 mean=4.109e-07 png_eq=False",
+ "traceback": "Traceback (most recent call last):\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\a2_verify_worker.py\", line 39, in main\n    readings = r_verify.run_verification(run_dir, led, prereg_path, model_dir,\n                                         prereg[\"tolerances\"], exp_dir)\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_verify.py\", line 359, in run_verification\n    check(crit_a, tol, 'B_512_%d vs A' % i)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_verify.py\", line 199, in check\n    raise RuntimeError('%s 未达同精度判据: max=%.3e mean=%.3e png_eq=%s'\n                       % (label, crit['max_abs'], crit['mean_abs'],\n                          crit['png_pixel_identical']))\nRuntimeError: B_512_1 vs A 未达同精度判据: max=7.843e-03 mean=4.109e-07 png_eq=False\n",
+ "ledger": {
+  "limits": {
+   "top": 12,
+   "top4k": 8,
+   "component": 0,
+   "wall_s": 2200.0,
+   "disk_gib": 8.0
+  },
+  "used": {
+   "top": 5,
+   "top4k": 0,
+   "component": 0
+  },
+  "n_events": 8,
+  "open_attempt": {
+   "attempt_id": "attempt_verify",
+   "run_dir": "C:\\models\\exports\\DELIV01R_A2_20260917_213518",
+   "started_at": "2026-09-17 22:07:30",
+   "started_monotonic": 120069.7774693,
+   "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+   "source_sha256": "fe187e1616ff994c3b9f3e14bd6fe41d3c154eb545eefe5998f76b17c7abc208",
+   "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+   "status": "RUNNING"
+  },
+  "attempts": [
+   {
+    "attempt_id": "attempt_verify",
+    "run_dir": "C:\\models\\exports\\DELIV01R_A2_20260917_213518",
+    "started_at": "2026-09-17 22:07:30",
+    "started_monotonic": 120069.7774693,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "fe187e1616ff994c3b9f3e14bd6fe41d3c154eb545eefe5998f76b17c7abc208",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "RUNNING"
+   }
+  ]
+ },
+ "elapsed_s": 46.882
+}

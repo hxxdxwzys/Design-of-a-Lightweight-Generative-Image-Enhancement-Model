@@ -1,0 +1,165 @@
+{
+ "format_version": 1,
+ "files": {
+  ".gitattributes": {
+   "size": 1477,
+   "blob_id": "c7d9f3332a950355d5a77d85000f05e6f45435ea"
+  },
+  "README.md": {
+   "size": 12473,
+   "blob_id": "28aec93f8557249c72573c9d9c3d489b17fa1254"
+  },
+  "feature_extractor/preprocessor_config.json": {
+   "size": 342,
+   "blob_id": "5294955ff7801083f720b34b55d0f1f51313c5c5"
+  },
+  "model_index.json": {
+   "size": 543,
+   "blob_id": "0f48b2256e823029112effea0c3586bf369da56c"
+  },
+  "scheduler/scheduler_config.json": {
+   "size": 346,
+   "blob_id": "b68a817036d3f5c36537e9c332a42c7e63a9d4e9"
+  },
+  "text_encoder/config.json": {
+   "size": 613,
+   "blob_id": "f9ac7c0b3b341525cd1b65e1a715128fee97b25c"
+  },
+  "text_encoder/model.fp16.safetensors": {
+   "size": 680821096,
+   "blob_id": "71c6e577afc2471947d1668964a844bcf7836123",
+   "lfs_sha256": "681c555376658c81dc273f2d737a2aeb23ddb6d1d8e5b3a7064636d359a22668",
+   "lfs_size": 680821096,
+   "xet_hash": "91bc1dcc5e3b904ec97a6f6820714e50c9ae1d15909c83e9dce93eec1b1105fb"
+  },
+  "text_encoder/model.safetensors": {
+   "size": 1361597018,
+   "blob_id": "1e634cee00e6fe0f32292f62eac4ff7cdffc381d",
+   "lfs_sha256": "cce6febb0b6d876ee5eb24af35e27e764eb4f9b1d0b7c026c8c3333d4cfc916c",
+   "lfs_size": 1361597018,
+   "xet_hash": "478a56be169a76980e1f5b9d4c58a4fd1d2b0d03b8610a43fb4d5461af33bc65"
+  },
+  "text_encoder/pytorch_model.bin": {
+   "size": 1361671895,
+   "blob_id": "b8ec9957efbd821b9520ea61a4e7407cd7e87bb2",
+   "lfs_sha256": "c3e254d7b61353497ea0be2c4013df4ea8f739ee88cffa0ba58cd085459ed565",
+   "lfs_size": 1361671895,
+   "xet_hash": "905bc74353466a794cbddd634089ea427d064042acf7cd76df02760d5819ef07"
+  },
+  "text_encoder/pytorch_model.fp16.bin": {
+   "size": 680900852,
+   "blob_id": "1aa9dc4b2ba4f58ee252f81ad48413eb90170885",
+   "lfs_sha256": "7bb11b1da63986aaaaefb5ef2100d34109c024ac640cacd9ed697150c1c57f01",
+   "lfs_size": 680900852,
+   "xet_hash": "124172ca3093056ad6560820b9a188ab9c1152ffcfb0b99e17ed908358034239"
+  },
+  "tokenizer/merges.txt": {
+   "size": 524619,
+   "blob_id": "76e821f1b6f0a9709293c3b6b51ed90980b3166b"
+  },
+  "tokenizer/special_tokens_map.json": {
+   "size": 460,
+   "blob_id": "ae0c5be6f35217e51c4c000fd325d8de0294e99c"
+  },
+  "tokenizer/tokenizer_config.json": {
+   "size": 807,
+   "blob_id": "65d055d1103982d6ba7cf1c5c876a9413077daf5"
+  },
+  "tokenizer/vocab.json": {
+   "size": 1059962,
+   "blob_id": "469be27c5c010538f845f518c4f5e8574c78f7c8"
+  },
+  "unet/config.json": {
+   "size": 911,
+   "blob_id": "0fa07f924dabbf7517dc62af845cd31573bc09e3"
+  },
+  "unet/diffusion_pytorch_model.bin": {
+   "size": 3463913445,
+   "blob_id": "3cf1118b489624819ac2b4bfdb4409f999b26db1",
+   "lfs_sha256": "a434f8fdbb51f080ac57a4377281241467c4efc1417b27646ffae989644de60c",
+   "lfs_size": 3463913445,
+   "xet_hash": "b938b718b58ae5a5632fc6b29aed8a5c2f6cf2a1b7a32250b6beb63719dad01b"
+  },
+  "unet/diffusion_pytorch_model.fp16.bin": {
+   "size": 1732107093,
+   "blob_id": "9c3d7aa0be6c0cac4d5663b1d8ab76691b5af25a",
+   "lfs_sha256": "da861650fc7df96390abffcbb9bcf67b7c5566422fda5af9bc003605be65c5f3",
+   "lfs_size": 1732107093,
+   "xet_hash": "1561b1051af76c57d337b0f19acdc3b71a3dc2e6116a82a06cfd25dda7f940c3"
+  },
+  "unet/diffusion_pytorch_model.fp16.safetensors": {
+   "size": 1731904736,
+   "blob_id": "6d7f5e219b8430cdd42375f39291ea723f494fa6",
+   "lfs_sha256": "28ec9cf3b239c0751c201b1f6fb46b551df5862731b30a37aa1360101cb3fbab",
+   "lfs_size": 1731904736,
+   "xet_hash": "a779ecee87d68de9d0744b86e0a923989408194b00ec2c6d63461e939ce74d81"
+  },
+  "unet/diffusion_pytorch_model.safetensors": {
+   "size": 3463726498,
+   "blob_id": "950bc824b7dd870f24fe1ca59924e4b29d44c4bb",
+   "lfs_sha256": "6dfae3e5f7d459b50f4b0850ead945972c75bb0e1897628933e169eb43974214",
+   "lfs_size": 3463726498,
+   "xet_hash": "ef38808922bff2b361543bcca9555228e0f6d1cf220e930e1c7544d51c89bf0a"
+  },
+  "v2-1_512-ema-pruned.ckpt": {
+   "size": 5214865159,
+   "blob_id": "6b3b1390add5046368c3e1229fde7bffc6532323",
+   "lfs_sha256": "88ecb782561455673c4b78d05093494b9c539fc6bfc08f3a9a4a0dd7b0b10f36",
+   "lfs_size": 5214865159,
+   "xet_hash": "29b4c9c779f9ae8620de4128d2cde9802f8c1240017fdd1caf5957e505f697e6"
+  },
+  "v2-1_512-ema-pruned.safetensors": {
+   "size": 5214604494,
+   "blob_id": "d976c8a6794df8b2ba7ee5801d5156c217187b64",
+   "lfs_sha256": "df955bdf6b682338ea9b55dfc0d8f3475aadf4836e204893d28b82355e0956d2",
+   "lfs_size": 5214604494,
+   "xet_hash": "db303edb122351f059c05ab647ad54d9d787997158b74e1627ab54f9ae690070"
+  },
+  "v2-1_512-nonema-pruned.ckpt": {
+   "size": 5214864585,
+   "blob_id": "b7b90d721068f0fb6c05c264053a6acb51e26c49",
+   "lfs_sha256": "34dccb9e60d83a4ef963f51e9ff63548323a70024f8679095956d7c403b3ef4a",
+   "lfs_size": 5214864585,
+   "xet_hash": "7247de3f3cfd9cd742c5b07ec5c31ff265f194587f14242683a790213e03e61f"
+  },
+  "v2-1_512-nonema-pruned.safetensors": {
+   "size": 5214604312,
+   "blob_id": "75700f05f7681347c56c93bea9efd028f9225103",
+   "lfs_sha256": "fc4f9fe7528b2ee3de21971fb805bbf74d680bf1ab5b5f9c08379b0397b82a9d",
+   "lfs_size": 5214604312,
+   "xet_hash": "0e9ad550a7db55e976444cd9ff8709242ba710abc6ae9b8d324f1b8d56df5ba3"
+  },
+  "vae/config.json": {
+   "size": 553,
+   "blob_id": "9421ac5a7caf02657fa559cffe7c73a47572cd64"
+  },
+  "vae/diffusion_pytorch_model.bin": {
+   "size": 334707217,
+   "blob_id": "ba36f34d64ad3be997b7cab94b0b9acd61272851",
+   "lfs_sha256": "1b4889b6b1d4ce7ae320a02dedaeff1780ad77d415ea0d744b476155c6377ddc",
+   "lfs_size": 334707217,
+   "xet_hash": "9148b10af153e227c0ad0791ca67828a16f2f4065efcf6e0fb1a4fe0d28c6034"
+  },
+  "vae/diffusion_pytorch_model.fp16.bin": {
+   "size": 167405651,
+   "blob_id": "7bd1e43876a5e4710cd00271a03076e03ff557aa",
+   "lfs_sha256": "44915add42092106e70bffac475aae4283b5e8167a8a0c5f55ccc667ee4ebeb5",
+   "lfs_size": 167405651,
+   "xet_hash": "664eb84b7567d77d31e468388ad24276db9f3d1334edf61d28785e76adf3c059"
+  },
+  "vae/diffusion_pytorch_model.fp16.safetensors": {
+   "size": 167335342,
+   "blob_id": "9a75e3c8e7cf4387be816cdebb751fbd5fc4e1e2",
+   "lfs_sha256": "3e4c08995484ee61270175e9e7a072b66a6e4eeb5f0c266667fe1f45b90daf9a",
+   "lfs_size": 167335342,
+   "xet_hash": "2918df6c565e5f834baea51ba7e271ab388fe23123d42e5f317a95fec14a228c"
+  },
+  "vae/diffusion_pytorch_model.safetensors": {
+   "size": 334643276,
+   "blob_id": "90464d67ac7303d0ee4696334df13da130a948ea",
+   "lfs_sha256": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815",
+   "lfs_size": 334643276,
+   "xet_hash": "6fe1cd5fdd5657635d647ca4b836e30f25c0e2c9931a0cf5562f78510ab4aa76"
+  }
+ }
+}

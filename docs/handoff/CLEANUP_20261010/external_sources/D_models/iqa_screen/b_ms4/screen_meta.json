@@ -1,0 +1,10 @@
+{
+ "schema": "BASE-screen/1",
+ "base": "C:\\models\\finals\\preset\\ckpts\\VOSR_0.5B_ms\\checkpoints\\ema_model.safetensors",
+ "lora": null,
+ "scale": 0.0,
+ "steps": 4,
+ "seed": 42,
+ "images": [],
+ "error": "AssetError: 基座键集与白名单不符（不静默继续）。missing=4 例:['r_embedder.mlp.0.bias', 'r_embedder.mlp.0.weight', 'r_embedder.mlp.2.bias', 'r_embedder.mlp.2.weight'] ; unexpected=0 例:[]"
+}

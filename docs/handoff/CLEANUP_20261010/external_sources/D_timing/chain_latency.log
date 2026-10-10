@@ -1,0 +1,16 @@
+[09-13 01:44:38] === 等 M24avg2 打包 ===
+[09-13 05:12:38]    M24avg2 完成: {  "tag": "M24avg2",  "zip": "D:\\models\\Track2_M24avg2.zip",  "gate_pass": false,  "seeds": [   8,   108  ] }
+[09-13 05:12:58] === 实测三个包的 512 时延 (GPU 已安静) ===
+[09-13 05:13:56]    | D:\models\final_compliant\model_dir\dinov2\layers\attention.py:98: UserWarning: xFormers is not available (Attention)
+[09-13 05:13:56]    |   warnings.warn("xFormers is not available (Attention)")
+[09-13 05:13:56]    | D:\models\final_compliant\model_dir\dinov2\layers\block.py:119: UserWarning: xFormers is not available (Block)
+[09-13 05:13:56]    |   warnings.warn("xFormers is not available (Block)")
+[09-13 05:13:56]    | M24(原版 sc0.8)      中位   366.2 ms  最快   354.7 ms  -> 加速比 0.780x
+[09-13 05:13:56]    | M24p4(DiT 4/28)    中位   293.1 ms  最快   277.0 ms  -> 加速比 0.975x
+[09-13 05:13:56]    | M24avg2(2样本)       中位   748.5 ms  最快   727.0 ms  -> 加速比 0.382x
+[09-13 05:13:56]    | 
+[09-13 05:13:56]    | 已存 D:\tmp_timing\pkg_latency.json
+[09-13 05:13:56]    | PKG_LATENCY_DONE
+[09-13 05:13:56] === upload/ 最终现状 ===
+[09-13 05:13:56]    Track2_M24avg2.zip  1.47 GiB
+[09-13 05:13:56]    Track2_M24p4.zip  0.94 GiB

@@ -1,0 +1,97 @@
+{
+ "schema": "PROXY-screen/1",
+ "metrics": [
+  "clipiqa",
+  "maniqa",
+  "niqe",
+  "musiq"
+ ],
+ "n_common": 0,
+ "cases": [],
+ "rows": {
+  "c_v7s5000_sc0.8": {
+   "dir": "D:\\models\\iqa_screen\\c_v7s5000_sc0.8",
+   "per_case": {},
+   "mean": {
+    "clipiqa": null,
+    "maniqa": null,
+    "niqe": null,
+    "musiq": null
+   },
+   "n": {
+    "clipiqa": 0,
+    "maniqa": 0,
+    "niqe": 0,
+    "musiq": 0
+   }
+  },
+  "c_v6s5000_sc1.0": {
+   "dir": "D:\\models\\iqa_screen\\c_v6s5000_sc1.0",
+   "per_case": {},
+   "mean": {
+    "clipiqa": null,
+    "maniqa": null,
+    "niqe": null,
+    "musiq": null
+   },
+   "n": {
+    "clipiqa": 0,
+    "maniqa": 0,
+    "niqe": 0,
+    "musiq": 0
+   }
+  },
+  "c_v14s4000_sc0.8": {
+   "dir": "D:\\models\\iqa_screen\\c_v14s4000_sc0.8",
+   "per_case": {},
+   "mean": {
+    "clipiqa": null,
+    "maniqa": null,
+    "niqe": null,
+    "musiq": null
+   },
+   "n": {
+    "clipiqa": 0,
+    "maniqa": 0,
+    "niqe": 0,
+    "musiq": 0
+   }
+  },
+  "c_v14s4000_sc1.0": {
+   "dir": "D:\\models\\iqa_screen\\c_v14s4000_sc1.0",
+   "per_case": {},
+   "mean": {
+    "clipiqa": null,
+    "maniqa": null,
+    "niqe": null,
+    "musiq": null
+   },
+   "n": {
+    "clipiqa": 0,
+    "maniqa": 0,
+    "niqe": 0,
+    "musiq": 0
+   }
+  },
+  "c_v8s9000_sc1.0": {
+   "dir": "D:\\models\\iqa_screen\\c_v8s9000_sc1.0",
+   "per_case": {},
+   "mean": {
+    "clipiqa": null,
+    "maniqa": null,
+    "niqe": null,
+    "musiq": null
+   },
+   "n": {
+    "clipiqa": 0,
+    "maniqa": 0,
+    "niqe": 0,
+    "musiq": 0
+   }
+  }
+ },
+ "composite": {},
+ "composite_metrics": [],
+ "ranking": [],
+ "wall_s": 0.0
+}

@@ -1,0 +1,109 @@
+{
+ "schema": "SCORE01-prereg/1",
+ "task": "SCORE-01",
+ "registered_at": "2026-09-18T08:40:35.299Z",
+ "inputs": [
+  {
+   "name": "c1_512",
+   "source": "赛题二/测试集/case1.jpg",
+   "crop_box": [
+    1792,
+    1280,
+    2304,
+    1792
+   ],
+   "wh": [
+    512,
+    512
+   ],
+   "note": "与 DELIV-02 prereg case1_crop512 同位置"
+  },
+  {
+   "name": "c7_512",
+   "source": "赛题二/测试集/case7.jpg",
+   "crop_box": [
+    1792,
+    1280,
+    2304,
+    1792
+   ],
+   "wh": [
+    512,
+    512
+   ]
+  },
+  {
+   "name": "c25_512",
+   "source": "赛题二/测试集/case25.jpg",
+   "crop_box": [
+    1280,
+    1792,
+    1792,
+    2304
+   ],
+   "wh": [
+    512,
+    512
+   ],
+   "note": "竖图（3072x4096）中心裁切"
+  }
+ ],
+ "protocol": {
+  "per_input_per_process": {
+   "warmup": 3,
+   "timed": 20,
+   "cold": "进程内首个调用单独记录"
+  },
+  "processes_per_variant": 2,
+  "order": "baseline_p1 -> candidate_p1 -> baseline_p2 -> candidate_p2（进程级交错）",
+  "timing": "torch.cuda.synchronize() 于调用前后各一次；wall=perf_counter 差值，含完整 infer",
+  "mixed_profiling": "禁止：分段 profiling 单独运行，不混入无 profiling 成绩",
+  "recorded": [
+   "raw per-run ms",
+   "median",
+   "p90(线性插值)",
+   "mean",
+   "min",
+   "max",
+   "load_s",
+   "cold_ms",
+   "vram_allocated_mib",
+   "vram_reserved_mib",
+   "gpu_mem_used_mib",
+   "gpu_temp_c",
+   "input_sha256",
+   "model_sha256",
+   "runner_sha256",
+   "flags/env"
+  ],
+  "run_mode": "default（不加确定性开关，贴近平台环境）+ runner 自带 jit_optimized_execution(False)；保输出验证另在 frozen 模式进行"
+ },
+ "gate": {
+  "median_avg_improvement_min": 0.1,
+  "p90_worsening_max": 0.05,
+  "rounds_required": 2,
+  "rule": "两个独立进程轮次均须满足：三个输入的时延中位数之平均下降≥10%，且任何输入 p90 不恶化>5%"
+ },
+ "preservation": {
+  "float_max_abs": 0.00001,
+  "float_mean_abs": 0.000001,
+  "uint8": "恢复 uint8 像素完全一致（禁用旧宽口径）",
+  "samples_frozen": [
+   "c1_512",
+   "c7_512",
+   "c25_512",
+   "case1_crop511x513",
+   "case1_full",
+   "case7_full"
+  ],
+  "independent_load": "候选件在全新进程重载并复测 c1_512 与 case1_full"
+ },
+ "budget": {
+  "top": 600,
+  "top4k": 128,
+  "component": 32,
+  "wall_s": 14400,
+  "disk_gib": 12,
+  "reserve_for": "100 图 + 4 次隔离"
+ }
+}

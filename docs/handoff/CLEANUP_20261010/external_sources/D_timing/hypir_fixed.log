@@ -1,0 +1,11 @@
+Start loading models
+Load model weights from D:/models/hypir/HYPIR_sd2.pth
+Models loaded in 6.83 seconds.
+Found 3 images in D:\tmp_timing\lq3.
+Process file: [92mcase1_lq.jpg[0m
+Prompt: [94mhigh quality sharp detailed photograph[0m
+Process file: [92mcase2_lq.jpg[0m
+Prompt: [94mhigh quality sharp detailed photograph[0m
+Process file: [92mcase3_lq.jpg[0m
+Prompt: [94mhigh quality sharp detailed photograph[0m
+Done. [92mEnjoy your results in D:\tmp_timing\hypir_fixed\result.[0m

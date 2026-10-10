@@ -1,0 +1,71 @@
+{
+ "device": "cuda",
+ "rows": [
+  {
+   "file": "D:\\models\\opt01\\output_dir\\case1.jpg",
+   "clipiqa": 0.9061980247497559,
+   "clipiqa_s": 1.83,
+   "musiq": 39.711509704589844,
+   "musiq_s": 45.08,
+   "maniqa": 0.4590766131877899,
+   "maniqa_s": 1.5,
+   "niqe": 5.833841915248205,
+   "niqe_s": 1.03
+  },
+  {
+   "file": "D:\\models\\opt01\\output_dir\\case2.jpg",
+   "clipiqa": 0.8901738524436951,
+   "clipiqa_s": 1.24,
+   "musiq": 45.23061752319336,
+   "musiq_s": 37.82,
+   "maniqa": 0.5289510488510132,
+   "maniqa_s": 1.52,
+   "niqe": 4.029588025207018,
+   "niqe_s": 0.53
+  },
+  {
+   "file": "D:\\models\\opt01\\output_dir\\case3.jpg",
+   "clipiqa": 0.9189996719360352,
+   "clipiqa_s": 1.27,
+   "musiq": 46.975730895996094,
+   "musiq_s": 38.2,
+   "maniqa": 0.5285241007804871,
+   "maniqa_s": 1.46,
+   "niqe": 4.494375465784264,
+   "niqe_s": 0.51
+  },
+  {
+   "file": "C:\\models\\exports\\DELIV02_20260918_073810\\output_dir\\case1.jpg",
+   "clipiqa": 0.9061886072158813,
+   "clipiqa_s": 1.24,
+   "musiq": 39.788482666015625,
+   "musiq_s": 39.7,
+   "maniqa": 0.457525372505188,
+   "maniqa_s": 4.56,
+   "niqe": 5.853013907793251,
+   "niqe_s": 0.66
+  },
+  {
+   "file": "C:\\models\\exports\\DELIV02_20260918_073810\\output_dir\\case2.jpg",
+   "clipiqa": 0.8906373381614685,
+   "clipiqa_s": 9.41,
+   "musiq": 45.18336486816406,
+   "musiq_s": 39.71,
+   "maniqa": 0.529180645942688,
+   "maniqa_s": 4.49,
+   "niqe": 4.015872773049623,
+   "niqe_s": 0.51
+  },
+  {
+   "file": "C:\\models\\exports\\DELIV02_20260918_073810\\output_dir\\case3.jpg",
+   "clipiqa": 0.9199575781822205,
+   "clipiqa_s": 9.04,
+   "musiq": 47.1125373840332,
+   "musiq_s": 46.09,
+   "maniqa": 0.5287759900093079,
+   "maniqa_s": 4.6,
+   "niqe": 4.48849965993075,
+   "niqe_s": 0.71
+  }
+ ]
+}

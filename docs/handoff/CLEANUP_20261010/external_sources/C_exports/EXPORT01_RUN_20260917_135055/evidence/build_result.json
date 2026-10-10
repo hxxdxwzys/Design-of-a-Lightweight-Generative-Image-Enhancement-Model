@@ -1,0 +1,16 @@
+{
+ "run_dir": "C:\\models\\exports\\EXPORT01_RUN_20260917_135055",
+ "started_at": "2026-09-17 13:50:57",
+ "assets_load_s": 32.143,
+ "merged_type": "LightningDiT",
+ "patched_embedders": [
+  "t_embedder.mlp",
+  "r_embedder.mlp"
+ ],
+ "trace_s": 7.074,
+ "component_probes_used": 7,
+ "model_bytes": 1343295723,
+ "model_sha256": "1bdafc4cc7e69911323e8f7235015965832e848c58b8c7fe426ac6974c6743a9",
+ "reload_ok_cpu": true,
+ "finished_at": "2026-09-17 13:51:47"
+}

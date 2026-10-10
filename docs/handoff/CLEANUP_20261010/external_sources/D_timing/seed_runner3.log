@@ -1,0 +1,926 @@
+[seed 1] start 18:06:24
+Loading model from preset/ckpts/VOSR_0.5B_os...
+Inference steps: 1, Seed: 1
+Loading LightDecoder from preset/ckpts/sd21_lwdecoder.pth...
+Loading weights from preset/ckpts/VOSR_0.5B_os\checkpoints\ema_model.safetensors
+Processing 100 images...
+Output size: 4096x3072, input size: 4096x3072
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+Done!
+[seed 1] done 19:41:42 (5718s)
+[seed 2] start 19:41:42
+Loading model from preset/ckpts/VOSR_0.5B_os...
+Inference steps: 1, Seed: 2
+Loading LightDecoder from preset/ckpts/sd21_lwdecoder.pth...
+Loading weights from preset/ckpts/VOSR_0.5B_os\checkpoints\ema_model.safetensors
+Processing 100 images...
+Output size: 4096x3072, input size: 4096x3072
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+Done!
+[seed 2] done 21:14:41 (5578s)
+[seed 3] start 21:14:41
+Loading model from preset/ckpts/VOSR_0.5B_os...
+Inference steps: 1, Seed: 3
+Loading LightDecoder from preset/ckpts/sd21_lwdecoder.pth...
+Loading weights from preset/ckpts/VOSR_0.5B_os\checkpoints\ema_model.safetensors
+Processing 100 images...
+Output size: 4096x3072, input size: 4096x3072
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+Done!

@@ -1,0 +1,567 @@
+{
+ "status": "OK",
+ "elapsed_s": 261.85527181625366,
+ "forwards": 8,
+ "criteria": {
+  "max_abs_diff": 1e-05,
+  "mean_abs_diff": 1e-06,
+  "output_dtype": "float32",
+  "output_range": [
+   -1.0,
+   1.0
+  ],
+  "png_pixel_identity": "decoded RGB identical"
+ },
+ "budget": {
+  "max_forwards": 10,
+  "max_minutes": 30,
+  "max_output_gib": 4
+ },
+ "inputs": {
+  "case1_crop512": {
+   "path": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\inputs\\case1_crop512.png",
+   "crop_box": [
+    1792,
+    1280,
+    2304,
+    1792
+   ],
+   "src_wh": [
+    4096,
+    3072
+   ],
+   "tensor_shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "tensor_sha256": "e15df1edd679dd41fbaed3962aabe85d7f6e328956f989addf0e046f60b37298"
+  },
+  "case1_full": {
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case1.jpg",
+   "crop_box": null,
+   "src_wh": [
+    4096,
+    3072
+   ],
+   "tensor_shape": [
+    1,
+    3,
+    3072,
+    4096
+   ],
+   "tensor_sha256": "a7ea157e36817ec0a7b16051e17595d3672a8e8f632edd24798099267c77d0ac"
+  },
+  "case7_full": {
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case7.jpg",
+   "crop_box": null,
+   "src_wh": [
+    4096,
+    3072
+   ],
+   "tensor_shape": [
+    1,
+    3,
+    3072,
+    4096
+   ],
+   "tensor_sha256": "fe9d2de453b031298777dda12c723775150f122c75945796f10f8df24097f4a8"
+  }
+ },
+ "pairs": {
+  "case1_crop512": {
+   "max_abs_diff": 0.0,
+   "mean_abs_diff": 0.0,
+   "n": 786432,
+   "pass_max": true,
+   "pass_mean": true,
+   "png_identical": true,
+   "png_shape": [
+    512,
+    512,
+    3
+   ],
+   "a_png_sha256": "dbf976ade235a70c03c2f9800beb4df51c335e7b06d650698926d3187747412f",
+   "b_png_sha256": "dbf976ade235a70c03c2f9800beb4df51c335e7b06d650698926d3187747412f",
+   "pass_png": true
+  },
+  "case1_full": {
+   "max_abs_diff": 0.0,
+   "mean_abs_diff": 0.0,
+   "n": 37748736,
+   "pass_max": true,
+   "pass_mean": true,
+   "png_identical": true,
+   "png_shape": [
+    3072,
+    4096,
+    3
+   ],
+   "a_png_sha256": "2883f4ad8262262f21961d85a02fc4d833629dee74f394856185e9bb0d4e6a99",
+   "b_png_sha256": "2883f4ad8262262f21961d85a02fc4d833629dee74f394856185e9bb0d4e6a99",
+   "pass_png": true
+  },
+  "case7_full": {
+   "max_abs_diff": 0.0,
+   "mean_abs_diff": 0.0,
+   "n": 37748736,
+   "pass_max": true,
+   "pass_mean": true,
+   "png_identical": true,
+   "png_shape": [
+    3072,
+    4096,
+    3
+   ],
+   "a_png_sha256": "7b41d66d82a464d7b857dde05046dede0384aedd45cf9391c1d7a8822f4af2af",
+   "b_png_sha256": "7b41d66d82a464d7b857dde05046dede0384aedd45cf9391c1d7a8822f4af2af",
+   "pass_png": true
+  }
+ },
+ "repeat_512": {
+  "A_crop512_run": {
+   "first_sha256": "83c25825a2d9d2299db24d30ba23996316915d56cfe6036dbd83b17756d7746e",
+   "max_abs_diff": 0.0,
+   "mean_abs_diff": 0.0,
+   "n": 786432,
+   "second_sha256": "83c25825a2d9d2299db24d30ba23996316915d56cfe6036dbd83b17756d7746e",
+   "pass_max": true,
+   "pass_mean": true
+  },
+  "B_crop512_run": {
+   "first_sha256": "83c25825a2d9d2299db24d30ba23996316915d56cfe6036dbd83b17756d7746e",
+   "max_abs_diff": 0.0,
+   "mean_abs_diff": 0.0,
+   "n": 786432,
+   "second_sha256": "83c25825a2d9d2299db24d30ba23996316915d56cfe6036dbd83b17756d7746e",
+   "pass_max": true,
+   "pass_mean": true
+  }
+ },
+ "criteria_all_pass": true,
+ "crit": {
+  "max_abs_diff": 1e-05,
+  "mean_abs_diff": 1e-06,
+  "output_dtype": "float32",
+  "output_range": [
+   -1.0,
+   1.0
+  ],
+  "png_pixel_identity": "decoded RGB identical"
+ },
+ "records": [
+  {
+   "instance": "A",
+   "tag": "case1_crop512",
+   "wall_s": 1.183044195175171,
+   "shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "min": -1.0,
+   "max": 1.0,
+   "finite": true,
+   "tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\A_tensor\\case1_crop512.npy",
+   "png": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\A_tensor\\case1_crop512.png"
+  },
+  {
+   "instance": "A",
+   "tag": "case1_full",
+   "wall_s": 56.67716193199158,
+   "shape": [
+    1,
+    3,
+    3072,
+    4096
+   ],
+   "min": -1.0,
+   "max": 1.0,
+   "finite": true,
+   "tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\A_tensor\\case1_full.npy",
+   "png": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\A_tensor\\case1_full.png"
+  },
+  {
+   "instance": "A",
+   "tag": "case7_full",
+   "wall_s": 48.89851784706116,
+   "shape": [
+    1,
+    3,
+    3072,
+    4096
+   ],
+   "min": -1.0,
+   "max": 1.0,
+   "finite": true,
+   "tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\A_tensor\\case7_full.npy",
+   "png": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\A_tensor\\case7_full.png"
+  },
+  {
+   "instance": "A",
+   "tag": "case1_crop512",
+   "wall_s": 0.7743985652923584,
+   "shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "min": -1.0,
+   "max": 1.0,
+   "finite": true,
+   "tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\A_tensor\\case1_crop512.npy",
+   "png": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\A_tensor\\case1_crop512.png"
+  },
+  {
+   "entry": "offline_file",
+   "input_path": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\inputs\\case1_crop512.png",
+   "input_wh": [
+    512,
+    512
+   ],
+   "tensor_shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "tensor_dtype": "torch.float32",
+   "tensor_min": -1.0,
+   "tensor_max": 1.0,
+   "png_path": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\B_offline\\case1_crop512.png",
+   "png_bytes": 364322,
+   "png_sha256": "dbf976ade235a70c03c2f9800beb4df51c335e7b06d650698926d3187747412f",
+   "tensor_sha256": "83c25825a2d9d2299db24d30ba23996316915d56cfe6036dbd83b17756d7746e",
+   "tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\B_offline_tensor\\case1_crop512.npy",
+   "instance": "B",
+   "tag": "case1_crop512",
+   "wall_s": 0.8148901462554932
+  },
+  {
+   "entry": "offline_file",
+   "input_path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case1.jpg",
+   "input_wh": [
+    4096,
+    3072
+   ],
+   "tensor_shape": [
+    1,
+    3,
+    3072,
+    4096
+   ],
+   "tensor_dtype": "torch.float32",
+   "tensor_min": -1.0,
+   "tensor_max": 1.0,
+   "png_path": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\B_offline\\case1.png",
+   "png_bytes": 14022360,
+   "png_sha256": "2883f4ad8262262f21961d85a02fc4d833629dee74f394856185e9bb0d4e6a99",
+   "tensor_sha256": "7b3f80aec4b2b6de905175fd7ff79ad21aceed8ede946e671e8810b5ed84c518",
+   "tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\B_offline_tensor\\case1.npy",
+   "instance": "B",
+   "tag": "case1_full",
+   "wall_s": 51.83228349685669
+  },
+  {
+   "entry": "offline_file",
+   "input_path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case7.jpg",
+   "input_wh": [
+    4096,
+    3072
+   ],
+   "tensor_shape": [
+    1,
+    3,
+    3072,
+    4096
+   ],
+   "tensor_dtype": "torch.float32",
+   "tensor_min": -1.0,
+   "tensor_max": 1.0,
+   "png_path": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\B_offline\\case7.png",
+   "png_bytes": 17016367,
+   "png_sha256": "7b41d66d82a464d7b857dde05046dede0384aedd45cf9391c1d7a8822f4af2af",
+   "tensor_sha256": "cab5bdbb92534b5f548695a9d00196a6a5ac01e01e989c92790b848a9ef477fa",
+   "tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\B_offline_tensor\\case7.npy",
+   "instance": "B",
+   "tag": "case7_full",
+   "wall_s": 51.836029052734375
+  },
+  {
+   "entry": "offline_file",
+   "input_path": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\inputs\\case1_crop512.png",
+   "input_wh": [
+    512,
+    512
+   ],
+   "tensor_shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "tensor_dtype": "torch.float32",
+   "tensor_min": -1.0,
+   "tensor_max": 1.0,
+   "png_path": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\B_offline\\case1_crop512.png",
+   "png_bytes": 364322,
+   "png_sha256": "dbf976ade235a70c03c2f9800beb4df51c335e7b06d650698926d3187747412f",
+   "tensor_sha256": "83c25825a2d9d2299db24d30ba23996316915d56cfe6036dbd83b17756d7746e",
+   "tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01_20260917_000000\\B_offline_tensor\\case1_crop512.npy",
+   "instance": "B",
+   "tag": "case1_crop512",
+   "wall_s": 0.843259334564209
+  }
+ ],
+ "instances": {
+  "A": [
+   {
+    "event": "load",
+    "wall_s": 29.851669549942017
+   }
+  ],
+  "B": [
+   {
+    "event": "load",
+    "wall_s": 12.849243879318237
+   }
+  ],
+  "prereg_sha256": "a60c0085943b80fc8e3f1f7fbba6f00824540e1fc4eb3f69c4b4797770bcf548",
+  "device": "cuda",
+  "A_identity": {
+   "entry": "tensor_runner",
+   "model_dir": "C:/models/finals/preset/ckpts/VOSR_0.5B_os",
+   "device": "cuda",
+   "config_sha256": "1a2e44d7709168187b28e30ffa15b35f9f0f5431205ec9b983d50a9c90aca42a",
+   "asset_fingerprint": {
+    "base_weights": {
+     "path": "C:\\models\\finals\\preset\\ckpts\\VOSR_0.5B_os\\checkpoints\\ema_model.safetensors",
+     "bytes": 1948337520,
+     "sha256": "45b6687b4ce59fa3451300f9e0fdcaf2e729c15e65f444af210a7851dfa13203"
+    },
+    "lora": {
+     "path": "D:\\models\\vosr_lora\\v7\\lora_s5000.pt",
+     "bytes": 67435697,
+     "sha256": "8b5193eddf0cb1fa26deaca1fd86e754cfaf2d778fdf5cb92b1de130a954771b"
+    },
+    "light_decoder": {
+     "path": "C:\\models\\finals\\preset\\ckpts\\sd21_lwdecoder.pth",
+     "bytes": 52086482,
+     "sha256": "a326a5e5c4a2445ce970987695979f3d5e5413d39b98c73a2ddac0055d2cdf59"
+    },
+    "dinov2_ckpt": {
+     "path": "C:\\models\\finals\\preset\\ckpts\\torch_cache\\checkpoints\\dinov2_vitb14_pretrain.pth",
+     "bytes": 346378731,
+     "sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73"
+    },
+    "args_json": {
+     "path": "C:\\models\\finals\\preset\\ckpts\\VOSR_0.5B_os\\args.json",
+     "bytes": 769,
+     "sha256": "3f3d0d1637240fd02f6db5e340f1ecbc0642d403dd0e28896ba8b776762b26cd"
+    },
+    "config_json": {
+     "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\config.json",
+     "bytes": 1668,
+     "sha256": "1a2e44d7709168187b28e30ffa15b35f9f0f5431205ec9b983d50a9c90aca42a"
+    },
+    "dinov2_repo_hubconf": {
+     "path": "C:\\models\\finals\\preset\\ckpts\\torch_cache\\facebookresearch_dinov2_main\\hubconf.py",
+     "sha256": "3e61e9c4d917389ccd4b2f177a0330c5c7619ed200803005c46b57f01eaa6457"
+    }
+   },
+   "source_fingerprint": {
+    "D:\\models\\finals\\VOSR\\inference_vosr_onestep.py": {
+     "bytes": 21790,
+     "sha256": "e8c0cdcc92b9745b12bb627f93f03f5575b8a7058898aa5a4abdf9f7c932323a"
+    },
+    "D:\\models\\finals\\VOSR\\tiled_vae.py": {
+     "bytes": 9949,
+     "sha256": "ca55d3a15543bde32b53546a798133d9d2dcfdba994498254e3666b64e544344"
+    },
+    "D:\\models\\finals\\VOSR\\models\\lightningdit.py": {
+     "bytes": 24306,
+     "sha256": "a27fac143747effcb0dd70b0a2b12a51d92498f04ec3905996f580f8ecfb81cf"
+    },
+    "D:\\models\\finals\\VOSR\\models\\light_decoder.py": {
+     "bytes": 4398,
+     "sha256": "1ded3917a856476447603c02e4b08a8e0b25fbb57931a66e601d5e6903f7d8bd"
+    },
+    "D:\\tmp_timing\\vosr_lora_infer2.py": {
+     "bytes": 8434,
+     "sha256": "11b664d403f3b662067f7e221badb2c8724d8d3c3b0b825398985be0d66fb94b"
+    }
+   },
+   "effective_fingerprint": {
+    "model": {
+     "n_keys": 957,
+     "n_params": 503901760,
+     "dtypes": {
+      "torch.float32": 957
+     },
+     "shape_histogram": {
+      "(64,)": 112,
+      "(1024,)": 231,
+      "(1024, 1024)": 142,
+      "(32, 1024)": 113,
+      "(1024, 32)": 85,
+      "(3072,)": 29,
+      "(3072, 1024)": 28,
+      "(3072, 32)": 29,
+      "(5460,)": 28,
+      "(5460, 1024)": 28,
+      "(5460, 32)": 28,
+      "(1024, 2730)": 28,
+      "(32, 2730)": 28,
+      "(6, 1024)": 28,
+      "(1024, 64)": 2,
+      "(2048,)": 1,
+      "(2048, 1024)": 1,
+      "(16,)": 1,
+      "(16, 1024)": 1,
+      "(16, 32)": 1,
+      "(768,)": 2,
+      "(3072, 768)": 1,
+      "(32, 768)": 1,
+      "(1024, 3072)": 1,
+      "(32, 3072)": 1,
+      "(1024, 256)": 2,
+      "(6144,)": 1,
+      "(6144, 1024)": 1,
+      "(1024, 8, 2, 2)": 1,
+      "(32, 8, 2, 2)": 1,
+      "(1024, 32, 1, 1)": 1
+     },
+     "first_keys": [
+      "base_model.model.blocks.0.attn.k_norm.weight",
+      "base_model.model.blocks.0.attn.proj.base_layer.bias",
+      "base_model.model.blocks.0.attn.proj.base_layer.weight",
+      "base_model.model.blocks.0.attn.proj.lora_A.default.weight",
+      "base_model.model.blocks.0.attn.proj.lora_B.default.weight"
+     ],
+     "last_keys": [
+      "base_model.model.t_embedder.mlp.2.weight",
+      "base_model.model.x_embedder.proj.base_layer.bias",
+      "base_model.model.x_embedder.proj.base_layer.weight",
+      "base_model.model.x_embedder.proj.lora_A.default.weight",
+      "base_model.model.x_embedder.proj.lora_B.default.weight"
+     ],
+     "digest_sha256": "444ceaff90e044b92b5007f1c34d6f8db1757d03ef597bfef1e73dd011bfee1b",
+     "byte_protocol": "key|dtype|shape|float32-raw"
+    },
+    "vae": {
+     "n_keys": 248,
+     "n_params": 83653863,
+     "dtypes": {
+      "torch.float32": 248
+     },
+     "shape_histogram": {
+      "(512,)": 103,
+      "(512, 4, 3, 3)": 1,
+      "(128,)": 35,
+      "(3,)": 1,
+      "(3, 128, 3, 3)": 1,
+      "(512, 512)": 8,
+      "(512, 512, 3, 3)": 30,
+      "(256,)": 34,
+      "(256, 512, 3, 3)": 1,
+      "(256, 256, 3, 3)": 10,
+      "(256, 512, 1, 1)": 1,
+      "(128, 256, 3, 3)": 1,
+      "(128, 128, 3, 3)": 10,
+      "(128, 256, 1, 1)": 1,
+      "(128, 3, 3, 3)": 1,
+      "(8,)": 2,
+      "(8, 512, 3, 3)": 1,
+      "(256, 128, 3, 3)": 1,
+      "(256, 128, 1, 1)": 1,
+      "(512, 256, 3, 3)": 1,
+      "(512, 256, 1, 1)": 1,
+      "(4,)": 1,
+      "(4, 4, 1, 1)": 1,
+      "(8, 8, 1, 1)": 1
+     },
+     "first_keys": [
+      "decoder.conv_in.bias",
+      "decoder.conv_in.weight",
+      "decoder.conv_norm_out.bias",
+      "decoder.conv_norm_out.weight",
+      "decoder.conv_out.bias"
+     ],
+     "last_keys": [
+      "encoder.mid_block.resnets.1.norm2.weight",
+      "post_quant_conv.bias",
+      "post_quant_conv.weight",
+      "quant_conv.bias",
+      "quant_conv.weight"
+     ],
+     "digest_sha256": "96264f881b1c4cfdd4a4cfb667d26db48ed56c5a720048aa8072514496cbdc77",
+     "byte_protocol": "key|dtype|shape|float32-raw"
+    },
+    "light_decoder": {
+     "n_keys": 136,
+     "n_params": 13008771,
+     "dtypes": {
+      "torch.float32": 136
+     },
+     "shape_histogram": {
+      "(256,)": 59,
+      "(256, 4, 3, 3)": 1,
+      "(128,)": 38,
+      "(3,)": 1,
+      "(3, 128, 3, 3)": 1,
+      "(256, 256)": 4,
+      "(256, 256, 3, 3)": 18,
+      "(128, 256, 3, 3)": 1,
+      "(128, 128, 3, 3)": 12,
+      "(128, 256, 1, 1)": 1
+     },
+     "first_keys": [
+      "conv_in.bias",
+      "conv_in.weight",
+      "conv_norm_out.bias",
+      "conv_norm_out.weight",
+      "conv_out.bias"
+     ],
+     "last_keys": [
+      "up_blocks.3.resnets.2.conv2.weight",
+      "up_blocks.3.resnets.2.norm1.bias",
+      "up_blocks.3.resnets.2.norm1.weight",
+      "up_blocks.3.resnets.2.norm2.bias",
+      "up_blocks.3.resnets.2.norm2.weight"
+     ],
+     "digest_sha256": "5a64d77cce035cd6330eed963d9fec29aa85177bcc4ce41ea5eb6e65f0bc01dc",
+     "byte_protocol": "key|dtype|shape|float32-raw"
+    }
+   },
+   "load_report": {
+    "base_keys": {
+     "missing": [],
+     "unexpected": []
+    },
+    "lora": {
+     "lora_keys_loaded": 288,
+     "lora_scale": 0.8
+    },
+    "ae_local_files_only": true,
+    "dino_local_only": true
+   },
+   "tile_report": {
+    "dit_tile_size_px": 512,
+    "dit_tile_latent": 64,
+    "dit_overlap_latent": 8,
+    "dit_effective_overlap_px": 64,
+    "dit_stride_px": 448,
+    "vae_tile_size_px": 1024,
+    "vae_tile_latent": 128,
+    "vae_overlap_latent": 16,
+    "vae_effective_overlap_px": 128,
+    "vae_stride_px": 896
+   }
+  },
+  "A_peak_vram_bytes": 6140348928,
+  "B_peak_vram_bytes": 6136964608
+ }
+}

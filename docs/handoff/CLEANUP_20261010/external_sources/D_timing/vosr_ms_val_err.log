@@ -1,0 +1,1367 @@
+D:\Python\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+Using cache found in preset/ckpts/torch_cache\facebookresearch_dinov2_main
+C:\models\finals\preset/ckpts/torch_cache\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+C:\models\finals\preset/ckpts/torch_cache\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+C:\models\finals\preset/ckpts/torch_cache\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+  0%|          | 0/3 [00:00<?, ?it/s]W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] WON'T CONVERT forward D:\models\finals\VOSR\models\lightningdit.py line 293 
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] due to: 
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 817, in wrapper
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return handle_graph_break(self, inst, speculation.reason)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 867, in handle_graph_break
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(self, reason=reason)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1179, in compile_subgraph
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, pass2.graph_output_vars(), root, output_replacements
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 817, in wrapper
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return handle_graph_break(self, inst, speculation.reason)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 867, in handle_graph_break
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(self, reason=reason)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1179, in compile_subgraph
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, pass2.graph_output_vars(), root, output_replacements
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.153000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] WON'T CONVERT forward D:\models\finals\VOSR\models\rmsnorm.py line 65 
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] due to: 
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.210000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] WON'T CONVERT _norm D:\models\finals\VOSR\models\rmsnorm.py line 52 
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] due to: 
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.256000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] WON'T CONVERT modulate_adasin D:\models\finals\VOSR\models\lightningdit.py line 97 
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] due to: 
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.323000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py:236: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+W0816 15:16:25.432000 30592 site-packages\torch\_inductor\utils.py:1250] [4/0_1] Not enough SMs to use max_autotune_gemm mode
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] WON'T CONVERT forward D:\models\finals\VOSR\models\lightningdit.py line 142 
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] due to: 
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 817, in wrapper
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return handle_graph_break(self, inst, speculation.reason)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 867, in handle_graph_break
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(self, reason=reason)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1179, in compile_subgraph
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, pass2.graph_output_vars(), root, output_replacements
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 817, in wrapper
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return handle_graph_break(self, inst, speculation.reason)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 867, in handle_graph_break
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(self, reason=reason)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1179, in compile_subgraph
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, pass2.graph_output_vars(), root, output_replacements
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.465000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] WON'T CONVERT forward D:\models\finals\VOSR\models\lightningdit.py line 54 
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] due to: 
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.662000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] WON'T CONVERT forward D:\models\finals\VOSR\models\swiglu_ffn.py line 31 
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] due to: 
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:25.759000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] WON'T CONVERT forward D:\models\finals\VOSR\models\lightningdit.py line 323 
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] due to: 
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:26.199000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] WON'T CONVERT modulate D:\models\finals\VOSR\models\lightningdit.py line 102 
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] due to: 
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Traceback (most recent call last):
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1213, in __call__
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     result = self._inner_convert(
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame, cache_entry, hooks, frame_state, skip=skip + 1
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 598, in __call__
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile(
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         frame.f_code,
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<14 lines>...
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         skip=skip + 1,
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 1059, in _compile
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_utils_internal.py", line 97, in wrapper_function
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return function(*args, **kwargs)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 761, in compile_inner
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return _compile_inner(code, one_graph, hooks, transform)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 797, in _compile_inner
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     out_code = transform_code_object(code, transform)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1422, in transform_code_object
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     transformations(instructions, code_options)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 257, in _fn
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return fn(*args, **kwargs)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\convert_frame.py", line 715, in transform
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     tracer.run()
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3500, in run
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     super().run()
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1337, in run
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     while self.step():
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]           ~~~~~~~~~^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 1246, in step
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.dispatch_table[inst.opcode](self, inst)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3701, in RETURN_VALUE
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self._return(inst)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~^^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 3686, in _return
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.output.compile_subgraph(
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         self,
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ...<2 lines>...
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ),
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1144, in compile_subgraph
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     self.compile_and_call_fx_graph(
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         tx, list(reversed(stack_values)), root, output_replacements
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     )
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1437, in compile_and_call_fx_graph
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = self.call_user_compiler(gm)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1487, in call_user_compiler
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return self._call_user_compiler(gm)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\output_graph.py", line 1519, in _call_user_compiler
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 150, in __call__
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     compiled_gm = compiler_fn(gm, example_inputs)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\__init__.py", line 2347, in __call__
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     return compile_fx(model_, inputs_, config_patches=self.config)
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0816 15:16:26.253000 30592 site-packages\torch\_dynamo\convert_frame.py:1280] 
+ 33%|¨€¨€¨€¨†      | 1/3 [16:30<33:00, 990.14s/it] 67%|¨€¨€¨€¨€¨€¨€¨ƒ   | 2/3 [34:59<17:40, 1060.29s/it]100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 3/3 [53:28<00:00, 1082.52s/it]100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 3/3 [53:28<00:00, 1069.50s/it]

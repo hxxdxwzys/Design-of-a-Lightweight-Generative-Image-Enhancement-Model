@@ -1,0 +1,3 @@
+[09-15 15:49:09] input dir D:\models\q1_screen\in6 (6 imgs)
+[09-15 15:49:35] base_sc0.8_t512_wavelet    clipiqa=0.911    lapvar=462.0452 seam=1.054/1.006 n=6
+[09-15 15:50:25]   retry sc1.0_t512_wavelet (0/6)

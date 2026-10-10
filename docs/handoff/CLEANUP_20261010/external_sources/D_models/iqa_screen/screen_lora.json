@@ -1,0 +1,291 @@
+{
+ "schema": "PROXY-screen/1",
+ "metrics": [
+  "clipiqa",
+  "maniqa",
+  "niqe",
+  "musiq"
+ ],
+ "n_common": 6,
+ "cases": [
+  "case1",
+  "case10",
+  "case11",
+  "case12",
+  "case13",
+  "case100"
+ ],
+ "rows": {
+  "v7_sc0p8_seed42": {
+   "dir": "D:\\models\\iqa_screen\\v7s5000_sc0.8_seed42",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9344,
+     "maniqa": 0.4211,
+     "niqe": 5.3291,
+     "musiq": 59.5415
+    },
+    "case10": {
+     "clipiqa": 0.8093,
+     "maniqa": 0.4408,
+     "niqe": 8.3357,
+     "musiq": 65.4636
+    },
+    "case11": {
+     "clipiqa": 0.8572,
+     "maniqa": 0.5787,
+     "niqe": 6.6822,
+     "musiq": 66.4273
+    },
+    "case12": {
+     "clipiqa": 0.8645,
+     "maniqa": 0.5371,
+     "niqe": 5.2003
+    },
+    "case13": {
+     "clipiqa": 0.7992,
+     "maniqa": 0.4506,
+     "niqe": 6.8073
+    },
+    "case100": {
+     "clipiqa": 0.961,
+     "maniqa": 0.614,
+     "niqe": 6.796
+    }
+   },
+   "mean": {
+    "clipiqa": 0.8709138234456381,
+    "maniqa": 0.5070573290189108,
+    "niqe": 6.525094229839703,
+    "musiq": 63.810791015625
+   },
+   "n": {
+    "clipiqa": 6,
+    "maniqa": 6,
+    "niqe": 6,
+    "musiq": 3
+   }
+  },
+  "v7_sc1p0_seed42": {
+   "dir": "D:\\models\\iqa_screen\\v7s5000_sc1.0_seed42",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9397,
+     "maniqa": 0.399,
+     "niqe": 5.0097,
+     "musiq": 52.2466
+    },
+    "case10": {
+     "clipiqa": 0.8884,
+     "maniqa": 0.4427,
+     "niqe": 8.9705,
+     "musiq": 66.9171
+    },
+    "case11": {
+     "clipiqa": 0.8645,
+     "maniqa": 0.5551,
+     "niqe": 6.4283,
+     "musiq": 63.7208
+    },
+    "case12": {
+     "clipiqa": 0.9057,
+     "maniqa": 0.547,
+     "niqe": 5.2556
+    },
+    "case13": {
+     "clipiqa": 0.8635,
+     "maniqa": 0.5331,
+     "niqe": 5.7802
+    },
+    "case100": {
+     "clipiqa": 0.9725,
+     "maniqa": 0.6039,
+     "niqe": 7.0298
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9057148098945618,
+    "maniqa": 0.5134824911753336,
+    "niqe": 6.41233717689827,
+    "musiq": 60.961463928222656
+   },
+   "n": {
+    "clipiqa": 6,
+    "maniqa": 6,
+    "niqe": 6,
+    "musiq": 3
+   }
+  },
+  "v7_sc0p8_seed8": {
+   "dir": "D:\\models\\iqa_screen\\v7s5000_sc0.8_seed8",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9225,
+     "maniqa": 0.399,
+     "niqe": 4.8257,
+     "musiq": 57.4075
+    },
+    "case10": {
+     "clipiqa": 0.8058,
+     "maniqa": 0.4348,
+     "niqe": 8.4979,
+     "musiq": 66.8768
+    },
+    "case11": {
+     "clipiqa": 0.8321,
+     "maniqa": 0.5701,
+     "niqe": 5.9736,
+     "musiq": 64.238
+    },
+    "case12": {
+     "clipiqa": 0.8734,
+     "maniqa": 0.5213,
+     "niqe": 5.1647
+    },
+    "case13": {
+     "clipiqa": 0.7841,
+     "maniqa": 0.421,
+     "niqe": 5.8891
+    },
+    "case100": {
+     "clipiqa": 0.9627,
+     "maniqa": 0.6178,
+     "niqe": 6.9223
+    }
+   },
+   "mean": {
+    "clipiqa": 0.8634151816368103,
+    "maniqa": 0.49399760365486145,
+    "niqe": 6.212208887837659,
+    "musiq": 62.84076944986979
+   },
+   "n": {
+    "clipiqa": 6,
+    "maniqa": 6,
+    "niqe": 6,
+    "musiq": 3
+   }
+  },
+  "v8s9000_sc0p8": {
+   "dir": "D:\\models\\iqa_screen\\v8s9000_sc0.8_seed42",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9325,
+     "maniqa": 0.4486,
+     "niqe": 5.4962,
+     "musiq": 58.3228
+    },
+    "case10": {
+     "clipiqa": 0.8723,
+     "maniqa": 0.4501,
+     "niqe": 9.9354,
+     "musiq": 63.4832
+    },
+    "case11": {
+     "clipiqa": 0.8893,
+     "maniqa": 0.5112,
+     "niqe": 6.8009,
+     "musiq": 60.4604
+    },
+    "case12": {
+     "clipiqa": 0.8611,
+     "maniqa": 0.5128,
+     "niqe": 5.1404
+    },
+    "case13": {
+     "clipiqa": 0.8299,
+     "maniqa": 0.4253,
+     "niqe": 5.8048
+    },
+    "case100": {
+     "clipiqa": 0.9692,
+     "maniqa": 0.6104,
+     "niqe": 7.2229
+    }
+   },
+   "mean": {
+    "clipiqa": 0.8923920094966888,
+    "maniqa": 0.49306832750638324,
+    "niqe": 6.733443526395285,
+    "musiq": 60.755479176839195
+   },
+   "n": {
+    "clipiqa": 6,
+    "maniqa": 6,
+    "niqe": 6,
+    "musiq": 3
+   }
+  },
+  "v6s5000_sc0p8": {
+   "dir": "D:\\models\\iqa_screen\\v6s5000_sc0.8_seed42",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9539,
+     "maniqa": 0.4599,
+     "niqe": 5.0118,
+     "musiq": 58.8418
+    },
+    "case10": {
+     "clipiqa": 0.8383,
+     "maniqa": 0.4199,
+     "niqe": 9.2899,
+     "musiq": 65.31
+    },
+    "case11": {
+     "clipiqa": 0.8365,
+     "maniqa": 0.6328,
+     "niqe": 7.0493,
+     "musiq": 65.7217
+    },
+    "case12": {
+     "clipiqa": 0.8885,
+     "maniqa": 0.5197,
+     "niqe": 5.1546
+    },
+    "case13": {
+     "clipiqa": 0.8654,
+     "maniqa": 0.4973,
+     "niqe": 6.3176
+    },
+    "case100": {
+     "clipiqa": 0.962,
+     "maniqa": 0.6227,
+     "niqe": 6.496
+    }
+   },
+   "mean": {
+    "clipiqa": 0.8907551169395447,
+    "maniqa": 0.5253740102052689,
+    "niqe": 6.553214760524432,
+    "musiq": 63.29115676879883
+   },
+   "n": {
+    "clipiqa": 6,
+    "maniqa": 6,
+    "niqe": 6,
+    "musiq": 3
+   }
+  }
+ },
+ "composite": {
+  "v7_sc0p8_seed42": 0.25250422833289,
+  "v7_sc1p0_seed42": 0.32884359165167365,
+  "v7_sc0p8_seed8": 0.17781954298153071,
+  "v8s9000_sc0p8": -0.07874064706131018,
+  "v6s5000_sc0p8": 0.4555092439600617
+ },
+ "composite_metrics": [
+  "clipiqa",
+  "maniqa",
+  "musiq",
+  "niqe"
+ ],
+ "ranking": [
+  "v6s5000_sc0p8",
+  "v7_sc1p0_seed42",
+  "v7_sc0p8_seed42",
+  "v7_sc0p8_seed8",
+  "v8s9000_sc0p8"
+ ],
+ "wall_s": 67.4
+}

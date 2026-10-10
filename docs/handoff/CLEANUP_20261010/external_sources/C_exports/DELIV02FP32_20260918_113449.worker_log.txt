@@ -1,0 +1,50 @@
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+There are modules in AutoencoderKL that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+D:\Python\Lib\site-packages\diffusers\models\downsampling.py:134: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert hidden_states.shape[1] == self.channels
+D:\Python\Lib\site-packages\diffusers\models\downsampling.py:143: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert hidden_states.shape[1] == self.channels
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\patch_embed.py:72: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert H % patch_H == 0, f"Input image height {H} is not a multiple of patch height {patch_H}"
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\patch_embed.py:73: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert W % patch_W == 0, f"Input image width {W} is not a multiple of patch width: {patch_W}"
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\models\vision_transformer.py:186: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if npatch == N and w == h:
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\models\vision_transformer.py:194: TracerWarning: Converting a tensor to a Python float might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  M = int(math.sqrt(N))  # Recover the number of patches in each dimension
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\models\vision_transformer.py:195: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert N == M * M
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\models\vision_transformer.py:200: TracerWarning: Converting a tensor to a Python float might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  sx = float(w0 + self.interpolate_offset) / M
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\models\vision_transformer.py:201: TracerWarning: Converting a tensor to a Python float might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  sy = float(h0 + self.interpolate_offset) / M
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\models\vision_transformer.py:212: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert (w0, h0) == patch_pos_embed.shape[-2:]
+D:\models/finals/VOSR\models\lightningdit.py:570: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert H == W, "forward_flexible currently only supports square inputs"
+D:\Python\Lib\site-packages\torch\__init__.py:2150: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert condition, message
+D:\models/finals/VOSR\models\lightningdit.py:589: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if current_hw_seq_len != train_hw_seq_len:
+D:\models/finals/VOSR\models\lightningdit.py:471: TracerWarning: Converting a tensor to a Python integer might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  h = w = int(x.shape[1] ** 0.5)
+D:\models/finals/VOSR\models\lightningdit.py:472: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert h * w == x.shape[1]
+D:\Python\Lib\site-packages\diffusers\models\upsampling.py:145: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert hidden_states.shape[1] == self.channels
+D:\Python\Lib\site-packages\diffusers\models\upsampling.py:160: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if hidden_states.shape[0] >= 64:
+D:\Python\Lib\site-packages\diffusers\models\upsampling.py:171: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if hidden_states.numel() * scale_factor > pow(2, 31):
+C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\chain.py:74: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if target.shape[2] != source.shape[2] or target.shape[3] != source.shape[3]:
+[worker] FP32 build sha=613191d7955a8aab14846d2effe97f333c4b06e9492df3c46a13cda397c0bff8 bytes=2683975979 bundle=EXPORT01R-f948d1415b55bbf4d78e48e9d23f0f4e
+[worker] references captured: 9
+[worker] component_gate rc=1 {"verdict": "FAIL", "max_abs": 0.000579833984375}
+[worker] P1 FAIL RuntimeError: 组件门槛未通过：{"verdict": "FAIL", "max_abs": 0.000579833984375}
+

@@ -1,0 +1,84 @@
+{
+ "schema": "SCORE01R-prereg/1",
+ "task": "SCORE-01R",
+ "frozen_at": "2026-09-18 17:38:58",
+ "inputs": {
+  "box": {
+   "c1_512": [
+    "case1.jpg",
+    [
+     1792,
+     1280,
+     2304,
+     1792
+    ]
+   ],
+   "c7_512": [
+    "case7.jpg",
+    [
+     1792,
+     1280,
+     2304,
+     1792
+    ]
+   ],
+   "c25_512": [
+    "case25.jpg",
+    [
+     1280,
+     1792,
+     1792,
+     2304
+    ]
+   ]
+  },
+  "order": [
+   "c1_512",
+   "c7_512",
+   "c25_512"
+  ],
+  "source": "赛题二/测试集 case1/case7/case25 原图按 score01_bench.BOX 裁切"
+ },
+ "rounds": [
+  {
+   "index": 1,
+   "order": "ABBA"
+  },
+  {
+   "index": 2,
+   "order": "BAAB"
+  }
+ ],
+ "warmup": 2,
+ "timed": 10,
+ "entry": "runner.infer(x, prompt='') 且 timing 缺省为 None（spy 逐次记录）",
+ "execution_mode": "frozen（frozen_mode.apply_frozen_mode，加载模型前设置，两侧一致）",
+ "drift_rule": "每轮前后 A 基线的三输入中位数均值漂移>5% ⇒ 该轮 INVALID；允许一次额外重排测量",
+ "gate": {
+  "median_improvement_min": 0.1,
+  "p90_worsen_max": 0.05,
+  "valid_rounds_required": 2
+ },
+ "preservation": {
+  "samples": [
+   "c1_512",
+   "c7_512",
+   "c25_512",
+   "case1_crop511x513",
+   "case1_full",
+   "case7_full"
+  ],
+  "float_max_abs": 1e-05,
+  "float_mean_abs": 1e-06,
+  "uint8": "逐像素完全一致",
+  "extra": "候选同实例重复 + 新进程加载复验（uint8 一致）"
+ },
+ "budget": {
+  "top": 600,
+  "top4k": 128,
+  "component": 0,
+  "wall_s": 14400,
+  "disk_gib": 8,
+  "reserve": "100 图 + 4 次隔离"
+ }
+}

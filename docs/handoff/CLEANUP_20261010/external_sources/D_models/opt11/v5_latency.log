@@ -1,0 +1,4 @@
+V5(w32): graph=True median=6.66 ms best=5.58 -> r=33.0 factor=2.037
+   若 clipiqa=0.7952 -> IT=28.68 -> 预测 58.4
+   若 clipiqa=0.8046 -> IT=28.93 -> 预测 58.9
+   若 clipiqa=0.8200 -> IT=29.33 -> 预测 59.7

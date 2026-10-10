@@ -1,0 +1,13 @@
+{
+  "epoch": 1790504358.8913949,
+  "old_cap": 64,
+  "new_cap": 80,
+  "used_retained": 54,
+  "new_plan": 20,
+  "criterion_reference": "Original PROTOCOL.md \u00a77: same production runner, two independent loads, uint8 exact and repeat exact.",
+  "measurement_bug": "Deployment helper added a pre-save mutated-memory shadow equality criterion. This is not the preregistered two-final-file-load criterion.",
+  "unresolved_diagnostic": "Mutated in-memory parent and saved candidate were not uint8-exact, even with pre-warm injection. Cause UNKNOWN; first claim that order alone explained discrepancy is withdrawn.",
+  "decision": "Do not relabel prior false readings or relax any numerical tolerance. Directly test the preregistered final-file cross-process criterion with exact equality; keep shadow discrepancy separately and make no eager-equivalence claim.",
+  "model_changed": false,
+  "quality_thresholds_changed": false
+}

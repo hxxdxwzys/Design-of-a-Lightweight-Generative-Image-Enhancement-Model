@@ -1,0 +1,94 @@
+{
+ "schema": "STAT01-output-delta/1",
+ "flags": {
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "deterministic_algorithms": true,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "cudnn_allow_tf32": false,
+  "matmul_allow_tf32": false,
+  "torch": "2.7.0+cu126"
+ },
+ "started_at": "2026-09-18 18:04:52",
+ "per_input": {
+  "c1_512": {
+   "float_max_abs": 0.039215683937072754,
+   "float_mean_abs": 0.000680282711982727,
+   "u8_max_channel_diff": 5,
+   "u8_frac_pixels_any_channel_diff": 0.22603988647460938,
+   "u8_identical": false,
+   "u8_abs_histogram": {
+    "0": 718755,
+    "1": 67195,
+    "2": 438,
+    "3": 36,
+    ">=4": 8
+   },
+   "A_range": [
+    -1.0,
+    1.0
+   ],
+   "B_range": [
+    -1.0,
+    1.0
+   ],
+   "A_npy_sha256": "6992946d10acfd4e7a1667dcdfb25e4447a02110ac322175e58f3ac468a29cad",
+   "B_npy_sha256": "f146364ce9bd6188972112e47fa8b9ac783066313596ec74da1cf3c556968343"
+  },
+  "c7_512": {
+   "float_max_abs": 0.023529410362243652,
+   "float_mean_abs": 0.000543232832569629,
+   "u8_max_channel_diff": 3,
+   "u8_frac_pixels_any_channel_diff": 0.18549346923828125,
+   "u8_identical": false,
+   "u8_abs_histogram": {
+    "0": 732132,
+    "1": 54131,
+    "2": 168,
+    "3": 1,
+    ">=4": 0
+   },
+   "A_range": [
+    -0.8352941274642944,
+    1.0
+   ],
+   "B_range": [
+    -0.8352941274642944,
+    1.0
+   ],
+   "A_npy_sha256": "ab17aa3f8132e0f2f70306bb4407cf4af396909932ead1bf2fd30ec60318d0ea",
+   "B_npy_sha256": "0a35236e13281810af8ee0e135eaeb88859d50bc0ce7d9f960d9b639e96cea8e"
+  },
+  "c25_512": {
+   "float_max_abs": 0.0313725471496582,
+   "float_mean_abs": 0.00035055322223342955,
+   "u8_max_channel_diff": 4,
+   "u8_frac_pixels_any_channel_diff": 0.12414932250976562,
+   "u8_identical": false,
+   "u8_abs_histogram": {
+    "0": 751402,
+    "1": 34919,
+    "2": 104,
+    "3": 5,
+    ">=4": 2
+   },
+   "A_range": [
+    -0.8588235378265381,
+    0.8823529481887817
+   ],
+   "B_range": [
+    -0.8588235378265381,
+    0.8823529481887817
+   ],
+   "A_npy_sha256": "be8012ee7663475294cc053c0a93e1f9df44291a6a680dd007a5a2ff7a26a051",
+   "B_npy_sha256": "544f1eb5328adbd844b618dbda299161299989354833fd71601fc90fd60bf64a"
+  }
+ },
+ "budget_before": 112,
+ "status": "OK",
+ "budget_after": {
+  "top": 294,
+  "top4k": 0,
+  "component": 0
+ }
+}

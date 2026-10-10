@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.7913,
+ "niqe": 5.1594,
+ "musiq": 55.9715,
+ "maniqa": 0.3683,
+ "lapvar": 844.1,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\R16_render",
+ "tag": "E19_R16ch"
+}

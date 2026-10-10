@@ -1,0 +1,76 @@
+{
+ "base_sc0.8_t512_wavelet": {
+  "cfg": {
+   "lora": "D:/models/vosr_lora/v7/lora_s5000.pt",
+   "scale": 0.8,
+   "tile": 512,
+   "ov": 32,
+   "align": "wavelet",
+   "seed": 42,
+   "vae": 1024,
+   "vaeov": 64
+  },
+  "n": 6,
+  "rc": -1,
+  "clipiqa": 0.911,
+  "lapvar": 462.0452,
+  "seam_v": 1.0543,
+  "seam_h": 1.0059
+ },
+ "sc1.0_t512_wavelet": {
+  "cfg": {
+   "lora": "D:/models/vosr_lora/v7/lora_s5000.pt",
+   "scale": 1.0,
+   "tile": 512,
+   "ov": 32,
+   "align": "wavelet",
+   "seed": 42
+  },
+  "rc": 1,
+  "n": 0
+ },
+ "sc1.2_t512_wavelet": {
+  "cfg": {
+   "lora": "D:/models/vosr_lora/v7/lora_s5000.pt",
+   "scale": 1.2,
+   "tile": 512,
+   "ov": 32,
+   "align": "wavelet",
+   "seed": 42
+  },
+  "n": 6,
+  "rc": 0,
+  "clipiqa": null,
+  "lapvar": null,
+  "seam_v": 1.0548,
+  "seam_h": 0.9976
+ },
+ "sc0.8_t768_wavelet": {
+  "cfg": {
+   "lora": "D:/models/vosr_lora/v7/lora_s5000.pt",
+   "scale": 0.8,
+   "tile": 768,
+   "ov": 64,
+   "align": "wavelet",
+   "seed": 42
+  },
+  "rc": 1,
+  "n": 0
+ },
+ "sc0.8_t512_adain": {
+  "cfg": {
+   "lora": "D:/models/vosr_lora/v7/lora_s5000.pt",
+   "scale": 0.8,
+   "tile": 512,
+   "ov": 32,
+   "align": "adain",
+   "seed": 42
+  },
+  "n": 6,
+  "rc": 0,
+  "clipiqa": null,
+  "lapvar": null,
+  "seam_v": 1.0489,
+  "seam_h": 1.0047
+ }
+}

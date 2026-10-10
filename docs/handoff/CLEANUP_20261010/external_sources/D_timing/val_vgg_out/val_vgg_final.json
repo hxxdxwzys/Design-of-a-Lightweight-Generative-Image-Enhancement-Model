@@ -1,0 +1,137 @@
+{
+ "v7_wavelet": {
+  "per": {
+   "case1": {
+    "clipiqa": 0.95,
+    "lpips_alex": 0.5026,
+    "lpips_vgg": 0.5098,
+    "niqe": 4.721
+   },
+   "case2": {
+    "clipiqa": 0.8922,
+    "lpips_alex": 0.2549,
+    "lpips_vgg": 0.3722,
+    "niqe": 5.015
+   },
+   "case3": {
+    "clipiqa": 0.9157,
+    "lpips_alex": 0.3791,
+    "lpips_vgg": 0.5101,
+    "niqe": 5.781
+   }
+  },
+  "mean": {
+   "clipiqa": 0.9193,
+   "lpips_alex": 0.3789,
+   "lpips_vgg": 0.464
+  }
+ },
+ "v7_nofix": {
+  "per": {
+   "case1": {
+    "clipiqa": 0.9552,
+    "lpips_alex": 0.5042,
+    "lpips_vgg": 0.5118,
+    "niqe": 4.753
+   },
+   "case2": {
+    "clipiqa": 0.9055,
+    "lpips_alex": 0.2639,
+    "lpips_vgg": 0.3771,
+    "niqe": 5.055
+   },
+   "case3": {
+    "clipiqa": 0.9258,
+    "lpips_alex": 0.3849,
+    "lpips_vgg": 0.5198,
+    "niqe": 5.729
+   }
+  },
+  "mean": {
+   "clipiqa": 0.9288,
+   "lpips_alex": 0.3843,
+   "lpips_vgg": 0.4696
+  }
+ },
+ "v7_adain": {
+  "per": {
+   "case1": {
+    "clipiqa": 0.9504,
+    "lpips_alex": 0.5023,
+    "lpips_vgg": 0.5099,
+    "niqe": 4.806
+   },
+   "case2": {
+    "clipiqa": 0.9006,
+    "lpips_alex": 0.2586,
+    "lpips_vgg": 0.3758,
+    "niqe": 5.072
+   },
+   "case3": {
+    "clipiqa": 0.921,
+    "lpips_alex": 0.3824,
+    "lpips_vgg": 0.5158,
+    "niqe": 5.747
+   }
+  },
+  "mean": {
+   "clipiqa": 0.924,
+   "lpips_alex": 0.3811,
+   "lpips_vgg": 0.4672
+  }
+ },
+ "v6_wavelet": {
+  "per": {
+   "case1": {
+    "clipiqa": 0.9668,
+    "lpips_alex": 0.5097,
+    "lpips_vgg": 0.5364,
+    "niqe": 5.413
+   },
+   "case2": {
+    "clipiqa": 0.944,
+    "lpips_alex": 0.3366,
+    "lpips_vgg": 0.4647,
+    "niqe": 5.669
+   },
+   "case3": {
+    "clipiqa": 0.9503,
+    "lpips_alex": 0.3892,
+    "lpips_vgg": 0.5387,
+    "niqe": 6.601
+   }
+  },
+  "mean": {
+   "clipiqa": 0.9537,
+   "lpips_alex": 0.4118,
+   "lpips_vgg": 0.5133
+  }
+ },
+ "v5_wavelet": {
+  "per": {
+   "case1": {
+    "clipiqa": 0.9505,
+    "lpips_alex": 0.505,
+    "lpips_vgg": 0.5137,
+    "niqe": 4.75
+   },
+   "case2": {
+    "clipiqa": 0.8854,
+    "lpips_alex": 0.2715,
+    "lpips_vgg": 0.4057,
+    "niqe": 5.044
+   },
+   "case3": {
+    "clipiqa": 0.9186,
+    "lpips_alex": 0.3836,
+    "lpips_vgg": 0.5191,
+    "niqe": 6.003
+   }
+  },
+  "mean": {
+   "clipiqa": 0.9182,
+   "lpips_alex": 0.3867,
+   "lpips_vgg": 0.4795
+  }
+ }
+}

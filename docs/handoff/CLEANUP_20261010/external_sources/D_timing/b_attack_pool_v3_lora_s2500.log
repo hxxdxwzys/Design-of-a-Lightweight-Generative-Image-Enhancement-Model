@@ -1,0 +1,5 @@
+[convert] vosr_lora_v3_lora_s2500: 100 jpgs -> D:\models\sweep_test_out\vosr_lora_v3_lora_s2500
+[backup] D:\models\sweep_test_out\sweep_results.backup_20260820_094638.json
+[merged] vosr_lora_v3_lora_s2500: clipiqa=0.8954 niqe=5.76, entries=62
+[vs vosr_05b_os] 胜场 100/100, 平均增量 +0.3005
+[done]

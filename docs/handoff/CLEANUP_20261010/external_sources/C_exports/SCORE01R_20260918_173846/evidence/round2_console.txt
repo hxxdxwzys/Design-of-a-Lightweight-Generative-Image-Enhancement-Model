@@ -1,0 +1,13 @@
+﻿[r2 B b0] c1_512   median=475.3 p90=500.2 sync_int=[0]
+[r2 B b0] c7_512   median=460.4 p90=528.2 sync_int=[0]
+[r2 B b0] c25_512  median=504.8 p90=531.9 sync_int=[0]
+[r2 A b1] c1_512   median=509.6 p90=537.2 sync_int=[6]
+[r2 A b1] c7_512   median=480.7 p90=501.7 sync_int=[6]
+[r2 A b1] c25_512  median=474.0 p90=479.2 sync_int=[6]
+[r2 A b2] c1_512   median=469.8 p90=476.5 sync_int=[6]
+[r2 A b2] c7_512   median=448.9 p90=466.0 sync_int=[6]
+[r2 A b2] c25_512  median=479.1 p90=489.8 sync_int=[6]
+[r2 B b3] c1_512   median=525.3 p90=536.9 sync_int=[0]
+[r2 B b3] c7_512   median=478.0 p90=529.2 sync_int=[0]
+[r2 B b3] c25_512  median=475.7 p90=486.1 sync_int=[0]
+[r2] verdict=NO_GAIN improvement=-0.0168 drift=0.04531795610428038 p90_ok=False

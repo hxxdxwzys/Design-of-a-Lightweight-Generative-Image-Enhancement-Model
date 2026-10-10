@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.8593,
+ "niqe": 5.0816,
+ "musiq": 63.0489,
+ "maniqa": 0.454,
+ "lapvar": 2034.5,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\clip2_render",
+ "tag": "E21_clip2"
+}

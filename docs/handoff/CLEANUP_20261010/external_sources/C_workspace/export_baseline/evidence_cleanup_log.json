@@ -1,0 +1,12 @@
+{
+ "schema": "EXPORT01-cleanup-log/1",
+ "at": "2026-09-17 14:35",
+ "action": "删除被取代的探针产物（probe_model.pt，2×1.28 GB）与探针 NPY；保留每个探针目录的 JSON/日志作为证据",
+ "freed_bytes": 2686464000,
+ "kept": "EXPORT01_RUN_20260917_135055（正式 C0/C1 证据与 model_dir，1.58 GB）",
+ "disk_after": {
+  "C_free_gib": 30.54,
+  "D_free_gib": 14.38
+ },
+ "note": "未删除任何历史证据、父资产或他人文件；仅删除本轮自建的探针中间产物"
+}

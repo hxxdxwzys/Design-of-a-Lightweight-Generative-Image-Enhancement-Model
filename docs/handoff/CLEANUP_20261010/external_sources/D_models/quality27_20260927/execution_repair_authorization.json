@@ -1,0 +1,10 @@
+{
+  "scope": "One execution-mode diagnosis on the already exported candidate; no new weights, precision, output thresholds or model architecture.",
+  "reason": "Initial eager/JIT gate FAIL: one-LSB differences and first-call repeat instability. Check frozen deterministic, non-optimized JIT execution before full-image assessment.",
+  "export_forward_cap_amendment": {"old": 20, "new": 32},
+  "prior_conservative_charge": 13,
+  "new_calls_reserved": 9,
+  "numeric_acceptance_criteria_unchanged": true,
+  "failed_evidence_retained": "export_check.json",
+  "authority": "User authorized hands-on technical implementation within 8 hours; local execution repair, not new candidate search. Resource-only amendment registered before repair readings."
+}

@@ -1,0 +1,46 @@
+[08-20 06:44:24] [boot] B 攻击链启动
+[08-20 06:44:24] [render] v3_lora_s1500 测试集 100 张 (~1.6h, wavelet)
+[08-20 06:44:24] [run] test_render_v3_lora_s1500
+[08-20 08:13:45] [run] test_render_v3_lora_s1500: exit=0 (5361s)
+[08-20 08:13:45] [run] pool_v3_lora_s1500
+[08-20 08:16:36] [run] pool_v3_lora_s1500: exit=0 (171s)
+[08-20 08:16:36] [render] v3_lora_s2500 测试集 100 张 (~1.6h, wavelet)
+[08-20 08:16:36] [run] test_render_v3_lora_s2500
+[08-20 09:46:07] [run] test_render_v3_lora_s2500: exit=0 (5370s)
+[08-20 09:46:07] [run] pool_v3_lora_s2500
+[08-20 09:48:57] [run] pool_v3_lora_s2500: exit=0 (170s)
+[08-20 09:48:57] [render] v2_lora_s2500 测试集 100 张 (~1.6h, wavelet)
+[08-20 09:48:57] [run] test_render_v2_lora_s2500
+[08-20 11:18:03] [run] test_render_v2_lora_s2500: exit=0 (5347s)
+[08-20 11:18:03] [run] pool_v2_lora_s2500
+[08-20 11:21:12] [run] pool_v2_lora_s2500: exit=0 (189s)
+[08-20 11:21:12] [run] choice_after_renders
+[08-20 11:21:12] [run] choice_after_renders: exit=0 (0s)
+[08-20 11:21:12] [train] v5 (w_clip=2.5, 4000 步, 每 1000 存盘)
+[08-20 11:21:12] [run] train_v5
+[08-20 17:32:37] [run] train_v5: exit=0 (22285s)
+[08-20 17:32:37] [valgate] v5_v5_s1000
+[08-20 17:32:37] [run] val_render_v5_v5_s1000
+[08-20 17:35:48] [run] val_render_v5_v5_s1000: exit=0 (191s)
+[08-20 17:35:48] [run] val_gate_v5_v5_s1000
+[08-20 17:36:01] [run] val_gate_v5_v5_s1000: exit=0 (14s)
+[08-20 17:36:01] [valgate] v5_v5_s1000: clip=0.9374 lpips=0.4334
+[08-20 17:36:01] [valgate] v5_v5_s2000
+[08-20 17:36:01] [run] val_render_v5_v5_s2000
+[08-20 17:39:12] [run] val_render_v5_v5_s2000: exit=0 (191s)
+[08-20 17:39:12] [run] val_gate_v5_v5_s2000
+[08-20 17:39:25] [run] val_gate_v5_v5_s2000: exit=0 (13s)
+[08-20 17:39:25] [valgate] v5_v5_s2000: clip=0.9395 lpips=0.414
+[08-20 17:39:25] [valgate] v5_v5_s3000
+[08-20 17:39:25] [run] val_render_v5_v5_s3000
+[08-20 17:42:34] [run] val_render_v5_v5_s3000: exit=0 (189s)
+[08-20 17:42:34] [run] val_gate_v5_v5_s3000
+[08-20 17:42:47] [run] val_gate_v5_v5_s3000: exit=0 (13s)
+[08-20 17:42:47] [valgate] v5_v5_s3000: clip=0.9442 lpips=0.407
+[08-20 17:42:47] [valgate] v5_v5_s4000
+[08-20 17:42:47] [run] val_render_v5_v5_s4000
+[08-20 17:45:56] [run] val_render_v5_v5_s4000: exit=0 (188s)
+[08-20 17:45:56] [run] val_gate_v5_v5_s4000
+[08-20 17:46:09] [run] val_gate_v5_v5_s4000: exit=0 (13s)
+[08-20 17:46:09] [valgate] v5_v5_s4000: clip=0.9493 lpips=0.4085
+[08-20 17:46:09] [done] B 攻击链完成, 唤醒代理

@@ -1,0 +1,8 @@
+[08-24 22:48:40] [boot] variant=v14 w_clip=2.0 steps=4000 lr=3e-05 rank=32 patch=512
+[08-24 22:48:58] [resume] D:/models/vosr_lora/v14/lora_s1000.pt (step=1000)
+[08-24 22:48:59] [resume] loaded 368 keys, missing=853 unexpected=0
+trainable params: 32,331,776 || all params: 1,429,030,976 || trainable%: 2.2625
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[08-24 22:49:10] [data] 4250 张 HQ 图
+[profile] 经验分布加载成功: 100 个测试图三元组
+[08-24 22:49:10] [warn] 旧格式存档 (无 opt/sched): schedule 重建于 step 1000 (lr 将按 cosine 原轨迹续)

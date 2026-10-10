@@ -1,0 +1,157 @@
+{
+ "schema": "LORA-screen/1",
+ "lora": "D:\\models\\vosr_lora\\v6\\lora_s5000.pt",
+ "scale": 0.8,
+ "seed": 42,
+ "base": "C:/models/finals/preset/ckpts/VOSR_0.5B_os/checkpoints/ema_model.safetensors",
+ "crops": "512",
+ "images": [
+  {
+   "case": 1,
+   "wall_ms": 722.9,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "c1bddd5e3fa2c19696d9cd8f6236077fe2800234288c4054a0a57b11d18c642e"
+  },
+  {
+   "case": 10,
+   "wall_ms": 365.0,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "c318a4c698ef4b536b60e65d39aeb3648d893a7137263214d91d29b2c933b078"
+  },
+  {
+   "case": 11,
+   "wall_ms": 359.6,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "bd7d6cafdd261f259e92d94838ca5b36fbfdb8eef2991d317c539a9048c21a9b"
+  },
+  {
+   "case": 12,
+   "wall_ms": 368.6,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "3ffafb3902c2be7b208fab9f33165bfb3a5f95a9a209bd9ef39605d099c660b4"
+  },
+  {
+   "case": 13,
+   "wall_ms": 365.7,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "3dbd13a3d135958deccd9577ee7e80bbc4fccdd48485364248d3c1a62878945f"
+  },
+  {
+   "case": 100,
+   "wall_ms": 362.5,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "5731aef14ee13c7bd777121caa2cf37d71c91fa0d0cc149bf22df0a54570c4f0"
+  },
+  {
+   "case": 2,
+   "wall_ms": 364.6,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "c6ba4bdeef2ecb6f83b2e166f9c6257b19ba916d035b5f663f85391a49e1dd10"
+  },
+  {
+   "case": 5,
+   "wall_ms": 364.4,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "2dda9f1dac46d4940a73a672c3838bcf79ffe0ee06cd2cb2e86a55d334198bf9"
+  },
+  {
+   "case": 20,
+   "wall_ms": 362.9,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "d46d587e6ad60b2bfdd8310785835fddf4a91cbfd6255819624993268cb3ffe5"
+  },
+  {
+   "case": 25,
+   "wall_ms": 370.7,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "29fdf83cb06305f7a6bd965897e9f24ecc9c698034dd0f6c524545d7281b6603"
+  },
+  {
+   "case": 33,
+   "wall_ms": 366.9,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "c86ea21dec224ee0991815ac437a6f265aeac55e073d3babc697489b471ce766"
+  },
+  {
+   "case": 50,
+   "wall_ms": 363.2,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "66145489cc8c06597fa46ccce2fd4b029e41f0f093029675abbb44e8012c97e4"
+  },
+  {
+   "case": 66,
+   "wall_ms": 369.5,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "09afcfaa09730e86083de34d2c687e6ef47dd94cedc02e58189fbe6e87b0a5ed"
+  },
+  {
+   "case": 77,
+   "wall_ms": 366.6,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "317270d9bbacbedbc9ad470e74e09e2a3d80e0abbbdb5f58a6dedef5d6408037"
+  },
+  {
+   "case": 88,
+   "wall_ms": 370.2,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "df5e29f5203d2463879facf4b33630ae5d2d059c622f8a9503cbd1115fe9c76f"
+  },
+  {
+   "case": 99,
+   "wall_ms": 369.8,
+   "wh": [
+    512,
+    512
+   ],
+   "out_sha256": "f18553037ca77a5836143c71993a41ce54d1c3e47f1a03015f8489d8fb5f5fea"
+  }
+ ],
+ "started_at": "2026-09-19 00:31:17",
+ "build_s": 33.7,
+ "total_s": 44.2
+}

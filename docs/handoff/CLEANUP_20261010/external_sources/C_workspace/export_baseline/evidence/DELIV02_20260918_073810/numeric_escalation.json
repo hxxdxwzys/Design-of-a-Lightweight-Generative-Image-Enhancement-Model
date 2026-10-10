@@ -1,0 +1,48 @@
+{
+  "schema": "DELIV02-numeric-escalation/1",
+  "batch": "DELIV02_20260918_073810",
+  "verdict": "FAIL（有效协议下的真实数值失败：迁移诊断 4K max 超限）→ 依 §0F 停止",
+  "passed": {
+    "components_same_recipe": "PASS（fp32 VAE 编码器/LightDecoder；9 参考 + 18 检查）",
+    "ab_cross_impl_512_and_odd": "PASS（像素级：u8 差 ≤1、占比 ≤0.001）",
+    "ab_cross_impl_case1_4k": "case1_full max=7.843e-03（=2/255+1e-6 边界内）、mean=2.193e-07、u8max=1、frac=8e-05 → PASS",
+    "pre_quantization_stages": "encode/features/noise/step/decode_raw 严格 max≤1e-5/mean≤1e-6 → PASS",
+    "migration_512": "case1_crop512 max=0.0392（≤0.05）、mean=8.57e-04（≤0.002） → PASS"
+  },
+  "failed": {
+    "migration_case1_full": {
+      "max_abs": 0.3137,
+      "mean_abs": 0.000625,
+      "criteria": {
+        "max_abs": 0.05,
+        "mean_abs": 0.002
+      },
+      "note": "max 超限 6.3 倍，mean 达标；差异高度局部化（mean 很小）"
+    }
+  },
+  "first_divergence": "相对已验收 fp32 基线的迁移诊断，首个失败点 = case1_full 的 max（4K）；512 与 A/B 同配方链路全部通过。",
+  "budget_used": {
+    "top": 19,
+    "top4k": 3,
+    "component": 93,
+    "caps": {
+      "top": 169,
+      "top4k": 141,
+      "component": 128
+    }
+  },
+  "interpretation_UNKNOWN": [
+    "为何 4K 出现局部大偏差而 512 没有：可能是 fp16 的 DiT/DINO 在 4K 分块下的少数 tile 出现较大偏差，或 LightDecoder fp32 与分块融合边界相互作用",
+    "未做进一步定位（本轮规则：真实数值失败即停）"
+  ],
+  "options": [
+    "A：授权一次定位探针（组件/阶段级，额度充足）找出 4K 局部分歧来源，再决定修复或接受",
+    "B：裁定迁移 diagnostic 的判据语义（例如 4K 也以 mean 为主判据 + 限定像素占比），不改模型",
+    "C：以 FAIL 结案，保留 A2 候选与全部读数"
+  ],
+  "compliance": {
+    "no_rebuild": true,
+    "no_threshold_change": true,
+    "no_production": true
+  }
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\tmp_timing\guard_disk.py", line 57, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\guard_disk.py", line 28, in main
+    free_gb = shutil.disk_usage(out).free / 1e9
+              ~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Python\Lib\shutil.py", line 1394, in disk_usage
+    total, free = nt._getdiskusage(path)
+                  ~~~~~~~~~~~~~~~~^^^^^^
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。

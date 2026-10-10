@@ -1,0 +1,78 @@
+{
+ "rounds": [
+  {
+   "D:\\models\\pkg_TinyRefV4\\model_dir": [
+    6.7,
+    5.11
+   ],
+   "D:\\models\\pkg_clip1\\model_dir": [
+    7.03,
+    5.2
+   ],
+   "D:\\models\\pkg_clip2\\model_dir": [
+    6.89,
+    5.22
+   ]
+  },
+  {
+   "D:\\models\\pkg_TinyRefV4\\model_dir": [
+    7.1,
+    5.28
+   ],
+   "D:\\models\\pkg_clip1\\model_dir": [
+    7.3,
+    5.24
+   ],
+   "D:\\models\\pkg_clip2\\model_dir": [
+    6.95,
+    5.3
+   ]
+  },
+  {
+   "D:\\models\\pkg_TinyRefV4\\model_dir": [
+    6.98,
+    5.11
+   ],
+   "D:\\models\\pkg_clip1\\model_dir": [
+    6.82,
+    5.17
+   ],
+   "D:\\models\\pkg_clip2\\model_dir": [
+    7.35,
+    5.24
+   ]
+  }
+ ],
+ "summary": {
+  "D:\\models\\pkg_TinyRefV4\\model_dir": {
+   "median": 7.09,
+   "min": 5.11,
+   "p90": 9.19,
+   "n": 60,
+   "fac_median": 2.0184,
+   "fac_min": 2.1149,
+   "pred_E8": 73.47,
+   "pred_V4": 71.95
+  },
+  "D:\\models\\pkg_clip1\\model_dir": {
+   "median": 6.99,
+   "min": 5.17,
+   "p90": 9.23,
+   "n": 60,
+   "fac_median": 2.0224,
+   "fac_min": 2.1112,
+   "pred_E8": 73.62,
+   "pred_V4": 72.09
+  },
+  "D:\\models\\pkg_clip2\\model_dir": {
+   "median": 7.1,
+   "min": 5.22,
+   "p90": 9.03,
+   "n": 60,
+   "fac_median": 2.0179,
+   "fac_min": 2.1086,
+   "pred_E8": 73.46,
+   "pred_V4": 71.93
+  }
+ }
+}

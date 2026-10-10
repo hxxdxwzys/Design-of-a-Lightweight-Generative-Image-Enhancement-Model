@@ -1,0 +1,21 @@
+[09-15 09:01:38] === 链 K 启动: 等 v11b 收尾 ===
+[09-15 10:57:38] 检测到 H2 已进入 v9b2, 掐断
+[09-15 10:57:39] kill 输出:
+KILL_FAILED powershell rc=1 At line:1 char:150
++ ... ne $null -and $_.CommandLine -notlike '*chain_20260915k*' and ($_.Com ...
++                                                               ~~~
+Unexpected token 'and' in express
+[09-15 10:57:54]   [gpu] 6166 MiB
+[09-15 10:57:54] v11b_s25000 存在=True
+[09-15 10:57:54] pkg_TinyV11b 出图数=100
+[09-15 10:57:54] >>> latency w2_m0s1_s090
+[09-15 10:57:57] <<< latency w2_m0s1_s090 rc=1 (0.1 min)
+[09-15 10:57:57] >>> latency w2_m0s7_s097
+[09-15 11:45:22] <<< latency w2_m0s7_s097 rc=0 (47.4 min)
+[09-15 11:45:22] >>> latency w2_m0s1_s097
+[09-15 11:45:24] <<< latency w2_m0s1_s097 rc=1 (0.0 min)
+[09-15 11:45:24] >>> latency w2_m0s1_s100
+[09-15 11:45:27] <<< latency w2_m0s1_s100 rc=1 (0.0 min)
+[09-15 11:45:27] >>> panel n=12
+[09-15 12:41:43] <<< panel n=12 rc=4294967295 (56.3 min)
+[09-15 12:41:43] CHAIN_K_DONE

@@ -1,0 +1,71 @@
+[18:07:36] >>> ① HYPIR 断点续跑
+已完成 65/100, 缺 35: ['case7', 'case8', 'case9', 'case68', 'case69', 'case70', 'case71', 'case72', 'case73', 'case74'] ...
+Traceback (most recent call last):
+  File "D:\tmp_timing\hypir_resume.py", line 72, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\hypir_resume.py", line 53, in main
+    r = subprocess.run(cmd, cwd=BASE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+  File "D:\Python\Lib\subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\subprocess.py", line 1206, in communicate
+    stdout = self.stdout.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x8e in position 635: illegal multibyte sequence
+
+[18:47:29] <<< ① HYPIR 断点续跑 rc=1
+[18:47:29] >>> ② HYPIR vs M24 全量细节
+HYPIR done: 65
+case1    LQ    16.4 | M24   209.6 | HYPIR   187.1  (HYPIR/M24=0.89)
+case10   LQ    43.1 | M24   442.6 | HYPIR   341.9  (HYPIR/M24=0.77)
+case100  LQ    11.7 | M24   278.1 | HYPIR   103.0  (HYPIR/M24=0.37)
+case11   LQ     4.6 | M24   163.2 | HYPIR    81.8  (HYPIR/M24=0.50)
+case12   LQ    80.3 | M24   850.6 | HYPIR   495.4  (HYPIR/M24=0.58)
+case17   LQ    28.4 | M24   490.5 | HYPIR   184.2  (HYPIR/M24=0.38)
+case26   LQ    10.0 | M24   390.5 | HYPIR   187.9  (HYPIR/M24=0.48)
+case35   LQ    37.8 | M24  2424.2 | HYPIR   308.2  (HYPIR/M24=0.13)
+case44   LQ    17.6 | M24   454.2 | HYPIR   182.9  (HYPIR/M24=0.40)
+case53   LQ    71.3 | M24   582.1 | HYPIR   558.9  (HYPIR/M24=0.96)
+case62   LQ    16.1 | M24   396.2 | HYPIR   231.1  (HYPIR/M24=0.58)
+
+配对 n=65
+  LQ    lapvar=    65.5  hf= 5.498
+  M24   lapvar=   644.2  hf=10.250
+  HYPIR lapvar=   354.1  hf=12.726
+  HYPIR/M24 lapvar 比值中位 = 0.50
+  HYPIR 更锐的图: 6/65
+DONE
+
+[18:51:32] <<< ② HYPIR vs M24 全量细节 rc=0
+[18:51:32] >>> ③ runner 提速勘察
+=== load Runner ===
+load 7.6s
+[基线] R.infer = 398.7 ms  (加速比 0.716x)
+[组件 ms] {"total": 398.7, "dinov2": 19.4, "vae_encode(sample)": 123.5, "vae.encoder_only": 127.3, "dit(+vae)": 235.5, "dec_only": 138.2}
+[pure_fp16_nocast] {'err': 'RuntimeError: mat1 and mat2 must have the same dtype, but got Float and Half'}
+[cudnn_benchmark] {'ms': 397.6318850007374}
+[compile_dec] {'ms': 405.2030549995834, 'maxdiff': 0.521240234375}
+[compile_diT] {'ms': 400.62670999905095, 'maxdiff': 0.51904296875}
+=== 汇总 ===
+{
+ "total": 398.7,
+ "dinov2": 19.4,
+ "vae_encode(sample)": 123.5,
+ "vae.encoder_only": 127.3,
+ "dit(+vae)": 235.5,
+ "dec_only": 138.2,
+ "pure_fp16_nocast": null,
+ "cudnn_benchmark": 397.6,
+ "compile_dec": 405.2,
+ "compile_diT": 400.6
+}
+SPEED_PROBE_V2_DONE
+D:\models\final_compliant\model_dir\dinov2\layers\swiglu_ffn.py:152: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+D:\models\final_compliant\model_dir\dinov2\layers\attention.py:98: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+D:\models\final_compliant\model_dir\dinov2\layers\block.py:119: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+
+[18:52:44] <<< ③ runner 提速勘察 rc=0
+[18:52:44] NIGHT3_DONE

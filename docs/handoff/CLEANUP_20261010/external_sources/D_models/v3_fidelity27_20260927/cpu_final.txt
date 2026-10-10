@@ -1,0 +1,10 @@
+test_budget_rejects_before_work (__main__.Tests.test_budget_rejects_before_work) ... ok
+test_initial_fp32_equal (__main__.Tests.test_initial_fp32_equal) ... ok
+test_nonfinite_rejected (__main__.Tests.test_nonfinite_rejected) ... ok
+test_parameter_count (__main__.Tests.test_parameter_count) ... ok
+test_parent_identity_rejects_change (__main__.Tests.test_parent_identity_rejects_change) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.227s
+
+OK

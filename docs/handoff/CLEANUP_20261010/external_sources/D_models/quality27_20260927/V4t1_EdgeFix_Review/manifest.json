@@ -1,0 +1,85 @@
+{
+  "version": "V4t1_EdgeFix_20260927",
+  "status": "ENGINEERING_REVISION_NOT_ORIGINAL_SCORED_SUBMISSION",
+  "source_model_sha256": "2770215987e2b5585dc26870a8a6fee05672bbf514267336498a1bf9e6409b62",
+  "official_score": null,
+  "organizer_acceptance_of_post_deadline_changes": "UNKNOWN",
+  "files": {
+    "environment.json": {
+      "sha256": "89bf998e76d3d81f66b251edc0a7bf428b697219e636d9e6c3c29912d83634a4",
+      "bytes": 282
+    },
+    "generation_manifest.json": {
+      "sha256": "2700639b580ee1534ab9966447afb80ec4b141046652008c10db0d7cae8dacec",
+      "bytes": 2126
+    },
+    "infer.py": {
+      "sha256": "0bdd5e5ed08d6aad07219c97027d73c0c25be8f6d88abc76b1fb9b5bcd387a5a",
+      "bytes": 3045
+    },
+    "model_dir/runner.py": {
+      "sha256": "8e434e0240eed20b924e04f5f7338a037c8ec7821b8067159fe50ac7492ff70b",
+      "bytes": 2257
+    },
+    "model_dir/your_model.pt": {
+      "sha256": "2770215987e2b5585dc26870a8a6fee05672bbf514267336498a1bf9e6409b62",
+      "bytes": 2089777
+    },
+    "Proposal_OnePage_V4t1_EdgeFix.pptx": {
+      "sha256": "86a6fe3dc676b095d558f33ae701bf206b3899cc673b12c27529381013b240de",
+      "bytes": 14366
+    },
+    "README_CN.md": {
+      "sha256": "6aeffdf574e45593ba57ecb75078f229908a93c75cb8c60daa2495937d5ba34c",
+      "bytes": 3568
+    },
+    "requirements.txt": {
+      "sha256": "7854ff1acd458667b091f547a20a7ee9cf8dddc9a33358bf97f252d4e03a44f9",
+      "bytes": 240
+    },
+    "samples/case17_in.jpg": {
+      "sha256": "aad92fc22db1a4872bcdd32dda17233c49344a127cdb0e2f30434726a94446e3",
+      "bytes": 2987317
+    },
+    "samples/case17_out.jpg": {
+      "sha256": "dcf3ee1d390e09a7a4b85c63aa41524edabdb626f7a9400cf8e77d674d8282a5",
+      "bytes": 9403215
+    },
+    "samples/case3_in.jpg": {
+      "sha256": "055d88cf9f33803e22a4474d0613e002d177975c98a3fa8b7d87b46d79bbf3f0",
+      "bytes": 7151931
+    },
+    "samples/case3_out.jpg": {
+      "sha256": "63978033dac09a821a6b57706abd61dfb652e4a5c7aea98174fa07ab7a419c3a",
+      "bytes": 5699033
+    },
+    "selfcheck.py": {
+      "sha256": "6552e486521a6672edaf07062e5a46f969e26be3e8c0f17e2e908715b9b0b0f3",
+      "bytes": 1581
+    },
+    "test_edge.py": {
+      "sha256": "5ee1b0c066d09f3465af12b8aff9503ca4dba9b3fb016a47dbdac2a3dc951765",
+      "bytes": 2938
+    },
+    "verification/cpu_tests.txt": {
+      "sha256": "f5b2bf4f97fbbeea4708bce57bde198e9815e774d837c7400906fd2ebd183e30",
+      "bytes": 892
+    },
+    "verification/edge_ledger.json": {
+      "sha256": "1cdd5e9614c841724bac359f9c9283006f7e6ab1ec40afd36cdf7e65722780c1",
+      "bytes": 75
+    },
+    "verification/edge_phase1.json": {
+      "sha256": "dd72d87d21ae3fe3e28858318fd3c64135191aaf89e16abbb3e0eef3a045750d",
+      "bytes": 1863
+    },
+    "verification/edge_phase2.json": {
+      "sha256": "7cb916bdd77fa305ca25dbb4a2907647b1c7a5e845568f5bc841e2f7c6eef474",
+      "bytes": 1862
+    },
+    "verification/edge_preregistration.json": {
+      "sha256": "ddd3642b61404e22fa78fbe6c7fdc93d811c88d4e86faf3f1822374c67cbdbff",
+      "bytes": 1050
+    }
+  }
+}

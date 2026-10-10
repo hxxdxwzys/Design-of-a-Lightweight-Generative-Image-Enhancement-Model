@@ -1,0 +1,139 @@
+{
+ "schema": "EXPORT01R-old-budget-errata/1",
+ "note": "本轮只重建可核对事件；无法恢复的项标 UNKNOWN，不编造精确次数，不修改旧报告",
+ "dirs": [
+  {
+   "dir": "EXPORT01_20260917_133619",
+   "mtime": 1789623379.4815066,
+   "n_files": 0,
+   "bytes": 0,
+   "probe_traces": null,
+   "probe_stage_lines": null,
+   "verify_logs": [],
+   "phase1_lines": 0,
+   "phase2_lines": 0,
+   "determinism_component_forwards": null
+  },
+  {
+   "dir": "EXPORT01_20260917_133740",
+   "mtime": 1789623563.1398363,
+   "n_files": 2,
+   "bytes": 22887,
+   "probe_traces": null,
+   "probe_stage_lines": null,
+   "verify_logs": [],
+   "phase1_lines": 0,
+   "phase2_lines": 0,
+   "determinism_component_forwards": null
+  },
+  {
+   "dir": "EXPORT01_20260917_133909",
+   "mtime": 1789623549.465474,
+   "n_files": 1,
+   "bytes": 21330,
+   "probe_traces": null,
+   "probe_stage_lines": null,
+   "verify_logs": [],
+   "phase1_lines": 0,
+   "phase2_lines": 0,
+   "determinism_component_forwards": null
+  },
+  {
+   "dir": "EXPORT01_20260917_134027",
+   "mtime": 1789623627.3846867,
+   "n_files": 1,
+   "bytes": 3742,
+   "probe_traces": null,
+   "probe_stage_lines": null,
+   "verify_logs": [],
+   "phase1_lines": 0,
+   "phase2_lines": 0,
+   "determinism_component_forwards": null
+  },
+  {
+   "dir": "EXPORT01_20260917_134111",
+   "mtime": 1789623673.796455,
+   "n_files": 2,
+   "bytes": 21993,
+   "probe_traces": 3,
+   "probe_stage_lines": 7,
+   "verify_logs": [],
+   "phase1_lines": 0,
+   "phase2_lines": 0,
+   "determinism_component_forwards": null
+  },
+  {
+   "dir": "EXPORT01_20260917_134423",
+   "mtime": 1789625764.2219102,
+   "n_files": 2,
+   "bytes": 24487,
+   "probe_traces": 7,
+   "probe_stage_lines": 15,
+   "verify_logs": [],
+   "phase1_lines": 0,
+   "phase2_lines": 0,
+   "determinism_component_forwards": null
+  },
+  {
+   "dir": "EXPORT01_20260917_134719",
+   "mtime": 1789625764.3477015,
+   "n_files": 3,
+   "bytes": 22982,
+   "probe_traces": 7,
+   "probe_stage_lines": 16,
+   "verify_logs": [],
+   "phase1_lines": 0,
+   "phase2_lines": 0,
+   "determinism_component_forwards": null
+  },
+  {
+   "dir": "EXPORT01_RUN_20260917_135055",
+   "mtime": 1789625850.3359778,
+   "n_files": 34,
+   "bytes": 1651806078,
+   "probe_traces": null,
+   "probe_stage_lines": null,
+   "verify_logs": [
+    "evidence_verify_c1_stdout.txt",
+    "evidence_verify_c1_stdout2.txt",
+    "evidence_verify_c1_stdout3.txt",
+    "evidence_verify_c1_stdout4.txt",
+    "evidence_verify_c1_stdout5.txt",
+    "evidence_verify_c1_stdout6.txt"
+   ],
+   "phase1_lines": 6,
+   "phase2_lines": 4,
+   "determinism_component_forwards": 26
+  },
+  {
+   "dir": "EXPORT01R_20260917_150506",
+   "mtime": 1789628794.7378473,
+   "n_files": 4,
+   "bytes": 1343363309,
+   "probe_traces": null,
+   "probe_stage_lines": null,
+   "verify_logs": [],
+   "phase1_lines": 0,
+   "phase2_lines": 0,
+   "determinism_component_forwards": null
+  }
+ ],
+ "totals": {},
+ "implementer_declared": {
+  "top_level_infers": 22,
+  "top4k_infers": 8,
+  "note": "EXP-01 交付报告申报数；本重建不对其做等号确认"
+ },
+ "reconstructed": {
+  "verified_phase_lines_total": 10,
+  "determinism_component_forwards_total": 26,
+  "top4k_breakdown": "UNKNOWN（旧日志未逐行标注 4K/512，只有 case 名与尺寸）",
+  "trace_internal_reruns": "UNKNOWN（check_trace=False，无法从日志区分）",
+  "load_failures_and_cpu_exceptions": "UNKNOWN（部分日志为空/被截断）",
+  "conservative_upper_bound_top": 22,
+  "note": "旧批次额度已用尽且不可复用；本表仅用于勘误与新批次隔离"
+ },
+ "post_failure_calls": {
+  "note": "首次 FAIL（verify_c1 attempt_5 的 fp32 诊断设备错误）之后仍执行了：attempt_6 的 5 次顶层 infer，以及 1 次 26 前向的 fp16 组件确定性探针（determinism_probe.json），随后才停止；这些调用均未再支取新额度。"
+ }
+}

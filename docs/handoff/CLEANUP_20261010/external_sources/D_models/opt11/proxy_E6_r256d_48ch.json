@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.7437,
+ "niqe": 5.2576,
+ "musiq": 57.3613,
+ "maniqa": 0.3549,
+ "lapvar": 1172.1,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\e6_render",
+ "tag": "E6_r256d_48ch"
+}

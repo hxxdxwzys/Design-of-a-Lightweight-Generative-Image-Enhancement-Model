@@ -1,0 +1,20 @@
+﻿python.exe : test_const_and_varying_velocity_match_independent_formula (test_export_r01_r03_cpu.TestExpR01Fusion.test_c
+onst_and_varying_velocity_match_independent_formula) ... ok
+At line:2 char:1
++ & 'D:\Python\python.exe' -B -m unittest 'test_export_r01_r03_cpu' -v  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_const_and_...formula) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_old_buggy_formula_differs (test_export_r01_r03_cpu.TestExpR01Fusion.test_old_buggy_formula_differs) ... ok
+test_zero_velocity_preserves_noise (test_export_r01_r03_cpu.TestExpR01Fusion.test_zero_velocity_preserves_noise) ... ok
+test_clean_chain_still_passes (test_export_r01_r03_cpu.TestExpR03NonFinite.test_clean_chain_still_passes) ... ok
+test_nan_inf_rejected_before_clamp_and_quantization (test_export_r01_r03_cpu.TestExpR03NonFinite.test_nan_inf_rejected_
+before_clamp_and_quantization) ... ok
+test_wavelet_would_mask_nonfinite (test_export_r01_r03_cpu.TestExpR03NonFinite.test_wavelet_would_mask_nonfinite) ... o
+k
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.334s
+
+OK

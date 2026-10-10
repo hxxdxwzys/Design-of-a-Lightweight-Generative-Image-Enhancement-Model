@@ -1,0 +1,4 @@
+[export] 0 ['[export] D:\\models\\pkg_probe_thin\\model_dir  your_model.pt=1.99MB runner.py=2257B', 'EXPORT_COMBINED_DONE']
+[graph captured] True
+[latency] median 6.52 ms best 6.12 -> r=33.5 factor=2.043
+[latency 学生单独] median 4.19 ms

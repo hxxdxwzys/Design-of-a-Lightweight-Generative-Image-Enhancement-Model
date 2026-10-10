@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\models\finals\VOSR\inference_vosr.py", line 502, in <module>
+    main()
+    ~~~~^^
+  File "D:\models\finals\VOSR\inference_vosr.py", line 363, in main
+    ae_path = getattr(args, 'ae_path', QWEN_AE_PATH if args.ae_type == 'qwen' else SD2_AE_PATH)
+                                                       ^^^^^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'ae_type'

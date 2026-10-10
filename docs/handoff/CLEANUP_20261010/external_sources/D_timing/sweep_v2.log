@@ -1,0 +1,166 @@
+[start] 29 jobs, limit=100, test_files=100
+[render] metric_net_v2_net_s10000 step=10000 开始 (0/100)
+  [10/100] 7.55s/img, eta 11.3min
+  [20/100] 7.64s/img, eta 10.2min
+  [30/100] 7.66s/img, eta 8.9min
+  [40/100] 7.68s/img, eta 7.7min
+  [50/100] 7.70s/img, eta 6.4min
+  [60/100] 7.71s/img, eta 5.1min
+  [70/100] 7.72s/img, eta 3.9min
+  [80/100] 7.72s/img, eta 2.6min
+  [90/100] 7.72s/img, eta 1.3min
+  [100/100] 7.73s/img, eta 0.0min
+[render] metric_net_v2_net_s10000 完成 12.9min
+[metrics] metric_net_v2_net_s10000: clipiqa=0.2962 niqe=6.11 (15.4min)
+[render] metric_net_v2_net_s11000 step=11000 开始 (0/100)
+  [10/100] 7.81s/img, eta 11.7min
+  [20/100] 7.81s/img, eta 10.4min
+  [30/100] 7.81s/img, eta 9.1min
+  [40/100] 7.82s/img, eta 7.8min
+  [50/100] 7.81s/img, eta 6.5min
+  [60/100] 7.81s/img, eta 5.2min
+  [70/100] 7.81s/img, eta 3.9min
+  [80/100] 7.80s/img, eta 2.6min
+  [90/100] 7.80s/img, eta 1.3min
+  [100/100] 7.80s/img, eta 0.0min
+[render] metric_net_v2_net_s11000 完成 13.0min
+[metrics] metric_net_v2_net_s11000: clipiqa=0.2922 niqe=6.09 (15.6min)
+[render] metric_net_v2_net_s12000 step=12000 开始 (0/100)
+  [10/100] 7.81s/img, eta 11.7min
+  [20/100] 7.80s/img, eta 10.4min
+  [30/100] 7.80s/img, eta 9.1min
+  [40/100] 7.80s/img, eta 7.8min
+  [50/100] 7.80s/img, eta 6.5min
+  [60/100] 7.80s/img, eta 5.2min
+  [70/100] 7.80s/img, eta 3.9min
+  [80/100] 7.80s/img, eta 2.6min
+  [90/100] 7.80s/img, eta 1.3min
+  [100/100] 7.79s/img, eta 0.0min
+[render] metric_net_v2_net_s12000 完成 13.0min
+[metrics] metric_net_v2_net_s12000: clipiqa=0.3364 niqe=5.45 (15.5min)
+[render] metric_net_v2_net_s13000 step=13000 开始 (0/100)
+  [10/100] 7.73s/img, eta 11.6min
+  [20/100] 7.71s/img, eta 10.3min
+  [30/100] 7.69s/img, eta 9.0min
+  [40/100] 7.67s/img, eta 7.7min
+  [50/100] 7.67s/img, eta 6.4min
+  [60/100] 7.67s/img, eta 5.1min
+  [70/100] 7.66s/img, eta 3.8min
+  [80/100] 7.66s/img, eta 2.6min
+  [90/100] 7.66s/img, eta 1.3min
+  [100/100] 7.65s/img, eta 0.0min
+[render] metric_net_v2_net_s13000 完成 12.8min
+[metrics] metric_net_v2_net_s13000: clipiqa=0.3435 niqe=5.43 (15.3min)
+[render] metric_net_v2_net_s14000 step=14000 开始 (0/100)
+  [10/100] 7.60s/img, eta 11.4min
+  [20/100] 7.61s/img, eta 10.1min
+  [30/100] 7.63s/img, eta 8.9min
+  [40/100] 7.63s/img, eta 7.6min
+  [50/100] 7.63s/img, eta 6.4min
+  [60/100] 7.64s/img, eta 5.1min
+  [70/100] 7.65s/img, eta 3.8min
+  [80/100] 7.65s/img, eta 2.6min
+  [90/100] 7.66s/img, eta 1.3min
+  [100/100] 7.67s/img, eta 0.0min
+[render] metric_net_v2_net_s14000 完成 12.8min
+[metrics] metric_net_v2_net_s14000: clipiqa=0.3441 niqe=5.46 (15.3min)
+[render] metric_net_v2_net_s15000 step=15000 开始 (0/100)
+  [10/100] 7.72s/img, eta 11.6min
+  [20/100] 7.72s/img, eta 10.3min
+  [30/100] 7.74s/img, eta 9.0min
+  [40/100] 7.74s/img, eta 7.7min
+  [50/100] 7.75s/img, eta 6.5min
+  [60/100] 7.76s/img, eta 5.2min
+  [70/100] 7.76s/img, eta 3.9min
+  [80/100] 7.76s/img, eta 2.6min
+  [90/100] 7.77s/img, eta 1.3min
+  [100/100] 7.77s/img, eta 0.0min
+[render] metric_net_v2_net_s15000 完成 13.0min
+[metrics] metric_net_v2_net_s15000: clipiqa=0.3350 niqe=5.51 (15.5min)
+[render] metric_net_v2_net_s16000 step=16000 开始 (0/100)
+  [10/100] 7.75s/img, eta 11.6min
+  [20/100] 7.73s/img, eta 10.3min
+  [30/100] 7.73s/img, eta 9.0min
+  [40/100] 7.71s/img, eta 7.7min
+  [50/100] 7.70s/img, eta 6.4min
+  [60/100] 7.70s/img, eta 5.1min
+  [70/100] 7.69s/img, eta 3.8min
+  [80/100] 7.69s/img, eta 2.6min
+  [90/100] 7.69s/img, eta 1.3min
+  [100/100] 7.68s/img, eta 0.0min
+[render] metric_net_v2_net_s16000 完成 12.8min
+[metrics] metric_net_v2_net_s16000: clipiqa=0.3377 niqe=5.54 (15.3min)
+[render] old_s5000 已完成 (100 张), 跳过渲染
+[metrics] old_s5000: clipiqa=0.4260 niqe=4.84 (2.5min)
+[render] old_s7000 已完成 (100 张), 跳过渲染
+[metrics] old_s7000: clipiqa=0.4613 niqe=5.03 (2.5min)
+[render] old_s8000 已完成 (100 张), 跳过渲染
+[metrics] old_s8000: clipiqa=0.4821 niqe=4.91 (2.5min)
+[render] old_s9000 已完成 (100 张), 跳过渲染
+[metrics] old_s9000: clipiqa=0.4950 niqe=4.98 (2.5min)
+[render] old_s10000 已完成 (100 张), 跳过渲染
+[metrics] old_s10000: clipiqa=0.4566 niqe=5.10 (2.5min)
+[render] f2k_s1000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s1000: clipiqa=0.4709 niqe=4.79 (2.5min)
+[render] f2k_s2000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s2000: clipiqa=0.4845 niqe=4.88 (2.5min)
+[render] f2k_s3000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s3000: clipiqa=0.4838 niqe=5.10 (2.5min)
+[render] f2k_s5000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s5000: clipiqa=0.4543 niqe=5.24 (2.5min)
+[render] f2k_s6000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s6000: clipiqa=0.4364 niqe=5.28 (2.5min)
+[render] f2k_s7000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s7000: clipiqa=0.4871 niqe=5.22 (2.5min)
+[render] f2k_s8000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s8000: clipiqa=0.4631 niqe=5.23 (2.5min)
+[render] f2k_s9000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s9000: clipiqa=0.4549 niqe=5.35 (2.6min)
+[render] f2k_s10000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s10000: clipiqa=0.4718 niqe=5.41 (2.5min)
+[render] f2k_s11000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s11000: clipiqa=0.4586 niqe=5.38 (2.5min)
+[render] f2k_s12000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s12000: clipiqa=0.4631 niqe=5.38 (2.5min)
+[render] f2k_s13000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s13000: clipiqa=0.4712 niqe=5.44 (2.5min)
+[render] f2k_s14000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s14000: clipiqa=0.4611 niqe=5.41 (2.5min)
+[render] f2k_s15000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s15000: clipiqa=0.4663 niqe=5.37 (2.5min)
+[render] f2k_s16000 已完成 (100 张), 跳过渲染
+[metrics] f2k_s16000: clipiqa=0.4669 niqe=5.37 (2.5min)
+[metrics] old_s6000: clipiqa=0.5354 niqe=5.15 (2.5min)
+[metrics] f2k_s4000: clipiqa=0.5043 niqe=5.21 (2.5min)
+
+===== 汇总 (按 test clipiqa 降序) =====
+  old_s6000      clipiqa=0.5354 niqe=5.15
+  f2k_s4000      clipiqa=0.5043 niqe=5.21
+  old_s9000      clipiqa=0.4950 niqe=4.98
+  f2k_s7000      clipiqa=0.4871 niqe=5.22
+  f2k_s2000      clipiqa=0.4845 niqe=4.88
+  f2k_s3000      clipiqa=0.4838 niqe=5.10
+  old_s8000      clipiqa=0.4821 niqe=4.91
+  f2k_s10000     clipiqa=0.4718 niqe=5.41
+  f2k_s13000     clipiqa=0.4712 niqe=5.44
+  f2k_s1000      clipiqa=0.4709 niqe=4.79
+  f2k_s16000     clipiqa=0.4669 niqe=5.37
+  f2k_s15000     clipiqa=0.4663 niqe=5.37
+  f2k_s12000     clipiqa=0.4631 niqe=5.38
+  f2k_s8000      clipiqa=0.4631 niqe=5.23
+  old_s7000      clipiqa=0.4613 niqe=5.03
+  f2k_s14000     clipiqa=0.4611 niqe=5.41
+  f2k_s11000     clipiqa=0.4586 niqe=5.38
+  old_s10000     clipiqa=0.4566 niqe=5.10
+  f2k_s9000      clipiqa=0.4549 niqe=5.35
+  f2k_s5000      clipiqa=0.4543 niqe=5.24
+  f2k_s6000      clipiqa=0.4364 niqe=5.28
+  old_s5000      clipiqa=0.4260 niqe=4.84
+  metric_net_v2_net_s14000 clipiqa=0.3441 niqe=5.46
+  metric_net_v2_net_s13000 clipiqa=0.3435 niqe=5.43
+  metric_net_v2_net_s16000 clipiqa=0.3377 niqe=5.54
+  metric_net_v2_net_s12000 clipiqa=0.3364 niqe=5.45
+  metric_net_v2_net_s15000 clipiqa=0.3350 niqe=5.51
+  metric_net_v2_net_s10000 clipiqa=0.2962 niqe=6.11
+  metric_net_v2_net_s11000 clipiqa=0.2922 niqe=6.09
+[all done]

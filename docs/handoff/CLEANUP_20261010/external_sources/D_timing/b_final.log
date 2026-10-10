@@ -1,0 +1,22 @@
+[08-19 21:03:49] [boot] B 测试集直选启动 (v2: 渲染与池目录隔离)
+[08-19 21:03:49] [render] v1_lora_s2500 测试集 100 张 (~1.6h, wavelet)
+[08-19 21:03:49] [run] test_render_v1_lora_s2500
+[08-19 22:36:33] [run] test_render_v1_lora_s2500: exit=0 (5564s)
+[08-19 22:36:33] [pool] v1_lora_s2500
+[08-19 22:36:33] [run] pool_v1_lora_s2500
+[08-19 22:39:28] [run] pool_v1_lora_s2500: exit=0 (175s)
+[08-19 22:39:28] [render] v2_lora_s1500 测试集 100 张 (~1.6h, wavelet)
+[08-19 22:39:28] [run] test_render_v2_lora_s1500
+[08-20 00:08:58] [run] test_render_v2_lora_s1500: exit=0 (5370s)
+[08-20 00:08:58] [pool] v2_lora_s1500
+[08-20 00:08:58] [run] pool_v2_lora_s1500
+[08-20 00:11:53] [run] pool_v2_lora_s1500: exit=0 (175s)
+[08-20 00:11:53] [render] v3_lora_s500 测试集 100 张 (~1.6h, wavelet)
+[08-20 00:11:53] [run] test_render_v3_lora_s500
+[08-20 01:41:15] [run] test_render_v3_lora_s500: exit=0 (5362s)
+[08-20 01:41:15] [pool] v3_lora_s500
+[08-20 01:41:15] [run] pool_v3_lora_s500
+[08-20 01:44:05] [run] pool_v3_lora_s500: exit=0 (170s)
+[08-20 01:44:05] [run] choice_final
+[08-20 01:44:05] [run] choice_final: exit=0 (0s)
+[08-20 01:44:05] [done] B 测试集直选完成, 唤醒代理

@@ -1,0 +1,17 @@
+[02:20:54] ===== pipeline start =====
+[02:20:54] >>> D:\Python\python.exe D:\tmp_timing\dl_chunked.py
+[03:09:17] <<< exit 0
+[03:09:17] >>> D:\Python\python.exe D:\tmp_timing\extract_flickr2k.py --zip E:/flickr2k/Flickr2K.zip --out D:/datasets/flickr2k
+[03:09:56] <<< exit 0
+[03:09:56] >>> D:\Python\python.exe D:\tmp_timing\validate_imgs.py --dir D:/datasets/flickr2k --dir D:/datasets/div2k/pngtxt_ori
+[03:13:24] <<< exit 0
+[03:13:24] >>> D:\Python\python.exe D:\tmp_timing\train_df2k.py --data D:/datasets/div2k/pngtxt_ori,D:/datasets/flickr2k --steps 16000 --out D:/models/metric_net_f2k
+[06:09:07] <<< exit 0
+[06:09:07] >>> D:\Python\python.exe D:\tmp_timing\sweep_df2k.py --ckpt-dir D:/models/metric_net_f2k --width 32 --out D:\tmp_timing\sweep_f2k.json
+[06:15:49] <<< exit 0
+[06:15:49] [best] net_s4000.pt Q=28.27 lpips=0.3580 clipiqa=0.5656
+[06:15:49] >>> D:\Python\python.exe D:\tmp_timing\net_infer.py --ckpt D:/models/metric_net_f2k/net_s4000.pt --mode test --out D:/models/cnn_out_f2k
+[06:27:04] <<< exit 0
+[06:27:04] >>> D:\Python\python.exe D:\tmp_timing\package_submit.py --out-dir D:/models/cnn_out_f2k --model-dir D:/models/final_graph7/model_dir --zip D:/models/Track2_MetricF2K_Remay_13000000000.zip
+[06:27:19] <<< exit 0
+[06:27:19] ===== pipeline ALL_DONE =====

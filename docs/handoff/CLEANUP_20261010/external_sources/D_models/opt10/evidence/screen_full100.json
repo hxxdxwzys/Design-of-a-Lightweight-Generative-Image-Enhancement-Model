@@ -1,0 +1,1169 @@
+{
+ "schema": "PROXY-screen/1",
+ "metrics": [
+  "clipiqa",
+  "maniqa",
+  "niqe",
+  "musiq"
+ ],
+ "n_common": 100,
+ "cases": [
+  "case1",
+  "case2",
+  "case3",
+  "case4",
+  "case5",
+  "case6",
+  "case7",
+  "case8",
+  "case9",
+  "case10",
+  "case11",
+  "case12",
+  "case13",
+  "case14",
+  "case15",
+  "case16",
+  "case17",
+  "case18",
+  "case19",
+  "case20",
+  "case21",
+  "case22",
+  "case23",
+  "case24",
+  "case25",
+  "case26",
+  "case27",
+  "case28",
+  "case29",
+  "case30",
+  "case31",
+  "case32",
+  "case33",
+  "case34",
+  "case35",
+  "case36",
+  "case37",
+  "case38",
+  "case39",
+  "case40",
+  "case41",
+  "case42",
+  "case43",
+  "case44",
+  "case45",
+  "case46",
+  "case47",
+  "case48",
+  "case49",
+  "case50",
+  "case51",
+  "case52",
+  "case53",
+  "case54",
+  "case55",
+  "case56",
+  "case57",
+  "case58",
+  "case59",
+  "case60",
+  "case61",
+  "case62",
+  "case63",
+  "case64",
+  "case65",
+  "case66",
+  "case67",
+  "case68",
+  "case69",
+  "case70",
+  "case71",
+  "case72",
+  "case73",
+  "case74",
+  "case75",
+  "case76",
+  "case77",
+  "case78",
+  "case79",
+  "case80",
+  "case81",
+  "case82",
+  "case83",
+  "case84",
+  "case85",
+  "case86",
+  "case87",
+  "case88",
+  "case89",
+  "case90",
+  "case91",
+  "case92",
+  "case93",
+  "case94",
+  "case95",
+  "case96",
+  "case97",
+  "case98",
+  "case99",
+  "case100"
+ ],
+ "rows": {
+  "opt10": {
+   "dir": "D:\\models\\opt10\\output_dir",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9045,
+     "maniqa": 0.496,
+     "niqe": 5.5214,
+     "musiq": 37.2489
+    },
+    "case2": {
+     "clipiqa": 0.876,
+     "maniqa": 0.5675,
+     "niqe": 3.6494,
+     "musiq": 43.5139
+    },
+    "case3": {
+     "clipiqa": 0.909,
+     "maniqa": 0.5474,
+     "niqe": 4.4279,
+     "musiq": 47.0467
+    },
+    "case4": {
+     "clipiqa": 0.8767,
+     "maniqa": 0.5748,
+     "niqe": 3.6614
+    },
+    "case5": {
+     "clipiqa": 0.8764,
+     "maniqa": 0.5497,
+     "niqe": 6.2717
+    },
+    "case6": {
+     "clipiqa": 0.8505,
+     "maniqa": 0.6357,
+     "niqe": 4.8238
+    },
+    "case7": {
+     "clipiqa": 0.9226,
+     "maniqa": 0.5795,
+     "niqe": 5.3029
+    },
+    "case8": {
+     "clipiqa": 0.8984,
+     "maniqa": 0.6558,
+     "niqe": 3.6867
+    },
+    "case9": {
+     "clipiqa": 0.9289,
+     "maniqa": 0.5908,
+     "niqe": 5.009
+    },
+    "case10": {
+     "clipiqa": 0.8805,
+     "maniqa": 0.5397,
+     "niqe": 4.6476
+    },
+    "case11": {
+     "clipiqa": 0.8887,
+     "maniqa": 0.5443,
+     "niqe": 5.8381
+    },
+    "case12": {
+     "clipiqa": 0.9006,
+     "maniqa": 0.6052,
+     "niqe": 3.9378
+    },
+    "case13": {
+     "clipiqa": 0.9082,
+     "maniqa": 0.5471,
+     "niqe": 5.4507
+    },
+    "case14": {
+     "clipiqa": 0.9167,
+     "maniqa": 0.5233,
+     "niqe": 5.2159
+    },
+    "case15": {
+     "clipiqa": 0.9233,
+     "maniqa": 0.4577,
+     "niqe": 5.3927
+    },
+    "case16": {
+     "clipiqa": 0.9049,
+     "maniqa": 0.5294,
+     "niqe": 5.4669
+    },
+    "case17": {
+     "clipiqa": 0.9523,
+     "maniqa": 0.5249,
+     "niqe": 4.805
+    },
+    "case18": {
+     "clipiqa": 0.9115,
+     "maniqa": 0.4674,
+     "niqe": 7.0377
+    },
+    "case19": {
+     "clipiqa": 0.9203,
+     "maniqa": 0.6133,
+     "niqe": 4.2478
+    },
+    "case20": {
+     "clipiqa": 0.9451,
+     "maniqa": 0.5055,
+     "niqe": 4.1468
+    },
+    "case21": {
+     "clipiqa": 0.8648,
+     "maniqa": 0.5242,
+     "niqe": 4.2365
+    },
+    "case22": {
+     "clipiqa": 0.8954,
+     "maniqa": 0.526,
+     "niqe": 4.4159
+    },
+    "case23": {
+     "clipiqa": 0.9339,
+     "maniqa": 0.5251,
+     "niqe": 5.9091
+    },
+    "case24": {
+     "clipiqa": 0.9125,
+     "maniqa": 0.5142,
+     "niqe": 5.6777
+    },
+    "case25": {
+     "clipiqa": 0.9079,
+     "maniqa": 0.5781,
+     "niqe": 5.1723
+    },
+    "case26": {
+     "clipiqa": 0.9348,
+     "maniqa": 0.5858,
+     "niqe": 4.9203
+    },
+    "case27": {
+     "clipiqa": 0.9133,
+     "maniqa": 0.6533,
+     "niqe": 3.9693
+    },
+    "case28": {
+     "clipiqa": 0.9463,
+     "maniqa": 0.5895,
+     "niqe": 6.1189
+    },
+    "case29": {
+     "clipiqa": 0.8593,
+     "maniqa": 0.5515,
+     "niqe": 6.4713
+    },
+    "case30": {
+     "clipiqa": 0.9354,
+     "maniqa": 0.5106,
+     "niqe": 4.9765
+    },
+    "case31": {
+     "clipiqa": 0.9052,
+     "maniqa": 0.5177,
+     "niqe": 4.9691
+    },
+    "case32": {
+     "clipiqa": 0.9095,
+     "maniqa": 0.5667,
+     "niqe": 6.019
+    },
+    "case33": {
+     "clipiqa": 0.9482,
+     "maniqa": 0.5416,
+     "niqe": 6.5931
+    },
+    "case34": {
+     "clipiqa": 0.8808,
+     "maniqa": 0.5969,
+     "niqe": 4.1493
+    },
+    "case35": {
+     "clipiqa": 0.9222,
+     "maniqa": 0.584,
+     "niqe": 5.9046
+    },
+    "case36": {
+     "clipiqa": 0.9017,
+     "maniqa": 0.6178,
+     "niqe": 4.2189
+    },
+    "case37": {
+     "clipiqa": 0.9157,
+     "maniqa": 0.5231,
+     "niqe": 5.1207
+    },
+    "case38": {
+     "clipiqa": 0.8954,
+     "maniqa": 0.6194,
+     "niqe": 3.2784
+    },
+    "case39": {
+     "clipiqa": 0.9158,
+     "maniqa": 0.5331,
+     "niqe": 3.3933
+    },
+    "case40": {
+     "clipiqa": 0.9334,
+     "maniqa": 0.6331,
+     "niqe": 4.6831
+    },
+    "case41": {
+     "clipiqa": 0.9555,
+     "maniqa": 0.5489,
+     "niqe": 5.8925
+    },
+    "case42": {
+     "clipiqa": 0.947,
+     "maniqa": 0.5696,
+     "niqe": 5.7074
+    },
+    "case43": {
+     "clipiqa": 0.9545,
+     "maniqa": 0.5561,
+     "niqe": 5.1519
+    },
+    "case44": {
+     "clipiqa": 0.9604,
+     "maniqa": 0.6392,
+     "niqe": 5.7774
+    },
+    "case45": {
+     "clipiqa": 0.9048,
+     "maniqa": 0.516,
+     "niqe": 4.3543
+    },
+    "case46": {
+     "clipiqa": 0.9346,
+     "maniqa": 0.5305,
+     "niqe": 5.3779
+    },
+    "case47": {
+     "clipiqa": 0.9378,
+     "maniqa": 0.5477,
+     "niqe": 5.705
+    },
+    "case48": {
+     "clipiqa": 0.9382,
+     "maniqa": 0.5014,
+     "niqe": 5.0669
+    },
+    "case49": {
+     "clipiqa": 0.9323,
+     "maniqa": 0.5038,
+     "niqe": 4.6845
+    },
+    "case50": {
+     "clipiqa": 0.9251,
+     "maniqa": 0.5605,
+     "niqe": 4.4646
+    },
+    "case51": {
+     "clipiqa": 0.9446,
+     "maniqa": 0.5149,
+     "niqe": 6.5599
+    },
+    "case52": {
+     "clipiqa": 0.9263,
+     "maniqa": 0.5704,
+     "niqe": 4.6865
+    },
+    "case53": {
+     "clipiqa": 0.897,
+     "maniqa": 0.5731,
+     "niqe": 3.8656
+    },
+    "case54": {
+     "clipiqa": 0.9088,
+     "maniqa": 0.5653,
+     "niqe": 5.6171
+    },
+    "case55": {
+     "clipiqa": 0.885,
+     "maniqa": 0.6202,
+     "niqe": 4.6484
+    },
+    "case56": {
+     "clipiqa": 0.838,
+     "maniqa": 0.5749,
+     "niqe": 6.1117
+    },
+    "case57": {
+     "clipiqa": 0.9301,
+     "maniqa": 0.5782,
+     "niqe": 6.8309
+    },
+    "case58": {
+     "clipiqa": 0.9402,
+     "maniqa": 0.5681,
+     "niqe": 5.3428
+    },
+    "case59": {
+     "clipiqa": 0.9617,
+     "maniqa": 0.5528,
+     "niqe": 5.618
+    },
+    "case60": {
+     "clipiqa": 0.9406,
+     "maniqa": 0.4652,
+     "niqe": 6.4946
+    },
+    "case61": {
+     "clipiqa": 0.9307,
+     "maniqa": 0.5905,
+     "niqe": 5.0211
+    },
+    "case62": {
+     "clipiqa": 0.9164,
+     "maniqa": 0.6289,
+     "niqe": 4.4598
+    },
+    "case63": {
+     "clipiqa": 0.8762,
+     "maniqa": 0.5906,
+     "niqe": 4.3355
+    },
+    "case64": {
+     "clipiqa": 0.8925,
+     "maniqa": 0.5736,
+     "niqe": 3.381
+    },
+    "case65": {
+     "clipiqa": 0.9043,
+     "maniqa": 0.5872,
+     "niqe": 3.5294
+    },
+    "case66": {
+     "clipiqa": 0.8902,
+     "maniqa": 0.5274,
+     "niqe": 3.3719
+    },
+    "case67": {
+     "clipiqa": 0.9339,
+     "maniqa": 0.5407,
+     "niqe": 5.4601
+    },
+    "case68": {
+     "clipiqa": 0.9086,
+     "maniqa": 0.5249,
+     "niqe": 5.2573
+    },
+    "case69": {
+     "clipiqa": 0.8992,
+     "maniqa": 0.4173,
+     "niqe": 5.7887
+    },
+    "case70": {
+     "clipiqa": 0.9119,
+     "maniqa": 0.5182,
+     "niqe": 4.6373
+    },
+    "case71": {
+     "clipiqa": 0.9164,
+     "maniqa": 0.431,
+     "niqe": 5.145
+    },
+    "case72": {
+     "clipiqa": 0.9158,
+     "maniqa": 0.5742,
+     "niqe": 4.5575
+    },
+    "case73": {
+     "clipiqa": 0.9398,
+     "maniqa": 0.5064,
+     "niqe": 6.1565
+    },
+    "case74": {
+     "clipiqa": 0.9048,
+     "maniqa": 0.5436,
+     "niqe": 4.5744
+    },
+    "case75": {
+     "clipiqa": 0.9336,
+     "maniqa": 0.4961,
+     "niqe": 5.5165
+    },
+    "case76": {
+     "clipiqa": 0.8643,
+     "maniqa": 0.6286,
+     "niqe": 4.7576
+    },
+    "case77": {
+     "clipiqa": 0.917,
+     "maniqa": 0.6215,
+     "niqe": 5.9285
+    },
+    "case78": {
+     "clipiqa": 0.9184,
+     "maniqa": 0.5687,
+     "niqe": 3.6685
+    },
+    "case79": {
+     "clipiqa": 0.8637,
+     "maniqa": 0.5634,
+     "niqe": 5.0115
+    },
+    "case80": {
+     "clipiqa": 0.9345,
+     "maniqa": 0.6211,
+     "niqe": 5.2886
+    },
+    "case81": {
+     "clipiqa": 0.8696,
+     "maniqa": 0.5588,
+     "niqe": 5.1869
+    },
+    "case82": {
+     "clipiqa": 0.8709,
+     "maniqa": 0.5213,
+     "niqe": 5.5258
+    },
+    "case83": {
+     "clipiqa": 0.9421,
+     "maniqa": 0.5462,
+     "niqe": 5.2848
+    },
+    "case84": {
+     "clipiqa": 0.9139,
+     "maniqa": 0.6142,
+     "niqe": 3.2146
+    },
+    "case85": {
+     "clipiqa": 0.8989,
+     "maniqa": 0.5647,
+     "niqe": 4.3455
+    },
+    "case86": {
+     "clipiqa": 0.9328,
+     "maniqa": 0.5473,
+     "niqe": 4.3772
+    },
+    "case87": {
+     "clipiqa": 0.9496,
+     "maniqa": 0.5232,
+     "niqe": 5.1119
+    },
+    "case88": {
+     "clipiqa": 0.9196,
+     "maniqa": 0.5015,
+     "niqe": 4.8163
+    },
+    "case89": {
+     "clipiqa": 0.9095,
+     "maniqa": 0.5503,
+     "niqe": 4.9272
+    },
+    "case90": {
+     "clipiqa": 0.8666,
+     "maniqa": 0.64,
+     "niqe": 4.3689
+    },
+    "case91": {
+     "clipiqa": 0.9109,
+     "maniqa": 0.5817,
+     "niqe": 4.5389
+    },
+    "case92": {
+     "clipiqa": 0.9076,
+     "maniqa": 0.5087,
+     "niqe": 4.9578
+    },
+    "case93": {
+     "clipiqa": 0.9189,
+     "maniqa": 0.5993,
+     "niqe": 5.1577
+    },
+    "case94": {
+     "clipiqa": 0.9468,
+     "maniqa": 0.5597,
+     "niqe": 4.18
+    },
+    "case95": {
+     "clipiqa": 0.9383,
+     "maniqa": 0.5448,
+     "niqe": 5.9856
+    },
+    "case96": {
+     "clipiqa": 0.9228,
+     "maniqa": 0.5621,
+     "niqe": 4.875
+    },
+    "case97": {
+     "clipiqa": 0.9101,
+     "maniqa": 0.5234,
+     "niqe": 5.5933
+    },
+    "case98": {
+     "clipiqa": 0.9199,
+     "maniqa": 0.636,
+     "niqe": 4.4471
+    },
+    "case99": {
+     "clipiqa": 0.9033,
+     "maniqa": 0.6209,
+     "niqe": 3.7512
+    },
+    "case100": {
+     "clipiqa": 0.9593,
+     "maniqa": 0.5226,
+     "niqe": 5.4635
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9137226909399032,
+    "maniqa": 0.5568400233983993,
+    "niqe": 4.9865210829765845,
+    "musiq": 42.60316848754883
+   },
+   "n": {
+    "clipiqa": 100,
+    "maniqa": 100,
+    "niqe": 100,
+    "musiq": 3
+   }
+  },
+  "opt01": {
+   "dir": "D:\\models\\opt01\\output_dir",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9062,
+     "maniqa": 0.4591,
+     "niqe": 5.8338,
+     "musiq": 39.7115
+    },
+    "case2": {
+     "clipiqa": 0.8902,
+     "maniqa": 0.529,
+     "niqe": 4.0296,
+     "musiq": 45.2306
+    },
+    "case3": {
+     "clipiqa": 0.919,
+     "maniqa": 0.5285,
+     "niqe": 4.4944,
+     "musiq": 46.9757
+    },
+    "case4": {
+     "clipiqa": 0.8935,
+     "maniqa": 0.5508,
+     "niqe": 3.832
+    },
+    "case5": {
+     "clipiqa": 0.8736,
+     "maniqa": 0.5087,
+     "niqe": 6.4819
+    },
+    "case6": {
+     "clipiqa": 0.8518,
+     "maniqa": 0.5627,
+     "niqe": 4.7127
+    },
+    "case7": {
+     "clipiqa": 0.9238,
+     "maniqa": 0.5281,
+     "niqe": 5.4363
+    },
+    "case8": {
+     "clipiqa": 0.9022,
+     "maniqa": 0.6059,
+     "niqe": 3.5933
+    },
+    "case9": {
+     "clipiqa": 0.9269,
+     "maniqa": 0.5457,
+     "niqe": 5.1521
+    },
+    "case10": {
+     "clipiqa": 0.8836,
+     "maniqa": 0.5132,
+     "niqe": 4.6871
+    },
+    "case11": {
+     "clipiqa": 0.8904,
+     "maniqa": 0.5289,
+     "niqe": 6.0718
+    },
+    "case12": {
+     "clipiqa": 0.9023,
+     "maniqa": 0.5568,
+     "niqe": 3.7828
+    },
+    "case13": {
+     "clipiqa": 0.921,
+     "maniqa": 0.5131,
+     "niqe": 5.5679
+    },
+    "case14": {
+     "clipiqa": 0.9183,
+     "maniqa": 0.5008,
+     "niqe": 5.4268
+    },
+    "case15": {
+     "clipiqa": 0.92,
+     "maniqa": 0.4295,
+     "niqe": 5.6042
+    },
+    "case16": {
+     "clipiqa": 0.9047,
+     "maniqa": 0.4995,
+     "niqe": 5.5649
+    },
+    "case17": {
+     "clipiqa": 0.9508,
+     "maniqa": 0.4774,
+     "niqe": 4.6799
+    },
+    "case18": {
+     "clipiqa": 0.9028,
+     "maniqa": 0.4416,
+     "niqe": 7.0976
+    },
+    "case19": {
+     "clipiqa": 0.9262,
+     "maniqa": 0.5679,
+     "niqe": 4.1508
+    },
+    "case20": {
+     "clipiqa": 0.9498,
+     "maniqa": 0.4553,
+     "niqe": 4.1415
+    },
+    "case21": {
+     "clipiqa": 0.871,
+     "maniqa": 0.5063,
+     "niqe": 4.3107
+    },
+    "case22": {
+     "clipiqa": 0.9022,
+     "maniqa": 0.5088,
+     "niqe": 4.6899
+    },
+    "case23": {
+     "clipiqa": 0.9285,
+     "maniqa": 0.4793,
+     "niqe": 6.0858
+    },
+    "case24": {
+     "clipiqa": 0.9169,
+     "maniqa": 0.5079,
+     "niqe": 5.9587
+    },
+    "case25": {
+     "clipiqa": 0.9167,
+     "maniqa": 0.5664,
+     "niqe": 5.6336
+    },
+    "case26": {
+     "clipiqa": 0.9328,
+     "maniqa": 0.5367,
+     "niqe": 5.177
+    },
+    "case27": {
+     "clipiqa": 0.9158,
+     "maniqa": 0.5984,
+     "niqe": 3.8798
+    },
+    "case28": {
+     "clipiqa": 0.9506,
+     "maniqa": 0.5583,
+     "niqe": 6.157
+    },
+    "case29": {
+     "clipiqa": 0.8538,
+     "maniqa": 0.5304,
+     "niqe": 6.5543
+    },
+    "case30": {
+     "clipiqa": 0.9359,
+     "maniqa": 0.4656,
+     "niqe": 5.1276
+    },
+    "case31": {
+     "clipiqa": 0.9041,
+     "maniqa": 0.4665,
+     "niqe": 5.1264
+    },
+    "case32": {
+     "clipiqa": 0.9305,
+     "maniqa": 0.5262,
+     "niqe": 5.778
+    },
+    "case33": {
+     "clipiqa": 0.9504,
+     "maniqa": 0.4941,
+     "niqe": 6.4251
+    },
+    "case34": {
+     "clipiqa": 0.8798,
+     "maniqa": 0.575,
+     "niqe": 4.2162
+    },
+    "case35": {
+     "clipiqa": 0.939,
+     "maniqa": 0.5266,
+     "niqe": 5.8305
+    },
+    "case36": {
+     "clipiqa": 0.8985,
+     "maniqa": 0.5627,
+     "niqe": 4.3236
+    },
+    "case37": {
+     "clipiqa": 0.9165,
+     "maniqa": 0.4932,
+     "niqe": 5.4059
+    },
+    "case38": {
+     "clipiqa": 0.9056,
+     "maniqa": 0.574,
+     "niqe": 3.0805
+    },
+    "case39": {
+     "clipiqa": 0.9248,
+     "maniqa": 0.5112,
+     "niqe": 3.4298
+    },
+    "case40": {
+     "clipiqa": 0.9348,
+     "maniqa": 0.5884,
+     "niqe": 4.7217
+    },
+    "case41": {
+     "clipiqa": 0.9508,
+     "maniqa": 0.4928,
+     "niqe": 5.804
+    },
+    "case42": {
+     "clipiqa": 0.9446,
+     "maniqa": 0.5105,
+     "niqe": 5.313
+    },
+    "case43": {
+     "clipiqa": 0.9552,
+     "maniqa": 0.4983,
+     "niqe": 5.1045
+    },
+    "case44": {
+     "clipiqa": 0.9581,
+     "maniqa": 0.5993,
+     "niqe": 5.3021
+    },
+    "case45": {
+     "clipiqa": 0.898,
+     "maniqa": 0.4582,
+     "niqe": 4.55
+    },
+    "case46": {
+     "clipiqa": 0.9318,
+     "maniqa": 0.4862,
+     "niqe": 5.4559
+    },
+    "case47": {
+     "clipiqa": 0.932,
+     "maniqa": 0.5127,
+     "niqe": 5.7768
+    },
+    "case48": {
+     "clipiqa": 0.9322,
+     "maniqa": 0.4645,
+     "niqe": 5.1361
+    },
+    "case49": {
+     "clipiqa": 0.9295,
+     "maniqa": 0.4708,
+     "niqe": 4.7576
+    },
+    "case50": {
+     "clipiqa": 0.9305,
+     "maniqa": 0.5164,
+     "niqe": 4.5943
+    },
+    "case51": {
+     "clipiqa": 0.9425,
+     "maniqa": 0.4631,
+     "niqe": 6.5648
+    },
+    "case52": {
+     "clipiqa": 0.9337,
+     "maniqa": 0.5334,
+     "niqe": 4.7883
+    },
+    "case53": {
+     "clipiqa": 0.8977,
+     "maniqa": 0.5232,
+     "niqe": 3.9011
+    },
+    "case54": {
+     "clipiqa": 0.9283,
+     "maniqa": 0.4982,
+     "niqe": 5.6456
+    },
+    "case55": {
+     "clipiqa": 0.8812,
+     "maniqa": 0.5754,
+     "niqe": 4.7719
+    },
+    "case56": {
+     "clipiqa": 0.8263,
+     "maniqa": 0.542,
+     "niqe": 6.1189
+    },
+    "case57": {
+     "clipiqa": 0.928,
+     "maniqa": 0.5346,
+     "niqe": 6.9477
+    },
+    "case58": {
+     "clipiqa": 0.9377,
+     "maniqa": 0.5218,
+     "niqe": 5.4734
+    },
+    "case59": {
+     "clipiqa": 0.9556,
+     "maniqa": 0.506,
+     "niqe": 5.4005
+    },
+    "case60": {
+     "clipiqa": 0.9254,
+     "maniqa": 0.4143,
+     "niqe": 6.5536
+    },
+    "case61": {
+     "clipiqa": 0.9369,
+     "maniqa": 0.5326,
+     "niqe": 4.9975
+    },
+    "case62": {
+     "clipiqa": 0.9169,
+     "maniqa": 0.586,
+     "niqe": 4.704
+    },
+    "case63": {
+     "clipiqa": 0.8774,
+     "maniqa": 0.5721,
+     "niqe": 4.2593
+    },
+    "case64": {
+     "clipiqa": 0.9117,
+     "maniqa": 0.5452,
+     "niqe": 3.6755
+    },
+    "case65": {
+     "clipiqa": 0.9178,
+     "maniqa": 0.5444,
+     "niqe": 3.5138
+    },
+    "case66": {
+     "clipiqa": 0.9044,
+     "maniqa": 0.4912,
+     "niqe": 3.5774
+    },
+    "case67": {
+     "clipiqa": 0.9325,
+     "maniqa": 0.4878,
+     "niqe": 5.4624
+    },
+    "case68": {
+     "clipiqa": 0.9079,
+     "maniqa": 0.4692,
+     "niqe": 5.3471
+    },
+    "case69": {
+     "clipiqa": 0.9008,
+     "maniqa": 0.3996,
+     "niqe": 5.8742
+    },
+    "case70": {
+     "clipiqa": 0.9168,
+     "maniqa": 0.4729,
+     "niqe": 4.7113
+    },
+    "case71": {
+     "clipiqa": 0.9179,
+     "maniqa": 0.4183,
+     "niqe": 5.295
+    },
+    "case72": {
+     "clipiqa": 0.9242,
+     "maniqa": 0.5347,
+     "niqe": 4.6525
+    },
+    "case73": {
+     "clipiqa": 0.9382,
+     "maniqa": 0.464,
+     "niqe": 6.1872
+    },
+    "case74": {
+     "clipiqa": 0.9096,
+     "maniqa": 0.494,
+     "niqe": 4.568
+    },
+    "case75": {
+     "clipiqa": 0.9302,
+     "maniqa": 0.4497,
+     "niqe": 5.6258
+    },
+    "case76": {
+     "clipiqa": 0.8622,
+     "maniqa": 0.5987,
+     "niqe": 4.6864
+    },
+    "case77": {
+     "clipiqa": 0.9149,
+     "maniqa": 0.5692,
+     "niqe": 5.7745
+    },
+    "case78": {
+     "clipiqa": 0.9199,
+     "maniqa": 0.5376,
+     "niqe": 3.4682
+    },
+    "case79": {
+     "clipiqa": 0.8615,
+     "maniqa": 0.5454,
+     "niqe": 5.2484
+    },
+    "case80": {
+     "clipiqa": 0.932,
+     "maniqa": 0.5875,
+     "niqe": 5.4194
+    },
+    "case81": {
+     "clipiqa": 0.8753,
+     "maniqa": 0.5413,
+     "niqe": 5.0094
+    },
+    "case82": {
+     "clipiqa": 0.872,
+     "maniqa": 0.5055,
+     "niqe": 5.7028
+    },
+    "case83": {
+     "clipiqa": 0.9392,
+     "maniqa": 0.4875,
+     "niqe": 5.206
+    },
+    "case84": {
+     "clipiqa": 0.9172,
+     "maniqa": 0.5523,
+     "niqe": 3.5827
+    },
+    "case85": {
+     "clipiqa": 0.902,
+     "maniqa": 0.5399,
+     "niqe": 4.583
+    },
+    "case86": {
+     "clipiqa": 0.9357,
+     "maniqa": 0.4873,
+     "niqe": 4.5949
+    },
+    "case87": {
+     "clipiqa": 0.9439,
+     "maniqa": 0.4758,
+     "niqe": 5.0778
+    },
+    "case88": {
+     "clipiqa": 0.9143,
+     "maniqa": 0.4605,
+     "niqe": 4.871
+    },
+    "case89": {
+     "clipiqa": 0.9097,
+     "maniqa": 0.5348,
+     "niqe": 4.9704
+    },
+    "case90": {
+     "clipiqa": 0.8623,
+     "maniqa": 0.595,
+     "niqe": 4.6859
+    },
+    "case91": {
+     "clipiqa": 0.9331,
+     "maniqa": 0.5334,
+     "niqe": 4.5091
+    },
+    "case92": {
+     "clipiqa": 0.9064,
+     "maniqa": 0.4724,
+     "niqe": 5.222
+    },
+    "case93": {
+     "clipiqa": 0.9214,
+     "maniqa": 0.5645,
+     "niqe": 5.2076
+    },
+    "case94": {
+     "clipiqa": 0.9478,
+     "maniqa": 0.4991,
+     "niqe": 4.3483
+    },
+    "case95": {
+     "clipiqa": 0.933,
+     "maniqa": 0.4941,
+     "niqe": 6.1101
+    },
+    "case96": {
+     "clipiqa": 0.9289,
+     "maniqa": 0.5127,
+     "niqe": 4.8973
+    },
+    "case97": {
+     "clipiqa": 0.9091,
+     "maniqa": 0.4869,
+     "niqe": 5.6781
+    },
+    "case98": {
+     "clipiqa": 0.9289,
+     "maniqa": 0.5939,
+     "niqe": 4.323
+    },
+    "case99": {
+     "clipiqa": 0.9137,
+     "maniqa": 0.5702,
+     "niqe": 3.7956
+    },
+    "case100": {
+     "clipiqa": 0.9569,
+     "maniqa": 0.4822,
+     "niqe": 5.4062
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9156870639324188,
+    "maniqa": 0.5169029840826989,
+    "niqe": 5.050429772782951,
+    "musiq": 43.9726193745931
+   },
+   "n": {
+    "clipiqa": 100,
+    "maniqa": 100,
+    "niqe": 100,
+    "musiq": 3
+   }
+  }
+ },
+ "composite": {
+  "opt10": 0.25,
+  "opt01": 0.25
+ },
+ "composite_metrics": [
+  "clipiqa",
+  "maniqa",
+  "musiq",
+  "niqe"
+ ],
+ "ranking": [
+  "opt10",
+  "opt01"
+ ],
+ "wall_s": 1173.7
+}

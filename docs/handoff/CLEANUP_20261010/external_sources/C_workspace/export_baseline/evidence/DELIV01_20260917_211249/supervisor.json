@@ -1,0 +1,91 @@
+{
+ "schema": "EXPORT01R-supervisor/1",
+ "started_at": "2026-09-17 21:14:56",
+ "deadline_s": 2700.0,
+ "pid": 21168,
+ "preflight": {
+  "ledger_exists": true,
+  "lock_exists": false,
+  "disk_free_gib": 27.079,
+  "prereg_exists": true,
+  "model_exists": true,
+  "model_will_be_built": false,
+  "model_dir_exists": true,
+  "model_sha256": "c3946096bcda7513d1a100975f73e08aa8f6ce24f4c7837642484038dd3f543d",
+  "model_bytes": 1343346475,
+  "model_hash_expected": "c3946096bcda7513d1a100975f73e08aa8f6ce24f4c7837642484038dd3f543d",
+  "model_binding_ok": true,
+  "model_bytes_ok": true
+ },
+ "cmd": [
+  "D:\\Python\\python.exe",
+  "-u",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\deliv_worker.py",
+  "C:\\models\\exports\\DELIV01_20260917_211249",
+  "C:\\models\\exports\\DELIV01_20260917_211249\\ledger.json",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\DELIV01_20260917_211249\\prereg_p1.json",
+  "C:\\models\\exports\\DELIV01_20260917_211249\\model_dir",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\DELIV01_20260917_211249"
+ ],
+ "worker_log": "C:\\models\\exports\\DELIV01_20260917_211249.worker_log.txt",
+ "child_pid": 15240,
+ "process_tree": {
+  "descendants_before": [],
+  "descendants_after": [],
+  "remaining_alive": [],
+  "clean": true,
+  "unknown": false
+ },
+ "child_exit_code": 1,
+ "terminate_requested_at": null,
+ "kill_at": null,
+ "timed_out": false,
+ "wall_s": 59.224,
+ "finished_at": "2026-09-17 21:15:56",
+ "supervisor_success": false,
+ "ledger": {
+  "used": {
+   "top": 0,
+   "top4k": 0,
+   "component": 22
+  },
+  "limits": {
+   "top": 24,
+   "top4k": 8,
+   "component": 96,
+   "wall_s": 2700.0,
+   "disk_gib": 8.0
+  },
+  "n_events": 23,
+  "n_attempts": 1,
+  "open_attempt": null,
+  "last_attempt": {
+   "attempt_id": "attempt_01",
+   "run_dir": "C:\\models\\exports\\DELIV01_20260917_211249",
+   "started_at": "2026-09-17 21:15:00",
+   "started_monotonic": 116919.3955004,
+   "prereg_sha256": "975b3cd85afef10ae84995366a8829e9ca1f2b04af2ba7bc30c51755ec8a9b96",
+   "source_sha256": "c7aa55f20cf6261a0b8bf7b3115a0e741f257fdb888dfe4d8c0ddd8f02dc683c",
+   "model_sha256": "c3946096bcda7513d1a100975f73e08aa8f6ce24f4c7837642484038dd3f543d",
+   "status": "FAIL",
+   "note": "RuntimeError: 组件门槛未通过：{\"verdict\": \"FAIL\", \"max_abs\": 0.0084228515625}\n",
+   "finished_at": "2026-09-17 21:15:51",
+   "elapsed_s": 51.059
+  }
+ },
+ "ledger_consistent": true,
+ "checks": {
+  "readings_present": true,
+  "worker_status_ok": false,
+  "required_cases": [
+   "case1_crop512",
+   "case1_crop511x513",
+   "case1_full",
+   "case7_full"
+  ],
+  "n_top_used": 0,
+  "n_4k_used": 0
+ },
+ "worker_checks_pass": false,
+ "artifacts_verified": false
+}

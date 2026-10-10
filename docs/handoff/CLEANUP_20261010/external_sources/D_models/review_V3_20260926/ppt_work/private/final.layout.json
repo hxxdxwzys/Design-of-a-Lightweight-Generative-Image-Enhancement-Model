@@ -1,0 +1,1153 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/y90nupkv",
+    "id": "y90nupkv",
+    "slide": 1,
+    "layoutId": "/ppt/slideLayouts/slideLayout1.xml",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Calibri Light",
+        "eastAsianTypeface": "Calibri Light",
+        "complexScriptTypeface": "Calibri Light"
+      },
+      "minorFont": {
+        "latinTypeface": "Calibri",
+        "eastAsianTypeface": "Calibri",
+        "complexScriptTypeface": "Calibri"
+      }
+    },
+    "typefaces": [
+      "Calibri",
+      "Calibri Light",
+      "Microsoft YaHei"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout1.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4r6dg7et",
+      "id": "14",
+      "name": "title",
+      "bbox": [
+        48,
+        28,
+        1190,
+        76
+      ],
+      "geometry": "rect",
+      "text": "TinyRef V3 轻量一步扩散图像增强",
+      "textPreview": "TinyRef V3 轻量一步扩散图像增强",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "TinyRef V3 轻量一步扩散图像增强"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "TinyRef V3 轻量一步扩散图像增强",
+          "resolvedTextStyle": {
+            "fontSize": 46,
+            "typeface": "Microsoft YaHei",
+            "color": "#102A43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "TinyRef V3 轻量一步扩散图像增强",
+              "fontSize": 46,
+              "typeface": "Microsoft YaHei",
+              "color": "#102A43",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/547294r6",
+      "id": "2",
+      "name": "subtitle",
+      "bbox": [
+        50,
+        111,
+        1180,
+        45
+      ],
+      "geometry": "rect",
+      "text": "赛道二初赛复核　4K同分辨率增强　对应初赛V3原件",
+      "textPreview": "赛道二初赛复核　4K同分辨率增强　对应初赛V3原件",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "赛道二初赛复核　4K同分辨率增强　对应初赛V3原件"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "赛道二初赛复核　4K同分辨率增强　对应初赛V3原件",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Microsoft YaHei",
+            "color": "#506579"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "赛道二初赛复核　4K同分辨率增强　对应初赛V3原件",
+              "fontSize": 24,
+              "typeface": "Microsoft YaHei",
+              "color": "#506579"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k3yl0zql",
+      "id": "3",
+      "name": "method-heading",
+      "bbox": [
+        50,
+        183,
+        565,
+        50
+      ],
+      "geometry": "rect",
+      "text": "一步扩散与细化",
+      "textPreview": "一步扩散与细化",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "一步扩散与细化"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "一步扩散与细化",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Microsoft YaHei",
+            "color": "#0A6473",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "一步扩散与细化",
+              "fontSize": 32,
+              "typeface": "Microsoft YaHei",
+              "color": "#0A6473",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7qp4be9c",
+      "id": "4",
+      "name": "method",
+      "bbox": [
+        50,
+        241,
+        565,
+        125
+      ],
+      "geometry": "rect",
+      "text": "512图块下采样至256，UNet在t=500预测噪声。显式一步去噪后上采样回512，再经细化CNN与内置锐化输出。",
+      "textPreview": "512图块下采样至256，UNet在t=500预测噪声。显式一步去噪后上采样回512，再经细化CNN与内置锐化输出。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "512图块下采样至256，UNet在t=500预测噪声。"
+          },
+          {
+            "index": 2,
+            "text": "显式一步去噪后上采样回512，再经细化CNN与内"
+          },
+          {
+            "index": 3,
+            "text": "置锐化输出。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "512图块下采样至256，UNet在t=500预测噪声。显式一步去噪后上采样回512，再经细化CNN与内置锐化输出。",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "512图块下采样至256，UNet在t=500预测噪声。显式一步去噪后上采样回512，再经细化CNN与内置锐化输出。",
+              "fontSize": 24,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65g3298r",
+      "id": "5",
+      "name": "params",
+      "bbox": [
+        50,
+        367,
+        565,
+        49
+      ],
+      "geometry": "rect",
+      "text": "876,662 个参数",
+      "textPreview": "876,662 个参数",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "876,662 个参数"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "876,662 个参数",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Microsoft YaHei",
+            "color": "#102A43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "876,662 个参数",
+              "fontSize": 32,
+              "typeface": "Microsoft YaHei",
+              "color": "#102A43",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ts7md4r2",
+      "id": "6",
+      "name": "params-detail",
+      "bbox": [
+        50,
+        425,
+        565,
+        115
+      ],
+      "geometry": "rect",
+      "text": "UNet 871,139　细化CNN 5,523\n原模型权重fp16，整链TorchScript。\n原runner在CUDA支持时使用CUDA Graph。",
+      "textPreview": "UNet 871,139　细化CNN 5,523 | 原模型权重fp16，整链TorchScript。 | 原runner在CUDA支持时使用CUDA Graph。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "UNet 871,139　细化CNN 5,523"
+          },
+          {
+            "index": 2,
+            "text": "原模型权重fp16，整链TorchScript。"
+          },
+          {
+            "index": 3,
+            "text": "原runner在CUDA支持时使用CUDA Graph。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "UNet 871,139　细化CNN 5,523",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "UNet 871,139　细化CNN 5,523",
+              "fontSize": 24,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "原模型权重fp16，整链TorchScript。",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原模型权重fp16，整链TorchScript。",
+              "fontSize": 24,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "原runner在CUDA支持时使用CUDA Graph。",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原runner在CUDA支持时使用CUDA Graph。",
+              "fontSize": 24,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sryl4zqx",
+      "id": "7",
+      "name": "tiling",
+      "bbox": [
+        50,
+        548,
+        585,
+        110
+      ],
+      "geometry": "rect",
+      "text": "4K采用512窗口、32重叠与羽化融合。\n4096×3072共63块，各块与512接口\n调用同一模型，输出保持原分辨率。",
+      "textPreview": "4K采用512窗口、32重叠与羽化融合。 | 4096×3072共63块，各块与512接口 | 调用同一模型，输出保持原分辨率。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4K采用512窗口、32重叠与羽化融合。"
+          },
+          {
+            "index": 2,
+            "text": "4096×3072共63块，各块与512接口"
+          },
+          {
+            "index": 3,
+            "text": "调用同一模型，输出保持原分辨率。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "4K采用512窗口、32重叠与羽化融合。",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4K采用512窗口、32重叠与羽化融合。",
+              "fontSize": 23,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "4096×3072共63块，各块与512接口",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4096×3072共63块，各块与512接口",
+              "fontSize": 23,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "调用同一模型，输出保持原分辨率。",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "调用同一模型，输出保持原分辨率。",
+              "fontSize": 23,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fu94fe98",
+      "id": "8",
+      "name": "verification-heading",
+      "bbox": [
+        710,
+        183,
+        520,
+        50
+      ],
+      "geometry": "rect",
+      "text": "原件与复现实证",
+      "textPreview": "原件与复现实证",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原件与复现实证"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原件与复现实证",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Microsoft YaHei",
+            "color": "#0A6473",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原件与复现实证",
+              "fontSize": 32,
+              "typeface": "Microsoft YaHei",
+              "color": "#0A6473",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/utg3698n",
+      "id": "9",
+      "name": "identity",
+      "bbox": [
+        710,
+        241,
+        520,
+        116
+      ],
+      "geometry": "rect",
+      "text": "模型与runner保留V3原件字节。\ncase3、case17的参考图直接取自\n初赛原ZIP，未替换为后续V4t1结果。",
+      "textPreview": "模型与runner保留V3原件字节。 | case3、case17的参考图直接取自 | 初赛原ZIP，未替换为后续V4t1结果。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "模型与runner保留V3原件字节。"
+          },
+          {
+            "index": 2,
+            "text": "case3、case17的参考图直接取自"
+          },
+          {
+            "index": 3,
+            "text": "初赛原ZIP，未替换为后续V4t1结果。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "模型与runner保留V3原件字节。",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "模型与runner保留V3原件字节。",
+              "fontSize": 24,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "case3、case17的参考图直接取自",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "case3、case17的参考图直接取自",
+              "fontSize": 24,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "初赛原ZIP，未替换为后续V4t1结果。",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "初赛原ZIP，未替换为后续V4t1结果。",
+              "fontSize": 24,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wn6dc7eh",
+      "id": "10",
+      "name": "result",
+      "bbox": [
+        710,
+        367,
+        520,
+        50
+      ],
+      "geometry": "rect",
+      "text": "双进程复现，JPEG字节一致",
+      "textPreview": "双进程复现，JPEG字节一致",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "双进程复现，JPEG字节一致"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "双进程复现，JPEG字节一致",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Microsoft YaHei",
+            "color": "#102A43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "双进程复现，JPEG字节一致",
+              "fontSize": 30,
+              "typeface": "Microsoft YaHei",
+              "color": "#102A43",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hofulsf2",
+      "id": "11",
+      "name": "result-detail",
+      "bbox": [
+        710,
+        426,
+        520,
+        115
+      ],
+      "geometry": "rect",
+      "text": "两独立进程分别重生成两个完整样例，\n四次均与原JPEG逐字节一致。\n双方解码RGB最大差和平均差均为0。",
+      "textPreview": "两独立进程分别重生成两个完整样例， | 四次均与原JPEG逐字节一致。 | 双方解码RGB最大差和平均差均为0。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "两独立进程分别重生成两个完整样例，"
+          },
+          {
+            "index": 2,
+            "text": "四次均与原JPEG逐字节一致。"
+          },
+          {
+            "index": 3,
+            "text": "双方解码RGB最大差和平均差均为0。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "两独立进程分别重生成两个完整样例，",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "两独立进程分别重生成两个完整样例，",
+              "fontSize": 24,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "四次均与原JPEG逐字节一致。",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "四次均与原JPEG逐字节一致。",
+              "fontSize": 24,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "双方解码RGB最大差和平均差均为0。",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "双方解码RGB最大差和平均差均为0。",
+              "fontSize": 24,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ul4vaxgb",
+      "id": "12",
+      "name": "scope",
+      "bbox": [
+        710,
+        548,
+        520,
+        110
+      ],
+      "geometry": "rect",
+      "text": "实测仅覆盖这两张图及记录的CUDA环境。\n保留原边界处理，不改写历史作品。\n原件指纹、环境与复现证据随工程提供。",
+      "textPreview": "实测仅覆盖这两张图及记录的CUDA环境。 | 保留原边界处理，不改写历史作品。 | 原件指纹、环境与复现证据随工程提供。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "实测仅覆盖这两张图及记录的CUDA环境。"
+          },
+          {
+            "index": 2,
+            "text": "保留原边界处理，不改写历史作品。"
+          },
+          {
+            "index": 3,
+            "text": "原件指纹、环境与复现证据随工程提供。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "实测仅覆盖这两张图及记录的CUDA环境。",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "实测仅覆盖这两张图及记录的CUDA环境。",
+              "fontSize": 22,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "保留原边界处理，不改写历史作品。",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "保留原边界处理，不改写历史作品。",
+              "fontSize": 22,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "原件指纹、环境与复现证据随工程提供。",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Microsoft YaHei",
+            "color": "#233547"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原件指纹、环境与复现证据随工程提供。",
+              "fontSize": 22,
+              "typeface": "Microsoft YaHei",
+              "color": "#233547"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vmdcj2xw",
+      "id": "13",
+      "name": "footer",
+      "bbox": [
+        50,
+        676,
+        1180,
+        30
+      ],
+      "geometry": "rect",
+      "text": "队伍 hxxdxwzys　联系方式 18224070607　2026-09-26　　平台成绩与参赛资格以官方记录及复核为准",
+      "textPreview": "队伍 hxxdxwzys　联系方式 18224070607　2026-09-26　　平台成绩与参赛资格以官方记录及复核为准",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "队伍 hxxdxwzys　联系方式 18224070607　2026-09-26　　平台成绩与参赛资格以官方记录及复核为准"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "队伍 hxxdxwzys　联系方式 18224070607　2026-09-26　　平台成绩与参赛资格以官方记录及复核为准",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Microsoft YaHei",
+            "color": "#506579"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "队伍 hxxdxwzys　联系方式 18224070607　2026-09-26　　平台成绩与参赛资格以官方记录及复核为准",
+              "fontSize": 17,
+              "typeface": "Microsoft YaHei",
+              "color": "#506579"
+            }
+          ],
+          "bulletCharacter": "",
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

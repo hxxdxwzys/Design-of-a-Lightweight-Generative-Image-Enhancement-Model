@@ -1,0 +1,37 @@
+[
+  {
+    "bytes": 739646283,
+    "path": "D:\\models\\upload\\Track2_TinyRefV3.zip",
+    "sha256": "d3bf0bf602e9d2ec6459ace57753fd0188189aaacf7b1ca36fda5e1d590ca712",
+    "name": "Track2_TinyRefV3_original.zip",
+    "expected": "d3bf0bf602e9d2ec6459ace57753fd0188189aaacf7b1ca36fda5e1d590ca712"
+  },
+  {
+    "bytes": 23951696,
+    "path": "D:\\models\\upload\\Track2_TinyRefV4t1.zip",
+    "sha256": "9502384034af5fb4a87d9c89eeedc191eb89008c52dbbef75fa854193cc94bad",
+    "name": "Track2_TinyRefV4t1_original.zip",
+    "expected": "9502384034af5fb4a87d9c89eeedc191eb89008c52dbbef75fa854193cc94bad"
+  },
+  {
+    "bytes": 23213159,
+    "path": "D:\\models\\review_V3_20260926\\Track2_TinyRefV3_Review_Final.zip",
+    "sha256": "b7d71e71bbf08439c2a66707286b1fb489c2817697bc990de5cc1fddac3b027b",
+    "name": "Track2_TinyRefV3_Review_Final.zip",
+    "expected": "b7d71e71bbf08439c2a66707286b1fb489c2817697bc990de5cc1fddac3b027b"
+  },
+  {
+    "bytes": 23676442,
+    "path": "D:\\models\\quality27_20260927\\Track2_V4t1_EdgeFix_Review_20260927.zip",
+    "sha256": "8a9c23ebf788494eb7b623a576038c8c6c9f22f7c269ac19c380e98c8124c58d",
+    "name": "Track2_V4t1_EdgeFix_Review_20260927.zip",
+    "expected": "8a9c23ebf788494eb7b623a576038c8c6c9f22f7c269ac19c380e98c8124c58d"
+  },
+  {
+    "bytes": 1518789992,
+    "path": "D:\\project_archive_20261010\\research-small-checkpoints.zip",
+    "sha256": "a2e69fced1d848437821f36d95b5edfa1d286de360dbd6e49d897ed127ba5fc5",
+    "name": "research-small-checkpoints.zip",
+    "expected": null
+  }
+]

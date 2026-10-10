@@ -1,0 +1,8 @@
+=== B 测试集直选汇总 ===
+时间: 2026-08-20 01:44:05
+vosr_lora_v1_lora_s2500: test_clipiqa=0.760013
+vosr_lora_v2_lora_s1500: test_clipiqa=0.850037
+vosr_lora_v3_lora_s500: test_clipiqa=0.87114
+M0.000: mean=0.8719 delta=0.3365 swaps=100
+M0.005: mean=0.8719 delta=0.3365 swaps=100
+M0.010: mean=0.8719 delta=0.3365 swaps=100

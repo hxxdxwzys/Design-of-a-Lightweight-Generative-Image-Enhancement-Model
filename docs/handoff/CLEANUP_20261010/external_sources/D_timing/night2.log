@@ -1,0 +1,86 @@
+[18:00:43] >>> ① gate ProbeSlow8
+==========================================================================
+门禁: D:\models\upload\Track2_ProbeSlow8.zip
+==========================================================================
+  ✅ ① 文件名 ASCII: 文件名纯 ASCII: Track2_ProbeSlow8.zip
+  ✅    内部路径 ASCII: zip 内路径全部 ASCII
+  ✅    结构与完整性: testzip OK; output_dir 100 jpg; model_dir 43 项
+  ✅    体积: 1.67 GiB (上限 10.0 GB)
+  ✅    出图尺寸: case1.jpg 4096x3072; case54.jpg 4096x3072; case99.jpg 4096x3072
+  ✅ ② 语法兼容: 0 处风险
+  ✅   接口/512 推理: infer OK
+  ✅ ③ IQA 遮蔽: PASS
+  ✅ ④ IQA 遮蔽(对抗): PASS
+  ✅ ⑤ 官方格式严格审计: PASS
+  ==> PREUPLOAD_GATE_PASS
+==========================================================================
+总体: ✅ 全部通过，可以上传
+PREUPLOAD_ALL_PASS
+
+[18:01:58] <<< ① gate ProbeSlow8 rc=0
+[18:01:58] >>> ① gate ProbeDetail
+==========================================================================
+门禁: D:\models\upload\Track2_ProbeDetail.zip
+==========================================================================
+  ✅ ① 文件名 ASCII: 文件名纯 ASCII: Track2_ProbeDetail.zip
+  ✅    内部路径 ASCII: zip 内路径全部 ASCII
+  ✅    结构与完整性: testzip OK; output_dir 100 jpg; model_dir 43 项
+  ✅    体积: 1.86 GiB (上限 10.0 GB)
+  ✅    出图尺寸: case1.jpg 4096x3072; case54.jpg 4096x3072; case99.jpg 4096x3072
+  ✅ ② 语法兼容: 0 处风险
+  ✅   接口/512 推理: infer OK
+  ✅ ③ IQA 遮蔽: PASS
+  ✅ ④ IQA 遮蔽(对抗): PASS
+  ✅ ⑤ 官方格式严格审计: PASS
+  ==> PREUPLOAD_GATE_PASS
+==========================================================================
+总体: ✅ 全部通过，可以上传
+PREUPLOAD_ALL_PASS
+
+[18:03:19] <<< ① gate ProbeDetail rc=0
+[18:03:19] >>> ② speed_probe_v2
+=== load Runner ===
+load 7.7s
+[基线] R.infer = 369.4 ms  (加速比 0.773x)
+D:\models\final_compliant\model_dir\dinov2\layers\swiglu_ffn.py:152: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+D:\models\final_compliant\model_dir\dinov2\layers\attention.py:98: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+D:\models\final_compliant\model_dir\dinov2\layers\block.py:119: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Traceback (most recent call last):
+  File "D:\tmp_timing\speed_probe_v2.py", line 81, in <module>
+    u0 = M.diT(torch.cat([lat0, z], 1), tt, tz, [zf])
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\models\final_compliant\model_dir\models\lightningdit.py", line 1709, in forward_flexible
+    x = self.x_embedder(x)   # (N, T, D)
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\models\final_compliant\model_dir\_vendor\timm\models\vision_transformer.py", line 68, in forward
+    x = self.proj(x)
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\torch\nn\modules\conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\nn\modules\conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Input type (float) and bias type (struct c10::Half) should be the same
+
+[18:03:43] <<< ② speed_probe_v2 rc=1
+[18:03:43] >>> ③ HYPIR 断点续跑

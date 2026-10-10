@@ -1,0 +1,32 @@
+{
+ "schema": "EXPORT01-zip-record/1",
+ "zip_path": "C:\\models\\exports\\DELIV02_20260918_073810\\Track2_A2_fp16_v1.zip",
+ "zip_name": "Track2_A2_fp16_v1.zip",
+ "zip_bytes": 2144830099,
+ "zip_sha256": "49bd0e7e2df18cbad6e490998b76ad69031d43e33afc913843a912db424a1a67",
+ "max_bytes": 10000000000,
+ "within_limit": true,
+ "n_entries": 103,
+ "n_jpg": 100,
+ "n_model_files": 3,
+ "created_at": "2026-09-18 13:15:51",
+ "pack_s": 117.504,
+ "model_files": [
+  {
+   "path": "model_dir/models_export.json",
+   "bytes": 2216,
+   "sha256": "77cfd28831d319b4af74fd0863030b4e6ea17d5cef4af28fe79a9196d9a6834d"
+  },
+  {
+   "path": "model_dir/runner.py",
+   "bytes": 13032,
+   "sha256": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314"
+  },
+  {
+   "path": "model_dir/your_model.pt",
+   "bytes": 1536683563,
+   "sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793"
+  }
+ ],
+ "entry_paths_sha256": "243054b4a565a80082ff96c25bede07eba58f1e5d744d9fb14da03c85830c72b"
+}

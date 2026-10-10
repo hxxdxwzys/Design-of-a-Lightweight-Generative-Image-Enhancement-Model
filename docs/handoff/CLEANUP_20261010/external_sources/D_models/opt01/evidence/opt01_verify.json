@@ -1,0 +1,111 @@
+{
+ "schema": "OPT01-verify/1",
+ "flags": {
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "deterministic_algorithms": true,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "cudnn_allow_tf32": false,
+  "matmul_allow_tf32": false,
+  "torch": "2.7.0+cu126"
+ },
+ "checks": {
+  "c1_512": {
+   "repeat_max_abs": 0.0,
+   "repeat_identical": true,
+   "finite": true,
+   "range": [
+    -1.0,
+    1.0
+   ],
+   "npy_sha256": "f146364ce9bd6188972112e47fa8b9ac783066313596ec74da1cf3c556968343",
+   "vs_A2": {
+    "float_max_abs": 0.039215683937072754,
+    "float_mean_abs": 0.000680282711982727,
+    "u8_max_channel_diff": 5,
+    "u8_frac_pixels_any_channel_diff": 0.22603988647460938,
+    "u8_identical": false,
+    "u8_n_ge2": 482,
+    "u8_n_ge4": 8
+   },
+   "vs_fp32_reference": {
+    "float_max_abs": 0.0627450942993164,
+    "float_mean_abs": 0.0009378469549119473,
+    "u8_max_channel_diff": 8,
+    "u8_frac_pixels_any_channel_diff": 0.2939643859863281,
+    "u8_identical": false,
+    "u8_n_ge2": 1277,
+    "u8_n_ge4": 49
+   },
+   "new_process_identical": true,
+   "child_npy_sha256": "f146364ce9bd6188972112e47fa8b9ac783066313596ec74da1cf3c556968343"
+  },
+  "c7_512": {
+   "repeat_max_abs": 0.0,
+   "repeat_identical": true,
+   "finite": true,
+   "range": [
+    -0.8352941274642944,
+    1.0
+   ],
+   "npy_sha256": "0a35236e13281810af8ee0e135eaeb88859d50bc0ce7d9f960d9b639e96cea8e"
+  },
+  "c25_512": {
+   "repeat_max_abs": 0.0,
+   "repeat_identical": true,
+   "finite": true,
+   "range": [
+    -0.8588235378265381,
+    0.8823529481887817
+   ],
+   "npy_sha256": "544f1eb5328adbd844b618dbda299161299989354833fd71601fc90fd60bf64a"
+  },
+  "case1_full": {
+   "finite": true,
+   "range": [
+    -1.0,
+    1.0
+   ],
+   "npy_sha256": "b35459a6e9fd426e4fd3c2fbe872b2a962128cc89b24c09987babe7c3516f7ae",
+   "vs_A2": {
+    "float_max_abs": 0.15686273574829102,
+    "float_mean_abs": 0.0006185568054206669,
+    "u8_max_channel_diff": 20,
+    "u8_frac_pixels_any_channel_diff": 0.21056199073791504,
+    "u8_identical": false,
+    "u8_n_ge2": 10962,
+    "u8_n_ge4": 436
+   },
+   "new_process_identical": true,
+   "child_npy_sha256": "b35459a6e9fd426e4fd3c2fbe872b2a962128cc89b24c09987babe7c3516f7ae"
+  },
+  "case7_full": {
+   "finite": true,
+   "range": [
+    -1.0,
+    1.0
+   ],
+   "npy_sha256": "52b412827657c2213751afcba452656a9d46883d0fb5936150a9e79ab8ef7b5a",
+   "vs_A2": {
+    "float_max_abs": 0.07058823108673096,
+    "float_mean_abs": 0.0004647787136491388,
+    "u8_max_channel_diff": 9,
+    "u8_frac_pixels_any_channel_diff": 0.15865262349446616,
+    "u8_identical": false,
+    "u8_n_ge2": 9452,
+    "u8_n_ge4": 199
+   }
+  }
+ },
+ "deltas": {},
+ "started_at": "2026-09-18 18:09:47",
+ "child_rc": 0,
+ "child_tail": "4ce9bd6188972112e47fa8b9ac783066313596ec74da1cf3c556968343\", \"finite\": true, \"range\": [-1.0, 1.0]}, \"case1_full\": {\"npy\": \"D:\\\\models\\\\opt01\\\\npy\\\\case1_full_candidate_child.npy\", \"npy_sha256\": \"b35459a6e9fd426e4fd3c2fbe872b2a962128cc89b24c09987babe7c3516f7ae\", \"finite\": true, \"range\": [-1.0, 1.0]}}",
+ "error": "RuntimeError: 新进程重载失败：rc=1 ",
+ "budget_after": {
+  "top": 8,
+  "top4k": 2,
+  "component": 17
+ },
+ "status": "OK"
+}

@@ -1,0 +1,10 @@
+
+
+---
+
+## 补记（16:25，截止前 35 分钟）：第二版薄 refiner（thin2）与 TinyRefV4
+
+- thin2 = 从 thin1 续训 6k 步、对抗权重 0.3 / D 学习率 1e-4：test30 **clipiqa 0.8046 / niqe 5.002**。
+- **同进程交替对照（4 轮 × 10 次）**：V3 median 7.45 ms（best 5.27）→ factor 2.003 → 预测 **57.5**；**V4 median 7.50 ms（best 5.10）→ factor 2.001 → 预测 57.9**。
+- ⇒ **两版统计上等价**（差 0.4 分）；V4 clipiqa 略高、V3 niqe 略好。**建议提交 `Track2_TinyRefV4.zip`**，V3 作为等价备选（均 **PREUPLOAD_GATE_PASS**，均在 `D:/models/upload/`）。
+- 注意：本机时延读数随时间漂移（同一模型在不同时段 6.5~8.2 ms），故一律以**同进程交替**读数作判决；平台的绝对口径仍是【未知】。

@@ -1,0 +1,138 @@
+{
+ "schema": "PROXY-screen/1",
+ "metrics": [
+  "clipiqa",
+  "maniqa",
+  "niqe"
+ ],
+ "n_common": 4,
+ "cases": [
+  "case1",
+  "case5",
+  "case25",
+  "case88"
+ ],
+ "rows": {
+  "ctrl": {
+   "dir": "D:\\models\\iqa_screen\\f_v7sc0.8",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9059,
+     "maniqa": 0.459,
+     "niqe": 5.8443
+    },
+    "case5": {
+     "clipiqa": 0.8729,
+     "maniqa": 0.5102,
+     "niqe": 6.4748
+    },
+    "case25": {
+     "clipiqa": 0.9181,
+     "maniqa": 0.5682,
+     "niqe": 5.6474
+    },
+    "case88": {
+     "clipiqa": 0.9142,
+     "maniqa": 0.46,
+     "niqe": 4.8714
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9027528315782547,
+    "maniqa": 0.49934183806180954,
+    "niqe": 5.709494978970035
+   },
+   "n": {
+    "clipiqa": 4,
+    "maniqa": 4,
+    "niqe": 4
+   }
+  },
+  "p100": {
+   "dir": "D:\\models\\iqa_screen\\u_s1.2_p100_t3",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.8936,
+     "maniqa": 0.4967,
+     "niqe": 5.4742
+    },
+    "case5": {
+     "clipiqa": 0.8737,
+     "maniqa": 0.5553,
+     "niqe": 6.1178
+    },
+    "case25": {
+     "clipiqa": 0.8997,
+     "maniqa": 0.5713,
+     "niqe": 5.0502
+    },
+    "case88": {
+     "clipiqa": 0.9096,
+     "maniqa": 0.5025,
+     "niqe": 4.8594
+    }
+   },
+   "mean": {
+    "clipiqa": 0.8941358178853989,
+    "maniqa": 0.5314494743943214,
+    "niqe": 5.375375769168239
+   },
+   "n": {
+    "clipiqa": 4,
+    "maniqa": 4,
+    "niqe": 4
+   }
+  },
+  "p140": {
+   "dir": "D:\\models\\iqa_screen\\u_s1.2_p140_t3",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.878,
+     "maniqa": 0.488,
+     "niqe": 5.4586
+    },
+    "case5": {
+     "clipiqa": 0.8675,
+     "maniqa": 0.5426,
+     "niqe": 6.159
+    },
+    "case25": {
+     "clipiqa": 0.8842,
+     "maniqa": 0.5635,
+     "niqe": 5.1631
+    },
+    "case88": {
+     "clipiqa": 0.8974,
+     "maniqa": 0.4933,
+     "niqe": 4.9424
+    }
+   },
+   "mean": {
+    "clipiqa": 0.8817810714244843,
+    "maniqa": 0.5218602865934372,
+    "niqe": 5.430767792359025
+   },
+   "n": {
+    "clipiqa": 4,
+    "maniqa": 4,
+    "niqe": 4
+   }
+  }
+ },
+ "composite": {
+  "ctrl": 0.0,
+  "p100": 0.5297044910286717,
+  "p140": 0.1785190822728778
+ },
+ "composite_metrics": [
+  "clipiqa",
+  "maniqa",
+  "niqe"
+ ],
+ "ranking": [
+  "p100",
+  "p140",
+  "ctrl"
+ ],
+ "wall_s": 39.3
+}

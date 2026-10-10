@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "isolated_directory": "D:\\models\\review_V3_20260926\\isolated_a14yx19p",
+  "GPU_calls": 0,
+  "checks": [
+    {
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "D:\\models\\review_V3_20260926\\isolated_a14yx19p\\selfcheck.py",
+        "--identity-only"
+      ],
+      "exit_code": 0,
+      "stdout": "IDENTITY_PASS (no inference performed)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "D:\\models\\review_V3_20260926\\isolated_a14yx19p\\verification\\test_review.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_4k_geometry_63 (__main__.ReviewTests.test_4k_geometry_63) ... ok\ntest_case_omission_fails (__main__.ReviewTests.test_case_omission_fails) ... ok\ntest_changed_runner_even_updated_manifest_fails (__main__.ReviewTests.test_changed_runner_even_updated_manifest_fails) ... ok\ntest_changed_weight_fails (__main__.ReviewTests.test_changed_weight_fails) ... ok\ntest_expired_deadline_fails (__main__.ReviewTests.test_expired_deadline_fails) ... ok\ntest_historical_border_retained (__main__.ReviewTests.test_historical_border_retained) ... ok\ntest_identity_complete_pass (__main__.ReviewTests.test_identity_complete_pass) ... ok\ntest_jpeg_byte_and_pixel_different_levels (__main__.ReviewTests.test_jpeg_byte_and_pixel_different_levels) ... ok\ntest_missing_manifest_entry_fails (__main__.ReviewTests.test_missing_manifest_entry_fails) ... ok\ntest_missing_reference_fails (__main__.ReviewTests.test_missing_reference_fails) ... ok\ntest_missing_samples_fails (__main__.ReviewTests.test_missing_samples_fails) ... ok\ntest_path_escape_fails (__main__.ReviewTests.test_path_escape_fails) ... ok\ntest_shared_budget_reserve_before_call_and_no_refund (__main__.ReviewTests.test_shared_budget_reserve_before_call_and_no_refund) ... ok\ntest_small_pixel_difference_is_not_approximate_pass (__main__.ReviewTests.test_small_pixel_difference_is_not_approximate_pass) ... ok\ntest_source_identity_fails (__main__.ReviewTests.test_source_identity_fails) ... ok\ntest_undersized_input_rejected (__main__.ReviewTests.test_undersized_input_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.601s\n\nOK\n"
+    }
+  ]
+}

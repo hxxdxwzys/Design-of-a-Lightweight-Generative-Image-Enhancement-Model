@@ -1,0 +1,196 @@
+{
+ "schema": "EXPORT01-c1-readings/1",
+ "prereg_sha256": "c7c3ae9e871d52116f109be0c34f8715c00dc3dafffef90a9a16cddf6cc82564",
+ "model_sha256": "1bdafc4cc7e69911323e8f7235015965832e848c58b8c7fe426ac6974c6743a9",
+ "phase1": {
+  "source": "REUSED_FROM_ABORTED_ATTEMPT_PHASE1",
+  "provenance": {
+   "note": "源参考（fp16 eager + 同一 delivery_runner 编排）的四个输出取自本预登记下的一次尝试的 phase-1；该次在 phase-2 首例因设备不匹配崩溃，未产生任何判定，phase-1 产物完整且按哈希固定。本次只执行重载侧，避免重复消耗 4K 前向额度（复用允许，来源如实登记）。",
+   "aborted_attempt_log": "evidence_verify_c1_stdout2.txt",
+   "phase1_timings_s": {
+    "case1_crop512": 0.75,
+    "case1_full": 24.54,
+    "case7_full": 24.19,
+    "case1_crop511x513": 0.62
+   },
+   "runner_recipe_sha256": "5f56a31d1a26ece7e6105f403e7b782a5e8383023d75110cea383590d44cd1fa",
+   "model_sha256": "1bdafc4cc7e69911323e8f7235015965832e848c58b8c7fe426ac6974c6743a9",
+   "files": {
+    "case1_crop511x513_src.npy": {
+     "sha256": "58519862b8c9ae60cf83d3c438f8adb6018995d9c6d7f0bd58c4acd8d012a53e",
+     "bytes": 3145844,
+     "written_at": "2026-09-17 13:56:24"
+    },
+    "case1_crop512_src.npy": {
+     "sha256": "b8a0a75e230e729f068c0d2ddf92bf36e9fa5f4df7e87f387f49654e8cbc8065",
+     "bytes": 3145856,
+     "written_at": "2026-09-17 13:55:33"
+    },
+    "case1_full_src.npy": {
+     "sha256": "64e13c7d5b00e9291ce2613cad00866e0bcdeabcc418f999bcbf078845706917",
+     "bytes": 150995072,
+     "written_at": "2026-09-17 13:55:58"
+    },
+    "case7_full_src.npy": {
+     "sha256": "1e18ad646a2ff05e06fbd267349c8637fd9f822796116e688ccd1be485145075",
+     "bytes": 150995072,
+     "written_at": "2026-09-17 13:56:23"
+    }
+   }
+  },
+  "freed_before_phase2": true
+ },
+ "cases": [
+  {
+   "name": "case1_crop512",
+   "same_precision_max_abs": 0.0,
+   "same_precision_mean_abs": 0.0,
+   "png_pixel_identical": true,
+   "out_shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "out_dtype": "torch.float32",
+   "out_finite": true,
+   "out_min": -1.0,
+   "out_max": 1.0,
+   "out_sha256": "c8a5cce053b6031f2af897fecf7ea402a773efc4f35980d08b3dcbacb86686b9",
+   "fp32_ref": {
+    "path": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_A_case1_crop512_r1.npy",
+    "max_abs": 0.047058820724487305,
+    "mean_abs": 0.0009393611690029502,
+    "png_pixel_identical": false
+   },
+   "wh": [
+    512,
+    512
+   ],
+   "wall_s": 3.293,
+   "timing": {
+    "encode_s": 0.9096,
+    "features_s": 0.3062,
+    "dit_s": 1.4739,
+    "decode_s": 0.4303,
+    "postprocess_s": 0.157,
+    "infer_s": 3.2896
+   },
+   "input_sha256": "e15df1edd679dd41fbaed3962aabe85d7f6e328956f989addf0e046f60b37298",
+   "repeat_wall_s": 31.88,
+   "repeat_max_abs": 0.047058820724487305,
+   "repeat_png_identical": false
+  },
+  {
+   "name": "case1_full",
+   "same_precision_max_abs": 0.07843142747879028,
+   "same_precision_mean_abs": 0.0006390829803422093,
+   "png_pixel_identical": false,
+   "out_shape": [
+    1,
+    3,
+    3072,
+    4096
+   ],
+   "out_dtype": "torch.float32",
+   "out_finite": true,
+   "out_min": -1.0,
+   "out_max": 1.0,
+   "out_sha256": "12a605531764c4e246921adff238372c0ca6446ffd854693e833c915e0c15c0e",
+   "fp32_ref": {
+    "path": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_A_case1_full_r2.npy",
+    "max_abs": 2.0,
+    "mean_abs": 0.24977809190750122,
+    "png_pixel_identical": false
+   },
+   "wh": [
+    4096,
+    3072
+   ],
+   "wall_s": 27.855,
+   "timing": {
+    "encode_s": 8.0149,
+    "features_s": 1.0983,
+    "dit_s": 10.8902,
+    "decode_s": 7.7177,
+    "postprocess_s": 0.0884,
+    "infer_s": 27.8486
+   },
+   "input_sha256": "a7ea157e36817ec0a7b16051e17595d3672a8e8f632edd24798099267c77d0ac"
+  },
+  {
+   "name": "case7_full",
+   "same_precision_max_abs": 0.0627450942993164,
+   "same_precision_mean_abs": 0.0007853275164961815,
+   "png_pixel_identical": false,
+   "out_shape": [
+    1,
+    3,
+    3072,
+    4096
+   ],
+   "out_dtype": "torch.float32",
+   "out_finite": true,
+   "out_min": -1.0,
+   "out_max": 1.0,
+   "out_sha256": "69c2f0dec7dba7c9d9ac7f334e81c602e06fab54e9c3f8a92674d6e5112f508f",
+   "fp32_ref": {
+    "path": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_A_case7_full_r3.npy",
+    "max_abs": 2.0,
+    "mean_abs": 0.4002537429332733,
+    "png_pixel_identical": false
+   },
+   "wh": [
+    4096,
+    3072
+   ],
+   "wall_s": 23.829,
+   "timing": {
+    "encode_s": 7.8805,
+    "features_s": 1.1381,
+    "dit_s": 6.231,
+    "decode_s": 8.0833,
+    "postprocess_s": 0.4608,
+    "infer_s": 23.8221
+   },
+   "input_sha256": "fe9d2de453b031298777dda12c723775150f122c75945796f10f8df24097f4a8"
+  },
+  {
+   "name": "case1_crop511x513",
+   "same_precision_max_abs": 0.023529410362243652,
+   "same_precision_mean_abs": 0.0005536967073567212,
+   "png_pixel_identical": false,
+   "out_shape": [
+    1,
+    3,
+    511,
+    513
+   ],
+   "out_dtype": "torch.float32",
+   "out_finite": true,
+   "out_min": -1.0,
+   "out_max": 1.0,
+   "out_sha256": "a2e098fd5a10974f8b9040a0a509b63a36af970d08902ea8f30622179bbdebcc",
+   "wh": [
+    513,
+    511
+   ],
+   "wall_s": 0.619,
+   "timing": {
+    "encode_s": 0.1642,
+    "features_s": 0.0878,
+    "dit_s": 0.1713,
+    "decode_s": 0.1927,
+    "postprocess_s": 0.0019,
+    "infer_s": 0.619
+   },
+   "input_sha256": "82df48e0b64675ef84f3bcd0772d0f1d80df0f1edd80a7debad05a133c4612c8"
+  }
+ ],
+ "phase2_setup_s": 2.499,
+ "totals": {
+  "top_level_infers": 9,
+  "n_4k_infers": 4,
+  "peak_vram_mib": 3285.7
+ }
+}

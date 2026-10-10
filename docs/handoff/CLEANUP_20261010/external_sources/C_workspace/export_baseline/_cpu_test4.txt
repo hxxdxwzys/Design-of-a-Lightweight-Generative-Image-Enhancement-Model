@@ -1,0 +1,46 @@
+﻿python.exe : test_delivery_cpu (unittest.loader._FailedTest.test_delivery_cpu) ... ERROR
+At line:2 char:1
++ & 'D:\Python\python.exe' -B -m unittest discover -s 'C:\生成式图像增强轻量模型设计 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_delivery_c..._cpu) ... ERROR:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_matches_cv2 (test_wavelet_cpu.TestBlur.test_matches_cv2) ... ok
+test_reflect_padding_used (test_wavelet_cpu.TestBlur.test_reflect_padding_used) ... ok
+test_matches_reference_within_1lsb (test_wavelet_cpu.TestEndToEndEquivalence.test_matches_reference_within_1lsb) ... ok
+test_output_range (test_wavelet_cpu.TestEndToEndEquivalence.test_output_range) ... ok
+test_shape_mismatch_rejected (test_wavelet_cpu.TestEndToEndEquivalence.test_shape_mismatch_rejected) ... ok
+test_ksize_from_sigma (test_wavelet_cpu.TestKernel.test_ksize_from_sigma) ... ok
+test_matches_cv2_kernel (test_wavelet_cpu.TestKernel.test_matches_cv2_kernel) ... ok
+test_half_boundary_is_truncated_not_rounded (test_wavelet_cpu.TestQuantization.test_half_boundary_is_truncated_not_roun
+ded) ... ok
+test_matches_to_pil_image_truncation (test_wavelet_cpu.TestQuantization.test_matches_to_pil_image_truncation) ... ok
+test_scriptable (test_wavelet_cpu.TestScriptAndTrace.test_scriptable) ... ok
+test_traced_graph_is_shape_generic (test_wavelet_cpu.TestScriptAndTrace.test_traced_graph_is_shape_generic) ... C:\����
+ʽͼ����ǿ����ģ�������ս\����ʽͼ����ǿ����ģ�������ս\workspace\export_baseline\chain.py:74: TracerWarning: Converting a tensor
+ to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this val
+ue will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if target.shape[2] != source.shape[2] or target.shape[3] != source.shape[3]:
+ok
+
+======================================================================
+ERROR: test_delivery_cpu (unittest.loader._FailedTest.test_delivery_cpu)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_delivery_cpu
+Traceback (most recent call last):
+  File "D:\Python\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\Python\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "C:\����ʽͼ����ǿ����ģ�������ս\����ʽͼ����ǿ����ģ�������ս\workspace\export_baseline\tests\test_delivery_cpu.py", lin
+e 19, in <module>
+    import tiled_vae as TV  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'tiled_vae'
+
+
+----------------------------------------------------------------------
+Ran 12 tests in 3.573s
+
+FAILED (errors=1)

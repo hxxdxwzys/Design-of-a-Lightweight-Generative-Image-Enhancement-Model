@@ -1,0 +1,20 @@
+[resume] 已有 0 条结果
+[metric] ['niqe', 'clipiqa'] ready (device=cuda) | 可用内存 12.4 GB
+D:\tmp_timing\verify_probe_a_frugal.py:96: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(arr).permute(2, 0, 1).unsqueeze(0).to(dev).float().div_(255)
+  5/30 (273s, 可用内存 10.4 GB)
+  10/30 (488s, 可用内存 11.3 GB)
+  15/30 (721s, 可用内存 12.4 GB)
+  20/30 (1079s, 可用内存 12.9 GB)
+  25/30 (1407s, 可用内存 12.5 GB)
+  30/30 (1708s, 可用内存 13.6 GB)
+
+=== 测试集 30 张配对复核 (同 q95 jpg, 逐图同名) ===
+  指标         M24(sc0.8)     sc0.4         Δ
+  niqe           5.2559    4.0976   -1.1583
+  clipiqa        0.9023    0.7700   -0.1323
+
+  niqe 线性模型: M24=43.49 -> sc0.4=57.02  (Δ=+13.53)
+  （预登记: H1 niqe家族 50.5~58.0; 官方 M24 实测 43.6951）
+已存 D:\tmp_timing\probe_a_verify.json
+VERIFY_FRUGAL_DONE

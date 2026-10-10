@@ -1,0 +1,14 @@
+{
+ "schema": "STAT01-protocol-freeze/1",
+ "frozen_at": "2026-09-18 17:59:17",
+ "sha256": {
+  "score01r_bench.py": "5676b4809a6909f3b76b84ea3a3045f8b36033451a0e3bd3a87839154013df02",
+  "score01r_protocol.py": "f7e8622301a17f8fd9746c65b2f5e232d4734e2e4d97fcc2bf72c23f5d8b6390",
+  "mixed_runner.py": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314",
+  "allfp16_runner.py": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314",
+  "mixed_model.pt": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+  "allfp16_model.pt": "c3946096bcda7513d1a100975f73e08aa8f6ce24f4c7837642484038dd3f543d",
+  "prereg_stat01.json": "305ed68b61294ba822162a10441a49e3ac20ec6c08f4c95f423f11aa76459d33",
+  "ledger_stat01.json": "7199f0a30be582d170774b5d90051e23c7cb587fa6ab5e29a57ed108cb21c120"
+ }
+}

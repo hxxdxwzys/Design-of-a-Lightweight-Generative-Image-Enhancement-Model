@@ -1,0 +1,9 @@
+{
+  "scope": "Three fixed full validation images only; research analysis of the already frozen 2000-step exported weights.",
+  "reason": "Export execution repair still FAIL on random input changed-fraction 0.0022939048 > 0.001. Do not spend deadline on export if complete-image quality does not justify it.",
+  "export_status_remains": "FAIL",
+  "not_allowed": ["test30", "production100", "submission package", "metric threshold relaxation"],
+  "calls_reserved": {"render": 768, "metric": 9},
+  "numeric_quality_criteria_unchanged": true,
+  "interpretation": "Quality diagnosis is not qualification or acceptance. Subsequent packaging still requires every preregistered gate."
+}

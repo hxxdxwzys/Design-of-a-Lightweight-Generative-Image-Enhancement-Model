@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\tmp_timing\codiff_infer_4k.py", line 91, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\codiff_infer_4k.py", line 51, in main
+    model = CODiff_test(args)
+  File "D:\models/finals/codiff/CODiff-main/CODiff-main\diffusion\codiff.py", line 165, in __init__
+    self._init_tiled_vae(encoder_tile_size=args.vae_encoder_tiled_size,
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'vae_encoder_tiled_size'. Did you mean: 'vae_decoder_tiled_size'?

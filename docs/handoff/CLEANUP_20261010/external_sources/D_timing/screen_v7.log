@@ -1,0 +1,5 @@
+[09-12 17:20:58] [subset] 12 张 -> D:\models\screen_v7\lq12
+[09-12 17:21:10] [metric] niqe + clipiqa ready
+[09-12 17:21:10] [渲染] sc0.6_seed8
+[09-12 17:32:43] [完成] sc0.6_seed8: niqe=nan clipiqa=nan -> 预测分 nan (M24 基准 43.684)
+[09-12 17:32:43] [渲染] sc0.7_seed8

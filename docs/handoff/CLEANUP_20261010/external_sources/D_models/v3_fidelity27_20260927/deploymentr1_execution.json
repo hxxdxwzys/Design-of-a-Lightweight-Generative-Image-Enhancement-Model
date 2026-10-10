@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "start": 1790504224.1541736,
+  "sources": {
+    "amend_execution.py": "3cd2412c916ff519bb07c3bdaa51bca8ed168f2949147974d123be347d5802f4",
+    "choose_checkpoint.py": "73cde2427dbd384358b7a9bd09384a7a2090313d52322be23f3c242f8b3d618f",
+    "common.py": "77c38e4a2b75d4cfe08bd082249ec5621b93e8b374ee8f1a777313e47f160d7f",
+    "deployment_check.py": "125154958546fe53648b219411a0459cafaca885012a8aaca9c0ff1be11d7ae0",
+    "full_eval.py": "90bac9a1d3781d2218a6dfb39d1c055e863bdd087f02b7f9e50b040773463de6",
+    "prepare.py": "8f7c69f13de733a38a6c5e2a21189df2329af2498797655bae8c1e43cacf97a9",
+    "supervise.py": "a1f4a24617acad6453848addcc470ac7932a80d7bb18993cbf9c4ec2d4838184",
+    "test_cpu.py": "50259b9562982a5728a6feabc5dd5a5245a76786ed7aee23b7449b99bf35509d",
+    "train.py": "ad3ee20279f411d1d16243d12223f7c828ec9e8362e7f9a5da07a2c51f2b1f3a",
+    "validate.py": "2674f1ec28832317d5e185aa756281bbd3be9d11497867624b98194c7f2afd07"
+  },
+  "exit_code": 0,
+  "wall_s": 8.720165252685547
+}

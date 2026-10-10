@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "archive": "D:\\models\\review_V3_20260926\\Track2_TinyRefV3_Review_Final.zip",
+  "zip_sha256": "b7d71e71bbf08439c2a66707286b1fb489c2817697bc990de5cc1fddac3b027b",
+  "zip_bytes": 23213159,
+  "zip_members": 30,
+  "ppt_sha256": "e06ea2425f04a13df070b24c87d1befae993b75a3e399297f51038110040b82a",
+  "manifest_sha256": "2fe8f36534bcdf6db13439f33c1706192e066166d51f4d41721191bb75c5f16a",
+  "isolated_directory": "D:\\models\\review_V3_20260926\\final_isolated_k98il7wm",
+  "checks": [
+    {
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "D:\\models\\review_V3_20260926\\final_isolated_k98il7wm\\selfcheck.py",
+        "--identity-only"
+      ],
+      "exit_code": 0,
+      "stdout": "IDENTITY_PASS (no inference performed)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "D:\\models\\review_V3_20260926\\final_isolated_k98il7wm\\verification\\test_review.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_4k_geometry_63 (__main__.ReviewTests.test_4k_geometry_63) ... ok\ntest_case_omission_fails (__main__.ReviewTests.test_case_omission_fails) ... ok\ntest_changed_runner_even_updated_manifest_fails (__main__.ReviewTests.test_changed_runner_even_updated_manifest_fails) ... ok\ntest_changed_weight_fails (__main__.ReviewTests.test_changed_weight_fails) ... ok\ntest_expired_deadline_fails (__main__.ReviewTests.test_expired_deadline_fails) ... ok\ntest_historical_border_retained (__main__.ReviewTests.test_historical_border_retained) ... ok\ntest_identity_complete_pass (__main__.ReviewTests.test_identity_complete_pass) ... ok\ntest_jpeg_byte_and_pixel_different_levels (__main__.ReviewTests.test_jpeg_byte_and_pixel_different_levels) ... ok\ntest_missing_manifest_entry_fails (__main__.ReviewTests.test_missing_manifest_entry_fails) ... ok\ntest_missing_reference_fails (__main__.ReviewTests.test_missing_reference_fails) ... ok\ntest_missing_samples_fails (__main__.ReviewTests.test_missing_samples_fails) ... ok\ntest_path_escape_fails (__main__.ReviewTests.test_path_escape_fails) ... ok\ntest_shared_budget_reserve_before_call_and_no_refund (__main__.ReviewTests.test_shared_budget_reserve_before_call_and_no_refund) ... ok\ntest_small_pixel_difference_is_not_approximate_pass (__main__.ReviewTests.test_small_pixel_difference_is_not_approximate_pass) ... ok\ntest_source_identity_fails (__main__.ReviewTests.test_source_identity_fails) ... ok\ntest_undersized_input_rejected (__main__.ReviewTests.test_undersized_input_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.617s\n\nOK\n"
+    }
+  ],
+  "GPU_calls": 0,
+  "visual_review": "Rendered final PPTX reviewed, no clipping/overlap observed; no native PowerPoint verification",
+  "uploaded": false,
+  "original_archives_unchanged": true
+}

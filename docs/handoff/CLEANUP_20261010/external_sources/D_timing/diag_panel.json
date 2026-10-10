@@ -1,0 +1,182 @@
+{
+ "M24": {
+  "ms512": {
+   "clipiqa": 0.5441,
+   "musiq": 68.5994,
+   "maniqa": 0.4945,
+   "niqe": 4.8383,
+   "lapvar": 1658.1248,
+   "n": 12
+  },
+  "ms1024": {
+   "clipiqa": 0.5337,
+   "musiq": 67.0953,
+   "maniqa": 0.4351,
+   "niqe": 4.594,
+   "lapvar": 1139.3085,
+   "n": 12
+  },
+  "c1024": {
+   "clipiqa": 0.8915,
+   "musiq": 61.4584,
+   "maniqa": 0.4972,
+   "niqe": 5.9055,
+   "lapvar": 392.4273,
+   "n": 12
+  },
+  "native": {
+   "clipiqa": 0.9014,
+   "maniqa": 0.4912,
+   "niqe": 5.3515,
+   "lapvar": 398.9375,
+   "n": 12
+  },
+  "score": 43.6951,
+  "ratio": 0.78,
+  "note": "我方最佳"
+ },
+ "TinyV7gan": {
+  "ms512": {
+   "clipiqa": 0.5213,
+   "musiq": 68.4768,
+   "maniqa": 0.4854,
+   "niqe": 4.6696,
+   "lapvar": 1888.2622,
+   "n": 12
+  },
+  "ms1024": {
+   "clipiqa": 0.4642,
+   "musiq": 65.2912,
+   "maniqa": 0.3987,
+   "niqe": 4.6196,
+   "lapvar": 1220.7638,
+   "n": 12
+  },
+  "c1024": {
+   "clipiqa": 0.4643,
+   "musiq": 45.954,
+   "maniqa": 0.2367,
+   "niqe": 6.2353,
+   "lapvar": 97.9644,
+   "n": 12
+  },
+  "native": {
+   "clipiqa": 0.4902,
+   "maniqa": 0.2847,
+   "niqe": 5.3452,
+   "lapvar": 110.9584,
+   "n": 12
+  },
+  "score": 41.7346,
+  "ratio": 61.9,
+  "note": "256域+GAN 0.87M"
+ },
+ "w2_m0s1_s090": {
+  "ms512": {
+   "clipiqa": 0.5337,
+   "musiq": 68.4168,
+   "maniqa": 0.4872,
+   "niqe": 4.9181,
+   "lapvar": 1553.985,
+   "n": 12
+  },
+  "ms1024": {
+   "clipiqa": 0.5373,
+   "musiq": 67.4555,
+   "maniqa": 0.423,
+   "niqe": 4.6862,
+   "lapvar": 1082.222,
+   "n": 12
+  },
+  "c1024": {
+   "clipiqa": 0.8638,
+   "musiq": 57.6508,
+   "maniqa": 0.4595,
+   "niqe": 6.2915,
+   "lapvar": 345.6099,
+   "n": 12
+  },
+  "native": {
+   "clipiqa": 0.87,
+   "maniqa": 0.4607,
+   "niqe": 5.8647,
+   "lapvar": 323.8469,
+   "n": 12
+  },
+  "score": 34.0989,
+  "ratio": null,
+  "note": "1.4B sc0.90"
+ },
+ "w2_m0s7_s097": {
+  "ms512": {
+   "clipiqa": 0.5372,
+   "musiq": 68.5059,
+   "maniqa": 0.4877,
+   "niqe": 4.8496,
+   "lapvar": 1557.6243,
+   "n": 12
+  },
+  "ms1024": {
+   "clipiqa": 0.513,
+   "musiq": 66.6553,
+   "maniqa": 0.4076,
+   "niqe": 4.7106,
+   "lapvar": 994.9121,
+   "n": 12
+  },
+  "c1024": {
+   "clipiqa": 0.8777,
+   "musiq": 54.0496,
+   "maniqa": 0.393,
+   "niqe": 6.6734,
+   "lapvar": 233.0749,
+   "n": 12
+  },
+  "native": {
+   "clipiqa": 0.8779,
+   "maniqa": 0.4156,
+   "niqe": 6.3019,
+   "lapvar": 229.9973,
+   "n": 12
+  },
+  "score": 31.3942,
+  "ratio": null,
+  "note": "1.4B m0s7 sc0.97"
+ },
+ "w2_m0s1_s100": {
+  "ms512": {
+   "clipiqa": 0.5324,
+   "musiq": 68.3529,
+   "maniqa": 0.486,
+   "niqe": 4.9534,
+   "lapvar": 1532.872,
+   "n": 12
+  },
+  "ms1024": {
+   "clipiqa": 0.5332,
+   "musiq": 67.2026,
+   "maniqa": 0.4181,
+   "niqe": 4.7507,
+   "lapvar": 1039.0511,
+   "n": 12
+  },
+  "c1024": {
+   "clipiqa": 0.8746,
+   "musiq": 55.5833,
+   "maniqa": 0.4451,
+   "niqe": 6.3096,
+   "lapvar": 327.5766,
+   "n": 12
+  },
+  "native": {
+   "clipiqa": 0.8762,
+   "maniqa": 0.4495,
+   "niqe": 5.9921,
+   "lapvar": 308.4636,
+   "n": 12
+  },
+  "score": null,
+  "ratio": null,
+  "note": "1.4B sc1.00 未交"
+ }
+}

@@ -1,0 +1,227 @@
+[load] building FiDeSR_eval...
+[lora-merge] 258 modules merged (scale=1.0)
+[load] model ready
+[boot] 3 images, lf=0.2 hf=0.3 align=wavelet
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 1 done (37s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 2 done (72s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 3 done (106s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 4 done (138s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 5 done (170s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 6 done (202s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 7 done (233s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 8 done (265s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 9 done (295s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 10 done (326s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 11 done (359s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case1_lq] tile 12 done (390s)
+[done] case1_lq (12 tiles, 392s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 1 done (32s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 2 done (65s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 3 done (98s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 4 done (130s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 5 done (162s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 6 done (195s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 7 done (226s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 8 done (258s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 9 done (290s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 10 done (321s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 11 done (353s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case2_lq] tile 12 done (385s)
+[done] case2_lq (12 tiles, 386s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 1 done (33s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 2 done (64s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 3 done (97s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 4 done (129s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 5 done (162s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 6 done (194s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 7 done (227s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 8 done (259s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 9 done (292s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 10 done (325s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 11 done (358s)
+[Tiled VAE]: input_size: torch.Size([1, 3, 2048, 2048]), tile_size: 1024, padding: 32
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 992x992, original tile size 1024x1024
+[Tiled Latent]: Input size 256x256, tiling required.
+[Tiled VAE]: input_size: torch.Size([1, 4, 256, 256]), tile_size: 224, padding: 11
+[Tiled VAE]: split to 2x2 = 4 tiles. Optimal tile size 128x128, original tile size 224x224
+  [case3_lq] tile 12 done (391s)
+[done] case3_lq (12 tiles, 393s)
+[done] all
+1s)
+[08-26 00:41:00] [done] case3_lq (12 tiles, 393s)
+[08-26 00:41:00] [done] all

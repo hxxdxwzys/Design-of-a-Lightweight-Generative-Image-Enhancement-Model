@@ -1,0 +1,65 @@
+
+
+
+def _db_gauss_kernel(sigma, device, dtype):
+
+
+    r = max(1, int(round(3.0 * sigma)))
+
+
+    x = torch.arange(-r, r + 1, device=device, dtype=torch.float32)
+
+
+    k = torch.exp(-(x * x) / (2.0 * sigma * sigma))
+
+
+    k = k / k.sum()
+
+
+    return k.to(dtype=dtype)
+
+
+
+
+def _db_blur(x, k):
+
+
+    c = x.shape[1]
+
+
+    r = (k.numel() - 1) // 2
+
+
+    kh = k.view(1, 1, -1, 1).expand(c, 1, -1, 1)
+
+
+    kw = k.view(1, 1, 1, -1).expand(c, 1, 1, -1)
+
+
+    x = F.pad(x, (0, 0, r, r), mode='reflect')
+
+
+    x = F.conv2d(x, kh, groups=c)
+
+
+    x = F.pad(x, (r, r, 0, 0), mode='reflect')
+
+
+    x = F.conv2d(x, kw, groups=c)
+
+
+    return x
+
+
+
+
+def _detail_boost(x, sigma=1.0, amount=0.6):
+
+
+    """out = x + amount*(x - blur(x)); 反射填充可分离高斯; 与离线出图同参数"""
+
+
+    k = _db_gauss_kernel(sigma, x.device, x.dtype)
+
+
+    return (x + amount * (x - _db_blur(x, k))).clamp(-1.0, 1.0)

@@ -1,0 +1,34 @@
+{
+ "note": "源参考（fp16 eager + 同一 delivery_runner 编排）的四个输出取自本预登记下的一次尝试的 phase-1；该次在 phase-2 首例因设备不匹配崩溃，未产生任何判定，phase-1 产物完整且按哈希固定。本次只执行重载侧，避免重复消耗 4K 前向额度（复用允许，来源如实登记）。",
+ "aborted_attempt_log": "evidence_verify_c1_stdout2.txt",
+ "phase1_timings_s": {
+  "case1_crop512": 0.75,
+  "case1_full": 24.54,
+  "case7_full": 24.19,
+  "case1_crop511x513": 0.62
+ },
+ "runner_recipe_sha256": "5f56a31d1a26ece7e6105f403e7b782a5e8383023d75110cea383590d44cd1fa",
+ "model_sha256": "1bdafc4cc7e69911323e8f7235015965832e848c58b8c7fe426ac6974c6743a9",
+ "files": {
+  "case1_crop511x513_src.npy": {
+   "sha256": "58519862b8c9ae60cf83d3c438f8adb6018995d9c6d7f0bd58c4acd8d012a53e",
+   "bytes": 3145844,
+   "written_at": "2026-09-17 13:56:24"
+  },
+  "case1_crop512_src.npy": {
+   "sha256": "b8a0a75e230e729f068c0d2ddf92bf36e9fa5f4df7e87f387f49654e8cbc8065",
+   "bytes": 3145856,
+   "written_at": "2026-09-17 13:55:33"
+  },
+  "case1_full_src.npy": {
+   "sha256": "64e13c7d5b00e9291ce2613cad00866e0bcdeabcc418f999bcbf078845706917",
+   "bytes": 150995072,
+   "written_at": "2026-09-17 13:55:58"
+  },
+  "case7_full_src.npy": {
+   "sha256": "1e18ad646a2ff05e06fbd267349c8637fd9f822796116e688ccd1be485145075",
+   "bytes": 150995072,
+   "written_at": "2026-09-17 13:56:23"
+  }
+ }
+}

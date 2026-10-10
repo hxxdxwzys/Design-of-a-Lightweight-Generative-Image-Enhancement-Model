@@ -1,0 +1,85 @@
+{
+  "trained_candidate_status": "REJECTED_FOR_DELIVERY",
+  "training_steps": 6000,
+  "training_wall_s": 265.6421712,
+  "selected_steps": 2000,
+  "selection_holdout": {
+    "parent": {
+      "l1": 0.08394811645848677,
+      "lpips": 0.13959160482045263
+    },
+    "candidate": {
+      "l1": 0.08211785042658448,
+      "lpips": 0.1364303573500365
+    }
+  },
+  "step6000_holdout": {
+    "parent": {
+      "l1": 0.08394811645848677,
+      "lpips": 0.13959160482045263
+    },
+    "candidate": {
+      "l1": 0.08015170291764662,
+      "lpips": 0.1396172542590648
+    }
+  },
+  "full_validation": {
+    "v3": {
+      "psnr": 23.705751893410383,
+      "lpips": 0.397718866666158
+    },
+    "v4t1": {
+      "psnr": 23.373461453292673,
+      "lpips": 0.40187739332516986
+    },
+    "candidate": {
+      "psnr": 23.485772220577868,
+      "lpips": 0.40596067905426025
+    }
+  },
+  "full_quality_gate": false,
+  "full_val_count": 3,
+  "metric_calls": 105,
+  "render_and_verify_reserved": 841,
+  "export_conservative_charges": 22,
+  "export_cap_after_preregistered_execution_repair": 32,
+  "new_training_weights_delivered": false,
+  "test30_performed": false,
+  "production100_performed": false,
+  "edge_revision_status": "ACCEPTED_ENGINEERING_SCOPE_ONLY",
+  "edge_gpu_calls": 262,
+  "edge_cpu_tests": 10,
+  "conditional_cpu_tests": 4,
+  "original_v3_zip_unchanged": true,
+  "new_tree_bytes": 159643662,
+  "authority_boundary": "No upload, no Git add/commit, no change to original V3/V4t1 archives; official score and replacement permission UNKNOWN",
+  "evidence": {
+    "data_manifest.json": "c792992fd05876e808fcbec0fe63b522a659f9cccb9b49e217af2b925ea351cf",
+    "edge_delivery_receipt.json": "db0f94dd46d15130a6d1779d736bca866b884700675ec43562200e7b1cbdf6de",
+    "edge_ledger.json": "1cdd5e9614c841724bac359f9c9283006f7e6ab1ec40afd36cdf7e65722780c1",
+    "edge_phase1.json": "dd72d87d21ae3fe3e28858318fd3c64135191aaf89e16abbb3e0eef3a045750d",
+    "edge_phase1_execution.json": "b3815f4eb4db199ae5fdfc73383b1a8baa0158f57ca87ce4e06c554a8739ba0a",
+    "edge_phase2.json": "7cb916bdd77fa305ca25dbb4a2907647b1c7a5e845568f5bc841e2f7c6eef474",
+    "edge_phase2_execution.json": "362763da725c14599000a2064d30383bdd731f280d321ce6e5826bd71471fe03",
+    "edge_preregistration.json": "ddd3642b61404e22fa78fbe6c7fdc93d811c88d4e86faf3f1822374c67cbdbff",
+    "execution_recheck.json": "a6e81062b052528af057bbfb3826e148f08d15d530e926bc5e36798643abd7d9",
+    "execution_recheck_execution.json": "56397a7a2ea70b4f596ddaf035101737f9673478458cf36a962a4e3bb9b72661",
+    "execution_recheck_reserved.json": "18f7ee540930dc839c7cf1d0f87210e823c97d28594b05c528e4853e4f7894ee",
+    "execution_repair_authorization.json": "ba97951c4abcc369d33c496eb9d10490254028c39017fb67b2cc8748d04c5145",
+    "export2000_execution.json": "900d05774ba65fb4b64b18ed606ca0bb7c42a34ab8d12cba216783de4b6d9dc5",
+    "export_check.json": "1097b9ed6fb089afd2d753bc8da20c051a0e04fcb59c42919131950ecc9e8aee",
+    "export_reserved.json": "fb729796b07c9b7b5061f0a97f2a776cc2852e66222bd414fb3347d6349ad74a",
+    "fullval_research_execution.json": "f9549a22a5a8fb358e6279c200355705f39334c3dfc285aa017f8de9a44c8095",
+    "full_val.json": "d88e4381127a5ce8c4fefdae4b37441f6edeb2a96ce167e766ac5bcc2ada9c9f",
+    "full_val_partial.json": "a1fb5372b6e8969eb28b85abe9417744b9d3026921d9ca4076ce9efe67b2b1d6",
+    "pilot2000_execution.json": "3eb2803be126f48512d8f9734ed5f7211a3fd473ad2276ac0aad2aeb157c9ad0",
+    "preregistration.json": "c812a4fc9cd1f984bef8b035d48f32250bb0ca3c2fdb117f8e6ae1b3c15dfd4a",
+    "research_validation_authorization.json": "19c403aa698ff56eb89e548d01b17275822ade3d30799f5283b133c59c5dc573",
+    "selection.json": "5e86dc5229a63174abe3e2377291517196ae6e868cc4dcf7c6cc6ab44f03459e",
+    "train6000_execution.json": "8d8734660e6595795768bf21df3e5883d45a9410e53e88c7630bb3947c8cda7b",
+    "val2000_execution.json": "d78116f93894ee8df28f6b3f820125a6413cf78b441cbc82ffbba5f3b5312878",
+    "val6000_execution.json": "1a5a0545204f95c64fe771b3e744f7426cffd0a4c74cb66f5ff14fef30b4feaa",
+    "validate_2000.json": "8351fddaa3ba321d62148d998d4fb6e1436c4fe125ab6682892903e8bd2ebd9a",
+    "validate_6000.json": "150f9e41db9c45557b2cee81c4e74ff4181603f1ade5a4f8e067d719a57597da"
+  }
+}

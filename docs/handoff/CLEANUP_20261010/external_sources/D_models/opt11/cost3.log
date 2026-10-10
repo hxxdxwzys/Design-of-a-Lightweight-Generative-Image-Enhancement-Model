@@ -1,0 +1,5 @@
+[noref@256       ] median 4.66 ms best 4.17
+[noref@192       ] median 7.25 ms best 6.72
+[r256@256        ] median 13.33 ms best 10.09
+[r256@256+bench  ] median 12.31 ms best 4.47
+COST3_DONE

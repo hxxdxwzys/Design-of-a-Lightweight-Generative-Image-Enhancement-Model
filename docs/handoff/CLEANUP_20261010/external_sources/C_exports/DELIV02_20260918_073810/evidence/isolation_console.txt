@@ -1,0 +1,2 @@
+﻿[iso] rc=0
+{"verdict": "PASS", "n_entries": 103, "n_jpg": 100, "all_ascii": true, "model_file_hashes_match": true, "py38_syntax_ok": true, "shadowing_risk": "NONE", "forward_exit_code": 0, "wall_s": 19.917}

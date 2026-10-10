@@ -1,0 +1,50 @@
+﻿[
+    {
+        "path":  "workspace/pipeline_baseline/core.py",
+        "bytes":  25585,
+        "sha256":  "7c58c0868951c4ee7620cf87a5389655a6c5aa6a3b12a4b7664b34a66f7f6045",
+        "snapshot":  "core.py"
+    },
+    {
+        "path":  "workspace/pipeline_baseline/runner.py",
+        "bytes":  2277,
+        "sha256":  "3d5b06b2166baea34a3e3b6f3fc89b211cf261c8f00f3a017fd20e8d439ee568",
+        "snapshot":  "runner.py"
+    },
+    {
+        "path":  "workspace/pipeline_baseline/offline.py",
+        "bytes":  3879,
+        "sha256":  "c7cf26eeba0becd9d1dd83c79d43dd3b90c6c80b9a830a2c7e36aba0fdd9a26c",
+        "snapshot":  "offline.py"
+    },
+    {
+        "path":  "workspace/pipeline_baseline/pair_verify.py",
+        "bytes":  13147,
+        "sha256":  "b3ee7c923917f86e2ba3802fc03f9fb5db23a874e6f1b828d5103a7c7602f607",
+        "snapshot":  "pair_verify.py"
+    },
+    {
+        "path":  "workspace/pipeline_baseline/make_evidence.py",
+        "bytes":  7229,
+        "sha256":  "f79f34e59232283318c28003db1d3a81631919d59fd9060abaf298621896d6d8",
+        "snapshot":  "make_evidence.py"
+    },
+    {
+        "path":  "workspace/pipeline_baseline/config.json",
+        "bytes":  1668,
+        "sha256":  "1a2e44d7709168187b28e30ffa15b35f9f0f5431205ec9b983d50a9c90aca42a",
+        "snapshot":  "config.json"
+    },
+    {
+        "path":  "workspace/pipeline_baseline/tests\\test_pipe01_cpu.py",
+        "bytes":  17480,
+        "sha256":  "23fa34973b4f4b95c32b7db3a66662a91b17ebe45f29a72db8f731f5875d6d72",
+        "snapshot":  "tests__test_pipe01_cpu.py"
+    },
+    {
+        "path":  "workspace/pipeline_baseline/evidence\\summarize_run.py",
+        "bytes":  3285,
+        "sha256":  "a56395062f3abc8f19f88c74f64d2da75734849dabcb17fff0502d18c56450f7",
+        "snapshot":  "evidence__summarize_run.py"
+    }
+]

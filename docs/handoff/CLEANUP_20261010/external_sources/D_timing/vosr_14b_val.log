@@ -1,0 +1,15 @@
+Loading model from preset/ckpts/VOSR_1.4B_os...
+Inference steps: 1, Seed: 42
+Loading weights from preset/ckpts/VOSR_1.4B_os\checkpoints\ema_model.safetensors
+Processing 3 images...
+Output size: 3072x4096, input size: 3072x4096
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+Done!

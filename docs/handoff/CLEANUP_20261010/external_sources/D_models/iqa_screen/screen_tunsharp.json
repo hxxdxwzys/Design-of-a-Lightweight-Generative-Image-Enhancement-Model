@@ -1,0 +1,152 @@
+{
+ "schema": "PROXY-screen/1",
+ "metrics": [
+  "clipiqa",
+  "maniqa",
+  "niqe",
+  "musiq"
+ ],
+ "n_common": 4,
+ "cases": [
+  "case1",
+  "case5",
+  "case25",
+  "case88"
+ ],
+ "rows": {
+  "v7": {
+   "dir": "D:\\models\\iqa_screen\\f_v7sc0.8",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9059,
+     "maniqa": 0.459,
+     "niqe": 5.8443,
+     "musiq": 39.7756
+    },
+    "case5": {
+     "clipiqa": 0.8729,
+     "maniqa": 0.5102,
+     "niqe": 6.4748,
+     "musiq": 45.2682
+    },
+    "case25": {
+     "clipiqa": 0.9181,
+     "maniqa": 0.5682,
+     "niqe": 5.6474
+    },
+    "case88": {
+     "clipiqa": 0.9142,
+     "maniqa": 0.46,
+     "niqe": 4.8714
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9027528315782547,
+    "maniqa": 0.49934183806180954,
+    "niqe": 5.709494978970035,
+    "musiq": 42.52187728881836
+   },
+   "n": {
+    "clipiqa": 4,
+    "maniqa": 4,
+    "niqe": 4,
+    "musiq": 2
+   }
+  },
+  "v7_pil_unsharp": {
+   "dir": "D:\\models\\iqa_screen\\f_v7sc0.8_unsharp",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9019,
+     "maniqa": 0.4956,
+     "niqe": 5.4651,
+     "musiq": 37.66
+    },
+    "case5": {
+     "clipiqa": 0.8773,
+     "maniqa": 0.551,
+     "niqe": 6.1383,
+     "musiq": 49.2326
+    },
+    "case25": {
+     "clipiqa": 0.9124,
+     "maniqa": 0.5757,
+     "niqe": 5.1539
+    },
+    "case88": {
+     "clipiqa": 0.918,
+     "maniqa": 0.5007,
+     "niqe": 4.7698
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9024109542369843,
+    "maniqa": 0.5307493060827255,
+    "niqe": 5.381752115426266,
+    "musiq": 43.4462890625
+   },
+   "n": {
+    "clipiqa": 4,
+    "maniqa": 4,
+    "niqe": 4,
+    "musiq": 2
+   }
+  },
+  "v7_torch_unsharp": {
+   "dir": "D:\\models\\iqa_screen\\f_v7sc0.8_tunsharp",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9019,
+     "maniqa": 0.4969,
+     "niqe": 5.4891,
+     "musiq": 37.1985
+    },
+    "case5": {
+     "clipiqa": 0.8773,
+     "maniqa": 0.5544,
+     "niqe": 6.1115,
+     "musiq": 49.5805
+    },
+    "case25": {
+     "clipiqa": 0.9088,
+     "maniqa": 0.5773,
+     "niqe": 5.0525
+    },
+    "case88": {
+     "clipiqa": 0.9172,
+     "maniqa": 0.5014,
+     "niqe": 4.8542
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9013001918792725,
+    "maniqa": 0.5324967354536057,
+    "niqe": 5.376823836120995,
+    "musiq": 43.389522552490234
+   },
+   "n": {
+    "clipiqa": 4,
+    "maniqa": 4,
+    "niqe": 4,
+    "musiq": 2
+   }
+  }
+ },
+ "composite": {
+  "v7": 0.0,
+  "v7_pil_unsharp": 0.6742829223077319,
+  "v7_torch_unsharp": 0.48464793730837
+ },
+ "composite_metrics": [
+  "clipiqa",
+  "maniqa",
+  "musiq",
+  "niqe"
+ ],
+ "ranking": [
+  "v7_pil_unsharp",
+  "v7_torch_unsharp",
+  "v7"
+ ],
+ "wall_s": 380.7
+}

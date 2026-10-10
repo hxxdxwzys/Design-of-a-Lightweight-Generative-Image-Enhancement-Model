@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.3143,
+ "niqe": 5.4254,
+ "musiq": 40.3476,
+ "maniqa": 0.2072,
+ "lapvar": 111.5,
+ "n": 30,
+ "dir": "D:\\models\\pkg_PixB\\output_dir",
+ "tag": "PixB"
+}

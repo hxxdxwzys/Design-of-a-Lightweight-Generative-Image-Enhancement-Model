@@ -1,0 +1,17 @@
+{
+ "schema": "EXPORT01-resource-accounting-final/1",
+ "computed_at": "2026-09-17 14:15:57",
+ "run_dir": "C:\\models\\exports\\EXPORT01_RUN_20260917_135055",
+ "run_dir_tree": {
+  "n_files": 30,
+  "bytes": 1651797047
+ },
+ "out_of_dir_objects": [],
+ "zip": null,
+ "grand_total_bytes": 1651797047,
+ "disk_free_gib": {
+  "C": 28.042,
+  "D": 14.383
+ },
+ "note": "run 目录内的 ZIP 计数一次；解包副本在 %TEMP%（C 盘）单独列出；不含只读父资产"
+}

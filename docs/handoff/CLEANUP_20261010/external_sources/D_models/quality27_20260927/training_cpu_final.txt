@@ -1,0 +1,9 @@
+test_extra_input_has_gradient (__main__.TestConditional.test_extra_input_has_gradient) ... ok
+test_feather_covers_edges (__main__.TestConditional.test_feather_covers_edges) ... ok
+test_size_and_parameter_count (__main__.TestConditional.test_size_and_parameter_count) ... ok
+test_zero_new_channels_equal (__main__.TestConditional.test_zero_new_channels_equal) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.379s
+
+OK

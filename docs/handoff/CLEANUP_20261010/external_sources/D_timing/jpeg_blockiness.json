@@ -1,0 +1,661 @@
+{
+ "per_image": [
+  {
+   "tag": "test",
+   "name": "case1.jpg",
+   "blockiness_ratio": 0.41077,
+   "est_jpeg_q": 42.2
+  },
+  {
+   "tag": "test",
+   "name": "case10.jpg",
+   "blockiness_ratio": 0.05309,
+   "est_jpeg_q": 90.3
+  },
+  {
+   "tag": "test",
+   "name": "case100.jpg",
+   "blockiness_ratio": 0.06757,
+   "est_jpeg_q": 88.4
+  },
+  {
+   "tag": "test",
+   "name": "case11.jpg",
+   "blockiness_ratio": 0.15629,
+   "est_jpeg_q": 76.6
+  },
+  {
+   "tag": "test",
+   "name": "case12.jpg",
+   "blockiness_ratio": 0.04863,
+   "est_jpeg_q": 90.9
+  },
+  {
+   "tag": "test",
+   "name": "case13.jpg",
+   "blockiness_ratio": 0.07256,
+   "est_jpeg_q": 87.7
+  },
+  {
+   "tag": "test",
+   "name": "case14.jpg",
+   "blockiness_ratio": 0.09199,
+   "est_jpeg_q": 85.2
+  },
+  {
+   "tag": "test",
+   "name": "case15.jpg",
+   "blockiness_ratio": -0.07086,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case16.jpg",
+   "blockiness_ratio": 0.02044,
+   "est_jpeg_q": 94.6
+  },
+  {
+   "tag": "test",
+   "name": "case17.jpg",
+   "blockiness_ratio": -0.00522,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case18.jpg",
+   "blockiness_ratio": 0.20588,
+   "est_jpeg_q": 69.8
+  },
+  {
+   "tag": "test",
+   "name": "case19.jpg",
+   "blockiness_ratio": 0.05732,
+   "est_jpeg_q": 89.7
+  },
+  {
+   "tag": "test",
+   "name": "case2.jpg",
+   "blockiness_ratio": 0.19926,
+   "est_jpeg_q": 70.7
+  },
+  {
+   "tag": "test",
+   "name": "case20.jpg",
+   "blockiness_ratio": 0.03359,
+   "est_jpeg_q": 92.9
+  },
+  {
+   "tag": "test",
+   "name": "case21.jpg",
+   "blockiness_ratio": 0.10095,
+   "est_jpeg_q": 84.0
+  },
+  {
+   "tag": "test",
+   "name": "case22.jpg",
+   "blockiness_ratio": -0.00578,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case23.jpg",
+   "blockiness_ratio": 0.06674,
+   "est_jpeg_q": 88.5
+  },
+  {
+   "tag": "test",
+   "name": "case24.jpg",
+   "blockiness_ratio": 0.23835,
+   "est_jpeg_q": 65.3
+  },
+  {
+   "tag": "test",
+   "name": "case25.jpg",
+   "blockiness_ratio": 0.35707,
+   "est_jpeg_q": 48.7
+  },
+  {
+   "tag": "test",
+   "name": "case26.jpg",
+   "blockiness_ratio": 0.04302,
+   "est_jpeg_q": 91.6
+  },
+  {
+   "tag": "test",
+   "name": "case27.jpg",
+   "blockiness_ratio": 0.04408,
+   "est_jpeg_q": 91.5
+  },
+  {
+   "tag": "test",
+   "name": "case28.jpg",
+   "blockiness_ratio": 0.07513,
+   "est_jpeg_q": 87.4
+  },
+  {
+   "tag": "test",
+   "name": "case29.jpg",
+   "blockiness_ratio": 0.29845,
+   "est_jpeg_q": 56.9
+  },
+  {
+   "tag": "test",
+   "name": "case3.jpg",
+   "blockiness_ratio": 0.20714,
+   "est_jpeg_q": 69.6
+  },
+  {
+   "tag": "test",
+   "name": "case30.jpg",
+   "blockiness_ratio": 0.00184,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case31.jpg",
+   "blockiness_ratio": 0.0653,
+   "est_jpeg_q": 88.7
+  },
+  {
+   "tag": "test",
+   "name": "case32.jpg",
+   "blockiness_ratio": 0.04843,
+   "est_jpeg_q": 90.9
+  },
+  {
+   "tag": "test",
+   "name": "case33.jpg",
+   "blockiness_ratio": 0.01969,
+   "est_jpeg_q": 94.7
+  },
+  {
+   "tag": "test",
+   "name": "case34.jpg",
+   "blockiness_ratio": 0.06817,
+   "est_jpeg_q": 88.3
+  },
+  {
+   "tag": "test",
+   "name": "case35.jpg",
+   "blockiness_ratio": -0.10211,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case36.jpg",
+   "blockiness_ratio": -0.06898,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case37.jpg",
+   "blockiness_ratio": 0.07571,
+   "est_jpeg_q": 87.3
+  },
+  {
+   "tag": "test",
+   "name": "case38.jpg",
+   "blockiness_ratio": 0.04577,
+   "est_jpeg_q": 91.3
+  },
+  {
+   "tag": "test",
+   "name": "case39.jpg",
+   "blockiness_ratio": 0.03193,
+   "est_jpeg_q": 93.1
+  },
+  {
+   "tag": "test",
+   "name": "case4.jpg",
+   "blockiness_ratio": 0.13833,
+   "est_jpeg_q": 79.0
+  },
+  {
+   "tag": "test",
+   "name": "case40.jpg",
+   "blockiness_ratio": 0.05721,
+   "est_jpeg_q": 89.7
+  },
+  {
+   "tag": "test",
+   "name": "case41.jpg",
+   "blockiness_ratio": 0.02941,
+   "est_jpeg_q": 93.4
+  },
+  {
+   "tag": "test",
+   "name": "case42.jpg",
+   "blockiness_ratio": -0.00644,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case43.jpg",
+   "blockiness_ratio": 0.07217,
+   "est_jpeg_q": 87.8
+  },
+  {
+   "tag": "test",
+   "name": "case44.jpg",
+   "blockiness_ratio": -0.00088,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case45.jpg",
+   "blockiness_ratio": 0.00458,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case46.jpg",
+   "blockiness_ratio": 0.01587,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case47.jpg",
+   "blockiness_ratio": 0.09562,
+   "est_jpeg_q": 84.7
+  },
+  {
+   "tag": "test",
+   "name": "case48.jpg",
+   "blockiness_ratio": 0.04968,
+   "est_jpeg_q": 90.7
+  },
+  {
+   "tag": "test",
+   "name": "case49.jpg",
+   "blockiness_ratio": 0.03252,
+   "est_jpeg_q": 93.0
+  },
+  {
+   "tag": "test",
+   "name": "case5.jpg",
+   "blockiness_ratio": 0.54859,
+   "est_jpeg_q": 30.8
+  },
+  {
+   "tag": "test",
+   "name": "case50.jpg",
+   "blockiness_ratio": 0.01838,
+   "est_jpeg_q": 94.9
+  },
+  {
+   "tag": "test",
+   "name": "case51.jpg",
+   "blockiness_ratio": 0.02508,
+   "est_jpeg_q": 94.0
+  },
+  {
+   "tag": "test",
+   "name": "case52.jpg",
+   "blockiness_ratio": 0.07325,
+   "est_jpeg_q": 87.6
+  },
+  {
+   "tag": "test",
+   "name": "case53.jpg",
+   "blockiness_ratio": 0.05886,
+   "est_jpeg_q": 89.5
+  },
+  {
+   "tag": "test",
+   "name": "case54.jpg",
+   "blockiness_ratio": -0.10963,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case55.jpg",
+   "blockiness_ratio": -0.07861,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case56.jpg",
+   "blockiness_ratio": -0.05595,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case57.jpg",
+   "blockiness_ratio": 0.16609,
+   "est_jpeg_q": 75.2
+  },
+  {
+   "tag": "test",
+   "name": "case58.jpg",
+   "blockiness_ratio": 0.08568,
+   "est_jpeg_q": 86.0
+  },
+  {
+   "tag": "test",
+   "name": "case59.jpg",
+   "blockiness_ratio": -0.09901,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case6.jpg",
+   "blockiness_ratio": 0.02095,
+   "est_jpeg_q": 94.6
+  },
+  {
+   "tag": "test",
+   "name": "case60.jpg",
+   "blockiness_ratio": -0.02801,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case61.jpg",
+   "blockiness_ratio": -0.08862,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case62.jpg",
+   "blockiness_ratio": 0.05525,
+   "est_jpeg_q": 90.0
+  },
+  {
+   "tag": "test",
+   "name": "case63.jpg",
+   "blockiness_ratio": 0.0371,
+   "est_jpeg_q": 92.4
+  },
+  {
+   "tag": "test",
+   "name": "case64.jpg",
+   "blockiness_ratio": 0.11127,
+   "est_jpeg_q": 82.6
+  },
+  {
+   "tag": "test",
+   "name": "case65.jpg",
+   "blockiness_ratio": 0.11907,
+   "est_jpeg_q": 81.6
+  },
+  {
+   "tag": "test",
+   "name": "case66.jpg",
+   "blockiness_ratio": 0.11196,
+   "est_jpeg_q": 82.5
+  },
+  {
+   "tag": "test",
+   "name": "case67.jpg",
+   "blockiness_ratio": 0.04643,
+   "est_jpeg_q": 91.2
+  },
+  {
+   "tag": "test",
+   "name": "case68.jpg",
+   "blockiness_ratio": 0.03144,
+   "est_jpeg_q": 93.2
+  },
+  {
+   "tag": "test",
+   "name": "case69.jpg",
+   "blockiness_ratio": 0.12394,
+   "est_jpeg_q": 81.0
+  },
+  {
+   "tag": "test",
+   "name": "case7.jpg",
+   "blockiness_ratio": 0.02486,
+   "est_jpeg_q": 94.1
+  },
+  {
+   "tag": "test",
+   "name": "case70.jpg",
+   "blockiness_ratio": 0.11271,
+   "est_jpeg_q": 82.4
+  },
+  {
+   "tag": "test",
+   "name": "case71.jpg",
+   "blockiness_ratio": 0.03105,
+   "est_jpeg_q": 93.2
+  },
+  {
+   "tag": "test",
+   "name": "case72.jpg",
+   "blockiness_ratio": -0.0684,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case73.jpg",
+   "blockiness_ratio": 0.03091,
+   "est_jpeg_q": 93.2
+  },
+  {
+   "tag": "test",
+   "name": "case74.jpg",
+   "blockiness_ratio": 0.04206,
+   "est_jpeg_q": 91.8
+  },
+  {
+   "tag": "test",
+   "name": "case75.jpg",
+   "blockiness_ratio": 0.01528,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case76.jpg",
+   "blockiness_ratio": 0.06336,
+   "est_jpeg_q": 88.9
+  },
+  {
+   "tag": "test",
+   "name": "case77.jpg",
+   "blockiness_ratio": 0.12616,
+   "est_jpeg_q": 80.7
+  },
+  {
+   "tag": "test",
+   "name": "case78.jpg",
+   "blockiness_ratio": 0.04291,
+   "est_jpeg_q": 91.6
+  },
+  {
+   "tag": "test",
+   "name": "case79.jpg",
+   "blockiness_ratio": 0.10534,
+   "est_jpeg_q": 83.4
+  },
+  {
+   "tag": "test",
+   "name": "case8.jpg",
+   "blockiness_ratio": 0.03577,
+   "est_jpeg_q": 92.6
+  },
+  {
+   "tag": "test",
+   "name": "case80.jpg",
+   "blockiness_ratio": 0.05689,
+   "est_jpeg_q": 89.8
+  },
+  {
+   "tag": "test",
+   "name": "case81.jpg",
+   "blockiness_ratio": 0.04149,
+   "est_jpeg_q": 91.8
+  },
+  {
+   "tag": "test",
+   "name": "case82.jpg",
+   "blockiness_ratio": 0.09055,
+   "est_jpeg_q": 85.4
+  },
+  {
+   "tag": "test",
+   "name": "case83.jpg",
+   "blockiness_ratio": 0.03812,
+   "est_jpeg_q": 92.3
+  },
+  {
+   "tag": "test",
+   "name": "case84.jpg",
+   "blockiness_ratio": -0.09248,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case85.jpg",
+   "blockiness_ratio": -0.05941,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case86.jpg",
+   "blockiness_ratio": -0.08496,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case87.jpg",
+   "blockiness_ratio": 0.01225,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case88.jpg",
+   "blockiness_ratio": 0.03391,
+   "est_jpeg_q": 92.8
+  },
+  {
+   "tag": "test",
+   "name": "case89.jpg",
+   "blockiness_ratio": 0.06833,
+   "est_jpeg_q": 88.3
+  },
+  {
+   "tag": "test",
+   "name": "case9.jpg",
+   "blockiness_ratio": 0.05627,
+   "est_jpeg_q": 89.9
+  },
+  {
+   "tag": "test",
+   "name": "case90.jpg",
+   "blockiness_ratio": -0.08617,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case91.jpg",
+   "blockiness_ratio": 0.02341,
+   "est_jpeg_q": 94.2
+  },
+  {
+   "tag": "test",
+   "name": "case92.jpg",
+   "blockiness_ratio": 0.03301,
+   "est_jpeg_q": 93.0
+  },
+  {
+   "tag": "test",
+   "name": "case93.jpg",
+   "blockiness_ratio": 0.09898,
+   "est_jpeg_q": 84.2
+  },
+  {
+   "tag": "test",
+   "name": "case94.jpg",
+   "blockiness_ratio": 0.00298,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case95.jpg",
+   "blockiness_ratio": 0.05051,
+   "est_jpeg_q": 90.6
+  },
+  {
+   "tag": "test",
+   "name": "case96.jpg",
+   "blockiness_ratio": -0.09954,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "test",
+   "name": "case97.jpg",
+   "blockiness_ratio": 0.08519,
+   "est_jpeg_q": 86.1
+  },
+  {
+   "tag": "test",
+   "name": "case98.jpg",
+   "blockiness_ratio": 0.03072,
+   "est_jpeg_q": 93.3
+  },
+  {
+   "tag": "test",
+   "name": "case99.jpg",
+   "blockiness_ratio": 0.03233,
+   "est_jpeg_q": 93.1
+  },
+  {
+   "tag": "val",
+   "name": "case1_lq.jpg",
+   "blockiness_ratio": -0.05771,
+   "est_jpeg_q": 95
+  },
+  {
+   "tag": "val",
+   "name": "case2_lq.jpg",
+   "blockiness_ratio": 0.13182,
+   "est_jpeg_q": 79.9
+  },
+  {
+   "tag": "val",
+   "name": "case3_lq.jpg",
+   "blockiness_ratio": 0.03916,
+   "est_jpeg_q": 92.1
+  }
+ ],
+ "summary": {
+  "test_blockiness_ratio": {
+   "n": 100,
+   "mean": 0.0551,
+   "median": 0.0436,
+   "p10": -0.0692,
+   "p90": 0.1401,
+   "min": -0.1096,
+   "max": 0.5486
+  },
+  "test_est_jpeg_q": {
+   "n": 100,
+   "mean": 87.939,
+   "median": 91.55,
+   "p10": 78.76,
+   "p90": 95.0,
+   "min": 30.8,
+   "max": 95.0
+  },
+  "val_blockiness_ratio": {
+   "n": 3,
+   "mean": 0.0378,
+   "median": 0.0392,
+   "p10": -0.0383,
+   "p90": 0.1133,
+   "min": -0.0577,
+   "max": 0.1318
+  },
+  "calibration": {
+   "30": 0.559,
+   "40": 0.4295,
+   "50": 0.3459,
+   "60": 0.2769,
+   "70": 0.2045,
+   "80": 0.1312,
+   "90": 0.0553,
+   "95": 0.0178
+  }
+ }
+}

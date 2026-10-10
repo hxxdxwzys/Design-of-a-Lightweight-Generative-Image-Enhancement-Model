@@ -1,0 +1,3 @@
+﻿[bench baseline] c1_512   cold=1071.5 median=449.4 p90=455.6 mean=448.7
+[bench baseline] c7_512   cold=438.1 median=455.2 p90=462.7 mean=453.9
+[bench baseline] c25_512  cold=423.3 median=456.3 p90=460.9 mean=455.5

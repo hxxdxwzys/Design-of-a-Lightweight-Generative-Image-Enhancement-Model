@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.7775,
+ "niqe": 4.8063,
+ "musiq": 57.2095,
+ "maniqa": 0.3618,
+ "lapvar": 978.2,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\e5_w32",
+ "tag": "E5_w32_10k"
+}

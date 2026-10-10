@@ -1,0 +1,15 @@
+== (a) 空闲态：连续三轮（同一进程）==
+   idle-round1            median=  6.66 min=  6.31 p90=  6.84 max=  7.05 | 1890, 18.41, 69, 20
+   idle-round2            median=  5.48 min=  4.89 p90=  5.82 max=  5.83 | 2235, 26.15, 75, 97
+   idle-round3            median=  5.51 min=  5.03 p90=  5.91 max=  5.98 | 2235, 26.15, 75, 97
+== (b) 空闲态：新进程（跨会话方差）==
+Traceback (most recent call last):
+  File "C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\opt11_e4_protocol.py", line 43, in <module>
+    "import importlib.util,statistics,sys,time,torch;sys.path.insert(0,r'%s');import score01_bench as SB;"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ...<3 lines>...
+    "for _ in range(20):\n t=time.perf_counter();R.infer(x,prompt='');ts.append((time.perf_counter()-t)*1e3)\n"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    "print('median=%.2f min=%.2f'%(statistics.median(ts),min(ts)))" % (str(HERE), os.path.join(MD,'runner.py'), MD)]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string

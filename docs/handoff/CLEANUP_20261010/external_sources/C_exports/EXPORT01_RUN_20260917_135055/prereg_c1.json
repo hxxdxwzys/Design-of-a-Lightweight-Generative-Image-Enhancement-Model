@@ -1,0 +1,84 @@
+{
+ "schema": "EXPORT01-c1-prereg/1",
+ "cases": [
+  {
+   "name": "case1_crop512",
+   "source_file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case1.jpg",
+   "source_sha256": "4f6ac610c8d08dd3d16655ef46211b8b5dcaa5bb303886763aaa4162cc11a464",
+   "crop_box": [
+    1792,
+    1280,
+    2304,
+    1792
+   ],
+   "wh": [
+    512,
+    512
+   ],
+   "decoded_rgb_sha256": "cf98a4984599bd7bbbde819200420736ad727888d179ee9023adcc1fe17fb43a"
+  },
+  {
+   "name": "case1_full",
+   "source_file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case1.jpg",
+   "source_sha256": "4f6ac610c8d08dd3d16655ef46211b8b5dcaa5bb303886763aaa4162cc11a464",
+   "crop_box": null,
+   "wh": [
+    4096,
+    3072
+   ],
+   "decoded_rgb_sha256": "2118743dd06c3409c511e8b0950e8c9ecf79d6fa9a1f30e99463eee36db2eaa1"
+  },
+  {
+   "name": "case7_full",
+   "source_file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case7.jpg",
+   "source_sha256": "12450718a219c244ce75c5596bef3e195587fc79bbb58386849a057a56bddac4",
+   "crop_box": null,
+   "wh": [
+    4096,
+    3072
+   ],
+   "decoded_rgb_sha256": "db3d7d0992ac958eb963a98b92f7ea96cceb6db6d55a18edf2ffd0bf0a59399d"
+  },
+  {
+   "name": "case1_crop511x513",
+   "source_file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case1.jpg",
+   "source_sha256": "4f6ac610c8d08dd3d16655ef46211b8b5dcaa5bb303886763aaa4162cc11a464",
+   "crop_box": [
+    1792,
+    1280,
+    2305,
+    1791
+   ],
+   "wh": [
+    513,
+    511
+   ],
+   "decoded_rgb_sha256": "db43b01832b04962159c10fb2b862adf6451b4002647a2616171609a560c266f"
+  }
+ ],
+ "procedure": [
+  "源参考 = fp16 合并权重 + eager 子模块 + 同一 delivery_runner 编排",
+  "重载 = model_dir/your_model.pt（ScriptModule）+ 同一 runner 编排",
+  "每个输入各跑一次源参考与重载；512 裁切额外交错重复一次（RNG 局部协议）",
+  "fp32 对照使用 R-B attempt_01 已验收的 NPY（只读，不重跑）"
+ ],
+ "criteria": {
+  "same_precision_max_abs": 1e-05,
+  "same_precision_mean_abs": 1e-06,
+  "png_pixel_identical": true,
+  "output_contract": "float32/finite/[-1,1]/尺寸=输入",
+  "fp16_vs_fp32_max_abs_diagnostic": 0.05,
+  "fp16_vs_fp32_mean_abs_diagnostic": 0.002
+ },
+ "budget": {
+  "top_level_infers": 24,
+  "top_level_4k_infers": 8,
+  "component_probes": 64,
+  "gpu_wall_minutes": 60
+ },
+ "stop_conditions": [
+  "任一输入源参考与重载超过同精度判据",
+  "真实模型异常（NaN/Inf/OOM/资源缺失）",
+  "预算触顶或需要改配方/精度/依赖"
+ ]
+}

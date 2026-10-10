@@ -1,0 +1,34 @@
+{
+  "steps": 2000,
+  "checkpoint_sha256": "c050dd3afbef0b1ed1d840c559277afd0746628520aa19edae1e0766ec0a9b61",
+  "parent_sha256": "2770215987e2b5585dc26870a8a6fee05672bbf514267336498a1bf9e6409b62",
+  "reads": [
+    {
+      "input": 0,
+      "finite": true,
+      "u8max": 0.0,
+      "different_fraction": 0.0,
+      "repeat_exact": false
+    },
+    {
+      "input": 1,
+      "finite": true,
+      "u8max": 1.0,
+      "different_fraction": 0.06067148968577385,
+      "repeat_exact": true
+    },
+    {
+      "input": 2,
+      "finite": true,
+      "u8max": 1.0,
+      "different_fraction": 0.04155222699046135,
+      "repeat_exact": true
+    }
+  ],
+  "export_forward_reserved": 13,
+  "new_model": "conditional residual refiner; unchanged inherited one-step UNet",
+  "pass": false,
+  "model_sha256": "e6b440476f724dd3d2c13ee3e5b8cf5fd86b733c60b85eab549dd80d8c47309e",
+  "runner_sha256": "8e434e0240eed20b924e04f5f7338a037c8ec7821b8067159fe50ac7492ff70b",
+  "params": 877094
+}

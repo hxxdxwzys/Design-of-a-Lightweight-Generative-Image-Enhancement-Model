@@ -1,0 +1,16 @@
+M=0.000: mean=0.6337 delta=+0.0983 swaps=92
+M=0.005: mean=0.6337 delta=+0.0983 swaps=92
+M=0.010: mean=0.6333 delta=+0.0980 swaps=88
+M=0.015: mean=0.6333 delta=+0.0980 swaps=88
+M=0.020: mean=0.6330 delta=+0.0976 swaps=86
+M=0.025: mean=0.6326 delta=+0.0972 swaps=84
+M=0.030: mean=0.6318 delta=+0.0964 swaps=81
+[saved] choice_maps.json
+M=0.000: mean=0.8719 delta=+0.3365 swaps=100
+M=0.005: mean=0.8719 delta=+0.3365 swaps=100
+M=0.010: mean=0.8719 delta=+0.3365 swaps=100
+M=0.015: mean=0.8719 delta=+0.3365 swaps=100
+M=0.020: mean=0.8719 delta=+0.3365 swaps=100
+M=0.025: mean=0.8719 delta=+0.3365 swaps=100
+M=0.030: mean=0.8719 delta=+0.3365 swaps=100
+[saved] choice_maps.json

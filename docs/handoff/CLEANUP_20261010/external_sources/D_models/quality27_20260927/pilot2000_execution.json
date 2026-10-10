@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "start_epoch": 1790484621.541248,
+  "command": [
+    "D:\\Python\\python.exe",
+    "-B",
+    "C:\\\u751f\u6210\u5f0f\u56fe\u50cf\u589e\u5f3a\u8f7b\u91cf\u6a21\u578b\u8bbe\u8ba1\u6311\u6218\\workspace\\quality27\\train.py",
+    "--steps",
+    "2000"
+  ],
+  "sources": {
+    "common.py": "b9162f20002a30d6615dd178cc62cd7dc70ef0c357e6ff67262fc90fa0fdce9b",
+    "prepare.py": "a90c3d4e92e74cd60d5f1b14dbc49c3c018b053d39b60bfd1675803f0a2c3f53",
+    "supervise.py": "1b84a1b5ab3090449905a1fb916396e7841c97bb8375519db4d3c67a6674e7f7",
+    "test_cpu.py": "01e7758a3a3cdb90319c4fe90af04c84068b88371c5e002d66f499424486dfa8",
+    "train.py": "ae6f9d6ee87a743cd31759bbc696681ad2b655bbf4555250a441de9e9bac6d44"
+  },
+  "exit_code": 0,
+  "wall_s": 86.8528060913086
+}

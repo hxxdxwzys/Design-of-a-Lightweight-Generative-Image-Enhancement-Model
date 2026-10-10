@@ -1,0 +1,32 @@
+run_dir        D:\models\pipeline_baseline\PIPE01_20260917_000000
+status         OK   criteria_all_pass=True   device=cuda
+forwards       8   elapsed_s=261.9
+prereg_sha256  a60c0085943b80fc8e3f1f7fbba6f00824540e1fc4eb3f69c4b4797770bcf548
+load           A=29.9s peak=5855 MiB | B=12.8s peak=5852 MiB
+--- 逐样本成对读数 ---
+ case1_crop512  max_abs=0.000e+00 mean_abs=0.000e+00 n=786432 png_identical=True png=[512, 512, 3]
+ case1_full     max_abs=0.000e+00 mean_abs=0.000e+00 n=37748736 png_identical=True png=[3072, 4096, 3]
+ case7_full     max_abs=0.000e+00 mean_abs=0.000e+00 n=37748736 png_identical=True png=[3072, 4096, 3]
+--- 同实例重复 512 ---
+ A_crop512_run      max_abs=0.000e+00 mean_abs=0.000e+00
+ B_crop512_run      max_abs=0.000e+00 mean_abs=0.000e+00
+--- 逐次前向 ---
+ A case1_crop512  wall=  1.2s shape=[1, 3, 512, 512] min=-1.0 max=1.0 finite=True png_bytes=None
+ A case1_full     wall= 56.7s shape=[1, 3, 3072, 4096] min=-1.0 max=1.0 finite=True png_bytes=None
+ A case7_full     wall= 48.9s shape=[1, 3, 3072, 4096] min=-1.0 max=1.0 finite=True png_bytes=None
+ A case1_crop512  wall=  0.8s shape=[1, 3, 512, 512] min=-1.0 max=1.0 finite=True png_bytes=None
+ B case1_crop512  wall=  0.8s shape=[1, 3, 512, 512] min=-1.0 max=1.0 finite=None png_bytes=364322
+ B case1_full     wall= 51.8s shape=[1, 3, 3072, 4096] min=-1.0 max=1.0 finite=None png_bytes=14022360
+ B case7_full     wall= 51.8s shape=[1, 3, 3072, 4096] min=-1.0 max=1.0 finite=None png_bytes=17016367
+ B case1_crop512  wall=  0.8s shape=[1, 3, 512, 512] min=-1.0 max=1.0 finite=None png_bytes=364322
+--- 身份链 ---
+ config_sha256  1a2e44d7709168187b28e30ffa15b35f9f0f5431205ec9b983d50a9c90aca42a
+ eff_model      444ceaff90e044b92b5007f1c34d6f8db1757d03ef597bfef1e73dd011bfee1b  n_params=503901760
+ eff_vae        96264f881b1c4cfdd4a4cfb667d26db48ed56c5a720048aa8072514496cbdc77
+ eff_decoder    5a64d77cce035cd6330eed963d9fec29aa85177bcc4ce41ea5eb6e65f0bc01dc
+ load_report    {"base_keys": {"missing": [], "unexpected": []}, "lora": {"lora_keys_loaded": 288, "lora_scale": 0.8}, "ae_local_files_only": true, "dino_local_only": true}
+ tile_report    {"dit_tile_size_px": 512, "dit_tile_latent": 64, "dit_overlap_latent": 8, "dit_effective_overlap_px": 64, "dit_stride_px": 448, "vae_tile_size_px": 1024, "vae_tile_latent": 128, "vae_overlap_latent": 16, "vae_effective_overlap_px": 128, "vae_stride_px": 896}
+--- 输入 ---
+ case1_crop512  shape=[1, 3, 512, 512] sha=e15df1edd679dd41 crop_box=[1792, 1280, 2304, 1792]
+ case1_full     shape=[1, 3, 3072, 4096] sha=a7ea157e36817ec0 crop_box=None
+ case7_full     shape=[1, 3, 3072, 4096] sha=fe9d2de453b03129 crop_box=None

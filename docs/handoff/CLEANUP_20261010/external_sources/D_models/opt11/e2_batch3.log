@@ -1,0 +1,5 @@
+Loading pretrained model MUSIQ from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\musiq_koniq_ckpt-e95806b9.pth
+Loading pretrained model MANIQA from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\ckpt_koniq10k.pt
+PROXY OPT10img -> {"clipiqa": 0.9123, "niqe": 5.1584, "musiq": 65.8559, "maniqa": 0.5721, "lapvar": 1337.9, "n": 30, "dir": "D:\\models\\opt10\\output_dir", "tag": "OPT10img"}
+  (108.0 s, 30 张)
+PROXY_SUITE_DONE

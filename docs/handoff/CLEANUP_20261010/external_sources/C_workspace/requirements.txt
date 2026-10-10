@@ -1,0 +1,12 @@
+# 本地评测依赖（CPU 即可；训练请在云 GPU 环境装对应 CUDA 版 torch）
+# 安装: pip install -r requirements.txt
+torch>=2.1
+torchvision
+pyiqa>=0.1.16
+lpips
+opencv-python-headless
+numpy
+Pillow
+tqdm
+# pyiqa 的 clipiqa 经 openai-clip 依赖 pkg_resources，setuptools>=81 已移除该模块
+setuptools<81

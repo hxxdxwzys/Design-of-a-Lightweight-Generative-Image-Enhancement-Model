@@ -1,0 +1,3 @@
+m0s7_s5000_sc0.99: clip=0.9225 lpips=0.3561
+m0s7_s5000_sc0.97: clip=0.9203 lpips=0.3542
+m0s7_s5000_sc0.95: clip=0.9181 lpips=0.3526

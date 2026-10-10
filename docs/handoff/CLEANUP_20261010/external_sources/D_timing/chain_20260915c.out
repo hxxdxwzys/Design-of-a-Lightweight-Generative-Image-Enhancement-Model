@@ -1,0 +1,19 @@
+[09-14 20:34:35] >>> sweep_pix_slow
+[09-14 20:37:07] <<< sweep_pix_slow rc=0 (2.5 min)
+[09-14 20:37:07] >>> sweep_pkg
+[09-14 20:37:23] <<< sweep_pkg rc=0 (0.3 min)
+[09-14 20:37:23] >>> hypir_test30
+[09-14 20:38:29] <<< hypir_test30 rc=0 (1.1 min)
+[09-14 20:38:29] >>> render_v7g8k
+[09-14 20:39:55] <<< render_v7g8k rc=0 (1.4 min)
+[09-14 20:39:55] >>> measure_v7g8k
+[09-14 20:40:56] <<< measure_v7g8k rc=0 (1.0 min)
+[09-14 20:40:56] >>> render_v7g16k
+[09-14 20:42:23] <<< render_v7g16k rc=0 (1.5 min)
+[09-14 20:42:23] >>> measure_v7g16k
+[09-14 20:43:25] <<< measure_v7g16k rc=0 (1.0 min)
+[09-14 20:43:25] >>> render_v7g25k
+[09-14 20:44:52] <<< render_v7g25k rc=0 (1.5 min)
+[09-14 20:44:52] >>> measure_v7g25k
+[09-14 20:45:54] <<< measure_v7g25k rc=0 (1.0 min)
+[09-14 20:45:54] CHAIN_C_DONE

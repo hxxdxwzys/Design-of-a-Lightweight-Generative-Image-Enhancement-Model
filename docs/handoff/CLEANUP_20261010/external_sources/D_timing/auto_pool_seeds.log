@@ -1,0 +1,21 @@
+[convert] vosr_seed1: 100 jpgs
+[ok] vosr_seed1: clipiqa=0.5940 niqe=3.86, entries=48
+[convert] vosr_seed2: 100 jpgs
+[ok] vosr_seed2: clipiqa=0.5947 niqe=3.84, entries=49
+[convert] vosr_seed3: 100 jpgs
+[ok] vosr_seed3: clipiqa=0.5942 niqe=3.87, entries=50
+[convert] vosr_seed4: 100 jpgs
+[ok] vosr_seed4: clipiqa=0.5947 niqe=3.86, entries=51
+[convert] vosr_seed5: 100 jpgs
+[ok] vosr_seed5: clipiqa=0.5954 niqe=3.86, entries=52
+[convert] vosr_seed6: 100 jpgs
+[ok] vosr_seed6: clipiqa=0.5946 niqe=3.83, entries=53
+[convert] vosr_seed8: 100 jpgs
+[ok] vosr_seed8: clipiqa=0.5935 niqe=3.87, entries=54
+[convert] vosr_seed9: 100 jpgs
+[ok] vosr_seed9: clipiqa=0.5932 niqe=3.85, entries=55
+[convert] vosr_seed10: 100 jpgs
+[ok] vosr_seed10: clipiqa=0.5939 niqe=3.86, entries=56
+[convert] vosr_seed11: 100 jpgs
+[ok] vosr_seed11: clipiqa=0.5943 niqe=3.85, entries=57
+[done]

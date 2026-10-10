@@ -1,0 +1,22 @@
+img (4096, 3072)
+[create] clipiqa  3.4s
+D:\tmp_timing\_timing_iqa.py:24: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(arr)).permute(2,0,1).unsqueeze(0).cuda().float().div_(255)
+  clipiqa  4K         0.8791  3.1s
+  clipiqa  crop1024   0.8368  0.1s
+  clipiqa  resize512  0.4266  0.1s
+Loading pretrained model MUSIQ from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\musiq_koniq_ckpt-e95806b9.pth
+[create] musiq    0.7s
+  musiq    4K         42.7314  108.9s
+  musiq    crop1024   57.4155  0.2s
+  musiq    resize512  61.3215  0.1s
+Loading pretrained model MANIQA from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\ckpt_koniq10k.pt
+[create] maniqa   4.3s
+  maniqa   4K         0.4536  3.6s
+  maniqa   crop1024   0.4823  3.8s
+  maniqa   resize512  0.4410  3.7s
+[create] niqe     0.2s
+  niqe     4K         5.8494  1.5s
+  niqe     crop1024   5.3267  0.1s
+  niqe     resize512  5.7714  0.1s
+TIMING_IQA_DONE

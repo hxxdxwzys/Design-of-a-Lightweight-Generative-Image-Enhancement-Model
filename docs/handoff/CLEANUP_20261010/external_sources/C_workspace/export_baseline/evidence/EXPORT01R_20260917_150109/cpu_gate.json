@@ -1,0 +1,150 @@
+{
+ "schema": "EXPORT01R-cpu-gate/1",
+ "generated_at": "2026-09-17 15:10:36",
+ "isolated_dir": "C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\export01r_gate_nujloi8z\\export_baseline",
+ "coverage": {
+  "EXP-R01": [
+   "TestExpR01Fusion.test_zero_velocity_preserves_noise",
+   "TestExpR01Fusion.test_const_and_varying_velocity_match_independent_formula",
+   "TestExpR01Fusion.test_old_buggy_formula_differs"
+  ],
+  "EXP-R02": [
+   "r_control_scenarios:happy",
+   "r_control_scenarios:crash",
+   "TestSupervisorFaultInjection.test_happy_path_all_true",
+   "TestSupervisorFaultInjection.test_crash_leaves_ledger_inconsistent"
+  ],
+  "EXP-R03": [
+   "TestExpR03NonFinite.test_nan_inf_rejected_before_clamp_and_quantization",
+   "TestExpR03NonFinite.test_wavelet_would_mask_nonfinite"
+  ],
+  "EXP-R04": [
+   "TestLedger.test_reserve_is_pre_charged_and_non_refundable",
+   "TestLedger.test_limits_enforced",
+   "TestLedger.test_wall_clock_enforced",
+   "TestLedger.test_lock_not_auto_taken_over",
+   "TestLedger.test_cross_process_accumulation",
+   "TestPidAlive.test_self_probe_is_safe",
+   "r_control_scenarios:timeout",
+   "r_control_scenarios:prelock"
+  ],
+  "EXP-R05": [
+   "r_merge_probe.py（独立加载 fp32 父实例对照，attempt 内执行）"
+  ],
+  "EXP-R06": [
+   "r_build.py 内容哈希/CastIn 记录",
+   "r_verify.py 双方与重复 NPY 保存"
+  ],
+  "EXP-R07": [
+   "make_r_prereg.py 契约字段",
+   "r_supervisor.py 产物核验段"
+  ]
+ },
+ "checks": {
+  "suite_exit_0": true,
+  "verbose_exit_0": true,
+  "no_failures": true,
+  "n_tests": 45,
+  "n_tests_at_least_45": true,
+  "control_scenarios_exit_0": true,
+  "control_scenarios_all_pass": true,
+  "coverage_entries_present": true,
+  "all_sources_frozen": true
+ },
+ "source_hashes_frozen": {
+  "chain.py": {
+   "sha256": "9512049a5c7d310a2e376428af4d9a691f12e656b5b3c5093b6e99fed8a4eb15",
+   "bytes": 10476,
+   "frozen_copy": "chain.py",
+   "copy_sha256": "9512049a5c7d310a2e376428af4d9a691f12e656b5b3c5093b6e99fed8a4eb15"
+  },
+  "delivery_runner.py": {
+   "sha256": "89b40d6a6b08b1321b3851c813f0aa7659dc4ef13d62fdd1fa3829daace78ad1",
+   "bytes": 12448,
+   "frozen_copy": "delivery_runner.py",
+   "copy_sha256": "89b40d6a6b08b1321b3851c813f0aa7659dc4ef13d62fdd1fa3829daace78ad1"
+  },
+  "r_ledger.py": {
+   "sha256": "19f0b3f06f580c26c605714cfee4cc8ef3491207dfdb6f6286a22c02e4a78184",
+   "bytes": 8339,
+   "frozen_copy": "r_ledger.py",
+   "copy_sha256": "19f0b3f06f580c26c605714cfee4cc8ef3491207dfdb6f6286a22c02e4a78184"
+  },
+  "r_verify.py": {
+   "sha256": "c6a5ed5487c0b7da56125bff265984b01ccc7a86a35cfbb5d501d078b4b38d3c",
+   "bytes": 14968,
+   "frozen_copy": "r_verify.py",
+   "copy_sha256": "c6a5ed5487c0b7da56125bff265984b01ccc7a86a35cfbb5d501d078b4b38d3c"
+  },
+  "r_build.py": {
+   "sha256": "1cce5a7e65718eb4c5f5315e9ef4bd0069d6bfebae3a44881cc8ceb162ce52b0",
+   "bytes": 11844,
+   "frozen_copy": "r_build.py",
+   "copy_sha256": "1cce5a7e65718eb4c5f5315e9ef4bd0069d6bfebae3a44881cc8ceb162ce52b0"
+  },
+  "r_worker.py": {
+   "sha256": "a1ad6e54d9fd794943018252b88665cc7c3bbab3fd45187def7b18de02a141e6",
+   "bytes": 4247,
+   "frozen_copy": "r_worker.py",
+   "copy_sha256": "a1ad6e54d9fd794943018252b88665cc7c3bbab3fd45187def7b18de02a141e6"
+  },
+  "r_supervisor.py": {
+   "sha256": "8799913fef0bb1b45b30ba67a69ff087256255154e98f1faa68cc993fde96696",
+   "bytes": 10019,
+   "frozen_copy": "r_supervisor.py",
+   "copy_sha256": "8799913fef0bb1b45b30ba67a69ff087256255154e98f1faa68cc993fde96696"
+  },
+  "make_r_prereg.py": {
+   "sha256": "95a688c79b828ba290ff9ee47ffb5a1d60986c4d5dd321803a7a141ffa8b7199",
+   "bytes": 3374,
+   "frozen_copy": "make_r_prereg.py",
+   "copy_sha256": "95a688c79b828ba290ff9ee47ffb5a1d60986c4d5dd321803a7a141ffa8b7199"
+  },
+  "export_config.json": {
+   "sha256": "ae68e3660df7501e6fe3aa38021d7eeda7499adfdb5c5b1b381a8797c65e6f96",
+   "bytes": 1898,
+   "frozen_copy": "export_config.json",
+   "copy_sha256": "ae68e3660df7501e6fe3aa38021d7eeda7499adfdb5c5b1b381a8797c65e6f96"
+  },
+  "tests/test_wavelet_cpu.py": {
+   "sha256": "07dbad1b79a6aa9c49746b4c2d5e9fb57ee02163ead40637e8a4d25bc4d58e78",
+   "bytes": 5581,
+   "frozen_copy": "test_wavelet_cpu.py",
+   "copy_sha256": "07dbad1b79a6aa9c49746b4c2d5e9fb57ee02163ead40637e8a4d25bc4d58e78"
+  },
+  "tests/test_delivery_cpu.py": {
+   "sha256": "b424a3124871992fea625b50aeb734aa14b5657246e4aa74c67a71e23e235d1f",
+   "bytes": 6468,
+   "frozen_copy": "test_delivery_cpu.py",
+   "copy_sha256": "b424a3124871992fea625b50aeb734aa14b5657246e4aa74c67a71e23e235d1f"
+  },
+  "tests/test_verify_logic_cpu.py": {
+   "sha256": "9c2c5d538fa6ec66ed88c095eb30ce6c7b1646a434d5c66438c9ce907b693c2a",
+   "bytes": 2782,
+   "frozen_copy": "test_verify_logic_cpu.py",
+   "copy_sha256": "9c2c5d538fa6ec66ed88c095eb30ce6c7b1646a434d5c66438c9ce907b693c2a"
+  },
+  "tests/test_export_r01_r03_cpu.py": {
+   "sha256": "d2b1243d33b6f97f9c189964291d48eba4cc50ba3921436919ff9203a678e8b2",
+   "bytes": 9355,
+   "frozen_copy": "test_export_r01_r03_cpu.py",
+   "copy_sha256": "d2b1243d33b6f97f9c189964291d48eba4cc50ba3921436919ff9203a678e8b2"
+  },
+  "tests/test_export_r_control_cpu.py": {
+   "sha256": "8716d56e27481c86d06b201c75c5a76380924a8d32845602eaa7efa7c8d96489",
+   "bytes": 6925,
+   "frozen_copy": "test_export_r_control_cpu.py",
+   "copy_sha256": "8716d56e27481c86d06b201c75c5a76380924a8d32845602eaa7efa7c8d96489"
+  },
+  "tests/test_r_pid_probe_cpu.py": {
+   "sha256": "eef9685b1ac3324bc0b2e88321383dd29b2f679192b48e9aa2dcc2034e53f548",
+   "bytes": 1186,
+   "frozen_copy": "test_r_pid_probe_cpu.py",
+   "copy_sha256": "eef9685b1ac3324bc0b2e88321383dd29b2f679192b48e9aa2dcc2034e53f548"
+  }
+ },
+ "open_issues": [
+  "EXP-R05 的合并对照在 attempt 内以独立进程执行，CPU 侧只冻结脚本"
+ ],
+ "verdict": "READY_FOR_EXPORT01R_ATTEMPT_01"
+}

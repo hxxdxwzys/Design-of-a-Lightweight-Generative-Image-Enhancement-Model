@@ -1,0 +1,10 @@
+[load] D:\models\metric_net\net_s6000.pt step=6000
+[val] case1 rendered
+[val] case2 rendered
+[val] case3 rendered
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+  case1: lpips=0.4523 clipiqa=0.3832
+  case2: lpips=0.2851 clipiqa=0.5696
+  case3: lpips=0.3495 clipiqa=0.5650
+=== s6k_verify: lpips=0.3623 clipiqa=0.5059
+=== 公式质量分量: 25.7 (HYPIR=23.9)

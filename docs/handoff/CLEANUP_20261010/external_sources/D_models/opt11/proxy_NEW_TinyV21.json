@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.6306,
+ "niqe": 5.4828,
+ "musiq": 48.6138,
+ "maniqa": 0.2695,
+ "lapvar": 164.2,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\e2_pkg_Tinyv21\\",
+ "tag": "NEW_TinyV21"
+}

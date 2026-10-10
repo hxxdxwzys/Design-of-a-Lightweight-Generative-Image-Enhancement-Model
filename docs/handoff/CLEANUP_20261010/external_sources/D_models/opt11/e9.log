@@ -1,0 +1,5 @@
+Loading pretrained model MUSIQ from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\musiq_koniq_ckpt-e95806b9.pth
+Loading pretrained model MANIQA from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\ckpt_koniq10k.pt
+PROXY E9_ov128 -> {"clipiqa": 0.8105, "niqe": 5.0448, "musiq": 57.5249, "maniqa": 0.3862, "lapvar": 1029.5, "n": 30, "dir": "D:\\models\\opt11\\e9_e9_ov128", "tag": "E9_ov128"}
+  (159.0 s, 30 张)
+PROXY_SUITE_DONE

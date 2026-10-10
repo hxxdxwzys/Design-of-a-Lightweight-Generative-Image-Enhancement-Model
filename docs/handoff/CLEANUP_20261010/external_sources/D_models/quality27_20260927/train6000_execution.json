@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "start_epoch": 1790484800.0507903,
+  "command": [
+    "D:\\Python\\python.exe",
+    "-B",
+    "C:\\\u751f\u6210\u5f0f\u56fe\u50cf\u589e\u5f3a\u8f7b\u91cf\u6a21\u578b\u8bbe\u8ba1\u6311\u6218\\workspace\\quality27\\train.py",
+    "--steps",
+    "6000",
+    "--resume",
+    "D:/models/quality27_20260927/conditional_s2000.pt"
+  ],
+  "sources": {
+    "common.py": "b9162f20002a30d6615dd178cc62cd7dc70ef0c357e6ff67262fc90fa0fdce9b",
+    "infer.py": "d8ea74c0e98eaf1ca74e8902654b231d3d50e1335cc6edb38a5262ae9967c58c",
+    "prepare.py": "a90c3d4e92e74cd60d5f1b14dbc49c3c018b053d39b60bfd1675803f0a2c3f53",
+    "supervise.py": "1b84a1b5ab3090449905a1fb916396e7841c97bb8375519db4d3c67a6674e7f7",
+    "test_cpu.py": "8cbea9957a151e4013507605135861300f3b3c9ed3a6465c6d541d55dc67334a",
+    "train.py": "ae6f9d6ee87a743cd31759bbc696681ad2b655bbf4555250a441de9e9bac6d44",
+    "validate_refiner.py": "192b944c78272ce77d243e82417174de5de5d9d3d672e4d4b21637520dfe8e70"
+  },
+  "exit_code": 0,
+  "wall_s": 200.22389006614685
+}

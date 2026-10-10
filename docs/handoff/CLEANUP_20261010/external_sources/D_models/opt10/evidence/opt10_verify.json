@@ -1,0 +1,46 @@
+{
+ "A_opt01": {
+  "calls_ms": [
+   1076.3,
+   333.4,
+   336.9
+  ],
+  "repeat_max_abs": 0.0,
+  "vs_opt01_max": 0.0,
+  "vs_opt01_mean": 0.0
+ },
+ "B_opt10": {
+  "calls_ms": [
+   518.5,
+   342.0,
+   332.1
+  ],
+  "repeat_max_abs": 0.0,
+  "vs_opt01_max": 0.44705891609191895,
+  "vs_opt01_mean": 0.010097694583237171
+ },
+ "unsharp_cost_ms": -4.8,
+ "full4k": {
+  "1": {
+   "wall_ms": 25840.6,
+   "finite": true
+  },
+  "5": {
+   "wall_ms": 26002.8,
+   "finite": true
+  },
+  "25": {
+   "wall_ms": 29941.9,
+   "finite": true
+  },
+  "88": {
+   "wall_ms": 33369.6,
+   "finite": true
+  }
+ },
+ "budget": {
+  "top": 21,
+  "top4k": 5,
+  "component": 0
+ }
+}

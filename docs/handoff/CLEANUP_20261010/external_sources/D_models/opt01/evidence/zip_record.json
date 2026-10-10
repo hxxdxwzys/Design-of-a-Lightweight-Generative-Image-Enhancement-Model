@@ -1,0 +1,32 @@
+{
+ "schema": "EXPORT01-zip-record/1",
+ "zip_path": "D:\\models\\opt01\\Track2_OPT01_fp16full_v1.zip",
+ "zip_name": "Track2_OPT01_fp16full_v1.zip",
+ "zip_bytes": 1964509744,
+ "zip_sha256": "a8a74e205be6a33bcdd8119d908fe83335814c43aab69c7e9cbd0b9ba09f145a",
+ "max_bytes": 10000000000,
+ "within_limit": true,
+ "n_entries": 103,
+ "n_jpg": 100,
+ "n_model_files": 3,
+ "created_at": "2026-09-18 19:11:01",
+ "pack_s": 103.794,
+ "model_files": [
+  {
+   "path": "model_dir/models_export.json",
+   "bytes": 1918,
+   "sha256": "c0b8141dbe1e1e5dbcf45df9cab0567d0cba56e969a64b99e3b046503ea37b94"
+  },
+  {
+   "path": "model_dir/runner.py",
+   "bytes": 13032,
+   "sha256": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314"
+  },
+  {
+   "path": "model_dir/your_model.pt",
+   "bytes": 1343349163,
+   "sha256": "0a10f2c4f4a0fa7d9347288979a3f00ad4859be70a2ddd1c10cda48470b2fbbe"
+  }
+ ],
+ "entry_paths_sha256": "243054b4a565a80082ff96c25bede07eba58f1e5d744d9fb14da03c85830c72b"
+}

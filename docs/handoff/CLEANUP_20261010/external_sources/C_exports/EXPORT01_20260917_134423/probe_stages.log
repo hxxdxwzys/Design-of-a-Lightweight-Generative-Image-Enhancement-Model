@@ -1,0 +1,52 @@
+[stage] start  0.0s
+[stage] assets_loaded  54.7s
+[stage] lora_merge_checked  56.8s
+[stage] fp16_cast_done  56.8s
+[stage] traced vae_enc_512  58.0s
+[stage] traced vae_enc_1024  117.2s
+[stage] traced dino_feat  118.9s
+Timeout (0:02:00)!
+Thread 0x00007930 (most recent call first):
+  File "D:\Python\Lib\threading.py", line 363 in wait
+  File "D:\Python\Lib\threading.py", line 659 in wait
+  File "D:\Python\Lib\site-packages\tqdm\_monitor.py", line 69 in run
+  File "D:\Python\Lib\threading.py", line 1041 in _bootstrap_inner
+  File "D:\Python\Lib\threading.py", line 1012 in _bootstrap
+
+Thread 0x00001954 (most recent call first):
+  File "D:\Python\Lib\site-packages\einops\_backends.py", line 96 in reshape
+  File "D:\Python\Lib\site-packages\einops\einops.py", line 243 in _apply_recipe
+  File "D:\Python\Lib\site-packages\einops\einops.py", line 540 in reduce
+  File "D:\Python\Lib\site-packages\einops\einops.py", line 616 in rearrange
+  File "D:\models/finals/VOSR\models\pos_embed.py", line 39 in rotate_half
+  File "D:\models/finals/VOSR\models\pos_embed.py", line 145 in forward
+  File "D:\Python\Lib\site-packages\torch\_dynamo\eval_frame.py", line 838 in _fn
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1741 in _slow_forward
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1762 in _call_impl
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1751 in _wrapped_call_impl
+  File "D:\models/finals/VOSR\models\lightningdit.py", line 150 in forward
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1741 in _slow_forward
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1762 in _call_impl
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1751 in _wrapped_call_impl
+  File "D:\models/finals/VOSR\models\lightningdit.py", line 301 in forward
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1741 in _slow_forward
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1762 in _call_impl
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1751 in _wrapped_call_impl
+  File "D:\models/finals/VOSR\models\lightningdit.py", line 600 in forward_flexible
+  File "C:\\u751f\u6210\u5f0f\u56fe\u50cf\u589e\u5f3a\u8f7b\u91cf\u6a21\u578b\u8bbe\u8ba1\u6311\u6218\\u751f\u6210\u5f0f\u56fe\u50cf\u589e\u5f3a\u8f7b\u91cf\u6a21\u578b\u8bbe\u8ba1\u6311\u6218\workspace\export_baseline\chain.py", line 200 in forward
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1741 in _slow_forward
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1762 in _call_impl
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1751 in _wrapped_call_impl
+  File "D:\Python\Lib\site-packages\torch\jit\_trace.py", line 1279 in trace_module
+  File "D:\Python\Lib\site-packages\torch\jit\_trace.py", line 696 in _trace_impl
+  File "D:\Python\Lib\site-packages\torch\jit\_trace.py", line 1002 in trace
+  File "C:\\u751f\u6210\u5f0f\u56fe\u50cf\u589e\u5f3a\u8f7b\u91cf\u6a21\u578b\u8bbe\u8ba1\u6311\u6218\\u751f\u6210\u5f0f\u56fe\u50cf\u589e\u5f3a\u8f7b\u91cf\u6a21\u578b\u8bbe\u8ba1\u6311\u6218\workspace\export_baseline\probe_trace_gpu.py", line 132 in main
+  File "C:\\u751f\u6210\u5f0f\u56fe\u50cf\u589e\u5f3a\u8f7b\u91cf\u6a21\u578b\u8bbe\u8ba1\u6311\u6218\\u751f\u6210\u5f0f\u56fe\u50cf\u589e\u5f3a\u8f7b\u91cf\u6a21\u578b\u8bbe\u8ba1\u6311\u6218\workspace\export_baseline\probe_trace_gpu.py", line 225 in <module>
+[stage] traced dit_step  121.5s
+[stage] traced dec_64  123.2s
+[stage] traced dec_128  123.7s
+[stage] traced wavelet  129.0s
+[stage] scripted container  129.0s
+[stage] saved + hashed ckpt  133.5s
+[stage] reloaded  136.6s
+[stage] eager 512 done  137.2s

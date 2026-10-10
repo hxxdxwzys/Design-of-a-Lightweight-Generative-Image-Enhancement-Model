@@ -1,0 +1,7 @@
+[stage] start  0.0s
+[stage] assets_loaded  34.2s
+[stage] lora_merge_checked  35.2s
+[stage] fp16_cast_done  35.3s
+[stage] traced vae_enc_512  37.0s
+[stage] traced vae_enc_1024  58.1s
+[stage] traced dino_feat  59.1s

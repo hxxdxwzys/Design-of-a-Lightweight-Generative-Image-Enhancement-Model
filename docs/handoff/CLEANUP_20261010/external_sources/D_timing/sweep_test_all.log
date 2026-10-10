@@ -1,0 +1,278 @@
+[start] 23 jobs, limit=100, test_files=100
+[skip] old_s5000 已有结果 (n=100)
+[skip] old_s7000 已有结果 (n=100)
+[render] old_s8000 step=8000 开始 (0/100)
+  [10/100] 7.57s/img, eta 11.4min
+  [20/100] 7.63s/img, eta 10.2min
+  [30/100] 7.66s/img, eta 8.9min
+  [40/100] 7.68s/img, eta 7.7min
+  [50/100] 7.70s/img, eta 6.4min
+  [60/100] 7.70s/img, eta 5.1min
+  [70/100] 7.70s/img, eta 3.9min
+  [80/100] 7.71s/img, eta 2.6min
+  [90/100] 7.71s/img, eta 1.3min
+  [100/100] 7.71s/img, eta 0.0min
+[render] old_s8000 完成 12.9min
+[metrics] old_s8000: clipiqa=0.4821 niqe=4.91 (15.5min)
+[render] old_s9000 step=9000 开始 (0/100)
+  [10/100] 7.78s/img, eta 11.7min
+  [20/100] 7.78s/img, eta 10.4min
+  [30/100] 7.77s/img, eta 9.1min
+  [40/100] 7.78s/img, eta 7.8min
+  [50/100] 7.78s/img, eta 6.5min
+  [60/100] 7.78s/img, eta 5.2min
+  [70/100] 7.78s/img, eta 3.9min
+  [80/100] 7.78s/img, eta 2.6min
+  [90/100] 7.79s/img, eta 1.3min
+  [100/100] 7.79s/img, eta 0.0min
+[render] old_s9000 完成 13.0min
+[metrics] old_s9000: clipiqa=0.4950 niqe=4.98 (15.6min)
+[render] old_s10000 step=10000 开始 (0/100)
+  [10/100] 7.80s/img, eta 11.7min
+  [20/100] 7.80s/img, eta 10.4min
+  [30/100] 7.81s/img, eta 9.1min
+  [40/100] 7.83s/img, eta 7.8min
+  [50/100] 7.83s/img, eta 6.5min
+  [60/100] 7.82s/img, eta 5.2min
+  [70/100] 7.81s/img, eta 3.9min
+  [80/100] 7.81s/img, eta 2.6min
+  [90/100] 7.81s/img, eta 1.3min
+  [100/100] 7.81s/img, eta 0.0min
+[render] old_s10000 完成 13.0min
+[metrics] old_s10000: clipiqa=0.4566 niqe=5.10 (15.6min)
+[render] f2k_s1000 step=1000 开始 (0/100)
+  [10/100] 7.80s/img, eta 11.7min
+  [20/100] 7.79s/img, eta 10.4min
+  [30/100] 7.82s/img, eta 9.1min
+  [40/100] 7.87s/img, eta 7.9min
+  [50/100] 7.90s/img, eta 6.6min
+  [60/100] 7.91s/img, eta 5.3min
+  [70/100] 7.91s/img, eta 4.0min
+  [80/100] 7.91s/img, eta 2.6min
+  [90/100] 7.90s/img, eta 1.3min
+  [100/100] 7.90s/img, eta 0.0min
+[render] f2k_s1000 完成 13.2min
+[metrics] f2k_s1000: clipiqa=0.4709 niqe=4.79 (15.8min)
+[render] f2k_s2000 step=2000 开始 (0/100)
+  [10/100] 7.93s/img, eta 11.9min
+  [20/100] 7.90s/img, eta 10.5min
+  [30/100] 7.89s/img, eta 9.2min
+  [40/100] 7.88s/img, eta 7.9min
+  [50/100] 7.88s/img, eta 6.6min
+  [60/100] 7.89s/img, eta 5.3min
+  [70/100] 7.89s/img, eta 3.9min
+  [80/100] 7.89s/img, eta 2.6min
+  [90/100] 7.89s/img, eta 1.3min
+  [100/100] 7.88s/img, eta 0.0min
+[render] f2k_s2000 完成 13.1min
+[metrics] f2k_s2000: clipiqa=0.4845 niqe=4.88 (15.7min)
+[render] f2k_s3000 step=3000 开始 (0/100)
+  [10/100] 7.84s/img, eta 11.8min
+  [20/100] 7.83s/img, eta 10.4min
+  [30/100] 7.84s/img, eta 9.2min
+  [40/100] 7.84s/img, eta 7.8min
+  [50/100] 7.85s/img, eta 6.5min
+  [60/100] 7.87s/img, eta 5.2min
+  [70/100] 7.87s/img, eta 3.9min
+  [80/100] 7.80s/img, eta 2.6min
+  [90/100] 7.74s/img, eta 1.3min
+  [100/100] 7.70s/img, eta 0.0min
+[render] f2k_s3000 完成 12.8min
+[metrics] f2k_s3000: clipiqa=0.4838 niqe=5.10 (15.2min)
+[render] f2k_s4000 step=4000 开始 (0/100)
+  [10/100] 7.14s/img, eta 10.7min
+  [20/100] 7.12s/img, eta 9.5min
+  [30/100] 7.10s/img, eta 8.3min
+  [40/100] 7.09s/img, eta 7.1min
+  [50/100] 7.08s/img, eta 5.9min
+  [60/100] 7.08s/img, eta 4.7min
+  [70/100] 7.08s/img, eta 3.5min
+  [80/100] 7.08s/img, eta 2.4min
+  [90/100] 7.08s/img, eta 1.2min
+  [100/100] 7.08s/img, eta 0.0min
+[render] f2k_s4000 完成 11.8min
+[metrics] f2k_s4000: clipiqa=0.5044 niqe=5.21 (14.2min)
+[render] f2k_s5000 step=5000 开始 (0/100)
+  [10/100] 7.13s/img, eta 10.7min
+  [20/100] 7.11s/img, eta 9.5min
+  [30/100] 7.10s/img, eta 8.3min
+  [40/100] 7.10s/img, eta 7.1min
+  [50/100] 7.09s/img, eta 5.9min
+  [60/100] 7.08s/img, eta 4.7min
+  [70/100] 7.08s/img, eta 3.5min
+  [80/100] 7.07s/img, eta 2.4min
+  [90/100] 7.07s/img, eta 1.2min
+  [100/100] 7.07s/img, eta 0.0min
+[render] f2k_s5000 完成 11.8min
+[metrics] f2k_s5000: clipiqa=0.4543 niqe=5.24 (14.2min)
+[render] f2k_s6000 step=6000 开始 (0/100)
+  [10/100] 7.10s/img, eta 10.6min
+  [20/100] 7.08s/img, eta 9.4min
+  [30/100] 7.08s/img, eta 8.3min
+  [40/100] 7.08s/img, eta 7.1min
+  [50/100] 7.08s/img, eta 5.9min
+  [60/100] 7.08s/img, eta 4.7min
+  [70/100] 7.08s/img, eta 3.5min
+  [80/100] 7.08s/img, eta 2.4min
+  [90/100] 7.09s/img, eta 1.2min
+  [100/100] 7.09s/img, eta 0.0min
+[render] f2k_s6000 完成 11.8min
+[metrics] f2k_s6000: clipiqa=0.4364 niqe=5.28 (14.2min)
+[render] f2k_s7000 step=7000 开始 (0/100)
+  [10/100] 7.21s/img, eta 10.8min
+  [20/100] 7.17s/img, eta 9.6min
+  [30/100] 7.13s/img, eta 8.3min
+  [40/100] 7.10s/img, eta 7.1min
+  [50/100] 7.06s/img, eta 5.9min
+  [60/100] 7.03s/img, eta 4.7min
+  [70/100] 7.01s/img, eta 3.5min
+  [80/100] 6.99s/img, eta 2.3min
+  [90/100] 6.98s/img, eta 1.2min
+  [100/100] 6.97s/img, eta 0.0min
+[render] f2k_s7000 完成 11.6min
+[metrics] f2k_s7000: clipiqa=0.4871 niqe=5.22 (14.0min)
+[render] f2k_s8000 step=8000 开始 (0/100)
+  [10/100] 6.88s/img, eta 10.3min
+  [20/100] 6.85s/img, eta 9.1min
+  [30/100] 6.83s/img, eta 8.0min
+  [40/100] 6.82s/img, eta 6.8min
+  [50/100] 6.81s/img, eta 5.7min
+  [60/100] 6.80s/img, eta 4.5min
+  [70/100] 6.80s/img, eta 3.4min
+  [80/100] 6.80s/img, eta 2.3min
+  [90/100] 6.79s/img, eta 1.1min
+  [100/100] 6.79s/img, eta 0.0min
+[render] f2k_s8000 完成 11.3min
+[metrics] f2k_s8000: clipiqa=0.4631 niqe=5.23 (13.6min)
+[render] f2k_s9000 step=9000 开始 (0/100)
+  [10/100] 6.82s/img, eta 10.2min
+  [20/100] 6.80s/img, eta 9.1min
+  [30/100] 6.80s/img, eta 7.9min
+  [40/100] 6.79s/img, eta 6.8min
+  [50/100] 6.79s/img, eta 5.7min
+  [60/100] 6.79s/img, eta 4.5min
+  [70/100] 6.79s/img, eta 3.4min
+  [80/100] 6.79s/img, eta 2.3min
+  [90/100] 6.79s/img, eta 1.1min
+  [100/100] 6.79s/img, eta 0.0min
+[render] f2k_s9000 完成 11.3min
+[metrics] f2k_s9000: clipiqa=0.4549 niqe=5.35 (13.6min)
+[render] f2k_s10000 step=10000 开始 (0/100)
+  [10/100] 6.82s/img, eta 10.2min
+  [20/100] 6.79s/img, eta 9.1min
+  [30/100] 6.78s/img, eta 7.9min
+  [40/100] 6.77s/img, eta 6.8min
+  [50/100] 6.76s/img, eta 5.6min
+  [60/100] 6.76s/img, eta 4.5min
+  [70/100] 6.75s/img, eta 3.4min
+  [80/100] 6.75s/img, eta 2.2min
+  [90/100] 6.74s/img, eta 1.1min
+  [100/100] 6.74s/img, eta 0.0min
+[render] f2k_s10000 完成 11.2min
+[metrics] f2k_s10000: clipiqa=0.4718 niqe=5.41 (13.6min)
+[render] f2k_s11000 step=11000 开始 (0/100)
+  [10/100] 6.97s/img, eta 10.5min
+  [20/100] 6.97s/img, eta 9.3min
+  [30/100] 6.98s/img, eta 8.1min
+  [40/100] 7.00s/img, eta 7.0min
+  [50/100] 7.02s/img, eta 5.9min
+  [60/100] 7.04s/img, eta 4.7min
+  [70/100] 7.06s/img, eta 3.5min
+  [80/100] 7.08s/img, eta 2.4min
+  [90/100] 7.09s/img, eta 1.2min
+  [100/100] 7.10s/img, eta 0.0min
+[render] f2k_s11000 完成 11.8min
+[metrics] f2k_s11000: clipiqa=0.4586 niqe=5.38 (14.3min)
+[render] f2k_s12000 step=12000 开始 (0/100)
+  [10/100] 7.29s/img, eta 10.9min
+  [20/100] 7.27s/img, eta 9.7min
+  [30/100] 7.26s/img, eta 8.5min
+  [40/100] 7.25s/img, eta 7.3min
+  [50/100] 7.26s/img, eta 6.0min
+  [60/100] 7.26s/img, eta 4.8min
+  [70/100] 7.26s/img, eta 3.6min
+  [80/100] 7.26s/img, eta 2.4min
+  [90/100] 7.26s/img, eta 1.2min
+  [100/100] 7.26s/img, eta 0.0min
+[render] f2k_s12000 完成 12.1min
+[metrics] f2k_s12000: clipiqa=0.4631 niqe=5.38 (14.6min)
+[render] f2k_s13000 step=13000 开始 (0/100)
+  [10/100] 7.38s/img, eta 11.1min
+  [20/100] 7.36s/img, eta 9.8min
+  [30/100] 7.36s/img, eta 8.6min
+  [40/100] 7.35s/img, eta 7.4min
+  [50/100] 7.35s/img, eta 6.1min
+  [60/100] 7.34s/img, eta 4.9min
+  [70/100] 7.34s/img, eta 3.7min
+  [80/100] 7.34s/img, eta 2.4min
+  [90/100] 7.34s/img, eta 1.2min
+  [100/100] 7.34s/img, eta 0.0min
+[render] f2k_s13000 完成 12.2min
+[metrics] f2k_s13000: clipiqa=0.4712 niqe=5.44 (14.7min)
+[render] f2k_s14000 step=14000 开始 (0/100)
+  [10/100] 7.37s/img, eta 11.0min
+  [20/100] 7.34s/img, eta 9.8min
+  [30/100] 7.33s/img, eta 8.6min
+  [40/100] 7.33s/img, eta 7.3min
+  [50/100] 7.33s/img, eta 6.1min
+  [60/100] 7.33s/img, eta 4.9min
+  [70/100] 7.32s/img, eta 3.7min
+  [80/100] 7.32s/img, eta 2.4min
+  [90/100] 7.32s/img, eta 1.2min
+  [100/100] 7.33s/img, eta 0.0min
+[render] f2k_s14000 完成 12.2min
+[metrics] f2k_s14000: clipiqa=0.4611 niqe=5.41 (14.7min)
+[render] f2k_s15000 step=15000 开始 (0/100)
+  [10/100] 7.40s/img, eta 11.1min
+  [20/100] 7.37s/img, eta 9.8min
+  [30/100] 7.36s/img, eta 8.6min
+  [40/100] 7.35s/img, eta 7.3min
+  [50/100] 7.34s/img, eta 6.1min
+  [60/100] 7.34s/img, eta 4.9min
+  [70/100] 7.34s/img, eta 3.7min
+  [80/100] 7.34s/img, eta 2.4min
+  [90/100] 7.34s/img, eta 1.2min
+  [100/100] 7.34s/img, eta 0.0min
+[render] f2k_s15000 完成 12.2min
+[metrics] f2k_s15000: clipiqa=0.4663 niqe=5.37 (14.7min)
+[render] f2k_s16000 step=16000 开始 (0/100)
+  [10/100] 7.34s/img, eta 11.0min
+  [20/100] 7.33s/img, eta 9.8min
+  [30/100] 7.33s/img, eta 8.5min
+  [40/100] 7.32s/img, eta 7.3min
+  [50/100] 7.32s/img, eta 6.1min
+  [60/100] 7.32s/img, eta 4.9min
+  [70/100] 7.32s/img, eta 3.7min
+  [80/100] 7.32s/img, eta 2.4min
+  [90/100] 7.33s/img, eta 1.2min
+  [100/100] 7.33s/img, eta 0.0min
+[render] f2k_s16000 完成 12.2min
+[metrics] f2k_s16000: clipiqa=0.4669 niqe=5.37 (14.7min)
+[metrics] old_s6000: clipiqa=0.5354 niqe=5.15 (2.5min)
+[metrics] f2k_s4000: clipiqa=0.5043 niqe=5.21 (2.5min)
+
+===== 汇总 (按 test clipiqa 降序) =====
+  old_s6000      clipiqa=0.5354 niqe=5.15
+  f2k_s4000      clipiqa=0.5044 niqe=5.21
+  f2k_s4000      clipiqa=0.5043 niqe=5.21
+  old_s9000      clipiqa=0.4950 niqe=4.98
+  f2k_s7000      clipiqa=0.4871 niqe=5.22
+  f2k_s2000      clipiqa=0.4845 niqe=4.88
+  f2k_s3000      clipiqa=0.4838 niqe=5.10
+  old_s8000      clipiqa=0.4821 niqe=4.91
+  f2k_s10000     clipiqa=0.4718 niqe=5.41
+  f2k_s13000     clipiqa=0.4712 niqe=5.44
+  f2k_s1000      clipiqa=0.4709 niqe=4.79
+  f2k_s16000     clipiqa=0.4669 niqe=5.37
+  f2k_s15000     clipiqa=0.4663 niqe=5.37
+  f2k_s12000     clipiqa=0.4631 niqe=5.38
+  f2k_s8000      clipiqa=0.4631 niqe=5.23
+  old_s7000      clipiqa=0.4613 niqe=5.03
+  f2k_s14000     clipiqa=0.4611 niqe=5.41
+  f2k_s11000     clipiqa=0.4586 niqe=5.38
+  old_s10000     clipiqa=0.4566 niqe=5.10
+  f2k_s9000      clipiqa=0.4549 niqe=5.35
+  f2k_s5000      clipiqa=0.4543 niqe=5.24
+  f2k_s6000      clipiqa=0.4364 niqe=5.28
+  old_s5000      clipiqa=0.4260 niqe=4.84
+[all done]

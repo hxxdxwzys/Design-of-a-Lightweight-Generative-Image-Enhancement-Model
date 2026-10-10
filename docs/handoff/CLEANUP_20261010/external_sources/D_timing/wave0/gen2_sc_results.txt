@@ -1,0 +1,4 @@
+m0s1_s4000_sc0.9: clip=0.9209 lpips=0.3556
+m0s1_s4000_sc0.93: clip=0.9261 lpips=0.3571
+m0s1_s4000_sc0.95: clip=0.9289 lpips=0.3582
+m0s1_s4000_sc0.97: clip=0.9311 lpips=0.3595

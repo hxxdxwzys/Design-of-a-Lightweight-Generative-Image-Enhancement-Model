@@ -1,0 +1,160 @@
+{
+ "schema": "EXPORT01R-ledger/1",
+ "created_at": "2026-09-17 22:07:19",
+ "limits": {
+  "top": 12,
+  "top4k": 8,
+  "component": 0,
+  "wall_s": 2200.0,
+  "disk_gib": 8.0
+ },
+ "prior_batch": {
+  "note": "top 12/24 已由上次预留消耗",
+  "used": {
+   "top": 12,
+   "top4k": 0,
+   "component": 0
+  }
+ },
+ "used": {
+  "top": 5,
+  "top4k": 0,
+  "component": 0
+ },
+ "events": [
+  {
+   "seq": 1,
+   "kind": "note",
+   "where": "A_512_1_prepare",
+   "detail": {
+    "input_sha256": "e15df1edd679dd41fbaed3962aabe85d7f6e328956f989addf0e046f60b37298"
+   },
+   "pid": 7028,
+   "at": "2026-09-17 22:08:10",
+   "monotonic": 120109.5962854,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 2,
+   "kind": "top",
+   "is_4k": false,
+   "where": "A_512_1",
+   "pid": 7028,
+   "at": "2026-09-17 22:08:10",
+   "monotonic": 120109.6010955,
+   "after": {
+    "top": 1,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 3,
+   "kind": "note",
+   "where": "A_512_2_prepare",
+   "detail": {
+    "input_sha256": "e15df1edd679dd41fbaed3962aabe85d7f6e328956f989addf0e046f60b37298"
+   },
+   "pid": 7028,
+   "at": "2026-09-17 22:08:11",
+   "monotonic": 120110.6349261,
+   "after": {
+    "top": 1,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 4,
+   "kind": "top",
+   "is_4k": false,
+   "where": "A_512_2",
+   "pid": 7028,
+   "at": "2026-09-17 22:08:11",
+   "monotonic": 120110.6380062,
+   "after": {
+    "top": 2,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 5,
+   "kind": "note",
+   "where": "A_512_3_prepare",
+   "detail": {
+    "input_sha256": "e15df1edd679dd41fbaed3962aabe85d7f6e328956f989addf0e046f60b37298"
+   },
+   "pid": 7028,
+   "at": "2026-09-17 22:08:12",
+   "monotonic": 120111.2871873,
+   "after": {
+    "top": 2,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 6,
+   "kind": "top",
+   "is_4k": false,
+   "where": "A_512_3",
+   "pid": 7028,
+   "at": "2026-09-17 22:08:12",
+   "monotonic": 120111.2907972,
+   "after": {
+    "top": 3,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 7,
+   "kind": "top",
+   "is_4k": false,
+   "where": "A_511x513",
+   "pid": 7028,
+   "at": "2026-09-17 22:08:13",
+   "monotonic": 120112.0004462,
+   "after": {
+    "top": 4,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 8,
+   "kind": "top",
+   "is_4k": false,
+   "where": "B_512_1",
+   "pid": 7028,
+   "at": "2026-09-17 22:08:16",
+   "monotonic": 120115.9115181,
+   "after": {
+    "top": 5,
+    "top4k": 0,
+    "component": 0
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "attempt_id": "attempt_verify",
+   "run_dir": "C:\\models\\exports\\DELIV01R_A2_20260917_213518",
+   "started_at": "2026-09-17 22:07:30",
+   "started_monotonic": 120069.7774693,
+   "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+   "source_sha256": "fe187e1616ff994c3b9f3e14bd6fe41d3c154eb545eefe5998f76b17c7abc208",
+   "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+   "status": "FAIL",
+   "note": "RuntimeError: B_512_1 vs A 未达同精度判据: max=7.843e-03 mean=4.109e-07 png_eq=False",
+   "finished_at": "2026-09-17 22:08:17",
+   "elapsed_s": 46.974
+  }
+ ],
+ "open_attempt": null
+}

@@ -1,0 +1,50 @@
+[09-15 09:01:38] === 链 K 启动: 等 v11b 收尾 ===
+[09-15 10:57:38] 检测到 H2 已进入 v9b2, 掐断
+[09-15 10:57:39] kill 输出:
+KILL_FAILED powershell rc=1 At line:1 char:150
++ ... ne $null -and $_.CommandLine -notlike '*chain_20260915k*' and ($_.Com ...
++                                                               ~~~
+Unexpected token 'and' in express
+[09-15 10:57:54]   [gpu] 6166 MiB
+[09-15 10:57:54] v11b_s25000 存在=True
+[09-15 10:57:54] pkg_TinyV11b 出图数=100
+[09-15 10:57:54] >>> latency w2_m0s1_s090
+Traceback (most recent call last):
+  File "D:\tmp_timing\measure_latency.py", line 7, in <module>
+    import runner as R
+ModuleNotFoundError: No module named 'runner'
+
+[09-15 10:57:57] <<< latency w2_m0s1_s090 rc=1 (0.1 min)
+[09-15 10:57:57] >>> latency w2_m0s7_s097
+[latency] 12637.99 ms -> 0.0x | graph=False | std=0.082 nan=False
+LATENCY_DONE
+D:\models\wave2_m0s7_s097\pack_model_dir\dinov2\layers\swiglu_ffn.py:202: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+D:\models\wave2_m0s7_s097\pack_model_dir\dinov2\layers\attention.py:130: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+D:\models\wave2_m0s7_s097\pack_model_dir\dinov2\layers\block.py:158: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+
+[09-15 11:45:22] <<< latency w2_m0s7_s097 rc=0 (47.4 min)
+[09-15 11:45:22] >>> latency w2_m0s1_s097
+Traceback (most recent call last):
+  File "D:\tmp_timing\measure_latency.py", line 7, in <module>
+    import runner as R
+ModuleNotFoundError: No module named 'runner'
+
+[09-15 11:45:24] <<< latency w2_m0s1_s097 rc=1 (0.0 min)
+[09-15 11:45:24] >>> latency w2_m0s1_s100
+Traceback (most recent call last):
+  File "D:\tmp_timing\measure_latency.py", line 7, in <module>
+    import runner as R
+ModuleNotFoundError: No module named 'runner'
+
+[09-15 11:45:27] <<< latency w2_m0s1_s100 rc=1 (0.0 min)
+[09-15 11:45:27] >>> panel n=12
+Loading pretrained model MUSIQ from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\musiq_koniq_ckpt-e95806b9.pth
+Loading pretrained model MANIQA from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\ckpt_koniq10k.pt
+[panel] n=12 modes=['ms512', 'ms1024', 'c1024', 'native'] metrics=['clipiqa', 'musiq', 'maniqa', 'niqe'] (native 跳过 ['musiq'])
+[51.5 min] LQ             ms512: clipiqa=0.5244 musiq=67.9538 maniqa=0.4591 niqe=4.8853 | ms1024: clipiqa=0.4369 musiq=64.0623 maniqa=0.3712 niqe=5.1171 | c1024: clipiqa=0.2319 musiq=37.8422 maniqa=0.2136 niqe=8.1582 | native: clipiqa=0.2771 maniqa=0.2788 niqe=7.7072
+
+[09-15 12:41:43] <<< panel n=12 rc=4294967295 (56.3 min)
+[09-15 12:41:43] CHAIN_K_DONE

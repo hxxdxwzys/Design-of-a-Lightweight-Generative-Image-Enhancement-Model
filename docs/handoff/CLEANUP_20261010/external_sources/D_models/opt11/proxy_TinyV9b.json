@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.6409,
+ "niqe": 5.3,
+ "musiq": 50.6773,
+ "maniqa": 0.3227,
+ "lapvar": 436.5,
+ "n": 30,
+ "dir": "D:\\models\\pkg_TinyV9b\\output_dir",
+ "tag": "TinyV9b"
+}

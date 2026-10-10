@@ -1,0 +1,27 @@
+[08-21 01:06:48] [boot] M21 自动链启动
+[08-21 08:26:48] [step1] v6 训练完成
+[08-21 08:26:48] [step2] val wavelet 门控
+[08-21 08:29:45] [val] v6_s1000 render exit=0 ok=True
+[08-21 08:29:58] [gate] val_gate_v6_s1000_wavelet: clip=0.9287 lpips=0.4258
+[08-21 08:32:51] [val] v6_s2000 render exit=0 ok=True
+[08-21 08:33:04] [gate] val_gate_v6_s2000_wavelet: clip=0.9423 lpips=0.4083
+[08-21 08:36:00] [val] v6_s3000 render exit=0 ok=True
+[08-21 08:36:13] [gate] val_gate_v6_s3000_wavelet: clip=0.9482 lpips=0.4114
+[08-21 08:39:09] [val] v6_s4000 render exit=0 ok=True
+[08-21 08:39:21] [gate] val_gate_v6_s4000_wavelet: clip=0.9537 lpips=0.4118
+[08-21 08:42:18] [val] v6_s5000 render exit=0 ok=True
+[08-21 08:42:31] [gate] val_gate_v6_s5000_wavelet: clip=0.9534 lpips=0.412
+[08-21 08:45:27] [val] v5_s4000_sc0.9 render exit=0 ok=True
+[08-21 08:45:40] [gate] val_gate_v5_s4000_sc0.9_wavelet: clip=0.9326 lpips=0.396
+[08-21 08:45:40] [step3] 打分决策
+[08-21 08:45:40] [score] v6_s1000: val_clip=0.9287 lpips=0.4258 test_est=0.9064 score=377.6 (M20基准 419.9, 相对 -42.4)
+[08-21 08:45:40] [score] v6_s2000: val_clip=0.9423 lpips=0.4083 test_est=0.9197 score=409.5 (M20基准 419.9, 相对 -10.5)
+[08-21 08:45:40] [score] v6_s3000: val_clip=0.9482 lpips=0.4114 test_est=0.9254 score=411.4 (M20基准 419.9, 相对 -8.5)
+[08-21 08:45:40] [score] v6_s4000: val_clip=0.9537 lpips=0.4118 test_est=0.9308 score=416.0 (M20基准 419.9, 相对 -3.9)
+[08-21 08:45:40] [score] v6_s5000: val_clip=0.9534 lpips=0.412 test_est=0.9305 score=415.5 (M20基准 419.9, 相对 -4.4)
+[08-21 08:45:40] [score] v5_s4000_sc0.9: val_clip=0.9326 lpips=0.396 test_est=0.9102 score=414.2 (M20基准 419.9, 相对 -5.7)
+[08-21 08:45:40] [decision] v6 领先不足 3 分 (+1.8), 保守选 sc0.9
+[08-21 08:45:40] [step4] 渲染 v5_s4000_sc0.9 测试集 100 张 (~1.6h)
+[08-21 10:14:07] [render] v5_s4000_sc0.9 完成
+[08-21 10:17:18] [pool] 入池+choice 完成
+[08-21 10:17:35] [done] M21 自动链完成

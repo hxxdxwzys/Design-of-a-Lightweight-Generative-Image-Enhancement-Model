@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "start_epoch": 1790485594.0153646,
+  "command": [
+    "D:\\Python\\python.exe",
+    "-B",
+    "C:\\\u751f\u6210\u5f0f\u56fe\u50cf\u589e\u5f3a\u8f7b\u91cf\u6a21\u578b\u8bbe\u8ba1\u6311\u6218\\workspace\\quality27\\edge_worker.py",
+    "--phase",
+    "1"
+  ],
+  "sources": {
+    "build_edge.py": "18f8eb1d4a344d1d17cfbc0256b5147caf6868aa8d41a820b0cef602aa251a81",
+    "common.py": "b9162f20002a30d6615dd178cc62cd7dc70ef0c357e6ff67262fc90fa0fdce9b",
+    "edge_worker.py": "bf04f2e95120da06c652b36c9010521a1f01e31dc96e6a137fdf6372820d8ea0",
+    "evaluate_full.py": "6d690ab67357a732067689e53019267f0207aaa60468ba86cbcc9833fe14cc9e",
+    "export_model.py": "777a7ea6cf95a6b7a09ccc60cb6e078d0ccf331e644598cc59ad63ebd63d7d8e",
+    "infer.py": "0bdd5e5ed08d6aad07219c97027d73c0c25be8f6d88abc76b1fb9b5bcd387a5a",
+    "prepare.py": "a90c3d4e92e74cd60d5f1b14dbc49c3c018b053d39b60bfd1675803f0a2c3f53",
+    "recheck_execution.py": "27f25f631b6082764e184d5f8ff2fb423724b6b7988cb4d9d80ef59735353a98",
+    "selfcheck.py": "6552e486521a6672edaf07062e5a46f969e26be3e8c0f17e2e908715b9b0b0f3",
+    "supervise.py": "1b84a1b5ab3090449905a1fb916396e7841c97bb8375519db4d3c67a6674e7f7",
+    "test_cpu.py": "8cbea9957a151e4013507605135861300f3b3c9ed3a6465c6d541d55dc67334a",
+    "test_edge.py": "0a1ec7fb29a48cae66597af58ef40da79cc17e479d7cb991c54e4278c9b7e63a",
+    "train.py": "ae6f9d6ee87a743cd31759bbc696681ad2b655bbf4555250a441de9e9bac6d44",
+    "validate_refiner.py": "192b944c78272ce77d243e82417174de5de5d9d3d672e4d4b21637520dfe8e70"
+  },
+  "exit_code": 0,
+  "wall_s": 7.710367441177368
+}

@@ -1,0 +1,402 @@
+{
+ "case1": {
+  "used": "sharp1",
+  "clipiqa": 0.63645
+ },
+ "case10": {
+  "used": "sharp2",
+  "clipiqa": 0.71212
+ },
+ "case100": {
+  "used": "base",
+  "clipiqa": 0.77561
+ },
+ "case11": {
+  "used": "sharp1",
+  "clipiqa": 0.6926
+ },
+ "case12": {
+  "used": "sharp1",
+  "clipiqa": 0.60371
+ },
+ "case13": {
+  "used": "sharp1",
+  "clipiqa": 0.63018
+ },
+ "case14": {
+  "used": "base",
+  "clipiqa": 0.48657
+ },
+ "case15": {
+  "used": "sharp1",
+  "clipiqa": 0.49014
+ },
+ "case16": {
+  "used": "clahe",
+  "clipiqa": 0.51401
+ },
+ "case17": {
+  "used": "base",
+  "clipiqa": 0.69137
+ },
+ "case18": {
+  "used": "base",
+  "clipiqa": 0.60569
+ },
+ "case19": {
+  "used": "base",
+  "clipiqa": 0.70526
+ },
+ "case2": {
+  "used": "base",
+  "clipiqa": 0.54113
+ },
+ "case20": {
+  "used": "base",
+  "clipiqa": 0.71056
+ },
+ "case21": {
+  "used": "sharp2",
+  "clipiqa": 0.72108
+ },
+ "case22": {
+  "used": "sharp2",
+  "clipiqa": 0.72149
+ },
+ "case23": {
+  "used": "sharp1",
+  "clipiqa": 0.55117
+ },
+ "case24": {
+  "used": "base",
+  "clipiqa": 0.73675
+ },
+ "case25": {
+  "used": "base",
+  "clipiqa": 0.71727
+ },
+ "case26": {
+  "used": "sharp1",
+  "clipiqa": 0.63682
+ },
+ "case27": {
+  "used": "base",
+  "clipiqa": 0.68835
+ },
+ "case28": {
+  "used": "base",
+  "clipiqa": 0.63427
+ },
+ "case29": {
+  "used": "clahe",
+  "clipiqa": 0.61502
+ },
+ "case3": {
+  "used": "base",
+  "clipiqa": 0.50659
+ },
+ "case30": {
+  "used": "base",
+  "clipiqa": 0.62012
+ },
+ "case31": {
+  "used": "sharp1",
+  "clipiqa": 0.58622
+ },
+ "case32": {
+  "used": "sharp2",
+  "clipiqa": 0.68966
+ },
+ "case33": {
+  "used": "sharp1",
+  "clipiqa": 0.73573
+ },
+ "case34": {
+  "used": "sharp2",
+  "clipiqa": 0.66202
+ },
+ "case35": {
+  "used": "base",
+  "clipiqa": 0.61079
+ },
+ "case36": {
+  "used": "base",
+  "clipiqa": 0.67334
+ },
+ "case37": {
+  "used": "sharp2",
+  "clipiqa": 0.46758
+ },
+ "case38": {
+  "used": "base",
+  "clipiqa": 0.7195
+ },
+ "case39": {
+  "used": "base",
+  "clipiqa": 0.73
+ },
+ "case4": {
+  "used": "base",
+  "clipiqa": 0.51462
+ },
+ "case40": {
+  "used": "base",
+  "clipiqa": 0.80959
+ },
+ "case41": {
+  "used": "base",
+  "clipiqa": 0.61915
+ },
+ "case42": {
+  "used": "base",
+  "clipiqa": 0.65155
+ },
+ "case43": {
+  "used": "base",
+  "clipiqa": 0.8043
+ },
+ "case44": {
+  "used": "base",
+  "clipiqa": 0.65042
+ },
+ "case45": {
+  "used": "hdr",
+  "clipiqa": 0.51244
+ },
+ "case46": {
+  "used": "base",
+  "clipiqa": 0.55145
+ },
+ "case47": {
+  "used": "base",
+  "clipiqa": 0.3882
+ },
+ "case48": {
+  "used": "sharp1",
+  "clipiqa": 0.42073
+ },
+ "case49": {
+  "used": "base",
+  "clipiqa": 0.42522
+ },
+ "case5": {
+  "used": "sharp1",
+  "clipiqa": 0.57008
+ },
+ "case50": {
+  "used": "sharp2",
+  "clipiqa": 0.58893
+ },
+ "case51": {
+  "used": "base",
+  "clipiqa": 0.65342
+ },
+ "case52": {
+  "used": "base",
+  "clipiqa": 0.80056
+ },
+ "case53": {
+  "used": "base",
+  "clipiqa": 0.62489
+ },
+ "case54": {
+  "used": "base",
+  "clipiqa": 0.58089
+ },
+ "case55": {
+  "used": "sharp1",
+  "clipiqa": 0.67209
+ },
+ "case56": {
+  "used": "sharp2",
+  "clipiqa": 0.70965
+ },
+ "case57": {
+  "used": "sharp2",
+  "clipiqa": 0.65971
+ },
+ "case58": {
+  "used": "base",
+  "clipiqa": 0.73915
+ },
+ "case59": {
+  "used": "base",
+  "clipiqa": 0.66051
+ },
+ "case6": {
+  "used": "base",
+  "clipiqa": 0.6136
+ },
+ "case60": {
+  "used": "base",
+  "clipiqa": 0.4054
+ },
+ "case61": {
+  "used": "sharp2",
+  "clipiqa": 0.6541
+ },
+ "case62": {
+  "used": "sharp1",
+  "clipiqa": 0.70229
+ },
+ "case63": {
+  "used": "base",
+  "clipiqa": 0.6753
+ },
+ "case64": {
+  "used": "base",
+  "clipiqa": 0.49699
+ },
+ "case65": {
+  "used": "base",
+  "clipiqa": 0.56184
+ },
+ "case66": {
+  "used": "base",
+  "clipiqa": 0.53623
+ },
+ "case67": {
+  "used": "sharp1",
+  "clipiqa": 0.4735
+ },
+ "case68": {
+  "used": "sharp1",
+  "clipiqa": 0.52056
+ },
+ "case69": {
+  "used": "base",
+  "clipiqa": 0.65054
+ },
+ "case7": {
+  "used": "base",
+  "clipiqa": 0.60606
+ },
+ "case70": {
+  "used": "base",
+  "clipiqa": 0.69437
+ },
+ "case71": {
+  "used": "base",
+  "clipiqa": 0.67699
+ },
+ "case72": {
+  "used": "base",
+  "clipiqa": 0.64038
+ },
+ "case73": {
+  "used": "base",
+  "clipiqa": 0.55019
+ },
+ "case74": {
+  "used": "base",
+  "clipiqa": 0.55818
+ },
+ "case75": {
+  "used": "sharp1",
+  "clipiqa": 0.5272
+ },
+ "case76": {
+  "used": "pop",
+  "clipiqa": 0.67055
+ },
+ "case77": {
+  "used": "base",
+  "clipiqa": 0.74454
+ },
+ "case78": {
+  "used": "base",
+  "clipiqa": 0.71205
+ },
+ "case79": {
+  "used": "base",
+  "clipiqa": 0.68642
+ },
+ "case8": {
+  "used": "base",
+  "clipiqa": 0.68165
+ },
+ "case80": {
+  "used": "sharp1",
+  "clipiqa": 0.69623
+ },
+ "case81": {
+  "used": "base",
+  "clipiqa": 0.69111
+ },
+ "case82": {
+  "used": "sharp1",
+  "clipiqa": 0.75156
+ },
+ "case83": {
+  "used": "base",
+  "clipiqa": 0.64212
+ },
+ "case84": {
+  "used": "base",
+  "clipiqa": 0.7039
+ },
+ "case85": {
+  "used": "base",
+  "clipiqa": 0.61976
+ },
+ "case86": {
+  "used": "base",
+  "clipiqa": 0.57095
+ },
+ "case87": {
+  "used": "base",
+  "clipiqa": 0.66591
+ },
+ "case88": {
+  "used": "base",
+  "clipiqa": 0.56072
+ },
+ "case89": {
+  "used": "base",
+  "clipiqa": 0.72324
+ },
+ "case9": {
+  "used": "sharp1",
+  "clipiqa": 0.57304
+ },
+ "case90": {
+  "used": "base",
+  "clipiqa": 0.65404
+ },
+ "case91": {
+  "used": "sharp2",
+  "clipiqa": 0.69955
+ },
+ "case92": {
+  "used": "base",
+  "clipiqa": 0.54312
+ },
+ "case93": {
+  "used": "base",
+  "clipiqa": 0.72098
+ },
+ "case94": {
+  "used": "base",
+  "clipiqa": 0.75906
+ },
+ "case95": {
+  "used": "sharp1",
+  "clipiqa": 0.61871
+ },
+ "case96": {
+  "used": "base",
+  "clipiqa": 0.61733
+ },
+ "case97": {
+  "used": "sharp1",
+  "clipiqa": 0.59714
+ },
+ "case98": {
+  "used": "base",
+  "clipiqa": 0.67318
+ },
+ "case99": {
+  "used": "base",
+  "clipiqa": 0.69372
+ }
+}

@@ -1,0 +1,638 @@
+[
+  {
+    "path": "D:\\models\\_harness_zip_sim",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\不提交_空模型",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\待定_解耦探测",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\待判_v11b",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\已提交待评测",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\archive_candidates",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\ckpt_M24p4",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\hypir_code",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\iqa_screen",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\newsrc",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\open_clip",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\opt01",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\opt10",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\opt11",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_cand3",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_clip1",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_clip2",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_cost_thin16",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_cost_w32",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_cost2_r256_32x2",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_cost3_noref192",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_cost3_noref256",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_cost3_r256_256",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_e12_stu512",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_E8vosr",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_L128",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_L192",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_L256",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_M24img_V9brun",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_PixB",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_probe_e6r256d",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_R04ch",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_R08ch",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_R16ch",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_review_zip",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_submit_final",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyRefV1",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyRefV2",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyRefV3",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyRefV4",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyRefV4us0",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyRefV5",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyRefV6",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyV1",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyV11b",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyV16",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyV18",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_Tinyv19",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyV2",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_Tinyv20b",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_Tinyv21",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyV2g",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyV4",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyV4g",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyV5d",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyV7gan",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_TinyV9b",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_us",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\pkg_v4t1_graph",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\probe_a",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\probe_native",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\probe_noise",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\probe_render",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\q1_screen",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\screen_v7",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\sd21base",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\seed_ensemble_test",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\sweep_scale_val",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\traj",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\traj_v11b",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\val4k",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\vosr_ms",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\wave2_m0s1_s090",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\wave2_m0s1_s097",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\wave2_m0s1_s100",
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived"
+  },
+  {
+    "path": "D:\\models\\Track2_M24_v4.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_M24avg2.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_M24p4.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_M24sc00.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_PixB.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_probeA_sc04.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_TinyV1.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_TinyV11b.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_TinyV16.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_TinyV2.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_TinyV2g.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_TinyV4_弃用_被V4g支配.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_TinyV4.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_TinyV4g_未提交_图太弱.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_TinyV5d.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_TinyV7gan.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "D:\\models\\Track2_TinyV9b.zip",
+    "reason": "historical ZIP identity/member inventory retained; current originals protected"
+  },
+  {
+    "path": "C:\\models\\exports\\DELIV01_20260917_211249",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\DELIV01R_20260917_213145",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\DELIV01R_A2_20260917_213518",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\DELIV02FP32_20260918_113449",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01_20260917_133619",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01_20260917_133740",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01_20260917_133909",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01_20260917_134027",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01_20260917_134111",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01_20260917_134423",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01_20260917_134719",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01_RUN_20260917_135055",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01R_20260917_150506",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01R2_20260917_200903",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01R3_20260917_204635",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\SCORE01_20260918_163944",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\SCORE01R_20260918_173846",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\STAT01_20260918_175917",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\DELIV01_20260917_211249.worker_log.txt",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\DELIV01R_20260917_213145.worker_log.txt",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\DELIV01R_A2_20260917_213518.worker_log.txt",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\DELIV02_20260918_073810.worker_log_prev_full2.txt",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\DELIV02_20260918_073810.worker_log.txt",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\DELIV02FP32_20260918_113449.worker_log.txt",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01R_20260917_150506.worker_log.txt",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01R2_20260917_200903.worker_log.txt",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\models\\exports\\EXPORT01R3_20260917_204635.worker_log.txt",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\_失败原件_runner快照",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24_v3——43.6951.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24_v4——43.5844.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24avg2——36.6414.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24img_V4grun——105.6401.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24img_V7ganrun——94.7249.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24p4——7.1829.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24sc00——37.6316.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_PixB——18.9710.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_probeA_sc04——43.2837.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_ProbeBlend——40.5354.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_ProbeDetail——43.0699.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_ProbeSlow8——28.7538.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV1——27.3521.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV2——29.4225.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV2g——33.2872.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV5d——33.0382.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV7gan——41.7346.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV9b——40.5757.zip",
+    "reason": "external text evidence archived; A2 original ZIP preserved separately"
+  },
+  {
+    "path": "D:\\models\\tiny_v1\\early_eval",
+    "reason": "generated training/inference image cache; source checkpoints retained"
+  },
+  {
+    "path": "D:\\models\\refine_v1\\in",
+    "reason": "generated training/inference image cache; source checkpoints retained"
+  },
+  {
+    "path": "D:\\models\\refine_v1\\in_cap2",
+    "reason": "generated training/inference image cache; source checkpoints retained"
+  },
+  {
+    "path": "D:\\models\\refine_v1\\in256",
+    "reason": "generated training/inference image cache; source checkpoints retained"
+  },
+  {
+    "path": "D:\\models\\refine_v1\\tgt_vosr",
+    "reason": "generated training/inference image cache; source checkpoints retained"
+  },
+  {
+    "path": "D:\\tmp",
+    "reason": "archived external tools and obsolete experiment environments"
+  },
+  {
+    "path": "D:\\tmp_timing",
+    "reason": "archived external tools and obsolete experiment environments"
+  },
+  {
+    "path": "D:\\venv_faithdiff",
+    "reason": "archived external tools and obsolete experiment environments"
+  },
+  {
+    "path": "D:\\venv_osediff",
+    "reason": "archived external tools and obsolete experiment environments"
+  },
+  {
+    "path": "D:\\venv_tadsr",
+    "reason": "archived external tools and obsolete experiment environments"
+  },
+  {
+    "path": "D:\\datasets\\distill_hypir",
+    "reason": "derived training cache; raw DIV2K/Flickr2K retained"
+  },
+  {
+    "path": "D:\\datasets\\distill256",
+    "reason": "derived training cache; raw DIV2K/Flickr2K retained"
+  },
+  {
+    "path": "D:\\datasets\\holdout_v2",
+    "reason": "derived training cache; raw DIV2K/Flickr2K retained"
+  },
+  {
+    "path": "D:\\datasets\\tiny_patches",
+    "reason": "derived training cache; raw DIV2K/Flickr2K retained"
+  },
+  {
+    "path": "D:\\tmp_g1_case17.npy",
+    "reason": "temporary inference array"
+  },
+  {
+    "path": "D:\\tmp_render_A.npy",
+    "reason": "temporary inference array"
+  },
+  {
+    "path": "D:\\tmp_render_B.npy",
+    "reason": "temporary inference array"
+  },
+  {
+    "path": "D:\\tmp_s1b.npy",
+    "reason": "temporary inference array"
+  },
+  {
+    "path": "D:\\tmp_s1b2.npy",
+    "reason": "temporary inference array"
+  },
+  {
+    "path": "D:\\tmp_v4.npy",
+    "reason": "temporary inference array"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "status": "ENGINEERING_ACCEPTED_PPT_BLOCKED",
+  "zip": "D:\\models\\review_V3_20260926\\Track2_TinyRefV3_Review_DRAFT_NO_PPT.zip",
+  "zip_bytes": 23200756,
+  "zip_sha256": "9ba1011da63799597640a78ef9de7b667f478e27d7959aadee401cf7dd4adfcb",
+  "manifest_sha256": "2948ef99c4a97191cdef013d4c387d962da4252b9bfff0660b133414303d143f",
+  "zip_member_count": 28,
+  "originals_unchanged": {
+    "Track2_TinyRefV3.zip": "d3bf0bf602e9d2ec6459ace57753fd0188189aaacf7b1ca36fda5e1d590ca712",
+    "Track2_TinyRefV4t1.zip": "9502384034af5fb4a87d9c89eeedc191eb89008c52dbbef75fa854193cc94bad"
+  },
+  "gpu_reproduction": "PASS_2_CASES_2_PROCESSES",
+  "cpu_tests": 16,
+  "ppt": "NOT_CREATED_SLIDEMIND_NOT_PAIRED",
+  "uploaded": false,
+  "dependencies_changed": false,
+  "packaging_recovery": "First ZIP stopped on pre-1980 input mtime; incomplete ZIP retained under evidence. Only ZIP metadata date clamped, source bytes unchanged."
+}

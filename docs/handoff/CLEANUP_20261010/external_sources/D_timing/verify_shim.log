@@ -1,0 +1,41 @@
+==============================================================================
+verify_shim: vae_shim vs official diffusers 0.39 (fp32)
+==============================================================================
+torch 2.7.0+cu126  cuda=True
+gpu: NVIDIA GeForce RTX 4060 Laptop GPU  mem_alloc=0MB  mem_reserved=0MB
+loading official SD2.1 VAE from C:/models/finals/preset/ckpts/stable-diffusion-2-1-base/vae ...
+official VAE params: 83.65M
+VAE state_dict keys: official=248 shim=248 equal=True
+VAE strict load_state_dict from official state dict: <All keys matched successfully>
+LightDecoder config (from sd21_lwdecoder.pth): {'in_channels': 4, 'out_channels': 3, 'block_out_channels': [128, 128, 256, 256], 'layers_per_block': 2}
+official LightDecoder strict load from sd21_lwdecoder.pth: <All keys matched successfully>
+LightDecoder state_dict keys: official=136 shim=136 equal=True
+shim LightDecoder strict load_state_dict: <All keys matched successfully>
+
+--- input batch 0: shape=(2, 3, 256, 256) dtype=torch.float32 range=[-1.000,1.000]
+  MAE encode.mean      = 0.000e+00
+  MAE encode.logvar    = 0.000e+00
+  MAE encode.std       = 0.000e+00
+  MAE decode(mode)      = 0.000e+00   (ref range [-0.633,0.730])
+  MAE decode(sample)    = 0.000e+00
+  MAE forward()         = 0.000e+00
+  MAE LightDecoder(real latent) = 0.000e+00
+  MAE LightDecoder(random latent)= 0.000e+00
+
+--- input batch 1: shape=(2, 3, 256, 256) dtype=torch.float32 range=[-1.000,1.000]
+  MAE encode.mean      = 0.000e+00
+  MAE encode.logvar    = 0.000e+00
+  MAE encode.std       = 0.000e+00
+  MAE decode(mode)      = 0.000e+00   (ref range [-0.696,0.829])
+  MAE decode(sample)    = 0.000e+00
+  MAE forward()         = 0.000e+00
+  MAE LightDecoder(real latent) = 0.000e+00
+  MAE LightDecoder(random latent)= 0.000e+00
+
+------------------------------------------------------------------------------
+worst MAE over all comparisons: b0.encode.mean = 0.000e+00  (tolerance 0.001)
+------------------------------------------------------------------------------
+RESULT: PASS
+(fp32, batches=2x2x256x256, tolerance=0.001)
+
+finished in 15.4s

@@ -1,0 +1,288 @@
+[09-11 05:54:02] [boot] tag=m0s1_s100 scale=1.0 测试集 100 张
+[09-11 05:54:02] [resume] 已完成 0/100, 待渲 100
+[09-11 05:54:02] [stage] 100 张 -> D:\models\wave2_m0s1_s100\stage_in
+[09-11 05:54:45] [render] rc=1 耗时 0.7 min
+[pkg] your_model.pt: lora_scale=1.0 注入 853/853 键, 未命中=0
+llib\request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "D:\Python\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "D:\Python\Lib\urllib\request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\urllib\request.py", line 1323, in do_open
+    r = h.getresponse()
+  File "D:\Python\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\Python\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\Python\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+[09-11 05:54:45] !! 渲染进程非零退出, 继续尝试已产出的 png 转 jpg
+[09-11 05:54:45] [skip] case1: 无 png
+[09-11 05:54:45] [skip] case10: 无 png
+[09-11 05:54:45] [skip] case100: 无 png
+[09-11 05:54:45] [skip] case11: 无 png
+[09-11 05:54:45] [skip] case12: 无 png
+[09-11 05:54:45] [skip] case13: 无 png
+[09-11 05:54:45] [skip] case14: 无 png
+[09-11 05:54:45] [skip] case15: 无 png
+[09-11 05:54:45] [skip] case16: 无 png
+[09-11 05:54:45] [skip] case17: 无 png
+[09-11 05:54:45] [skip] case18: 无 png
+[09-11 05:54:45] [skip] case19: 无 png
+[09-11 05:54:45] [skip] case2: 无 png
+[09-11 05:54:45] [skip] case20: 无 png
+[09-11 05:54:45] [skip] case21: 无 png
+[09-11 05:54:45] [skip] case22: 无 png
+[09-11 05:54:45] [skip] case23: 无 png
+[09-11 05:54:45] [skip] case24: 无 png
+[09-11 05:54:45] [skip] case25: 无 png
+[09-11 05:54:45] [skip] case26: 无 png
+[09-11 05:54:45] [skip] case27: 无 png
+[09-11 05:54:45] [skip] case28: 无 png
+[09-11 05:54:45] [skip] case29: 无 png
+[09-11 05:54:45] [skip] case3: 无 png
+[09-11 05:54:45] [skip] case30: 无 png
+[09-11 05:54:45] [skip] case31: 无 png
+[09-11 05:54:45] [skip] case32: 无 png
+[09-11 05:54:45] [skip] case33: 无 png
+[09-11 05:54:45] [skip] case34: 无 png
+[09-11 05:54:45] [skip] case35: 无 png
+[09-11 05:54:45] [skip] case36: 无 png
+[09-11 05:54:45] [skip] case37: 无 png
+[09-11 05:54:45] [skip] case38: 无 png
+[09-11 05:54:45] [skip] case39: 无 png
+[09-11 05:54:45] [skip] case4: 无 png
+[09-11 05:54:45] [skip] case40: 无 png
+[09-11 05:54:45] [skip] case41: 无 png
+[09-11 05:54:45] [skip] case42: 无 png
+[09-11 05:54:45] [skip] case43: 无 png
+[09-11 05:54:45] [skip] case44: 无 png
+[09-11 05:54:45] [skip] case45: 无 png
+[09-11 05:54:45] [skip] case46: 无 png
+[09-11 05:54:45] [skip] case47: 无 png
+[09-11 05:54:45] [skip] case48: 无 png
+[09-11 05:54:45] [skip] case49: 无 png
+[09-11 05:54:45] [skip] case5: 无 png
+[09-11 05:54:45] [skip] case50: 无 png
+[09-11 05:54:45] [skip] case51: 无 png
+[09-11 05:54:45] [skip] case52: 无 png
+[09-11 05:54:45] [skip] case53: 无 png
+[09-11 05:54:45] [skip] case54: 无 png
+[09-11 05:54:45] [skip] case55: 无 png
+[09-11 05:54:45] [skip] case56: 无 png
+[09-11 05:54:45] [skip] case57: 无 png
+[09-11 05:54:45] [skip] case58: 无 png
+[09-11 05:54:45] [skip] case59: 无 png
+[09-11 05:54:45] [skip] case6: 无 png
+[09-11 05:54:45] [skip] case60: 无 png
+[09-11 05:54:45] [skip] case61: 无 png
+[09-11 05:54:45] [skip] case62: 无 png
+[09-11 05:54:45] [skip] case63: 无 png
+[09-11 05:54:45] [skip] case64: 无 png
+[09-11 05:54:45] [skip] case65: 无 png
+[09-11 05:54:45] [skip] case66: 无 png
+[09-11 05:54:45] [skip] case67: 无 png
+[09-11 05:54:45] [skip] case68: 无 png
+[09-11 05:54:45] [skip] case69: 无 png
+[09-11 05:54:45] [skip] case7: 无 png
+[09-11 05:54:45] [skip] case70: 无 png
+[09-11 05:54:45] [skip] case71: 无 png
+[09-11 05:54:45] [skip] case72: 无 png
+[09-11 05:54:45] [skip] case73: 无 png
+[09-11 05:54:45] [skip] case74: 无 png
+[09-11 05:54:45] [skip] case75: 无 png
+[09-11 05:54:45] [skip] case76: 无 png
+[09-11 05:54:45] [skip] case77: 无 png
+[09-11 05:54:45] [skip] case78: 无 png
+[09-11 05:54:45] [skip] case79: 无 png
+[09-11 05:54:45] [skip] case8: 无 png
+[09-11 05:54:45] [skip] case80: 无 png
+[09-11 05:54:45] [skip] case81: 无 png
+[09-11 05:54:45] [skip] case82: 无 png
+[09-11 05:54:45] [skip] case83: 无 png
+[09-11 05:54:45] [skip] case84: 无 png
+[09-11 05:54:45] [skip] case85: 无 png
+[09-11 05:54:45] [skip] case86: 无 png
+[09-11 05:54:45] [skip] case87: 无 png
+[09-11 05:54:45] [skip] case88: 无 png
+[09-11 05:54:45] [skip] case89: 无 png
+[09-11 05:54:45] [skip] case9: 无 png
+[09-11 05:54:45] [skip] case90: 无 png
+[09-11 05:54:45] [skip] case91: 无 png
+[09-11 05:54:45] [skip] case92: 无 png
+[09-11 05:54:45] [skip] case93: 无 png
+[09-11 05:54:45] [skip] case94: 无 png
+[09-11 05:54:45] [skip] case95: 无 png
+[09-11 05:54:45] [skip] case96: 无 png
+[09-11 05:54:45] [skip] case97: 无 png
+[09-11 05:54:45] [skip] case98: 无 png
+[09-11 05:54:45] [skip] case99: 无 png
+[09-11 05:54:45] [done] m0s1_s100: 0/100 张, 总耗时 0.7 min
+[09-11 05:54:45] RENDER_PKG_PARTIAL 0/100
+[09-11 05:55:15] [boot] tag=m0s1_s100 scale=1.0 测试集 100 张
+[09-11 05:55:15] [resume] 已完成 0/100, 待渲 100
+[09-11 05:55:15] [stage] 100 张 -> D:\models\wave2_m0s1_s100\stage_in
+[09-11 07:29:35] [boot] tag=m0s1_s100 scale=1.0 测试集 100 张
+[09-11 07:29:35] [resume] 已完成 0/100, 待渲 100
+[09-11 07:29:35] [stage] 100 张 -> D:\models\wave2_m0s1_s100\stage_in
+[09-11 07:32:33] [boot] tag=m0s1_s100 scale=1.0 测试集 100 张
+[09-11 07:32:33] [resume] 已完成 88/100 (jpg 或 png 在), 待渲 12
+[09-11 07:32:34] [stage] 12 张 -> D:\models\wave2_m0s1_s100\stage_in
+[09-11 07:49:09] [render] rc=0 耗时 16.6 min
+tile=128, overlap=16, grid=4x5
+[6/12] case93 40s
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[7/12] case94 40s
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[8/12] case95 40s
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[9/12] case96 165s
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[10/12] case97 306s
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[11/12] case98 81s
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[12/12] case99 96s
+[done] D:\models\wave2_m0s1_s100\render_png (16.1min)
+nputs_, config_patches=self.config)
+W0911 07:33:14.616000 3680 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0911 07:33:14.616000 3680 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0911 07:33:14.616000 3680 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0911 07:33:14.616000 3680 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0911 07:33:14.616000 3680 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0911 07:33:14.616000 3680 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0911 07:33:14.616000 3680 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0911 07:33:14.616000 3680 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0911 07:33:14.616000 3680 site-packages\torch\_dynamo\convert_frame.py:1280]
+[09-11 07:49:10] [jpg] case1 (89/100)
+[09-11 07:49:10] [jpg] case10 (90/100)
+[09-11 07:49:10] [jpg] case100 (91/100)
+[09-11 07:49:10] [jpg] case11 (92/100)
+[09-11 07:49:11] [jpg] case12 (93/100)
+[09-11 07:49:11] [jpg] case13 (94/100)
+[09-11 07:49:11] [jpg] case14 (95/100)
+[09-11 07:49:11] [jpg] case15 (96/100)
+[09-11 07:49:12] [jpg] case16 (97/100)
+[09-11 07:49:12] [jpg] case17 (98/100)
+[09-11 07:49:12] [jpg] case18 (99/100)
+[09-11 07:49:12] [jpg] case19 (100/100)
+[09-11 07:49:13] [jpg] case2 (101/100)
+[09-11 07:49:13] [jpg] case20 (102/100)
+[09-11 07:49:13] [jpg] case21 (103/100)
+[09-11 07:49:13] [jpg] case22 (104/100)
+[09-11 07:49:14] [jpg] case23 (105/100)
+[09-11 07:49:14] [jpg] case24 (106/100)
+[09-11 07:49:14] [jpg] case25 (107/100)
+[09-11 07:49:14] [jpg] case26 (108/100)
+[09-11 07:49:15] [jpg] case27 (109/100)
+[09-11 07:49:15] [jpg] case28 (110/100)
+[09-11 07:49:15] [jpg] case29 (111/100)
+[09-11 07:49:15] [jpg] case3 (112/100)
+[09-11 07:49:15] [jpg] case30 (113/100)
+[09-11 07:49:16] [jpg] case31 (114/100)
+[09-11 07:49:16] [jpg] case32 (115/100)
+[09-11 07:49:16] [jpg] case33 (116/100)
+[09-11 07:49:17] [jpg] case34 (117/100)
+[09-11 07:49:17] [jpg] case35 (118/100)
+[09-11 07:49:17] [jpg] case36 (119/100)
+[09-11 07:49:17] [jpg] case37 (120/100)
+[09-11 07:49:18] [jpg] case38 (121/100)
+[09-11 07:49:18] [jpg] case39 (122/100)
+[09-11 07:49:18] [jpg] case4 (123/100)
+[09-11 07:49:18] [jpg] case40 (124/100)
+[09-11 07:49:19] [jpg] case41 (125/100)
+[09-11 07:49:19] [jpg] case42 (126/100)
+[09-11 07:49:19] [jpg] case43 (127/100)
+[09-11 07:49:20] [jpg] case44 (128/100)
+[09-11 07:49:20] [jpg] case45 (129/100)
+[09-11 07:49:20] [jpg] case46 (130/100)
+[09-11 07:49:20] [jpg] case47 (131/100)
+[09-11 07:49:21] [jpg] case48 (132/100)
+[09-11 07:49:21] [jpg] case49 (133/100)
+[09-11 07:49:21] [jpg] case5 (134/100)
+[09-11 07:49:21] [jpg] case50 (135/100)
+[09-11 07:49:22] [jpg] case51 (136/100)
+[09-11 07:49:22] [jpg] case52 (137/100)
+[09-11 07:49:22] [jpg] case53 (138/100)
+[09-11 07:49:22] [jpg] case54 (139/100)
+[09-11 07:49:23] [jpg] case55 (140/100)
+[09-11 07:49:23] [jpg] case56 (141/100)
+[09-11 07:49:23] [jpg] case57 (142/100)
+[09-11 07:49:23] [jpg] case58 (143/100)
+[09-11 07:49:24] [jpg] case59 (144/100)
+[09-11 07:49:24] [jpg] case6 (145/100)
+[09-11 07:49:24] [jpg] case60 (146/100)
+[09-11 07:49:25] [jpg] case61 (147/100)
+[09-11 07:49:25] [jpg] case62 (148/100)
+[09-11 07:49:25] [jpg] case63 (149/100)
+[09-11 07:49:25] [jpg] case64 (150/100)
+[09-11 07:49:26] [jpg] case65 (151/100)
+[09-11 07:49:26] [jpg] case66 (152/100)
+[09-11 07:49:26] [jpg] case67 (153/100)
+[09-11 07:49:26] [jpg] case68 (154/100)
+[09-11 07:49:27] [jpg] case69 (155/100)
+[09-11 07:49:27] [jpg] case7 (156/100)
+[09-11 07:49:27] [jpg] case70 (157/100)
+[09-11 07:49:27] [jpg] case71 (158/100)
+[09-11 07:49:28] [jpg] case72 (159/100)
+[09-11 07:49:28] [jpg] case73 (160/100)
+[09-11 07:49:28] [jpg] case74 (161/100)
+[09-11 07:49:29] [jpg] case75 (162/100)
+[09-11 07:49:29] [jpg] case76 (163/100)
+[09-11 07:49:29] [jpg] case77 (164/100)
+[09-11 07:49:29] [jpg] case78 (165/100)
+[09-11 07:49:30] [jpg] case79 (166/100)
+[09-11 07:49:30] [jpg] case8 (167/100)
+[09-11 07:49:30] [jpg] case80 (168/100)
+[09-11 07:49:30] [jpg] case81 (169/100)
+[09-11 07:49:31] [jpg] case82 (170/100)
+[09-11 07:49:31] [jpg] case83 (171/100)
+[09-11 07:49:31] [jpg] case84 (172/100)
+[09-11 07:49:31] [jpg] case85 (173/100)
+[09-11 07:49:32] [jpg] case86 (174/100)
+[09-11 07:49:32] [jpg] case87 (175/100)
+[09-11 07:49:32] [jpg] case88 (176/100)
+[09-11 07:49:32] [jpg] case89 (177/100)
+[09-11 07:49:33] [jpg] case9 (178/100)
+[09-11 07:49:33] [jpg] case90 (179/100)
+[09-11 07:49:33] [jpg] case91 (180/100)
+[09-11 07:49:34] [jpg] case92 (181/100)
+[09-11 07:49:34] [jpg] case93 (182/100)
+[09-11 07:49:34] [jpg] case94 (183/100)
+[09-11 07:49:34] [jpg] case95 (184/100)
+[09-11 07:49:35] [jpg] case96 (185/100)
+[09-11 07:49:35] [jpg] case97 (186/100)
+[09-11 07:49:35] [jpg] case98 (187/100)
+[09-11 07:49:36] [jpg] case99 (188/100)
+[09-11 07:49:36] [done] m0s1_s100: 188/100 张, 总耗时 17.0 min
+[09-11 07:49:36] RENDER_PKG_PARTIAL 188/100

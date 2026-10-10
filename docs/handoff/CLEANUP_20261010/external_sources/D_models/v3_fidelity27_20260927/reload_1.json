@@ -1,0 +1,23 @@
+{
+  "pid": 29220,
+  "rows": [
+    {
+      "input": 0,
+      "repeat_equal": true,
+      "sha256": "f6d5aa7262ec784b162fc31d02e6500867be9798c2c86dba40143d15329c2325"
+    },
+    {
+      "input": 1,
+      "repeat_equal": true,
+      "sha256": "9bfed782560f305faf59a2d86ce4e67a60f352d4d77cd54a63f966b6f95d7553"
+    },
+    {
+      "input": 2,
+      "repeat_equal": true,
+      "sha256": "824fe8acf5c0356a3302bf9d0c9b880352fc3f502c8f408a2b7fe9ff82ec0762"
+    }
+  ],
+  "model_sha256": "6166649cdf34669810c7e666e65c9ec27ab140c08187f5c5f3055198bfc6e351",
+  "runner_sha256": "8e434e0240eed20b924e04f5f7338a037c8ec7821b8067159fe50ac7492ff70b",
+  "gate": true
+}

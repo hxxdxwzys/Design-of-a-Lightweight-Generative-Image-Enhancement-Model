@@ -1,0 +1,391 @@
+{
+ "schema": "EXPORT01R-ledger/1",
+ "created_at": "2026-09-17 21:12:53",
+ "limits": {
+  "top": 24,
+  "top4k": 8,
+  "component": 96,
+  "wall_s": 2700.0,
+  "disk_gib": 8.0
+ },
+ "prior_batch": {
+  "old_ledgers": [
+   {
+    "ledger": "C:\\models\\exports\\EXPORT01R_20260917_150506\\ledger.json",
+    "sha256": "9db551f3d469db0d83b05949b6d5bbe3d346c0dbb8696a76ddcfee0d8238dd8b",
+    "used": {
+     "top": 0,
+     "top4k": 0,
+     "component": 10
+    }
+   },
+   {
+    "ledger": "C:\\models\\exports\\EXPORT01R2_20260917_200903\\ledger.json",
+    "sha256": "29d2e49233755db1fc0d695b0484746b21071400bea20f8700eab9173142146d",
+    "used": {
+     "top": 5,
+     "top4k": 0,
+     "component": 2
+    }
+   },
+   {
+    "ledger": "C:\\models\\exports\\EXPORT01R3_20260917_204635\\ledger.json",
+    "sha256": "a44d28f489a26f8cc95b5e90e56231f8a375f95737b1a6b74321e994931dae90",
+    "used": {
+     "top": 0,
+     "top4k": 0,
+     "component": 26
+    }
+   }
+  ],
+  "note": "旧批次失败与扣款原样保留，不清零、不退还"
+ },
+ "used": {
+  "top": 0,
+  "top4k": 0,
+  "component": 22
+ },
+ "events": [
+  {
+   "seq": 1,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_load_assets_for_reference",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:00",
+   "monotonic": 116919.4006462,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 1
+   }
+  },
+  {
+   "seq": 2,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_enc_512",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:37",
+   "monotonic": 116956.9155334,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 2
+   }
+  },
+  {
+   "seq": 3,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_enc_1024",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:38",
+   "monotonic": 116957.2462373,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 3
+   }
+  },
+  {
+   "seq": 4,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_dino_512",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:38",
+   "monotonic": 116957.6555267,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 4
+   }
+  },
+  {
+   "seq": 5,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_dec_64",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:38",
+   "monotonic": 116957.6975324,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 5
+   }
+  },
+  {
+   "seq": 6,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_dec_128",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:38",
+   "monotonic": 116957.7941161,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 6
+   }
+  },
+  {
+   "seq": 7,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_wavelet",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:39",
+   "monotonic": 116958.2824095,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 7
+   }
+  },
+  {
+   "seq": 8,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_step_t1p0_r0p0",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:39",
+   "monotonic": 116958.3096933,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 8
+   }
+  },
+  {
+   "seq": 9,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_step_t0p5_r0p0",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:39",
+   "monotonic": 116958.5979637,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 9
+   }
+  },
+  {
+   "seq": 10,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_step_t1p0_r0p5",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:39",
+   "monotonic": 116958.7802793,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 10
+   }
+  },
+  {
+   "seq": 11,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_1",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.3937665,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 11
+   }
+  },
+  {
+   "seq": 12,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_2",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.3986996,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 12
+   }
+  },
+  {
+   "seq": 13,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_3",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.4021747,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 13
+   }
+  },
+  {
+   "seq": 14,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_4",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.4056929,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 14
+   }
+  },
+  {
+   "seq": 15,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_5",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.4087919,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 15
+   }
+  },
+  {
+   "seq": 16,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_6",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.4121765,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 16
+   }
+  },
+  {
+   "seq": 17,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_7",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.4154177,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 17
+   }
+  },
+  {
+   "seq": 18,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_8",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.4182779,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 18
+   }
+  },
+  {
+   "seq": 19,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_9",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.4216694,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 19
+   }
+  },
+  {
+   "seq": 20,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_10",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.4249652,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 20
+   }
+  },
+  {
+   "seq": 21,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_11",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.4284821,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 21
+   }
+  },
+  {
+   "seq": 22,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_12",
+   "pid": 15240,
+   "at": "2026-09-17 21:15:40",
+   "monotonic": 116959.4321602,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 22
+   }
+  },
+  {
+   "seq": 23,
+   "kind": "note",
+   "where": "component_gate",
+   "detail": {
+    "rc": 1,
+    "tail": "{\"verdict\": \"FAIL\", \"max_abs\": 0.0084228515625}\n"
+   },
+   "pid": 15240,
+   "at": "2026-09-17 21:15:51",
+   "monotonic": 116970.4481446,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 22
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "attempt_id": "attempt_01",
+   "run_dir": "C:\\models\\exports\\DELIV01_20260917_211249",
+   "started_at": "2026-09-17 21:15:00",
+   "started_monotonic": 116919.3955004,
+   "prereg_sha256": "975b3cd85afef10ae84995366a8829e9ca1f2b04af2ba7bc30c51755ec8a9b96",
+   "source_sha256": "c7aa55f20cf6261a0b8bf7b3115a0e741f257fdb888dfe4d8c0ddd8f02dc683c",
+   "model_sha256": "c3946096bcda7513d1a100975f73e08aa8f6ce24f4c7837642484038dd3f543d",
+   "status": "FAIL",
+   "note": "RuntimeError: 组件门槛未通过：{\"verdict\": \"FAIL\", \"max_abs\": 0.0084228515625}\n",
+   "finished_at": "2026-09-17 21:15:51",
+   "elapsed_s": 51.059
+  }
+ ],
+ "open_attempt": null
+}

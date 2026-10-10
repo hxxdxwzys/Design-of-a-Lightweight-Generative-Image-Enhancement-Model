@@ -1,0 +1,72 @@
+test_cross_process_accumulation (test_export_r_control_cpu.TestLedger.test_cross_process_accumulation) ... ok
+test_limits_enforced (test_export_r_control_cpu.TestLedger.test_limits_enforced) ... ok
+test_lock_not_auto_taken_over (test_export_r_control_cpu.TestLedger.test_lock_not_auto_taken_over) ... ok
+test_no_second_attempt (test_export_r_control_cpu.TestLedger.test_no_second_attempt) ... ok
+test_reserve_is_pre_charged_and_non_refundable (test_export_r_control_cpu.TestLedger.test_reserve_is_pre_charged_and_non_refundable) ... ok
+test_wall_clock_enforced (test_export_r_control_cpu.TestLedger.test_wall_clock_enforced) ... ok
+test_crash_leaves_ledger_inconsistent (test_export_r_control_cpu.TestSupervisorFaultInjection.test_crash_leaves_ledger_inconsistent) ... Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Python\Lib\unittest\__main__.py", line 18, in <module>
+    main(module=None)
+    ~~~~^^^^^^^^^^^^^
+  File "D:\Python\Lib\unittest\main.py", line 104, in __init__
+    self.runTests()
+    ~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\unittest\main.py", line 270, in runTests
+    self.result = testRunner.run(self.test)
+                  ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "D:\Python\Lib\unittest\runner.py", line 240, in run
+    test(result)
+    ~~~~^^^^^^^^
+  File "D:\Python\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\unittest\suite.py", line 122, in run
+    test(result)
+    ~~~~^^^^^^^^
+  File "D:\Python\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\unittest\suite.py", line 122, in run
+    test(result)
+    ~~~~^^^^^^^^
+  File "D:\Python\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\unittest\suite.py", line 122, in run
+    test(result)
+    ~~~~^^^^^^^^
+  File "D:\Python\Lib\unittest\case.py", line 707, in __call__
+    return self.run(*args, **kwds)
+           ~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\Python\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+       ~~~~~~^^
+  File "C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\tests\test_export_r_control_cpu.py", line 129, in test_crash_leaves_ledger_inconsistent
+    tmp, proc, sup, res = self._run(HERE / 'fake_worker_crash.py')
+                          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\export_baseline\tests\test_export_r_control_cpu.py", line 99, in _run
+    proc = subprocess.run(cmd, capture_output=True, text=True, cwd=str(EB))
+  File "D:\Python\Lib\subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\subprocess.py", line 1219, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\subprocess.py", line 1629, in _communicate
+    self.stderr_thread.start()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\threading.py", line 979, in start
+    self._started.wait()  # Will set ident and native_id
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\threading.py", line 659, in wait
+    signaled = self._cond.wait(timeout)
+  File "D:\Python\Lib\threading.py", line 359, in wait
+    waiter.acquire()
+    ~~~~~~~~~~~~~~^^
+KeyboardInterrupt
+^C

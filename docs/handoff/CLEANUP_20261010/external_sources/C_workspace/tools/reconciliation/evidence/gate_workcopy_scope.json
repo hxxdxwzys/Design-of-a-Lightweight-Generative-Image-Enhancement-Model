@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-09-16 19:20:04",
+ "original": "D:\\tmp_timing\\preupload_gate.py",
+ "workcopy": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\tools\\reconciliation\\preupload_gate_rcon.py",
+ "functions": [
+  {
+   "function": "_as_text",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "_dir_state",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "_disk_dir_digest",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "_lines",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "_model_binding",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "_parse_extract_count",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "_sha256_file",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "_sim_binding",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "_tail",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "_token_hits",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "_zip_dir_digest",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "_zip_output_dir_members",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "check_ascii_name",
+   "in_both": true,
+   "byte_identical": true,
+   "status": "UNCHANGED"
+  },
+  {
+   "function": "check_inner_names",
+   "in_both": true,
+   "byte_identical": true,
+   "status": "UNCHANGED"
+  },
+  {
+   "function": "check_jpg_dims",
+   "in_both": true,
+   "byte_identical": false,
+   "status": "CHANGED"
+  },
+  {
+   "function": "check_size",
+   "in_both": true,
+   "byte_identical": true,
+   "status": "UNCHANGED"
+  },
+  {
+   "function": "check_structure",
+   "in_both": true,
+   "byte_identical": true,
+   "status": "UNCHANGED"
+  },
+  {
+   "function": "default_local_checks",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "evaluate_tool",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "main",
+   "in_both": true,
+   "byte_identical": false,
+   "status": "CHANGED"
+  },
+  {
+   "function": "run_gate",
+   "in_both": false,
+   "status": "ADDED_IN_WORKCOPY"
+  },
+  {
+   "function": "run_tool",
+   "in_both": false,
+   "status": "REMOVED_IN_WORKCOPY"
+  }
+ ],
+ "unchanged": [
+  "check_ascii_name",
+  "check_inner_names",
+  "check_size",
+  "check_structure"
+ ],
+ "changed": [
+  "check_jpg_dims",
+  "main"
+ ],
+ "business_checks_unchanged": true,
+ "note": "check_jpg_dims 是唯一改动的本地检查：缺 PIL 时由 PASS 改为 NOT_RUN；尺寸阈值 min(w,h)>=2000 未改。run_tool 被可注入执行器取代。"
+}

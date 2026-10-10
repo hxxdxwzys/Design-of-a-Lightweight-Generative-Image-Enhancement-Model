@@ -1,0 +1,14 @@
+pred: 3 张 | gt: 3 张 | device: cuda | max_side: 原分辨率
+有参: ['lpips'] | 无参: ['clipiqa']
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+  [metric] lpips 就绪
+  [metric] clipiqa 就绪
+case  1: lpips=0.4811  clipiqa=0.4621
+case  2: lpips=0.2368  clipiqa=0.5672
+case  3: lpips=0.3572  clipiqa=0.6142
+
+=== 均值 ===
+  lpips      0.3584  ↓越低越好
+  clipiqa    0.5478  ↑越高越好
+
+已保存 -> D:/tmp_timing/baseline_s6k.json

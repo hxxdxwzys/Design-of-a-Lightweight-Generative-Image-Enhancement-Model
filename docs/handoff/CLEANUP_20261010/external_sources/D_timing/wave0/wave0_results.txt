@@ -1,0 +1,15 @@
+v14_ss4000_sc1.0: clip=0.9171 lpips=0.3845
+v14_ss3200_sc1.0: clip=0.9127 lpips=0.3786
+v14_ss3400_sc1.0: clip=0.9123 lpips=0.3809
+v14_ss3600_sc1.0: clip=0.9179 lpips=0.3846
+v14_ss3800_sc1.0: clip=0.9182 lpips=0.3863
+v14_ss3200_sc0.7: clip=0.8209 lpips=0.3620
+v14_ss3200_sc0.8: clip=0.8632 lpips=0.3669
+v14_ss3200_sc0.85: clip=0.8804 lpips=0.3696
+v14_ss3200_sc0.9: clip=0.8947 lpips=0.3724
+v14_ss3200_sc0.95: clip=0.9048 lpips=0.3754
+v14_ss3400_sc0.7: clip=0.8223 lpips=0.3631
+v14_ss3400_sc0.8: clip=0.8639 lpips=0.3684
+v14_ss3400_sc0.85: clip=0.8811 lpips=0.3715
+v14_ss3400_sc0.9: clip=0.8947 lpips=0.3744
+v14_ss3400_sc0.95: clip=0.9052 lpips=0.3775

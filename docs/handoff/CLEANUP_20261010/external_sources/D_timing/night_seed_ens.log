@@ -1,0 +1,42 @@
+[input] LQ 输入 3 张 -> D:\models\seed_ensemble_test\lq
+[seed 8] rc=0, 3 张, 198s
+[seed 108] rc=0, 3 张, 197s
+[seed 208] rc=0, 3 张, 199s
+[seed 308] rc=0, 3 张, 195s
+
+=== 多种子平均 (scale=0.8, N=4) ===
+Loading pretrained model MUSIQ from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\musiq_koniq_ckpt-e95806b9.pth
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+Loading pretrained model DISTS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\DISTS_weights-f5e65c96.pth
+  [single] (3 对) {'psnr': 24.6038, 'ssim': 0.9661, 'lpips': 0.3789, 'dists': 0.3289, 'niqe': 5.1723, 'musiq': 48.1411, 'clipiqa': 0.9193}
+Loading pretrained model MUSIQ from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\musiq_koniq_ckpt-e95806b9.pth
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+Loading pretrained model DISTS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\DISTS_weights-f5e65c96.pth
+Traceback (most recent call last):
+  File "D:\tmp_timing\test_seed_ensemble.py", line 163, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\test_seed_ensemble.py", line 145, in main
+    m, npair = metrics(d)
+               ~~~~~~~^^^
+  File "D:\tmp_timing\test_seed_ensemble.py", line 85, in metrics
+    acc['dists'].append(float(ds(tp, tg).item()))
+                              ~~^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\pyiqa\models\inference_model.py", line 119, in forward
+    output = self.net(target.to(device), ref.to(device), **kwargs)
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\pyiqa\archs\dists_arch.py", line 153, in forward
+    x_var = ((feats0[k] - x_mean) ** 2).mean([2, 3], keepdim=True)
+             ~~~~~~~~~~~~~~~~~~~~~^^~~
+  File "D:\Python\Lib\site-packages\torch\_tensor.py", line 39, in wrapped
+    return f(*args, **kwargs)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.00 GiB. GPU 0 has a total capacity of 8.00 GiB of which 0 bytes is free. Of the allocated memory 15.27 GiB is allocated by PyTorch, and 4.81 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

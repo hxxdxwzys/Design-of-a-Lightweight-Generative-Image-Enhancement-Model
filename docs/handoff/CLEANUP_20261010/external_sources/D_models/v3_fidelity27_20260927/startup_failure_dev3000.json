@@ -1,0 +1,9 @@
+{
+  "stage": "dev3000 supervisor startup",
+  "status": "FAIL_BEFORE_MODEL_LOAD",
+  "cause": "New local select.py shadowed Python stdlib select during torch/socket import.",
+  "resolution": "Rename local utility to choose_checkpoint.py; no numerical or criterion change.",
+  "gpu_calls": 0,
+  "ledger_modified": false,
+  "retry_tag": "dev3000r1"
+}

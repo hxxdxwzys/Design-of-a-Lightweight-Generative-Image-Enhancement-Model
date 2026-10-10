@@ -1,0 +1,14 @@
+{
+ "tag": "M24sc00",
+ "dir": "D:\\models\\final_compliant_M24sc00\\output_dir",
+ "n": 30,
+ "metrics": {
+  "niqe": 3.8631,
+  "clipiqa": 0.6448
+ },
+ "m24_30": {
+  "niqe": 5.2559,
+  "clipiqa": 0.9023
+ },
+ "pred": 59.76
+}

@@ -1,0 +1,5 @@
+Loading pretrained model MUSIQ from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\musiq_koniq_ckpt-e95806b9.pth
+Loading pretrained model MANIQA from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\ckpt_koniq10k.pt
+PROXY E5_gan1_48ch -> {"clipiqa": 0.7594, "niqe": 4.666, "musiq": 58.0158, "maniqa": 0.3719, "lapvar": 1011.4, "n": 30, "dir": "D:\\models\\opt11\\e5_gan1", "tag": "E5_gan1_48ch"}
+  (81.7 s, 30 张)
+PROXY_SUITE_DONE

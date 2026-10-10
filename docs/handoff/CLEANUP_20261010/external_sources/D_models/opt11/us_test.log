@@ -1,0 +1,6 @@
+US_TEST_WROTE 30 -> D:\models\opt11\us_test
+D:\tmp_timing\measure_test30.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(Image.open(p).convert('RGB'))).permute(2,0,1).unsqueeze(0).to(dev).float().div_(255)
+[measure] {"niqe": 5.3364, "clipiqa": 0.7265, "n": 30}
+  (参照: M24 clipiqa 0.9023 / niqe 5.2559 | TinyV1 0.3367 / 5.7899 | LQ 0.2752 / 7.8100)
+MEASURE_TEST30_DONE

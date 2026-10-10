@@ -1,0 +1,56 @@
+{
+ "mode": "native",
+ "flags": {
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "deterministic_algorithms": false,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": false,
+  "cudnn_allow_tf32": true,
+  "matmul_allow_tf32": false,
+  "torch": "2.7.0+cu126"
+ },
+ "arms": {
+  "base": {
+   "load_s": 2.2999884095042944e-06,
+   "first_ms": 298.3605999907013,
+   "median": {
+    "enc": 84.1,
+    "feat": 21.6,
+    "dit": 111.65,
+    "dec": 81.30000000000001,
+    "wall": 304.02509999112226
+   },
+   "u8max": 0,
+   "diff_frac": 0.0,
+   "out_sha": "274ca67298fb0a5c"
+  },
+  "base_bench": {
+   "load_s": 2.700020559132099e-06,
+   "first_ms": 296.9091999984812,
+   "median": {
+    "enc": 83.25,
+    "feat": 20.95,
+    "dit": 111.3,
+    "dec": 82.1,
+    "wall": 300.9894999995595
+   },
+   "u8max": 0,
+   "diff_frac": 0.0,
+   "out_sha": "274ca67298fb0a5c"
+  },
+  "cl": {
+   "load_s": 0.028175000014016405,
+   "first_ms": 328.6799999768846,
+   "median": {
+    "enc": 98.10000000000001,
+    "feat": 20.9,
+    "dit": 107.5,
+    "dec": 103.95,
+    "wall": 336.3642000040272
+   },
+   "u8max": 8,
+   "diff_frac": 0.21162796020507812,
+   "out_sha": "89fbd7fd80e339b0"
+  }
+ }
+}

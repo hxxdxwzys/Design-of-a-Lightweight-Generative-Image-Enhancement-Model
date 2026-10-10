@@ -1,0 +1,82 @@
+{
+ "schema": "DELIV02-cpu-checks/1",
+ "checks": {
+  "level_roundtrip_256": {
+   "passed": true,
+   "note": "u8->[-1,1]->u8 恒等（最近色阶）"
+  },
+  "grid_residual": {
+   "on_grid": {
+    "max_residual_levels": 3.7550926208496094e-06,
+    "finite": true,
+    "min": -1.0,
+    "max": 1.0
+   },
+   "off_grid": {
+    "max_residual_levels": 0.4999999408610165,
+    "finite": true,
+    "min": 0.007843137718737125,
+    "max": 0.007843137718737125
+   },
+   "off_grid_rejected": true,
+   "passed": true
+  },
+  "nonfinite_and_range": {
+   "rejected": 2,
+   "of": 2,
+   "passed": true
+  },
+  "real_arrays": {
+   "grid_residual": {
+    "A_512_r1": {
+     "max_residual_levels": 1.895427703857422e-05,
+     "finite": true,
+     "min": -1.0,
+     "max": 1.0
+    },
+    "A_512_r2": {
+     "max_residual_levels": 1.895427703857422e-05,
+     "finite": true,
+     "min": -1.0,
+     "max": 1.0
+    },
+    "A_512_r3": {
+     "max_residual_levels": 1.895427703857422e-05,
+     "finite": true,
+     "min": -1.0,
+     "max": 1.0
+    },
+    "A_511x513": {
+     "max_residual_levels": 1.895427703857422e-05,
+     "finite": true,
+     "min": -1.0,
+     "max": 1.0
+    }
+   },
+   "A1_vs_A2_u8": {
+    "max_channel_diff": 0,
+    "n_pixels_any_channel_diff": 0,
+    "frac_pixels_any_channel_diff": 0.0,
+    "identical": true,
+    "h": 512,
+    "w": 512
+   },
+   "passed": true
+  },
+  "postprocess_replay": {
+   "same_input_identical": true,
+   "perturbed_decode_fp32_max": 0.00784313678741455,
+   "perturbed_u8_identical": false,
+   "u8_delta": {
+    "max_channel_diff": 1,
+    "n_pixels_any_channel_diff": 5,
+    "frac_pixels_any_channel_diff": 0.001220703125,
+    "identical": false,
+    "h": 64,
+    "w": 64
+   },
+   "passed": true
+  }
+ },
+ "verdict": "PASS"
+}

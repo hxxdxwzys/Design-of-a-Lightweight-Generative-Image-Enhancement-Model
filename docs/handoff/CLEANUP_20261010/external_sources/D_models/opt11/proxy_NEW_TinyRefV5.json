@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.7815,
+ "niqe": 4.8547,
+ "musiq": 57.1235,
+ "maniqa": 0.3698,
+ "lapvar": 1039.6,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\e2_pkg_TinyRefV5\\",
+ "tag": "NEW_TinyRefV5"
+}

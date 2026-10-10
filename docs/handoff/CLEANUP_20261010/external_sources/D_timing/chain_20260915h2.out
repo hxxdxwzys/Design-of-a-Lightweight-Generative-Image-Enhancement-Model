@@ -1,0 +1,21 @@
+[09-15 08:17:18] === Á´ H2 Æô¶¯ ===
+[09-15 08:17:18]   [gpu] 589 MiB (1/3)
+[09-15 08:18:03]   [gpu] 501 MiB (2/3)
+[09-15 08:18:48]   [gpu] 542 MiB (3/3)
+[09-15 08:18:48] >>> train v11b (256Óò + 512ÓòËğÊ§ + band-limit D, 25k)
+[09-15 10:50:39] <<< train v11b (256Óò + 512ÓòËğÊ§ + band-limit D, 25k) rc=0 (151.9 min)
+[09-15 10:50:39] === productize TinyV11b (down=2) ===
+[09-15 10:50:39] >>> TinyV11b export
+[09-15 10:51:30] <<< TinyV11b export rc=0 (0.8 min)
+[09-15 10:51:30] >>> TinyV11b render100
+[09-15 10:55:37] <<< TinyV11b render100 rc=0 (4.1 min)
+[09-15 10:55:37] >>> TinyV11b measure
+[09-15 10:56:38] <<< TinyV11b measure rc=0 (1.0 min)
+[09-15 10:56:38] >>> TinyV11b latency
+[09-15 10:56:44] <<< TinyV11b latency rc=0 (0.1 min)
+[09-15 10:56:44] >>> TinyV11b package
+[09-15 10:57:04] <<< TinyV11b package rc=0 (0.3 min)
+[09-15 10:57:04] >>> TinyV11b gate
+[09-15 10:57:27] <<< TinyV11b gate rc=0 (0.4 min)
+[09-15 10:57:27] [upload] D:\models\upload\Track2_TinyV11b.zip
+[09-15 10:57:27] >>> train v9b2 (512Óò 0.38M 45k)

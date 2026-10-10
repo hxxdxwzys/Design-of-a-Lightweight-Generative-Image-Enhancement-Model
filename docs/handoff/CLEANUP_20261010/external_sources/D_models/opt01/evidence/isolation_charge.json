@@ -1,0 +1,7 @@
+{
+ "schema": "DELIV02-isolation-charge/1",
+ "zip": "D:\\models\\opt01\\Track2_OPT01_fp16full_v1.zip",
+ "reserved_top_calls": 4,
+ "used_forward_calls": 1,
+ "isolated_precheck_rc": 0
+}

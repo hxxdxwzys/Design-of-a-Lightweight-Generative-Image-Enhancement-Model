@@ -1,0 +1,19 @@
+{
+  "version": "V4t1_EdgeFix_20260927",
+  "scope": "Independent engineering revision of V4t1; no new trained weights are shipped. No original archives overwritten.",
+  "changes": ["exterior feather weights 1 instead of 0", "nearest uint8 rounding after float fusion"],
+  "cases": ["case3", "case17"],
+  "gpu_call_cap": 300,
+  "wall_cap_seconds": 900,
+  "criteria": {
+    "model_and_runner_bytes_equal_parent": true,
+    "cpu_coverage_weights_positive": true,
+    "cpu_identity_all_u8_levels_exact": true,
+    "independent_processes_jpeg_exact": true,
+    "legacy_outermost_zero_pixels_confirmed": true,
+    "new_outermost_not_all_zero": true,
+    "interior_pre_jpeg_max_difference_from_same_predictions": 1
+  },
+  "legacy_diagnostic": "Apply old host blending to same model tile outputs during analysis only. Production infer.py never reads historical output images or tile caches.",
+  "claims_forbidden": ["new model quality improved globally", "official score increased", "post-deadline replacement officially allowed", "100 images regenerated"]
+}

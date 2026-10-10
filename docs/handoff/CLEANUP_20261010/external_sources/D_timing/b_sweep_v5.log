@@ -1,0 +1,153 @@
+[sweep] v5_s4000_sc0.5 渲染 val 3...
+[sweep] v5_s4000_sc0.5: clip=0.8418 lpips=0.3736 (179s)
+[sweep] v5_s4000_sc0.7 渲染 val 3...
+[sweep] v5_s4000_sc0.7: clip=0.9046 lpips=0.3846 (180s)
+[sweep] v5_s4000_sc0.8 渲染 val 3...
+[sweep] v5_s4000_sc0.8: clip=0.9272 lpips=0.3914 (193s)
+[sweep] v5_s4000_sc0.9 渲染 val 3...
+[sweep] v5_s4000_sc0.9: clip=0.9415 lpips=0.4004 (200s)
+[sweep] v5_s3000_sc0.8 渲染 val 3...
+[sweep] v5_s3000_sc0.8: clip=0.9205 lpips=0.3908 (206s)
+[sweep] v5_s3000_sc0.9 渲染 val 3...
+[sweep] v5_s3000_sc0.9: clip=0.9357 lpips=0.3992 (208s)
+[done] b_sweep_v5.json
+[
+ {
+  "tag": "v5_s4000_sc0.5",
+  "ck": "v5_s4000.pt",
+  "scale": 0.5,
+  "ok": true,
+  "clip": 0.8418,
+  "lpips": 0.3736,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9011,
+    "lpips": 0.5113
+   },
+   "case2": {
+    "clipiqa": 0.7928,
+    "lpips": 0.2192
+   },
+   "case3": {
+    "clipiqa": 0.8315,
+    "lpips": 0.3903
+   }
+  }
+ },
+ {
+  "tag": "v5_s4000_sc0.7",
+  "ck": "v5_s4000.pt",
+  "scale": 0.7,
+  "ok": true,
+  "clip": 0.9046,
+  "lpips": 0.3846,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9452,
+    "lpips": 0.5083
+   },
+   "case2": {
+    "clipiqa": 0.8643,
+    "lpips": 0.2549
+   },
+   "case3": {
+    "clipiqa": 0.9043,
+    "lpips": 0.3907
+   }
+  }
+ },
+ {
+  "tag": "v5_s4000_sc0.8",
+  "ck": "v5_s4000.pt",
+  "scale": 0.8,
+  "ok": true,
+  "clip": 0.9272,
+  "lpips": 0.3914,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9558,
+    "lpips": 0.5067
+   },
+   "case2": {
+    "clipiqa": 0.8977,
+    "lpips": 0.2779
+   },
+   "case3": {
+    "clipiqa": 0.9281,
+    "lpips": 0.3895
+   }
+  }
+ },
+ {
+  "tag": "v5_s4000_sc0.9",
+  "ck": "v5_s4000.pt",
+  "scale": 0.9,
+  "ok": true,
+  "clip": 0.9415,
+  "lpips": 0.4004,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9619,
+    "lpips": 0.5051
+   },
+   "case2": {
+    "clipiqa": 0.9219,
+    "lpips": 0.3072
+   },
+   "case3": {
+    "clipiqa": 0.9407,
+    "lpips": 0.3889
+   }
+  }
+ },
+ {
+  "tag": "v5_s3000_sc0.8",
+  "ck": "v5_s3000.pt",
+  "scale": 0.8,
+  "ok": true,
+  "clip": 0.9205,
+  "lpips": 0.3908,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9512,
+    "lpips": 0.508
+   },
+   "case2": {
+    "clipiqa": 0.8894,
+    "lpips": 0.2738
+   },
+   "case3": {
+    "clipiqa": 0.921,
+    "lpips": 0.3907
+   }
+  }
+ },
+ {
+  "tag": "v5_s3000_sc0.9",
+  "ck": "v5_s3000.pt",
+  "scale": 0.9,
+  "ok": true,
+  "clip": 0.9357,
+  "lpips": 0.3992,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9586,
+    "lpips": 0.5067
+   },
+   "case2": {
+    "clipiqa": 0.9136,
+    "lpips": 0.3009
+   },
+   "case3": {
+    "clipiqa": 0.9349,
+    "lpips": 0.3899
+   }
+  }
+ }
+]

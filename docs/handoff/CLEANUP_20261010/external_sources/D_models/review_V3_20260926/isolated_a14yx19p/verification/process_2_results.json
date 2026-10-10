@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "cases": {
+    "case3": {
+      "jpeg_byte_equal": true,
+      "decoded_rgb_equal": true,
+      "decoded_max_abs_diff": 0,
+      "decoded_mean_abs_diff": 0.0,
+      "generated_sha256": "2e0de8783e5ef5420467bdce9ddc078f9280fffff1a923a2c43470c374150d65",
+      "reference_sha256": "2e0de8783e5ef5420467bdce9ddc078f9280fffff1a923a2c43470c374150d65",
+      "pre_jpeg_array_sha256": "f0182b5a690302a027be5346bbe5c36b417039e98db6390ebcc781dd201b99b6"
+    },
+    "case17": {
+      "jpeg_byte_equal": true,
+      "decoded_rgb_equal": true,
+      "decoded_max_abs_diff": 0,
+      "decoded_mean_abs_diff": 0.0,
+      "generated_sha256": "384a1ed67230ac5c4387beeb4129c2104155155035df59188bfca60fda199dcf",
+      "reference_sha256": "384a1ed67230ac5c4387beeb4129c2104155155035df59188bfca60fda199dcf",
+      "pre_jpeg_array_sha256": "f1ddcce603400930dcd2dbbc4bd4fe9ab53e593a3533da0b8ff57281a60f986a"
+    }
+  },
+  "started_epoch": 1790415732.8644798,
+  "scope": "two fixed samples, not all 100 historical outputs",
+  "manifest_sha256": "871690838cc167eaa5f03f029b8491ad8aa676cf9663846a0c3d1c07231a5700",
+  "environment": {
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.7.0+cu126",
+    "numpy": "2.4.6",
+    "Pillow": "12.3.0",
+    "libjpeg": "8.0",
+    "cuda": "12.6",
+    "cudnn": 90701,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "deterministic_algorithms": false
+  },
+  "cuda_graph_active": true,
+  "smoke_512": true,
+  "ended_epoch": 1790415738.900458,
+  "elapsed_s": 6.035978317260742
+}

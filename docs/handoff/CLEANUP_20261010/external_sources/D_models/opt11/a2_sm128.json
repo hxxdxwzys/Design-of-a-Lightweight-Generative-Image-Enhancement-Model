@@ -1,0 +1,49 @@
+{
+ "tag": "sm128",
+ "over": 128,
+ "blend": "smooth",
+ "n": 5,
+ "seam_ratio_mean": 1.08,
+ "per_image": [
+  {
+   "case": "case1",
+   "seam_ratio_x": 1.1779,
+   "seam_ratio_y": 1.0899,
+   "seam_ratio": 1.1339,
+   "n_seam_x": 20,
+   "n_seam_y": 14
+  },
+  {
+   "case": "case2",
+   "seam_ratio_x": 0.9595,
+   "seam_ratio_y": 1.155,
+   "seam_ratio": 1.0572,
+   "n_seam_x": 20,
+   "n_seam_y": 14
+  },
+  {
+   "case": "case3",
+   "seam_ratio_x": 0.8939,
+   "seam_ratio_y": 1.157,
+   "seam_ratio": 1.0254,
+   "n_seam_x": 20,
+   "n_seam_y": 14
+  },
+  {
+   "case": "case5",
+   "seam_ratio_x": 1.1542,
+   "seam_ratio_y": 0.9323,
+   "seam_ratio": 1.0433,
+   "n_seam_x": 20,
+   "n_seam_y": 14
+  },
+  {
+   "case": "case7",
+   "seam_ratio_x": 1.4717,
+   "seam_ratio_y": 0.8083,
+   "seam_ratio": 1.14,
+   "n_seam_x": 20,
+   "n_seam_y": 14
+  }
+ ]
+}

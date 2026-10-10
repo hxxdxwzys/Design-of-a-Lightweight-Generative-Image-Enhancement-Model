@@ -1,0 +1,3 @@
+[noref] export FAIL: NameError: name '_arch' is not defined. Did you mean: 'torch'?
+[r256_32x2 ] median 5.75 ms best 5.19
+COST2_DONE

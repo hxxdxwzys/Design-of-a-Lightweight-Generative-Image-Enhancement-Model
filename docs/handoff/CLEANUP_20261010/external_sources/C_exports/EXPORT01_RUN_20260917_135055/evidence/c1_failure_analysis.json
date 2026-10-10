@@ -1,0 +1,82 @@
+{
+ "schema": "EXPORT01-c1-failure-analysis/1",
+ "verdict": "FAIL",
+ "summary": "fp16 迁移在 4K 上与原已验收 fp32 基线严重不等价（均值差 0.25/0.40），而导出/重载本身在 512 上逐位一致（max=mean=0）。另一独立事实：同一实例、同一输入重复推理在 512 上已有 max=0.047 的差异，说明纯 fp16 链存在运行间不确定性，预登记的 1e-5 同精度判据在纯 fp16 下不可达。",
+ "findings": [
+  {
+   "id": "F1_fp16_vs_fp32",
+   "case": "case1_full",
+   "fp16_src_vs_fp32_max_abs": 2.0,
+   "fp16_src_vs_fp32_mean_abs": 0.24977809190750122,
+   "high_freq_energy": {
+    "fp16": 0.19144421815872192,
+    "fp32": 0.03376390039920807
+   },
+   "high_freq_ratio": 5.670085906982422,
+   "diagnostic_thresholds": {
+    "max_abs": 0.05,
+    "mean_abs": 0.002
+   },
+   "passed": false
+  },
+  {
+   "id": "F2_export_reload_equivalence",
+   "case": "case1_full",
+   "eager_fp16_vs_reloaded_max_abs": 0.07843142747879028,
+   "eager_fp16_vs_reloaded_mean_abs": 0.0006390829803422093,
+   "criterion_max_abs": 1e-05,
+   "passed": false
+  },
+  {
+   "id": "F1_fp16_vs_fp32",
+   "case": "case7_full",
+   "fp16_src_vs_fp32_max_abs": 2.0,
+   "fp16_src_vs_fp32_mean_abs": 0.4002537429332733,
+   "high_freq_energy": {
+    "fp16": 0.29438143968582153,
+    "fp32": 0.08316335082054138
+   },
+   "high_freq_ratio": 3.539797782897949,
+   "diagnostic_thresholds": {
+    "max_abs": 0.05,
+    "mean_abs": 0.002
+   },
+   "passed": false
+  },
+  {
+   "id": "F2_export_reload_equivalence",
+   "case": "case7_full",
+   "eager_fp16_vs_reloaded_max_abs": 0.0627450942993164,
+   "eager_fp16_vs_reloaded_mean_abs": 0.0007853275164961815,
+   "criterion_max_abs": 1e-05,
+   "passed": false
+  },
+  {
+   "id": "F2_export_reload_equivalence",
+   "case": "case1_crop512",
+   "eager_fp16_vs_reloaded_max_abs": 0.0,
+   "eager_fp16_vs_reloaded_mean_abs": 0.0,
+   "criterion_max_abs": 1e-05,
+   "passed": true
+  },
+  {
+   "id": "F3_run_to_run_nondeterminism",
+   "case": "case1_crop512",
+   "same_instance_same_input_repeat_max_abs": 0.047058820724487305,
+   "repeat_png_identical": false,
+   "implication": "纯 fp16（权重+激活 fp16，无 autocast）在 RTX4060/cuDNN 下运行间不可复现；fp32 基线在同一环境下逐位可复现（R-B 已验收 max=mean=0）。预登记的 1e-5 同精度判据在纯 fp16 下结构性不可达，需要 Architect 重新裁定精度配方与判据，而不是就地放宽阈值。"
+  }
+ ],
+ "budget_state": {
+  "top_level_infers_used": 22,
+  "top_level_infers_cap": 24,
+  "n_4k_infers_used": 8,
+  "n_4k_infers_cap": 8,
+  "note": "4K 额度已用尽，未再运行 4K；C2 未启动（C1 门槛未通过）"
+ },
+ "not_established": [
+  "具体发散子模块（VAE 编码 1024 tile / 解码 128 tile / DiT）——需要新的 4K 预算做分段探针",
+  "autocast（混合精度，softmax/norm 用 fp32）是否能同时满足 fp16 交付要求与可复现性",
+  "官方测速对“fp16”的具体判定口径（仅权重 fp16 还是允许 autocast）"
+ ]
+}

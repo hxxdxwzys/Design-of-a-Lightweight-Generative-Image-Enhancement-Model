@@ -1,0 +1,207 @@
+[data] 3450 HQ images
+[profile] fixed: sigma[0.8,3.5] noise[0.0,2.0] jpeg[55,95]
+[holdout] 40 张留出, 3410 张训练
+[holdout] 复用已有 40 对
+[net] width=48 params: 81.01M
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[data] pool built: 2400 pairs
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[train] start (全 fp32)
+[step 0] loss=2.3365 l1=0.2923 lpips=0.7740 lr=2.00e-04 0.87s/step
+[step 100] loss=0.8951 l1=0.0306 lpips=0.2978 lr=2.00e-04 0.61s/step
+[step 200] loss=1.2150 l1=0.0425 lpips=0.4043 lr=2.00e-04 0.61s/step
+[step 300] loss=1.3632 l1=0.0493 lpips=0.4536 lr=2.00e-04 0.61s/step
+[step 400] loss=0.9652 l1=0.0515 lpips=0.3209 lr=2.00e-04 0.61s/step
+[step 500] loss=1.4751 l1=0.0552 lpips=0.4908 lr=2.00e-04 0.62s/step
+[step 600] loss=0.5744 l1=0.0256 lpips=0.1910 lr=1.99e-04 0.62s/step
+[step 700] loss=1.2988 l1=0.0541 lpips=0.4320 lr=1.99e-04 0.63s/step
+[step 800] loss=0.9308 l1=0.0476 lpips=0.3095 lr=1.99e-04 0.63s/step
+[step 900] loss=0.6956 l1=0.0353 lpips=0.2313 lr=1.98e-04 0.64s/step
+[save] net_s1000.pt + ema_s1000.pt
+[step 1000] loss=0.8945 l1=0.0574 lpips=0.2972 lr=1.98e-04 0.64s/step
+[step 1100] loss=1.7190 l1=0.0659 lpips=0.5719 lr=1.98e-04 0.65s/step
+[step 1200] loss=1.6146 l1=0.0596 lpips=0.5372 lr=1.97e-04 0.65s/step
+[step 1300] loss=0.9111 l1=0.0503 lpips=0.3029 lr=1.97e-04 0.65s/step
+[step 1400] loss=1.0607 l1=0.0378 lpips=0.3529 lr=1.96e-04 0.66s/step
+[step 1500] loss=0.8451 l1=0.0345 lpips=0.2811 lr=1.96e-04 0.66s/step
+[step 1600] loss=0.7394 l1=0.0437 lpips=0.2457 lr=1.95e-04 0.66s/step
+[step 1700] loss=0.9095 l1=0.0676 lpips=0.3021 lr=1.95e-04 0.66s/step
+[step 1800] loss=1.1031 l1=0.0362 lpips=0.3671 lr=1.94e-04 0.67s/step
+[step 1900] loss=1.2666 l1=0.0597 lpips=0.4212 lr=1.93e-04 0.67s/step
+[save] net_s2000.pt + ema_s2000.pt
+[eval:2000] holdout(40): lpips=0.2252 clipiqa=0.5469
+[eval:2000] val3(4K): lpips=0.3935 clipiqa=0.3620
+[step 2000] loss=0.8936 l1=0.0324 lpips=0.2973 lr=1.92e-04 0.79s/step
+[step 2100] loss=1.0159 l1=0.0298 lpips=0.3381 lr=1.92e-04 0.81s/step
+[step 2200] loss=1.1536 l1=0.0652 lpips=0.3835 lr=1.91e-04 0.84s/step
+[step 2300] loss=1.1171 l1=0.0453 lpips=0.3716 lr=1.90e-04 0.86s/step
+[step 2400] loss=0.7574 l1=0.0711 lpips=0.2513 lr=1.89e-04 0.88s/step
+[step 2500] loss=1.0409 l1=0.0308 lpips=0.3465 lr=1.88e-04 0.89s/step
+[step 2600] loss=0.7879 l1=0.0296 lpips=0.2621 lr=1.87e-04 0.91s/step
+[step 2700] loss=1.0706 l1=0.0502 lpips=0.3560 lr=1.86e-04 0.92s/step
+[step 2800] loss=1.2665 l1=0.0613 lpips=0.4211 lr=1.85e-04 0.94s/step
+[step 2900] loss=0.8322 l1=0.0462 lpips=0.2766 lr=1.84e-04 0.95s/step
+[save] net_s3000.pt + ema_s3000.pt
+[step 3000] loss=0.8695 l1=0.0340 lpips=0.2893 lr=1.83e-04 0.97s/step
+[data] pool refreshed
+[step 3100] loss=1.1883 l1=0.0243 lpips=0.3957 lr=1.82e-04 1.03s/step
+[step 3200] loss=0.7387 l1=0.0460 lpips=0.2455 lr=1.81e-04 1.04s/step
+[step 3300] loss=1.1040 l1=0.0654 lpips=0.3669 lr=1.80e-04 1.05s/step
+[step 3400] loss=0.9585 l1=0.0500 lpips=0.3187 lr=1.79e-04 1.05s/step
+[step 3500] loss=0.8917 l1=0.0264 lpips=0.2968 lr=1.77e-04 1.06s/step
+[step 3600] loss=1.1366 l1=0.0524 lpips=0.3780 lr=1.76e-04 1.07s/step
+[step 3700] loss=0.9563 l1=0.0430 lpips=0.3180 lr=1.75e-04 1.08s/step
+[step 3800] loss=1.3827 l1=0.0474 lpips=0.4601 lr=1.74e-04 1.08s/step
+[step 3900] loss=1.2421 l1=0.0617 lpips=0.4130 lr=1.72e-04 1.09s/step
+[save] net_s4000.pt + ema_s4000.pt
+[eval:4000] holdout(40): lpips=0.2579 clipiqa=0.5701
+[eval:4000] val3(4K): lpips=0.3738 clipiqa=0.4347
+[step 4000] loss=0.9755 l1=0.0389 lpips=0.3245 lr=1.71e-04 1.16s/step
+[step 4100] loss=0.8683 l1=0.0514 lpips=0.2886 lr=1.69e-04 1.17s/step
+[step 4200] loss=1.0740 l1=0.0592 lpips=0.3570 lr=1.68e-04 1.17s/step
+[step 4300] loss=1.1143 l1=0.0416 lpips=0.3707 lr=1.67e-04 1.18s/step
+[step 4400] loss=1.2560 l1=0.0426 lpips=0.4180 lr=1.65e-04 1.18s/step
+[step 4500] loss=1.2982 l1=0.0378 lpips=0.4321 lr=1.64e-04 1.18s/step
+[step 4600] loss=1.0954 l1=0.0416 lpips=0.3644 lr=1.62e-04 1.19s/step
+[step 4700] loss=1.7245 l1=0.0576 lpips=0.5739 lr=1.61e-04 1.19s/step
+[step 4800] loss=1.4402 l1=0.0454 lpips=0.4793 lr=1.59e-04 1.19s/step
+[step 4900] loss=0.6789 l1=0.0450 lpips=0.2255 lr=1.57e-04 1.20s/step
+[save] net_s5000.pt + ema_s5000.pt
+[step 5000] loss=1.0867 l1=0.0406 lpips=0.3615 lr=1.56e-04 1.20s/step
+[step 5100] loss=0.6818 l1=0.0454 lpips=0.2265 lr=1.54e-04 1.20s/step
+[step 5200] loss=0.4932 l1=0.0245 lpips=0.1640 lr=1.52e-04 1.21s/step
+[step 5300] loss=1.0549 l1=0.0418 lpips=0.3509 lr=1.51e-04 1.21s/step
+[step 5400] loss=1.1167 l1=0.0617 lpips=0.3712 lr=1.49e-04 1.21s/step
+[step 5500] loss=0.8822 l1=0.0447 lpips=0.2933 lr=1.47e-04 1.22s/step
+[step 5600] loss=0.6158 l1=0.0292 lpips=0.2048 lr=1.46e-04 1.22s/step
+[step 5700] loss=1.2978 l1=0.0568 lpips=0.4317 lr=1.44e-04 1.22s/step
+[step 5800] loss=1.3829 l1=0.0451 lpips=0.4602 lr=1.42e-04 1.22s/step
+[step 5900] loss=0.8111 l1=0.0358 lpips=0.2698 lr=1.40e-04 1.22s/step
+[save] net_s6000.pt + ema_s6000.pt
+[eval:6000] holdout(40): lpips=0.2325 clipiqa=0.5735
+[eval:6000] val3(4K): lpips=0.3619 clipiqa=0.3921
+[step 6000] loss=0.7867 l1=0.0422 lpips=0.2615 lr=1.39e-04 1.27s/step
+[data] pool refreshed
+[step 6100] loss=0.7690 l1=0.0514 lpips=0.2555 lr=1.37e-04 1.30s/step
+[step 6200] loss=0.6192 l1=0.0333 lpips=0.2058 lr=1.35e-04 1.30s/step
+[step 6300] loss=0.9786 l1=0.0443 lpips=0.3255 lr=1.33e-04 1.30s/step
+[step 6400] loss=0.5010 l1=0.0320 lpips=0.1665 lr=1.31e-04 1.30s/step
+[step 6500] loss=0.8199 l1=0.0463 lpips=0.2725 lr=1.29e-04 1.30s/step
+[step 6600] loss=0.6413 l1=0.0385 lpips=0.2131 lr=1.28e-04 1.30s/step
+[step 6700] loss=0.8119 l1=0.0374 lpips=0.2700 lr=1.26e-04 1.30s/step
+[step 6800] loss=1.1325 l1=0.0541 lpips=0.3766 lr=1.24e-04 1.30s/step
+[step 6900] loss=0.9256 l1=0.0438 lpips=0.3078 lr=1.22e-04 1.30s/step
+[save] net_s7000.pt + ema_s7000.pt
+[step 7000] loss=0.9007 l1=0.0344 lpips=0.2997 lr=1.20e-04 1.30s/step
+[step 7100] loss=1.2291 l1=0.0566 lpips=0.4087 lr=1.18e-04 1.30s/step
+[step 7200] loss=0.8413 l1=0.0365 lpips=0.2798 lr=1.16e-04 1.30s/step
+[step 7300] loss=0.4892 l1=0.0287 lpips=0.1626 lr=1.14e-04 1.30s/step
+[step 7400] loss=0.8117 l1=0.0319 lpips=0.2700 lr=1.12e-04 1.30s/step
+[step 7500] loss=0.7905 l1=0.0461 lpips=0.2627 lr=1.10e-04 1.31s/step
+[step 7600] loss=0.4588 l1=0.0290 lpips=0.1525 lr=1.08e-04 1.31s/step
+[step 7700] loss=0.8798 l1=0.0593 lpips=0.2923 lr=1.06e-04 1.31s/step
+[step 7800] loss=1.1452 l1=0.0502 lpips=0.3809 lr=1.04e-04 1.31s/step
+[step 7900] loss=0.5299 l1=0.0267 lpips=0.1762 lr=1.02e-04 1.31s/step
+[save] net_s8000.pt + ema_s8000.pt
+[eval:8000] holdout(40): lpips=0.2146 clipiqa=0.5673
+[eval:8000] val3(4K): lpips=0.3629 clipiqa=0.3997
+[step 8000] loss=0.5304 l1=0.0385 lpips=0.1761 lr=1.01e-04 1.34s/step
+[step 8100] loss=0.8282 l1=0.0440 lpips=0.2753 lr=9.85e-05 1.34s/step
+[step 8200] loss=0.6170 l1=0.0411 lpips=0.2050 lr=9.66e-05 1.34s/step
+[step 8300] loss=0.6202 l1=0.0323 lpips=0.2062 lr=9.46e-05 1.34s/step
+[step 8400] loss=0.4720 l1=0.0151 lpips=0.1571 lr=9.27e-05 1.34s/step
+[step 8500] loss=1.5101 l1=0.0811 lpips=0.5020 lr=9.07e-05 1.34s/step
+[step 8600] loss=1.1795 l1=0.0543 lpips=0.3922 lr=8.88e-05 1.34s/step
+[step 8700] loss=0.8736 l1=0.0292 lpips=0.2907 lr=8.69e-05 1.34s/step
+[step 8800] loss=0.9586 l1=0.0348 lpips=0.3190 lr=8.49e-05 1.34s/step
+[step 8900] loss=0.5553 l1=0.0423 lpips=0.1844 lr=8.30e-05 1.34s/step
+[save] net_s9000.pt + ema_s9000.pt
+[step 9000] loss=0.7793 l1=0.0427 lpips=0.2590 lr=8.11e-05 1.34s/step
+[data] pool refreshed
+[step 9100] loss=0.6995 l1=0.0395 lpips=0.2325 lr=7.92e-05 1.36s/step
+[step 9200] loss=0.6553 l1=0.0350 lpips=0.2178 lr=7.73e-05 1.36s/step
+[step 9300] loss=0.9561 l1=0.0480 lpips=0.3179 lr=7.54e-05 1.36s/step
+[step 9400] loss=0.8863 l1=0.0478 lpips=0.2946 lr=7.35e-05 1.36s/step
+[step 9500] loss=0.6965 l1=0.0421 lpips=0.2315 lr=7.16e-05 1.36s/step
+[step 9600] loss=0.9319 l1=0.0457 lpips=0.3099 lr=6.98e-05 1.36s/step
+[step 9700] loss=0.6900 l1=0.0341 lpips=0.2294 lr=6.79e-05 1.36s/step
+[step 9800] loss=0.7052 l1=0.0442 lpips=0.2343 lr=6.61e-05 1.36s/step
+[step 9900] loss=1.0579 l1=0.0318 lpips=0.3521 lr=6.42e-05 1.36s/step
+[save] net_s10000.pt + ema_s10000.pt
+[eval:10000] holdout(40): lpips=0.1810 clipiqa=0.5617
+[eval:10000] val3(4K): lpips=0.3625 clipiqa=0.4480
+[step 10000] loss=0.8987 l1=0.0523 lpips=0.2987 lr=6.24e-05 1.39s/step
+[step 10100] loss=0.8287 l1=0.0291 lpips=0.2757 lr=6.06e-05 1.39s/step
+[step 10200] loss=1.0569 l1=0.0649 lpips=0.3512 lr=5.88e-05 1.38s/step
+[step 10300] loss=0.7184 l1=0.0164 lpips=0.2392 lr=5.71e-05 1.38s/step
+[step 10400] loss=0.5251 l1=0.0403 lpips=0.1744 lr=5.53e-05 1.38s/step
+[step 10500] loss=0.8194 l1=0.0447 lpips=0.2724 lr=5.36e-05 1.38s/step
+[step 10600] loss=0.8205 l1=0.0344 lpips=0.2729 lr=5.19e-05 1.38s/step
+[step 10700] loss=0.4917 l1=0.0273 lpips=0.1635 lr=5.02e-05 1.38s/step
+[step 10800] loss=0.8771 l1=0.0485 lpips=0.2915 lr=4.85e-05 1.38s/step
+[step 10900] loss=0.5915 l1=0.0426 lpips=0.1964 lr=4.69e-05 1.38s/step
+[save] net_s11000.pt + ema_s11000.pt
+[step 11000] loss=0.6069 l1=0.0312 lpips=0.2018 lr=4.52e-05 1.38s/step
+[step 11100] loss=0.8866 l1=0.0496 lpips=0.2947 lr=4.36e-05 1.38s/step
+[step 11200] loss=0.5439 l1=0.0386 lpips=0.1807 lr=4.20e-05 1.38s/step
+[step 11300] loss=0.4442 l1=0.0235 lpips=0.1477 lr=4.04e-05 1.38s/step
+[step 11400] loss=0.7574 l1=0.0389 lpips=0.2518 lr=3.89e-05 1.38s/step
+[step 11500] loss=1.0094 l1=0.0431 lpips=0.3357 lr=3.74e-05 1.38s/step
+[step 11600] loss=0.9193 l1=0.0486 lpips=0.3056 lr=3.59e-05 1.38s/step
+[step 11700] loss=0.6856 l1=0.0403 lpips=0.2278 lr=3.44e-05 1.38s/step
+[step 11800] loss=0.7787 l1=0.0539 lpips=0.2587 lr=3.30e-05 1.38s/step
+[step 11900] loss=0.6895 l1=0.0284 lpips=0.2294 lr=3.15e-05 1.38s/step
+[save] net_s12000.pt + ema_s12000.pt
+[eval:12000] holdout(40): lpips=0.1548 clipiqa=0.5682
+[eval:12000] val3(4K): lpips=0.3596 clipiqa=0.4102
+[step 12000] loss=0.4725 l1=0.0231 lpips=0.1571 lr=3.01e-05 1.40s/step
+[data] pool refreshed
+[step 12100] loss=0.8632 l1=0.0335 lpips=0.2872 lr=2.88e-05 1.41s/step
+[step 12200] loss=0.5716 l1=0.0399 lpips=0.1899 lr=2.74e-05 1.41s/step
+[step 12300] loss=0.4667 l1=0.0358 lpips=0.1550 lr=2.61e-05 1.41s/step
+[step 12400] loss=0.6505 l1=0.0384 lpips=0.2162 lr=2.48e-05 1.41s/step
+[step 12500] loss=0.7543 l1=0.0336 lpips=0.2509 lr=2.36e-05 1.41s/step
+[step 12600] loss=0.5878 l1=0.0294 lpips=0.1954 lr=2.24e-05 1.41s/step
+[step 12700] loss=0.9507 l1=0.0370 lpips=0.3163 lr=2.12e-05 1.41s/step
+[step 12800] loss=0.4397 l1=0.0224 lpips=0.1462 lr=2.00e-05 1.41s/step
+[step 12900] loss=0.6476 l1=0.0408 lpips=0.2152 lr=1.89e-05 1.41s/step
+[save] net_s13000.pt + ema_s13000.pt
+[step 13000] loss=0.6982 l1=0.0308 lpips=0.2322 lr=1.78e-05 1.41s/step
+[step 13100] loss=0.6630 l1=0.0191 lpips=0.2207 lr=1.67e-05 1.41s/step
+[step 13200] loss=0.5702 l1=0.0204 lpips=0.1897 lr=1.57e-05 1.41s/step
+[step 13300] loss=0.6450 l1=0.0382 lpips=0.2144 lr=1.47e-05 1.41s/step
+[step 13400] loss=0.8567 l1=0.0539 lpips=0.2847 lr=1.37e-05 1.41s/step
+[step 13500] loss=1.1327 l1=0.0473 lpips=0.3768 lr=1.27e-05 1.41s/step
+[step 13600] loss=0.6320 l1=0.0292 lpips=0.2102 lr=1.18e-05 1.41s/step
+[step 13700] loss=0.6786 l1=0.0414 lpips=0.2255 lr=1.10e-05 1.41s/step
+[step 13800] loss=0.6744 l1=0.0307 lpips=0.2243 lr=1.01e-05 1.41s/step
+[step 13900] loss=1.0683 l1=0.0692 lpips=0.3550 lr=9.34e-06 1.41s/step
+[save] net_s14000.pt + ema_s14000.pt
+[eval:14000] holdout(40): lpips=0.1648 clipiqa=0.5733
+[eval:14000] val3(4K): lpips=0.3588 clipiqa=0.4356
+[step 14000] loss=0.5213 l1=0.0284 lpips=0.1733 lr=8.57e-06 1.42s/step
+[step 14100] loss=0.5960 l1=0.0264 lpips=0.1982 lr=7.84e-06 1.42s/step
+[step 14200] loss=0.4280 l1=0.0300 lpips=0.1422 lr=7.15e-06 1.42s/step
+[step 14300] loss=0.4488 l1=0.0317 lpips=0.1491 lr=6.49e-06 1.42s/step
+[step 14400] loss=0.8734 l1=0.0595 lpips=0.2901 lr=5.87e-06 1.42s/step
+[step 14500] loss=0.6991 l1=0.0353 lpips=0.2324 lr=5.28e-06 1.42s/step
+[step 14600] loss=0.7634 l1=0.0532 lpips=0.2536 lr=4.74e-06 1.42s/step
+[step 14700] loss=0.8480 l1=0.0328 lpips=0.2821 lr=4.22e-06 1.42s/step
+[step 14800] loss=0.3639 l1=0.0184 lpips=0.1210 lr=3.75e-06 1.42s/step
+[step 14900] loss=0.5411 l1=0.0278 lpips=0.1799 lr=3.31e-06 1.42s/step
+[save] net_s15000.pt + ema_s15000.pt
+[step 15000] loss=0.5832 l1=0.0285 lpips=0.1939 lr=2.91e-06 1.42s/step
+[data] pool refreshed
+[step 15100] loss=0.6746 l1=0.0333 lpips=0.2243 lr=2.55e-06 1.43s/step
+[step 15200] loss=0.3828 l1=0.0287 lpips=0.1271 lr=2.23e-06 1.43s/step
+[step 15300] loss=0.8426 l1=0.0520 lpips=0.2800 lr=1.94e-06 1.43s/step
+[step 15400] loss=0.9089 l1=0.0640 lpips=0.3019 lr=1.69e-06 1.43s/step
+[step 15500] loss=0.8005 l1=0.0383 lpips=0.2662 lr=1.48e-06 1.43s/step
+[step 15600] loss=0.4208 l1=0.0272 lpips=0.1398 lr=1.31e-06 1.43s/step
+[step 15700] loss=0.5428 l1=0.0370 lpips=0.1803 lr=1.17e-06 1.43s/step
+[step 15800] loss=0.6032 l1=0.0302 lpips=0.2006 lr=1.08e-06 1.43s/step
+[step 15900] loss=0.6123 l1=0.0430 lpips=0.2034 lr=1.02e-06 1.42s/step
+[save] net_s16000.pt + ema_s16000.pt
+[eval:16000] holdout(40): lpips=0.1599 clipiqa=0.5731
+[eval:16000] val3(4K): lpips=0.3602 clipiqa=0.4247
+[done]

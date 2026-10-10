@@ -1,0 +1,47 @@
+[09-12 17:03:15] ① 渲染 100 张 @ scale=0.4 -> D:\models\final_compliant_probeA_sc04\output_dir
+[09-12 19:39:48] ① 完成: 100/100 张
+[09-12 19:39:48] ② 质检 (qc_test100)
+[09-12 19:40:05]    QC_PASS
+[09-12 19:40:05] ③ 组装 model_dir (remerge sc0.8 -> sc0.4)
+[09-12 19:40:12]    remerge OK: [19:40:11] [save] D:\models\final_compliant_probeA_sc04\model_dir\your_model.pt (1.34 GB)
+[09-12 19:40:12]    model_dir 文件数 85
+[09-12 19:40:12] ④ 打包 Track2_probeA_sc04
+[09-12 19:41:32]    [save] D:\models\Track2_probeA_sc04.zip (1.60 GB) | output 100 | model_dir 43
+[09-12 19:41:32] ⑤ 10 项门禁 + 归位 upload/
+[09-12 19:49:21]    ✅ ① 文件名 ASCII: 文件名纯 ASCII: Track2_probeA_sc04.zip
+[09-12 19:49:21]    ✅    内部路径 ASCII: zip 内路径全部 ASCII
+[09-12 19:49:21]    ✅    结构与完整性: testzip OK; output_dir 100 jpg; model_dir 43 项
+[09-12 19:49:21]    ✅    体积: 1.49 GiB (上限 10.0 GB)
+[09-12 19:49:21]    ✅    出图尺寸: case1.jpg 4096x3072; case54.jpg 4096x3072; case99.jpg 4096x3072
+[09-12 19:49:21]    ✅ ② 语法兼容: 0 处风险
+[09-12 19:49:21]    ✅   接口/512 推理: infer OK
+[09-12 19:49:21]    ✅ ③ IQA 遮蔽: PASS
+[09-12 19:49:21]    ✅ ④ IQA 遮蔽(对抗): PASS
+[09-12 19:49:21]    ✅ ⑤ 官方格式严格审计: PASS
+[09-12 19:49:21]    ==> PREUPLOAD_GATE_PASS
+[09-12 19:49:21]    总体: ✅ 全部通过，可以上传
+[09-12 19:49:21] ⑤ ✅ 可以上传
+[09-12 19:49:21] [done]
+[09-12 22:30:17] ① 完成: 100/100 张
+[09-12 22:30:17] ② 质检 (qc_test100)
+[09-12 22:30:34]    QC_PASS
+[09-12 22:30:34] ③ 组装 model_dir (remerge sc0.8 -> sc0.0)
+[09-12 22:30:41]    remerge OK: [22:30:40] [save] D:\models\final_compliant_M24sc00\model_dir\your_model.pt (1.34 GB)
+[09-12 22:30:41]    model_dir 文件数 85
+[09-12 22:30:41] ④ 打包 Track2_M24sc00
+[09-12 22:32:08]    [save] D:\models\Track2_M24sc00.zip (1.57 GB) | output 100 | model_dir 43
+[09-12 22:32:08] ⑤ 10 项门禁 + 归位 upload/
+[09-12 22:33:39]    ✅ ① 文件名 ASCII: 文件名纯 ASCII: Track2_M24sc00.zip
+[09-12 22:33:39]    ✅    内部路径 ASCII: zip 内路径全部 ASCII
+[09-12 22:33:39]    ✅    结构与完整性: testzip OK; output_dir 100 jpg; model_dir 43 项
+[09-12 22:33:39]    ✅    体积: 1.47 GiB (上限 10.0 GB)
+[09-12 22:33:39]    ✅    出图尺寸: case1.jpg 4096x3072; case54.jpg 4096x3072; case99.jpg 4096x3072
+[09-12 22:33:39]    ✅ ② 语法兼容: 0 处风险
+[09-12 22:33:39]    ✅   接口/512 推理: infer OK
+[09-12 22:33:39]    ✅ ③ IQA 遮蔽: PASS
+[09-12 22:33:39]    ✅ ④ IQA 遮蔽(对抗): PASS
+[09-12 22:33:39]    ✅ ⑤ 官方格式严格审计: PASS
+[09-12 22:33:39]    ==> PREUPLOAD_GATE_PASS
+[09-12 22:33:39]    总体: ✅ 全部通过，可以上传
+[09-12 22:33:39] ⑤ ✅ 可以上传
+[09-12 22:33:39] [done]

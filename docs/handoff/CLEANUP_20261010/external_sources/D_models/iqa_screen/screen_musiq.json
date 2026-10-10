@@ -1,0 +1,453 @@
+{
+ "schema": "PROXY-screen/1",
+ "metrics": [
+  "clipiqa",
+  "maniqa",
+  "niqe",
+  "musiq"
+ ],
+ "n_common": 16,
+ "cases": [
+  "case1",
+  "case2",
+  "case5",
+  "case10",
+  "case11",
+  "case12",
+  "case13",
+  "case20",
+  "case25",
+  "case33",
+  "case50",
+  "case66",
+  "case77",
+  "case88",
+  "case99",
+  "case100"
+ ],
+ "rows": {
+  "c_v7s5000_sc0.8": {
+   "dir": "D:\\models\\iqa_screen\\c_v7s5000_sc0.8",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9344,
+     "maniqa": 0.4211,
+     "niqe": 5.3291,
+     "musiq": 59.5415
+    },
+    "case2": {
+     "clipiqa": 0.9011,
+     "maniqa": 0.5015,
+     "niqe": 4.6561,
+     "musiq": 64.7382
+    },
+    "case5": {
+     "clipiqa": 0.9202,
+     "maniqa": 0.5888,
+     "niqe": 5.9603,
+     "musiq": 70.494
+    },
+    "case10": {
+     "clipiqa": 0.8093,
+     "maniqa": 0.4408,
+     "niqe": 8.3357,
+     "musiq": 65.4636
+    },
+    "case11": {
+     "clipiqa": 0.8572,
+     "maniqa": 0.5787,
+     "niqe": 6.6822
+    },
+    "case12": {
+     "clipiqa": 0.8645,
+     "maniqa": 0.5371,
+     "niqe": 5.2003
+    },
+    "case13": {
+     "clipiqa": 0.7992,
+     "maniqa": 0.4506,
+     "niqe": 6.8073
+    },
+    "case20": {
+     "clipiqa": 0.9439,
+     "maniqa": 0.5593,
+     "niqe": 4.4518
+    },
+    "case25": {
+     "clipiqa": 0.9252,
+     "maniqa": 0.6036,
+     "niqe": 8.2444
+    },
+    "case33": {
+     "clipiqa": 0.8711,
+     "maniqa": 0.4544,
+     "niqe": 8.167
+    },
+    "case50": {
+     "clipiqa": 0.8772,
+     "maniqa": 0.5191,
+     "niqe": 5.1382
+    },
+    "case66": {
+     "clipiqa": 0.8298,
+     "maniqa": 0.5552,
+     "niqe": 5.7896
+    },
+    "case77": {
+     "clipiqa": 0.9584,
+     "maniqa": 0.6335,
+     "niqe": 5.5803
+    },
+    "case88": {
+     "clipiqa": 0.8854,
+     "maniqa": 0.5329,
+     "niqe": 5.6083
+    },
+    "case99": {
+     "clipiqa": 0.9247,
+     "maniqa": 0.5968,
+     "niqe": 5.7573
+    },
+    "case100": {
+     "clipiqa": 0.961,
+     "maniqa": 0.614,
+     "niqe": 6.796
+    }
+   },
+   "mean": {
+    "clipiqa": 0.8914086669683456,
+    "maniqa": 0.5367181859910488,
+    "niqe": 6.15650056407381,
+    "musiq": 65.05930137634277
+   },
+   "n": {
+    "clipiqa": 16,
+    "maniqa": 16,
+    "niqe": 16,
+    "musiq": 4
+   }
+  },
+  "c_v6s5000_sc0.8": {
+   "dir": "D:\\models\\iqa_screen\\c_v6s5000_sc0.8",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9539,
+     "maniqa": 0.4599,
+     "niqe": 5.0118,
+     "musiq": 58.8418
+    },
+    "case2": {
+     "clipiqa": 0.9264,
+     "maniqa": 0.5547,
+     "niqe": 5.0614,
+     "musiq": 61.981
+    },
+    "case5": {
+     "clipiqa": 0.9403,
+     "maniqa": 0.6091,
+     "niqe": 7.0139,
+     "musiq": 68.1133
+    },
+    "case10": {
+     "clipiqa": 0.8383,
+     "maniqa": 0.4199,
+     "niqe": 9.2899,
+     "musiq": 65.31
+    },
+    "case11": {
+     "clipiqa": 0.8365,
+     "maniqa": 0.6328,
+     "niqe": 7.0493
+    },
+    "case12": {
+     "clipiqa": 0.8885,
+     "maniqa": 0.5197,
+     "niqe": 5.1546
+    },
+    "case13": {
+     "clipiqa": 0.8654,
+     "maniqa": 0.4973,
+     "niqe": 6.3176
+    },
+    "case20": {
+     "clipiqa": 0.9464,
+     "maniqa": 0.6173,
+     "niqe": 4.8358
+    },
+    "case25": {
+     "clipiqa": 0.9337,
+     "maniqa": 0.6382,
+     "niqe": 8.3196
+    },
+    "case33": {
+     "clipiqa": 0.8873,
+     "maniqa": 0.4748,
+     "niqe": 8.6685
+    },
+    "case50": {
+     "clipiqa": 0.8989,
+     "maniqa": 0.5929,
+     "niqe": 5.1923
+    },
+    "case66": {
+     "clipiqa": 0.9002,
+     "maniqa": 0.5719,
+     "niqe": 5.6672
+    },
+    "case77": {
+     "clipiqa": 0.9689,
+     "maniqa": 0.6756,
+     "niqe": 5.8955
+    },
+    "case88": {
+     "clipiqa": 0.9175,
+     "maniqa": 0.5561,
+     "niqe": 6.0786
+    },
+    "case99": {
+     "clipiqa": 0.9264,
+     "maniqa": 0.6231,
+     "niqe": 5.7976
+    },
+    "case100": {
+     "clipiqa": 0.962,
+     "maniqa": 0.6227,
+     "niqe": 6.496
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9118991419672966,
+    "maniqa": 0.5666265040636063,
+    "niqe": 6.365598915925572,
+    "musiq": 63.561532974243164
+   },
+   "n": {
+    "clipiqa": 16,
+    "maniqa": 16,
+    "niqe": 16,
+    "musiq": 4
+   }
+  },
+  "c_v6s5000_sc1.0": {
+   "dir": "D:\\models\\iqa_screen\\c_v6s5000_sc1.0",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.964,
+     "maniqa": 0.4494,
+     "niqe": 5.3301,
+     "musiq": 50.934
+    },
+    "case2": {
+     "clipiqa": 0.923,
+     "maniqa": 0.5064,
+     "niqe": 5.4894,
+     "musiq": 58.4817
+    },
+    "case5": {
+     "clipiqa": 0.9533,
+     "maniqa": 0.5649,
+     "niqe": 7.0909,
+     "musiq": 59.8094
+    },
+    "case10": {
+     "clipiqa": 0.8846,
+     "maniqa": 0.4389,
+     "niqe": 8.6,
+     "musiq": 64.6336
+    },
+    "case11": {
+     "clipiqa": 0.8859,
+     "maniqa": 0.607,
+     "niqe": 6.7401
+    },
+    "case12": {
+     "clipiqa": 0.9174,
+     "maniqa": 0.5508,
+     "niqe": 5.919
+    },
+    "case13": {
+     "clipiqa": 0.8892,
+     "maniqa": 0.5433,
+     "niqe": 5.9394
+    },
+    "case20": {
+     "clipiqa": 0.964,
+     "maniqa": 0.6195,
+     "niqe": 5.1181
+    },
+    "case25": {
+     "clipiqa": 0.935,
+     "maniqa": 0.6126,
+     "niqe": 8.2689
+    },
+    "case33": {
+     "clipiqa": 0.9064,
+     "maniqa": 0.4832,
+     "niqe": 7.5228
+    },
+    "case50": {
+     "clipiqa": 0.9327,
+     "maniqa": 0.5486,
+     "niqe": 5.2871
+    },
+    "case66": {
+     "clipiqa": 0.9351,
+     "maniqa": 0.5489,
+     "niqe": 5.537
+    },
+    "case77": {
+     "clipiqa": 0.9695,
+     "maniqa": 0.6282,
+     "niqe": 5.7766
+    },
+    "case88": {
+     "clipiqa": 0.939,
+     "maniqa": 0.5504,
+     "niqe": 6.4751
+    },
+    "case99": {
+     "clipiqa": 0.9553,
+     "maniqa": 0.6345,
+     "niqe": 5.5463
+    },
+    "case100": {
+     "clipiqa": 0.9697,
+     "maniqa": 0.6288,
+     "niqe": 6.59
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9327441789209843,
+    "maniqa": 0.5572255086153746,
+    "niqe": 6.3269232048087005,
+    "musiq": 58.46466064453125
+   },
+   "n": {
+    "clipiqa": 16,
+    "maniqa": 16,
+    "niqe": 16,
+    "musiq": 4
+   }
+  },
+  "c_v7s5000_sc1.0": {
+   "dir": "D:\\models\\iqa_screen\\c_v7s5000_sc1.0",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9397,
+     "maniqa": 0.399,
+     "niqe": 5.0097,
+     "musiq": 52.2466
+    },
+    "case2": {
+     "clipiqa": 0.9229,
+     "maniqa": 0.4645,
+     "niqe": 4.8185,
+     "musiq": 61.3159
+    },
+    "case5": {
+     "clipiqa": 0.949,
+     "maniqa": 0.5996,
+     "niqe": 6.1176,
+     "musiq": 64.0048
+    },
+    "case10": {
+     "clipiqa": 0.8884,
+     "maniqa": 0.4427,
+     "niqe": 8.9705,
+     "musiq": 66.9171
+    },
+    "case11": {
+     "clipiqa": 0.8645,
+     "maniqa": 0.5551,
+     "niqe": 6.4283
+    },
+    "case12": {
+     "clipiqa": 0.9057,
+     "maniqa": 0.547,
+     "niqe": 5.2556
+    },
+    "case13": {
+     "clipiqa": 0.8635,
+     "maniqa": 0.5331,
+     "niqe": 5.7802
+    },
+    "case20": {
+     "clipiqa": 0.9606,
+     "maniqa": 0.5477,
+     "niqe": 4.5792
+    },
+    "case25": {
+     "clipiqa": 0.938,
+     "maniqa": 0.5985,
+     "niqe": 8.2166
+    },
+    "case33": {
+     "clipiqa": 0.9116,
+     "maniqa": 0.4953,
+     "niqe": 6.978
+    },
+    "case50": {
+     "clipiqa": 0.9278,
+     "maniqa": 0.4712,
+     "niqe": 5.1226
+    },
+    "case66": {
+     "clipiqa": 0.8868,
+     "maniqa": 0.5356,
+     "niqe": 5.1803
+    },
+    "case77": {
+     "clipiqa": 0.966,
+     "maniqa": 0.5804,
+     "niqe": 5.5826
+    },
+    "case88": {
+     "clipiqa": 0.9274,
+     "maniqa": 0.5435,
+     "niqe": 6.1925
+    },
+    "case99": {
+     "clipiqa": 0.9509,
+     "maniqa": 0.576,
+     "niqe": 5.3619
+    },
+    "case100": {
+     "clipiqa": 0.9725,
+     "maniqa": 0.6039,
+     "niqe": 7.0298
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9234606735408306,
+    "maniqa": 0.5308264382183552,
+    "niqe": 6.038991747855194,
+    "musiq": 61.121084213256836
+   },
+   "n": {
+    "clipiqa": 16,
+    "maniqa": 16,
+    "niqe": 16,
+    "musiq": 4
+   }
+  }
+ },
+ "composite": {
+  "c_v7s5000_sc0.8": 0.2011968151217287,
+  "c_v6s5000_sc0.8": 0.3171480351941919,
+  "c_v6s5000_sc1.0": 0.213954861756115,
+  "c_v7s5000_sc1.0": 0.29455660275114876
+ },
+ "composite_metrics": [
+  "clipiqa",
+  "maniqa",
+  "musiq",
+  "niqe"
+ ],
+ "ranking": [
+  "c_v6s5000_sc0.8",
+  "c_v7s5000_sc1.0",
+  "c_v6s5000_sc1.0",
+  "c_v7s5000_sc0.8"
+ ],
+ "wall_s": 90.3
+}

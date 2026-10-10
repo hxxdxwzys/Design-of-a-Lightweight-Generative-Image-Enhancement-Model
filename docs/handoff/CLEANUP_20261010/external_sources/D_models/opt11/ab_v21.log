@@ -1,0 +1,6 @@
+pkg_Tinyv20b   median 5.40 ms best 3.65 -> r=38.6 factor=2.098
+      clipiqa=0.6128 保守映射 IT=23.33 -> 预测 49.0
+      clipiqa=0.6128 乐观映射 IT=26.55 -> 预测 55.7
+pkg_Tinyv21    median 4.88 ms best 3.60 -> r=41.5 factor=2.128
+      clipiqa=0.6306 保守映射 IT=23.91 -> 预测 50.9
+      clipiqa=0.6306 乐观映射 IT=27.69 -> 预测 58.9

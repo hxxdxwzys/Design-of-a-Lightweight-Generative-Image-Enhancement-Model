@@ -1,0 +1,256 @@
+{
+ "log": "evidence\\PIPE01R_20260917_013000\\cpu_test_results.txt",
+ "ran_tests": 49,
+ "failures": 0,
+ "errors": 0,
+ "log_verdict": "OK",
+ "mapped": {
+  "PIPE-R01_dino_preprocess": {
+   "tests": [
+    {
+     "test": "TestDinoPreprocess.test_matches_reference_for_all_cases",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDinoPreprocess.test_gray_input_is_not_wrongly_saturated",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDinoPreprocess.test_old_wrong_order_would_differ",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDinoPreprocess.test_white_and_gradient_finite",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE-R02_safe_load_offline": {
+   "tests": [
+    {
+     "test": "TestSafeLoading.test_no_weights_only_false_in_sources",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSafeLoading.test_no_torch_hub_calls_in_sources",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSafeLoading.test_lora_unsafe_payload_fails_closed",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSafeLoading.test_lora_missing_file_fails",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSafeLoading.test_missing_or_wrong_dino_never_goes_online",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSafeLoading.test_wrong_checkpoint_fails_strict",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE-R03_identity_and_prereg": {
+   "tests": [
+    {
+     "test": "TestIdentityAndPrereg.test_implementation_fingerprint_real",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestIdentityAndPrereg.test_asset_fingerprint_covers_vae_and_dino_source",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestIdentityAndPrereg.test_identity_comparable_strips_entry_only",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_identity_mismatch_fails_even_with_zero_diff",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_prereg_mismatch_blocks_before_any_load",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE-R04_budget_ledger": {
+   "tests": [
+    {
+     "test": "TestBudgetLedger.test_zero_quota_refuses",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_reserve_is_persisted_before_call_and_not_refunded",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_boundary_last_unit_allowed_then_refused",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_cross_attempt_accumulates_and_interruption_counts",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_new_process_cannot_reset_quota",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_missing_ledger_without_init_refuses",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_wall_stop",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_concurrent_lock_refused",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestBudgetLedger.test_disk_budget",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_zero_quota_blocks_before_any_forward",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_nonempty_run_dir_is_refused",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE-R05_nan_before_quantization": {
+   "tests": [
+    {
+     "test": "TestNaNBeforeQuantization.test_require_finite_blocks",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestNaNBeforeQuantization.test_uint8_quantization_would_hide_nan_but_precheck_blocks",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestNaNBeforeQuantization.test_infer_core_blocks_nan_latent",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE-R06_timing_and_unique_artifacts": {
+   "tests": [
+    {
+     "test": "TestSharedCoreAndEntries.test_offline_records_separate_io_timing",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSharedCoreAndEntries.test_both_entries_call_same_core",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSharedCoreAndEntries.test_png_encoder_is_shared_and_pixel_identical",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "PIPE_R08_generation_manifest": {
+   "tests": [
+    {
+     "test": "TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestDriverEndToEndCPU.test_criteria_fail_is_reported",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  },
+  "retained_original_intent": {
+   "tests": [
+    {
+     "test": "TestConfigFrozen.test_frozen_config_loads_and_locks",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestConfigFrozen.test_rejects_tampered_switches",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestConfigFrozen.test_rejects_unknown_and_missing_keys",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestConfigFrozen.test_tile_params_match_task_sheet",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestConfigFrozen.test_tile_report_rejects_recipe_change",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestConfigFrozen.test_args_ns_conflict_is_rejected",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSharedCoreAndEntries.test_prompt_must_be_empty",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSharedCoreAndEntries.test_model_dir_must_exist",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestFailurePropagation.test_output_validation",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestFailurePropagation.test_driver_refuses_without_prereg",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestFailurePropagation.test_make_evidence_refuses_existing_run_dir_without_writing",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSeedAndShapes.test_local_seed_is_order_independent",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestSeedAndShapes.test_pad_and_crop_for_non_multiple_shapes",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestImportSafety.test_imports_do_not_pull_torch",
+     "in_log_ok": true
+    },
+    {
+     "test": "TestImportSafety.test_cli_help_does_not_load_model_or_cuda",
+     "in_log_ok": true
+    }
+   ],
+   "all_present_ok": true
+  }
+ },
+ "unmapped_tests": [],
+ "missing_tests": [],
+ "note": "手工映射（R 项 → 测试名），并用隔离复跑日志逐名核对；不宣称“全部覆盖”，未映射测试列在 unmapped_tests。"
+}

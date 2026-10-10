@@ -1,0 +1,19 @@
+{
+  "caps": {
+    "cache": 400,
+    "train": 3000,
+    "infer": 10000,
+    "metrics": 350,
+    "export": 80,
+    "bench": 250
+  },
+  "used": {
+    "cache": 328,
+    "train": 3000,
+    "infer": 566,
+    "metrics": 166,
+    "export": 74,
+    "bench": 0
+  },
+  "deadline": 1790508600.0
+}

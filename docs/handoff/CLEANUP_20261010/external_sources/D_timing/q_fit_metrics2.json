@@ -1,0 +1,100 @@
+{
+ "M24": {
+  "clipiqa": 0.9023,
+  "maniqa": 0.5042,
+  "niqe": 5.2559,
+  "lapvar": 602.6786,
+  "n": 30
+ },
+ "probeA": {
+  "clipiqa": null,
+  "maniqa": null,
+  "niqe": null,
+  "lapvar": null,
+  "n": 0
+ },
+ "TinyV9b": {
+  "clipiqa": 0.6409,
+  "maniqa": 0.3634,
+  "niqe": 5.3,
+  "lapvar": 418.2155,
+  "n": 30
+ },
+ "TinyV11b": {
+  "clipiqa": 0.5481,
+  "maniqa": 0.3023,
+  "niqe": 5.4829,
+  "lapvar": 121.7758,
+  "n": 30
+ },
+ "TinyV7gan": {
+  "clipiqa": 0.5059,
+  "maniqa": 0.2819,
+  "niqe": 5.3249,
+  "lapvar": 127.5851,
+  "n": 30
+ },
+ "TinyV5d": {
+  "clipiqa": 0.3897,
+  "maniqa": 0.2762,
+  "niqe": 5.996,
+  "lapvar": 79.6199,
+  "n": 30
+ },
+ "TinyV2g": {
+  "clipiqa": 0.3532,
+  "maniqa": 0.2588,
+  "niqe": 5.8442,
+  "lapvar": 92.8013,
+  "n": 30
+ },
+ "TinyV1": {
+  "clipiqa": 0.3367,
+  "maniqa": 0.2687,
+  "niqe": 5.7899,
+  "lapvar": 120.97,
+  "n": 30
+ },
+ "PixB": {
+  "clipiqa": 0.3143,
+  "maniqa": 0.2698,
+  "niqe": 5.4254,
+  "lapvar": 95.5506,
+  "n": 30
+ },
+ "w2_m0s1_s090": {
+  "clipiqa": 0.8718,
+  "maniqa": 0.4762,
+  "niqe": 5.9425,
+  "lapvar": 415.5991,
+  "n": 30
+ },
+ "w2_m0s7_s097": {
+  "clipiqa": 0.8766,
+  "maniqa": 0.4341,
+  "niqe": 6.3431,
+  "lapvar": 307.3329,
+  "n": 30
+ },
+ "HYPIR": {
+  "clipiqa": null,
+  "maniqa": null,
+  "niqe": null,
+  "lapvar": null,
+  "n": 0
+ },
+ "LQ": {
+  "clipiqa": 0.2752,
+  "maniqa": 0.2819,
+  "niqe": 7.81,
+  "lapvar": 30.7497,
+  "n": 30
+ },
+ "GT_val": {
+  "clipiqa": null,
+  "maniqa": null,
+  "niqe": null,
+  "lapvar": null,
+  "n": 0
+ }
+}

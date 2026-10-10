@@ -1,0 +1,1 @@
+[C] FAIL RuntimeError: 阶段门禁：A/B 未 PASS（status=FAIL），C 执行器调用 0 次

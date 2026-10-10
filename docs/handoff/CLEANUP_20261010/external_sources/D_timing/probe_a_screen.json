@@ -1,0 +1,15 @@
+{
+ "scale": 0.4,
+ "n": 30,
+ "metrics": {
+  "niqe": NaN,
+  "clipiqa": NaN,
+  "musiq": NaN
+ },
+ "baseline_M24": {
+  "niqe": 5.2559,
+  "clipiqa": 0.9023,
+  "musiq": 46.1257
+ },
+ "pred": NaN
+}

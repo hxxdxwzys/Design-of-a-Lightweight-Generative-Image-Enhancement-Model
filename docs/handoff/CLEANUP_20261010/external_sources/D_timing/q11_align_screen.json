@@ -1,0 +1,26 @@
+{
+ "align_nofix": {
+  "maniqa": 0.523,
+  "clipiqa": 0.9292,
+  "niqe": 5.1555,
+  "lapvar": 813.1815,
+  "seam": 2.617,
+  "diff_vs_submitted": 7.745
+ },
+ "align_wavelet": {
+  "maniqa": 0.512,
+  "clipiqa": 0.9231,
+  "niqe": 5.139,
+  "lapvar": 812.2167,
+  "seam": 2.6198,
+  "diff_vs_submitted": 5.124
+ },
+ "align_adain": {
+  "maniqa": 0.5174,
+  "clipiqa": 0.9249,
+  "niqe": 5.145,
+  "lapvar": 672.6423,
+  "seam": 2.4701,
+  "diff_vs_submitted": 7.265
+ }
+}

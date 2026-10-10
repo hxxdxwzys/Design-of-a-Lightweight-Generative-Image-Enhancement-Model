@@ -1,0 +1,337 @@
+[08-18 17:45:40] [boot] B 全流程启动
+[08-18 17:45:40] [train] v1 (w_clip=0.3, 2500 步)
+[08-18 17:45:40] [run] train_v1
+[08-18 17:52:37] [boot] B 全流程启动
+[08-18 17:52:37] [train] v1 (w_clip=0.3, 2500 步)
+[08-18 17:52:37] [run] train_v1
+[08-18 21:43:06] [run] train_v1: exit=1 (13829s)
+[08-18 21:43:06]   | Traceback (most recent call last):
+[08-18 21:43:06]   |   File "D:\tmp_timing\train_vosr_lora.py", line 251, in <module>
+[08-18 21:43:06]   |     main()
+[08-18 21:43:06]   |     ~~~~^^
+[08-18 21:43:06]   |   File "D:\tmp_timing\train_vosr_lora.py", line 241, in main
+[08-18 21:43:06]   |     'lora_config': json.loads(lora_cfg.to_json_string()),
+[08-18 21:43:06]   |                               ^^^^^^^^^^^^^^^^^^^^^^^
+[08-18 21:43:06]   | AttributeError: 'LoraConfig' object has no attribute 'to_json_string'
+[08-18 21:43:06] [err] v1 训练失败 -> 唤醒代理
+[08-18 22:10:00] [boot] stage=0 variant=v1
+[08-18 22:10:00] [train] v1 (w_clip=0.3, 2500 步, 每 500 步存盘)
+[08-18 22:10:00] [run] train_v1
+[08-19 02:03:20] [run] train_v1: exit=0 (14000s)
+[08-19 02:03:20] [train] v2 (w_clip=0.8, 2500 步, 每 500 步存盘)
+[08-19 02:03:20] [run] train_v2
+[08-19 06:01:16] [run] train_v2: exit=0 (14276s)
+[08-19 06:01:16] [train] v3 (w_clip=1.5, 2500 步, 每 500 步存盘)
+[08-19 06:01:16] [run] train_v3
+[08-19 09:40:23] [run] train_v3: exit=0 (13147s)
+[08-19 09:40:23] [run] choice_final
+[08-19 09:40:23] [run] choice_final: exit=0 (0s)
+[08-19 09:40:23] [done] B 全流程完成, 唤醒代理
+[08-19 09:40:59] [boot] stage=1 variant=v1
+[08-19 09:40:59] [valgate] v1/lora_s500.pt
+[08-19 09:40:59] [run] val_render_v1_lora_s500.pt
+[08-19 09:44:05] [run] val_render_v1_lora_s500.pt: exit=0 (187s)
+[08-19 09:44:05] [run] val_gate_v1_lora_s500.pt
+[08-19 09:44:20] [run] val_gate_v1_lora_s500.pt: exit=1 (14s)
+[08-19 09:44:20]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 09:44:20]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 09:44:20]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 09:44:20]   |     return _iterencode(o, 0)
+[08-19 09:44:20]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 09:44:20]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 09:44:20]   |                     f'is not JSON serializable')
+[08-19 09:44:20]   | TypeError: Object of type bool is not JSON serializable
+[08-19 09:44:20] [valgate] v1/lora_s500.pt: clip=0 lpips=9 pass=False
+[08-19 09:44:20] [valgate] v1/lora_s1000.pt
+[08-19 09:44:20] [run] val_render_v1_lora_s1000.pt
+[08-19 09:47:25] [run] val_render_v1_lora_s1000.pt: exit=0 (186s)
+[08-19 09:47:25] [run] val_gate_v1_lora_s1000.pt
+[08-19 09:47:39] [run] val_gate_v1_lora_s1000.pt: exit=1 (14s)
+[08-19 09:47:39]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 09:47:39]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 09:47:39]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 09:47:39]   |     return _iterencode(o, 0)
+[08-19 09:47:39]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 09:47:39]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 09:47:39]   |                     f'is not JSON serializable')
+[08-19 09:47:39]   | TypeError: Object of type bool is not JSON serializable
+[08-19 09:47:39] [valgate] v1/lora_s1000.pt: clip=0 lpips=9 pass=False
+[08-19 09:47:39] [valgate] v1/lora_s1500.pt
+[08-19 09:47:39] [run] val_render_v1_lora_s1500.pt
+[08-19 09:50:44] [run] val_render_v1_lora_s1500.pt: exit=0 (185s)
+[08-19 09:50:44] [run] val_gate_v1_lora_s1500.pt
+[08-19 09:50:58] [run] val_gate_v1_lora_s1500.pt: exit=1 (14s)
+[08-19 09:50:58]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 09:50:58]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 09:50:58]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 09:50:58]   |     return _iterencode(o, 0)
+[08-19 09:50:58]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 09:50:58]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 09:50:58]   |                     f'is not JSON serializable')
+[08-19 09:50:58]   | TypeError: Object of type bool is not JSON serializable
+[08-19 09:50:58] [valgate] v1/lora_s1500.pt: clip=0 lpips=9 pass=False
+[08-19 09:50:58] [valgate] v1/lora_s2000.pt
+[08-19 09:50:58] [run] val_render_v1_lora_s2000.pt
+[08-19 09:54:02] [run] val_render_v1_lora_s2000.pt: exit=0 (184s)
+[08-19 09:54:02] [run] val_gate_v1_lora_s2000.pt
+[08-19 09:54:15] [run] val_gate_v1_lora_s2000.pt: exit=1 (14s)
+[08-19 09:54:15]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 09:54:15]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 09:54:15]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 09:54:15]   |     return _iterencode(o, 0)
+[08-19 09:54:15]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 09:54:15]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 09:54:15]   |                     f'is not JSON serializable')
+[08-19 09:54:15]   | TypeError: Object of type bool is not JSON serializable
+[08-19 09:54:15] [valgate] v1/lora_s2000.pt: clip=0 lpips=9 pass=False
+[08-19 09:54:15] [valgate] v1/lora_s2500.pt
+[08-19 09:54:15] [run] val_render_v1_lora_s2500.pt
+[08-19 09:57:19] [run] val_render_v1_lora_s2500.pt: exit=0 (184s)
+[08-19 09:57:19] [run] val_gate_v1_lora_s2500.pt
+[08-19 09:57:33] [run] val_gate_v1_lora_s2500.pt: exit=1 (14s)
+[08-19 09:57:33]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 09:57:33]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 09:57:33]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 09:57:33]   |     return _iterencode(o, 0)
+[08-19 09:57:33]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 09:57:33]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 09:57:33]   |                     f'is not JSON serializable')
+[08-19 09:57:33]   | TypeError: Object of type bool is not JSON serializable
+[08-19 09:57:33] [valgate] v1/lora_s2500.pt: clip=0 lpips=9 pass=False
+[08-19 09:57:33] [valgate] v2/lora_s500.pt
+[08-19 09:57:33] [run] val_render_v2_lora_s500.pt
+[08-19 10:00:39] [run] val_render_v2_lora_s500.pt: exit=0 (186s)
+[08-19 10:00:39] [run] val_gate_v2_lora_s500.pt
+[08-19 10:00:53] [run] val_gate_v2_lora_s500.pt: exit=1 (14s)
+[08-19 10:00:53]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 10:00:53]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 10:00:53]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 10:00:53]   |     return _iterencode(o, 0)
+[08-19 10:00:53]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 10:00:53]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 10:00:53]   |                     f'is not JSON serializable')
+[08-19 10:00:53]   | TypeError: Object of type bool is not JSON serializable
+[08-19 10:00:53] [valgate] v2/lora_s500.pt: clip=0 lpips=9 pass=False
+[08-19 10:00:53] [valgate] v2/lora_s1000.pt
+[08-19 10:00:53] [run] val_render_v2_lora_s1000.pt
+[08-19 10:04:00] [run] val_render_v2_lora_s1000.pt: exit=0 (187s)
+[08-19 10:04:00] [run] val_gate_v2_lora_s1000.pt
+[08-19 10:04:14] [run] val_gate_v2_lora_s1000.pt: exit=1 (14s)
+[08-19 10:04:14]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 10:04:14]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 10:04:14]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 10:04:14]   |     return _iterencode(o, 0)
+[08-19 10:04:14]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 10:04:14]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 10:04:14]   |                     f'is not JSON serializable')
+[08-19 10:04:14]   | TypeError: Object of type bool is not JSON serializable
+[08-19 10:04:14] [valgate] v2/lora_s1000.pt: clip=0 lpips=9 pass=False
+[08-19 10:04:14] [valgate] v2/lora_s1500.pt
+[08-19 10:04:14] [run] val_render_v2_lora_s1500.pt
+[08-19 10:07:22] [run] val_render_v2_lora_s1500.pt: exit=0 (188s)
+[08-19 10:07:22] [run] val_gate_v2_lora_s1500.pt
+[08-19 10:07:41] [run] val_gate_v2_lora_s1500.pt: exit=1 (19s)
+[08-19 10:07:41]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 10:07:41]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 10:07:41]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 10:07:41]   |     return _iterencode(o, 0)
+[08-19 10:07:41]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 10:07:41]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 10:07:41]   |                     f'is not JSON serializable')
+[08-19 10:07:41]   | TypeError: Object of type bool is not JSON serializable
+[08-19 10:07:41] [valgate] v2/lora_s1500.pt: clip=0 lpips=9 pass=False
+[08-19 10:07:41] [valgate] v2/lora_s2000.pt
+[08-19 10:07:41] [run] val_render_v2_lora_s2000.pt
+[08-19 10:11:32] [run] val_render_v2_lora_s2000.pt: exit=0 (231s)
+[08-19 10:11:32] [run] val_gate_v2_lora_s2000.pt
+[08-19 10:11:46] [run] val_gate_v2_lora_s2000.pt: exit=1 (14s)
+[08-19 10:11:46]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 10:11:46]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 10:11:46]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 10:11:46]   |     return _iterencode(o, 0)
+[08-19 10:11:46]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 10:11:46]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 10:11:46]   |                     f'is not JSON serializable')
+[08-19 10:11:46]   | TypeError: Object of type bool is not JSON serializable
+[08-19 10:11:46] [valgate] v2/lora_s2000.pt: clip=0 lpips=9 pass=False
+[08-19 10:11:46] [valgate] v2/lora_s2500.pt
+[08-19 10:11:46] [run] val_render_v2_lora_s2500.pt
+[08-19 10:14:52] [run] val_render_v2_lora_s2500.pt: exit=0 (187s)
+[08-19 10:14:52] [run] val_gate_v2_lora_s2500.pt
+[08-19 10:15:06] [run] val_gate_v2_lora_s2500.pt: exit=1 (14s)
+[08-19 10:15:06]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 10:15:06]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 10:15:06]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 10:15:06]   |     return _iterencode(o, 0)
+[08-19 10:15:06]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 10:15:06]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 10:15:06]   |                     f'is not JSON serializable')
+[08-19 10:15:06]   | TypeError: Object of type bool is not JSON serializable
+[08-19 10:15:06] [valgate] v2/lora_s2500.pt: clip=0 lpips=9 pass=False
+[08-19 10:15:06] [valgate] v3/lora_s500.pt
+[08-19 10:15:06] [run] val_render_v3_lora_s500.pt
+[08-19 10:18:15] [run] val_render_v3_lora_s500.pt: exit=0 (188s)
+[08-19 10:18:15] [run] val_gate_v3_lora_s500.pt
+[08-19 10:18:29] [run] val_gate_v3_lora_s500.pt: exit=1 (14s)
+[08-19 10:18:29]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 10:18:29]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 10:18:29]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 10:18:29]   |     return _iterencode(o, 0)
+[08-19 10:18:29]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 10:18:29]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 10:18:29]   |                     f'is not JSON serializable')
+[08-19 10:18:29]   | TypeError: Object of type bool is not JSON serializable
+[08-19 10:18:29] [valgate] v3/lora_s500.pt: clip=0 lpips=9 pass=False
+[08-19 10:18:29] [valgate] v3/lora_s1000.pt
+[08-19 10:18:29] [run] val_render_v3_lora_s1000.pt
+[08-19 10:21:34] [run] val_render_v3_lora_s1000.pt: exit=0 (185s)
+[08-19 10:21:34] [run] val_gate_v3_lora_s1000.pt
+[08-19 10:21:48] [run] val_gate_v3_lora_s1000.pt: exit=1 (14s)
+[08-19 10:21:48]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 10:21:48]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 10:21:48]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 10:21:48]   |     return _iterencode(o, 0)
+[08-19 10:21:48]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 10:21:48]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 10:21:48]   |                     f'is not JSON serializable')
+[08-19 10:21:48]   | TypeError: Object of type bool is not JSON serializable
+[08-19 10:21:48] [valgate] v3/lora_s1000.pt: clip=0 lpips=9 pass=False
+[08-19 10:21:48] [valgate] v3/lora_s1500.pt
+[08-19 10:21:48] [run] val_render_v3_lora_s1500.pt
+[08-19 10:24:53] [run] val_render_v3_lora_s1500.pt: exit=0 (185s)
+[08-19 10:24:53] [run] val_gate_v3_lora_s1500.pt
+[08-19 10:25:06] [run] val_gate_v3_lora_s1500.pt: exit=1 (13s)
+[08-19 10:25:06]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 10:25:06]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 10:25:06]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 10:25:06]   |     return _iterencode(o, 0)
+[08-19 10:25:06]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 10:25:06]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 10:25:06]   |                     f'is not JSON serializable')
+[08-19 10:25:06]   | TypeError: Object of type bool is not JSON serializable
+[08-19 10:25:06] [valgate] v3/lora_s1500.pt: clip=0 lpips=9 pass=False
+[08-19 10:25:06] [valgate] v3/lora_s2000.pt
+[08-19 10:25:06] [run] val_render_v3_lora_s2000.pt
+[08-19 10:28:09] [run] val_render_v3_lora_s2000.pt: exit=0 (183s)
+[08-19 10:28:09] [run] val_gate_v3_lora_s2000.pt
+[08-19 10:28:24] [run] val_gate_v3_lora_s2000.pt: exit=1 (14s)
+[08-19 10:28:24]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 10:28:24]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 10:28:24]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 10:28:24]   |     return _iterencode(o, 0)
+[08-19 10:28:24]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 10:28:24]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 10:28:24]   |                     f'is not JSON serializable')
+[08-19 10:28:24]   | TypeError: Object of type bool is not JSON serializable
+[08-19 10:28:24] [valgate] v3/lora_s2000.pt: clip=0 lpips=9 pass=False
+[08-19 10:28:24] [valgate] v3/lora_s2500.pt
+[08-19 10:28:24] [run] val_render_v3_lora_s2500.pt
+[08-19 10:31:29] [run] val_render_v3_lora_s2500.pt: exit=0 (185s)
+[08-19 10:31:29] [run] val_gate_v3_lora_s2500.pt
+[08-19 10:31:43] [run] val_gate_v3_lora_s2500.pt: exit=1 (13s)
+[08-19 10:31:43]   |   File "D:\Python\Lib\json\encoder.py", line 200, in encode
+[08-19 10:31:43]   |     chunks = self.iterencode(o, _one_shot=True)
+[08-19 10:31:43]   |   File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+[08-19 10:31:43]   |     return _iterencode(o, 0)
+[08-19 10:31:43]   |   File "D:\Python\Lib\json\encoder.py", line 180, in default
+[08-19 10:31:43]   |     raise TypeError(f'Object of type {o.__class__.__name__} '
+[08-19 10:31:43]   |                     f'is not JSON serializable')
+[08-19 10:31:43]   | TypeError: Object of type bool is not JSON serializable
+[08-19 10:31:43] [valgate] v3/lora_s2500.pt: clip=0 lpips=9 pass=False
+[08-19 10:31:43] [run] choice_final
+[08-19 10:31:43] [run] choice_final: exit=0 (0s)
+[08-19 10:31:43] [done] B 全流程完成, 唤醒代理
+[08-19 10:32:54] [boot] stage=1 variant=v1
+[08-19 10:32:54] [valgate] v1/lora_s500.pt
+[08-19 10:32:54] [run] val_render_v1_lora_s500.pt
+[08-19 10:35:56] [run] val_render_v1_lora_s500.pt: exit=0 (182s)
+[08-19 10:35:56] [run] val_gate_v1_lora_s500.pt
+[08-19 10:36:09] [run] val_gate_v1_lora_s500.pt: exit=0 (14s)
+[08-19 10:36:09] [valgate] v1/lora_s500.pt: clip=0.7975 lpips=0.3964 pass=False
+[08-19 10:36:09] [valgate] v1/lora_s1000.pt
+[08-19 10:36:09] [run] val_render_v1_lora_s1000.pt
+[08-19 10:39:12] [run] val_render_v1_lora_s1000.pt: exit=0 (183s)
+[08-19 10:39:12] [run] val_gate_v1_lora_s1000.pt
+[08-19 10:39:26] [run] val_gate_v1_lora_s1000.pt: exit=0 (14s)
+[08-19 10:39:26] [valgate] v1/lora_s1000.pt: clip=0.8233 lpips=0.401 pass=False
+[08-19 10:39:26] [valgate] v1/lora_s1500.pt
+[08-19 10:39:26] [run] val_render_v1_lora_s1500.pt
+[08-19 10:42:29] [run] val_render_v1_lora_s1500.pt: exit=0 (183s)
+[08-19 10:42:29] [run] val_gate_v1_lora_s1500.pt
+[08-19 10:42:43] [run] val_gate_v1_lora_s1500.pt: exit=0 (14s)
+[08-19 10:42:43] [valgate] v1/lora_s1500.pt: clip=0.8208 lpips=0.3912 pass=False
+[08-19 10:42:43] [valgate] v1/lora_s2000.pt
+[08-19 10:42:43] [run] val_render_v1_lora_s2000.pt
+[08-19 10:45:45] [run] val_render_v1_lora_s2000.pt: exit=0 (183s)
+[08-19 10:45:45] [run] val_gate_v1_lora_s2000.pt
+[08-19 10:45:59] [run] val_gate_v1_lora_s2000.pt: exit=0 (14s)
+[08-19 10:45:59] [valgate] v1/lora_s2000.pt: clip=0.8159 lpips=0.3926 pass=False
+[08-19 10:45:59] [valgate] v1/lora_s2500.pt
+[08-19 10:45:59] [run] val_render_v1_lora_s2500.pt
+[08-19 10:49:02] [run] val_render_v1_lora_s2500.pt: exit=0 (183s)
+[08-19 10:49:02] [run] val_gate_v1_lora_s2500.pt
+[08-19 10:49:16] [run] val_gate_v1_lora_s2500.pt: exit=0 (14s)
+[08-19 10:49:16] [valgate] v1/lora_s2500.pt: clip=0.8274 lpips=0.3921 pass=False
+[08-19 10:49:16] [valgate] v2/lora_s500.pt
+[08-19 10:49:16] [run] val_render_v2_lora_s500.pt
+[08-19 10:52:18] [run] val_render_v2_lora_s500.pt: exit=0 (183s)
+[08-19 10:52:18] [run] val_gate_v2_lora_s500.pt
+[08-19 10:52:32] [run] val_gate_v2_lora_s500.pt: exit=0 (14s)
+[08-19 10:52:32] [valgate] v2/lora_s500.pt: clip=0.8584 lpips=0.4049 pass=False
+[08-19 10:52:32] [valgate] v2/lora_s1000.pt
+[08-19 10:52:32] [run] val_render_v2_lora_s1000.pt
+[08-19 10:55:34] [run] val_render_v2_lora_s1000.pt: exit=0 (182s)
+[08-19 10:55:34] [run] val_gate_v2_lora_s1000.pt
+[08-19 10:55:48] [run] val_gate_v2_lora_s1000.pt: exit=0 (14s)
+[08-19 10:55:48] [valgate] v2/lora_s1000.pt: clip=0.8752 lpips=0.407 pass=False
+[08-19 10:55:48] [valgate] v2/lora_s1500.pt
+[08-19 10:55:48] [run] val_render_v2_lora_s1500.pt
+[08-19 10:58:51] [run] val_render_v2_lora_s1500.pt: exit=0 (183s)
+[08-19 10:58:51] [run] val_gate_v2_lora_s1500.pt
+[08-19 10:59:04] [run] val_gate_v2_lora_s1500.pt: exit=0 (13s)
+[08-19 10:59:04] [valgate] v2/lora_s1500.pt: clip=0.8871 lpips=0.4023 pass=False
+[08-19 10:59:04] [valgate] v2/lora_s2000.pt
+[08-19 10:59:04] [run] val_render_v2_lora_s2000.pt
+[08-19 11:02:06] [run] val_render_v2_lora_s2000.pt: exit=0 (182s)
+[08-19 11:02:06] [run] val_gate_v2_lora_s2000.pt
+[08-19 11:02:20] [run] val_gate_v2_lora_s2000.pt: exit=0 (14s)
+[08-19 11:02:20] [valgate] v2/lora_s2000.pt: clip=0.8844 lpips=0.4011 pass=False
+[08-19 11:02:20] [valgate] v2/lora_s2500.pt
+[08-19 11:02:20] [run] val_render_v2_lora_s2500.pt
+[08-19 11:05:22] [run] val_render_v2_lora_s2500.pt: exit=0 (183s)
+[08-19 11:05:22] [run] val_gate_v2_lora_s2500.pt
+[08-19 11:05:36] [run] val_gate_v2_lora_s2500.pt: exit=0 (14s)
+[08-19 11:05:36] [valgate] v2/lora_s2500.pt: clip=0.8911 lpips=0.402 pass=False
+[08-19 11:05:36] [valgate] v3/lora_s500.pt
+[08-19 11:05:36] [run] val_render_v3_lora_s500.pt
+[08-19 11:08:38] [run] val_render_v3_lora_s500.pt: exit=0 (182s)
+[08-19 11:08:38] [run] val_gate_v3_lora_s500.pt
+[08-19 11:08:52] [run] val_gate_v3_lora_s500.pt: exit=0 (14s)
+[08-19 11:08:52] [valgate] v3/lora_s500.pt: clip=0.8948 lpips=0.4172 pass=False
+[08-19 11:08:52] [valgate] v3/lora_s1000.pt
+[08-19 11:08:52] [run] val_render_v3_lora_s1000.pt
+[08-19 11:11:57] [run] val_render_v3_lora_s1000.pt: exit=0 (185s)
+[08-19 11:11:57] [run] val_gate_v3_lora_s1000.pt
+[08-19 11:12:10] [run] val_gate_v3_lora_s1000.pt: exit=0 (14s)
+[08-19 11:12:10] [valgate] v3/lora_s1000.pt: clip=0.9072 lpips=0.4208 pass=False
+[08-19 11:12:10] [valgate] v3/lora_s1500.pt
+[08-19 11:12:10] [run] val_render_v3_lora_s1500.pt
+[08-19 11:15:16] [run] val_render_v3_lora_s1500.pt: exit=0 (185s)
+[08-19 11:15:16] [run] val_gate_v3_lora_s1500.pt
+[08-19 11:15:29] [run] val_gate_v3_lora_s1500.pt: exit=0 (14s)
+[08-19 11:15:29] [valgate] v3/lora_s1500.pt: clip=0.919 lpips=0.4123 pass=False
+[08-19 11:15:29] [valgate] v3/lora_s2000.pt
+[08-19 11:15:29] [run] val_render_v3_lora_s2000.pt
+[08-19 11:18:35] [run] val_render_v3_lora_s2000.pt: exit=0 (185s)
+[08-19 11:18:35] [run] val_gate_v3_lora_s2000.pt
+[08-19 11:18:49] [run] val_gate_v3_lora_s2000.pt: exit=0 (14s)
+[08-19 11:18:49] [valgate] v3/lora_s2000.pt: clip=0.9213 lpips=0.4153 pass=False
+[08-19 11:18:49] [valgate] v3/lora_s2500.pt
+[08-19 11:18:49] [run] val_render_v3_lora_s2500.pt
+[08-19 11:21:55] [run] val_render_v3_lora_s2500.pt: exit=0 (187s)
+[08-19 11:21:55] [run] val_gate_v3_lora_s2500.pt
+[08-19 11:22:09] [run] val_gate_v3_lora_s2500.pt: exit=0 (14s)
+[08-19 11:22:09] [valgate] v3/lora_s2500.pt: clip=0.9229 lpips=0.4174 pass=False
+[08-19 11:22:09] [run] choice_final
+[08-19 11:22:09] [run] choice_final: exit=0 (0s)
+[08-19 11:22:09] [done] B 全流程完成, 唤醒代理

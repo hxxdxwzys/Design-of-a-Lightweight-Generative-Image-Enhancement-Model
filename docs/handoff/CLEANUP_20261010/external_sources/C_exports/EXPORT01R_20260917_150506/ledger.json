@@ -1,0 +1,207 @@
+{
+ "schema": "EXPORT01R-ledger/1",
+ "created_at": "2026-09-17 15:05:27",
+ "limits": {
+  "top": 12,
+  "top4k": 4,
+  "component": 48,
+  "wall_s": 1800.0,
+  "disk_gib": 8.0
+ },
+ "used": {
+  "top": 0,
+  "top4k": 0,
+  "component": 10
+ },
+ "events": [
+  {
+   "seq": 1,
+   "kind": "note",
+   "where": "build_start",
+   "detail": {
+    "model_dir": "C:\\models\\exports\\EXPORT01R_20260917_150506\\model_dir"
+   },
+   "pid": 27264,
+   "at": "2026-09-17 15:05:27",
+   "monotonic": 94746.9562992,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 0
+   }
+  },
+  {
+   "seq": 2,
+   "kind": "component",
+   "is_4k": false,
+   "where": "build_load_assets",
+   "pid": 27264,
+   "at": "2026-09-17 15:05:27",
+   "monotonic": 94746.9719718,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 1
+   }
+  },
+  {
+   "seq": 3,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_vae_enc_512",
+   "pid": 27264,
+   "at": "2026-09-17 15:06:10",
+   "monotonic": 94789.9081496,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 2
+   }
+  },
+  {
+   "seq": 4,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_vae_enc_1024",
+   "pid": 27264,
+   "at": "2026-09-17 15:06:11",
+   "monotonic": 94790.8003009,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 3
+   }
+  },
+  {
+   "seq": 5,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_dino_feat",
+   "pid": 27264,
+   "at": "2026-09-17 15:06:15",
+   "monotonic": 94794.1564424,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 4
+   }
+  },
+  {
+   "seq": 6,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_dit_step",
+   "pid": 27264,
+   "at": "2026-09-17 15:06:15",
+   "monotonic": 94794.5659933,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 5
+   }
+  },
+  {
+   "seq": 7,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_dec_64",
+   "pid": 27264,
+   "at": "2026-09-17 15:06:17",
+   "monotonic": 94796.7300479,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 6
+   }
+  },
+  {
+   "seq": 8,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_dec_128",
+   "pid": 27264,
+   "at": "2026-09-17 15:06:18",
+   "monotonic": 94797.1962664,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 7
+   }
+  },
+  {
+   "seq": 9,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_wavelet",
+   "pid": 27264,
+   "at": "2026-09-17 15:06:22",
+   "monotonic": 94801.1558536,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 8
+   }
+  },
+  {
+   "seq": 10,
+   "kind": "note",
+   "where": "build_done",
+   "detail": {
+    "model_sha256": "7b8152029e3d96cf90e0787b42949e680cdb3c1bdfce6f6be99452444283ccc6",
+    "component_forwards": 7
+   },
+   "pid": 27264,
+   "at": "2026-09-17 15:06:30",
+   "monotonic": 94809.0253464,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 8
+   }
+  },
+  {
+   "seq": 11,
+   "kind": "component",
+   "is_4k": false,
+   "where": "merge_probe_peft_instance",
+   "pid": 27264,
+   "at": "2026-09-17 15:06:31",
+   "monotonic": 94810.4871529,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 9
+   }
+  },
+  {
+   "seq": 12,
+   "kind": "component",
+   "is_4k": false,
+   "where": "merge_probe_merged_instance",
+   "pid": 27264,
+   "at": "2026-09-17 15:06:31",
+   "monotonic": 94810.4900947,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 10
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "attempt_id": "attempt_01",
+   "run_dir": "C:\\models\\exports\\EXPORT01R_20260917_150506",
+   "started_at": "2026-09-17 15:05:27",
+   "started_monotonic": 94746.9542376,
+   "prereg_sha256": "0aa47ddb9f7dc813ae1e8b693a5110807618626fc7c099985fd199ff6eaa8037",
+   "source_sha256": "c6a5ed5487c0b7da56125bff265984b01ccc7a86a35cfbb5d501d078b4b38d3c",
+   "model_sha256": null,
+   "status": "FAIL",
+   "note": "RuntimeError: 合并对照探针失败：rror('merge probe %s 失败：%s' % (which, (cp.stderr or '')[-500:]))\nRuntimeError: merge probe peft 失败：    role(sys.argv[2], sys.argv[3])\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_merge_probe.py\", line 40, in role\n    model, _ = PBcore.build_dit(cfg, args, base_state=base_sd)\n               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\core.py\", line 303, in build_dit\n    from models.lightningdit import LightningDiT\nModuleNotFoundError: No module named 'models'\n\n",
+   "finished_at": "2026-09-17 15:06:34",
+   "elapsed_s": 66.78
+  }
+ ],
+ "open_attempt": null
+}

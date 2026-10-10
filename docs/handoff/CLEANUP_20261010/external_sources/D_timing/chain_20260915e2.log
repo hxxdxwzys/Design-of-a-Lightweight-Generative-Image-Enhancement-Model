@@ -1,0 +1,380 @@
+[09-14 20:48:42] >>> train v9b (512域 GAN 0.38M bs4 25k)
+[20:48:44] [data] 2839 对 (256 域蒸馏对)
+[20:49:03] [model] G=0.38M D=0.66M res=512 bs=4 w_gan=0.1
+[20:50:03] step 100/25000 G=0.347 (l1=0.234 lp=0.315 gan=0.266) D=0.258 0.60s/step
+[20:51:04] step 200/25000 G=0.285 (l1=0.181 lp=0.215 gan=0.268) D=0.258 0.60s/step
+[20:52:03] step 300/25000 G=0.250 (l1=0.137 lp=0.242 gan=0.264) D=0.250 0.60s/step
+[20:53:02] step 400/25000 G=0.237 (l1=0.163 lp=0.286 gan=0.319) D=0.252 0.60s/step
+[20:54:01] step 500/25000 G=0.217 (l1=0.128 lp=0.223 gan=0.295) D=0.252 0.60s/step
+[20:55:25] step 600/25000 G=0.204 (l1=0.113 lp=0.190 gan=0.269) D=0.251 0.64s/step
+[20:56:54] step 700/25000 G=0.208 (l1=0.115 lp=0.199 gan=0.313) D=0.242 0.67s/step
+[20:58:12] step 800/25000 G=0.228 (l1=0.145 lp=0.203 gan=0.337) D=0.207 0.69s/step
+[21:03:56] step 900/25000 G=0.234 (l1=0.154 lp=0.208 gan=0.449) D=0.153 0.99s/step
+[21:09:52] step 1000/25000 G=0.261 (l1=0.116 lp=0.349 gan=0.756) D=0.145 1.25s/step
+[21:17:25] step 1100/25000 G=0.215 (l1=0.125 lp=0.235 gan=0.290) D=0.234 1.55s/step
+[21:20:12] step 1200/25000 G=0.223 (l1=0.114 lp=0.213 gan=0.548) D=0.169 1.56s/step
+[21:21:14] step 1300/25000 G=0.226 (l1=0.156 lp=0.230 gan=0.362) D=0.168 1.49s/step
+[21:22:17] step 1400/25000 G=0.233 (l1=0.135 lp=0.215 gan=0.513) D=0.119 1.42s/step
+[21:23:15] step 1500/25000 G=0.240 (l1=0.150 lp=0.310 gan=0.681) D=0.132 1.37s/step
+[21:24:12] step 1600/25000 G=0.220 (l1=0.141 lp=0.263 gan=0.375) D=0.144 1.32s/step
+[21:25:11] step 1700/25000 G=0.233 (l1=0.104 lp=0.283 gan=0.501) D=0.159 1.28s/step
+[21:26:10] step 1800/25000 G=0.223 (l1=0.105 lp=0.241 gan=0.970) D=0.234 1.24s/step
+[21:27:10] step 1900/25000 G=0.229 (l1=0.124 lp=0.275 gan=0.676) D=0.169 1.20s/step
+[21:28:09] step 2000/25000 G=0.209 (l1=0.118 lp=0.209 gan=0.382) D=0.212 1.17s/step
+[21:28:09] [save] v9b_s2000.pt
+[21:29:09] step 2100/25000 G=0.216 (l1=0.109 lp=0.224 gan=0.352) D=0.186 1.15s/step
+[21:30:10] step 2200/25000 G=0.219 (l1=0.095 lp=0.192 gan=0.892) D=0.189 1.12s/step
+[21:31:11] step 2300/25000 G=0.219 (l1=0.156 lp=0.282 gan=0.280) D=0.219 1.10s/step
+[21:32:12] step 2400/25000 G=0.214 (l1=0.139 lp=0.208 gan=0.339) D=0.224 1.08s/step
+[21:33:15] step 2500/25000 G=0.206 (l1=0.085 lp=0.260 gan=0.389) D=0.196 1.06s/step
+[21:34:19] step 2600/25000 G=0.205 (l1=0.111 lp=0.261 gan=0.202) D=0.234 1.04s/step
+[21:35:21] step 2700/25000 G=0.210 (l1=0.171 lp=0.251 gan=0.305) D=0.208 1.03s/step
+[21:36:23] step 2800/25000 G=0.201 (l1=0.087 lp=0.175 gan=0.519) D=0.201 1.01s/step
+[21:37:25] step 2900/25000 G=0.214 (l1=0.138 lp=0.272 gan=0.578) D=0.179 1.00s/step
+[21:38:28] step 3000/25000 G=0.209 (l1=0.102 lp=0.250 gan=0.403) D=0.164 0.99s/step
+[21:39:34] step 3100/25000 G=0.216 (l1=0.127 lp=0.260 gan=0.453) D=0.176 0.98s/step
+[21:40:45] step 3200/25000 G=0.216 (l1=0.111 lp=0.205 gan=0.590) D=0.175 0.97s/step
+[21:41:52] step 3300/25000 G=0.202 (l1=0.109 lp=0.207 gan=0.299) D=0.202 0.96s/step
+[21:42:54] step 3400/25000 G=0.214 (l1=0.108 lp=0.227 gan=0.505) D=0.180 0.95s/step
+[21:43:56] step 3500/25000 G=0.219 (l1=0.137 lp=0.244 gan=0.477) D=0.203 0.94s/step
+[21:45:04] step 3600/25000 G=0.199 (l1=0.138 lp=0.212 gan=0.338) D=0.175 0.93s/step
+[21:46:14] step 3700/25000 G=0.200 (l1=0.117 lp=0.245 gan=0.329) D=0.196 0.93s/step
+[21:47:26] step 3800/25000 G=0.210 (l1=0.113 lp=0.225 gan=0.405) D=0.200 0.92s/step
+[21:48:38] step 3900/25000 G=0.217 (l1=0.133 lp=0.247 gan=0.196) D=0.209 0.92s/step
+[21:49:52] step 4000/25000 G=0.205 (l1=0.129 lp=0.208 gan=0.410) D=0.195 0.91s/step
+[21:49:52] [save] v9b_s4000.pt
+[21:51:07] step 4100/25000 G=0.199 (l1=0.096 lp=0.173 gan=0.452) D=0.202 0.91s/step
+[21:52:23] step 4200/25000 G=0.201 (l1=0.110 lp=0.249 gan=0.553) D=0.231 0.90s/step
+[21:53:39] step 4300/25000 G=0.204 (l1=0.131 lp=0.228 gan=0.496) D=0.215 0.90s/step
+[21:54:55] step 4400/25000 G=0.211 (l1=0.134 lp=0.287 gan=0.434) D=0.190 0.90s/step
+[21:56:12] step 4500/25000 G=0.219 (l1=0.152 lp=0.200 gan=0.309) D=0.175 0.90s/step
+[21:57:27] step 4600/25000 G=0.190 (l1=0.094 lp=0.198 gan=0.332) D=0.212 0.89s/step
+[21:58:46] step 4700/25000 G=0.206 (l1=0.141 lp=0.283 gan=0.353) D=0.195 0.89s/step
+[22:00:04] step 4800/25000 G=0.206 (l1=0.068 lp=0.217 gan=0.604) D=0.196 0.89s/step
+[22:01:20] step 4900/25000 G=0.198 (l1=0.085 lp=0.201 gan=0.551) D=0.197 0.89s/step
+[22:02:37] step 5000/25000 G=0.193 (l1=0.133 lp=0.273 gan=0.326) D=0.204 0.88s/step
+[22:03:55] step 5100/25000 G=0.210 (l1=0.169 lp=0.213 gan=0.204) D=0.195 0.88s/step
+[22:05:23] step 5200/25000 G=0.188 (l1=0.124 lp=0.191 gan=0.283) D=0.191 0.88s/step
+[22:06:53] step 5300/25000 G=0.199 (l1=0.104 lp=0.190 gan=0.406) D=0.217 0.88s/step
+[22:08:19] step 5400/25000 G=0.197 (l1=0.113 lp=0.219 gan=0.475) D=0.212 0.88s/step
+[22:09:36] step 5500/25000 G=0.194 (l1=0.148 lp=0.236 gan=0.418) D=0.192 0.88s/step
+[22:11:00] step 5600/25000 G=0.202 (l1=0.082 lp=0.238 gan=0.584) D=0.192 0.88s/step
+[22:12:28] step 5700/25000 G=0.208 (l1=0.127 lp=0.211 gan=0.270) D=0.213 0.88s/step
+[22:13:50] step 5800/25000 G=0.198 (l1=0.119 lp=0.222 gan=0.431) D=0.190 0.88s/step
+[22:15:11] step 5900/25000 G=0.194 (l1=0.118 lp=0.215 gan=0.475) D=0.195 0.88s/step
+[22:16:27] step 6000/25000 G=0.184 (l1=0.089 lp=0.172 gan=0.256) D=0.216 0.87s/step
+[22:16:27] [save] v9b_s6000.pt
+[22:17:45] step 6100/25000 G=0.188 (l1=0.124 lp=0.184 gan=0.311) D=0.198 0.87s/step
+[22:18:56] step 6200/25000 G=0.203 (l1=0.079 lp=0.184 gan=0.749) D=0.183 0.87s/step
+[22:20:01] step 6300/25000 G=0.208 (l1=0.124 lp=0.250 gan=0.371) D=0.180 0.87s/step
+[22:21:05] step 6400/25000 G=0.187 (l1=0.102 lp=0.196 gan=0.623) D=0.202 0.86s/step
+[22:22:06] step 6500/25000 G=0.195 (l1=0.147 lp=0.200 gan=0.414) D=0.197 0.86s/step
+[22:23:06] step 6600/25000 G=0.185 (l1=0.095 lp=0.178 gan=0.450) D=0.176 0.85s/step
+[22:24:04] step 6700/25000 G=0.202 (l1=0.120 lp=0.211 gan=0.449) D=0.190 0.85s/step
+[22:25:02] step 6800/25000 G=0.184 (l1=0.120 lp=0.244 gan=0.326) D=0.192 0.85s/step
+[22:25:59] step 6900/25000 G=0.185 (l1=0.152 lp=0.207 gan=0.242) D=0.199 0.84s/step
+[22:26:57] step 7000/25000 G=0.194 (l1=0.137 lp=0.195 gan=0.212) D=0.220 0.84s/step
+[22:27:55] step 7100/25000 G=0.197 (l1=0.129 lp=0.242 gan=0.335) D=0.182 0.84s/step
+[22:28:54] step 7200/25000 G=0.199 (l1=0.091 lp=0.180 gan=0.642) D=0.204 0.83s/step
+[22:29:53] step 7300/25000 G=0.188 (l1=0.126 lp=0.217 gan=0.353) D=0.180 0.83s/step
+[22:30:51] step 7400/25000 G=0.190 (l1=0.114 lp=0.210 gan=0.425) D=0.197 0.83s/step
+[22:31:49] step 7500/25000 G=0.187 (l1=0.091 lp=0.138 gan=0.492) D=0.189 0.82s/step
+[22:32:47] step 7600/25000 G=0.185 (l1=0.086 lp=0.188 gan=0.452) D=0.199 0.82s/step
+[22:33:44] step 7700/25000 G=0.188 (l1=0.111 lp=0.188 gan=0.312) D=0.190 0.82s/step
+[22:34:42] step 7800/25000 G=0.187 (l1=0.090 lp=0.266 gan=0.402) D=0.188 0.81s/step
+[22:35:40] step 7900/25000 G=0.184 (l1=0.131 lp=0.186 gan=0.307) D=0.183 0.81s/step
+[22:36:38] step 8000/25000 G=0.195 (l1=0.144 lp=0.245 gan=0.285) D=0.180 0.81s/step
+[22:36:38] [save] v9b_s8000.pt
+[22:37:35] step 8100/25000 G=0.195 (l1=0.092 lp=0.185 gan=0.593) D=0.166 0.80s/step
+[22:38:33] step 8200/25000 G=0.197 (l1=0.115 lp=0.194 gan=0.416) D=0.222 0.80s/step
+[22:39:31] step 8300/25000 G=0.195 (l1=0.114 lp=0.240 gan=0.426) D=0.202 0.80s/step
+[22:40:29] step 8400/25000 G=0.198 (l1=0.092 lp=0.181 gan=0.681) D=0.172 0.80s/step
+[22:41:27] step 8500/25000 G=0.193 (l1=0.132 lp=0.201 gan=0.401) D=0.197 0.79s/step
+[22:42:24] step 8600/25000 G=0.187 (l1=0.116 lp=0.192 gan=0.362) D=0.193 0.79s/step
+[22:43:22] step 8700/25000 G=0.187 (l1=0.161 lp=0.247 gan=0.266) D=0.192 0.79s/step
+[22:44:22] step 8800/25000 G=0.178 (l1=0.089 lp=0.171 gan=0.344) D=0.180 0.79s/step
+[22:45:29] step 8900/25000 G=0.197 (l1=0.165 lp=0.284 gan=0.385) D=0.181 0.78s/step
+[22:46:27] step 9000/25000 G=0.172 (l1=0.079 lp=0.152 gan=0.234) D=0.206 0.78s/step
+[22:47:26] step 9100/25000 G=0.196 (l1=0.124 lp=0.198 gan=0.321) D=0.168 0.78s/step
+[22:48:24] step 9200/25000 G=0.197 (l1=0.073 lp=0.197 gan=0.520) D=0.185 0.78s/step
+[22:49:23] step 9300/25000 G=0.184 (l1=0.065 lp=0.131 gan=0.495) D=0.185 0.78s/step
+[22:50:23] step 9400/25000 G=0.200 (l1=0.118 lp=0.162 gan=0.425) D=0.184 0.77s/step
+[22:51:21] step 9500/25000 G=0.204 (l1=0.127 lp=0.230 gan=0.578) D=0.164 0.77s/step
+[22:52:20] step 9600/25000 G=0.193 (l1=0.105 lp=0.169 gan=0.518) D=0.191 0.77s/step
+[22:53:17] step 9700/25000 G=0.206 (l1=0.078 lp=0.212 gan=0.450) D=0.158 0.77s/step
+[22:54:16] step 9800/25000 G=0.199 (l1=0.148 lp=0.224 gan=0.570) D=0.170 0.77s/step
+[22:55:15] step 9900/25000 G=0.190 (l1=0.125 lp=0.235 gan=0.459) D=0.183 0.76s/step
+[22:56:13] step 10000/25000 G=0.188 (l1=0.113 lp=0.236 gan=0.395) D=0.175 0.76s/step
+[22:56:13] [save] v9b_s10000.pt
+[22:57:11] step 10100/25000 G=0.179 (l1=0.115 lp=0.233 gan=0.275) D=0.202 0.76s/step
+[22:58:10] step 10200/25000 G=0.181 (l1=0.094 lp=0.193 gan=0.465) D=0.197 0.76s/step
+[22:59:07] step 10300/25000 G=0.178 (l1=0.056 lp=0.156 gan=0.426) D=0.185 0.76s/step
+[23:00:04] step 10400/25000 G=0.191 (l1=0.118 lp=0.210 gan=0.341) D=0.168 0.76s/step
+[23:01:02] step 10500/25000 G=0.187 (l1=0.089 lp=0.151 gan=0.424) D=0.174 0.75s/step
+[23:01:59] step 10600/25000 G=0.196 (l1=0.111 lp=0.167 gan=0.469) D=0.180 0.75s/step
+[23:02:56] step 10700/25000 G=0.206 (l1=0.132 lp=0.260 gan=0.357) D=0.187 0.75s/step
+[23:03:53] step 10800/25000 G=0.187 (l1=0.101 lp=0.192 gan=0.276) D=0.191 0.75s/step
+[23:04:50] step 10900/25000 G=0.190 (l1=0.125 lp=0.192 gan=0.468) D=0.168 0.75s/step
+[23:05:48] step 11000/25000 G=0.182 (l1=0.090 lp=0.201 gan=0.422) D=0.180 0.75s/step
+[23:06:45] step 11100/25000 G=0.199 (l1=0.134 lp=0.203 gan=0.570) D=0.154 0.74s/step
+[23:07:42] step 11200/25000 G=0.196 (l1=0.094 lp=0.213 gan=0.414) D=0.171 0.74s/step
+[23:08:49] step 11300/25000 G=0.201 (l1=0.087 lp=0.168 gan=0.669) D=0.197 0.74s/step
+[23:10:00] step 11400/25000 G=0.193 (l1=0.137 lp=0.185 gan=0.461) D=0.158 0.74s/step
+[23:11:11] step 11500/25000 G=0.194 (l1=0.133 lp=0.219 gan=0.245) D=0.155 0.74s/step
+[23:12:22] step 11600/25000 G=0.189 (l1=0.121 lp=0.274 gan=0.268) D=0.191 0.74s/step
+[23:13:34] step 11700/25000 G=0.194 (l1=0.119 lp=0.221 gan=0.373) D=0.163 0.74s/step
+[23:14:46] step 11800/25000 G=0.199 (l1=0.104 lp=0.181 gan=0.627) D=0.168 0.74s/step
+[23:15:57] step 11900/25000 G=0.195 (l1=0.124 lp=0.258 gan=0.408) D=0.174 0.74s/step
+[23:17:08] step 12000/25000 G=0.188 (l1=0.113 lp=0.215 gan=0.624) D=0.161 0.74s/step
+[23:17:08] [save] v9b_s12000.pt
+[23:18:20] step 12100/25000 G=0.202 (l1=0.148 lp=0.204 gan=0.643) D=0.145 0.74s/step
+[23:19:32] step 12200/25000 G=0.183 (l1=0.128 lp=0.207 gan=0.444) D=0.175 0.74s/step
+[23:20:43] step 12300/25000 G=0.200 (l1=0.121 lp=0.193 gan=0.368) D=0.160 0.74s/step
+[23:21:55] step 12400/25000 G=0.185 (l1=0.080 lp=0.161 gan=0.539) D=0.169 0.74s/step
+[23:23:06] step 12500/25000 G=0.198 (l1=0.147 lp=0.208 gan=0.386) D=0.171 0.74s/step
+[23:24:18] step 12600/25000 G=0.189 (l1=0.113 lp=0.207 gan=0.249) D=0.163 0.74s/step
+[23:25:29] step 12700/25000 G=0.190 (l1=0.158 lp=0.228 gan=0.471) D=0.175 0.74s/step
+[23:26:41] step 12800/25000 G=0.208 (l1=0.141 lp=0.217 gan=0.971) D=0.158 0.74s/step
+[23:27:52] step 12900/25000 G=0.200 (l1=0.107 lp=0.206 gan=0.762) D=0.152 0.74s/step
+[23:29:04] step 13000/25000 G=0.191 (l1=0.097 lp=0.236 gan=0.548) D=0.154 0.74s/step
+[23:30:16] step 13100/25000 G=0.190 (l1=0.122 lp=0.209 gan=0.532) D=0.148 0.74s/step
+[23:31:27] step 13200/25000 G=0.188 (l1=0.106 lp=0.193 gan=0.361) D=0.170 0.74s/step
+[23:32:39] step 13300/25000 G=0.189 (l1=0.092 lp=0.186 gan=0.622) D=0.179 0.74s/step
+[23:33:50] step 13400/25000 G=0.200 (l1=0.116 lp=0.213 gan=0.680) D=0.168 0.74s/step
+[23:35:02] step 13500/25000 G=0.194 (l1=0.122 lp=0.216 gan=0.419) D=0.168 0.74s/step
+[23:36:13] step 13600/25000 G=0.187 (l1=0.096 lp=0.190 gan=0.397) D=0.176 0.74s/step
+[23:37:25] step 13700/25000 G=0.190 (l1=0.116 lp=0.206 gan=0.456) D=0.167 0.74s/step
+[23:38:36] step 13800/25000 G=0.200 (l1=0.114 lp=0.180 gan=0.641) D=0.157 0.74s/step
+[23:39:47] step 13900/25000 G=0.189 (l1=0.106 lp=0.224 gan=0.576) D=0.159 0.74s/step
+[23:40:59] step 14000/25000 G=0.183 (l1=0.117 lp=0.212 gan=0.330) D=0.173 0.74s/step
+[23:40:59] [save] v9b_s14000.pt
+[23:42:10] step 14100/25000 G=0.185 (l1=0.088 lp=0.162 gan=0.333) D=0.191 0.74s/step
+[23:43:22] step 14200/25000 G=0.183 (l1=0.115 lp=0.195 gan=0.433) D=0.165 0.74s/step
+[23:44:33] step 14300/25000 G=0.204 (l1=0.101 lp=0.231 gan=0.591) D=0.170 0.74s/step
+[23:45:45] step 14400/25000 G=0.204 (l1=0.089 lp=0.198 gan=0.487) D=0.161 0.74s/step
+[23:46:56] step 14500/25000 G=0.187 (l1=0.146 lp=0.186 gan=0.294) D=0.163 0.74s/step
+[23:48:08] step 14600/25000 G=0.188 (l1=0.083 lp=0.214 gan=0.492) D=0.160 0.74s/step
+[23:49:20] step 14700/25000 G=0.189 (l1=0.099 lp=0.197 gan=0.352) D=0.148 0.74s/step
+[23:50:31] step 14800/25000 G=0.191 (l1=0.111 lp=0.163 gan=0.464) D=0.146 0.74s/step
+[23:51:43] step 14900/25000 G=0.194 (l1=0.128 lp=0.188 gan=0.334) D=0.157 0.74s/step
+[23:52:55] step 15000/25000 G=0.190 (l1=0.099 lp=0.145 gan=0.376) D=0.167 0.74s/step
+[23:54:06] step 15100/25000 G=0.190 (l1=0.119 lp=0.209 gan=0.471) D=0.160 0.74s/step
+[23:55:18] step 15200/25000 G=0.200 (l1=0.112 lp=0.214 gan=0.509) D=0.154 0.74s/step
+[23:56:30] step 15300/25000 G=0.189 (l1=0.091 lp=0.161 gan=0.566) D=0.156 0.74s/step
+[23:57:41] step 15400/25000 G=0.192 (l1=0.135 lp=0.219 gan=0.227) D=0.166 0.73s/step
+[23:58:53] step 15500/25000 G=0.194 (l1=0.115 lp=0.181 gan=0.784) D=0.147 0.73s/step
+[00:00:04] step 15600/25000 G=0.195 (l1=0.102 lp=0.149 gan=0.500) D=0.157 0.73s/step
+[00:01:16] step 15700/25000 G=0.178 (l1=0.110 lp=0.215 gan=0.425) D=0.169 0.73s/step
+[00:02:27] step 15800/25000 G=0.191 (l1=0.130 lp=0.228 gan=0.385) D=0.168 0.73s/step
+[00:03:39] step 15900/25000 G=0.186 (l1=0.089 lp=0.160 gan=0.389) D=0.172 0.73s/step
+[00:04:51] step 16000/25000 G=0.190 (l1=0.143 lp=0.216 gan=0.440) D=0.152 0.73s/step
+[00:04:51] [save] v9b_s16000.pt
+[00:06:03] step 16100/25000 G=0.182 (l1=0.105 lp=0.150 gan=0.344) D=0.147 0.73s/step
+[00:07:14] step 16200/25000 G=0.184 (l1=0.084 lp=0.154 gan=0.471) D=0.163 0.73s/step
+[00:08:26] step 16300/25000 G=0.197 (l1=0.104 lp=0.203 gan=0.853) D=0.148 0.73s/step
+[00:09:37] step 16400/25000 G=0.193 (l1=0.140 lp=0.195 gan=0.319) D=0.166 0.73s/step
+[00:10:49] step 16500/25000 G=0.203 (l1=0.103 lp=0.152 gan=0.335) D=0.152 0.73s/step
+[00:12:01] step 16600/25000 G=0.189 (l1=0.072 lp=0.138 gan=0.512) D=0.166 0.73s/step
+[00:13:12] step 16700/25000 G=0.198 (l1=0.147 lp=0.203 gan=0.313) D=0.164 0.73s/step
+[00:14:24] step 16800/25000 G=0.180 (l1=0.123 lp=0.186 gan=0.486) D=0.168 0.73s/step
+[00:15:35] step 16900/25000 G=0.190 (l1=0.147 lp=0.209 gan=0.428) D=0.169 0.73s/step
+[00:16:47] step 17000/25000 G=0.194 (l1=0.127 lp=0.238 gan=0.384) D=0.148 0.73s/step
+[00:17:59] step 17100/25000 G=0.187 (l1=0.103 lp=0.184 gan=0.493) D=0.153 0.73s/step
+[00:19:11] step 17200/25000 G=0.185 (l1=0.109 lp=0.172 gan=0.325) D=0.168 0.73s/step
+[00:20:22] step 17300/25000 G=0.188 (l1=0.143 lp=0.231 gan=0.436) D=0.161 0.73s/step
+[00:21:34] step 17400/25000 G=0.194 (l1=0.132 lp=0.222 gan=0.462) D=0.160 0.73s/step
+[00:22:46] step 17500/25000 G=0.193 (l1=0.100 lp=0.196 gan=0.653) D=0.159 0.73s/step
+[00:23:57] step 17600/25000 G=0.192 (l1=0.099 lp=0.170 gan=0.538) D=0.165 0.73s/step
+[00:25:08] step 17700/25000 G=0.189 (l1=0.093 lp=0.191 gan=0.464) D=0.168 0.73s/step
+[00:26:20] step 17800/25000 G=0.194 (l1=0.081 lp=0.188 gan=0.650) D=0.170 0.73s/step
+[00:27:31] step 17900/25000 G=0.184 (l1=0.120 lp=0.183 gan=0.417) D=0.153 0.73s/step
+[00:28:43] step 18000/25000 G=0.195 (l1=0.099 lp=0.176 gan=0.536) D=0.148 0.73s/step
+[00:28:43] [save] v9b_s18000.pt
+[00:29:54] step 18100/25000 G=0.175 (l1=0.112 lp=0.184 gan=0.277) D=0.160 0.73s/step
+[00:31:05] step 18200/25000 G=0.188 (l1=0.091 lp=0.182 gan=0.444) D=0.158 0.73s/step
+[00:32:16] step 18300/25000 G=0.178 (l1=0.079 lp=0.147 gan=0.417) D=0.152 0.73s/step
+[00:33:28] step 18400/25000 G=0.179 (l1=0.097 lp=0.156 gan=0.355) D=0.158 0.73s/step
+[00:34:39] step 18500/25000 G=0.172 (l1=0.072 lp=0.141 gan=0.406) D=0.157 0.73s/step
+[00:35:50] step 18600/25000 G=0.187 (l1=0.110 lp=0.196 gan=0.311) D=0.165 0.73s/step
+[00:37:01] step 18700/25000 G=0.187 (l1=0.085 lp=0.169 gan=0.545) D=0.153 0.73s/step
+[00:38:13] step 18800/25000 G=0.185 (l1=0.118 lp=0.183 gan=0.535) D=0.153 0.73s/step
+[00:39:24] step 18900/25000 G=0.190 (l1=0.084 lp=0.160 gan=0.678) D=0.163 0.73s/step
+[00:40:35] step 19000/25000 G=0.181 (l1=0.091 lp=0.180 gan=0.496) D=0.157 0.73s/step
+[00:41:47] step 19100/25000 G=0.189 (l1=0.100 lp=0.196 gan=0.369) D=0.169 0.73s/step
+[00:42:58] step 19200/25000 G=0.201 (l1=0.110 lp=0.191 gan=0.528) D=0.144 0.73s/step
+[00:44:09] step 19300/25000 G=0.187 (l1=0.075 lp=0.159 gan=0.541) D=0.168 0.73s/step
+[00:45:20] step 19400/25000 G=0.196 (l1=0.137 lp=0.192 gan=0.399) D=0.142 0.73s/step
+[00:46:31] step 19500/25000 G=0.190 (l1=0.080 lp=0.180 gan=0.521) D=0.151 0.73s/step
+[00:47:42] step 19600/25000 G=0.184 (l1=0.095 lp=0.166 gan=0.588) D=0.148 0.73s/step
+[00:48:53] step 19700/25000 G=0.187 (l1=0.098 lp=0.168 gan=0.565) D=0.143 0.73s/step
+[00:50:04] step 19800/25000 G=0.181 (l1=0.108 lp=0.187 gan=0.359) D=0.161 0.73s/step
+[00:51:15] step 19900/25000 G=0.203 (l1=0.116 lp=0.178 gan=0.497) D=0.147 0.73s/step
+[00:52:26] step 20000/25000 G=0.198 (l1=0.096 lp=0.139 gan=0.517) D=0.152 0.73s/step
+[00:52:26] [save] v9b_s20000.pt
+[00:53:37] step 20100/25000 G=0.194 (l1=0.099 lp=0.156 gan=0.471) D=0.156 0.73s/step
+[00:54:47] step 20200/25000 G=0.190 (l1=0.121 lp=0.166 gan=0.514) D=0.147 0.73s/step
+[00:55:57] step 20300/25000 G=0.179 (l1=0.109 lp=0.160 gan=0.393) D=0.156 0.73s/step
+[00:57:07] step 20400/25000 G=0.189 (l1=0.100 lp=0.179 gan=0.460) D=0.160 0.73s/step
+[00:58:17] step 20500/25000 G=0.185 (l1=0.097 lp=0.217 gan=0.352) D=0.157 0.73s/step
+[00:59:27] step 20600/25000 G=0.183 (l1=0.120 lp=0.156 gan=0.299) D=0.147 0.73s/step
+[01:00:37] step 20700/25000 G=0.176 (l1=0.085 lp=0.123 gan=0.325) D=0.153 0.73s/step
+[01:01:48] step 20800/25000 G=0.186 (l1=0.131 lp=0.215 gan=0.299) D=0.153 0.73s/step
+[01:02:59] step 20900/25000 G=0.198 (l1=0.097 lp=0.180 gan=0.547) D=0.151 0.73s/step
+[01:04:00] step 21000/25000 G=0.192 (l1=0.113 lp=0.179 gan=0.641) D=0.137 0.73s/step
+[01:04:57] step 21100/25000 G=0.177 (l1=0.090 lp=0.164 gan=0.402) D=0.146 0.73s/step
+[01:05:54] step 21200/25000 G=0.177 (l1=0.098 lp=0.167 gan=0.397) D=0.146 0.73s/step
+[01:06:51] step 21300/25000 G=0.183 (l1=0.128 lp=0.175 gan=0.330) D=0.159 0.73s/step
+[01:07:48] step 21400/25000 G=0.186 (l1=0.077 lp=0.229 gan=0.653) D=0.145 0.73s/step
+[01:08:45] step 21500/25000 G=0.182 (l1=0.065 lp=0.165 gan=0.604) D=0.146 0.72s/step
+[01:09:42] step 21600/25000 G=0.179 (l1=0.113 lp=0.182 gan=0.348) D=0.145 0.72s/step
+[01:10:38] step 21700/25000 G=0.177 (l1=0.077 lp=0.182 gan=0.577) D=0.150 0.72s/step
+[01:11:35] step 21800/25000 G=0.180 (l1=0.119 lp=0.205 gan=0.584) D=0.154 0.72s/step
+[01:12:31] step 21900/25000 G=0.179 (l1=0.111 lp=0.183 gan=0.367) D=0.149 0.72s/step
+[01:13:28] step 22000/25000 G=0.195 (l1=0.085 lp=0.214 gan=0.499) D=0.141 0.72s/step
+[01:13:28] [save] v9b_s22000.pt
+[01:14:36] step 22100/25000 G=0.183 (l1=0.070 lp=0.146 gan=0.539) D=0.149 0.72s/step
+[01:15:46] step 22200/25000 G=0.184 (l1=0.101 lp=0.136 gan=0.384) D=0.150 0.72s/step
+[01:16:56] step 22300/25000 G=0.190 (l1=0.108 lp=0.168 gan=0.513) D=0.145 0.72s/step
+[01:18:07] step 22400/25000 G=0.187 (l1=0.116 lp=0.182 gan=0.580) D=0.148 0.72s/step
+[01:19:17] step 22500/25000 G=0.187 (l1=0.127 lp=0.228 gan=0.319) D=0.145 0.72s/step
+[01:20:27] step 22600/25000 G=0.199 (l1=0.114 lp=0.165 gan=0.532) D=0.137 0.72s/step
+[01:21:37] step 22700/25000 G=0.176 (l1=0.102 lp=0.209 gan=0.487) D=0.151 0.72s/step
+[01:22:48] step 22800/25000 G=0.181 (l1=0.080 lp=0.182 gan=0.522) D=0.150 0.72s/step
+[01:23:58] step 22900/25000 G=0.192 (l1=0.116 lp=0.188 gan=0.329) D=0.141 0.72s/step
+[01:25:08] step 23000/25000 G=0.188 (l1=0.113 lp=0.211 gan=0.490) D=0.150 0.72s/step
+[01:26:18] step 23100/25000 G=0.187 (l1=0.094 lp=0.143 gan=0.427) D=0.145 0.72s/step
+[01:27:29] step 23200/25000 G=0.180 (l1=0.089 lp=0.214 gan=0.404) D=0.149 0.72s/step
+[01:28:39] step 23300/25000 G=0.175 (l1=0.093 lp=0.166 gan=0.484) D=0.155 0.72s/step
+[01:29:49] step 23400/25000 G=0.195 (l1=0.137 lp=0.217 gan=0.463) D=0.136 0.72s/step
+[01:31:00] step 23500/25000 G=0.187 (l1=0.090 lp=0.160 gan=0.587) D=0.152 0.72s/step
+[01:32:10] step 23600/25000 G=0.178 (l1=0.106 lp=0.185 gan=0.461) D=0.148 0.72s/step
+[01:33:21] step 23700/25000 G=0.185 (l1=0.081 lp=0.165 gan=0.419) D=0.147 0.72s/step
+[01:34:32] step 23800/25000 G=0.195 (l1=0.101 lp=0.196 gan=0.491) D=0.155 0.72s/step
+[01:35:42] step 23900/25000 G=0.171 (l1=0.072 lp=0.160 gan=0.455) D=0.151 0.72s/step
+[01:36:53] step 24000/25000 G=0.180 (l1=0.082 lp=0.149 gan=0.524) D=0.150 0.72s/step
+[01:36:53] [save] v9b_s24000.pt
+[01:38:03] step 24100/25000 G=0.199 (l1=0.192 lp=0.216 gan=0.407) D=0.141 0.72s/step
+[01:39:14] step 24200/25000 G=0.189 (l1=0.098 lp=0.170 gan=0.550) D=0.148 0.72s/step
+[01:40:24] step 24300/25000 G=0.183 (l1=0.130 lp=0.180 gan=0.404) D=0.161 0.72s/step
+[01:41:34] step 24400/25000 G=0.189 (l1=0.079 lp=0.150 gan=0.384) D=0.136 0.72s/step
+[01:42:45] step 24500/25000 G=0.188 (l1=0.108 lp=0.222 gan=0.478) D=0.143 0.72s/step
+[01:43:55] step 24600/25000 G=0.191 (l1=0.092 lp=0.182 gan=0.663) D=0.142 0.72s/step
+[01:45:05] step 24700/25000 G=0.182 (l1=0.098 lp=0.180 gan=0.536) D=0.146 0.72s/step
+[01:46:15] step 24800/25000 G=0.189 (l1=0.096 lp=0.163 gan=0.433) D=0.143 0.72s/step
+[01:47:25] step 24900/25000 G=0.169 (l1=0.095 lp=0.158 gan=0.339) D=0.153 0.72s/step
+[01:48:36] step 25000/25000 G=0.194 (l1=0.125 lp=0.175 gan=0.583) D=0.143 0.72s/step
+[01:48:36] [save] v9b_s25000.pt
+[01:48:36] TRAIN_GAN_DONE
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+[09-15 01:48:38] <<< train v9b (512域 GAN 0.38M bs4 25k) rc=0 (299.9 min)
+[09-15 01:48:38] === productize TinyV9b (down=1) ===
+[09-15 01:48:38] >>> TinyV9b export
+[attn] 替换 1 个 attention processor; 打补丁前后最大差 = 0.000000
+[graph] 可 capture, replay maxdiff = 0.000000
+[export] D:\models\pkg_TinyV9b\model_dir/your_model.pt  out=(1, 3, 512, 512) nan=False params=0.38M native=512 down=1
+EXPORT_TINY_DONE
+D:\Python\Lib\site-packages\diffusers\models\downsampling.py:134: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert hidden_states.shape[1] == self.channels
+D:\Python\Lib\site-packages\diffusers\models\downsampling.py:143: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert hidden_states.shape[1] == self.channels
+D:\Python\Lib\site-packages\diffusers\models\upsampling.py:145: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert hidden_states.shape[1] == self.channels
+D:\Python\Lib\site-packages\diffusers\models\upsampling.py:160: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if hidden_states.shape[0] >= 64:
+D:\Python\Lib\site-packages\diffusers\models\upsampling.py:171: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if hidden_states.numel() * scale_factor > pow(2, 31):
+
+[09-15 01:49:02] <<< TinyV9b export rc=0 (0.4 min)
+[09-15 01:49:02] >>> TinyV9b render100
+  20/100 3.22s/张
+  40/100 3.24s/张
+  60/100 3.93s/张
+  80/100 4.44s/张
+  100/100 4.74s/张
+[render] 100 张 -> D:\models\pkg_TinyV9b\output_dir (7.9 min)
+RENDER_TINY_DONE
+D:\tmp_timing\render_tiny.py:44: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(patch_u8).permute(2, 0, 1)[None].to('cuda').float().div_(127.5).sub_(1)
+
+[09-15 01:57:16] <<< TinyV9b render100 rc=0 (8.2 min)
+[09-15 01:57:16] >>> TinyV9b measure
+[measure] {"niqe": 5.3, "clipiqa": 0.6409, "n": 30}
+  (参照: M24 clipiqa 0.9023 / niqe 5.2559 | TinyV1 0.3367 / 5.7899 | LQ 0.2752 / 7.8100)
+MEASURE_TEST30_DONE
+D:\tmp_timing\measure_test30.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(Image.open(p).convert('RGB'))).permute(2,0,1).unsqueeze(0).to(dev).float().div_(255)
+
+[09-15 02:09:21] <<< TinyV9b measure rc=0 (12.1 min)
+[09-15 02:09:21] >>> TinyV9b latency
+[latency] 62.35 ms -> 4.6x | graph=True | std=0.643 nan=False
+LATENCY_DONE
+
+[09-15 02:09:39] <<< TinyV9b latency rc=0 (0.3 min)
+[09-15 02:09:39] >>> TinyV9b package
+[save] D:\models\Track2_TinyV9b.zip (0.62 GB) | output 100 | model_dir 2
+PACK_PASS
+
+[09-15 02:10:02] <<< TinyV9b package rc=0 (0.4 min)
+[09-15 02:10:02] >>> TinyV9b gate
+==========================================================================
+门禁: D:\models\Track2_TinyV9b.zip
+==========================================================================
+  ✅ ① 文件名 ASCII: 文件名纯 ASCII: Track2_TinyV9b.zip
+  ✅    内部路径 ASCII: zip 内路径全部 ASCII
+  ✅    结构与完整性: testzip OK; output_dir 100 jpg; model_dir 2 项
+  ✅    体积: 0.58 GiB (上限 10.0 GB)
+  ✅    出图尺寸: case1.jpg 4096x3072; case54.jpg 4096x3072; case99.jpg 4096x3072
+  ✅ ② 语法兼容: 0 处风险
+  ✅   接口/512 推理: infer OK
+  ✅ ③ IQA 遮蔽: PASS
+  ✅ ④ IQA 遮蔽(对抗): PASS
+  ✅ ⑤ 官方格式严格审计: PASS
+  ==> PREUPLOAD_GATE_PASS
+==========================================================================
+总体: ✅ 全部通过，可以上传
+PREUPLOAD_ALL_PASS
+
+[09-15 02:10:26] <<< TinyV9b gate rc=0 (0.4 min)
+[09-15 02:10:26] [upload] D:\models\upload\Track2_TinyV9b.zip
+[09-15 02:10:26] [branch] v9b test30 clipiqa = 0.6409 (判据 0.58)
+[09-15 02:10:26] [branch] 分辨率有效 -> v9a (512域, 0.87M, 8k 步)
+[09-15 02:10:26] >>> train v9a (512域 GAN 0.87M bs4 8k)
+[02:10:28] [data] 2839 对 (256 域蒸馏对)
+[02:10:48] [model] G=0.87M D=0.66M res=512 bs=4 w_gan=0.1
+[02:15:24] step 100/8000 G=0.346 (l1=0.235 lp=0.312 gan=0.278) D=0.258 2.75s/step
+[02:20:03] step 200/8000 G=0.288 (l1=0.180 lp=0.213 gan=0.252) D=0.263 2.77s/step
+[02:24:36] step 300/8000 G=0.258 (l1=0.144 lp=0.253 gan=0.270) D=0.253 2.76s/step
+[02:29:05] step 400/8000 G=0.237 (l1=0.167 lp=0.296 gan=0.331) D=0.251 2.74s/step
+[02:33:28] step 500/8000 G=0.222 (l1=0.135 lp=0.222 gan=0.316) D=0.251 2.72s/step
+[02:37:59] step 600/8000 G=0.211 (l1=0.119 lp=0.201 gan=0.253) D=0.249 2.72s/step
+[02:42:41] step 700/8000 G=0.210 (l1=0.118 lp=0.195 gan=0.282) D=0.235 2.73s/step
+[02:46:59] step 800/8000 G=0.229 (l1=0.143 lp=0.205 gan=0.325) D=0.205 2.71s/step
+[02:51:36] step 900/8000 G=0.233 (l1=0.147 lp=0.214 gan=0.640) D=0.145 2.72s/step
+[02:56:06] step 1000/8000 G=0.264 (l1=0.116 lp=0.365 gan=0.851) D=0.125 2.72s/step
+[03:00:48] step 1100/8000 G=0.229 (l1=0.134 lp=0.251 gan=0.262) D=0.235 2.73s/step
+[03:05:32] step 1200/8000 G=0.211 (l1=0.106 lp=0.228 gan=0.318) D=0.211 2.74s/step
+[03:09:56] step 1300/8000 G=0.222 (l1=0.159 lp=0.235 gan=0.302) D=0.174 2.73s/step
+[03:14:36] step 1400/8000 G=0.214 (l1=0.134 lp=0.219 gan=0.283) D=0.240 2.73s/step
+[03:18:51] step 1500/8000 G=0.222 (l1=0.148 lp=0.302 gan=0.602) D=0.240 2.72s/step
+[03:23:24] step 1600/8000 G=0.197 (l1=0.138 lp=0.231 gan=0.198) D=0.216 2.72s/step
+[03:28:00] step 1700/8000 G=0.211 (l1=0.102 lp=0.247 gan=0.471) D=0.239 2.72s/step
+[03:32:39] step 1800/8000 G=0.207 (l1=0.110 lp=0.178 gan=0.766) D=0.229 2.73s/step
+[03:37:20] step 1900/8000 G=0.213 (l1=0.126 lp=0.242 gan=0.298) D=0.221 2.73s/step
+[03:41:57] step 2000/8000 G=0.199 (l1=0.120 lp=0.188 gan=0.210) D=0.230 2.73s/step
+[03:41:57] [save] v9a_s2000.pt
+[03:46:48] step 2100/8000 G=0.208 (l1=0.112 lp=0.227 gan=0.306) D=0.227 2.74s/step
+[03:51:41] step 2200/8000 G=0.201 (l1=0.098 lp=0.199 gan=0.473) D=0.257 2.75s/step
+[03:56:21] step 2300/8000 G=0.199 (l1=0.145 lp=0.266 gan=0.257) D=0.221 2.75s/step
+[04:01:15] step 2400/8000 G=0.201 (l1=0.133 lp=0.193 gan=0.256) D=0.238 2.76s/step
+[04:05:35] step 2500/8000 G=0.197 (l1=0.084 lp=0.242 gan=0.346) D=0.218 2.75s/step
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+[09-15 04:08:04] <<< train v9a (512域 GAN 0.87M bs4 8k) rc=1073807364 (117.6 min)
+[09-15 04:08:04] CHAIN_E2_DONE

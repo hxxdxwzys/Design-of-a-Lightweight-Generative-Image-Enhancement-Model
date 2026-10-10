@@ -1,0 +1,134 @@
+[
+ {
+  "tag": "v7s5000_sc0.6_seed1",
+  "scale": 0.6,
+  "seed": 1,
+  "clip": 0.8682,
+  "lpips": 0.3737,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9184,
+    "lpips": 0.508
+   },
+   "case2": {
+    "clipiqa": 0.8262,
+    "lpips": 0.2328
+   },
+   "case3": {
+    "clipiqa": 0.8601,
+    "lpips": 0.3803
+   }
+  }
+ },
+ {
+  "tag": "v7s5000_sc0.6_seed6",
+  "scale": 0.6,
+  "seed": 6,
+  "clip": 0.8677,
+  "lpips": 0.3716,
+  "pass": true,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9175,
+    "lpips": 0.5121
+   },
+   "case2": {
+    "clipiqa": 0.8221,
+    "lpips": 0.2215
+   },
+   "case3": {
+    "clipiqa": 0.8636,
+    "lpips": 0.3811
+   }
+  }
+ },
+ {
+  "tag": "v7s5000_sc0.7_seed1",
+  "scale": 0.7,
+  "seed": 1,
+  "clip": 0.8978,
+  "lpips": 0.3788,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9366,
+    "lpips": 0.505
+   },
+   "case2": {
+    "clipiqa": 0.8656,
+    "lpips": 0.2522
+   },
+   "case3": {
+    "clipiqa": 0.8913,
+    "lpips": 0.3793
+   }
+  }
+ },
+ {
+  "tag": "v7s5000_sc0.7_seed6",
+  "scale": 0.7,
+  "seed": 6,
+  "clip": 0.8987,
+  "lpips": 0.3758,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9379,
+    "lpips": 0.5091
+   },
+   "case2": {
+    "clipiqa": 0.864,
+    "lpips": 0.2381
+   },
+   "case3": {
+    "clipiqa": 0.8941,
+    "lpips": 0.3803
+   }
+  }
+ },
+ {
+  "tag": "v7s5000_sc0.75_seed1",
+  "scale": 0.75,
+  "seed": 1,
+  "clip": 0.9108,
+  "lpips": 0.3816,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9425,
+    "lpips": 0.5036
+   },
+   "case2": {
+    "clipiqa": 0.8854,
+    "lpips": 0.2626
+   },
+   "case3": {
+    "clipiqa": 0.9044,
+    "lpips": 0.3786
+   }
+  }
+ },
+ {
+  "tag": "v7s5000_sc0.75_seed6",
+  "scale": 0.75,
+  "seed": 6,
+  "clip": 0.9103,
+  "lpips": 0.3784,
+  "pass": false,
+  "per": {
+   "case1": {
+    "clipiqa": 0.9433,
+    "lpips": 0.507
+   },
+   "case2": {
+    "clipiqa": 0.8811,
+    "lpips": 0.2485
+   },
+   "case3": {
+    "clipiqa": 0.9065,
+    "lpips": 0.3798
+   }
+  }
+ }
+]

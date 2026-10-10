@@ -1,0 +1,15 @@
+{
+  "cases": [
+    "case3",
+    "case17"
+  ],
+  "processes": 2,
+  "call_cap": 300,
+  "wall_seconds": 900,
+  "deadline_epoch": 1790416621.6872897,
+  "reserved_calls": 0,
+  "criterion": "both reference JPEGs byte-identical in both processes; no tolerance fallback",
+  "failure_rule": "retain failed readings; stop after failed process; no automatic retry",
+  "manifest_sha256": "871690838cc167eaa5f03f029b8491ad8aa676cf9663846a0c3d1c07231a5700",
+  "runner_constructor_reservation_per_process": 4
+}

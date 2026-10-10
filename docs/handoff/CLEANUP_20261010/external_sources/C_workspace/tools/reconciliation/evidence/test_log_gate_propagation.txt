@@ -1,0 +1,50 @@
+﻿# RCON-01 返修(R3) 工作包G CPU 测试日志
+# 时间: 2026-09-16 19:20:08
+# 命令: D:/Python/python.exe workspace/tools/reconciliation/tests/test_gate_failure_propagation.py -v
+# 被测: workspace/tools/reconciliation/preupload_gate_rcon.py  sha256=3cc62222957f11ebdaf2eb0e63e3832c4a52dc697e0aa51fb7076d4ee1d1b7c7
+# 测试: workspace/tools/reconciliation/tests/test_gate_failure_propagation.py  sha256=60b5700b880d906168ac37814c83287027581dc93dfc642b9cc5ef63af4f0bbb
+# 生成器: workspace/tools/reconciliation/evidence/build_manifest.py  sha256=3f52f338e09a92665293fc84bbcd9c2ac2719a1b92b8fafbcc6132b66b602c7e
+# 范围: CPU 模拟/临时合成包; 无 torch/CUDA/真实 runner/完整门禁; PASS 仅代表判定逻辑
+# R3 新增: 解压目录 model_dir 与 ZIP 的文件集合+内容哈希绑定; 串包/只改时间的负测试
+
+test_09_cli_stub_tools_end_to_end (__main__.TestCliInjection.test_09_cli_stub_tools_end_to_end) ... ok
+test_09b_cli_harness_failure_blocks_shadow_checks (__main__.TestCliInjection.test_09b_cli_harness_failure_blocks_shadow_checks) ... ok
+test_10_cli_missing_tools_never_pass (__main__.TestCliInjection.test_10_cli_missing_tools_never_pass) ... ok
+test_11_cli_stage_upload_no_write_and_no_execution (__main__.TestCliInjection.test_11_cli_stage_upload_no_write_and_no_execution) ... ok
+test_25_cli_plan_mode_does_not_execute_stubs (__main__.TestCliInjection.test_25_cli_plan_mode_does_not_execute_stubs) ... ok
+test_26_cli_execute_tools_actually_runs_stubs (__main__.TestCliInjection.test_26_cli_execute_tools_actually_runs_stubs) ... ok
+test_27_cli_repo_defaults_do_not_touch_real_shared_dirs (__main__.TestCliInjection.test_27_cli_repo_defaults_do_not_touch_real_shared_dirs) ... ok
+test_28_same_count_different_weights_is_not_bound (__main__.TestCrossPackageBinding.test_28_same_count_different_weights_is_not_bound) ... ok
+test_28b_file_set_mismatch_is_not_bound (__main__.TestCrossPackageBinding.test_28b_file_set_mismatch_is_not_bound) ... ok
+test_28c_renamed_model_file_is_not_bound (__main__.TestCrossPackageBinding.test_28c_renamed_model_file_is_not_bound) ... ok
+test_29_directory_time_only_change_is_not_bound (__main__.TestCrossPackageBinding.test_29_directory_time_only_change_is_not_bound) ... ok
+test_30_hash_budget_exceeded_is_not_run (__main__.TestCrossPackageBinding.test_30_hash_budget_exceeded_is_not_run) ... ok
+test_01_all_success_mock_scope_passes (__main__.TestFailurePropagation.test_01_all_success_mock_scope_passes) ... ok
+test_02_infer_ok_then_assert_fail_is_fail (__main__.TestFailurePropagation.test_02_infer_ok_then_assert_fail_is_fail) ... ok
+test_03_success_marker_with_nonzero_rc_is_fail (__main__.TestFailurePropagation.test_03_success_marker_with_nonzero_rc_is_fail) ... ok
+test_04a_rc0_without_terminal_marker_is_fail (__main__.TestFailurePropagation.test_04a_rc0_without_terminal_marker_is_fail) ... ok
+test_04b_rc0_with_both_markers_is_fail (__main__.TestFailurePropagation.test_04b_rc0_with_both_markers_is_fail) ... ok
+test_05a_timeout_is_fail (__main__.TestFailurePropagation.test_05a_timeout_is_fail) ... ok
+test_05b_exception_is_fail (__main__.TestFailurePropagation.test_05b_exception_is_fail) ... ok
+test_05c_missing_tool_is_not_run_and_overall_not_pass (__main__.TestFailurePropagation.test_05c_missing_tool_is_not_run_and_overall_not_pass) ... ok
+test_05d_local_check_exception_is_fail (__main__.TestFailurePropagation.test_05d_local_check_exception_is_fail) ... ok
+test_05e_local_check_none_is_not_run (__main__.TestFailurePropagation.test_05e_local_check_none_is_not_run) ... ok
+test_06_stale_sim_dir_not_reused_after_harness_failure (__main__.TestFailurePropagation.test_06_stale_sim_dir_not_reused_after_harness_failure) ... ok
+test_06b_sim_dir_missing_when_harness_passed_is_not_run (__main__.TestFailurePropagation.test_06b_sim_dir_missing_when_harness_passed_is_not_run) ... ok
+test_07_multipackage_mixed_is_nonzero (__main__.TestFailurePropagation.test_07_multipackage_mixed_is_nonzero) ... ok
+test_08_stage_upload_refused_without_writes (__main__.TestFailurePropagation.test_08_stage_upload_refused_without_writes) ... ok
+test_20_success_marker_prefix_is_not_pass (__main__.TestReworkBoundaries.test_20_success_marker_prefix_is_not_pass) ... ok
+test_20b_success_marker_with_suffix_is_not_pass (__main__.TestReworkBoundaries.test_20b_success_marker_with_suffix_is_not_pass) ... ok
+test_20c_failure_token_inside_longer_word_is_not_a_failure (__main__.TestReworkBoundaries.test_20c_failure_token_inside_longer_word_is_not_a_failure) ... ok
+test_21_sim_dir_not_rebuilt_is_not_bound (__main__.TestReworkBoundaries.test_21_sim_dir_not_rebuilt_is_not_bound) ... ok
+test_22_extract_count_mismatch_is_not_bound (__main__.TestReworkBoundaries.test_22_extract_count_mismatch_is_not_bound) ... ok
+test_22b_extract_line_missing_is_not_bound (__main__.TestReworkBoundaries.test_22b_extract_line_missing_is_not_bound) ... ok
+test_23_stage_upload_invokes_no_tools (__main__.TestReworkBoundaries.test_23_stage_upload_invokes_no_tools) ... ok
+test_24_plan_mode_invokes_no_tools (__main__.TestReworkBoundaries.test_24_plan_mode_invokes_no_tools) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 2.152s
+
+OK
+
+PYTHON_EXIT_CODE=0

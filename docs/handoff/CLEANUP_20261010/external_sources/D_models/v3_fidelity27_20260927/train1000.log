@@ -1,0 +1,15 @@
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+{"step": 100, "L1": 0.07225494831800461, "LPIPS": 0.26953125, "low": 0.038284026086330414, "loss": 0.12997740507125854, "wall_s": 6.112031399999978, "peak_vram": 504841728, "training_G_forwards": 100, "training_LPIPS_forwards": 100}
+{"step": 200, "L1": 0.0980873703956604, "LPIPS": 0.353759765625, "low": 0.032981663942337036, "loss": 0.17212527990341187, "wall_s": 11.204842200000712, "peak_vram": 504841728, "training_G_forwards": 200, "training_LPIPS_forwards": 200}
+{"step": 300, "L1": 0.10512944310903549, "LPIPS": 0.26513671875, "low": 0.02739698812365532, "loss": 0.16090869903564453, "wall_s": 16.106499900000927, "peak_vram": 504841728, "training_G_forwards": 300, "training_LPIPS_forwards": 300}
+{"step": 400, "L1": 0.062470823526382446, "LPIPS": 0.1854248046875, "low": 0.026817619800567627, "loss": 0.10223144292831421, "wall_s": 20.95351550000123, "peak_vram": 504841728, "training_G_forwards": 400, "training_LPIPS_forwards": 400}
+{"step": 500, "L1": 0.11917751282453537, "LPIPS": 0.303955078125, "low": 0.03192880377173424, "loss": 0.1831614226102829, "wall_s": 25.480189300000347, "peak_vram": 504841728, "training_G_forwards": 500, "training_LPIPS_forwards": 500}
+{"step": 600, "L1": 0.06812918186187744, "LPIPS": 0.329833984375, "low": 0.02652805671095848, "loss": 0.13676099479198456, "wall_s": 29.974455200001103, "peak_vram": 504841728, "training_G_forwards": 600, "training_LPIPS_forwards": 600}
+{"step": 700, "L1": 0.10956098884344101, "LPIPS": 0.32421875, "low": 0.04463430494070053, "loss": 0.17884376645088196, "wall_s": 34.5268802999999, "peak_vram": 504841728, "training_G_forwards": 700, "training_LPIPS_forwards": 700}
+{"step": 800, "L1": 0.1016104444861412, "LPIPS": 0.33642578125, "low": 0.029684482142329216, "loss": 0.171839639544487, "wall_s": 39.29933660000097, "peak_vram": 504841728, "training_G_forwards": 800, "training_LPIPS_forwards": 800}
+{"step": 900, "L1": 0.08979352563619614, "LPIPS": 0.2568359375, "low": 0.025855321437120438, "loss": 0.14374014735221863, "wall_s": 43.93753469999865, "peak_vram": 504841728, "training_G_forwards": 900, "training_LPIPS_forwards": 900}
+{"step": 1000, "L1": 0.05120944231748581, "LPIPS": 0.17626953125, "low": 0.021802013739943504, "loss": 0.08863744884729385, "wall_s": 48.606494499999826, "peak_vram": 504841728, "training_G_forwards": 1000, "training_LPIPS_forwards": 1000}
+TRAIN_DONE 1000

@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.8105,
+ "niqe": 5.0448,
+ "musiq": 57.5249,
+ "maniqa": 0.3862,
+ "lapvar": 1029.5,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\e9_e9_ov128",
+ "tag": "E9_ov128"
+}

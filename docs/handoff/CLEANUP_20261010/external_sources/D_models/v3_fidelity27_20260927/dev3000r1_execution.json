@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "start": 1790504049.5048838,
+  "sources": {
+    "choose_checkpoint.py": "73cde2427dbd384358b7a9bd09384a7a2090313d52322be23f3c242f8b3d618f",
+    "common.py": "f0efefdc26ce321b2d19d803e7e919cf169a7e773035b146bd0e6dbc999d8635",
+    "deployment_check.py": "90150152ef5865e100f19b2b4f83fb8a1765885b8f8567c150a1cef8487c8b48",
+    "full_eval.py": "821fcb92e75690d008cebd070a6cc58af676de2b269ba06de89dfd002c4560ec",
+    "prepare.py": "8f7c69f13de733a38a6c5e2a21189df2329af2498797655bae8c1e43cacf97a9",
+    "supervise.py": "a1f4a24617acad6453848addcc470ac7932a80d7bb18993cbf9c4ec2d4838184",
+    "test_cpu.py": "50259b9562982a5728a6feabc5dd5a5245a76786ed7aee23b7449b99bf35509d",
+    "train.py": "ad3ee20279f411d1d16243d12223f7c828ec9e8362e7f9a5da07a2c51f2b1f3a",
+    "validate.py": "2674f1ec28832317d5e185aa756281bbd3be9d11497867624b98194c7f2afd07"
+  },
+  "exit_code": 0,
+  "wall_s": 11.144413232803345
+}

@@ -1,0 +1,51 @@
+{
+ "schema": "EXPORT01R-ledger/1",
+ "created_at": "2026-09-17 21:35:19",
+ "limits": {
+  "top": 24,
+  "top4k": 8,
+  "component": 96,
+  "wall_s": 2700.0,
+  "disk_gib": 8.0
+ },
+ "prior_batch": {
+  "old_ledgers": [
+   {
+    "ledger": "C:\\models\\exports\\EXPORT01R_20260917_150506\\ledger.json",
+    "sha256": "9db551f3d469db0d83b05949b6d5bbe3d346c0dbb8696a76ddcfee0d8238dd8b",
+    "used": {
+     "top": 0,
+     "top4k": 0,
+     "component": 10
+    }
+   },
+   {
+    "ledger": "C:\\models\\exports\\EXPORT01R2_20260917_200903\\ledger.json",
+    "sha256": "29d2e49233755db1fc0d695b0484746b21071400bea20f8700eab9173142146d",
+    "used": {
+     "top": 5,
+     "top4k": 0,
+     "component": 2
+    }
+   },
+   {
+    "ledger": "C:\\models\\exports\\EXPORT01R3_20260917_204635\\ledger.json",
+    "sha256": "a44d28f489a26f8cc95b5e90e56231f8a375f95737b1a6b74321e994931dae90",
+    "used": {
+     "top": 0,
+     "top4k": 0,
+     "component": 26
+    }
+   }
+  ],
+  "note": "旧批次失败与扣款原样保留，不清零、不退还"
+ },
+ "used": {
+  "top": 0,
+  "top4k": 0,
+  "component": 0
+ },
+ "events": [],
+ "attempts": [],
+ "open_attempt": null
+}

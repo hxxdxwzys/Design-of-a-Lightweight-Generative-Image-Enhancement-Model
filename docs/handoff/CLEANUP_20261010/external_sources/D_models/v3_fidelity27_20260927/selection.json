@@ -1,0 +1,26 @@
+{
+  "steps": 3000,
+  "basis": "dev only; both PSNR/LPIPS nonworse to select 3000",
+  "dev1000": {
+    "parent": {
+      "psnr": 23.3172472884142,
+      "lpips": 0.32705875975079834
+    },
+    "candidate": {
+      "psnr": 24.149031463220204,
+      "lpips": 0.2911282763816416
+    }
+  },
+  "dev3000": {
+    "parent": {
+      "psnr": 23.3172472884142,
+      "lpips": 0.32705875975079834
+    },
+    "candidate": {
+      "psnr": 24.505497654728956,
+      "lpips": 0.2792838294990361
+    }
+  },
+  "holdout_unread": true,
+  "official_val_unread_for_selection": true
+}

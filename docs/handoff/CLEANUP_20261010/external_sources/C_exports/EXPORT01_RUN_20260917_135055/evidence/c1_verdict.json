@@ -1,0 +1,22 @@
+{
+ "schema": "EXPORT01-c1-verdict/1",
+ "same_precision_pass": false,
+ "fp16_vs_fp32_diagnostic_pass": false,
+ "verdict": "FAIL",
+ "tolerances": {
+  "same_precision_max_abs": 1e-05,
+  "same_precision_mean_abs": 1e-06,
+  "fp16_vs_fp32_max_abs_diagnostic": 0.05,
+  "fp16_vs_fp32_mean_abs_diagnostic": 0.002,
+  "wavelet_cpu_max_abs_vs_reference": 0.00784313725490196,
+  "wavelet_cpu_frac_pixels_diff_max": 0.001,
+  "_wavelet_note": "1 LSB(uint8) = 2/255；残差来源为卷积累加顺序（核公式已对齐 OpenCV，核差 2.8e-17），实测翻转像素占比 2e-5~4e-5"
+ },
+ "model_sha256": "1bdafc4cc7e69911323e8f7235015965832e848c58b8c7fe426ac6974c6743a9",
+ "prereg_sha256": "c7c3ae9e871d52116f109be0c34f8715c00dc3dafffef90a9a16cddf6cc82564",
+ "totals": {
+  "top_level_infers": 9,
+  "n_4k_infers": 4,
+  "peak_vram_mib": 3285.7
+ }
+}

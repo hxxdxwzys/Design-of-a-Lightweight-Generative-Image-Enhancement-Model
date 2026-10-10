@@ -1,0 +1,144 @@
+[09-11 02:11:25] [boot] tag=m0s1_s097 scale=0.97 测试集 100 张
+[09-11 02:11:25] [resume] 已完成 0/100, 待渲 100
+[09-11 02:11:25] [stage] 100 张 -> D:\models\wave2_m0s1_s097\stage_in
+[09-11 03:56:15] [render] rc=0 耗时 104.8 min
+verlap=16, grid=4x5
+[94/100] case93 62s
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[95/100] case94 62s
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[96/100] case95 63s
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[97/100] case96 62s
+[Tiled VAE encode]: pixel 4096x3072 -> latent 512x384, tile=128, overlap=16, grid=5x4
+[Tiled Latent]: latent 512x384, tile=64, overlap=8, grid=9x7
+[Tiled VAE decode]: latent 512x384, tile=128, overlap=16, grid=5x4
+[98/100] case97 63s
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[99/100] case98 62s
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled Latent]: latent 384x512, tile=64, overlap=8, grid=7x9
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[100/100] case99 62s
+[done] D:\models\wave2_m0s1_s097\render_png (104.1min)
+onfig_patches=self.config)
+W0911 02:12:26.200000 21100 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\compile_fx.py", line 2101, in compile_fx
+W0911 02:12:26.200000 21100 site-packages\torch\_dynamo\convert_frame.py:1280]     raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+W0911 02:12:26.200000 21100 site-packages\torch\_dynamo\convert_frame.py:1280]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W0911 02:12:26.200000 21100 site-packages\torch\_dynamo\convert_frame.py:1280]   File "D:\Python\Lib\site-packages\torch\_inductor\scheduler.py", line 3957, in create_backend
+W0911 02:12:26.200000 21100 site-packages\torch\_dynamo\convert_frame.py:1280]     raise TritonMissing(inspect.currentframe())
+W0911 02:12:26.200000 21100 site-packages\torch\_dynamo\convert_frame.py:1280] torch._inductor.exc.TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton
+W0911 02:12:26.200000 21100 site-packages\torch\_dynamo\convert_frame.py:1280] 
+W0911 02:12:26.200000 21100 site-packages\torch\_dynamo\convert_frame.py:1280] Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+W0911 02:12:26.200000 21100 site-packages\torch\_dynamo\convert_frame.py:1280]
+[09-11 03:56:16] [jpg] case1 (1/100)
+[09-11 03:56:16] [jpg] case10 (2/100)
+[09-11 03:56:16] [jpg] case100 (3/100)
+[09-11 03:56:16] [jpg] case11 (4/100)
+[09-11 03:56:17] [jpg] case12 (5/100)
+[09-11 03:56:17] [jpg] case13 (6/100)
+[09-11 03:56:17] [jpg] case14 (7/100)
+[09-11 03:56:17] [jpg] case15 (8/100)
+[09-11 03:56:18] [jpg] case16 (9/100)
+[09-11 03:56:18] [jpg] case17 (10/100)
+[09-11 03:56:18] [jpg] case18 (11/100)
+[09-11 03:56:19] [jpg] case19 (12/100)
+[09-11 03:56:19] [jpg] case2 (13/100)
+[09-11 03:56:19] [jpg] case20 (14/100)
+[09-11 03:56:19] [jpg] case21 (15/100)
+[09-11 03:56:20] [jpg] case22 (16/100)
+[09-11 03:56:20] [jpg] case23 (17/100)
+[09-11 03:56:20] [jpg] case24 (18/100)
+[09-11 03:56:20] [jpg] case25 (19/100)
+[09-11 03:56:20] [jpg] case26 (20/100)
+[09-11 03:56:21] [jpg] case27 (21/100)
+[09-11 03:56:21] [jpg] case28 (22/100)
+[09-11 03:56:21] [jpg] case29 (23/100)
+[09-11 03:56:21] [jpg] case3 (24/100)
+[09-11 03:56:22] [jpg] case30 (25/100)
+[09-11 03:56:22] [jpg] case31 (26/100)
+[09-11 03:56:22] [jpg] case32 (27/100)
+[09-11 03:56:22] [jpg] case33 (28/100)
+[09-11 03:56:23] [jpg] case34 (29/100)
+[09-11 03:56:23] [jpg] case35 (30/100)
+[09-11 03:56:23] [jpg] case36 (31/100)
+[09-11 03:56:23] [jpg] case37 (32/100)
+[09-11 03:56:24] [jpg] case38 (33/100)
+[09-11 03:56:24] [jpg] case39 (34/100)
+[09-11 03:56:24] [jpg] case4 (35/100)
+[09-11 03:56:25] [jpg] case40 (36/100)
+[09-11 03:56:25] [jpg] case41 (37/100)
+[09-11 03:56:25] [jpg] case42 (38/100)
+[09-11 03:56:25] [jpg] case43 (39/100)
+[09-11 03:56:26] [jpg] case44 (40/100)
+[09-11 03:56:26] [jpg] case45 (41/100)
+[09-11 03:56:26] [jpg] case46 (42/100)
+[09-11 03:56:26] [jpg] case47 (43/100)
+[09-11 03:56:27] [jpg] case48 (44/100)
+[09-11 03:56:27] [jpg] case49 (45/100)
+[09-11 03:56:27] [jpg] case5 (46/100)
+[09-11 03:56:28] [jpg] case50 (47/100)
+[09-11 03:56:28] [jpg] case51 (48/100)
+[09-11 03:56:28] [jpg] case52 (49/100)
+[09-11 03:56:28] [jpg] case53 (50/100)
+[09-11 03:56:29] [jpg] case54 (51/100)
+[09-11 03:56:29] [jpg] case55 (52/100)
+[09-11 03:56:29] [jpg] case56 (53/100)
+[09-11 03:56:29] [jpg] case57 (54/100)
+[09-11 03:56:30] [jpg] case58 (55/100)
+[09-11 03:56:30] [jpg] case59 (56/100)
+[09-11 03:56:30] [jpg] case6 (57/100)
+[09-11 03:56:30] [jpg] case60 (58/100)
+[09-11 03:56:31] [jpg] case61 (59/100)
+[09-11 03:56:31] [jpg] case62 (60/100)
+[09-11 03:56:31] [jpg] case63 (61/100)
+[09-11 03:56:31] [jpg] case64 (62/100)
+[09-11 03:56:32] [jpg] case65 (63/100)
+[09-11 03:56:32] [jpg] case66 (64/100)
+[09-11 03:56:32] [jpg] case67 (65/100)
+[09-11 03:56:33] [jpg] case68 (66/100)
+[09-11 03:56:33] [jpg] case69 (67/100)
+[09-11 03:56:33] [jpg] case7 (68/100)
+[09-11 03:56:33] [jpg] case70 (69/100)
+[09-11 03:56:34] [jpg] case71 (70/100)
+[09-11 03:56:34] [jpg] case72 (71/100)
+[09-11 03:56:34] [jpg] case73 (72/100)
+[09-11 03:56:34] [jpg] case74 (73/100)
+[09-11 03:56:35] [jpg] case75 (74/100)
+[09-11 03:56:35] [jpg] case76 (75/100)
+[09-11 03:56:35] [jpg] case77 (76/100)
+[09-11 03:56:35] [jpg] case78 (77/100)
+[09-11 03:56:36] [jpg] case79 (78/100)
+[09-11 03:56:36] [jpg] case8 (79/100)
+[09-11 03:56:36] [jpg] case80 (80/100)
+[09-11 03:56:36] [jpg] case81 (81/100)
+[09-11 03:56:37] [jpg] case82 (82/100)
+[09-11 03:56:37] [jpg] case83 (83/100)
+[09-11 03:56:37] [jpg] case84 (84/100)
+[09-11 03:56:37] [jpg] case85 (85/100)
+[09-11 03:56:38] [jpg] case86 (86/100)
+[09-11 03:56:38] [jpg] case87 (87/100)
+[09-11 03:56:38] [jpg] case88 (88/100)
+[09-11 03:56:39] [jpg] case89 (89/100)
+[09-11 03:56:39] [jpg] case9 (90/100)
+[09-11 03:56:39] [jpg] case90 (91/100)
+[09-11 03:56:39] [jpg] case91 (92/100)
+[09-11 03:56:40] [jpg] case92 (93/100)
+[09-11 03:56:40] [jpg] case93 (94/100)
+[09-11 03:56:40] [jpg] case94 (95/100)
+[09-11 03:56:40] [jpg] case95 (96/100)
+[09-11 03:56:41] [jpg] case96 (97/100)
+[09-11 03:56:41] [jpg] case97 (98/100)
+[09-11 03:56:41] [jpg] case98 (99/100)
+[09-11 03:56:42] [jpg] case99 (100/100)
+[09-11 03:56:42] [done] m0s1_s097: 100/100 张, 总耗时 105.3 min
+[09-11 03:56:42] [cleanup] 已删临时 pkg
+[09-11 03:56:42] RENDER_PKG_DONE

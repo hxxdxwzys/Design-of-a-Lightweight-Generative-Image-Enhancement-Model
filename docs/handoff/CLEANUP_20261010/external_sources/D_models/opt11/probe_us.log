@@ -1,0 +1,2 @@
+[unsharp=  0] graph=True median 16.84 ms best 14.76 -> r=15.2 factor=1.757
+[unsharp= 60] graph=True median 16.96 ms best 13.49 -> r=15.1 factor=1.755

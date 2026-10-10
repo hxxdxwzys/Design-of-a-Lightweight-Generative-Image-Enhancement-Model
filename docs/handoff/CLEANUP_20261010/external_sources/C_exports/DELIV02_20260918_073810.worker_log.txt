@@ -1,0 +1,12 @@
+[finish] stage checks {'encode': 0.0, 'features': 0.0, 'noise': 0.0, 'step': 0.0, 'decode_raw': 3.099e-06}
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+There are modules in AutoencoderKL that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+[finish] A case7_full 39.1s
+[finish] case7_full pair max=7.843e-03 mean=2.069e-07 u8max=1 frac=0.000066
+[finish] migration case7_full max=0.1412 mean=0.000631 n_gt=151
+[finish] merged readings written; disclosed=2

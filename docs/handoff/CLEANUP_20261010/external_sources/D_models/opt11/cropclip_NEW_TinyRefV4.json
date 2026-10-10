@@ -1,0 +1,7 @@
+{
+ "tag": "NEW_TinyRefV4",
+ "dir": "D:\\models\\opt11\\v4_render",
+ "clipiqa_crop_mean": 0.7759,
+ "n": 30,
+ "crop": 512
+}

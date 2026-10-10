@@ -1,0 +1,730 @@
+{
+ "schema": "EXPORT01R-ledger/1",
+ "created_at": "2026-09-17 21:42:37",
+ "limits": {
+  "top": 24,
+  "top4k": 8,
+  "component": 96,
+  "wall_s": 2700.0,
+  "disk_gib": 8.0
+ },
+ "prior_batch": {
+  "old_ledgers": [
+   {
+    "ledger": "C:\\models\\exports\\EXPORT01R_20260917_150506\\ledger.json",
+    "sha256": "9db551f3d469db0d83b05949b6d5bbe3d346c0dbb8696a76ddcfee0d8238dd8b",
+    "used": {
+     "top": 0,
+     "top4k": 0,
+     "component": 10
+    }
+   },
+   {
+    "ledger": "C:\\models\\exports\\EXPORT01R2_20260917_200903\\ledger.json",
+    "sha256": "29d2e49233755db1fc0d695b0484746b21071400bea20f8700eab9173142146d",
+    "used": {
+     "top": 5,
+     "top4k": 0,
+     "component": 2
+    }
+   },
+   {
+    "ledger": "C:\\models\\exports\\EXPORT01R3_20260917_204635\\ledger.json",
+    "sha256": "a44d28f489a26f8cc95b5e90e56231f8a375f95737b1a6b74321e994931dae90",
+    "used": {
+     "top": 0,
+     "top4k": 0,
+     "component": 26
+    }
+   }
+  ],
+  "note": "旧批次失败与扣款原样保留，不清零、不退还"
+ },
+ "used": {
+  "top": 0,
+  "top4k": 0,
+  "component": 45
+ },
+ "events": [
+  {
+   "seq": 1,
+   "kind": "component",
+   "is_4k": false,
+   "where": "build_load_assets",
+   "pid": 2408,
+   "at": "2026-09-17 21:42:42",
+   "monotonic": 118581.8891672,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 1
+   }
+  },
+  {
+   "seq": 2,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_vae_enc_512",
+   "pid": 2408,
+   "at": "2026-09-17 21:43:26",
+   "monotonic": 118625.6660027,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 2
+   }
+  },
+  {
+   "seq": 3,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_vae_enc_1024",
+   "pid": 2408,
+   "at": "2026-09-17 21:43:27",
+   "monotonic": 118626.325751,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 3
+   }
+  },
+  {
+   "seq": 4,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_dino_feat",
+   "pid": 2408,
+   "at": "2026-09-17 21:43:48",
+   "monotonic": 118647.8188886,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 4
+   }
+  },
+  {
+   "seq": 5,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_dit_step",
+   "pid": 2408,
+   "at": "2026-09-17 21:43:49",
+   "monotonic": 118648.3719729,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 5
+   }
+  },
+  {
+   "seq": 6,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_dec_64",
+   "pid": 2408,
+   "at": "2026-09-17 21:43:51",
+   "monotonic": 118650.5096878,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 6
+   }
+  },
+  {
+   "seq": 7,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_dec_128",
+   "pid": 2408,
+   "at": "2026-09-17 21:43:51",
+   "monotonic": 118650.9786824,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 7
+   }
+  },
+  {
+   "seq": 8,
+   "kind": "component",
+   "is_4k": false,
+   "where": "trace_wavelet",
+   "pid": 2408,
+   "at": "2026-09-17 21:43:59",
+   "monotonic": 118658.7621157,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 8
+   }
+  },
+  {
+   "seq": 9,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_enc_512",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:06",
+   "monotonic": 118665.6175909,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 9
+   }
+  },
+  {
+   "seq": 10,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_enc_1024",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:06",
+   "monotonic": 118665.8078251,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 10
+   }
+  },
+  {
+   "seq": 11,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_dino_512",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:07",
+   "monotonic": 118666.6644602,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 11
+   }
+  },
+  {
+   "seq": 12,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_dec_64",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:07",
+   "monotonic": 118666.6955389,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 12
+   }
+  },
+  {
+   "seq": 13,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_dec_128",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:07",
+   "monotonic": 118666.8613651,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 13
+   }
+  },
+  {
+   "seq": 14,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_wavelet",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:08",
+   "monotonic": 118667.6097674,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 14
+   }
+  },
+  {
+   "seq": 15,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_step_t1p0_r0p0",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:08",
+   "monotonic": 118667.6171672,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 15
+   }
+  },
+  {
+   "seq": 16,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_step_t0p5_r0p0",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:08",
+   "monotonic": 118667.7829661,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 16
+   }
+  },
+  {
+   "seq": 17,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_step_t1p0_r0p5",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:08",
+   "monotonic": 118667.9557898,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 17
+   }
+  },
+  {
+   "seq": 18,
+   "kind": "note",
+   "where": "a2_build_done",
+   "detail": {
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "vae_fp32": true
+   },
+   "pid": 2408,
+   "at": "2026-09-17 21:44:09",
+   "monotonic": 118668.6764527,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 17
+   }
+  },
+  {
+   "seq": 19,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_load_assets_for_reference",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:09",
+   "monotonic": 118668.6799366,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 18
+   }
+  },
+  {
+   "seq": 20,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_enc_512",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:24",
+   "monotonic": 118683.5613962,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 19
+   }
+  },
+  {
+   "seq": 21,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_enc_1024",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:24",
+   "monotonic": 118683.674264,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 20
+   }
+  },
+  {
+   "seq": 22,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_dino_512",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:25",
+   "monotonic": 118684.0761695,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 21
+   }
+  },
+  {
+   "seq": 23,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_dec_64",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:25",
+   "monotonic": 118684.1039084,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 22
+   }
+  },
+  {
+   "seq": 24,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_dec_128",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:25",
+   "monotonic": 118684.200845,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 23
+   }
+  },
+  {
+   "seq": 25,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_wavelet",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:25",
+   "monotonic": 118684.582987,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 24
+   }
+  },
+  {
+   "seq": 26,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_step_t1p0_r0p0",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:25",
+   "monotonic": 118684.5890243,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 25
+   }
+  },
+  {
+   "seq": 27,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_step_t0p5_r0p0",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:25",
+   "monotonic": 118684.7126961,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 26
+   }
+  },
+  {
+   "seq": 28,
+   "kind": "component",
+   "is_4k": false,
+   "where": "ref_step_t1p0_r0p5",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:25",
+   "monotonic": 118684.8439076,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 27
+   }
+  },
+  {
+   "seq": 29,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_1",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.2982543,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 28
+   }
+  },
+  {
+   "seq": 30,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_2",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3006542,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 29
+   }
+  },
+  {
+   "seq": 31,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_3",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3024404,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 30
+   }
+  },
+  {
+   "seq": 32,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_4",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.303801,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 31
+   }
+  },
+  {
+   "seq": 33,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_5",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3051063,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 32
+   }
+  },
+  {
+   "seq": 34,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_6",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3067945,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 33
+   }
+  },
+  {
+   "seq": 35,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_7",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.308276,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 34
+   }
+  },
+  {
+   "seq": 36,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_8",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3096613,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 35
+   }
+  },
+  {
+   "seq": 37,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_9",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3110445,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 36
+   }
+  },
+  {
+   "seq": 38,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_10",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3125405,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 37
+   }
+  },
+  {
+   "seq": 39,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_11",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3154351,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 38
+   }
+  },
+  {
+   "seq": 40,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_12",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3182409,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 39
+   }
+  },
+  {
+   "seq": 41,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_13",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.321145,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 40
+   }
+  },
+  {
+   "seq": 42,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_14",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3237775,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 41
+   }
+  },
+  {
+   "seq": 43,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_15",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.325894,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 42
+   }
+  },
+  {
+   "seq": 44,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_16",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3285635,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 43
+   }
+  },
+  {
+   "seq": 45,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_17",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3311025,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 44
+   }
+  },
+  {
+   "seq": 46,
+   "kind": "component",
+   "is_4k": false,
+   "where": "p1_fresh_process_component_18",
+   "pid": 2408,
+   "at": "2026-09-17 21:44:26",
+   "monotonic": 118685.3333783,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 45
+   }
+  },
+  {
+   "seq": 47,
+   "kind": "note",
+   "where": "component_gate",
+   "detail": {
+    "rc": 1,
+    "tail": "{\"verdict\": \"FAIL\", \"max_abs\": 0.05224609375}\n"
+   },
+   "pid": 2408,
+   "at": "2026-09-17 21:44:39",
+   "monotonic": 118698.8565685,
+   "after": {
+    "top": 0,
+    "top4k": 0,
+    "component": 45
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "attempt_id": "attempt_01",
+   "run_dir": "C:\\models\\exports\\DELIV01R_A2_20260917_213518",
+   "started_at": "2026-09-17 21:42:42",
+   "started_monotonic": 118581.8773295,
+   "prereg_sha256": "f57330d0680161e8166b6c35f3c75b3edb01f40207d18c227bd9ed68afa22cc7",
+   "source_sha256": "c7aa55f20cf6261a0b8bf7b3115a0e741f257fdb888dfe4d8c0ddd8f02dc683c",
+   "model_sha256": null,
+   "status": "FAIL",
+   "note": "RuntimeError: 组件门槛未通过：{\"verdict\": \"FAIL\", \"max_abs\": 0.05224609375}\n",
+   "finished_at": "2026-09-17 21:44:39",
+   "elapsed_s": 116.987
+  }
+ ],
+ "open_attempt": null
+}

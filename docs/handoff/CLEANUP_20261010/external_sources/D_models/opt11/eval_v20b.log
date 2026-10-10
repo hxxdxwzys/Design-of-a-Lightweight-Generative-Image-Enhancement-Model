@@ -1,0 +1,5 @@
+[run] render_subset(lex,30)
+   [render_subset] 30 张 (order=lex) -> D:\models\opt11\eval_v20b | [render_subset] done 1.2 min | RENDER_SUBSET_DONE
+[run] measure_test30
+   [measure] {"niqe": 5.4889, "clipiqa": 0.6128, "n": 30} |   (参照: M24 clipiqa 0.9023 / niqe 5.2559 | TinyV1 0.3367 / 5.7899 | LQ 0.2752 / 7.8100) | MEASURE_TEST30_DONE
+[metrics] v20b -> {  "niqe": 5.4889,  "clipiqa": 0.6128,  "n": 30 }

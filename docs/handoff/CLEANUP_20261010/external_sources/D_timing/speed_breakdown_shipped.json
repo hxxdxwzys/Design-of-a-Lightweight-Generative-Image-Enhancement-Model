@@ -1,0 +1,34 @@
+{
+ "full_ms": 364.5,
+ "baseline_ms": 285.6,
+ "ratio_now": 0.784,
+ "parts_ms": {
+  "dino_l8": 17.5,
+  "vae_encode": 111.8,
+  "dit": 99.0,
+  "decoder": 124.3
+ },
+ "share": {
+  "dino_l8": 5.0,
+  "vae_encode": 31.7,
+  "dit": 28.1,
+  "decoder": 35.3
+ },
+ "dit_prune": {
+  "14": {
+   "dit_ms": 56.6,
+   "full_est_ms": 322.0,
+   "ratio": 0.89
+  },
+  "7": {
+   "dit_ms": 26.0,
+   "full_est_ms": 291.5,
+   "ratio": 0.98
+  },
+  "4": {
+   "dit_ms": 16.3,
+   "full_est_ms": 281.7,
+   "ratio": 1.01
+  }
+ }
+}

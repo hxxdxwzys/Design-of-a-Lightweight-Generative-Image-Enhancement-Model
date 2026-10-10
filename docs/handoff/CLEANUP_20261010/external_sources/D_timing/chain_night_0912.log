@@ -1,0 +1,23 @@
+[09-12 18:28:04] === 夜间总链启动 ===
+[09-12 19:42:04]    探针 A 已归位 ✓
+[09-12 19:42:04] --- seed_ens ---
+[09-12 20:23:09] === 夜间总链启动 ===
+[09-12 20:23:09]    探针 A 已归位 ✓
+[09-12 20:23:09] --- seed_ens ---
+[09-12 20:44:00]    |            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[09-12 20:44:00]    |   File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+[09-12 20:44:00]    |     return forward_call(*args, **kwargs)
+[09-12 20:44:00]    |   File "D:\Python\Lib\site-packages\pyiqa\models\inference_model.py", line 119, in forward
+[09-12 20:44:00]    |     output = self.net(target.to(device), ref.to(device), **kwargs)
+[09-12 20:44:00]    |   File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+[09-12 20:44:00]    |     return self._call_impl(*args, **kwargs)
+[09-12 20:44:00]    |            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[09-12 20:44:00]    |   File "D:\Python\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+[09-12 20:44:00]    |     return forward_call(*args, **kwargs)
+[09-12 20:44:00]    |   File "D:\Python\Lib\site-packages\pyiqa\archs\dists_arch.py", line 153, in forward
+[09-12 20:44:00]    |     x_var = ((feats0[k] - x_mean) ** 2).mean([2, 3], keepdim=True)
+[09-12 20:44:00]    |              ~~~~~~~~~~~~~~~~~~~~~^^~~
+[09-12 20:44:00]    |   File "D:\Python\Lib\site-packages\torch\_tensor.py", line 39, in wrapped
+[09-12 20:44:00]    |     return f(*args, **kwargs)
+[09-12 20:44:00]    | torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.00 GiB. GPU 0 has a total capacity of 8.00 GiB of which 0 bytes is free. Of the allocated memory 15.27 GiB is allocated by PyTorch, and 4.81 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[09-12 20:44:00] --- stage1 ---

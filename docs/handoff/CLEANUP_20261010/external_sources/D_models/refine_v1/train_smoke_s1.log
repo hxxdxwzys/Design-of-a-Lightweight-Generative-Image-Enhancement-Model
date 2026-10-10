@@ -1,0 +1,6 @@
+[22:11:13] [model] U=2188 params  G=5523 params  D=729025 params  (student frozen)
+[22:11:13] [data] 2839 对（随机 256 裁剪）
+[22:11:49] [model] U=2188 params  G=5523 params  D=729025 params  (student frozen)
+[22:11:50] [data] 2839 对（随机 512 裁剪）
+[22:12:15] step 100/300 G=0.1605 D=0.2957 (l1=0.0889 lp=0.1858 gan=0.245) 0.25 s/step
+[22:12:39] step 200/300 G=0.1492 D=0.2554 (l1=0.0955 lp=0.1707 gan=0.259) 0.24 s/step

@@ -1,0 +1,1017 @@
+{
+ "manifest_id": "RCON-01-E-20260916-R2",
+ "rework_r2": [
+  "A 只读复跑副作用: 默认改为计划模式（不加 --execute-tools 不调用任何子工具）",
+  "A --stage-upload: 拒绝后立即停止，不再调用任何子工具",
+  "B --sim-dir 绑定: 要求目录本次被重建 + harness 自报解压数量与包内 output_dir 成员数一致",
+  "C 成功标记: 改为整行相等（NOT_X / X_FAILED 不再判 PASS）；失败标记按整词",
+  "D 证据更正: R04 错接更正；Q11 行号 15 并纳入自校验；记录生成器自哈希；资产路径漂移登记"
+ ],
+ "kind": "FACT清单 + UNKNOWN登记",
+ "generated_at": "2026-09-16 19:20:04",
+ "generator": "workspace/tools/reconciliation/evidence/build_manifest.py",
+ "scope": "CPU / 只读输入；无 GPU 前向、无质量比较、无真实测速、无官方核验",
+ "disclaimer": "本清单是新增审计产物，不迁移旧 JSON schema，不指定既有台账哪一个自动胜出；manifest 只登记可核验事实与显式 UNKNOWN，不证明“同主体通过/合规通过/候选已生成”。",
+ "git": {
+  "head": "e50000c",
+  "note": "本轮未提交/未推送；门禁工作副本与测试是【仓库内未跟踪工作副本】（Architect 裁决：不需要 git add，索引保持不变）"
+ },
+ "assets": [
+  {
+   "id": "A01.infer2",
+   "path": "D:\\tmp_timing\\vosr_lora_infer2.py",
+   "role": "离线4K渲染入口（主线）",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "源码",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "11b664d403f3b662067f7e221badb2c8724d8d3c3b0b825398985be0d66fb94b",
+   "size_bytes": 8434
+  },
+  {
+   "id": "A02.m24_runner",
+   "path": "D:\\models\\final_compliant\\model_dir\\runner.py",
+   "role": "M24 交付 runner",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "源码",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "90f1d5a16fd4c2ed95ba6873f99b24dfec9a3096049ded950b4dbf5fb91fae4b",
+   "size_bytes": 8188
+  },
+  {
+   "id": "A03.merged_weights",
+   "path": "D:\\models\\final_compliant\\model_dir\\your_model.pt",
+   "role": "M24 合并权重（runner 加载对象）",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "权重容器",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "60ab78dc2d044b72329d6317be7ed508dcbb99157dd07402ac760b7fe65c0761",
+   "size_bytes": 1341002862
+  },
+  {
+   "id": "A04.base_ema",
+   "path": "C:\\models\\finals\\preset\\ckpts\\VOSR_0.5B_os\\checkpoints\\ema_model.safetensors",
+   "role": "VOSR 0.5B 基座权重",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "权重",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "45b6687b4ce59fa3451300f9e0fdcaf2e729c15e65f444af210a7851dfa13203",
+   "size_bytes": 1948337520
+  },
+  {
+   "id": "A05.args_json",
+   "path": "C:\\models\\finals\\preset\\ckpts\\VOSR_0.5B_os\\args.json",
+   "role": "基座配置",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "配置",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "3f3d0d1637240fd02f6db5e340f1ecbc0642d403dd0e28896ba8b776762b26cd",
+   "size_bytes": 769
+  },
+  {
+   "id": "A06.lora_v7_s5000",
+   "path": "D:\\models\\vosr_lora\\v7\\lora_s5000.pt",
+   "role": "文档所述 M24 配方 LoRA（v7_s5000, scale 0.8）",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "LoRA 权重",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "8b5193eddf0cb1fa26deaca1fd86e754cfaf2d778fdf5cb92b1de130a954771b",
+   "size_bytes": 67435697
+  },
+  {
+   "id": "A07.lwdecoder",
+   "path": "C:\\models\\finals\\preset\\ckpts\\sd21_lwdecoder.pth",
+   "role": "LightDecoder 权重",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "权重",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "a326a5e5c4a2445ce970987695979f3d5e5413d39b98c73a2ddac0055d2cdf59",
+   "size_bytes": 52086482
+  },
+  {
+   "id": "A08.output_dir",
+   "path": "D:\\models\\final_compliant\\output_dir",
+   "role": "M24 100 张出图目录",
+   "kind": "dir",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "图像",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "size_bytes": null,
+   "sha256": null,
+   "file_count": 100,
+   "extensions": [
+    ".jpg"
+   ]
+  },
+  {
+   "id": "A09.archive_m24_v3",
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24_v3——43.6951.zip",
+   "role": "归档成绩包（43.6951）",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "归档 ZIP",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "8ba772e02cf77a98c5cdd8a41adf910e3252a51e32a37dbd834f39579807f49c",
+   "size_bytes": 1788371140
+  },
+  {
+   "id": "A10.gate_orig",
+   "path": "D:\\tmp_timing\\preupload_gate.py",
+   "role": "门禁原件（只读）",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "源码",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "acff56c784e703a2cb8513519098098cfc08ead8c0047c15840e84b1014c8478",
+   "size_bytes": 10147
+  },
+  {
+   "id": "A11.harness_orig",
+   "path": "D:\\tmp_timing\\harness_sim_zip.py",
+   "role": "harness 模拟原件",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "源码",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "3bfd18e018c089968857447c36af22d8bba63beff258f6fb0ede7a49a22feffd",
+   "size_bytes": 1230
+  },
+  {
+   "id": "A12.audit_py_compat",
+   "path": "D:\\tmp_timing\\audit_py_compat.py",
+   "role": "子工具②",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "源码",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "4d385b0a7ddcfe02e330f0c16cf2a6b17f9a0af076c76033e4369d4c6e9d36e0",
+   "size_bytes": 6146
+  },
+  {
+   "id": "A13.audit_shadow",
+   "path": "D:\\tmp_timing\\audit_iqa_shadow.py",
+   "role": "子工具③",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "源码",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "9dcbcdef79a6b22bc07b208a6c51a840cfe853684d2b2b9c217ead92da870681",
+   "size_bytes": 2597
+  },
+  {
+   "id": "A14.audit_shadow_hard",
+   "path": "D:\\tmp_timing\\audit_iqa_shadow_hard.py",
+   "role": "子工具④",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "源码",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "fe6ace3477a98a739f6299e3573dc03ca5a58b7fe962f83224e14521926910c4",
+   "size_bytes": 3234
+  },
+  {
+   "id": "A15.audit_format",
+   "path": "D:\\tmp_timing\\audit_official_format.py",
+   "role": "子工具⑤",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "源码",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "b9d090d3e7a8e4a5fe341ea511cd5c7d0b543e333cf43dbe51ce016bfdefb045",
+   "size_bytes": 4797
+  },
+  {
+   "id": "A16.score_pred2",
+   "path": "D:\\tmp_timing\\score_pred2.py",
+   "role": "分数工具（v3 参数）",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "源码",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "38e27eeda883279b1b674a99071d3035524de6ab4a4c15f6c62385937b949a15",
+   "size_bytes": 2518
+  },
+  {
+   "id": "A17.gate_workcopy",
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\tools\\reconciliation\\preupload_gate_rcon.py",
+   "role": "RCON-01 门禁工作副本（待审查）",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "源码",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "3cc62222957f11ebdaf2eb0e63e3832c4a52dc697e0aa51fb7076d4ee1d1b7c7",
+   "size_bytes": 26076
+  },
+  {
+   "id": "A18.gate_tests",
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\tools\\reconciliation\\tests\\test_gate_failure_propagation.py",
+   "role": "RCON-01 CPU 测试",
+   "kind": "file",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "scope": "测试",
+   "evidence": "build_manifest.py: 直接文件系统读取",
+   "status": "PRESENT",
+   "sha256": "60b5700b880d906168ac37814c83287027581dc93dfc642b9cc5ef63af4f0bbb",
+   "size_bytes": 26364
+  }
+ ],
+ "safe_container_peek": {
+  "merged_weights": {
+   "status": "OK",
+   "container": "zip(torch.save 新格式)",
+   "member_count": 1232,
+   "members_sample": [
+    "your_model/data.pkl",
+    "your_model/byteorder",
+    "your_model/data/0",
+    "your_model/data/1",
+    "your_model/data/10",
+    "your_model/data/100"
+   ],
+   "method": "zipfile 目录读取，未 unpickle"
+  },
+  "base_ema": {
+   "status": "OK",
+   "container": "safetensors",
+   "tensor_count": 669,
+   "has_metadata": false,
+   "method": "仅解析头部 JSON，未加载张量"
+  },
+  "lora_v7_s5000": {
+   "status": "OK",
+   "container": "zip(torch.save 新格式)",
+   "member_count": 294,
+   "members_sample": [
+    "lora_s5000/data.pkl",
+    "lora_s5000/.format_version",
+    "lora_s5000/.storage_alignment",
+    "lora_s5000/byteorder",
+    "lora_s5000/data/0",
+    "lora_s5000/data/1"
+   ],
+   "method": "zipfile 目录读取，未 unpickle"
+  }
+ },
+ "source_hash_drift": {
+  "review_recorded": {
+   "vosr_lora_infer2.py": "11b664d403f3b662067f7e221badb2c8724d8d3c3b0b825398985be0d66fb94b",
+   "train_vosr_lora.py": "61409f0ecd785a0a5070d234d7d156e97ffe483e4ff1b650511421800cddee46",
+   "preupload_gate.py": "acff56c784e703a2cb8513519098098cfc08ead8c0047c15840e84b1014c8478",
+   "score_pred2.py": "38e27eeda883279b1b674a99071d3035524de6ab4a4c15f6c62385937b949a15"
+  },
+  "checked": [
+   {
+    "file": "D:\\tmp_timing\\vosr_lora_infer2.py",
+    "review_recorded": "11b664d403f3b662067f7e221badb2c8724d8d3c3b0b825398985be0d66fb94b",
+    "current": "11b664d403f3b662067f7e221badb2c8724d8d3c3b0b825398985be0d66fb94b",
+    "drift": false,
+    "verified_at": "2026-09-16 19:20:04"
+   },
+   {
+    "file": "D:\\tmp_timing\\train_vosr_lora.py",
+    "review_recorded": "61409f0ecd785a0a5070d234d7d156e97ffe483e4ff1b650511421800cddee46",
+    "current": "61409f0ecd785a0a5070d234d7d156e97ffe483e4ff1b650511421800cddee46",
+    "drift": false,
+    "verified_at": "2026-09-16 19:20:04"
+   },
+   {
+    "file": "D:\\tmp_timing\\preupload_gate.py",
+    "review_recorded": "acff56c784e703a2cb8513519098098cfc08ead8c0047c15840e84b1014c8478",
+    "current": "acff56c784e703a2cb8513519098098cfc08ead8c0047c15840e84b1014c8478",
+    "drift": false,
+    "verified_at": "2026-09-16 19:20:04"
+   },
+   {
+    "file": "D:\\tmp_timing\\score_pred2.py",
+    "review_recorded": "38e27eeda883279b1b674a99071d3035524de6ab4a4c15f6c62385937b949a15",
+    "current": "38e27eeda883279b1b674a99071d3035524de6ab4a4c15f6c62385937b949a15",
+    "drift": false,
+    "verified_at": "2026-09-16 19:20:04"
+   }
+  ],
+  "any_drift": false
+ },
+ "lora_availability": {
+  "v1": {
+   "dir_exists": true,
+   "pt_count": 0,
+   "pt_names": [],
+   "status": "NO_WEIGHTS_IN_THIS_DIR",
+   "verified_at": "2026-09-16 19:20:04",
+   "note": "本目录只有日志/val_gate JSON；其他位置备份 UNKNOWN，不得据目录名或指标文件名推定候选存在（TR26）"
+  },
+  "v2": {
+   "dir_exists": true,
+   "pt_count": 0,
+   "pt_names": [],
+   "status": "NO_WEIGHTS_IN_THIS_DIR",
+   "verified_at": "2026-09-16 19:20:04",
+   "note": "本目录只有日志/val_gate JSON；其他位置备份 UNKNOWN，不得据目录名或指标文件名推定候选存在（TR26）"
+  },
+  "v3": {
+   "dir_exists": true,
+   "pt_count": 0,
+   "pt_names": [],
+   "status": "NO_WEIGHTS_IN_THIS_DIR",
+   "verified_at": "2026-09-16 19:20:04",
+   "note": "本目录只有日志/val_gate JSON；其他位置备份 UNKNOWN，不得据目录名或指标文件名推定候选存在（TR26）"
+  },
+  "v5": {
+   "dir_exists": true,
+   "pt_count": 4,
+   "pt_names": [
+    "v5_s1000.pt",
+    "v5_s2000.pt",
+    "v5_s3000.pt",
+    "v5_s4000.pt"
+   ],
+   "status": "AVAILABLE",
+   "verified_at": "2026-09-16 19:20:04"
+  },
+  "v6": {
+   "dir_exists": true,
+   "pt_count": 5,
+   "pt_names": [
+    "lora_s1000.pt",
+    "lora_s2000.pt",
+    "lora_s3000.pt",
+    "lora_s4000.pt",
+    "lora_s5000.pt"
+   ],
+   "status": "AVAILABLE",
+   "verified_at": "2026-09-16 19:20:04"
+  },
+  "v7": {
+   "dir_exists": true,
+   "pt_count": 6,
+   "pt_names": [
+    "lora_s1000.pt",
+    "lora_s2000.pt",
+    "lora_s3000.pt",
+    "lora_s4000.pt",
+    "lora_s5000.pt",
+    "lora_s6000.pt"
+   ],
+   "status": "AVAILABLE",
+   "verified_at": "2026-09-16 19:20:04"
+  },
+  "v8": {
+   "dir_exists": true,
+   "pt_count": 9,
+   "pt_names": [
+    "lora_s1000.pt",
+    "lora_s2000.pt",
+    "lora_s3000.pt",
+    "lora_s4000.pt",
+    "lora_s5000.pt",
+    "lora_s6000.pt",
+    "lora_s7000.pt",
+    "lora_s8000.pt",
+    "lora_s9000.pt"
+   ],
+   "status": "AVAILABLE",
+   "verified_at": "2026-09-16 19:20:04"
+  },
+  "v14": {
+   "dir_exists": true,
+   "pt_count": 16,
+   "pt_names": [
+    "lora_s1000.pt",
+    "lora_s1200.pt",
+    "lora_s1400.pt",
+    "lora_s1600.pt",
+    "lora_s1800.pt",
+    "lora_s2000.pt",
+    "lora_s2200.pt",
+    "lora_s2400.pt",
+    "lora_s2600.pt",
+    "lora_s2800.pt",
+    "lora_s3000.pt",
+    "lora_s3200.pt",
+    "lora_s3400.pt",
+    "lora_s3600.pt",
+    "lora_s3800.pt",
+    "lora_s4000.pt"
+   ],
+   "status": "AVAILABLE",
+   "verified_at": "2026-09-16 19:20:04"
+  }
+ },
+ "protocol_artifacts": {
+  "Q10": {
+   "path": "D:\\tmp_timing\\q10_protocol_screen.json",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "keys": [
+    "A_base",
+    "B_vaefull",
+    "C_vae2048"
+   ],
+   "done_true": [
+    "A_base",
+    "C_vae2048"
+   ],
+   "incomplete": [
+    "B_vaefull"
+   ],
+   "metric_values_null": [
+    "B_vaefull"
+   ],
+   "sha256": "82c1318c1f53dd0e57f0e3b798d759f5360928a4d643f9fa6642ff230478b0af"
+  },
+  "Q11": {
+   "path": "D:\\tmp_timing\\q11_align_screen.json",
+   "exists": true,
+   "verified_at": "2026-09-16 19:20:04",
+   "keys": [
+    "align_nofix",
+    "align_wavelet",
+    "align_adain"
+   ],
+   "done_true": [],
+   "incomplete": [],
+   "metric_values_null": [],
+   "sha256": "ae6eb50a624290da30f15a508d6501e4bce96d6f30be14c8cb89ea4ae7bbd735"
+  },
+  "Q11_sample_ids_source": {
+   "see_code_citation": "q11.sample_ids",
+   "verified_at": "2026-09-16 19:20:04",
+   "note": "Q11 只用 6 张固定样本；行号与内容已纳入 code_citations 自校验（返修：原登记行号 14 有误，实为 15）"
+  },
+  "status_note": "Q10 只有 A/C 成功、B 未完成；Q11 三档均为 6 图对比新 PNG 与旧 JPG，不构成完整协议轴闭合（TR28/TR29/TR34）"
+ },
+ "name_agreement": {
+  "verified_at": "2026-09-16 19:20:04",
+  "test_dir": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集",
+  "output_dir": "D:\\models\\final_compliant\\output_dir",
+  "test_count": 100,
+  "output_count": 100,
+  "same_set": true,
+  "only_in_output": [],
+  "status": "OK"
+ },
+ "archive_spot_check": {
+  "scope": "n=3 抽样（case1/case50/case100），非全量比对",
+  "verified_at": "2026-09-16 19:20:04",
+  "local_dir": "D:\\models\\final_compliant\\output_dir",
+  "archive_zip": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24_v3——43.6951.zip",
+  "rows": [
+   {
+    "name": "case1.jpg",
+    "status": "MATCH",
+    "local_sha256": "e5d71d275d8c973215278bde92397e8e16174c35145135aa52be57517b952159",
+    "zip_sha256": "e5d71d275d8c973215278bde92397e8e16174c35145135aa52be57517b952159"
+   },
+   {
+    "name": "case50.jpg",
+    "status": "MATCH",
+    "local_sha256": "8b91017ae4b7cbbba5b8c1a9da1a984055182f35edae6c16c5d6d91c32c56d2f",
+    "zip_sha256": "8b91017ae4b7cbbba5b8c1a9da1a984055182f35edae6c16c5d6d91c32c56d2f"
+   },
+   {
+    "name": "case100.jpg",
+    "status": "MATCH",
+    "local_sha256": "1770b50d53dddbed7f81cb4df695f114d5be0b1371f2bd3762a41c792f9deb48",
+    "zip_sha256": "1770b50d53dddbed7f81cb4df695f114d5be0b1371f2bd3762a41c792f9deb48"
+   }
+  ],
+  "status": "ALL_MATCH",
+  "note": "归档一致性抽样，只说明本地目录与归档包在这些样本上一致；不证明这批图由某条命令生成（生成 manifest 缺失）"
+ },
+ "code_citations": [
+  {
+   "id": "render.precision.offline",
+   "file": "D:\\tmp_timing\\vosr_lora_infer2.py",
+   "line": 131,
+   "expect": ".to(device).eval()",
+   "why": "离线模型 fp32（无 .half()/autocast）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "render.seed.offline",
+   "file": "D:\\tmp_timing\\vosr_lora_infer2.py",
+   "line": 124,
+   "expect": "torch.manual_seed",
+   "why": "离线入口设置 torch seed",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "render.z.offline",
+   "file": "D:\\tmp_timing\\vosr_lora_infer2.py",
+   "line": 161,
+   "expect": "z = torch.randn_like(lq_latent)",
+   "why": "离线非分块分支独立随机 z",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "render.align.offline",
+   "file": "D:\\tmp_timing\\vosr_lora_infer2.py",
+   "line": 166,
+   "expect": "args.align_method == 'adain'",
+   "why": "离线颜色对齐分支",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "render.outfmt.offline",
+   "file": "D:\\tmp_timing\\vosr_lora_infer2.py",
+   "line": 170,
+   "expect": "stem + '.png'",
+   "why": "离线输出 PNG",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "vae.posterior.offline",
+   "file": "D:\\models\\finals\\VOSR\\tiled_vae.py",
+   "line": 78,
+   "expect": "posterior.mode() if posterior_mode else posterior.sample()",
+   "why": "VAE 后验默认 mode",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "vae.posterior.default",
+   "file": "D:\\models\\finals\\VOSR\\tiled_vae.py",
+   "line": 191,
+   "expect": "getattr(args, 'posterior_mode', True)",
+   "why": "encode_dispatch 默认 posterior_mode=True",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "runner.doc.recipe",
+   "file": "D:\\models\\final_compliant\\model_dir\\runner.py",
+   "line": 5,
+   "expect": "v7_s5000 LoRA(sc0.8",
+   "why": "runner 自述配方（声明，非证明）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "runner.doc.samesubject",
+   "file": "D:\\models\\final_compliant\\model_dir\\runner.py",
+   "line": 17,
+   "expect": "与出图(output_dir)同一模型主体同一套权重",
+   "why": "runner 自述同主体（声明，非证明）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "runner.vae.posterior",
+   "file": "D:\\models\\final_compliant\\model_dir\\runner.py",
+   "line": 291,
+   "expect": "latent_dist.sample()",
+   "why": "runner 用 sample（与离线 mode 不同）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "runner.precision",
+   "file": "D:\\models\\final_compliant\\model_dir\\runner.py",
+   "line": 354,
+   "expect": ".to(self.device).half().eval()",
+   "why": "runner 半精度",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "runner.autocast",
+   "file": "D:\\models\\final_compliant\\model_dir\\runner.py",
+   "line": 255,
+   "expect": "torch.autocast('cuda', dtype=torch.float16)",
+   "why": "runner autocast fp16",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "runner.z",
+   "file": "D:\\models\\final_compliant\\model_dir\\runner.py",
+   "line": 393,
+   "expect": "z = torch.randn(",
+   "why": "runner 每次调用独立随机 z",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "runner.clamp",
+   "file": "D:\\models\\final_compliant\\model_dir\\runner.py",
+   "line": 411,
+   "expect": "return sr.float().clamp(-1.0, 1.0)",
+   "why": "runner 返回 clamp 后 float32",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "runner.load",
+   "file": "D:\\models\\final_compliant\\model_dir\\runner.py",
+   "line": 343,
+   "expect": "torch.load(os.path.join(model_dir, 'your_model.pt')",
+   "why": "runner 用 torch.load 普通权重字典",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "gate.rc_ignored.orig",
+   "file": "D:\\tmp_timing\\preupload_gate.py",
+   "line": 212,
+   "expect": "ok5 = 'FORMAT_PASS' in out and 'FORMAT_FAIL' not in out",
+   "why": "原件忽略子进程退出码（已记录缺陷）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "gate.harness_marker.orig",
+   "file": "D:\\tmp_timing\\preupload_gate.py",
+   "line": 177,
+   "expect": "ok_h = 'infer OK' in out",
+   "why": "原件接受中间态标记（已记录缺陷）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "gate.can_upload.orig",
+   "file": "D:\\tmp_timing\\preupload_gate.py",
+   "line": 224,
+   "expect": "可以上传",
+   "why": "原件输出自动上传许可（本副本已移除）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "harness.terminal.orig",
+   "file": "D:\\tmp_timing\\harness_sim_zip.py",
+   "line": 37,
+   "expect": "HARNESS_ZIP_SIM_PASS",
+   "why": "harness 终态标记",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "eval.metric_skip",
+   "file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\eval.py",
+   "line": 103,
+   "expect": "except Exception as e:",
+   "why": "EV 指标创建失败即跳过（TR32）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "eval.per_image_none",
+   "file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\eval.py",
+   "line": 61,
+   "expect": "except Exception as e:",
+   "why": "EV 逐图异常返回 None（TR32）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "eval.mean_valid",
+   "file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\eval.py",
+   "line": 60,
+   "expect": "fn().mean().item()",
+   "why": "EV 只对有效值求均值（TR32）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "eval.collect_overwrite",
+   "file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\eval.py",
+   "line": 54,
+   "expect": "d[k] = p",
+   "why": "EV 同 case 后者覆盖（TR33）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "eval.silent_resize",
+   "file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\eval.py",
+   "line": 113,
+   "expect": "interpolate(",
+   "why": "EV 尺寸不一致自动缩放（TR33）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "qf.gt_glob_bug",
+   "file": "D:\\tmp_timing\\q_fit_measure2.py",
+   "line": 47,
+   "expect": "if not p.exists(): continue",
+   "why": "GT 通配符未展开 -> 全部跳过（TR37）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "qf.gt_call",
+   "file": "D:\\tmp_timing\\q_fit_measure2.py",
+   "line": 64,
+   "expect": "'*_gt.*'",
+   "why": "GT_val 用通配符字符串调用（TR37）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "qf.identity_pair",
+   "file": "D:\\tmp_timing\\q_fit2.py",
+   "line": 17,
+   "expect": "'w2_m0s1_s090',   34.0989",
+   "why": "QF 把 s090 目录与 34.0989 配对（TR36）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "sp.params",
+   "file": "D:\\tmp_timing\\score_pred2.py",
+   "line": 18,
+   "expect": "C = 2.0",
+   "why": "SP 实参 C=2.0（与文档 v3.1 的 2.515 不同，TR35）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "q11.sample_ids",
+   "file": "D:\\tmp_timing\\q11_align_screen.py",
+   "line": 15,
+   "expect": "CASES = ['case1', 'case7', 'case12', 'case30', 'case54', 'case77']",
+   "why": "Q11 六个样本 ID（返修：原登记行号 14 有误，实为 15；现纳入自校验）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "train.iqa_loss",
+   "file": "D:\\tmp_timing\\train_vosr_lora.py",
+   "line": 323,
+   "expect": "args.w_clip * loss_cq",
+   "why": "历史可微 CLIPIQA 损失（TR06，须披露不得隐藏）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  },
+  {
+   "id": "train.iqa_as_loss",
+   "file": "D:\\tmp_timing\\train_vosr_lora.py",
+   "line": 226,
+   "expect": "clipiqa_m.as_loss = True",
+   "why": "历史 CLIPIQA 作为损失（TR06）",
+   "verified_at": "2026-09-16 19:20:04",
+   "source": "static-read",
+   "status": "OK",
+   "kind": "FACT"
+  }
+ ],
+ "identity_relations": [
+  {
+   "id": "R01",
+   "subject": "M24 output_dir 的 100 张 jpg",
+   "known_recipe_recorded": "v7_s5000 + LoRA scale 0.8 + align=wavelet + seed 8 + tile512/ov32 + vae1024（README §7 / Q11 反推）",
+   "proven_generated_by": "UNKNOWN",
+   "why": "没有生成 manifest（命令、权重哈希、输入清单、输出哈希）落盘可查；Q11 只是 6 图相似度，不是身份认证（TR29）",
+   "status": "UNKNOWN"
+  },
+  {
+   "id": "R02",
+   "subject": "your_model.pt（合并权重）",
+   "known_recipe_recorded": "runner 文档字符串自述 VOSR 0.5B os + v7_s5000 LoRA(sc0.8, 已合并进权重)",
+   "proven_generated_by": "UNKNOWN",
+   "why": "没有“基座+LoRA+scale -> 合并权重”的转换记录或等价性验证；D18 §3 要求转换记录，现缺",
+   "status": "UNKNOWN"
+  },
+  {
+   "id": "R03",
+   "subject": "runner 512 前向 与 离线 4K 出图 的“同一模型主体”声明",
+   "known_recipe_recorded": "runner 第 17 行声明“与出图(output_dir)同一模型主体同一套权重”",
+   "proven_generated_by": "NOT_PROVEN",
+   "why": "两条入口在精度/VAE 后验/分块/颜色后处理/随机数上均不同（见 code_citations），且没有成对复现验收；声明是文本，不是证据（TR05/TR27/D18）",
+   "status": "CONFLICT"
+  },
+  {
+   "id": "R04",
+   "subject": "本地 final_compliant/output_dir 与归档 Track2_M24_v3.zip 的关系",
+   "known_recipe_recorded": "无直接记录。progress §4「同图核验」的 100/100 一致指的是【归档包之间】（M24img_V4grun / M24img_V7ganrun / ProbeSlow8 vs M24_v3），并不覆盖本地目录；返修前把两者错接，现更正",
+   "proven_generated_by": "SAMPLED_n3（本轮，仅 case1/case50/case100）",
+   "why": "仅 n=3 抽样（见 archive_spot_check）；不得外推为 100/100，也不证明任何生成来源",
+   "status": "FACT(仅 n=3，局限范围)"
+  },
+  {
+   "id": "R05",
+   "subject": "v1–v3 LoRA 候选",
+   "known_recipe_recorded": "旧任务单曾把 v1/v2/v3 列为候选",
+   "proven_generated_by": "NOT_AVAILABLE",
+   "why": "目录内无 .pt；其他位置备份 UNKNOWN；不得据日志/指标文件名推定候选存在（TR26）",
+   "status": "MISSING"
+  }
+ ],
+ "asset_path_drift": {
+  "file": "D:\\tmp_timing\\asset_profiles.json",
+  "verified_at": "2026-09-16 19:20:04",
+  "kind": "DRIFT",
+  "recorded_field": "assets.M24.zip",
+  "recorded_value": "C:/生成式图像增强轻量模型设计挑战/提交历史/Track2_CompliantM24——.zip",
+  "recorded_path_exists": false,
+  "archive_dir": "C:\\生成式图像增强轻量模型设计挑战\\提交历史",
+  "archive_zip_count": 18,
+  "archive_names_sample": [
+   "Track2_M24_v3——43.6951.zip",
+   "Track2_M24_v4——43.5844.zip",
+   "Track2_M24avg2——36.6414.zip"
+  ],
+  "status": "DRIFT",
+  "action": "仅登记为资产路径漂移；不按名称相似改指向（名称相似不等于同一对象）"
+ },
+ "generator_identity": {
+  "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\tools\\reconciliation\\evidence\\build_manifest.py",
+  "sha256": "3f52f338e09a92665293fc84bbcd9c2ac2719a1b92b8fafbcc6132b66b602c7e",
+  "computed_at": "2026-09-16 19:20:04"
+ },
+ "tr_registration": [
+  {
+   "tr": "TR06",
+   "statement": "主力 v7 家族含历史可微 CLIPIQA 训练（w_clip=2.0）",
+   "evidence": "train_vosr_lora.py:226,323 + D:/models/vosr_lora/v7/train.log:1",
+   "status": "FACT / 已披露，不隐藏；官方是否接受 UNKNOWN"
+  },
+  {
+   "tr": "TR26",
+   "statement": "v1–v3 本目录无权重；v5 命名不同",
+   "evidence": "lora_availability 块（本清单）",
+   "status": "FACT"
+  },
+  {
+   "tr": "TR27",
+   "statement": "旧任务单用固定 M24 runner 配新候选图，无法保证同权重",
+   "evidence": "relations R03 + decisions D17/D18",
+   "status": "CONFLICT（策略已由 D17 取代，未执行）"
+  },
+  {
+   "tr": "TR28/TR29",
+   "statement": "Q10 六配置只 A/C 完成、B 未完成；Q11 是 6 图近似",
+   "evidence": "protocol_artifacts 块",
+   "status": "FACT / ASSUMPTION（不得称协议轴闭合）"
+  },
+  {
+   "tr": "TR32",
+   "statement": "eval.py 指标创建失败即省略、逐图异常记 None、均值只算有效值",
+   "evidence": "eval.py:60,61,101,103（自校验引用）",
+   "status": "FACT，未修"
+  },
+  {
+   "tr": "TR33",
+   "statement": "eval.py 同 case 后者覆盖、尺寸不一致自动缩放",
+   "evidence": "eval.py:54,113（自校验引用）",
+   "status": "FACT，未修"
+  },
+  {
+   "tr": "TR34",
+   "statement": "PNG/JPG、样本 ID、排序、裁切口径需进协议；test30 非 case1–30",
+   "evidence": "q11_align_screen.py 直测 PNG；q_fit_measure2.py 取字典序前 N",
+   "status": "FACT，未修"
+  },
+  {
+   "tr": "TR35",
+   "statement": "score_pred2.py 实参 C=2.0/p=0.19，与文档 v3.1(2.515/0.198) 不同",
+   "evidence": "score_pred2.py:17-19（自校验引用）",
+   "status": "FACT；本轮不改 SP"
+  },
+  {
+   "tr": "TR36",
+   "statement": "Q 拟合存在资产-成绩身份错配（s090 目录配 34.0989）",
+   "evidence": "q_fit2.py:17 + asset_profiles.json",
+   "status": "FACT，未修；该回归不得用作选优依据"
+  },
+  {
+   "tr": "TR37",
+   "statement": "GT 通配符未展开 -> GT_val n=0",
+   "evidence": "q_fit_measure2.py:46,47,64（自校验引用）",
+   "status": "FACT，未修"
+  },
+  {
+   "tr": "TR41",
+   "statement": "门禁实为 10 项（5 基础 + 兼容 + harness + 2 遮蔽 + 格式）",
+   "evidence": "preupload_gate.py 与工作副本的 TOOL_ORDER/local_checks",
+   "status": "FACT"
+  },
+  {
+   "tr": "TR42",
+   "statement": "门禁假阳性：忽略子退出码、接受 infer OK 中间态、复用 SIM_DIR、SKIP 计 PASS",
+   "evidence": "工作副本 + tests/test_gate_failure_propagation.py（18 项）",
+   "status": "FIXED_IN_WORKCOPY（仅在受跟踪工作副本内；原调用入口未切换，待 Architect 审查）"
+  },
+  {
+   "tr": "TR52",
+   "statement": "score_ledger.json 内新旧快照并存，消费者读不同键得到不同现状",
+   "evidence": "score_ledger.json（本轮未改）",
+   "status": "FACT，未修；本清单不指定其为真源"
+  }
+ ],
+ "unknowns": [
+  "M24 100 张图的完整生成 manifest（命令/权重哈希/输入清单/输出哈希）",
+  "your_model.pt 由基座+LoRA(s5000,sc0.8) 合并而来的转换记录或等价性验证",
+  "runner 与离线两条入口的成对逐像素复现与数值误差上限",
+  "v1–v3 权重是否存在于本机其他位置或外部备份",
+  "官方对 JIT 形式、同主体粒度、IQA 训练历史的实际口径",
+  "Q10 未完成配置（B/D/E/F/REF）的产物状态与是否放弃"
+ ]
+}

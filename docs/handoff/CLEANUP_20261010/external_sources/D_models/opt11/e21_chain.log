@@ -1,0 +1,13 @@
+[01:34:01] == E21 链启动 ==
+[02:01:24] [train_clip1] rc=0 1643s :: [02:01:23] step 6000/6000 G=-2.6326 D=0.0013 (l1=0.1549 lp=0.3643 gan=0.946 clip=0.6296) 0.27 s/step | [02:01:23] REFINER_CLIP_DONE
+[02:15:11] [train_clip2] rc=0 827s :: [02:15:10] step 3000/3000 G=-14.8227 D=0.0020 (l1=0.4858 lp=0.5898 gan=1.040 clip=0.7903) 0.27 s/step | [02:15:10] REFINER_CLIP_DONE
+[02:15:36] [export_clip1] rc=0 25s :: [export] D:\models\pkg_clip1\model_dir  your_model.pt=1.99MB runner.py=2257B | EXPORT_COMBINED_DONE
+[02:16:03] [export_clip2] rc=0 26s :: [export] D:\models\pkg_clip2\model_dir  your_model.pt=1.99MB runner.py=2257B | EXPORT_COMBINED_DONE
+[02:16:57] [lat3] rc=0 55s :: LAT3 {"D:\\models\\pkg_TinyRefV4\\model_dir": {"median": 7.09, "min": 5.11, "p90": 9.19, "n": 60, "fac_median": 2.0184, "fac_min": 2.1149, "pred_E8": 73.47, "pred_V4": 71.95}, "D:\\models\\pkg_clip1\\model_dir": {"median": 6.99, "min": 5.17, "p90": 9.23, "n": 60, "fac_median": 2.0224, "fac_min": 2.1112, "pred_E8": 73.62, "pred_V4": 72.09}, "D:\\models\\pkg_clip2\\model_dir": {"median": 7.1, "min": 5.22, "p90": 9.03, "n": 60, "fac_median": 2.0179, "fac_min": 2.1086, "pred_E8": 73.46, "pred_V4": 71.93}} | LAT3_DONE
+[02:18:00] [render_clip1] rc=0 63s ::   30/30 1.93 s/张 | RENDER_PKG_DONE
+[02:19:54] [suite_clip1] rc=0 114s ::   (100.4 s, 30 张) | PROXY_SUITE_DONE
+[02:20:10] [cropclip_clip1] rc=0 16s :: CROPCLIP {"tag": "E21_clip1", "dir": "D:\\models\\opt11\\clip1_render", "clipiqa_crop_mean": 0.6263, "n": 30, "crop": 512} | CROPCLIP_DONE
+[02:21:13] [render_clip2] rc=0 63s ::   30/30 1.92 s/张 | RENDER_PKG_DONE
+[02:23:07] [suite_clip2] rc=0 115s ::   (101.5 s, 30 张) | PROXY_SUITE_DONE
+[02:23:25] [cropclip_clip2] rc=0 17s :: CROPCLIP {"tag": "E21_clip2", "dir": "D:\\models\\opt11\\clip2_render", "clipiqa_crop_mean": 0.7781, "n": 30, "crop": 512} | CROPCLIP_DONE
+[02:23:25] E21_CHAIN_DONE

@@ -1,0 +1,173 @@
+[
+ [
+  "C:/生成式图像增强轻量模型设计挑战/生成式图像增强轻量模型设计挑战/赛题二/测试集\\case1.jpg",
+  {
+   "ImageWidth": "4096",
+   "ImageLength": "3072",
+   "BitsPerSample": "(8, 8, 8)",
+   "ResolutionUnit": "2",
+   "ExifOffset": "254",
+   "ImageDescription": "_cuva",
+   "Make": "unknown",
+   "Model": "unknown",
+   "Software": "unknown",
+   "Orientation": "1",
+   "DateTime": "1970:01:25 17:18:44",
+   "YCbCrPositioning": "1",
+   "XResolution": "72.0",
+   "YResolution": "72.0"
+  }
+ ],
+ [
+  "C:/生成式图像增强轻量模型设计挑战/生成式图像增强轻量模型设计挑战/赛题二/测试集\\case2.jpg",
+  {
+   "ImageWidth": "4096",
+   "ImageLength": "3072",
+   "BitsPerSample": "(8, 8, 8)",
+   "ResolutionUnit": "2",
+   "ExifOffset": "254",
+   "ImageDescription": "_cuva",
+   "Make": "unknown",
+   "Model": "unknown",
+   "Software": "unknown",
+   "Orientation": "1",
+   "DateTime": "1970:01:25 17:28:38",
+   "YCbCrPositioning": "1",
+   "XResolution": "72.0",
+   "YResolution": "72.0"
+  }
+ ],
+ [
+  "C:/生成式图像增强轻量模型设计挑战/生成式图像增强轻量模型设计挑战/赛题二/测试集\\case3.jpg",
+  {
+   "ImageWidth": "4096",
+   "ImageLength": "3072",
+   "BitsPerSample": "(8, 8, 8)",
+   "ResolutionUnit": "2",
+   "ExifOffset": "254",
+   "ImageDescription": "_cuva",
+   "Make": "unknown",
+   "Model": "unknown",
+   "Software": "unknown",
+   "Orientation": "1",
+   "DateTime": "1970:01:27 16:22:55",
+   "YCbCrPositioning": "1",
+   "XResolution": "72.0",
+   "YResolution": "72.0"
+  }
+ ],
+ [
+  "C:/生成式图像增强轻量模型设计挑战/生成式图像增强轻量模型设计挑战/赛题二/测试集\\case38.jpg",
+  {
+   "ImageWidth": "4096",
+   "ImageLength": "3072",
+   "BitsPerSample": "(8, 8, 8)",
+   "ResolutionUnit": "2",
+   "ExifOffset": "260",
+   "ImageDescription": "_cuva",
+   "Make": "HUAWEI",
+   "Model": "HUAWEI Pura 80 Ultra",
+   "Software": "",
+   "Orientation": "1",
+   "DateTime": "2026:04:07 19:36:36",
+   "YCbCrPositioning": "1",
+   "XResolution": "72.0",
+   "YResolution": "72.0"
+  }
+ ],
+ [
+  "C:/生成式图像增强轻量模型设计挑战/生成式图像增强轻量模型设计挑战/赛题二/测试集\\case4.jpg",
+  {
+   "ImageWidth": "4096",
+   "ImageLength": "3072",
+   "BitsPerSample": "(8, 8, 8)",
+   "ResolutionUnit": "2",
+   "ExifOffset": "254",
+   "ImageDescription": "_cuva",
+   "Make": "unknown",
+   "Model": "unknown",
+   "Software": "unknown",
+   "Orientation": "1",
+   "DateTime": "1970:01:27 16:36:00",
+   "YCbCrPositioning": "1",
+   "XResolution": "72.0",
+   "YResolution": "72.0"
+  }
+ ],
+ [
+  "C:/生成式图像增强轻量模型设计挑战/生成式图像增强轻量模型设计挑战/赛题二/测试集\\case5.jpg",
+  {
+   "ImageWidth": "4096",
+   "ImageLength": "3072",
+   "BitsPerSample": "(8, 8, 8)",
+   "ResolutionUnit": "2",
+   "ExifOffset": "254",
+   "ImageDescription": "_cuva",
+   "Make": "unknown",
+   "Model": "unknown",
+   "Software": "unknown",
+   "Orientation": "1",
+   "DateTime": "1970:01:27 16:37:12",
+   "YCbCrPositioning": "1",
+   "XResolution": "72.0",
+   "YResolution": "72.0"
+  }
+ ],
+ [
+  "C:/生成式图像增强轻量模型设计挑战/生成式图像增强轻量模型设计挑战/赛题二/测试集\\case64.jpg",
+  {
+   "ImageWidth": "4096",
+   "ImageLength": "3072",
+   "BitsPerSample": "(8, 8, 8)",
+   "ResolutionUnit": "2",
+   "ExifOffset": "254",
+   "ImageDescription": "_cuva",
+   "Make": "unknown",
+   "Model": "unknown",
+   "Software": "unknown",
+   "Orientation": "1",
+   "DateTime": "2026:04:15 10:01:15",
+   "YCbCrPositioning": "1",
+   "XResolution": "72.0",
+   "YResolution": "72.0"
+  }
+ ],
+ [
+  "C:/生成式图像增强轻量模型设计挑战/生成式图像增强轻量模型设计挑战/赛题二/测试集\\case65.jpg",
+  {
+   "ImageWidth": "4096",
+   "ImageLength": "3072",
+   "BitsPerSample": "(8, 8, 8)",
+   "ResolutionUnit": "2",
+   "ExifOffset": "254",
+   "ImageDescription": "_cuva",
+   "Make": "unknown",
+   "Model": "unknown",
+   "Software": "unknown",
+   "Orientation": "1",
+   "DateTime": "2026:04:15 10:34:47",
+   "YCbCrPositioning": "1",
+   "XResolution": "72.0",
+   "YResolution": "72.0"
+  }
+ ],
+ [
+  "C:/生成式图像增强轻量模型设计挑战/生成式图像增强轻量模型设计挑战/赛题二/测试集\\case66.jpg",
+  {
+   "ImageWidth": "4096",
+   "ImageLength": "3072",
+   "BitsPerSample": "(8, 8, 8)",
+   "ResolutionUnit": "2",
+   "ExifOffset": "254",
+   "ImageDescription": "_cuva",
+   "Make": "unknown",
+   "Model": "unknown",
+   "Software": "unknown",
+   "Orientation": "1",
+   "DateTime": "2026:04:15 10:35:37",
+   "YCbCrPositioning": "1",
+   "XResolution": "72.0",
+   "YResolution": "72.0"
+  }
+ ]
+]

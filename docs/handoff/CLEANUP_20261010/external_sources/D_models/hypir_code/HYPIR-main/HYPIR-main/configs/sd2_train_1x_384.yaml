@@ -1,0 +1,113 @@
+# HYPIR 微调 (1x 同分辨率, 官方退化校准版)
+# 起始权重: HYPIR_sd2.pth (LoRA) + HYPIR_sd2_D.safetensors (D decoder)
+# 退化: 1x (无 resize), JPEG+blur+noise 与官方统计匹配
+output_dir: D:/models/hypir_ft
+
+data_config:
+  train:
+    batch_size: 2
+    dataloader_num_workers: 2
+    dataset:
+      target: HYPIR.dataset.realesrgan.RealESRGANDataset
+      params:
+        file_meta:
+          file_list: D:/datasets/div2k/pngtxt_ori/train_list.txt
+          image_path_prefix: D:/datasets/div2k/pngtxt_ori
+          image_path_key: none
+          prompt_key: none
+        file_backend_cfg:
+          target: HYPIR.dataset.file_backend.HardDiskBackend
+        out_size: 384
+        crop_type: random
+        use_hflip: true
+        use_rot: false
+
+        blur_kernel_size: 21
+        kernel_list: ['iso', 'aniso', 'generalized_iso', 'generalized_aniso', 'plateau_iso', 'plateau_aniso']
+        kernel_prob: [0.45, 0.25, 0.12, 0.03, 0.12, 0.03]
+        sinc_prob: 0.1
+        blur_sigma: [0.5, 2.5]
+        betag_range: [0.5, 4]
+        betap_range: [1, 2]
+
+        blur_kernel_size2: 21
+        kernel_list2: ['iso', 'aniso', 'generalized_iso', 'generalized_aniso', 'plateau_iso', 'plateau_aniso']
+        kernel_prob2: [0.45, 0.25, 0.12, 0.03, 0.12, 0.03]
+        sinc_prob2: 0.1
+        blur_sigma2: [0.3, 1.5]
+        betag_range2: [0.5, 4]
+        betap_range2: [1, 2]
+
+        final_sinc_prob: 0.8
+
+        p_empty_prompt: 1.0
+
+    batch_transform:
+      target: HYPIR.dataset.batch_transform.RealESRGANBatchTransform
+      params:
+        hq_key: hq
+        extra_keys: [txt]
+        use_sharpener: true
+        # Queue size of training pool, multiple of batch_size.
+        queue_size: 8
+        # the first degradation process (1x: 只 keep; 官方拟合顺序 j_b_n)
+        resize_prob: [0, 0, 1]
+        resize_range: [0.15, 1.5]
+        gaussian_noise_prob: 0.4
+        noise_range: [0, 1.5]
+        poisson_scale_range: [0.05, 0.5]
+        gray_noise_prob: 0.4
+        jpeg_range: [50, 95]
+
+        # the second degradation process
+        stage2_scale: 1
+        second_blur_prob: 0.5
+        resize_prob2: [0, 0, 1]
+        resize_range2: [0.3, 1.2]
+        gaussian_noise_prob2: 0.4
+        noise_range2: [0, 1.2]
+        poisson_scale_range2: [0.05, 0.5]
+        gray_noise_prob2: 0.4
+        jpeg_range2: [55, 95]
+
+        resize_back: true
+        stage1_order: j_b_n
+        stage2_order: j_b_n
+
+base_model_type: sd2
+base_model_path: D:/models/sd21base
+model_t: 200
+coeff_t: 200
+lora_rank: 256
+lora_modules: [to_k, to_q, to_v, to_out.0, conv, conv1, conv2, conv_shortcut, conv_out, proj_in, proj_out, ff.net.2, ff.net.0.proj]
+use_ema: true
+ema_decay: 0.999
+resume_ema: false
+
+# 起始权重 (加载 HYPIR 官方 LoRA 与 D, 在其基础上适配)
+init_lora_path: D:/models/hypir/HYPIR_sd2.pth
+init_d_path: D:/models/hypir/HYPIR_sd2_D.safetensors
+
+lambda_gan: 0.5
+lambda_lpips: 5
+lambda_l2: 1
+lr_G: 1e-5
+lr_D: 1e-5
+optimizer_type: adam
+opt_kwargs:
+  betas: [0.9, 0.999]
+
+mixed_precision: bf16
+seed: 231
+max_train_steps: 3000
+gradient_accumulation_steps: 1
+gradient_checkpointing: true
+max_grad_norm: 1.0
+logging_dir: logs
+report_to: tensorboard
+checkpointing_steps: 500
+checkpoints_total_limit: 2
+resume_from_checkpoint: ~
+log_image_steps: 200
+log_grad_steps: 100
+log_grad_modules: [conv_out]

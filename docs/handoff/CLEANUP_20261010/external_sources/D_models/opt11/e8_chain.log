@@ -1,0 +1,7 @@
+[23:48:04] == E8 链启动 ==
+[23:56:39] [gen_targets] rc=0 515s ::   1600/1607 0.32 s/张 | GEN_VOSR_TARGETS_DONE -> D:\models\refine_v1\tgt_vosr
+[23:56:39] VOSR 目标 = 2839
+[00:21:27] [train_vosr1] rc=0 1488s :: [00:21:26] step 10000/10000 G=0.2705 D=0.0191 (l1=0.1270 lp=0.1897 gan=0.986) 0.15 s/step | [00:21:26] REFINER_GAN_DONE
+[00:23:02] [render] rc=0 96s ::   30/30 2.50 s/张 | RENDER_REFINED_DONE
+[00:24:54] [suite] rc=0 112s ::   (98.6 s, 30 张) | PROXY_SUITE_DONE
+[00:24:54] E8_CHAIN_DONE

@@ -1,0 +1,28 @@
+{
+ "baseline_ms": 398.68774999922607,
+ "speedup": 0.7163500759693631,
+ "components": {
+  "total": 398.68774999922607,
+  "dinov2": 19.427464999898802,
+  "vae_encode(sample)": 123.53089000098407,
+  "vae.encoder_only": 127.25334999995539,
+  "dit(+vae)": 235.50287499965634,
+  "dec_only": 138.2357199996477
+ },
+ "variants": {
+  "pure_fp16_nocast": {
+   "err": "RuntimeError: mat1 and mat2 must have the same dtype, but got Float and Half"
+  },
+  "cudnn_benchmark": {
+   "ms": 397.6318850007374
+  },
+  "compile_dec": {
+   "ms": 405.2030549995834,
+   "maxdiff": 0.521240234375
+  },
+  "compile_diT": {
+   "ms": 400.62670999905095,
+   "maxdiff": 0.51904296875
+  }
+ }
+}

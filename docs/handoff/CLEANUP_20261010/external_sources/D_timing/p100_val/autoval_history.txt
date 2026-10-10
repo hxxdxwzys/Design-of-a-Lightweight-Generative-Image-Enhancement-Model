@@ -1,0 +1,67 @@
+[09-02 17:33:19] [boot] 自动验证链启动, 轮询 600s, 门控 (0.919,0.36)
+[09-02 17:33:21] [新存档] p768_w20/lora_s500.pt -> 下载
+[09-02 17:35:48] [渲染失败] p768_w20_lora_s500: Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "D:\Python\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+[09-02 17:55:51] [新存档] p768_w20/lora_s1000.pt -> 下载
+[09-02 17:59:43] [门控] p768_w20_lora_s1000: clip=0.8638 lpips=0.4051 pass=False
+[09-02 18:59:54] [新存档] p768_w20/lora_s1500.pt -> 下载
+[09-02 19:05:50] [门控] p768_w20_lora_s1500: clip=0.8761 lpips=0.4177 pass=False
+[09-02 19:56:09] [新存档] p768_w20/lora_s2000.pt -> 下载
+[09-03 13:02:47] [boot] 自动验证链启动, 轮询 600s, 门控 (0.919,0.36)
+[09-03 13:02:47] [新存档] p768_w20/lora_s1000.pt -> 下载
+[09-03 13:08:39] [门控] p768_w20_lora_s1000: clip=0.8638 lpips=0.4051 pass=False
+[09-03 13:08:39] [新存档] p768_w20/lora_s1500.pt -> 下载
+[09-03 13:12:21] [门控] p768_w20_lora_s1500: clip=0.8761 lpips=0.4177 pass=False
+[09-03 13:12:21] [新存档] p768_w20/lora_s2000.pt -> 下载
+[09-03 13:13:13] [boot] 自动验证链启动, 轮询 600s, 门控 (0.919,0.36)
+[09-03 14:13:25] [新存档] p768_w20/lora_s3000.pt -> 下载
+[09-03 14:17:02] [门控] p768_w20_lora_s3000: clip=0.8827 lpips=0.4199 pass=False
+[09-03 15:17:14] [新存档] p768_w20/lora_s3500.pt -> 下载
+[09-03 15:20:54] [门控] p768_w20_lora_s3500: clip=0.8948 lpips=0.4231 pass=False
+[09-03 16:11:02] [新存档] p768_w20/lora_s4000.pt -> 下载
+[09-03 16:14:41] [门控] p768_w20_lora_s4000: clip=0.8895 lpips=0.4178 pass=False
+[09-03 16:25:35] [warn] RuntimeError: 连不上服务器
+[09-03 16:35:57] [warn] RuntimeError: 连不上服务器
+[09-03 16:46:18] [warn] RuntimeError: 连不上服务器
+[09-03 16:56:51] [warn] RuntimeError: 连不上服务器
+[09-03 17:07:13] [warn] RuntimeError: 连不上服务器
+[09-03 17:17:36] [warn] RuntimeError: 连不上服务器
+[09-03 17:28:01] [warn] RuntimeError: 连不上服务器
+[09-03 17:38:24] [warn] RuntimeError: 连不上服务器
+[09-03 17:48:53] [warn] RuntimeError: 连不上服务器
+[09-03 17:59:15] [warn] RuntimeError: 连不上服务器
+[09-03 18:09:37] [warn] RuntimeError: 连不上服务器
+[09-03 18:20:06] [warn] RuntimeError: 连不上服务器
+[09-03 18:30:30] [warn] RuntimeError: 连不上服务器
+[09-03 18:40:53] [warn] RuntimeError: 连不上服务器
+[09-03 18:51:14] [warn] RuntimeError: 连不上服务器
+[09-03 19:01:51] [warn] RuntimeError: 连不上服务器
+[09-03 19:12:21] [warn] RuntimeError: 连不上服务器
+[09-03 19:22:54] [warn] RuntimeError: 连不上服务器
+[09-03 19:33:47] [warn] RuntimeError: 连不上服务器
+[09-03 19:44:15] [warn] RuntimeError: 连不上服务器
+[09-03 19:54:50] [warn] RuntimeError: 连不上服务器
+[09-03 20:05:25] [warn] RuntimeError: 连不上服务器
+[09-03 20:16:15] [warn] RuntimeError: 连不上服务器
+[09-03 20:26:51] [warn] RuntimeError: 连不上服务器
+[09-03 20:37:24] [warn] RuntimeError: 连不上服务器
+[09-03 20:48:33] [warn] RuntimeError: 连不上服务器
+[09-03 20:58:50] [boot] 自动验证链启动, 轮询 600s, 门控 (0.919,0.36)
+[09-03 20:58:50] [新存档] p768_w20/lora_s4500.pt -> 下载
+[09-03 21:02:53] [门控] p768_w20_lora_s4500: clip=0.8798 lpips=0.4033 pass=False
+[09-03 21:02:53] [新存档] p768_w20/lora_s5000.pt -> 下载
+[09-03 21:06:22] [门控] p768_w20_lora_s5000: clip=0.8878 lpips=0.4225 pass=False
+[09-03 21:06:22] [新存档] p768_w20/lora_s5500.pt -> 下载
+[09-03 21:09:49] [门控] p768_w20_lora_s5500: clip=0.9058 lpips=0.4211 pass=False
+[09-03 21:09:49] [新存档] p768_w20/lora_s6000.pt -> 下载
+[09-03 21:13:22] [门控] p768_w20_lora_s6000: clip=0.9207 lpips=0.397 pass=False
+[09-03 21:13:22] [新存档] p768_w15/lora_s3000.pt -> 下载

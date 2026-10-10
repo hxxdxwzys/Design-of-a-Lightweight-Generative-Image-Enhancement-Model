@@ -1,0 +1,44 @@
+{
+ "schema": "STAT01-prereg/1",
+ "task": "STAT-01",
+ "frozen_at": "2026-09-18 17:59:17",
+ "purpose": "量化唯一剩余杠杆（VAE 编解码 fp32→fp16）在 512 上的时延收益与输出变化幅度；本任务不构建、不出包、不提交，仅供用户/架构师做 go-no-go 决策",
+ "hypothesis": "all-fp16 导出件在 512 稳态上比 A2（混合精度）快 >=20%（中位数均值）",
+ "sides": {
+  "A": "A2_fp16_v1（VAE fp32，DiT/DINO fp16）",
+  "B": "EXPORT01R3（全 fp16，c3946096…）"
+ },
+ "same_runner": "两侧 runner.py 同为 53c79684…（已核验）",
+ "inputs": "case1/case7/case25 原图按 score01_bench.BOX 裁切（与 §0H 同位置）",
+ "entry": "runner.infer(x, prompt='')（timing 缺省 None）",
+ "execution_mode": "frozen（加载前设置，两侧一致）",
+ "rounds": [
+  {
+   "index": 1,
+   "order": "ABBA"
+  },
+  {
+   "index": 2,
+   "order": "BAAB"
+  }
+ ],
+ "warmup": 2,
+ "timed": 10,
+ "reporting": [
+  "每侧三输入中位数/p90、改善比",
+  "漂移有效性（>5% 判 INVALID）",
+  "两侧输出的 uint8 差异（max/均值/不同像素占比/每通道 max）与 float max/mean",
+  "冷启动单列",
+  "GPU 时钟/温度采样"
+ ],
+ "limits_of_claim": [
+  "只测本机、本条件；不得当作官方时延",
+  "uint8 差异只表示输出变化幅度，**不表示质量好坏**（本地无质量评测）",
+  "历史 R3 件与将来重建的候选可能在细节上不同，此处只作杠杆量级估计"
+ ],
+ "stop_conditions": [
+  "非有限值/崩溃立即停",
+  "额度触顶立即停",
+  "不改判据、不扩路线"
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "schema": "PROXY-screen/1",
+ "metrics": [
+  "clipiqa",
+  "maniqa",
+  "niqe",
+  "musiq"
+ ],
+ "n_common": 6,
+ "cases": [
+  "case1",
+  "case10",
+  "case11",
+  "case12",
+  "case13",
+  "case100"
+ ],
+ "rows": {
+  "q1_base_sc0p8_wavelet": {
+   "dir": "D:\\models\\q1_screen\\base_sc0.8_t512_wavelet",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9139,
+     "maniqa": 0.4635,
+     "niqe": 5.6998,
+     "musiq": 40.0687
+    },
+    "case10": {
+     "clipiqa": 0.8863,
+     "maniqa": 0.5171,
+     "niqe": 4.7035,
+     "musiq": 56.4857
+    },
+    "case11": {
+     "clipiqa": 0.8933,
+     "maniqa": 0.5245,
+     "niqe": 6.2924,
+     "musiq": 46.7746
+    },
+    "case12": {
+     "clipiqa": 0.9017,
+     "maniqa": 0.5591,
+     "niqe": 3.6023
+    },
+    "case13": {
+     "clipiqa": 0.9127,
+     "maniqa": 0.5303,
+     "niqe": 5.3685
+    },
+    "case100": {
+     "clipiqa": 0.9579,
+     "maniqa": 0.4836,
+     "niqe": 5.232
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9109841386477152,
+    "maniqa": 0.513018473982811,
+    "niqe": 5.149756641450897,
+    "musiq": 47.776329040527344
+   },
+   "n": {
+    "clipiqa": 6,
+    "maniqa": 6,
+    "niqe": 6,
+    "musiq": 3
+   }
+  },
+  "q1_sc0p8_adain": {
+   "dir": "D:\\models\\q1_screen\\sc0.8_t512_adain",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9182,
+     "maniqa": 0.465,
+     "niqe": 5.6747,
+     "musiq": 39.4313
+    },
+    "case10": {
+     "clipiqa": 0.8791,
+     "maniqa": 0.5098,
+     "niqe": 4.7314,
+     "musiq": 56.3023
+    },
+    "case11": {
+     "clipiqa": 0.8961,
+     "maniqa": 0.505,
+     "niqe": 6.6521,
+     "musiq": 45.8688
+    },
+    "case12": {
+     "clipiqa": 0.9051,
+     "maniqa": 0.5675,
+     "niqe": 3.5623
+    },
+    "case13": {
+     "clipiqa": 0.9087,
+     "maniqa": 0.5275,
+     "niqe": 5.2003
+    },
+    "case100": {
+     "clipiqa": 0.9584,
+     "maniqa": 0.4817,
+     "niqe": 5.2717
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9109316964944204,
+    "maniqa": 0.5094143648942312,
+    "niqe": 5.1820745391237555,
+    "musiq": 47.20077641805013
+   },
+   "n": {
+    "clipiqa": 6,
+    "maniqa": 6,
+    "niqe": 6,
+    "musiq": 3
+   }
+  },
+  "q1_sc1p2_wavelet": {
+   "dir": "D:\\models\\q1_screen\\sc1.2_t512_wavelet",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9325,
+     "maniqa": 0.4601,
+     "niqe": 6.0965,
+     "musiq": 34.9041
+    },
+    "case10": {
+     "clipiqa": 0.9255,
+     "maniqa": 0.5191,
+     "niqe": 5.0168,
+     "musiq": 54.2947
+    },
+    "case11": {
+     "clipiqa": 0.9199,
+     "maniqa": 0.5121,
+     "niqe": 6.7514,
+     "musiq": 44.8442
+    },
+    "case12": {
+     "clipiqa": 0.9419,
+     "maniqa": 0.5516,
+     "niqe": 4.2782
+    },
+    "case13": {
+     "clipiqa": 0.9403,
+     "maniqa": 0.5821,
+     "niqe": 5.2017
+    },
+    "case100": {
+     "clipiqa": 0.9682,
+     "maniqa": 0.475,
+     "niqe": 6.0077
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9380638003349304,
+    "maniqa": 0.5166478157043457,
+    "niqe": 5.5587048036523194,
+    "musiq": 44.680973052978516
+   },
+   "n": {
+    "clipiqa": 6,
+    "maniqa": 6,
+    "niqe": 6,
+    "musiq": 3
+   }
+  },
+  "v7_sc0p6_seed8": {
+   "dir": "D:\\models\\screen_v7\\out_sc0.6_seed8",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.8464,
+     "maniqa": 0.4625,
+     "niqe": 5.3559,
+     "musiq": 42.3529
+    },
+    "case10": {
+     "clipiqa": 0.8441,
+     "maniqa": 0.515,
+     "niqe": 4.3565,
+     "musiq": 53.5837
+    },
+    "case11": {
+     "clipiqa": 0.8365,
+     "maniqa": 0.5044,
+     "niqe": 6.1313,
+     "musiq": 49.0552
+    },
+    "case12": {
+     "clipiqa": 0.8489,
+     "maniqa": 0.5537,
+     "niqe": 3.2428
+    },
+    "case13": {
+     "clipiqa": 0.8771,
+     "maniqa": 0.4849,
+     "niqe": 5.1676
+    },
+    "case100": {
+     "clipiqa": 0.9399,
+     "maniqa": 0.4597,
+     "niqe": 4.909
+    }
+   },
+   "mean": {
+    "clipiqa": 0.8654729624589285,
+    "maniqa": 0.49671295781930286,
+    "niqe": 4.860526608927343,
+    "musiq": 48.3305918375651
+   },
+   "n": {
+    "clipiqa": 6,
+    "maniqa": 6,
+    "niqe": 6,
+    "musiq": 3
+   }
+  },
+  "v7_sc0p7_seed8": {
+   "dir": "D:\\models\\screen_v7\\out_sc0.7_seed8",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.8864,
+     "maniqa": 0.4657,
+     "niqe": 5.6106,
+     "musiq": 41.6507
+    },
+    "case10": {
+     "clipiqa": 0.8652,
+     "maniqa": 0.5136,
+     "niqe": 4.5323,
+     "musiq": 54.3798
+    },
+    "case11": {
+     "clipiqa": 0.8681,
+     "maniqa": 0.5112,
+     "niqe": 6.1156,
+     "musiq": 48.2848
+    },
+    "case12": {
+     "clipiqa": 0.8777,
+     "maniqa": 0.5607,
+     "niqe": 3.4487
+    },
+    "case13": {
+     "clipiqa": 0.8993,
+     "maniqa": 0.5082,
+     "niqe": 5.3565
+    },
+    "case100": {
+     "clipiqa": 0.9513,
+     "maniqa": 0.472,
+     "niqe": 5.131
+    }
+   },
+   "mean": {
+    "clipiqa": 0.8913484712441763,
+    "maniqa": 0.5052353143692017,
+    "niqe": 5.032453434596927,
+    "musiq": 48.1051139831543
+   },
+   "n": {
+    "clipiqa": 6,
+    "maniqa": 6,
+    "niqe": 6,
+    "musiq": 3
+   }
+  }
+ },
+ "wall_s": 1430.8
+}

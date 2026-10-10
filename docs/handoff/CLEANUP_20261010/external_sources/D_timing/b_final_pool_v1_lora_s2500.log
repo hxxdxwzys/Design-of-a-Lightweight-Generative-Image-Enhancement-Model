@@ -1,0 +1,7 @@
+[convert] vosr_lora_v1_lora_s2500: 0 jpgs -> D:\models\sweep_test_out\vosr_lora_v1_lora_s2500
+[abort] 不足 100 张 (0), 不并入池
+[convert] vosr_lora_v1_lora_s2500: 100 jpgs -> D:\models\sweep_test_out\vosr_lora_v1_lora_s2500
+[backup] D:\models\sweep_test_out\sweep_results.backup_20260819_223704.json
+[merged] vosr_lora_v1_lora_s2500: clipiqa=0.7600 niqe=5.95, entries=58
+[vs vosr_05b_os] 胜场 100/100, 平均增量 +0.1651
+[done]

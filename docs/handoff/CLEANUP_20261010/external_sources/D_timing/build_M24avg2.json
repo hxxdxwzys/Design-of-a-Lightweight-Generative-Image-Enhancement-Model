@@ -1,0 +1,10 @@
+{
+ "tag": "M24avg2",
+ "zip": "D:\\models\\Track2_M24avg2.zip",
+ "gate_pass": true,
+ "seeds": [
+  8,
+  108
+ ],
+ "note": "2026-09-13 05:13 \u4fee\u590d runner \u7f29\u8fdb bug \u540e\u91cd\u6253\u5305, \u95e8\u7981 10/10 PASS"
+}

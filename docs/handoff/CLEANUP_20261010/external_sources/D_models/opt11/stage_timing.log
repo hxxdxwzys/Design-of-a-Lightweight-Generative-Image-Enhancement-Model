@@ -1,0 +1,3 @@
+[student_ref_us0   ] median 6.66 ms best 6.39 (graph=True)
+[student_ref_us60  ] median 6.68 ms best 5.76 (graph=True)
+[结论] refiner 增量 = 2.47 ms（学生 4.19 → 学生+refiner 6.66）；unsharp60 增量 = 0.02 ms

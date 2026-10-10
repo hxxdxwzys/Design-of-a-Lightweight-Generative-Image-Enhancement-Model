@@ -1,0 +1,59 @@
+{
+ "weight_dtype": "float16",
+ "postprocess_dtype": "float32",
+ "blend_accumulator_dtype": "float32",
+ "seed": 42,
+ "t_start": 1.0,
+ "t_end": 0.0,
+ "dit_tile_size": 512,
+ "dit_tile_overlap_cli": 32,
+ "vae_tile_size": 1024,
+ "vae_tile_overlap_cli": 32,
+ "patch_size": 2,
+ "align_sigma": 5,
+ "posterior_mode": true,
+ "vae_enc_trace_px": [
+  512,
+  1024
+ ],
+ "dec_trace_latent": [
+  64,
+  128
+ ],
+ "dinov2_input_size": 448,
+ "noise_protocol": "runner 局部 torch.Generator(seed=42) 生成 fp32 噪声后 .half() 显式传入",
+ "fusion_semantics": "DitStep 返回更新后的 z1；分块对 z1 做高斯加权融合（不再二次减 dt·u）",
+ "execution_mode": {
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "torch.use_deterministic_algorithms": "True(warn_only=False)",
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "cudnn_allow_tf32": false,
+  "matmul_allow_tf32": false,
+  "torch.jit.optimized_execution": false
+ },
+ "module_dtypes": {
+  "vae_encoder": "torch.float16",
+  "light_decoder": "torch.float16",
+  "dit": "torch.float16",
+  "dino": "torch.float16",
+  "boundary_casts": [
+   "enc_in fp16->fp16",
+   "latent fp16->fp16 (进入 DiT 前)",
+   "decode_in fp16->fp16",
+   "decode_out ->fp32 (wavelet 保持 fp32)"
+  ],
+  "embedder_cast": "CastIn(fp16)（全 FP32 下为恒等变换，见 chain.CastIn）",
+  "vae_posterior": "mode（抽样关闭）"
+ },
+ "schema": "EXPORT01R-models-export/1",
+ "model_file": "your_model.pt",
+ "precision_route": "FP16_REFERENCE",
+ "notes": [
+  "LoRA 在 fp32 下 merge_and_unload；本文件为其 fp16 重载形态",
+  "TimestepEmbedder 的 mlp 前插入 CastIn(fp16)（cos/sin 仍 fp32 计算，全 FP32 下为恒等）",
+  "wavelet 为忠实张量化实现，固定 fp32",
+  "噪声显式传入，模块内无随机算子",
+  "分块/融合/补齐裁回在 runner，数值主体在本 ScriptModule"
+ ]
+}

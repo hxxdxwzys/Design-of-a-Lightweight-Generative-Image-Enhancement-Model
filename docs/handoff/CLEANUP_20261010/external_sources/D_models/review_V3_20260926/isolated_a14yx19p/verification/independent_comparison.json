@@ -1,0 +1,30 @@
+{
+  "case3": [
+    {
+      "process": 1,
+      "sha256": "2e0de8783e5ef5420467bdce9ddc078f9280fffff1a923a2c43470c374150d65",
+      "original_zip_byte_equal": true,
+      "decoded_rgb_equal": true
+    },
+    {
+      "process": 2,
+      "sha256": "2e0de8783e5ef5420467bdce9ddc078f9280fffff1a923a2c43470c374150d65",
+      "original_zip_byte_equal": true,
+      "decoded_rgb_equal": true
+    }
+  ],
+  "case17": [
+    {
+      "process": 1,
+      "sha256": "384a1ed67230ac5c4387beeb4129c2104155155035df59188bfca60fda199dcf",
+      "original_zip_byte_equal": true,
+      "decoded_rgb_equal": true
+    },
+    {
+      "process": 2,
+      "sha256": "384a1ed67230ac5c4387beeb4129c2104155155035df59188bfca60fda199dcf",
+      "original_zip_byte_equal": true,
+      "decoded_rgb_equal": true
+    }
+  ]
+}

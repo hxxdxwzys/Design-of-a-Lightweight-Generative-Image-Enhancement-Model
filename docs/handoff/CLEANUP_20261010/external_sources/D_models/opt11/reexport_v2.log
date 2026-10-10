@@ -1,0 +1,3 @@
+[re-export] 0 ['[export] D:\\models\\pkg_TinyRefV2\\model_dir  your_model.pt=2.11MB runner.py=2257B', 'EXPORT_COMBINED_DONE']
+[graph captured] True
+[latency 独立进程] median 17.44 ms best 15.34 worst 18.78 -> r=14.7 factor=1.747

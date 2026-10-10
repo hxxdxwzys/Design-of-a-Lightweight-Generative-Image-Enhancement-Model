@@ -1,0 +1,29 @@
+{
+ "label": "u2_lanczos",
+ "mean": {
+  "clipiqa": 0.7921,
+  "lpips": 0.3832,
+  "psnr": 25.243,
+  "ssim": 0.7509
+ },
+ "per": {
+  "case1": {
+   "clipiqa": 0.8642,
+   "lpips": 0.5065,
+   "psnr": 21.822,
+   "ssim": 0.6352
+  },
+  "case2": {
+   "clipiqa": 0.75,
+   "lpips": 0.257,
+   "psnr": 29.543,
+   "ssim": 0.8321
+  },
+  "case3": {
+   "clipiqa": 0.7622,
+   "lpips": 0.386,
+   "psnr": 24.363,
+   "ssim": 0.7854
+  }
+ }
+}

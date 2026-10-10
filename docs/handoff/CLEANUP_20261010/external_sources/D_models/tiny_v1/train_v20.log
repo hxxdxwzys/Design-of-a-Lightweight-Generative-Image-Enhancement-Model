@@ -1,0 +1,53 @@
+[19:52:41] [data] 2839 对 (256 域蒸馏对)
+[19:53:00] [init] G 从 v19_s25000.pt 初始化 (该 ckpt step=25000, missing=0)
+[19:53:00] [model] G=0.87M D=0.66M res=256 bs=6 w_gan=0.1
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[19:53:33] step 100/25000 G=0.156 (l1=0.097 lp=0.163 gan=0.223) D=0.255 0.32s/step
+[19:54:04] step 200/25000 G=0.155 (l1=0.079 lp=0.200 gan=0.250) D=0.254 0.32s/step
+[19:54:35] step 300/25000 G=0.153 (l1=0.089 lp=0.169 gan=0.248) D=0.253 0.32s/step
+[19:55:07] step 400/25000 G=0.151 (l1=0.098 lp=0.197 gan=0.266) D=0.255 0.32s/step
+[19:55:39] step 500/25000 G=0.153 (l1=0.087 lp=0.202 gan=0.249) D=0.251 0.32s/step
+[19:56:10] step 600/25000 G=0.149 (l1=0.078 lp=0.177 gan=0.240) D=0.258 0.32s/step
+[19:56:42] step 700/25000 G=0.157 (l1=0.119 lp=0.206 gan=0.245) D=0.247 0.32s/step
+[19:57:14] step 800/25000 G=0.159 (l1=0.092 lp=0.200 gan=0.229) D=0.245 0.32s/step
+[19:57:45] step 900/25000 G=0.153 (l1=0.080 lp=0.171 gan=0.279) D=0.249 0.32s/step
+[19:58:17] step 1000/25000 G=0.154 (l1=0.094 lp=0.204 gan=0.249) D=0.250 0.32s/step
+[19:58:49] step 1100/25000 G=0.157 (l1=0.073 lp=0.170 gan=0.299) D=0.250 0.32s/step
+[19:59:21] step 1200/25000 G=0.149 (l1=0.044 lp=0.102 gan=0.282) D=0.251 0.32s/step
+[19:59:53] step 1300/25000 G=0.151 (l1=0.100 lp=0.207 gan=0.251) D=0.249 0.32s/step
+[20:00:25] step 1400/25000 G=0.159 (l1=0.092 lp=0.214 gan=0.406) D=0.246 0.32s/step
+[20:00:57] step 1500/25000 G=0.163 (l1=0.095 lp=0.187 gan=0.284) D=0.246 0.32s/step
+[20:01:29] step 1600/25000 G=0.154 (l1=0.094 lp=0.174 gan=0.211) D=0.250 0.32s/step
+[20:02:01] step 1700/25000 G=0.153 (l1=0.079 lp=0.172 gan=0.239) D=0.246 0.32s/step
+[20:02:34] step 1800/25000 G=0.156 (l1=0.122 lp=0.227 gan=0.216) D=0.246 0.32s/step
+[20:03:06] step 1900/25000 G=0.160 (l1=0.079 lp=0.200 gan=0.351) D=0.248 0.32s/step
+[20:03:38] step 2000/25000 G=0.156 (l1=0.085 lp=0.205 gan=0.255) D=0.249 0.32s/step
+[20:03:38] [save] v20_s2000.pt
+[20:04:11] step 2100/25000 G=0.159 (l1=0.074 lp=0.168 gan=0.411) D=0.249 0.32s/step
+[20:04:43] step 2200/25000 G=0.154 (l1=0.093 lp=0.190 gan=0.254) D=0.243 0.32s/step
+[20:05:16] step 2300/25000 G=0.163 (l1=0.078 lp=0.210 gan=0.348) D=0.239 0.32s/step
+[20:05:48] step 2400/25000 G=0.152 (l1=0.107 lp=0.225 gan=0.282) D=0.248 0.32s/step
+[20:06:20] step 2500/25000 G=0.156 (l1=0.086 lp=0.196 gan=0.271) D=0.251 0.32s/step
+[20:06:52] step 2600/25000 G=0.167 (l1=0.103 lp=0.204 gan=0.231) D=0.243 0.32s/step
+[20:07:25] step 2700/25000 G=0.166 (l1=0.100 lp=0.229 gan=0.325) D=0.243 0.32s/step
+[20:07:58] step 2800/25000 G=0.157 (l1=0.067 lp=0.169 gan=0.301) D=0.245 0.32s/step
+[20:08:30] step 2900/25000 G=0.164 (l1=0.076 lp=0.190 gan=0.427) D=0.245 0.32s/step
+[20:09:02] step 3000/25000 G=0.171 (l1=0.122 lp=0.211 gan=0.252) D=0.242 0.32s/step
+[20:09:35] step 3100/25000 G=0.150 (l1=0.050 lp=0.127 gan=0.508) D=0.252 0.32s/step
+[20:10:07] step 3200/25000 G=0.168 (l1=0.059 lp=0.158 gan=0.551) D=0.244 0.32s/step
+[20:10:40] step 3300/25000 G=0.165 (l1=0.106 lp=0.218 gan=0.309) D=0.247 0.32s/step
+[20:11:12] step 3400/25000 G=0.167 (l1=0.133 lp=0.221 gan=0.221) D=0.241 0.32s/step
+[20:11:42] step 3500/25000 G=0.156 (l1=0.078 lp=0.207 gan=0.303) D=0.247 0.32s/step
+[20:12:10] step 3600/25000 G=0.163 (l1=0.098 lp=0.215 gan=0.285) D=0.239 0.32s/step
+[20:12:37] step 3700/25000 G=0.156 (l1=0.096 lp=0.222 gan=0.171) D=0.247 0.32s/step
+[20:13:05] step 3800/25000 G=0.171 (l1=0.116 lp=0.243 gan=0.220) D=0.244 0.32s/step
+[20:13:33] step 3900/25000 G=0.156 (l1=0.083 lp=0.189 gan=0.290) D=0.247 0.32s/step
+[20:14:01] step 4000/25000 G=0.158 (l1=0.082 lp=0.185 gan=0.227) D=0.244 0.32s/step
+[20:14:01] [save] v20_s4000.pt
+[20:14:28] step 4100/25000 G=0.158 (l1=0.080 lp=0.168 gan=0.397) D=0.248 0.31s/step
+[20:14:55] step 4200/25000 G=0.171 (l1=0.122 lp=0.252 gan=0.220) D=0.250 0.31s/step
+[20:15:23] step 4300/25000 G=0.160 (l1=0.092 lp=0.195 gan=0.231) D=0.242 0.31s/step
+[20:15:50] step 4400/25000 G=0.155 (l1=0.092 lp=0.224 gan=0.204) D=0.248 0.31s/step

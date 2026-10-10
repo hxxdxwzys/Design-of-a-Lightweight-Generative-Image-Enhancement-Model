@@ -1,0 +1,31 @@
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[sweep] 16 checkpoints, width=32
+  net_s1000.pt: lpips=0.3986 clipiqa=0.3882 Q=19.87
+  net_s2000.pt: lpips=0.3571 clipiqa=0.5169 Q=26.35
+  net_s3000.pt: lpips=0.3645 clipiqa=0.5037 Q=25.59
+  net_s4000.pt: lpips=0.3580 clipiqa=0.5656 Q=28.27
+  net_s5000.pt: lpips=0.3603 clipiqa=0.5156 Q=26.19
+  net_s6000.pt: lpips=0.3605 clipiqa=0.4972 Q=25.45
+  net_s7000.pt: lpips=0.3644 clipiqa=0.5064 Q=25.70
+  net_s8000.pt: lpips=0.3611 clipiqa=0.4956 Q=25.37
+  net_s9000.pt: lpips=0.3676 clipiqa=0.4596 Q=23.72
+  net_s10000.pt: lpips=0.3632 clipiqa=0.4926 Q=25.18
+  net_s11000.pt: lpips=0.3677 clipiqa=0.4459 Q=23.17
+  net_s12000.pt: lpips=0.3675 clipiqa=0.4620 Q=23.82
+  net_s13000.pt: lpips=0.3702 clipiqa=0.4725 Q=24.15
+  net_s14000.pt: lpips=0.3712 clipiqa=0.4538 Q=23.38
+  net_s15000.pt: lpips=0.3747 clipiqa=0.4517 Q=23.18
+  net_s16000.pt: lpips=0.3721 clipiqa=0.4499 Q=23.19
+
+=== sorted by Q (best first) ===
+  net_s4000.pt: lpips=0.3580 clipiqa=0.5656 Q=28.27
+  net_s2000.pt: lpips=0.3571 clipiqa=0.5169 Q=26.35
+  net_s5000.pt: lpips=0.3603 clipiqa=0.5156 Q=26.19
+  net_s7000.pt: lpips=0.3644 clipiqa=0.5064 Q=25.70
+  net_s3000.pt: lpips=0.3645 clipiqa=0.5037 Q=25.59
+  net_s6000.pt: lpips=0.3605 clipiqa=0.4972 Q=25.45
+  net_s8000.pt: lpips=0.3611 clipiqa=0.4956 Q=25.37
+  net_s10000.pt: lpips=0.3632 clipiqa=0.4926 Q=25.18
+  net_s13000.pt: lpips=0.3702 clipiqa=0.4725 Q=24.15
+  net_s12000.pt: lpips=0.3675 clipiqa=0.4620 Q=23.82
+[saved] D:\tmp_timing\sweep_f2k.json

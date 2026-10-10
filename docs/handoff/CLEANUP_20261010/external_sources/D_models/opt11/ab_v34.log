@@ -1,0 +1,2 @@
+pkg_TinyRefV3 median 7.45 ms best 5.27 -> factor 2.003 | clipiqa 0.7952 IT 28.68 -> 预测 57.5
+pkg_TinyRefV4 median 7.50 ms best 5.10 -> factor 2.001 | clipiqa 0.8046 IT 28.93 -> 预测 57.9

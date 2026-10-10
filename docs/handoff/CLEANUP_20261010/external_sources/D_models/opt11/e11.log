@@ -1,0 +1,10 @@
+[E11] refiner ch=16 blocks=2 arch=default steps=6000
+  10/30 1.5 s/张
+  20/30 1.5 s/张
+  30/30 1.5 s/张
+E11_RENDER_DONE -> D:\models\opt11\e11_v4ref_on_vosr
+Loading pretrained model MUSIQ from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\musiq_koniq_ckpt-e95806b9.pth
+Loading pretrained model MANIQA from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\ckpt_koniq10k.pt
+PROXY E11_v4ref_on_vosr -> {"clipiqa": 0.8366, "niqe": 8.9133, "musiq": 63.6284, "maniqa": 0.487, "lapvar": 9445.5, "n": 30, "dir": "D:\\models\\opt11\\e11_v4ref_on_vosr", "tag": "E11_v4ref_on_vosr"}
+  (160.2 s, 30 张)
+PROXY_SUITE_DONE

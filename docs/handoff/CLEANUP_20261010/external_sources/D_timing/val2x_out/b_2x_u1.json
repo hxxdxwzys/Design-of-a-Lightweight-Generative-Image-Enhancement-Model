@@ -1,0 +1,29 @@
+{
+ "label": "u1_1x",
+ "mean": {
+  "clipiqa": 0.9208,
+  "lpips": 0.3829,
+  "psnr": 24.541,
+  "ssim": 0.7397
+ },
+ "per": {
+  "case1": {
+   "clipiqa": 0.9481,
+   "lpips": 0.5006,
+   "psnr": 21.413,
+   "ssim": 0.6299
+  },
+  "case2": {
+   "clipiqa": 0.8975,
+   "lpips": 0.2697,
+   "psnr": 28.258,
+   "ssim": 0.8116
+  },
+  "case3": {
+   "clipiqa": 0.9168,
+   "lpips": 0.3783,
+   "psnr": 23.952,
+   "ssim": 0.7775
+  }
+ }
+}

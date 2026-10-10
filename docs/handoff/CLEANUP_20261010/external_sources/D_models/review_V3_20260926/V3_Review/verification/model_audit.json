@@ -1,0 +1,11 @@
+{
+  "total": 876662,
+  "groups": {
+    "unet": 871139,
+    "ref": 5523
+  },
+  "dtypes": [
+    "torch.float16"
+  ],
+  "execution": "CPU load only, no model forward"
+}

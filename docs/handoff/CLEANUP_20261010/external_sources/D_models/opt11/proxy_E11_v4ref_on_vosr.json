@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.8366,
+ "niqe": 8.9133,
+ "musiq": 63.6284,
+ "maniqa": 0.487,
+ "lapvar": 9445.5,
+ "n": 30,
+ "dir": "D:\\models\\opt11\\e11_v4ref_on_vosr",
+ "tag": "E11_v4ref_on_vosr"
+}

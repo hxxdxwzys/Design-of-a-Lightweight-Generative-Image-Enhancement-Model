@@ -1,0 +1,22 @@
+[08-20 03:49:37] [boot] B lpips 精修启动
+[08-20 03:49:37] [refine] v2/lora_s1500.pt -> ref_v2* (w_clip=0, 800 步, lr 1e-5)
+[08-20 05:07:47] [refine] v2: exit=0
+[08-20 05:07:47] [refine] v3/lora_s500.pt -> ref_v3* (w_clip=0, 800 步, lr 1e-5)
+[08-20 06:16:53] [refine] v3: exit=0
+[08-20 06:16:53] [valgate] v2_ref_v2_s200
+[08-20 06:19:58] [valgate] v2_ref_v2_s200: clip=0.6229 lpips=0.3924 pass=False
+[08-20 06:19:58] [valgate] v2_ref_v2_s400
+[08-20 06:23:09] [valgate] v2_ref_v2_s400: clip=0.5388 lpips=0.3918 pass=False
+[08-20 06:23:09] [valgate] v2_ref_v2_s600
+[08-20 06:26:18] [valgate] v2_ref_v2_s600: clip=0.5156 lpips=0.3906 pass=False
+[08-20 06:26:18] [valgate] v2_ref_v2_s800
+[08-20 06:29:28] [valgate] v2_ref_v2_s800: clip=0.515 lpips=0.3888 pass=False
+[08-20 06:29:28] [valgate] v3_ref_v3_s200
+[08-20 06:32:39] [valgate] v3_ref_v3_s200: clip=0.5645 lpips=0.4029 pass=False
+[08-20 06:32:39] [valgate] v3_ref_v3_s400
+[08-20 06:35:52] [valgate] v3_ref_v3_s400: clip=0.5133 lpips=0.3993 pass=False
+[08-20 06:35:52] [valgate] v3_ref_v3_s600
+[08-20 06:39:04] [valgate] v3_ref_v3_s600: clip=0.4717 lpips=0.4002 pass=False
+[08-20 06:39:04] [valgate] v3_ref_v3_s800
+[08-20 06:42:18] [valgate] v3_ref_v3_s800: clip=0.478 lpips=0.3974 pass=False
+[08-20 06:42:18] [done] 精修门控完成, 唤醒代理

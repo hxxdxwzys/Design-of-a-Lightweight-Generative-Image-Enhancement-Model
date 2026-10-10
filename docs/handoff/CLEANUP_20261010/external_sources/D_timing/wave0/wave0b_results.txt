@@ -1,0 +1,5 @@
+v14_ss2400_sc1.0: clip=0.9170 lpips=0.4023
+v14_ss2600_sc1.0: clip=0.9186 lpips=0.3858
+v14_ss2800_sc1.0: clip=0.9047 lpips=0.3794
+v14_ss3000_sc1.0: clip=0.9136 lpips=0.3777
+v14_ss3000_sc0.95: clip=0.9069 lpips=0.3745

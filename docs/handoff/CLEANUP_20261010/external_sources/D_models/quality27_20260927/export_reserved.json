@@ -1,0 +1,8 @@
+{
+  "steps": 2000,
+  "checkpoint_sha256": "c050dd3afbef0b1ed1d840c559277afd0746628520aa19edae1e0766ec0a9b61",
+  "parent_sha256": "2770215987e2b5585dc26870a8a6fee05672bbf514267336498a1bf9e6409b62",
+  "reads": [],
+  "export_forward_reserved": 13,
+  "new_model": "conditional residual refiner; unchanged inherited one-step UNet"
+}

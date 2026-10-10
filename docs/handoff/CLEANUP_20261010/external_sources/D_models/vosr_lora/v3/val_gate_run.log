@@ -1,0 +1,140 @@
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9350 lpips=0.5488
+[val] case2: clipiqa=0.8574 lpips=0.2979
+[val] case3: clipiqa=0.8919 lpips=0.4048
+[gate] clip=0.8948 lpips=0.4172 pass=False
+Traceback (most recent call last):
+  File "D:\tmp_timing\val_gate.py", line 67, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\val_gate.py", line 63, in main
+    Path(args.out).write_text(json.dumps(res, indent=1), encoding='utf-8')
+                              ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "D:\Python\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Python\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9393 lpips=0.5461
+[val] case2: clipiqa=0.8749 lpips=0.3111
+[val] case3: clipiqa=0.9073 lpips=0.4052
+[gate] clip=0.9072 lpips=0.4208 pass=False
+Traceback (most recent call last):
+  File "D:\tmp_timing\val_gate.py", line 67, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\val_gate.py", line 63, in main
+    Path(args.out).write_text(json.dumps(res, indent=1), encoding='utf-8')
+                              ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "D:\Python\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Python\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9503 lpips=0.5293
+[val] case2: clipiqa=0.8913 lpips=0.3077
+[val] case3: clipiqa=0.9153 lpips=0.3999
+[gate] clip=0.919 lpips=0.4123 pass=False
+Traceback (most recent call last):
+  File "D:\tmp_timing\val_gate.py", line 67, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\val_gate.py", line 63, in main
+    Path(args.out).write_text(json.dumps(res, indent=1), encoding='utf-8')
+                              ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "D:\Python\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Python\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9494 lpips=0.5284
+[val] case2: clipiqa=0.8983 lpips=0.3155
+[val] case3: clipiqa=0.9161 lpips=0.4021
+[gate] clip=0.9213 lpips=0.4153 pass=False
+Traceback (most recent call last):
+  File "D:\tmp_timing\val_gate.py", line 67, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\val_gate.py", line 63, in main
+    Path(args.out).write_text(json.dumps(res, indent=1), encoding='utf-8')
+                              ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "D:\Python\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Python\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9508 lpips=0.5300
+[val] case2: clipiqa=0.9004 lpips=0.3196
+[val] case3: clipiqa=0.9174 lpips=0.4026
+[gate] clip=0.9229 lpips=0.4174 pass=False
+Traceback (most recent call last):
+  File "D:\tmp_timing\val_gate.py", line 67, in <module>
+    main()
+    ~~~~^^
+  File "D:\tmp_timing\val_gate.py", line 63, in main
+    Path(args.out).write_text(json.dumps(res, indent=1), encoding='utf-8')
+                              ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "D:\Python\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Python\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Python\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9350 lpips=0.5488
+[val] case2: clipiqa=0.8574 lpips=0.2979
+[val] case3: clipiqa=0.8919 lpips=0.4048
+[gate] clip=0.8948 lpips=0.4172 pass=False
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9393 lpips=0.5461
+[val] case2: clipiqa=0.8749 lpips=0.3111
+[val] case3: clipiqa=0.9073 lpips=0.4052
+[gate] clip=0.9072 lpips=0.4208 pass=False
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9503 lpips=0.5293
+[val] case2: clipiqa=0.8913 lpips=0.3077
+[val] case3: clipiqa=0.9153 lpips=0.3999
+[gate] clip=0.919 lpips=0.4123 pass=False
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9494 lpips=0.5284
+[val] case2: clipiqa=0.8983 lpips=0.3155
+[val] case3: clipiqa=0.9161 lpips=0.4021
+[gate] clip=0.9213 lpips=0.4153 pass=False
+Loading pretrained model LPIPS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\LPIPS_v0.1_alex-df73285e.pth
+[val] case1: clipiqa=0.9508 lpips=0.5300
+[val] case2: clipiqa=0.9004 lpips=0.3196
+[val] case3: clipiqa=0.9174 lpips=0.4026
+[gate] clip=0.9229 lpips=0.4174 pass=False

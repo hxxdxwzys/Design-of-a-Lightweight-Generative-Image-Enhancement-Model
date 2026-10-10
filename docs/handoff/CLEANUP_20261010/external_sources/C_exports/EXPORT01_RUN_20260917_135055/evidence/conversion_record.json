@@ -1,0 +1,44 @@
+{
+ "id": "EXPORT01-fp16-jit-v1",
+ "status": "DONE",
+ "method": "merge LoRA (peft.merge_and_unload, fp32) -> patch TimestepEmbedder casts -> module.half() -> torch.jit.trace 子模块 -> torch.jit.script 容器 -> save",
+ "script_sha256": "685bc48270a2045bedf1eff84af1a5f094eb67d8086fdc209557e1e1ce73b75c",
+ "command": "python build_export.py C:\\models\\exports\\EXPORT01_RUN_20260917_135055",
+ "env": {
+  "python": "3.13.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.7.0+cu126",
+  "torchvision": "0.22.0+cu126",
+  "diffusers": "0.39.0",
+  "peft": "0.20.0",
+  "safetensors": "0.8.0",
+  "numpy": "2.4.6",
+  "cv2": "5.0.0"
+ },
+ "time": "2026-09-17 13:51:47",
+ "parent_sha256": {
+  "base_weights": "45b6687b4ce59fa3451300f9e0fdcaf2e729c15e65f444af210a7851dfa13203",
+  "lora": "8b5193eddf0cb1fa26deaca1fd86e754cfaf2d778fdf5cb92b1de130a954771b",
+  "vae_dir": null,
+  "light_decoder": "a326a5e5c4a2445ce970987695979f3d5e5413d39b98c73a2ddac0055d2cdf59",
+  "dinov2_ckpt": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73"
+ },
+ "output_fingerprint": {
+  "file": "your_model.pt",
+  "sha256": "1bdafc4cc7e69911323e8f7235015965832e848c58b8c7fe426ac6974c6743a9",
+  "bytes": 1343295723,
+  "n_params_half": 670179498
+ },
+ "structural_changes": [
+  "t_embedder/r_embedder 包一层 CastOut(fp16)",
+  "VAE 编码器按 512/1024 两种 tile 尺寸分别 trace（同一权重、同一数值链）",
+  "LightDecoder 按 64/128 两种 latent tile 尺寸分别 trace",
+  "wavelet trace 于 64x64，形状通用（已验证 4K 尺寸可用）"
+ ],
+ "precision_migration": {
+  "from": "float32",
+  "to": "float16",
+  "postprocess_stays": "float32",
+  "noise_protocol": "噪声由 runner 以局部 Generator(seed) 生成后显式传入，模块内无随机算子"
+ }
+}

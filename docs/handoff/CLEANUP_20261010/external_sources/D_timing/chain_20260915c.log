@@ -1,0 +1,240 @@
+[09-14 20:34:35] >>> sweep_pix_slow
+Loading pretrained model DISTS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\DISTS_weights-f5e65c96.pth
+[val] 3 对 512 中心裁切已载入
+[model] pixrestore-b DiT 124.3M | encoder dinov2b | missing 0 unexpected 1
+   [lat] probe 1473.5 ms -> 3 次迭代 -> 1559.6 ms
+  case1 PSNR 20.616 SSIM 0.8788 LPIPS 0.5834 DISTS 0.2578
+  case2 PSNR 28.686 SSIM 0.9493 LPIPS 0.3191 DISTS 0.3001
+  case3 PSNR 20.493 SSIM 0.9296 LPIPS 0.4209 DISTS 0.3336
+[done] b10     1559.6 ms (  0.18x) | PSNR 23.265 SSIM 0.9193 LPIPS 0.4412 DISTS 0.2972 | 34s
+
+| 配置 | 512 时延 | 加速比 | PSNR | SSIM | LPIPS | DISTS |
+|---|---|---|---|---|---|---|
+| lq | — | 23.897 | 0.9246 | 0.4977 | 0.3139 |
+| m24 | 352.9 ms (0.81x) | 22.480 | 0.8966 | 0.4476 | 0.3642 |
+| s1 | 88.4 ms (3.23x) | 23.400 | 0.9152 | 0.4059 | 0.2935 |
+| b1 | 199.4 ms (1.43x) | 23.707 | 0.9199 | 0.4109 | 0.2907 |
+| b10 | 1559.6 ms (0.18x) | 23.265 | 0.9193 | 0.4412 | 0.2972 |
+SWEEP_DONE
+[model] pixrestore-l DiT 421.7M | encoder dinov2l | missing 0 unexpected 1
+   [lat] probe 559.3 ms -> 7 次迭代 -> 539.8 ms
+  case1 PSNR 20.278 SSIM 0.8638 LPIPS 0.5177 DISTS 0.2378
+  case2 PSNR 29.389 SSIM 0.9523 LPIPS 0.2781 DISTS 0.2973
+  case3 PSNR 21.320 SSIM 0.9401 LPIPS 0.3663 DISTS 0.3362
+[done] l1       539.8 ms (  0.53x) | PSNR 23.662 SSIM 0.9187 LPIPS 0.3874 DISTS 0.2904 | 24s
+
+| 配置 | 512 时延 | 加速比 | PSNR | SSIM | LPIPS | DISTS |
+|---|---|---|---|---|---|---|
+| lq | — | 23.897 | 0.9246 | 0.4977 | 0.3139 |
+| m24 | 352.9 ms (0.81x) | 22.480 | 0.8966 | 0.4476 | 0.3642 |
+| s1 | 88.4 ms (3.23x) | 23.400 | 0.9152 | 0.4059 | 0.2935 |
+| b1 | 199.4 ms (1.43x) | 23.707 | 0.9199 | 0.4109 | 0.2907 |
+| b10 | 1559.6 ms (0.18x) | 23.265 | 0.9193 | 0.4412 | 0.2972 |
+| l1 | 539.8 ms (0.53x) | 23.662 | 0.9187 | 0.3874 | 0.2904 |
+SWEEP_DONE
+   [lat] probe 4187.9 ms -> 3 次迭代 -> 4229.1 ms
+  case1 PSNR 20.327 SSIM 0.8684 LPIPS 0.5284 DISTS 0.2397
+  case2 PSNR 28.774 SSIM 0.9518 LPIPS 0.2855 DISTS 0.2925
+  case3 PSNR 21.034 SSIM 0.9395 LPIPS 0.3713 DISTS 0.3338
+[done] l10     4229.1 ms (  0.07x) | PSNR 23.378 SSIM 0.9199 LPIPS 0.3951 DISTS 0.2887 | 85s
+
+| 配置 | 512 时延 | 加速比 | PSNR | SSIM | LPIPS | DISTS |
+|---|---|---|---|---|---|---|
+| lq | — | 23.897 | 0.9246 | 0.4977 | 0.3139 |
+| m24 | 352.9 ms (0.81x) | 22.480 | 0.8966 | 0.4476 | 0.3642 |
+| s1 | 88.4 ms (3.23x) | 23.400 | 0.9152 | 0.4059 | 0.2935 |
+| b1 | 199.4 ms (1.43x) | 23.707 | 0.9199 | 0.4109 | 0.2907 |
+| b10 | 1559.6 ms (0.18x) | 23.265 | 0.9193 | 0.4412 | 0.2972 |
+| l1 | 539.8 ms (0.53x) | 23.662 | 0.9187 | 0.3874 | 0.2904 |
+| l10 | 4229.1 ms (0.07x) | 23.378 | 0.9199 | 0.3951 | 0.2887 |
+SWEEP_DONE
+[FAIL] xl1 -> ValueError: invalid literal for int() with base 10: 'l1'
+[FAIL] xl10 -> ValueError: invalid literal for int() with base 10: 'l10'
+
+| 配置 | 512 时延 | 加速比 | PSNR | SSIM | LPIPS | DISTS |
+|---|---|---|---|---|---|---|
+| lq | — | 23.897 | 0.9246 | 0.4977 | 0.3139 |
+| m24 | 352.9 ms (0.81x) | 22.480 | 0.8966 | 0.4476 | 0.3642 |
+| s1 | 88.4 ms (3.23x) | 23.400 | 0.9152 | 0.4059 | 0.2935 |
+| b1 | 199.4 ms (1.43x) | 23.707 | 0.9199 | 0.4109 | 0.2907 |
+| b10 | 1559.6 ms (0.18x) | 23.265 | 0.9193 | 0.4412 | 0.2972 |
+| l1 | 539.8 ms (0.53x) | 23.662 | 0.9187 | 0.3874 | 0.2904 |
+| l10 | 4229.1 ms (0.07x) | 23.378 | 0.9199 | 0.3951 | 0.2887 |
+SWEEP_DONE
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+D:\models/newsrc/dinov2_repo\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+D:\models/newsrc/dinov2_repo\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+D:\models/newsrc/dinov2_repo\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+D:\models/newsrc/dinov2_repo\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+D:\models/newsrc/dinov2_repo\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+D:\models/newsrc/dinov2_repo\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Traceback (most recent call last):
+  File "D:\tmp_timing\sweep_val_fullref.py", line 217, in main
+    one(key, res, val, save)
+    ~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\tmp_timing\sweep_val_fullref.py", line 266, in one
+    size = key[0]; steps = int(key[1:])
+                           ~~~^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'l1'
+Traceback (most recent call last):
+  File "D:\tmp_timing\sweep_val_fullref.py", line 217, in main
+    one(key, res, val, save)
+    ~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\tmp_timing\sweep_val_fullref.py", line 266, in one
+    size = key[0]; steps = int(key[1:])
+                           ~~~^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'l10'
+
+[09-14 20:37:07] <<< sweep_pix_slow rc=0 (2.5 min)
+[09-14 20:37:07] >>> sweep_pkg
+Loading pretrained model DISTS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\DISTS_weights-f5e65c96.pth
+[val] 3 对 512 中心裁切已载入
+[model] TinyV2g 0.87M (GT 目标 + CUDA Graph, 官方 33.2872) (已提交包 runner 原样)
+   [lat] probe 5.0 ms -> 50 次迭代 -> 4.3 ms
+  case1 PSNR 20.676 SSIM 0.8779 LPIPS 0.6415 DISTS 0.2756
+  case2 PSNR 29.794 SSIM 0.9541 LPIPS 0.2886 DISTS 0.3073
+  case3 PSNR 20.255 SSIM 0.9259 LPIPS 0.4408 DISTS 0.3358
+[done] pkgv2      4.3 ms ( 66.37x) | PSNR 23.575 SSIM 0.9193 LPIPS 0.4570 DISTS 0.3062 | 3s
+
+| 配置 | 512 时延 | 加速比 | PSNR | SSIM | LPIPS | DISTS |
+|---|---|---|---|---|---|---|
+| lq | — | 23.897 | 0.9246 | 0.4977 | 0.3139 |
+| m24 | 352.9 ms (0.81x) | 22.480 | 0.8966 | 0.4476 | 0.3642 |
+| s1 | 88.4 ms (3.23x) | 23.400 | 0.9152 | 0.4059 | 0.2935 |
+| b1 | 199.4 ms (1.43x) | 23.707 | 0.9199 | 0.4109 | 0.2907 |
+| b10 | 1559.6 ms (0.18x) | 23.265 | 0.9193 | 0.4412 | 0.2972 |
+| l1 | 539.8 ms (0.53x) | 23.662 | 0.9187 | 0.3874 | 0.2904 |
+| l10 | 4229.1 ms (0.07x) | 23.378 | 0.9199 | 0.3951 | 0.2887 |
+| pkgv2 | 4.3 ms (66.37x) | 23.575 | 0.9193 | 0.4570 | 0.3062 |
+SWEEP_DONE
+[model] TinyV5d 0.87M (LFdiff 结构蒸馏, 官方 33.0382) (已提交包 runner 原样)
+   [lat] probe 3.6 ms -> 50 次迭代 -> 3.6 ms
+  case1 PSNR 20.053 SSIM 0.8632 LPIPS 0.6240 DISTS 0.2857
+  case2 PSNR 27.934 SSIM 0.9399 LPIPS 0.2994 DISTS 0.3285
+  case3 PSNR 19.931 SSIM 0.9203 LPIPS 0.4491 DISTS 0.3704
+[done] pkgv5      3.6 ms ( 79.59x) | PSNR 22.639 SSIM 0.9078 LPIPS 0.4575 DISTS 0.3282 | 2s
+
+| 配置 | 512 时延 | 加速比 | PSNR | SSIM | LPIPS | DISTS |
+|---|---|---|---|---|---|---|
+| lq | — | 23.897 | 0.9246 | 0.4977 | 0.3139 |
+| m24 | 352.9 ms (0.81x) | 22.480 | 0.8966 | 0.4476 | 0.3642 |
+| s1 | 88.4 ms (3.23x) | 23.400 | 0.9152 | 0.4059 | 0.2935 |
+| b1 | 199.4 ms (1.43x) | 23.707 | 0.9199 | 0.4109 | 0.2907 |
+| b10 | 1559.6 ms (0.18x) | 23.265 | 0.9193 | 0.4412 | 0.2972 |
+| l1 | 539.8 ms (0.53x) | 23.662 | 0.9187 | 0.3874 | 0.2904 |
+| l10 | 4229.1 ms (0.07x) | 23.378 | 0.9199 | 0.3951 | 0.2887 |
+| pkgv2 | 4.3 ms (66.37x) | 23.575 | 0.9193 | 0.4570 | 0.3062 |
+| pkgv5 | 3.6 ms (79.59x) | 22.639 | 0.9078 | 0.4575 | 0.3282 |
+SWEEP_DONE
+[model] TinyV7gan 0.87M (GAN 蒸馏 M24 观感, 官方 41.7346) (已提交包 runner 原样)
+   [lat] probe 3.4 ms -> 50 次迭代 -> 3.6 ms
+  case1 PSNR 19.978 SSIM 0.8651 LPIPS 0.6421 DISTS 0.2937
+  case2 PSNR 28.112 SSIM 0.9368 LPIPS 0.3143 DISTS 0.3507
+  case3 PSNR 19.555 SSIM 0.9154 LPIPS 0.4476 DISTS 0.3784
+[done] pkgv7      3.6 ms ( 79.08x) | PSNR 22.548 SSIM 0.9058 LPIPS 0.4680 DISTS 0.3409 | 2s
+
+| 配置 | 512 时延 | 加速比 | PSNR | SSIM | LPIPS | DISTS |
+|---|---|---|---|---|---|---|
+| lq | — | 23.897 | 0.9246 | 0.4977 | 0.3139 |
+| m24 | 352.9 ms (0.81x) | 22.480 | 0.8966 | 0.4476 | 0.3642 |
+| s1 | 88.4 ms (3.23x) | 23.400 | 0.9152 | 0.4059 | 0.2935 |
+| b1 | 199.4 ms (1.43x) | 23.707 | 0.9199 | 0.4109 | 0.2907 |
+| b10 | 1559.6 ms (0.18x) | 23.265 | 0.9193 | 0.4412 | 0.2972 |
+| l1 | 539.8 ms (0.53x) | 23.662 | 0.9187 | 0.3874 | 0.2904 |
+| l10 | 4229.1 ms (0.07x) | 23.378 | 0.9199 | 0.3951 | 0.2887 |
+| pkgv2 | 4.3 ms (66.37x) | 23.575 | 0.9193 | 0.4570 | 0.3062 |
+| pkgv5 | 3.6 ms (79.59x) | 22.639 | 0.9078 | 0.4575 | 0.3282 |
+| pkgv7 | 3.6 ms (79.08x) | 22.548 | 0.9058 | 0.4680 | 0.3409 |
+SWEEP_DONE
+  case1 PSNR 18.958 SSIM 0.8349 LPIPS 0.5558 DISTS 0.2224
+  case2 PSNR 24.559 SSIM 0.8800 LPIPS 0.2339 DISTS 0.2461
+  case3 PSNR 18.841 SSIM 0.9042 LPIPS 0.3979 DISTS 0.3213
+[done] hypir_ct150  (文件型, 无时延) | PSNR 20.786 SSIM 0.8730 LPIPS 0.3959 DISTS 0.2633 | 1s
+  case1 PSNR 19.104 SSIM 0.8383 LPIPS 0.6174 DISTS 0.2496
+  case2 PSNR 25.614 SSIM 0.8986 LPIPS 0.2027 DISTS 0.2404
+  case3 PSNR 19.507 SSIM 0.9148 LPIPS 0.4632 DISTS 0.3568
+[done] hypir_2x1x   (文件型, 无时延) | PSNR 21.408 SSIM 0.8839 LPIPS 0.4278 DISTS 0.2823 | 1s
+
+| 配置 | 512 时延 | 加速比 | PSNR | SSIM | LPIPS | DISTS |
+|---|---|---|---|---|---|---|
+| lq | — | 23.897 | 0.9246 | 0.4977 | 0.3139 |
+| m24 | 352.9 ms (0.81x) | 22.480 | 0.8966 | 0.4476 | 0.3642 |
+| s1 | 88.4 ms (3.23x) | 23.400 | 0.9152 | 0.4059 | 0.2935 |
+| b1 | 199.4 ms (1.43x) | 23.707 | 0.9199 | 0.4109 | 0.2907 |
+| b10 | 1559.6 ms (0.18x) | 23.265 | 0.9193 | 0.4412 | 0.2972 |
+| l1 | 539.8 ms (0.53x) | 23.662 | 0.9187 | 0.3874 | 0.2904 |
+| l10 | 4229.1 ms (0.07x) | 23.378 | 0.9199 | 0.3951 | 0.2887 |
+| pkgv2 | 4.3 ms (66.37x) | 23.575 | 0.9193 | 0.4570 | 0.3062 |
+| pkgv5 | 3.6 ms (79.59x) | 22.639 | 0.9078 | 0.4575 | 0.3282 |
+| pkgv7 | 3.6 ms (79.08x) | 22.548 | 0.9058 | 0.4680 | 0.3409 |
+| hypir_ct150 | nan ms (nanx) | 20.786 | 0.8730 | 0.3959 | 0.2633 |
+| hypir_2x1x | nan ms (nanx) | 21.408 | 0.8839 | 0.4278 | 0.2823 |
+SWEEP_DONE
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+[09-14 20:37:23] <<< sweep_pkg rc=0 (0.3 min)
+[09-14 20:37:23] >>> hypir_test30
+[measure] {"niqe": 6.3231, "clipiqa": 0.4478, "lapvar": 224.5595, "n": 30, "dir": "D:/models/hypir/out_test100/result"}
+MEASURE_DIR_DONE
+D:\tmp_timing\measure_dir.py:36: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(im)).permute(2, 0, 1).unsqueeze(0).to(dev).float().div_(255)
+
+[09-14 20:38:29] <<< hypir_test30 rc=0 (1.1 min)
+[09-14 20:38:29] >>> render_v7g8k
+[render_subset] 30 张 (order=lex) -> D:\models\traj\v7g8k
+[render_subset] done 1.1 min
+RENDER_SUBSET_DONE
+D:\tmp_timing\render_subset.py:48: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(patch_u8).permute(2, 0, 1)[None].to('cuda').float().div_(127.5).sub_(1)
+
+[09-14 20:39:55] <<< render_v7g8k rc=0 (1.4 min)
+[09-14 20:39:55] >>> measure_v7g8k
+[measure] {"niqe": 5.5726, "clipiqa": 0.4446, "lapvar": 128.7426, "n": 30, "dir": "D:/models/traj/v7g8k"}
+MEASURE_DIR_DONE
+D:\tmp_timing\measure_dir.py:36: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(im)).permute(2, 0, 1).unsqueeze(0).to(dev).float().div_(255)
+
+[09-14 20:40:56] <<< measure_v7g8k rc=0 (1.0 min)
+[09-14 20:40:56] >>> render_v7g16k
+[render_subset] 30 张 (order=lex) -> D:\models\traj\v7g16k
+[render_subset] done 1.1 min
+RENDER_SUBSET_DONE
+D:\tmp_timing\render_subset.py:48: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(patch_u8).permute(2, 0, 1)[None].to('cuda').float().div_(127.5).sub_(1)
+
+[09-14 20:42:23] <<< render_v7g16k rc=0 (1.5 min)
+[09-14 20:42:23] >>> measure_v7g16k
+[measure] {"niqe": 5.2264, "clipiqa": 0.4817, "lapvar": 135.1808, "n": 30, "dir": "D:/models/traj/v7g16k"}
+MEASURE_DIR_DONE
+D:\tmp_timing\measure_dir.py:36: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(im)).permute(2, 0, 1).unsqueeze(0).to(dev).float().div_(255)
+
+[09-14 20:43:25] <<< measure_v7g16k rc=0 (1.0 min)
+[09-14 20:43:25] >>> render_v7g25k
+[render_subset] 30 张 (order=lex) -> D:\models\traj\v7g25k
+[render_subset] done 1.1 min
+RENDER_SUBSET_DONE
+D:\tmp_timing\render_subset.py:48: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(patch_u8).permute(2, 0, 1)[None].to('cuda').float().div_(127.5).sub_(1)
+
+[09-14 20:44:52] <<< render_v7g25k rc=0 (1.5 min)
+[09-14 20:44:52] >>> measure_v7g25k
+[measure] {"niqe": 5.3249, "clipiqa": 0.5059, "lapvar": 127.5851, "n": 30, "dir": "D:/models/traj/v7g25k"}
+MEASURE_DIR_DONE
+D:\tmp_timing\measure_dir.py:36: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  t = torch.from_numpy(np.asarray(im)).permute(2, 0, 1).unsqueeze(0).to(dev).float().div_(255)
+
+[09-14 20:45:54] <<< measure_v7g25k rc=0 (1.0 min)
+[09-14 20:45:54] CHAIN_C_DONE

@@ -1,0 +1,8 @@
+g3w18s1_s4500_sc1.0: clip=0.9305 lpips=0.3664
+g3w18s1_s4500_sc0.97: clip=0.9289 lpips=0.3644
+g3w18s1_s4500_sc0.95: clip=0.9275 lpips=0.3631
+g3w18s1_s4500_sc0.93: clip=0.9251 lpips=0.3618
+g3w20s7_s6500_sc1.0: clip=0.9315 lpips=0.3674
+g3w20s7_s6500_sc0.97: clip=0.9288 lpips=0.3649
+g3w20s7_s6500_sc0.95: clip=0.9267 lpips=0.3633
+g3w20s7_s6500_sc0.93: clip=0.9241 lpips=0.3619

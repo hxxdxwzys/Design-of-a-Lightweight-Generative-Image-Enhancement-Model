@@ -1,0 +1,29 @@
+{
+ "label": "u2_bicubic",
+ "mean": {
+  "clipiqa": 0.7547,
+  "lpips": 0.3799,
+  "psnr": 25.301,
+  "ssim": 0.7528
+ },
+ "per": {
+  "case1": {
+   "clipiqa": 0.836,
+   "lpips": 0.499,
+   "psnr": 21.866,
+   "ssim": 0.637
+  },
+  "case2": {
+   "clipiqa": 0.7087,
+   "lpips": 0.2564,
+   "psnr": 29.638,
+   "ssim": 0.8346
+  },
+  "case3": {
+   "clipiqa": 0.7195,
+   "lpips": 0.3843,
+   "psnr": 24.398,
+   "ssim": 0.7869
+  }
+ }
+}

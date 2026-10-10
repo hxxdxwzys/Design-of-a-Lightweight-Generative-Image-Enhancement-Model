@@ -1,0 +1,9 @@
+{
+  "parent": "421be231d504b1e1d20656ff7aa1c45a377434ff4762cc79c05416a2c7b5306d",
+  "model_sha256": "68d723dbb3f494eff468a8bd30815ff6cd3d417ad78d12e57f50f2af69b48518",
+  "checkpoint_sha256": "6a4954f7dd9fb16f86af1c1c291a269f175ba847b573af7f7c8fec4acda9916a",
+  "nonref_exact": true,
+  "ref_exact": true,
+  "graph_unchanged_in_memory": true,
+  "retrace": false
+}

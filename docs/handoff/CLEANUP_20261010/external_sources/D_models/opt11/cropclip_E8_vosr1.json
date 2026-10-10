@@ -1,0 +1,7 @@
+{
+ "tag": "E8_vosr1",
+ "dir": "D:\\models\\opt11\\e8_render",
+ "clipiqa_crop_mean": 0.7455,
+ "n": 30,
+ "crop": 512
+}

@@ -1,0 +1,11 @@
+# 赛道二 · 轻量一步扩散图像增强 —— 运行依赖（推理工程）
+# 说明：model_dir/runner.py 自身【只依赖 torch 与标准库】；下列为独立出图脚本 infer.py 的依赖。
+# 环境：Python 3.10+，单卡 NVIDIA GPU（>=8GB 显存，fp16），CUDA 12.x 驱动
+torch>=2.1,<3.0        # 使用 CUDA (cu121/cu126) 轮子；CPU 亦可跑通（仅功能验证，速度不具参考性）
+numpy>=1.24
+Pillow>=10.0
+
+# ---- 以下仅本地评测/复现实验需要，提交包里不参与推理 ----
+# pyiqa>=0.1.11        # 无参考指标 CLIPIQA/MUSIQ/MANIQA/NIQE（注意：需要 setuptools<81）
+# lpips>=0.1.4         # 有参考 LPIPS
+# setuptools<81        # pyiqa 的 clipiqa 依赖 pkg_resources

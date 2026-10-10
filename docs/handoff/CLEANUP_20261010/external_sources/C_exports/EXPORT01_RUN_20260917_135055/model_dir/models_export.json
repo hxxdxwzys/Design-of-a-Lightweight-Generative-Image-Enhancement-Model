@@ -1,0 +1,33 @@
+{
+ "schema": "EXPORT01-models-export/1",
+ "model_file": "your_model.pt",
+ "weight_dtype": "float16",
+ "postprocess_dtype": "float32",
+ "seed": 42,
+ "t_start": 1.0,
+ "t_end": 0.0,
+ "dit_tile_size": 512,
+ "dit_tile_overlap_cli": 32,
+ "vae_tile_size": 1024,
+ "vae_tile_overlap_cli": 32,
+ "patch_size": 2,
+ "vae_enc_trace_px": [
+  512,
+  1024
+ ],
+ "dec_trace_latent": [
+  64,
+  128
+ ],
+ "dinov2_input_size": 448,
+ "align_sigma": 5,
+ "posterior_mode": true,
+ "blend_accumulator_dtype": "float32",
+ "notes": [
+  "LoRA 已在 fp32 下 merge_and_unload 合并进基座；本文件为其 fp16 重载形态",
+  "TimestepEmbedder 输出显式转 fp16（原实现内部固定 float32 计算 cos/sin）",
+  "wavelet 后处理为忠实张量化实现，固定 fp32 执行",
+  "噪声由 runner 以局部 Generator(seed) 生成后显式传入，模块内无随机算子",
+  "分块/融合/补齐裁回等编排在 runner；数值主体全部在本 ScriptModule"
+ ]
+}

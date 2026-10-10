@@ -1,0 +1,66 @@
+[09-14 20:31:58] >>> sweep_val_fullref
+Loading pretrained model DISTS from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\DISTS_weights-f5e65c96.pth
+[val] 3 对 512 中心裁切已载入
+  case1 PSNR 21.023 SSIM 0.8856 LPIPS 0.7033 DISTS 0.2844
+  case2 PSNR 30.106 SSIM 0.9572 LPIPS 0.2864 DISTS 0.2938
+  case3 PSNR 20.560 SSIM 0.9309 LPIPS 0.5034 DISTS 0.3635
+[done] lq         0.0 ms (490720.86x) | PSNR 23.897 SSIM 0.9246 LPIPS 0.4977 DISTS 0.3139 | 1s
+[model] M24 VOSR 0.5B + v7_s5000 LoRA (合规 runner)
+  case1 PSNR 19.219 SSIM 0.8356 LPIPS 0.6581 DISTS 0.3217
+  case2 PSNR 27.598 SSIM 0.9266 LPIPS 0.2223 DISTS 0.3658
+  case3 PSNR 20.624 SSIM 0.9275 LPIPS 0.4623 DISTS 0.4051
+[done] m24      352.9 ms (  0.81x) | PSNR 22.480 SSIM 0.8966 LPIPS 0.4476 DISTS 0.3642 | 31s
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\Python\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+D:\models\final_compliant\model_dir\dinov2\layers\swiglu_ffn.py:152: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+D:\models\final_compliant\model_dir\dinov2\layers\attention.py:98: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+D:\models\final_compliant\model_dir\dinov2\layers\block.py:119: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Traceback (most recent call last):
+  File "D:\tmp_timing\sweep_val_fullref.py", line 224, in <module>
+    log('[done] %-5s %8.1f ms (%6.2fx) | PSNR %.3f SSIM %.4f LPIPS %.4f DISTS %.4f | %.0fs'
+    
+  File "D:\tmp_timing\sweep_val_fullref.py", line 195, in main
+    t_cfg = time.time()
+        ^^^^^
+  File "D:\tmp_timing\sweep_val_fullref.py", line 192, in <lambda>
+    if key in res['configs']:
+    
+  File "D:\tmp_timing\sweep_val_fullref.py", line 134, in make_pix
+    enc = load_dinov2(config.encoder_type, DEV, repository=config.dinov2_repository,
+                      checkpoint=config.dinov2_checkpoint)
+  File "D:\models\newsrc\PixRestore_code\pixrestore\vision.py", line 44, in load_dinov2
+    model = torch.hub.load(
+        repository or DINOV2_HUB,
+    ...<3 lines>...
+        pretrained=checkpoint is None,
+    )
+  File "D:\Python\Lib\site-packages\torch\hub.py", line 647, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+  File "D:\Python\Lib\site-packages\torch\hub.py", line 677, in _load_local
+    hub_module = _import_module(MODULE_HUBCONF, hubconf_path)
+  File "D:\Python\Lib\site-packages\torch\hub.py", line 115, in _import_module
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:/models/newsrc/dinov2_repo\hubconf.py", line 7, in <module>
+    from dinov2.hub.backbones import dinov2_vitb14, dinov2_vitg14, dinov2_vitl14, dinov2_vits14
+ModuleNotFoundError: No module named 'dinov2.hub'
+
+[09-14 20:32:40] <<< sweep_val_fullref rc=1 (0.7 min)
+[09-14 20:32:40] >>> hypir_test30
+[measure] {"niqe": NaN, "clipiqa": NaN, "n": 0}
+  (����: M24 clipiqa 0.9023 / niqe 5.2559 | TinyV1 0.3367 / 5.7899 | LQ 0.2752 / 7.8100)
+MEASURE_TEST30_DONE
+D:\Python\Lib\site-packages\numpy\_core\fromnumeric.py:3824: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+D:\Python\Lib\site-packages\numpy\_core\_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+
+[09-14 20:32:48] <<< hypir_test30 rc=0 (0.1 min)
+[09-14 20:32:48] CHAIN_A_DONE

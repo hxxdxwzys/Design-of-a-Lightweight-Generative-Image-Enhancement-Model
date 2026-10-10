@@ -1,0 +1,102 @@
+{
+ "m0s7_s097": {
+  "branch": "T_high",
+  "note": "T高最优 lpips",
+  "scale": 0.97,
+  "src_pkg": "final_compliant_m0s7",
+  "val_expect": [
+   0.9203,
+   0.3542
+  ],
+  "val": {
+   "clip": 0.9207,
+   "lpips": 0.3545,
+   "d_clip": 0.0004,
+   "d_lpips": 0.0003
+  },
+  "n_jpg": 100,
+  "test_clip": {
+   "n": 100,
+   "mean": 0.8837878376245498,
+   "std": 0.035432800588862945,
+   "min": 0.7330277562141418,
+   "max": 0.9408931136131287
+  },
+  "elapsed_min": 0.2
+ },
+ "m0s1_s097": {
+  "branch": "T_low",
+  "note": "T低唯一可产",
+  "scale": 0.97,
+  "src_pkg": "final_compliant_14b",
+  "val_expect": [
+   0.9311,
+   0.3595
+  ],
+  "val": {
+   "clip": 0.9305,
+   "lpips": 0.3593,
+   "d_clip": -0.0006,
+   "d_lpips": -0.0002
+  },
+  "n_jpg": 100,
+  "test_clip": {
+   "n": 100,
+   "mean": 0.8800961899757386,
+   "std": 0.03685671273660016,
+   "min": 0.7443756461143494,
+   "max": 0.9426279067993164
+  },
+  "elapsed_min": 0.2
+ },
+ "m0s1_s090": {
+  "branch": "T_high",
+  "note": "T高次选",
+  "scale": 0.9,
+  "src_pkg": "final_compliant_14b",
+  "val_expect": [
+   0.9209,
+   0.3556
+  ],
+  "val": {
+   "clip": 0.9215,
+   "lpips": 0.3558,
+   "d_clip": 0.0006,
+   "d_lpips": 0.0002
+  },
+  "n_jpg": 100,
+  "test_clip": {
+   "n": 100,
+   "mean": 0.8755403941869736,
+   "std": 0.03899655421419812,
+   "min": 0.7400800585746765,
+   "max": 0.9407866597175598
+  },
+  "elapsed_min": 0.2
+ },
+ "m0s1_s100": {
+  "branch": "T_low",
+  "note": "最高 clip 可产档",
+  "scale": 1.0,
+  "src_pkg": "final_compliant_14b",
+  "val_expect": [
+   0.9394,
+   0.3717
+  ],
+  "val": {
+   "clip": 0.9338,
+   "lpips": 0.3615,
+   "d_clip": -0.0056,
+   "d_lpips": -0.0102
+  },
+  "n_jpg": 100,
+  "test_clip": {
+   "n": 100,
+   "mean": 0.8816293728351593,
+   "std": 0.035990573472279075,
+   "min": 0.7437264323234558,
+   "max": 0.9424463510513306
+  },
+  "elapsed_min": 19.4
+ }
+}

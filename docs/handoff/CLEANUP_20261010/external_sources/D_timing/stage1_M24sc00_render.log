@@ -1,0 +1,10 @@
+[09-12 20:44:02] [assert] base=VOSR_0.5B_os dim=1024 depth=28 | lora dim=1024 depth=28 variant=v7 step=5000
+[09-12 20:44:02]    [ok] vosr_lora_infer.py + VOSR_0.5B_os 一致
+[09-12 20:44:02] [boot] 测试集 100 张, scale=0.0, arch=05b
+[09-12 20:44:02] ① 复用 0 张 -> D:\models\final_compliant_M24sc00\render_png
+[09-12 20:44:02] ② 待渲染 100 张
+[09-12 20:44:03]    渲染中: D:/tmp_timing/vosr_lora_infer.py -c C:/models/finals/preset/ckpts/VOSR_0.5B_os --lora D:/models/vosr_lora/v7/lora_s5000.pt ... (100 张, 预计 97 min)
+[09-12 22:29:33]    rc=0, 出图 100 张, 耗时 105.5 min
+[09-12 22:29:33] ③ PNG 合计 100/100
+[09-12 22:30:16] ④ 转换完成: 100/100 jpg -> D:\models\final_compliant_M24sc00\output_dir
+RENDER_PROBE_A_DONE

@@ -1,0 +1,50 @@
+{
+ "cands": [
+  {
+   "tag": "v6_s4000",
+   "val_clip": 0.9537,
+   "lpips": 0.4118,
+   "test_est": 0.9308,
+   "score": 416.0
+  },
+  {
+   "tag": "v6_s5000",
+   "val_clip": 0.9534,
+   "lpips": 0.412,
+   "test_est": 0.9305,
+   "score": 415.5
+  },
+  {
+   "tag": "v5_s4000_sc0.9",
+   "val_clip": 0.9326,
+   "lpips": 0.396,
+   "test_est": 0.9102,
+   "score": 414.2
+  },
+  {
+   "tag": "v6_s3000",
+   "val_clip": 0.9482,
+   "lpips": 0.4114,
+   "test_est": 0.9254,
+   "score": 411.4
+  },
+  {
+   "tag": "v6_s2000",
+   "val_clip": 0.9423,
+   "lpips": 0.4083,
+   "test_est": 0.9197,
+   "score": 409.5
+  },
+  {
+   "tag": "v6_s1000",
+   "val_clip": 0.9287,
+   "lpips": 0.4258,
+   "test_est": 0.9064,
+   "score": 377.6
+  }
+ ],
+ "best": "v5_s4000_sc0.9",
+ "best_score": 414.2,
+ "M20_base": 419.9,
+ "rel": -5.7
+}

@@ -1,0 +1,58 @@
+{
+ "schema": "EXPORT01-summary/1",
+ "generated_at": "2026-09-17 14:15:57",
+ "run_dir": "C:\\models\\exports\\EXPORT01_RUN_20260917_135055",
+ "stages": {
+  "C0": {
+   "c0_evidence": true,
+   "ra2_snapshot_files_changed_in_rb": [
+    "pair_verify.py",
+    "tests/test_pipe01_cpu.py"
+   ],
+   "cpu_tests": "21 tests OK (wavelet 11 + delivery/control 10)"
+  },
+  "C1": {
+   "verdict": "FAIL",
+   "same_precision_pass": false,
+   "fp16_vs_fp32_diagnostic_pass": false,
+   "model_sha256": "1bdafc4cc7e69911323e8f7235015965832e848c58b8c7fe426ac6974c6743a9",
+   "totals": {
+    "top_level_infers": 9,
+    "n_4k_infers": 4,
+    "peak_vram_mib": 3285.7
+   }
+  },
+  "C2": {
+   "verdict": null,
+   "n_ok": null,
+   "elapsed_s": null,
+   "jpeg_params": null
+  },
+  "C3": {
+   "zip_record": false,
+   "zip_bytes": null,
+   "zip_sha256": null,
+   "isolated_precheck_verdict": null,
+   "py38_syntax_ok": null,
+   "shadowing_risk": null
+  }
+ },
+ "conversion": {
+  "id": "EXPORT01-fp16-jit-v1",
+  "status": "DONE",
+  "output_sha256": "1bdafc4cc7e69911323e8f7235015965832e848c58b8c7fe426ac6974c6743a9",
+  "bytes": 1343295723
+ },
+ "resource": {
+  "grand_total_bytes": 1651797047,
+  "disk_free_gib": {
+   "C": 28.042,
+   "D": 14.383
+  }
+ },
+ "open_unknowns": [
+  "目标解释器/依赖环境实测（官方环境未提供）",
+  "官方提交资格（EXP-04 历史训练披露/官方接受边界）",
+  "fp16 相对 fp32 的图像质量影响（本轮只做数值诊断，不评 IQA、不选候选）"
+ ]
+}

@@ -1,0 +1,232 @@
+{
+ "schema": "SCORE01-gate/1",
+ "criteria": {
+  "median_avg_improvement_min": 0.1,
+  "p90_worsening_max": 0.05
+ },
+ "runs_ok": [
+  {
+   "file": "bench_baseline_p18124.json",
+   "label": "baseline",
+   "pid": 18124,
+   "attempt": "bench_base_p1",
+   "started_at": "2026-09-18 16:41:21",
+   "finished_at": null,
+   "temp_before": 58.0,
+   "temp_after": 72.0,
+   "vram_allocated_mib": 1918.4,
+   "load_s": 2.418,
+   "medians": {
+    "c1_512": 449.395,
+    "c7_512": 455.165,
+    "c25_512": 456.255
+   },
+   "p90": {
+    "c1_512": 455.585,
+    "c7_512": 462.73,
+    "c25_512": 460.917
+   },
+   "cold": {
+    "c1_512": 1071.481,
+    "c7_512": 438.086,
+    "c25_512": 423.339
+   },
+   "std": {
+    "c1_512": 6.686,
+    "c7_512": 9.144,
+    "c25_512": 5.382
+   }
+  },
+  {
+   "file": "bench_baseline_p28608.json",
+   "label": "baseline",
+   "pid": 28608,
+   "attempt": "bench_base_p3",
+   "started_at": "2026-09-18 17:03:18",
+   "finished_at": "2026-09-18 17:04:02",
+   "temp_before": 60.0,
+   "temp_after": 75.0,
+   "vram_allocated_mib": 1918.4,
+   "load_s": 2.343,
+   "medians": {
+    "c1_512": 525.04,
+    "c7_512": 527.97,
+    "c25_512": 527.701
+   },
+   "p90": {
+    "c1_512": 531.596,
+    "c7_512": 535.836,
+    "c25_512": 532.726
+   },
+   "cold": {
+    "c1_512": 1298.509,
+    "c7_512": 505.086,
+    "c25_512": 515.984
+   },
+   "std": {
+    "c1_512": 5.699,
+    "c7_512": 5.581,
+    "c25_512": 5.049
+   }
+  },
+  {
+   "file": "bench_candidate_p15312.json",
+   "label": "candidate",
+   "pid": 15312,
+   "attempt": "bench_cand_p1",
+   "started_at": "2026-09-18 16:49:41",
+   "finished_at": null,
+   "temp_before": 61.0,
+   "temp_after": 75.0,
+   "vram_allocated_mib": 1918.4,
+   "load_s": 2.482,
+   "medians": {
+    "c1_512": 516.436,
+    "c7_512": 518.851,
+    "c25_512": 519.341
+   },
+   "p90": {
+    "c1_512": 522.0,
+    "c7_512": 523.982,
+    "c25_512": 524.083
+   },
+   "cold": {
+    "c1_512": 1191.006,
+    "c7_512": 496.679,
+    "c25_512": 496.089
+   },
+   "std": {
+    "c1_512": 5.641,
+    "c7_512": 5.844,
+    "c25_512": 4.951
+   }
+  },
+  {
+   "file": "bench_candidate_p22092.json",
+   "label": "candidate",
+   "pid": 22092,
+   "attempt": "bench_cand_p2",
+   "started_at": "2026-09-18 16:56:15",
+   "finished_at": "2026-09-18 16:56:57",
+   "temp_before": 62.0,
+   "temp_after": 76.0,
+   "vram_allocated_mib": 1918.4,
+   "load_s": 2.537,
+   "medians": {
+    "c1_512": 516.201,
+    "c7_512": 520.955,
+    "c25_512": 521.56
+   },
+   "p90": {
+    "c1_512": 524.685,
+    "c7_512": 526.156,
+    "c25_512": 527.977
+   },
+   "cold": {
+    "c1_512": 1205.283,
+    "c7_512": 501.301,
+    "c25_512": 505.697
+   },
+   "std": {
+    "c1_512": 6.152,
+    "c7_512": 5.224,
+    "c25_512": 5.678
+   }
+  },
+  {
+   "file": "bench_candidate_p7840.json",
+   "label": "candidate",
+   "pid": 7840,
+   "attempt": "bench_cand_p3",
+   "started_at": "2026-09-18 17:04:04",
+   "finished_at": "2026-09-18 17:04:48",
+   "temp_before": 67.0,
+   "temp_after": 81.0,
+   "vram_allocated_mib": 1918.4,
+   "load_s": 2.459,
+   "medians": {
+    "c1_512": 528.282,
+    "c7_512": 531.32,
+    "c25_512": 535.808
+   },
+   "p90": {
+    "c1_512": 540.139,
+    "c7_512": 537.856,
+    "c25_512": 540.94
+   },
+   "cold": {
+    "c1_512": 1153.746,
+    "c7_512": 520.212,
+    "c25_512": 518.185
+   },
+   "std": {
+    "c1_512": 7.214,
+    "c7_512": 3.818,
+    "c25_512": 5.235
+   }
+  }
+ ],
+ "runs_failed": [
+  {
+   "file": "bench_baseline_p11488.json",
+   "attempt": "bench_base_p2",
+   "error": "BudgetExhausted: attempt ID 重复：bench_base_p2"
+  },
+  {
+   "file": "bench_baseline_p18192.json",
+   "attempt": "bench_base_p2",
+   "error": "BudgetExhausted: 重复调用 ID：bench_baseline_c1_512_cold_1（禁止双层预留/重复记账）"
+  }
+ ],
+ "windows": [
+  {
+   "window": "window1",
+   "baseline_pid": 18124,
+   "candidate_pid": 15312,
+   "baseline_at": "2026-09-18 16:41:21",
+   "candidate_at": "2026-09-18 16:49:41",
+   "baseline_median_avg_ms": 453.605,
+   "candidate_median_avg_ms": 518.209,
+   "improvement": -0.14242,
+   "p90_rel_change": {
+    "c1_512": 0.14578,
+    "c7_512": 0.13237,
+    "c25_512": 0.13704
+   },
+   "p90_ok": false,
+   "median_ok": false,
+   "window_pass": false
+  },
+  {
+   "window": "window2",
+   "baseline_pid": 28608,
+   "candidate_pid": 7840,
+   "baseline_at": "2026-09-18 17:03:18",
+   "candidate_at": "2026-09-18 17:04:04",
+   "baseline_median_avg_ms": 526.904,
+   "candidate_median_avg_ms": 531.803,
+   "improvement": -0.0093,
+   "p90_rel_change": {
+    "c1_512": 0.01607,
+    "c7_512": 0.00377,
+    "c25_512": 0.01542
+   },
+   "p90_ok": true,
+   "median_ok": false,
+   "window_pass": false
+  }
+ ],
+ "gate_pass": false,
+ "verdict": "FAIL",
+ "drift": {
+  "baseline_median_avg_ms": {
+   "18124": 453.605,
+   "28608": 526.904
+  },
+  "candidate_median_avg_ms": {
+   "15312": 518.209,
+   "22092": 519.572,
+   "7840": 531.803
+  }
+ }
+}

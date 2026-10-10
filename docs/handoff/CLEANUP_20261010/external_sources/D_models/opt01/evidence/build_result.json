@@ -1,0 +1,113 @@
+{
+ "started_at": "2026-09-18 18:05:27",
+ "assets_load_s": 34.291,
+ "patched_embedders": [
+  "t_embedder.mlp",
+  "r_embedder.mlp"
+ ],
+ "device_safe_timestep": [
+  "t_embedder.timestep_embedding(device=t.device)",
+  "r_embedder.timestep_embedding(device=t.device)"
+ ],
+ "vae_fp32": false,
+ "full_fp32": false,
+ "module_dtypes": {
+  "vae_encoder": "torch.float16",
+  "light_decoder": "torch.float16",
+  "dit": "torch.float16",
+  "dino": "torch.float16",
+  "boundary_casts": [
+   "enc_in fp16->fp16",
+   "latent fp16->fp16 (进入 DiT 前)",
+   "decode_in fp16->fp16",
+   "decode_out ->fp32 (wavelet 保持 fp32)"
+  ],
+  "embedder_cast": "CastIn(fp16)（全 FP32 下为恒等变换，见 chain.CastIn）",
+  "vae_posterior": "mode（抽样关闭）"
+ },
+ "trace_s": 8.653,
+ "trace_component_forwards": 7,
+ "model_bytes": 1343349163,
+ "model_sha256": "0a10f2c4f4a0fa7d9347288979a3f00ad4859be70a2ddd1c10cda48470b2fbbe",
+ "reload_ok_cpu": true,
+ "bundle_id": "EXPORT01R-58066a2f12c03074d0806166971e39db",
+ "component_refs": {
+  "inputs": [
+   "dec_128",
+   "dec_64",
+   "dino_512",
+   "enc_1024",
+   "enc_512",
+   "feats",
+   "latent",
+   "noise",
+   "wav_s",
+   "wav_t"
+  ],
+  "refs": [
+   "dec_128",
+   "dec_64",
+   "dino_512",
+   "enc_1024",
+   "enc_512",
+   "step_t0p5_r0p0",
+   "step_t1p0_r0p0",
+   "step_t1p0_r0p5",
+   "wavelet"
+  ],
+  "ref_sha256": {
+   "enc_512": "ef362622b108bb07ddccce5b84862334bc1aa4cce43c160ce1a262209903dc98",
+   "enc_1024": "fe97ae08c87056c0b86e927c9c846cdf002fd992f17b8f8a3d9994a655035cad",
+   "dino_512": "3950274a42d7ae233270584717a6fcf2a079cdc17c53968ab1fe7922d12a2a7b",
+   "dec_64": "811a13584fc6f70285e1c1fee5f9ede4d2ad8a0d42137375786375e1dcd485af",
+   "dec_128": "474ff3c4a5488488f6478aadd2d00b76cb4872d20f63c1ef8acd3dda24c04bb3",
+   "wavelet": "735ded2557fcf41c1b30e1112b7802867f0d681a5c4680fecec986e87cf6f425",
+   "step_t1p0_r0p0": "82d7c95c7b141fc238a09ffa493bf9ece6cc788150a0f0e8d5dc3dd678f5a8d1",
+   "step_t0p5_r0p0": "9a8a5ce570aa84ee6ccc814b29e6f3e3d202a159cdc98105178a34cb75f17a8e",
+   "step_t1p0_r0p5": "cf495e1ce41bc2775d2dd87d83907734c297b55419afed0e95a508b100b39a94"
+  },
+  "inputs_sha256": {
+   "enc_512": "f18bcd8a26f7384663389cc52a276e719086b4484725026255cd6f54fd5aa75e",
+   "enc_1024": "dcc6cca7b0d13f0c264dcfc0a455f13058069341dd455be0e254c2a3f5821119",
+   "dino_512": "5059214ea2526d92b1a9bf066c4be2dea73a66544fe335b10a8c68875d9a06b9",
+   "latent": "c834d0ff45856ff41acdb6fabbbe964bac6b4630ceb09e31d719cb285de92b1a",
+   "noise": "6472e75bcadca7bf12747d68896762a9902d8c2652f0ea6d57a356c98b89f88f",
+   "feats": "3f97cb5fbd440787cd7a38fb153b66cb5ac1940c6444ef640ffac578e2dd197c",
+   "dec_64": "e5cbbbd1c05064e550f3b9843b5976a98c27610394ca936b9c273a4bca7266e4",
+   "dec_128": "216f2a8523bd04cf4e740a6d5d0d12b3c363ac20aab8c89dde2c9e695d8ec1a1",
+   "wav_t": "6c28672bf506e920b8182c446c7eadf559f861cf56a7609e2a02779320d22a83",
+   "wav_s": "cd808deb7d93d7a15c70a6a98d3e2044e0e54b7db83158934ccefd523d00ab6e"
+  },
+  "flags": {
+   "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+   "deterministic_algorithms": true,
+   "cudnn_benchmark": false,
+   "cudnn_deterministic": true,
+   "cudnn_allow_tf32": false,
+   "matmul_allow_tf32": false,
+   "torch": "2.7.0+cu126"
+  },
+  "step_pairs": [
+   [
+    1.0,
+    0.0
+   ],
+   [
+    0.5,
+    0.0
+   ],
+   [
+    1.0,
+    0.5
+   ]
+  ],
+  "criteria": {
+   "max_abs": 1e-05,
+   "mean_abs": 1e-06,
+   "finite": true
+  }
+ },
+ "build_released": true,
+ "vram_after_build_release_mib": 1349.7,
+ "finished_at": "2026-09-18 18:06:25"
+}

@@ -1,0 +1,13 @@
+{
+  "zip": "D:\\models\\quality27_20260927\\Track2_V4t1_EdgeFix_Review_20260927.zip",
+  "zip_sha256": "8a9c23ebf788494eb7b623a576038c8c6c9f22f7c269ac19c380e98c8124c58d",
+  "bytes": 23676442,
+  "manifest_sha256": "59096f86df7806e6eb720b2cd7ea57bfa4b9aca75c2861a76e6cc9cdf4172ee6",
+  "ppt_sha256": "86a6fe3dc676b095d558f33ae701bf206b3899cc673b12c27529381013b240de",
+  "isolated_identity_exit": 0,
+  "isolated_cpu_exit": 0,
+  "isolated_identity_output": "IDENTITY_PASS; no GPU forward performed\n",
+  "isolated_cpu_output": "test_content_tamper_rejected (__main__.TestEdge.test_content_tamper_rejected) ... ok\ntest_coverage (__main__.TestEdge.test_coverage) ... ok\ntest_extra_file_rejected (__main__.TestEdge.test_extra_file_rejected) ... ok\ntest_identity_all_levels (__main__.TestEdge.test_identity_all_levels) ... ok\ntest_identity_white (__main__.TestEdge.test_identity_white) ... ok\ntest_missing_entries_rejected (__main__.TestEdge.test_missing_entries_rejected) ... ok\ntest_missing_manifest_rejected (__main__.TestEdge.test_missing_manifest_rejected) ... ok\ntest_nonfinite_rejected (__main__.TestEdge.test_nonfinite_rejected) ... ok\ntest_nonparent_model_rejected (__main__.TestEdge.test_nonparent_model_rejected) ... ok\ntest_small_input_rejected (__main__.TestEdge.test_small_input_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.172s\n\nOK\n",
+  "created_utc": "2026-09-27T05:10:39.147795+00:00",
+  "status": "ENGINEERING_REVISION_READY_NOT_OFFICIAL_SCORE_CERTIFICATION"
+}

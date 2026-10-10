@@ -1,0 +1,6 @@
+[C] C_512 max=0.000e+00 mean=0.000e+00 u8_identical=True
+[C] C_511x513 max=0.000e+00 mean=0.000e+00 u8_identical=True
+[C] C_case1_full max=0.000e+00 mean=0.000e+00 u8_identical=True
+[C] C_case7_full max=0.000e+00 mean=0.000e+00 u8_identical=True
+
+--- stderr ---

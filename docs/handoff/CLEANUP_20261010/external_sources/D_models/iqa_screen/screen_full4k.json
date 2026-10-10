@@ -1,0 +1,115 @@
+{
+ "schema": "PROXY-screen/1",
+ "metrics": [
+  "clipiqa",
+  "maniqa",
+  "niqe",
+  "musiq"
+ ],
+ "n_common": 4,
+ "cases": [
+  "case1",
+  "case5",
+  "case25",
+  "case88"
+ ],
+ "rows": {
+  "f_v7sc0.8": {
+   "dir": "D:\\models\\iqa_screen\\f_v7sc0.8",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9059,
+     "maniqa": 0.459,
+     "niqe": 5.8443,
+     "musiq": 39.7756
+    },
+    "case5": {
+     "clipiqa": 0.8729,
+     "maniqa": 0.5102,
+     "niqe": 6.4748,
+     "musiq": 45.2682
+    },
+    "case25": {
+     "clipiqa": 0.9181,
+     "maniqa": 0.5682,
+     "niqe": 5.6474,
+     "musiq": 44.8104
+    },
+    "case88": {
+     "clipiqa": 0.9142,
+     "maniqa": 0.46,
+     "niqe": 4.8714,
+     "musiq": 48.3665
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9027528315782547,
+    "maniqa": 0.49934183806180954,
+    "niqe": 5.709494978970035,
+    "musiq": 44.55514717102051
+   },
+   "n": {
+    "clipiqa": 4,
+    "maniqa": 4,
+    "niqe": 4,
+    "musiq": 4
+   }
+  },
+  "f_v6sc0.8": {
+   "dir": "D:\\models\\iqa_screen\\f_v6sc0.8",
+   "per_case": {
+    "case1": {
+     "clipiqa": 0.9296,
+     "maniqa": 0.4933,
+     "niqe": 6.26,
+     "musiq": 39.2164
+    },
+    "case5": {
+     "clipiqa": 0.9055,
+     "maniqa": 0.5273,
+     "niqe": 6.9979,
+     "musiq": 43.8544
+    },
+    "case25": {
+     "clipiqa": 0.9341,
+     "maniqa": 0.5611,
+     "niqe": 6.6469,
+     "musiq": 46.6666
+    },
+    "case88": {
+     "clipiqa": 0.928,
+     "maniqa": 0.4754,
+     "niqe": 5.0724,
+     "musiq": 45.6854
+    }
+   },
+   "mean": {
+    "clipiqa": 0.9243011921644211,
+    "maniqa": 0.514258936047554,
+    "niqe": 6.244306466279705,
+    "musiq": 43.855679512023926
+   },
+   "n": {
+    "clipiqa": 4,
+    "maniqa": 4,
+    "niqe": 4,
+    "musiq": 4
+   }
+  }
+ },
+ "composite": {
+  "f_v7sc0.8": 0.25,
+  "f_v6sc0.8": 0.25
+ },
+ "composite_metrics": [
+  "clipiqa",
+  "maniqa",
+  "musiq",
+  "niqe"
+ ],
+ "ranking": [
+  "f_v7sc0.8",
+  "f_v6sc0.8"
+ ],
+ "wall_s": 338.2
+}

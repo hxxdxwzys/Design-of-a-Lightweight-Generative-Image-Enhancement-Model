@@ -1,0 +1,38 @@
+{
+ "hypir_wins": [
+  "case5",
+  "case11",
+  "case17",
+  "case18",
+  "case31",
+  "case39",
+  "case41",
+  "case42",
+  "case44",
+  "case46",
+  "case47",
+  "case48",
+  "case51",
+  "case60",
+  "case69",
+  "case71",
+  "case83"
+ ],
+ "hypir_wins_m5": [
+  "case5",
+  "case17",
+  "case18",
+  "case31",
+  "case39",
+  "case41",
+  "case42",
+  "case44",
+  "case46",
+  "case47",
+  "case48",
+  "case51",
+  "case60",
+  "case69",
+  "case83"
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "baseline_ms": 285.6,
+ "pkgs": {
+  "M24(原版 sc0.8)": {
+   "median_ms": 366.2,
+   "best_ms": 354.7,
+   "speedup": 0.78
+  },
+  "M24p4(DiT 4/28)": {
+   "median_ms": 293.1,
+   "best_ms": 277.0,
+   "speedup": 0.975
+  },
+  "M24avg2(2样本)": {
+   "median_ms": 748.5,
+   "best_ms": 727.0,
+   "speedup": 0.382
+  }
+ }
+}

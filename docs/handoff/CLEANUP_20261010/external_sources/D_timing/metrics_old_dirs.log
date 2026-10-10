@@ -1,0 +1,7 @@
+[merge] 备份 v2b 条目并入 14 条
+[ok] old_s5000: clipiqa=0.4260 niqe=4.84
+[ok] old_s7000: clipiqa=0.4613 niqe=5.03
+[ok] old_s8000: clipiqa=0.4821 niqe=4.91
+[ok] old_s9000: clipiqa=0.4950 niqe=4.98
+[ok] old_s10000: clipiqa=0.4566 niqe=5.10
+[done] total entries=38

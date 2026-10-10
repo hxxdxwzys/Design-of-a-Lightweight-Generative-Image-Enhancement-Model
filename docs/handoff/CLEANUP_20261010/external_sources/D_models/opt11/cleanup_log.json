@@ -1,0 +1,66 @@
+[
+ {
+  "ts": "2026-09-22 02:40:54",
+  "path": "D:\\models\\wave2_m0s7_s097",
+  "files": null,
+  "MiB": 3984.6,
+  "reason": "wave2 scale-sweep 输出+打包模型（2026-09-15/16 实验，结论已落档；可从基座+LoRA 再生）",
+  "deleted": true,
+  "note": "事后补记：首次清理进程在删除后被杀，日志未写出",
+  "agent": "DeepSeek"
+ },
+ {
+  "ts": "2026-09-22 02:40:54",
+  "path": "D:\\models\\hypir",
+  "files": 363,
+  "MiB": 3791.6,
+  "reason": "HYPIR 基线对照出图（已否决路线；结论在 docs/reference/新世界模型分数对应表.md）",
+  "deleted": true,
+  "sample": [
+   "bench.log",
+   "bench2.log",
+   "bench3.log",
+   "bench384.log",
+   "bench384nc.log"
+  ],
+  "agent": "DeepSeek"
+ },
+ {
+  "ts": "2026-09-22 02:40:54",
+  "path": "D:\\models\\pipeline_baseline",
+  "files": 57,
+  "MiB": 1291.7,
+  "reason": "9/16-17 pipeline 基线中间件（.npy/.png，结论已落档）",
+  "deleted": true,
+  "sample": [
+   "PIPE01RB_20260917_021500\\attempt_01.worker_log.txt",
+   "PIPE01RB_20260917_021500\\budget_ledger.json",
+   "PIPE01RB_20260917_021500\\prep_log.txt",
+   "PIPE01RB_20260917_021500\\supervisor_stdout.txt",
+   "PIPE01_20260916_234741\\gpu_run_log.txt"
+  ],
+  "agent": "DeepSeek"
+ },
+ {
+  "ts": "2026-09-22 02:40:54",
+  "path": "D:\\models\\opt_probe",
+  "files": 85,
+  "MiB": 1279.3,
+  "reason": "OPT-10 探针模型副本（可从 C:/models/finals/preset/ckpts/VOSR_0.5B_os 再生；正式包在 D:\\models\\opt10）",
+  "deleted": true,
+  "sample": [
+   "model_dir\\runner.py",
+   "model_dir\\your_model.pt",
+   "model_dir\\dinov2\\__init__.py",
+   "model_dir\\models\\lightningdit.py",
+   "model_dir\\models\\light_decoder.py"
+  ],
+  "agent": "DeepSeek"
+ },
+ {
+  "ts": "2026-09-22 02:40:54",
+  "action": "freespace",
+  "D_free_GiB": 15.52,
+  "agent": "DeepSeek"
+ }
+]

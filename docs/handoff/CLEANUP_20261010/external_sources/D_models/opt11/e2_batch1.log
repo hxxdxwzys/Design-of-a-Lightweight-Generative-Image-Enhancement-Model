@@ -1,0 +1,5 @@
+Loading pretrained model MUSIQ from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\musiq_koniq_ckpt-e95806b9.pth
+Loading pretrained model MANIQA from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\ckpt_koniq10k.pt
+PROXY TinyV7gan -> {"clipiqa": 0.5059, "niqe": 5.3249, "musiq": 43.6769, "maniqa": 0.2357, "lapvar": 145.7, "n": 30, "dir": "D:\\models\\pkg_TinyV7gan\\output_dir", "tag": "TinyV7gan"}
+  (100.7 s, 30 张)
+PROXY_SUITE_DONE

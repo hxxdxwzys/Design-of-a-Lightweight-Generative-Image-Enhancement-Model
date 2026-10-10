@@ -1,0 +1,32 @@
+{
+ "schema": "BASE-screen/1",
+ "base": "C:\\models\\finals\\preset\\ckpts\\VOSR_0.5B_os\\checkpoints\\ema_model.safetensors",
+ "lora": "D:\\models\\vosr_lora\\v7\\lora_s5000.pt",
+ "scale": 0.8,
+ "steps": 1,
+ "seed": 42,
+ "images": [
+  {
+   "case": 1,
+   "wall_ms": 654.7,
+   "finite": true
+  },
+  {
+   "case": 10,
+   "wall_ms": 277.7,
+   "finite": true
+  },
+  {
+   "case": 11,
+   "wall_ms": 272.2,
+   "finite": true
+  },
+  {
+   "case": 12,
+   "wall_ms": 273.1,
+   "finite": true
+  }
+ ],
+ "build_s": 31.5,
+ "total_s": 33.5
+}

@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.9123,
+ "niqe": 5.1584,
+ "musiq": 65.8559,
+ "maniqa": 0.5721,
+ "lapvar": 1337.9,
+ "n": 30,
+ "dir": "D:\\models\\opt10\\output_dir",
+ "tag": "OPT10img"
+}

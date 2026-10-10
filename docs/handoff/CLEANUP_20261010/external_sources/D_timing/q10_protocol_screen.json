@@ -1,0 +1,21 @@
+{
+ "A_base": {
+  "maniqa": 0.523,
+  "clipiqa": 0.9292,
+  "niqe": 5.1555,
+  "lapvar": 813.1815,
+  "seam": 2.617,
+  "done": true
+ },
+ "B_vaefull": {
+  "done": false
+ },
+ "C_vae2048": {
+  "maniqa": 0.5134,
+  "clipiqa": 0.929,
+  "niqe": 5.1688,
+  "lapvar": 763.8234,
+  "seam": 2.6252,
+  "done": true
+ }
+}

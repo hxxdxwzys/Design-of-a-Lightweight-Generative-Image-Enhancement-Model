@@ -1,0 +1,10 @@
+{
+ "clipiqa": 0.9023,
+ "niqe": 5.2559,
+ "musiq": 62.8123,
+ "maniqa": 0.5113,
+ "lapvar": 617.0,
+ "n": 30,
+ "dir": "D:\\models\\pkg_M24img_V9brun\\output_dir",
+ "tag": "M24img"
+}

@@ -1,0 +1,48 @@
+{
+ "schema": "EXPORT01-isolated-precheck/1",
+ "zip": "D:\\models\\opt01\\Track2_OPT01_fp16full_v1.zip",
+ "zip_sha256": "a8a74e205be6a33bcdd8119d908fe83335814c43aab69c7e9cbd0b9ba09f145a",
+ "started_at": "2026-09-18 19:14:04",
+ "extract_dir": "C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\export01_precheck_oq5407cy",
+ "n_entries": 103,
+ "all_ascii": true,
+ "has_model_dir": true,
+ "n_jpg": 100,
+ "forbidden_dirs": [],
+ "model_file_hashes_match": true,
+ "py38_syntax": {
+  "runner.py": "OK"
+ },
+ "py38_syntax_ok": true,
+ "shadowing_risk": "NONE",
+ "forward_exit_code": 0,
+ "forward_wall_s": 4.957,
+ "forward_stdout_tail": [
+  "{\"ok\": true, \"shape\": [1, 3, 512, 512], \"dtype\": \"torch.float32\", \"finite\": true, \"min\": -1.0, \"max\": 1.0, \"sha256\": \"c81af542c21011d9dd06a9b7cde40e0b0ec6d40bd7acac46fd541462e32e244f\", \"timing\": {\"encode_s\": 0.5934, \"features_s\": 0.0726, \"dit_s\": 0.3235, \"decode_s\": 0.1037, \"postprocess_s\": 0.0197, \"infer_s\": 1.1166}}"
+ ],
+ "forward_stderr_tail": [],
+ "forward_result": {
+  "ok": true,
+  "shape": [
+   1,
+   3,
+   512,
+   512
+  ],
+  "dtype": "torch.float32",
+  "finite": true,
+  "min": -1.0,
+  "max": 1.0,
+  "sha256": "c81af542c21011d9dd06a9b7cde40e0b0ec6d40bd7acac46fd541462e32e244f",
+  "timing": {
+   "encode_s": 0.5934,
+   "features_s": 0.0726,
+   "dit_s": 0.3235,
+   "decode_s": 0.1037,
+   "postprocess_s": 0.0197,
+   "infer_s": 1.1166
+  }
+ },
+ "wall_s": 17.034,
+ "verdict": "PASS"
+}

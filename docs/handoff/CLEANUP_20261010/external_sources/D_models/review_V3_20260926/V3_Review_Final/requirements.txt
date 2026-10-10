@@ -1,0 +1,6 @@
+# Recorded review environment: CPython 3.13.0, Windows 11, NVIDIA CUDA.
+# No dependencies were installed or changed during preparation.
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.7.0+cu126
+numpy==2.4.6
+Pillow==12.3.0

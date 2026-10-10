@@ -1,0 +1,8 @@
+[export_in512] rc=0 31s :: EXPORT_COMBINED_DONE
+[render30] rc=0 109s :: RENDER_PKG_DONE
+E12_RENDER_DONE
+Loading pretrained model MUSIQ from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\musiq_koniq_ckpt-e95806b9.pth
+Loading pretrained model MANIQA from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\ckpt_koniq10k.pt
+PROXY E12_stu512 -> {"clipiqa": 0.7018, "niqe": 8.0295, "musiq": 53.6912, "maniqa": 0.3456, "lapvar": 2955.9, "n": 30, "dir": "D:\\models\\opt11\\e12_render", "tag": "E12_stu512"}
+  (131.9 s, 30 张)
+PROXY_SUITE_DONE

@@ -1,0 +1,6 @@
+Loading pretrained model MUSIQ from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\musiq_koniq_ckpt-e95806b9.pth
+Loading pretrained model MANIQA from C:\Users\Yuki Nagato\.cache\torch\hub\pyiqa\ckpt_koniq10k.pt
+   case1    full4k  musiq = 43.3827 (290.4 s)
+   case1    full4k  maniqa = 0.4101 (16.1 s)
+   case1    crop512 musiq = 61.7312 (0.4 s)
+   case1    crop512 maniqa = 0.2872 (16.8 s)

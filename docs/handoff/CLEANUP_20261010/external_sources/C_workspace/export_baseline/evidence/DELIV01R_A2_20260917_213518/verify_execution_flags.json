@@ -1,0 +1,9 @@
+{
+ "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+ "deterministic_algorithms": true,
+ "cudnn_benchmark": false,
+ "cudnn_deterministic": true,
+ "cudnn_allow_tf32": false,
+ "matmul_allow_tf32": false,
+ "torch": "2.7.0+cu126"
+}

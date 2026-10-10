@@ -1,0 +1,166 @@
+{
+ "schema_version": "EXPORT01R-bundle-manifest/1",
+ "bundle_id": "EXPORT01R-623be0ab77effde267c02e0d2424e2af",
+ "created_at": "2026-09-17 21:44:06",
+ "parents": [
+  {
+   "role": "base_weights",
+   "path": "C:\\models\\finals\\preset\\ckpts\\VOSR_0.5B_os\\checkpoints\\ema_model.safetensors",
+   "bytes": 1948337520,
+   "sha256": "45b6687b4ce59fa3451300f9e0fdcaf2e729c15e65f444af210a7851dfa13203"
+  },
+  {
+   "role": "lora",
+   "path": "D:\\models\\vosr_lora\\v7\\lora_s5000.pt",
+   "bytes": 67435697,
+   "sha256": "8b5193eddf0cb1fa26deaca1fd86e754cfaf2d778fdf5cb92b1de130a954771b"
+  },
+  {
+   "role": "light_decoder",
+   "path": "C:\\models\\finals\\preset\\ckpts\\sd21_lwdecoder.pth",
+   "bytes": 52086482,
+   "sha256": "a326a5e5c4a2445ce970987695979f3d5e5413d39b98c73a2ddac0055d2cdf59"
+  },
+  {
+   "role": "dinov2_ckpt",
+   "path": "C:\\models\\finals\\preset\\ckpts\\torch_cache\\checkpoints\\dinov2_vitb14_pretrain.pth",
+   "bytes": 346378731,
+   "sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73"
+  },
+  {
+   "role": "vae",
+   "path": "C:\\models\\finals\\preset\\ckpts\\stable-diffusion-2-1-base\\vae",
+   "vae_state_dict_sha256": "fa2a5af5a8b0bcbe291e06dc1fceadb6cb9670175167c97f63e154c6b36a15f1",
+   "vae_config_sha256": "1bd16652112e74a872af9ef483725b4281cf2ef51530c5ceceb4b22ad83e4fe9",
+   "vae_dir": "C:\\models\\finals\\preset\\ckpts\\stable-diffusion-2-1-base\\vae",
+   "n_state_keys": 248
+  },
+  {
+   "role": "base_dit(peft, fp32)",
+   "path": "C:/models/finals/preset/ckpts/VOSR_0.5B_os/checkpoints/ema_model.safetensors",
+   "base_state_dict_sha256": "8ef35c3e41751189cc688622cefe4f7986666815fabf819e35f2332d4dbd2626"
+  }
+ ],
+ "conversion": {
+  "id": "EXPORT01R-fp16-jit-v1",
+  "status": "DONE",
+  "method": "merge_and_unload(fp32) -> CastIn(fp16) on t_embedder.mlp/r_embedder.mlp -> module.half() -> torch.jit.trace 子模块 -> torch.jit.script 容器 -> torch.jit.save",
+  "script_sha256": "3e16f0e999f3dda9860492ddc0209602c8608fe10132edbaf1a43ce8d8f329a4",
+  "env": {
+   "python": "3.13.0",
+   "platform": "Windows-11-10.0.26200-SP0",
+   "torch": "2.7.0+cu126",
+   "torchvision": "0.22.0+cu126",
+   "diffusers": "0.39.0",
+   "peft": "0.20.0",
+   "safetensors": "0.8.0",
+   "numpy": "2.4.6",
+   "cv2": "5.0.0"
+  },
+  "time": "2026-09-17 21:44:06",
+  "parent_sha256": {
+   "base_weights": "45b6687b4ce59fa3451300f9e0fdcaf2e729c15e65f444af210a7851dfa13203",
+   "lora": "8b5193eddf0cb1fa26deaca1fd86e754cfaf2d778fdf5cb92b1de130a954771b",
+   "light_decoder": "a326a5e5c4a2445ce970987695979f3d5e5413d39b98c73a2ddac0055d2cdf59",
+   "dinov2_ckpt": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+   "vae": null,
+   "base_dit(peft, fp32)": null
+  },
+  "output_fingerprint": {
+   "file": "your_model.pt",
+   "sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+   "bytes": 1536683563
+  },
+  "cast_wrapping": [
+   "t_embedder.mlp",
+   "r_embedder.mlp"
+  ],
+  "device_binding_fix": [
+   "t_embedder.timestep_embedding(device=t.device)",
+   "r_embedder.timestep_embedding(device=t.device)"
+  ],
+  "structural_changes": [
+   "t_embedder.mlp / r_embedder.mlp 入口 CastIn(fp16)",
+   "VAE 编码 512/1024 两种 tile trace（同权重同链）",
+   "LightDecoder 64/128 两种 latent tile trace",
+   "wavelet trace 于 64x64，形状通用"
+  ]
+ },
+ "files": [
+  {
+   "path": "your_model.pt",
+   "role": "jit_model",
+   "bytes": 1536683563,
+   "sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793"
+  },
+  {
+   "path": "runner.py",
+   "role": "delivery_runner",
+   "bytes": 13032,
+   "sha256": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314"
+  },
+  {
+   "path": "models_export.json",
+   "role": "recipe",
+   "bytes": 1399,
+   "sha256": "3a1f0605cc6dae20cd69d991617ad9cbb6d86774ba2e9792f2471a695a2275d2"
+  }
+ ],
+ "numeric_recipe": {
+  "weight_dtype": "float16",
+  "postprocess_dtype": "float32",
+  "blend_accumulator_dtype": "float32",
+  "seed": 42,
+  "t_start": 1.0,
+  "t_end": 0.0,
+  "dit_tile_size": 512,
+  "dit_tile_overlap_cli": 32,
+  "vae_tile_size": 1024,
+  "vae_tile_overlap_cli": 32,
+  "patch_size": 2,
+  "align_sigma": 5,
+  "posterior_mode": true,
+  "vae_enc_trace_px": [
+   512,
+   1024
+  ],
+  "dec_trace_latent": [
+   64,
+   128
+  ],
+  "dinov2_input_size": 448,
+  "noise_protocol": "runner 局部 torch.Generator(seed=42) 生成 fp32 噪声后 .half() 显式传入",
+  "fusion_semantics": "DitStep 返回更新后的 z1；分块对 z1 做高斯加权融合（不再二次减 dt·u）",
+  "execution_mode": {
+   "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+   "torch.use_deterministic_algorithms": "True(warn_only=False)",
+   "cudnn_benchmark": false,
+   "cudnn_deterministic": true,
+   "cudnn_allow_tf32": false,
+   "matmul_allow_tf32": false,
+   "torch.jit.optimized_execution": false
+  }
+ },
+ "reload_verification": {
+  "status": "PENDING",
+  "protocol": "r_verify.run_verification"
+ },
+ "model_dtypes": {
+  "vae_encoder": "torch.float32",
+  "light_decoder": "torch.float32",
+  "dit": "torch.float16",
+  "dino": "torch.float16",
+  "boundary_casts": [
+   "enc_in fp16->torch.float32",
+   "latent torch.float32->fp16 (进入 DiT 前)",
+   "decode_in fp16->torch.float32",
+   "decode_out ->fp32 (wavelet 保持 fp32)"
+  ]
+ },
+ "runtime_source_sha256": {
+  "chain.py": "e341d8602fa7f141756223345852f40ec0b4250649dc9baafa428fdd45f2195a",
+  "delivery_runner.py": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314",
+  "r_build.py": "3e16f0e999f3dda9860492ddc0209602c8608fe10132edbaf1a43ce8d8f329a4",
+  "export_config.json": "ae68e3660df7501e6fe3aa38021d7eeda7499adfdb5c5b1b381a8797c65e6f96"
+ }
+}

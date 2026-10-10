@@ -1,0 +1,46 @@
+== 逐点反解 IT（p=0.19, c0=2.0）==
+   M24_v3         old  m24   score= 43.6951 c=0.9023 t=  366.20 factor=0.999 IT=  43.74
+   M24_v4         old  m24   score= 43.5844 c=0.9023 t=  366.20 factor=0.999 IT=  43.63
+   M24img_V7gan   old  m24   score= 94.7249 c=0.9023 t=    4.62 factor=2.144 IT=  44.19
+   M24img_V4g     old  m24   score=105.6401 c=0.9023 t=    1.60 factor=2.407 IT=  43.90
+   ProbeSlow8     old  m24   score= 28.7538 c=0.9023 t= 2929.60 factor=0.674 IT=  42.69
+   probeA_sc04    old  m24   score= 43.2837 c=0.7700 t=  366.20 factor=0.999 IT=  43.33
+   M24sc00        old  m24   score= 37.6316 c=0.6448 t=  366.20 factor=0.999 IT=  37.67
+   TinyV1         old  tiny  score= 27.3521 c=0.3367 t=   44.83 factor=1.478 IT=  18.51
+   TinyV2         old  tiny  score= 29.4225 c=0.3532 t=   12.65 factor=1.843 IT=  15.96
+   TinyV2g        old  tiny  score= 33.2872 c=0.3532 t=    3.30 factor=2.236 IT=  14.89
+   TinyV5d        old  tiny  score= 33.0382 c=0.3897 t=    3.30 factor=2.236 IT=  14.78
+   TinyV7gan      old  tiny  score= 41.7346 c=0.5059 t=    2.61 factor=2.296 IT=  18.18
+   TinyV9b        old  tiny  score= 40.5757 c=0.6409 t=   21.03 factor=1.691 IT=  23.99
+   PixB           old  pix   score= 18.9710 c=0.3143 t=  155.90 factor=1.173 IT=  16.17
+   TinyV21        new  ref   score= 68.6681 c=0.6306 t=    4.19 factor=2.171 IT=  31.63
+   TinyRefV3      new  ref   score= 70.1021 c=0.7952 t=    6.68 factor=2.036 IT=  34.43
+   TinyRefV4      new  ref   score= 69.4540 c=0.8046 t=    7.00 factor=2.022 IT=  34.35
+   TinyRefV4us0   new  ref   score= 68.6300 c=0.7846 t=    6.60 factor=2.040 IT=  33.65
+
+== 各子集 IT(clipiqa) 幂律拟合（检验单曲线是否成立）==
+   新时代 refiner 线 (n=4)        b= 0.204  A=  39.0  R2=0.961  (n=4)
+   旧时代 tiny 家族 (n=6)          b= 0.184  A=  25.6  R2=0.502  (n=6)
+   旧时代 m24 家族 (n=7)           b= 0.248  A=  49.2  R2=0.818  (n=7)
+   旧时代 tiny+m24 (n=13)        b= 0.483  A=  52.3  R2=0.852  (n=13)
+   全部 (n=18)                  b= 0.419  A=  48.3  R2=0.833  (n=18)
+
+== 速度指数 p 独立标定（同时代同图，仅换测速件）==
+   M24_v3     vs V7ganrun   : p = 0.193
+   M24_v3     vs V4grun     : p = 0.191
+   M24_v3     vs Slow8      : p = 0.202
+   V7ganrun   vs V4grun     : p = 0.179
+   V7ganrun   vs Slow8      : p = 0.196
+   V4grun     vs Slow8      : p = 0.194
+   ⇒ p 的 6 个两两估计: min 0.179 max 0.202 mean 0.192（跨度 0.023）
+
+== 乘法 vs 加法结构（仅新时代 4 点，速度跨度 1.7x）==
+   TinyV21        clipiqa=0.6306 | 乘法隐含 IT= 31.63 | 加法隐含 IT= 53.19
+   TinyRefV3      clipiqa=0.7952 | 乘法隐含 IT= 34.43 | 加法隐含 IT= 55.90
+   TinyRefV4      clipiqa=0.8046 | 乘法隐含 IT= 34.35 | 加法隐含 IT= 55.39
+   TinyRefV4us0   clipiqa=0.7846 | 乘法隐含 IT= 33.65 | 加法隐含 IT= 54.40
+
+== 饱和性检验：不同子集给出的斜率差异有多大 ==
+   新时代 refiner 线 b=0.204（平缓） vs 旧时代跨家族 b=0.483（陡） ⇒ 斜率估计**不稳定**
+   若用 b=0.204：+0.05 clipiqa 值 1.2% IT；若用 b=0.483：值 3.0% IT
+E1_DONE

@@ -1,0 +1,126 @@
+{
+ "_doc": "探针预登记表 (2026-09-12 立). 规矩: 预测必须在提交【前】写入本文件; 分数出来后只允许追加 actual, 不允许修改 prediction. 这是 '小心求证' 的防作弊环. 判读规则见 SUBMIT_RUNBOOK_20260909.md §2.7",
+ "_thresholds": {
+  "noise_floor": 0.5,
+  "decidable": 1.0,
+  "note": "官方同图重交配对差 0.007~0.458 -> |Δ|<0.5 视为噪声, <1.0 视为不可判"
+ },
+ "_models": {
+  "niqe_linear": "Score = 104.884 - 11.681*niqe   (拟合一/测试集30张口径, rmse 0.296, 拟合区间 niqe 5.2559~6.3695)",
+  "musiq_linear": "Score = -23.926 + 1.468*musiq   (rmse 0.809)",
+  "clipiqa_linear": "Score = -234.122 + 305.435*clipiqa   (rmse 2.626, 已被符号检验证伪)",
+  "lpips_world": "旧世界公式 Score ≈ C + S + clip - 400*lpips   (仅供方向外推, 未在当前世界校准)",
+  "_caveat": "R1: 上述模型仅在 niqe 5.26~6.37 区间内验证过; 超出该区间 1 倍以上的预测一律标为'待验证猜想'"
+ },
+ "reference": {
+  "tag": "M24",
+  "desc": "0.5B VOSR + v7_s5000 LoRA @ scale 0.8, 已交",
+  "official": [43.6951, 43.6731, 43.5844],
+  "official_mean": 43.6509,
+  "test30": {"niqe": 5.2559, "musiq": 46.1257, "clipiqa": 0.9023},
+  "val": {"psnr": 24.604, "ssim": 0.7417, "lpips": 0.3789, "dists": 0.2960,
+          "clipiqa": 0.9193, "musiq": 48.141, "maniqa": 0.5140, "niqe": 5.1723}
+ },
+ "probes": [
+  {
+   "id": "probeA_sc04",
+   "zip": "Track2_probeA_sc04.zip",
+   "knob": "LoRA scale 0.8 -> 0.4 (单旋钮; 模型/runner/速度完全不变)",
+   "axes": "D1 感知(部分) + D2 保真(小幅)",
+   "val": {"psnr": 24.471, "ssim": 0.7440, "lpips": 0.3612, "dists": 0.2500,
+           "clipiqa": 0.7867, "musiq": 45.875, "maniqa": 0.4763, "niqe": 4.4586},
+   "val_delta_vs_ref": {"niqe": -0.7137, "lpips": -0.0177, "dists": -0.0460,
+                        "clipiqa": -0.1326, "musiq": -2.266, "maniqa": -0.0377, "ssim": 0.0023},
+   "prediction": {
+    "H1_niqe_family": {"range": [50.5, 58.0],
+      "basis": "niqe_linear, 用 val→test 偏移 (+0.084) 推 test niqe≈4.543 -> 51.8; 若 test niqe≈4.10 -> 57.0"},
+    "H2_perceptual_family": {"range": [0.0, 43.6],
+      "basis": "clipiqa/musiq/maniqa 全部变差; clipiqa 若有权重则大幅下跌"},
+    "H_null": {"range": [42.6, 44.7], "basis": "该旋钮落在我方覆盖区间之外/幅度不足"},
+    "H_fidelity": {"range": [43.6, 52.0], "basis": "lpips_world 方向外推 400*0.0177=+7.1"}
+   },
+   "decision_rule": "≥50 -> 锁定 niqe 家族, 沿该轴放大; 44.7~50 -> 不可判, 等 sc0.0/sc1.0 全曲线; ≤44.7 -> 该旋钮无收益, 转 D2/D3",
+   "falsifies_if_null": "排除 '在我们可达的 niqe 区间内存在陡斜率' 这一整类假设",
+   "status": "rendering",
+   "actual": null
+  },
+  {
+   "id": "M24sc00",
+   "zip": "Track2_M24sc00.zip",
+   "knob": "LoRA scale 0.8 -> 0.0 (纯基座 VOSR, 等于关掉 LoRA)",
+   "axes": "D2 保真(我方最优点: val lpips/dists 最低) + D1 niqe 次优",
+   "val": {"psnr": 24.389, "ssim": 0.7453, "lpips": 0.3421, "dists": 0.2105,
+           "clipiqa": 0.6149, "musiq": 42.136, "maniqa": 0.4452, "niqe": 4.7491},
+   "val_delta_vs_ref": {"niqe": -0.4232, "lpips": -0.0368, "dists": -0.0855,
+                        "clipiqa": -0.3044, "musiq": -6.005, "maniqa": -0.0688},
+   "prediction": {
+    "H1_niqe_family": {"range": [46.0, 50.0], "basis": "niqe_linear, test niqe≈4.833 -> 48.4"},
+    "H_fidelity": {"range": [55.0, 62.0], "basis": "lpips_world 400*0.0368=+14.7 -> 58.4"},
+    "H2_perceptual_family": {"range": [0.0, 35.0], "basis": "clipiqa -0.30 是全部资产里最差"},
+    "H_null": {"range": [42.6, 44.7]}
+   },
+   "decision_rule": "≥55 -> 保真轴成立(重大); 46~50 -> niqe 轴; ≤44.7 -> 两轴皆非, 全面转 D3 速度轴",
+   "falsifies_if_null": "排除 '保真与 niqe 两条质量轴在我们可达区间内都有陡斜率'",
+   "status": "queued",
+   "actual": null
+  },
+  {
+   "id": "M24sc10",
+   "zip": "Track2_M24sc10.zip",
+   "knob": "LoRA scale 0.8 -> 1.0",
+   "axes": "D1 感知(clipiqa/maniqa 最高) + D2 最差",
+   "val": {"psnr": 24.711, "ssim": 0.7394, "lpips": 0.3956, "dists": 0.3006,
+           "clipiqa": 0.9376, "musiq": 45.572, "maniqa": null, "niqe": 5.6660},
+   "val_delta_vs_ref": {"niqe": 0.4937, "lpips": 0.0167, "clipiqa": 0.0183, "musiq": -2.569},
+   "prediction": {
+    "H1_niqe_family": {"range": [36.0, 40.0], "basis": "niqe_linear, test niqe≈5.75 -> 37.7"},
+    "H_fidelity": {"range": [36.0, 41.0], "basis": "lpips_world 400*(-0.0167)=-6.7"},
+    "H2_perceptual_family": {"range": [45.0, 52.0], "basis": "clipiqa 最高 +0.0183, 若 clipiqa 有权重则上升"},
+    "H_null": {"range": [42.6, 44.7]}
+   },
+   "decision_rule": "≥45 -> clipiqa 家族复活(与 §16.95 的符号检验冲突, 需重新审视); 36~40 -> niqe 轴再确认; 42.6~44.7 -> 质量轴整体无陡斜率",
+   "falsifies_if_null": "排除 'clipiqa/musiq/maniqa 是得分轴'",
+   "status": "queued",
+   "actual": null
+  }
+ ],
+ "_stages_pending": {
+  "stage2_seed_ensemble": {
+   "desc": "同模型同速度, N=4 种子潜空间平均 (纯离线算力)",
+   "axis": "D2 大幅移动",
+   "status": "❌ 已按预登记门槛【砍掉】(2026-09-12 21:56)",
+   "result_val_4k": {"niqe": {"single": 5.1722, "avg4": 5.6355, "delta": 0.4633},
+                     "psnr": {"single": 24.6038, "avg4": 24.8953, "delta": 0.2915},
+                     "ssim": {"single": 0.7417, "avg4": 0.7518, "delta": 0.01}},
+   "gate": "门槛 niqe Δ ≤ -0.30 才做全量; 实测 +0.4633 (反而更差) -> 砍掉, 省 12.7h GPU + 1 发",
+   "pipeline_validation": "s8 单样本复现参照值到小数点后四位 (niqe 5.1722 vs 5.1723 / psnr 24.6038 vs 24.6040 / ssim 0.7417 vs 0.7417) -> 测量管线可信",
+   "side_finding": "种子平均是【保真↑ / niqe↓】的反向权衡 (psnr +0.29, ssim +0.010, 但 niqe +0.46), 与 scale 族方向相反 -> 将来若要切开 H_niqe vs H_fidelity, 这是一个现成的判别工具 (成本 12.7h)",
+   "cost_gpu_h": 12.7,
+   "shots": 0
+  },
+  "stage3_speed_axis": {
+   "desc": "把加速比抬到 >1 (D3 零覆盖区)",
+   "shots": 2,
+   "status": "🔴 2026-09-13 00:0x 重新定向: DiT 剪枝路线已判死, 改为【零质量变化的纯速度探针】",
+   "R1_correction": "2026-09-12 19:00 自我更正: 早先口头说的'剪枝 28->7 层 ≈ 4-8x' 没有依据 —— 它隐含假设 DiT 占满全部时延。实测 DiT 仅占 29%, 剪到 4 层全链只快 24%。",
+   "new_finding_20260913": {
+    "fact": "出货版 runner.py 是【纯 eager PyTorch + autocast】(_FullChain.forward), your_model.pt 只是权重字典 —— 没有任何 JIT/cudnn 优化。",
+    "consequence": "本探针改 runner 内部实现, output_dir 逐字节不变 => 分数变化只能归因于速度, 质量混淆为零。",
+    "prereg": {
+     "H_speed_steep": {"if": "S ≈ 18.2*ln(ratio) 且不封顶", "pred": "ratio 提升 m 倍 -> Δ分 ≈ 18.2*ln(m)"},
+     "H_speed_clamped": {"if": "S 在 ratio<=1 时封顶为 0", "pred": "ratio 从 <1 提到略 >1 -> Δ分 ≈ 0~3"},
+     "H_null_speed": {"if": "速度项也不主导", "pred": "|Δ| < 1 分 (噪声级)"}
+    },
+    "decision": "Δ ≥ +5 -> 速度轴确认, 全线转速度工程(剪枝+轻量化); |Δ| < 1 -> 速度亦死, 回到'未知项'假设"
+   }
+  }
+   "baseline_anchor": {"value_ms": 285.6, "basis": "旧世界同机实测: 1.40ms x 204x", "caveat": "OSEDiff 权重与 4 个 JIT 文件已从磁盘消失, 无法复测 -> 标为历史测量"},
+   "our_current": {"value_ms": 328, "ratio": 0.87, "caveat": "需在安静 GPU 上重测并做组件分解"},
+   "plan": [
+    "第 1 步(必须先做): 在安静 GPU 上测 512 前向的组件分解 (DINOv2 / DiT / VAE encode / decode)",
+    "第 2 步: 按分解结果定档位 —— 目标是三处一起动 (DiT 深度 + DINOv2 替换或裁剪 + VAE 侧)",
+    "第 3 步: 两档剂量-反应 (例如 ~1.5x 与 ~3x), 用于区分'无速度项'与'有阈值/饱和'"
+   ]
+  }
+ }
+}

@@ -1,4 +1,4 @@
-param([ValidateSet('Backup','Protect','Release','Clean')][string]$Mode='Backup')
+param([ValidateSet('Backup','Protect','Verify','Release','Clean')][string]$Mode='Backup')
 $ErrorActionPreference='Stop'
 $repo='C:\生成式图像增强轻量模型设计挑战'
 $archive='D:\project_archive_20261010'
@@ -36,6 +36,7 @@ function SafeTarget([string]$path){
     $ok=$false
     foreach($a in $allowed){if($p.StartsWith($a,[StringComparison]::OrdinalIgnoreCase)){$ok=$true}}
     if($p -in 'D:\tmp','D:\tmp_timing','D:\venv_faithdiff','D:\venv_osediff','D:\venv_tadsr'){$ok=$true}
+    if($p -eq 'D:\project_archive_20261010\small_weights'){$ok=$true}
     if($p -match '^D:\\tmp_(g1_case17|render_A|render_B|s1b|s1b2|v4)\.npy$'){$ok=$true}
     if(!$ok -or $p -in 'C:\','D:\',$repo,'C:\models','D:\models','D:\datasets'){throw "Unsafe deletion target: $p"}
     $protectedRoots=@('D:\models\upload','D:\models\vosr_lora','D:\models\final_compliant','D:\models\finals','D:\models\finals_20260927','D:\models\review_V3_20260926','D:\models\quality27_20260927','D:\models\v3_fidelity27_20260927','D:\datasets\div2k','D:\datasets\flickr2k')
@@ -209,6 +210,60 @@ if($Mode -eq 'Protect'){
     Write-Output ('SNAPSHOT_PROTECTED withheld='+$withheld.Count)
 }
 
+if($Mode -eq 'Verify'){
+    Add-Type -AssemblyName System.IO.Compression.FileSystem
+    $smallZip=Join-Path $archive 'research-small-checkpoints.zip'
+    $z=[IO.Compression.ZipFile]::OpenRead($smallZip)
+    $checked=0
+    try{
+        foreach($entry in $z.Entries){
+            if($entry.FullName -notmatch '^blobs/([0-9a-f]{64})\.[a-z0-9]+$'){continue}
+            $expected=$Matches[1];$stream=$entry.Open();$h=[Security.Cryptography.SHA256]::Create()
+            try{$actual=([BitConverter]::ToString($h.ComputeHash($stream))).Replace('-','').ToLowerInvariant()}finally{$stream.Dispose();$h.Dispose()}
+            if($actual -ne $expected){throw 'Compressed checkpoint integrity mismatch'}
+            $checked++
+        }
+    }finally{$z.Dispose()}
+    SaveJson @{zip=$smallZip;sha256=Sha $smallZip;unique_checkpoint_blobs=$checked;all_pass=$true} (Join-Path $report 'checkpoint_zip_verification.json')
+    if($checked -gt 0){
+        $plan=@(Get-Content -LiteralPath (Join-Path $report 'cleanup_plan.json') -Raw|ConvertFrom-Json)
+        $unpacked=Join-Path $archive 'small_weights'
+        if(!($plan|Where-Object path -EQ $unpacked)){
+            $plan+=@{path=SafeTarget $unpacked;reason='unpacked backup duplicates verified local and GitHub checkpoint ZIP'}
+            SaveJson $plan (Join-Path $report 'cleanup_plan.json')
+        }
+    }
+    Write-Output ('CHECKPOINT_ZIP_VERIFIED blobs='+$checked)
+    $datasetZip='D:\datasets\div2k.zip'
+    $datasetRoot='D:\datasets\div2k'
+    $dataRows=[Collections.Generic.List[object]]::new();$allMatch=$true
+    $z=[IO.Compression.ZipFile]::OpenRead($datasetZip)
+    try{
+        foreach($entry in $z.Entries){
+            if($entry.FullName.EndsWith('/')){continue}
+            $p=[IO.Path]::GetFullPath((Join-Path $datasetRoot $entry.FullName))
+            if(!$p.StartsWith($datasetRoot+'\',[StringComparison]::OrdinalIgnoreCase)){throw 'Dataset ZIP path traversal'}
+            $match=$false;$sha=$null
+            if((Test-Path -LiteralPath $p -PathType Leaf) -and (Get-Item -LiteralPath $p).Length -eq $entry.Length){
+                $stream=$entry.Open();$h=[Security.Cryptography.SHA256]::Create()
+                try{$sha=([BitConverter]::ToString($h.ComputeHash($stream))).Replace('-','').ToLowerInvariant()}finally{$stream.Dispose();$h.Dispose()}
+                $match=(Sha $p) -eq $sha
+            }
+            if(!$match){$allMatch=$false}
+            $dataRows.Add(@{member=$entry.FullName;bytes=$entry.Length;sha256=$sha;matches_retained_file=$match})
+        }
+    }finally{$z.Dispose()}
+    SaveJson @{archive=$datasetZip;retained_directory=$datasetRoot;all_members_match=$allMatch;members=$dataRows.ToArray()} (Join-Path $report 'div2k_duplicate_verification.json')
+    if($allMatch){
+        $plan=@(Get-Content -LiteralPath (Join-Path $report 'cleanup_plan.json') -Raw|ConvertFrom-Json)
+        if(!($plan|Where-Object path -EQ $datasetZip)){
+            $plan+=@{path=SafeTarget $datasetZip;reason='every ZIP member matches retained raw DIV2K file by size and SHA-256'}
+            SaveJson $plan (Join-Path $report 'cleanup_plan.json')
+        }
+        Write-Output ('DATASET_ZIP_REDUNDANT members='+$dataRows.Count)
+    }else{Write-Output 'DATASET_ZIP_RETAINED_MISMATCH'}
+}
+
 if($Mode -eq 'Release'){
     if(!(Test-Path -LiteralPath (Join-Path $archive 'backup_ready.json'))){throw 'Backup not ready'}
     $headers=ApiHeaders
@@ -245,6 +300,8 @@ if($Mode -eq 'Clean'){
     $remote=((git -C $repo ls-remote --heads origin main) -split '\s+')[0]
     if($local -ne $remote){throw 'Repository not synchronized before cleanup'}
     if((Sha (Join-Path $archive 'Track2_A2_fp16_v1_42.2145.zip')) -ne '49bd0e7e2df18cbad6e490998b76ad69031d43e33afc913843a912db424a1a67'){throw 'A2 backup missing'}
+    $active=@(Get-CimInstance Win32_Process|Where-Object {$_.Name -match '^python(w)?\.exe$' -and $_.CommandLine -match '(?i)([CD]:[\\/]models|D:[\\/]tmp|D:[\\/]datasets|D:[\\/]venv_)'})
+    if($active.Count){throw 'Active Python task uses project assets; cleanup stopped'}
     $plan=Get-Content -LiteralPath (Join-Path $report 'cleanup_plan.json') -Raw|ConvertFrom-Json
     $records=[Collections.Generic.List[object]]::new()
     foreach($entry in $plan){

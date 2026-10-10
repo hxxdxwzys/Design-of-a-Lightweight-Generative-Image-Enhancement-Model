@@ -51,3 +51,6 @@ submit_osediff/
 !.env.example
 *.pem
 *.key
+
+# Explicit preservation snapshot: historical run logs are evidence here.
+!/docs/handoff/CLEANUP_20261010/**/*.log

@@ -1,5 +1,7 @@
 # 项目地图（project_map）
 
+> **2026-10-10资产增量**：仓库外工具/配置/台账/运行日志的文本快照在 `docs/handoff/CLEANUP_20261010/external_sources/`，按原根名和相对路径定位；V3/V4t1原包、两份正式复核包、740个去重小权重blob在私有GitHub Release `project-archive-20261010`。原始数据、VOSR基座、LoRA、当前upload与复核工程仍保留；A2原ZIP迁至 `D:/project_archive_20261010/Track2_A2_fp16_v1_42.2145.zip`。下方旧`D:/tmp_timing/`、旧`C:/models/exports/`及历史提交包路径属于已清理历史，恢复须查 `handoff/CLEANUP_20261010_磁盘清理与归档.md`，不直接当作当前可用资产。
+
 > **2026-09-26复核增量**：当前正式V3复核工程在 `D:/models/review_V3_20260926/V3_Review_Final/`，正式ZIP为同级 `Track2_TinyRefV3_Review_Final.zip`，执行证据在 `evidence/`；新增构建/验证源码在Git根 `workspace/review_v3_20260926/`（不是内层workspace）。工程通过两样例双进程精确复现，正式一页PPT已补齐；本地材料就绪，待用户提交。详细身份唯一见 `handoff/REVIEWV3_20260926_正式材料收口.md`。同级 `V3_Review/` 是此前缺PPT草稿，旧 `D:/models/finals_20260927/` 是V4t1材料，均保留不覆盖，不能混为当前交付。
 
 > Owner：GPT-6 Astra；最终决策权：用户。核验基线：2026-09-16。

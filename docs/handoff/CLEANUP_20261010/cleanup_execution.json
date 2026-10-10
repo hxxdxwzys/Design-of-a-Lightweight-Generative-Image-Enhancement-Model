@@ -1,0 +1,1143 @@
+[
+  {
+    "bytes": 27645632.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:51.3606052Z",
+    "path": "D:\\models\\_harness_zip_sim"
+  },
+  {
+    "bytes": 384411848.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:51.4242908Z",
+    "path": "D:\\models\\不提交_空模型"
+  },
+  {
+    "bytes": 549493771.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:51.4405057Z",
+    "path": "D:\\models\\待定_解耦探测"
+  },
+  {
+    "bytes": 531723117.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:51.4517874Z",
+    "path": "D:\\models\\待判_v11b"
+  },
+  {
+    "bytes": null,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:51.4656455Z",
+    "path": "D:\\models\\已提交待评测"
+  },
+  {
+    "bytes": 777978981.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:51.4868171Z",
+    "path": "D:\\models\\archive_candidates"
+  },
+  {
+    "bytes": 335646114.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:51.5068058Z",
+    "path": "D:\\models\\ckpt_M24p4"
+  },
+  {
+    "bytes": 15821521.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:51.6198381Z",
+    "path": "D:\\models\\hypir_code"
+  },
+  {
+    "bytes": 77485076.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:51.7048999Z",
+    "path": "D:\\models\\iqa_screen"
+  },
+  {
+    "bytes": 16611654457.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.0917006Z",
+    "path": "D:\\models\\newsrc"
+  },
+  {
+    "bytes": 4802571739.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.1101976Z",
+    "path": "D:\\models\\open_clip"
+  },
+  {
+    "bytes": 4539541778.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.205377Z",
+    "path": "D:\\models\\opt01"
+  },
+  {
+    "bytes": 5611803269.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.2898116Z",
+    "path": "D:\\models\\opt10"
+  },
+  {
+    "bytes": 4988700946.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.8019368Z",
+    "path": "D:\\models\\opt11"
+  },
+  {
+    "bytes": 2096496.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.8210772Z",
+    "path": "D:\\models\\pkg_cand3"
+  },
+  {
+    "bytes": 2097082.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.8378957Z",
+    "path": "D:\\models\\pkg_clip1"
+  },
+  {
+    "bytes": 2097082.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.8560144Z",
+    "path": "D:\\models\\pkg_clip2"
+  },
+  {
+    "bytes": 2097088.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.8738703Z",
+    "path": "D:\\models\\pkg_cost_thin16"
+  },
+  {
+    "bytes": 2126717.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.8928275Z",
+    "path": "D:\\models\\pkg_cost_w32"
+  },
+  {
+    "bytes": 2132484.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.9107922Z",
+    "path": "D:\\models\\pkg_cost2_r256_32x2"
+  },
+  {
+    "bytes": 2073373.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.9196832Z",
+    "path": "D:\\models\\pkg_cost3_noref192"
+  },
+  {
+    "bytes": 2073373.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.9281694Z",
+    "path": "D:\\models\\pkg_cost3_noref256"
+  },
+  {
+    "bytes": 2132483.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.9376189Z",
+    "path": "D:\\models\\pkg_cost3_r256_256"
+  },
+  {
+    "bytes": 2097087.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.9460792Z",
+    "path": "D:\\models\\pkg_e12_stu512"
+  },
+  {
+    "bytes": 2126715.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.9583516Z",
+    "path": "D:\\models\\pkg_E8vosr"
+  },
+  {
+    "bytes": 2073363.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.9761836Z",
+    "path": "D:\\models\\pkg_L128"
+  },
+  {
+    "bytes": 2073363.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:54.9935013Z",
+    "path": "D:\\models\\pkg_L192"
+  },
+  {
+    "bytes": 2073363.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.0121246Z",
+    "path": "D:\\models\\pkg_L256"
+  },
+  {
+    "bytes": 550198632.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.0592057Z",
+    "path": "D:\\models\\pkg_M24img_V9brun"
+  },
+  {
+    "bytes": 868021929.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.2045362Z",
+    "path": "D:\\models\\pkg_PixB"
+  },
+  {
+    "bytes": 2182850.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.2212951Z",
+    "path": "D:\\models\\pkg_probe_e6r256d"
+  },
+  {
+    "bytes": 2087098.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.2374957Z",
+    "path": "D:\\models\\pkg_R04ch"
+  },
+  {
+    "bytes": 2089274.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.2553497Z",
+    "path": "D:\\models\\pkg_R08ch"
+  },
+  {
+    "bytes": 2097082.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.2716568Z",
+    "path": "D:\\models\\pkg_R16ch"
+  },
+  {
+    "bytes": 27641153.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.2930359Z",
+    "path": "D:\\models\\pkg_review_zip"
+  },
+  {
+    "bytes": 779053762.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.3688719Z",
+    "path": "D:\\models\\pkg_submit_final"
+  },
+  {
+    "bytes": 2216518.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.3877015Z",
+    "path": "D:\\models\\pkg_TinyRefV1"
+  },
+  {
+    "bytes": 2219094.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.4097832Z",
+    "path": "D:\\models\\pkg_TinyRefV2"
+  },
+  {
+    "bytes": 2096484.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.4287549Z",
+    "path": "D:\\models\\pkg_TinyRefV3"
+  },
+  {
+    "bytes": 2096484.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.4459658Z",
+    "path": "D:\\models\\pkg_TinyRefV4"
+  },
+  {
+    "bytes": 2094513.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.4616652Z",
+    "path": "D:\\models\\pkg_TinyRefV4us0"
+  },
+  {
+    "bytes": 2126910.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.4819275Z",
+    "path": "D:\\models\\pkg_TinyRefV5"
+  },
+  {
+    "bytes": 2132478.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.4985473Z",
+    "path": "D:\\models\\pkg_TinyRefV6"
+  },
+  {
+    "bytes": 528906577.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.6466831Z",
+    "path": "D:\\models\\pkg_TinyV1"
+  },
+  {
+    "bytes": 2060948.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:55.6645886Z",
+    "path": "D:\\models\\pkg_TinyV11b"
+  },
+  {
+    "bytes": 382951985.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:56.255361Z",
+    "path": "D:\\models\\pkg_TinyV16"
+  },
+  {
+    "bytes": 2060894.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:56.2732154Z",
+    "path": "D:\\models\\pkg_TinyV18"
+  },
+  {
+    "bytes": 2060894.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:56.291191Z",
+    "path": "D:\\models\\pkg_Tinyv19"
+  },
+  {
+    "bytes": 536117893.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:56.78596Z",
+    "path": "D:\\models\\pkg_TinyV2"
+  },
+  {
+    "bytes": 2060895.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:56.8040892Z",
+    "path": "D:\\models\\pkg_Tinyv20b"
+  },
+  {
+    "bytes": 2060894.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:56.8198222Z",
+    "path": "D:\\models\\pkg_Tinyv21"
+  },
+  {
+    "bytes": 2060437.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "SKIPPED_REPARSE_POINT",
+    "path": "D:\\models\\pkg_TinyV2g"
+  },
+  {
+    "bytes": 406313271.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:56.9093519Z",
+    "path": "D:\\models\\pkg_TinyV4"
+  },
+  {
+    "bytes": 2060437.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "SKIPPED_REPARSE_POINT",
+    "path": "D:\\models\\pkg_TinyV4g"
+  },
+  {
+    "bytes": 505455344.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:56.952482Z",
+    "path": "D:\\models\\pkg_TinyV5d"
+  },
+  {
+    "bytes": 561428701.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:56.9905541Z",
+    "path": "D:\\models\\pkg_TinyV7gan"
+  },
+  {
+    "bytes": 618095730.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.0725602Z",
+    "path": "D:\\models\\pkg_TinyV9b"
+  },
+  {
+    "bytes": 14675535.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.1183177Z",
+    "path": "D:\\models\\pkg_us"
+  },
+  {
+    "bytes": 2096501.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.1332703Z",
+    "path": "D:\\models\\pkg_v4t1_graph"
+  },
+  {
+    "bytes": 671986771.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.2080655Z",
+    "path": "D:\\models\\probe_a"
+  },
+  {
+    "bytes": 169631197.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.2386276Z",
+    "path": "D:\\models\\probe_native"
+  },
+  {
+    "bytes": 92346405.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.2638781Z",
+    "path": "D:\\models\\probe_noise"
+  },
+  {
+    "bytes": 629309671.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.2894979Z",
+    "path": "D:\\models\\probe_render"
+  },
+  {
+    "bytes": 322053715.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.3220022Z",
+    "path": "D:\\models\\q1_screen"
+  },
+  {
+    "bytes": 388768412.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.3516991Z",
+    "path": "D:\\models\\screen_v7"
+  },
+  {
+    "bytes": 5161862182.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.3916822Z",
+    "path": "D:\\models\\sd21base"
+  },
+  {
+    "bytes": 218695477.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.4066297Z",
+    "path": "D:\\models\\seed_ensemble_test"
+  },
+  {
+    "bytes": 243441451.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.4242757Z",
+    "path": "D:\\models\\sweep_scale_val"
+  },
+  {
+    "bytes": 483457643.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.4588182Z",
+    "path": "D:\\models\\traj"
+  },
+  {
+    "bytes": 464095849.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.4969969Z",
+    "path": "D:\\models\\traj_v11b"
+  },
+  {
+    "bytes": 35291592.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.506493Z",
+    "path": "D:\\models\\val4k"
+  },
+  {
+    "bytes": 397589134.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.5321757Z",
+    "path": "D:\\models\\vosr_ms"
+  },
+  {
+    "bytes": 715889301.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.6094011Z",
+    "path": "D:\\models\\wave2_m0s1_s090"
+  },
+  {
+    "bytes": 720494797.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.6749456Z",
+    "path": "D:\\models\\wave2_m0s1_s097"
+  },
+  {
+    "bytes": 481907593.0,
+    "reason": "historical experiment or downloadable model; sources and small checkpoints archived",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.717735Z",
+    "path": "D:\\models\\wave2_m0s1_s100"
+  },
+  {
+    "bytes": 1788371294,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7235221Z",
+    "path": "D:\\models\\Track2_M24_v4.zip"
+  },
+  {
+    "bytes": 1574762091,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7284973Z",
+    "path": "D:\\models\\Track2_M24avg2.zip"
+  },
+  {
+    "bytes": 1008480110,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7330734Z",
+    "path": "D:\\models\\Track2_M24p4.zip"
+  },
+  {
+    "bytes": 1574333080,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7370991Z",
+    "path": "D:\\models\\Track2_M24sc00.zip"
+  },
+  {
+    "bytes": 831195289,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7403408Z",
+    "path": "D:\\models\\Track2_PixB.zip"
+  },
+  {
+    "bytes": 1600905417,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7451608Z",
+    "path": "D:\\models\\Track2_probeA_sc04.zip"
+  },
+  {
+    "bytes": 495815837,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7496448Z",
+    "path": "D:\\models\\Track2_TinyV1.zip"
+  },
+  {
+    "bytes": 531722970,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7525729Z",
+    "path": "D:\\models\\Track2_TinyV11b.zip"
+  },
+  {
+    "bytes": 381900707,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7562543Z",
+    "path": "D:\\models\\Track2_TinyV16.zip"
+  },
+  {
+    "bytes": 504451828,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7593462Z",
+    "path": "D:\\models\\Track2_TinyV2.zip"
+  },
+  {
+    "bytes": 504450727,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7630105Z",
+    "path": "D:\\models\\Track2_TinyV2g.zip"
+  },
+  {
+    "bytes": 384412933,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7662508Z",
+    "path": "D:\\models\\Track2_TinyV4_弃用_被V4g支配.zip"
+  },
+  {
+    "bytes": 384412933,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7697705Z",
+    "path": "D:\\models\\Track2_TinyV4.zip"
+  },
+  {
+    "bytes": 384411848,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.772727Z",
+    "path": "D:\\models\\Track2_TinyV4g_未提交_图太弱.zip"
+  },
+  {
+    "bytes": 504749607,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7762419Z",
+    "path": "D:\\models\\Track2_TinyV5d.zip"
+  },
+  {
+    "bytes": 560784820,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7803128Z",
+    "path": "D:\\models\\Track2_TinyV7gan.zip"
+  },
+  {
+    "bytes": 617471392,
+    "reason": "historical ZIP identity/member inventory retained; current originals protected",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7859439Z",
+    "path": "D:\\models\\Track2_TinyV9b.zip"
+  },
+  {
+    "bytes": 1343369247.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.7967808Z",
+    "path": "C:\\models\\exports\\DELIV01_20260917_211249"
+  },
+  {
+    "bytes": 7084.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.8062041Z",
+    "path": "C:\\models\\exports\\DELIV01R_20260917_213145"
+  },
+  {
+    "bytes": 1571724364.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:57.8299094Z",
+    "path": "C:\\models\\exports\\DELIV01R_A2_20260917_213518"
+  },
+  {
+    "bytes": 5362235155.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.1298604Z",
+    "path": "C:\\models\\exports\\DELIV02_20260918_073810"
+  },
+  {
+    "bytes": 2683990933.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.1398298Z",
+    "path": "C:\\models\\exports\\DELIV02FP32_20260918_113449"
+  },
+  {
+    "bytes": null,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.1471013Z",
+    "path": "C:\\models\\exports\\EXPORT01_20260917_133619"
+  },
+  {
+    "bytes": 22887.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.1549605Z",
+    "path": "C:\\models\\exports\\EXPORT01_20260917_133740"
+  },
+  {
+    "bytes": 21330.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.1626007Z",
+    "path": "C:\\models\\exports\\EXPORT01_20260917_133909"
+  },
+  {
+    "bytes": 3742.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.1715356Z",
+    "path": "C:\\models\\exports\\EXPORT01_20260917_134027"
+  },
+  {
+    "bytes": 21993.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.1812015Z",
+    "path": "C:\\models\\exports\\EXPORT01_20260917_134111"
+  },
+  {
+    "bytes": 24487.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.1889812Z",
+    "path": "C:\\models\\exports\\EXPORT01_20260917_134423"
+  },
+  {
+    "bytes": 22982.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.1968958Z",
+    "path": "C:\\models\\exports\\EXPORT01_20260917_134719"
+  },
+  {
+    "bytes": 1651806078.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.2208575Z",
+    "path": "C:\\models\\exports\\EXPORT01_RUN_20260917_135055"
+  },
+  {
+    "bytes": 1343363309.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.2307881Z",
+    "path": "C:\\models\\exports\\EXPORT01R_20260917_150506"
+  },
+  {
+    "bytes": 1365585013.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.2461837Z",
+    "path": "C:\\models\\exports\\EXPORT01R2_20260917_200903"
+  },
+  {
+    "bytes": 1343370523.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.2564476Z",
+    "path": "C:\\models\\exports\\EXPORT01R3_20260917_204635"
+  },
+  {
+    "bytes": 3797383374.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3129981Z",
+    "path": "C:\\models\\exports\\SCORE01_20260918_163944"
+  },
+  {
+    "bytes": 3073587405.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.330876Z",
+    "path": "C:\\models\\exports\\SCORE01R_20260918_173846"
+  },
+  {
+    "bytes": 2899048837.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3486076Z",
+    "path": "C:\\models\\exports\\STAT01_20260918_175917"
+  },
+  {
+    "bytes": 1046,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3516943Z",
+    "path": "C:\\models\\exports\\DELIV01_20260917_211249.worker_log.txt"
+  },
+  {
+    "bytes": 161,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3547259Z",
+    "path": "C:\\models\\exports\\DELIV01R_20260917_213145.worker_log.txt"
+  },
+  {
+    "bytes": 937,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3574828Z",
+    "path": "C:\\models\\exports\\DELIV01R_A2_20260917_213518.worker_log.txt"
+  },
+  {
+    "bytes": 80,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3602116Z",
+    "path": "C:\\models\\exports\\DELIV02_20260918_073810.worker_log_prev_full2.txt"
+  },
+  {
+    "bytes": 1163,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3630319Z",
+    "path": "C:\\models\\exports\\DELIV02_20260918_073810.worker_log.txt"
+  },
+  {
+    "bytes": 8857,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.366975Z",
+    "path": "C:\\models\\exports\\DELIV02FP32_20260918_113449.worker_log.txt"
+  },
+  {
+    "bytes": 9491,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3705437Z",
+    "path": "C:\\models\\exports\\EXPORT01R_20260917_150506.worker_log.txt"
+  },
+  {
+    "bytes": 4251,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3738269Z",
+    "path": "C:\\models\\exports\\EXPORT01R2_20260917_200903.worker_log.txt"
+  },
+  {
+    "bytes": 8956,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3766872Z",
+    "path": "C:\\models\\exports\\EXPORT01R3_20260917_204635.worker_log.txt"
+  },
+  {
+    "bytes": 22542.0,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3844097Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\_失败原件_runner快照"
+  },
+  {
+    "bytes": 1788371140,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3877166Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24_v3——43.6951.zip"
+  },
+  {
+    "bytes": 1788371294,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.392139Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24_v4——43.5844.zip"
+  },
+  {
+    "bytes": 1574762091,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.3976269Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24avg2——36.6414.zip"
+  },
+  {
+    "bytes": 550414201,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.401247Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24img_V4grun——105.6401.zip"
+  },
+  {
+    "bytes": 550419751,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.404406Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24img_V7ganrun——94.7249.zip"
+  },
+  {
+    "bytes": 1008480110,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4078359Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24p4——7.1829.zip"
+  },
+  {
+    "bytes": 1574333080,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4113134Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_M24sc00——37.6316.zip"
+  },
+  {
+    "bytes": 831195289,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4158426Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_PixB——18.9710.zip"
+  },
+  {
+    "bytes": 1600905417,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4201403Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_probeA_sc04——43.2837.zip"
+  },
+  {
+    "bytes": 1866433458,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4242239Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_ProbeBlend——40.5354.zip"
+  },
+  {
+    "bytes": 1998704300,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4286129Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_ProbeDetail——43.0699.zip"
+  },
+  {
+    "bytes": 1788371562,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4341876Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_ProbeSlow8——28.7538.zip"
+  },
+  {
+    "bytes": 495815837,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4374996Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV1——27.3521.zip"
+  },
+  {
+    "bytes": 504451828,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.440808Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV2——29.4225.zip"
+  },
+  {
+    "bytes": 504450727,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4439769Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV2g——33.2872.zip"
+  },
+  {
+    "bytes": 504749607,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4475635Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV5d——33.0382.zip"
+  },
+  {
+    "bytes": 560784820,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4511675Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV7gan——41.7346.zip"
+  },
+  {
+    "bytes": 617471392,
+    "reason": "external text evidence archived; A2 original ZIP preserved separately",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4548191Z",
+    "path": "C:\\生成式图像增强轻量模型设计挑战\\提交历史\\Track2_TinyV9b——40.5757.zip"
+  },
+  {
+    "bytes": 32610889.0,
+    "reason": "generated training/inference image cache; source checkpoints retained",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:58.4625243Z",
+    "path": "D:\\models\\tiny_v1\\early_eval"
+  },
+  {
+    "bytes": 481163712.0,
+    "reason": "generated training/inference image cache; source checkpoints retained",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:29:59.2628593Z",
+    "path": "D:\\models\\refine_v1\\in"
+  },
+  {
+    "bytes": 481125491.0,
+    "reason": "generated training/inference image cache; source checkpoints retained",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:00.0527319Z",
+    "path": "D:\\models\\refine_v1\\in_cap2"
+  },
+  {
+    "bytes": 375417920.0,
+    "reason": "generated training/inference image cache; source checkpoints retained",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:00.8336214Z",
+    "path": "D:\\models\\refine_v1\\in256"
+  },
+  {
+    "bytes": 812876275.0,
+    "reason": "generated training/inference image cache; source checkpoints retained",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:03.6437788Z",
+    "path": "D:\\models\\refine_v1\\tgt_vosr"
+  },
+  {
+    "bytes": 382696975.0,
+    "reason": "archived external tools and obsolete experiment environments",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:03.6887278Z",
+    "path": "D:\\tmp"
+  },
+  {
+    "bytes": 19631456036.0,
+    "reason": "archived external tools and obsolete experiment environments",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:04.8490761Z",
+    "path": "D:\\tmp_timing"
+  },
+  {
+    "bytes": 136647436.0,
+    "reason": "archived external tools and obsolete experiment environments",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:08.6830087Z",
+    "path": "D:\\venv_faithdiff"
+  },
+  {
+    "bytes": 835707738.0,
+    "reason": "archived external tools and obsolete experiment environments",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:19.8547683Z",
+    "path": "D:\\venv_osediff"
+  },
+  {
+    "bytes": 11777419.0,
+    "reason": "archived external tools and obsolete experiment environments",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:20.1458042Z",
+    "path": "D:\\venv_tadsr"
+  },
+  {
+    "bytes": 226220743.0,
+    "reason": "derived training cache; raw DIV2K/Flickr2K retained",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:20.7128484Z",
+    "path": "D:\\datasets\\distill_hypir"
+  },
+  {
+    "bytes": 634474989.0,
+    "reason": "derived training cache; raw DIV2K/Flickr2K retained",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:22.157946Z",
+    "path": "D:\\datasets\\distill256"
+  },
+  {
+    "bytes": 355263347.0,
+    "reason": "derived training cache; raw DIV2K/Flickr2K retained",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:22.1857392Z",
+    "path": "D:\\datasets\\holdout_v2"
+  },
+  {
+    "bytes": 2264838460.0,
+    "reason": "derived training cache; raw DIV2K/Flickr2K retained",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:32.1863123Z",
+    "path": "D:\\datasets\\tiny_patches"
+  },
+  {
+    "bytes": 37748864,
+    "reason": "temporary inference array",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:32.1908773Z",
+    "path": "D:\\tmp_g1_case17.npy"
+  },
+  {
+    "bytes": 37748864,
+    "reason": "temporary inference array",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:32.1938836Z",
+    "path": "D:\\tmp_render_A.npy"
+  },
+  {
+    "bytes": 37748864,
+    "reason": "temporary inference array",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:32.1960738Z",
+    "path": "D:\\tmp_render_B.npy"
+  },
+  {
+    "bytes": 3145856,
+    "reason": "temporary inference array",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:32.1982429Z",
+    "path": "D:\\tmp_s1b.npy"
+  },
+  {
+    "bytes": 3145856,
+    "reason": "temporary inference array",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:32.2006494Z",
+    "path": "D:\\tmp_s1b2.npy"
+  },
+  {
+    "bytes": 3145856,
+    "reason": "temporary inference array",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:32.2027165Z",
+    "path": "D:\\tmp_v4.npy"
+  },
+  {
+    "bytes": 3641190562,
+    "reason": "every ZIP member matches retained raw DIV2K file by size and SHA-256",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:32.4712254Z",
+    "path": "D:\\datasets\\div2k.zip"
+  },
+  {
+    "bytes": 1722915767.0,
+    "reason": "unpacked backup duplicates verified local and GitHub checkpoint ZIP",
+    "status": "DELETED",
+    "finished_utc": "2026-10-10T03:30:32.7458722Z",
+    "path": "D:\\project_archive_20261010\\small_weights"
+  },
+  {
+    "status": "DELETED_AFTER_SAFE_JUNCTION_UNLINK",
+    "bytes": 2060437.0,
+    "path": "D:\\models\\pkg_TinyV2g",
+    "junction_target": "D:\\models\\pkg_TinyV2\\output_dir",
+    "unlinked_junction": "D:\\models\\pkg_TinyV2g\\output_dir",
+    "finished_utc": "2026-10-10T03:31:50.8556303Z"
+  },
+  {
+    "status": "DELETED_AFTER_SAFE_JUNCTION_UNLINK",
+    "bytes": 2060437.0,
+    "path": "D:\\models\\pkg_TinyV4g",
+    "junction_target": "D:\\models\\pkg_TinyV4\\output_dir",
+    "unlinked_junction": "D:\\models\\pkg_TinyV4g\\output_dir",
+    "finished_utc": "2026-10-10T03:31:50.8740961Z"
+  }
+]

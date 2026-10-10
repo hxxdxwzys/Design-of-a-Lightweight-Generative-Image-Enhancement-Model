@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-10",
+  "cpu_tests": [
+    {"suite": "workspace/v3_fidelity27/test_cpu.py", "tests": 5, "failures": 0, "errors": 0, "exit_code": 0},
+    {"suite": "workspace/quality27/test_cpu.py + test_edge.py", "tests": 14, "failures": 0, "errors": 0, "exit_code": 0},
+    {"suite": "workspace/review_v3_20260926/test_review.py", "tests": 16, "failures": 0, "errors": 0, "exit_code": 0}
+  ],
+  "preserved_model_hashes": [
+    {"path": "D:/models/review_V3_20260926/V3_Review_Final/model_dir/your_model.pt", "sha256": "421be231d504b1e1d20656ff7aa1c45a377434ff4762cc79c05416a2c7b5306d", "matches_expected": true},
+    {"path": "D:/models/finals_20260927/Track2_light_diffusion_inference/model_dir/your_model.pt", "sha256": "2770215987e2b5585dc26870a8a6fee05672bbf514267336498a1bf9e6409b62", "matches_expected": true},
+    {"path": "D:/models/v3_fidelity27_20260927/candidates/s3000/model_dir/your_model.pt", "sha256": "6166649cdf34669810c7e666e65c9ec27ab140c08187f5c5f3055198bfc6e351", "matches_expected": true}
+  ],
+  "gpu_runs": 0,
+  "release_asset_sha256_verified": 5,
+  "checkpoint_zip_blobs_individually_verified": 740,
+  "div2k_zip_members_individually_verified": 2401,
+  "cleanup_targets_completed": 161
+}

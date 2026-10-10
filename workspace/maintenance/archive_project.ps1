@@ -267,8 +267,9 @@ if($Mode -eq 'Verify'){
 if($Mode -eq 'Release'){
     if(!(Test-Path -LiteralPath (Join-Path $archive 'backup_ready.json'))){throw 'Backup not ready'}
     $headers=ApiHeaders
-    $all=@(Invoke-RestMethod -Uri ($api+'/releases?per_page=100') -Headers $headers)
-    $release=$all|Where-Object tag_name -EQ $tag|Select-Object -First 1
+    $release=$null
+    try{$release=Invoke-RestMethod -Uri ($api+'/releases/tags/'+$tag) -Headers $headers}
+    catch{if(!$_.Exception.Response -or [int]$_.Exception.Response.StatusCode -ne 404){throw}}
     if(!$release){
         $payload=@{tag_name=$tag;target_commitish=(git -C $repo rev-parse HEAD);name='Project preservation archive 2026-10-10';draft=$false;prerelease=$false;body='Preservation of original V3/V4t1 packages, review materials, and historical small research checkpoints. Research checkpoints are not approved submissions. Scores and review status are documented in the repository. This archive is not a new competition submission.'}|ConvertTo-Json
         $release=Invoke-RestMethod -Method Post -Uri ($api+'/releases') -Headers $headers -Body $payload -ContentType 'application/json'
@@ -276,7 +277,7 @@ if($Mode -eq 'Release'){
     $receipts=[Collections.Generic.List[object]]::new()
     foreach($a in Get-Content -LiteralPath (Join-Path $archive 'release_assets.json') -Raw|ConvertFrom-Json){
         if((Sha $a.path) -ne $a.sha256){throw 'Asset changed after backup'}
-        $existing=@(Invoke-RestMethod -Uri $release.assets_url -Headers $headers)|Where-Object name -EQ $a.name|Select-Object -First 1
+        $existing=@($release.assets)|Where-Object name -EQ $a.name|Select-Object -First 1
         if($existing){$asset=$existing}else{
             Write-Output ('UPLOAD_START '+$a.name+' bytes='+$a.bytes)
             $upload=($release.upload_url -replace '\{.*$','')+'?name='+[Uri]::EscapeDataString($a.name)

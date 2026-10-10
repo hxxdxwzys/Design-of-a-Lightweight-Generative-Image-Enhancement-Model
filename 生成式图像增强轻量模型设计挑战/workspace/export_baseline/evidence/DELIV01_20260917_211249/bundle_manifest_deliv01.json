@@ -1,0 +1,65 @@
+{
+ "schema_version": "DELIV01-bundle-manifest/1",
+ "bundle_id": "DELIV01-06db3ecc7c5606ecbcfb1440405cdddb",
+ "created_at": "2026-09-17 21:12:49",
+ "model_reuse": {
+  "from_batch": "EXPORT-01R3",
+  "hardlink": false,
+  "byte_identical": true,
+  "path": "C:\\models\\exports\\EXPORT01R3_20260917_204635\\model_dir\\your_model.pt",
+  "sha256": "c3946096bcda7513d1a100975f73e08aa8f6ce24f4c7837642484038dd3f543d",
+  "bytes": 1343346475
+ },
+ "files": [
+  {
+   "path": "your_model.pt",
+   "role": "jit_model",
+   "sha256": "c3946096bcda7513d1a100975f73e08aa8f6ce24f4c7837642484038dd3f543d",
+   "bytes": 1343346475
+  },
+  {
+   "path": "runner.py",
+   "role": "delivery_runner",
+   "sha256": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314",
+   "bytes": 13032
+  },
+  {
+   "path": "models_export.json",
+   "role": "recipe",
+   "sha256": "09e3e7da412088425eea32ddd2dadb6515c183e2b78cd303f761fc1d23c91325"
+  }
+ ],
+ "runtime_source_sha256": {
+  "delivery_runner.py": "53c79684dd1e8a518ca0bff1af0589d11fe7d1f203d7cbd88d5f63bc6a607314",
+  "r_verify.py": "c7aa55f20cf6261a0b8bf7b3115a0e741f257fdb888dfe4d8c0ddd8f02dc683c",
+  "r3_component_gate.py": "8b2efc66f6682250d841927cc34e959a015243e73bda0fe2daa5f177b6c8dbe6",
+  "frozen_mode.py": "feb173a233fc1a0a95d343092b9faa089e12b2cc6f42815cac46e48b826dc23f",
+  "r_ledger.py": "bb5695e70df1c659140843929798c7a3b0df0f30395ffe05c94930a12e7c71b7",
+  "r_supervisor.py": "067a1ff65f78c48ab5f4ea535af39390eadaefb049bc856d43cf3b9e56be0163",
+  "gen_images.py": "964395c9d8b5d74e53951188ca0fefcd0db3ee586cba3793a7807df1b1283e15",
+  "make_zip.py": "9d19d299a24265cceb35b910ed24d5cb6ed2b6052cfec13861fa689546578d06",
+  "isolated_precheck.py": "1a69de297ba0079778c29f0b2759a1d2be7c3d310e39f83e4a87efc5c27ed57a"
+ },
+ "execution_mode": {
+  "jit_optimized_execution": false,
+  "deterministic_algorithms": "True(warn_only=False)",
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "cudnn_allow_tf32": false,
+  "matmul_allow_tf32": false
+ },
+ "criteria": {
+  "component_max_abs": 1e-05,
+  "component_mean_abs": 1e-06,
+  "pair_max_abs": 1e-05,
+  "pair_mean_abs": 1e-06,
+  "migration_max_abs": 0.05,
+  "migration_mean_abs": 0.002
+ },
+ "not_claimed": [
+  "官方兼容",
+  "目标环境实测",
+  "v7 训练资格"
+ ]
+}

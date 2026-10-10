@@ -1,0 +1,123 @@
+{
+ "schema": "EXPORT01R-attempt-result/1",
+ "worker_checks_pass": false,
+ "supervisor_success": false,
+ "ledger_consistent": false,
+ "final_artifacts_verified": true,
+ "supervisor": {
+  "schema": "EXPORT01R-supervisor/1",
+  "started_at": "2026-09-18 11:46:44",
+  "deadline_s": 3600.0,
+  "pid": 28648,
+  "preflight": {
+   "ledger_exists": true,
+   "lock_exists": false,
+   "disk_free_gib": 21.847,
+   "prereg_exists": true,
+   "model_exists": true,
+   "model_will_be_built": false,
+   "model_dir_exists": true,
+   "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+   "model_bytes": 1536683563,
+   "model_hash_expected": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+   "model_binding_ok": true,
+   "model_bytes_ok": true
+  },
+  "cmd": [
+   "D:\\Python\\python.exe",
+   "-u",
+   "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\a2_finish_worker.py",
+   "C:\\models\\exports\\DELIV02_20260918_073810",
+   "C:\\models\\exports\\DELIV02_20260918_073810\\ledger.json",
+   "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\DELIV02_20260918_073810\\prereg_deliv02.json",
+   "C:\\models\\exports\\DELIV02_20260918_073810\\model_dir",
+   "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\DELIV02A2FINAL_20260918_114638"
+  ],
+  "worker_log": "C:\\models\\exports\\DELIV02_20260918_073810.worker_log.txt",
+  "child_pid": 25240,
+  "process_tree": {
+   "descendants_before": [],
+   "descendants_after": [],
+   "remaining_alive": [],
+   "clean": true,
+   "unknown": false
+  },
+  "child_exit_code": 1,
+  "terminate_requested_at": null,
+  "kill_at": null,
+  "timed_out": false,
+  "wall_s": 126.795,
+  "finished_at": "2026-09-18 11:48:52",
+  "supervisor_success": false,
+  "ledger": {
+   "used": {
+    "top": 21,
+    "top4k": 5,
+    "component": 143
+   },
+   "limits": {
+    "top": 169,
+    "top4k": 141,
+    "component": 216,
+    "wall_s": 21600.0,
+    "disk_gib": 20.0
+   },
+   "n_events": 182,
+   "n_attempts": 19,
+   "open_attempt": null,
+   "last_attempt": {
+    "attempt_id": "a2_finish",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 11:46:48",
+    "started_monotonic": 37708.5774071,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "1162765775c1f1fcbe0a88cc4fe16108ec6e13d36af0022076dfe31adba6427c",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "disclosed_migration_fail=2",
+    "finished_at": "2026-09-18 11:48:47",
+    "elapsed_s": 119.167
+   }
+  },
+  "ledger_consistent": false,
+  "checks": {
+   "readings_present": true,
+   "worker_status_ok": true,
+   "required_cases": [
+    "case1_crop512",
+    "case1_crop511x513",
+    "case1_full",
+    "case7_full"
+   ],
+   "all_npy_present_and_hashed": true,
+   "npy_missing": [],
+   "phaseB_calls": [
+    "B_511x513",
+    "B_512_1",
+    "B_512_2",
+    "B_512_3"
+   ],
+   "n_B512": 3,
+   "B512_set_ok": true,
+   "B512_vs_A_ok": false,
+   "B512_repeat_ok": true,
+   "pair_names": [
+    "case1_full",
+    "case7_full"
+   ],
+   "pairs_ok": false,
+   "migration_ok": false,
+   "n_migration": 3,
+   "required_set_ok": true,
+   "phaseA_released": true,
+   "A512_self_repeat_ok": true,
+   "n_top_used": 21,
+   "n_4k_used": 5
+  },
+  "worker_checks_pass": false,
+  "artifacts_verified": true
+ },
+ "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+ "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+ "ALL": false
+}

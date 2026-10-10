@@ -1,0 +1,91 @@
+{
+ "schema": "EXPORT01R-supervisor/1",
+ "started_at": "2026-09-17 20:18:24",
+ "deadline_s": 1728.0,
+ "pid": 27060,
+ "preflight": {
+  "ledger_exists": true,
+  "lock_exists": false,
+  "disk_free_gib": 29.749,
+  "prereg_exists": true,
+  "model_exists": true,
+  "model_will_be_built": false,
+  "model_dir_exists": true,
+  "model_sha256": "7b8152029e3d96cf90e0787b42949e680cdb3c1bdfce6f6be99452444283ccc6",
+  "model_bytes": 1343344555,
+  "model_hash_expected": "7b8152029e3d96cf90e0787b42949e680cdb3c1bdfce6f6be99452444283ccc6",
+  "model_binding_ok": true,
+  "model_bytes_ok": true
+ },
+ "cmd": [
+  "D:\\Python\\python.exe",
+  "-u",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_worker.py",
+  "C:\\models\\exports\\EXPORT01R2_20260917_200903",
+  "C:\\models\\exports\\EXPORT01R2_20260917_200903\\ledger.json",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\EXPORT01R2_20260917_200903\\prereg_r2.json",
+  "C:\\models\\exports\\EXPORT01R2_20260917_200903\\model_dir",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\EXPORT01R2_20260917_200903"
+ ],
+ "worker_log": "C:\\models\\exports\\EXPORT01R2_20260917_200903.worker_log.txt",
+ "child_pid": 2336,
+ "process_tree": {
+  "descendants_before": [],
+  "descendants_after": [],
+  "remaining_alive": [],
+  "clean": true,
+  "unknown": false
+ },
+ "child_exit_code": 1,
+ "terminate_requested_at": null,
+ "kill_at": null,
+ "timed_out": false,
+ "wall_s": 109.669,
+ "finished_at": "2026-09-17 20:20:15",
+ "supervisor_success": false,
+ "ledger": {
+  "used": {
+   "top": 5,
+   "top4k": 0,
+   "component": 2
+  },
+  "limits": {
+   "top": 12,
+   "top4k": 4,
+   "component": 38,
+   "wall_s": 1728.0,
+   "disk_gib": 8.0
+  },
+  "n_events": 10,
+  "n_attempts": 1,
+  "open_attempt": null,
+  "last_attempt": {
+   "attempt_id": "attempt_01",
+   "run_dir": "C:\\models\\exports\\EXPORT01R2_20260917_200903",
+   "started_at": "2026-09-17 20:18:27",
+   "started_monotonic": 113526.8716465,
+   "prereg_sha256": "d1f76588217e3bd0ad6c460aa1d9c3b48693aabdc2d23428be11acdbdc4ef20a",
+   "source_sha256": "2a8d69ec495e8a22c1220fc9b2fa9add353ceb1b504d07478e157f51bc4f7b1a",
+   "model_sha256": null,
+   "status": "FAIL",
+   "note": "RuntimeError: The following operation failed in the TorchScript interpreter.\nTraceback of TorchScript, serialized code (most recent call last):\n  File \"code/__torch__/chain.py\", line 64, in step\n    feats: Tensor) -> Tensor:\n    dit_step = self.dit_step\n    _3 = (dit_step).forward(lq_latent, z, t_cur, t_nxt, feats, )\n          ~~~~~~~~~~~~~~~~~ <--- HERE\n    return _3\nclass VAEEncode(Module):\n  File \"code/__torch__/chain.py\", line 285, in forward\n    x = torch.cat([lq_latent, z], 1)\n    _28 = (x_embedder).forward(x, )\n    _29 = (t_embedder).forward(t_cur, )\n           ~~~~~~~~~~~~~~~~~~~ <--- HERE\n    _30 = (r_embedder).forward(t_nxt, )\n    _31 = torch.unsqueeze(torch.sub(t_cur, t_nxt), -1)\n  File \"code/__torch__/models/lightningdit.py\", line 25, in forward\n    mlp = self.mlp\n    _0 = torch.arange(0, 128, dtype=6, layout=None, device=torch.device(\"cpu\"), pin_memory=False)\n    _1 = torch.div(torch.mul(_0, CONSTANTS.c6), CONSTANTS.c7)\n                   ~~~~~~~~~ <--- HERE\n    freqs = torch.to(torch.exp(_1), dtype=6, layout=0, device=torch.device(\"cuda:0\"))\n    _2 = torch.slice(t_cur, 0, 0, 9223372036854775807)\n\nTraceback of TorchScript, original code (most recent call last):\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\chain.py\", line 251, in step\n    def step(self, lq_latent: torch.Tensor, z: torch.Tensor, t_cur: torch.Tensor,\n             t_nxt: torch.Tensor, feats: torch.Tensor) -> torch.Tensor:\n        return self.dit_step(lq_latent, z, t_cur, t_nxt, feats)\n               ~~~~~~~~~~~~~ <--- HERE\nD:\\models/finals/VOSR\\models\\lightningdit.py(198): timestep_embedding\nD:\\models/finals/VOSR\\models\\lightningdit.py(211): forward\nD:\\Python\\Lib\\site-packages\\torch\\nn\\modules\\module.py(1741): _slow_forward\nD:\\Python\\Lib\\site-packages\\torch\\nn\\modules\\module.py(1762): _call_impl\nD:\\Python\\Lib\\site-packages\\torch\\nn\\modules\\module.py(1751): _wrapped_call_impl\nD:\\models/finals/VOSR\\models\\lightningdit.py(576): forward_flexible\nC:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\chain.py(204): forward\nD:\\Python\\Lib\\site-packages\\torch\\nn\\modules\\module.py(1741): _slow_forward\nD:\\Python\\Lib\\site-packages\\torch\\nn\\modules\\module.py(1762): _call_impl\nD:\\Python\\Lib\\site-packages\\torch\\nn\\modules\\module.py(1751): _wrapped_call_impl\nD:\\Python\\Lib\\site-packages\\torch\\jit\\_trace.py(1279): trace_module\nD:\\Python\\Lib\\site-packages\\torch\\jit\\_trace.py(696): _trace_impl\nD:\\Python\\Lib\\site-packages\\torch\\jit\\_trace.py(1002): trace\nC:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_build.py(121): <lambda>\nC:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_build.py(136): build\nC:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_worker.py(66): main\nC:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_worker.py(95): <module>\nRuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!\n",
+   "finished_at": "2026-09-17 20:20:10",
+   "elapsed_s": 102.565
+  }
+ },
+ "ledger_consistent": true,
+ "checks": {
+  "readings_present": true,
+  "worker_status_ok": false,
+  "required_cases": [
+   "case1_crop512",
+   "case1_crop511x513",
+   "case1_full",
+   "case7_full"
+  ],
+  "n_top_used": 5,
+  "n_4k_used": 0
+ },
+ "worker_checks_pass": false,
+ "artifacts_verified": false
+}

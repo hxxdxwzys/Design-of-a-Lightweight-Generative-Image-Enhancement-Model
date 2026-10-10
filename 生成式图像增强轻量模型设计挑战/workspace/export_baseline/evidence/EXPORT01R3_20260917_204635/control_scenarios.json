@@ -1,0 +1,55 @@
+{
+ "schema": "EXPORT01R-control-scenarios/1",
+ "scenarios": {
+  "happy": {
+   "exit": 0,
+   "worker_checks_pass": true,
+   "ledger_consistent": true,
+   "ALL": true,
+   "pass": true
+  },
+  "timeout": {
+   "exit": 1,
+   "wall_s": 5.9,
+   "timed_out": true,
+   "terminate_requested_at": "2026-09-17 20:47:27",
+   "supervisor_success": false,
+   "child_exit_confirmed": true,
+   "ALL": false,
+   "pass": true
+  },
+  "crash": {
+   "exit": 1,
+   "supervisor_success": false,
+   "open_attempt": true,
+   "ledger_consistent": false,
+   "ALL": false,
+   "pass": true
+  },
+  "prelock": {
+   "exit": 2,
+   "mentions_lock": true,
+   "pass": true
+  },
+  "tree": {
+   "exit": 1,
+   "timed_out": true,
+   "grandchild_pid": 20736,
+   "grandchild_gone": true,
+   "process_tree": {
+    "descendants_before": [
+     20736
+    ],
+    "descendants_after": [
+     20736
+    ],
+    "remaining_alive": [],
+    "clean": true,
+    "unknown": false
+   },
+   "ALL": false,
+   "pass": true
+  }
+ },
+ "all_pass": true
+}

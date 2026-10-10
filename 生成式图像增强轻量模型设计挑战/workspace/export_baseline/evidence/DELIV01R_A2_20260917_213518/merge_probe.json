@@ -1,0 +1,16 @@
+{
+ "schema": "EXPORT01R-merge-probe/1",
+ "design": "两个独立进程各自从父权重加载 fp32；peft 未合并 vs merged 已合并；同精度同输入",
+ "input_protocol": "latent(1,8,64,64)/feats(1,1024,768)/t=1/r=0，CPU Generator(seed=42) 重建",
+ "peft_npy_sha256": "905f314ce16e7a413422c9dda19112f302ba5b1521f8f1915645d1423574f216",
+ "merged_npy_sha256": "2b9a80c4387f59008a8d90ad86c3d09440edada3ef6e51d35bc962494eebc248",
+ "max_abs": 1.3113021850585938e-06,
+ "mean_abs": 2.3898400058897096e-07,
+ "shape": [
+  1,
+  4,
+  64,
+  64
+ ],
+ "finite": true
+}

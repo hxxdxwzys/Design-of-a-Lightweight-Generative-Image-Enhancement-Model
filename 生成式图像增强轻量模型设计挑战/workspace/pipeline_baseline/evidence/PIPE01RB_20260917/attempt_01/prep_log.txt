@@ -1,0 +1,12 @@
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+[run-dir] D:\models\pipeline_baseline\PIPE01RB_20260917_021500\attempt_01
+[evidence] C:\生成式图像增强轻量模型设计挑战\生成式图像增强轻量模型设计挑战\workspace\pipeline_baseline\evidence\PIPE01RB_20260917_021500
+[ledger]   D:\models\pipeline_baseline\PIPE01RB_20260917_021500\budget_ledger.json (max_forwards=8)
+[key-contract] dit=True dino=True decoder_weights_only=True
+[lora] n_lora_keys=288
+[done] 30.7s

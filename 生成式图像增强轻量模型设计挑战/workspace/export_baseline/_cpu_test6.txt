@@ -1,0 +1,16 @@
+﻿python.exe : ........................C:\����ʽͼ����ǿ����ģ�������ս\����ʽͼ����ǿ����ģ�������ս\workspace\export_baseline\cha
+in.py:74: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record
+ the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace m
+ight not generalize to other inputs!
+At line:2 char:1
++ & 'D:\Python\python.exe' -B -m unittest discover -s 'C:\生成式图像增强轻量模型设计 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (..................o other inputs!:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  if target.shape[2] != source.shape[2] or target.shape[3] != source.shape[3]:
+.
+----------------------------------------------------------------------
+Ran 25 tests in 3.754s
+
+OK

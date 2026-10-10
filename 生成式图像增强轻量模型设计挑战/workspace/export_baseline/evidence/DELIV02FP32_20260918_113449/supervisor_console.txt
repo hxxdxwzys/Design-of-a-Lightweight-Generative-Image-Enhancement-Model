@@ -1,0 +1,1 @@
+﻿[verdict] worker=False supervisor=False ledger=False artifacts=False ALL=False

@@ -1,0 +1,74 @@
+{
+ "schema": "DELIV02-phase-c/1",
+ "checks": {
+  "C_512": {
+   "vs_B": "B_512_r1",
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "u8": {
+    "max_channel_diff": 0,
+    "n_pixels_any_channel_diff": 0,
+    "frac_pixels_any_channel_diff": 0.0,
+    "identical": true,
+    "h": 512,
+    "w": 512
+   },
+   "wall_s": 1.061,
+   "passed": true,
+   "npy": "C:\\models\\exports\\DELIV02_20260918_073810\\npy\\C_512.npy",
+   "npy_sha256": "6992946d10acfd4e7a1667dcdfb25e4447a02110ac322175e58f3ac468a29cad"
+  },
+  "C_511x513": {
+   "vs_B": "B_511x513",
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "u8": {
+    "max_channel_diff": 0,
+    "n_pixels_any_channel_diff": 0,
+    "frac_pixels_any_channel_diff": 0.0,
+    "identical": true,
+    "h": 511,
+    "w": 513
+   },
+   "wall_s": 0.846,
+   "passed": true,
+   "npy": "C:\\models\\exports\\DELIV02_20260918_073810\\npy\\C_511x513.npy",
+   "npy_sha256": "1c3deadc7ee18185d31dcf16a03cb5526c29a509de34509a35e9aacc19ed413c"
+  },
+  "C_case1_full": {
+   "vs_B": "case1_full_B",
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "u8": {
+    "max_channel_diff": 0,
+    "n_pixels_any_channel_diff": 0,
+    "frac_pixels_any_channel_diff": 0.0,
+    "identical": true,
+    "h": 3072,
+    "w": 4096
+   },
+   "wall_s": 36.287,
+   "passed": true,
+   "npy": "C:\\models\\exports\\DELIV02_20260918_073810\\npy\\C_case1_full.npy",
+   "npy_sha256": "ebaf09d19febc8908e77c2bc398f6fd2c724a67f49d895f2d13d43ac22c55b25"
+  },
+  "C_case7_full": {
+   "vs_B": "case7_full_B",
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "u8": {
+    "max_channel_diff": 0,
+    "n_pixels_any_channel_diff": 0,
+    "frac_pixels_any_channel_diff": 0.0,
+    "identical": true,
+    "h": 3072,
+    "w": 4096
+   },
+   "wall_s": 37.674,
+   "passed": true,
+   "npy": "C:\\models\\exports\\DELIV02_20260918_073810\\npy\\C_case7_full.npy",
+   "npy_sha256": "d4b21b16dbe9adaca8683cd1acf1fb4640ed3f7ef1e26426ce1352590aa02ecc"
+  }
+ },
+ "verdict": "PASS"
+}

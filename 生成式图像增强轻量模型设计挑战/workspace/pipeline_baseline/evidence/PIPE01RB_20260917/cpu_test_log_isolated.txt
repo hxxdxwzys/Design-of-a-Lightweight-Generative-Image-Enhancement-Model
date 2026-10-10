@@ -1,0 +1,318 @@
+[pair] status=STOPPED calls=5 forwards_reserved=5 wall=1.3s
+[pair] status=OK calls=8 forwards_reserved=8 wall=1.8s
+[pair] status=STOPPED calls=4 forwards_reserved=4 wall=1.1s
+[pair] status=STOPPED calls=4 forwards_reserved=4 wall=1.1s
+[pair] status=STOPPED calls=2 forwards_reserved=2 wall=0.5s
+[pair] status=STOPPED calls=5 forwards_reserved=5 wall=1.2s
+[pair] status=OK calls=8 forwards_reserved=8 wall=1.8s
+[pair] status=STOPPED calls=2 forwards_reserved=2 wall=0.5s
+[pair] status=STOPPED calls=3 forwards_reserved=3 wall=0.6s
+[pair] status=OK calls=8 forwards_reserved=8 wall=1.8s
+test_boundary_last_unit_allowed_then_refused (__main__.TestBudgetLedger.test_boundary_last_unit_allowed_then_refused) ... ok
+test_concurrent_lock_refused (__main__.TestBudgetLedger.test_concurrent_lock_refused) ... ok
+test_cross_attempt_accumulates_and_interruption_counts (__main__.TestBudgetLedger.test_cross_attempt_accumulates_and_interruption_counts) ... ok
+test_disk_budget (__main__.TestBudgetLedger.test_disk_budget) ... ok
+test_missing_ledger_without_init_refuses (__main__.TestBudgetLedger.test_missing_ledger_without_init_refuses) ... ok
+test_new_process_cannot_reset_quota (__main__.TestBudgetLedger.test_new_process_cannot_reset_quota) ... ok
+test_reserve_is_persisted_before_call_and_not_refunded (__main__.TestBudgetLedger.test_reserve_is_persisted_before_call_and_not_refunded) ... ok
+test_wall_stop (__main__.TestBudgetLedger.test_wall_stop) ... ok
+test_zero_quota_refuses (__main__.TestBudgetLedger.test_zero_quota_refuses) ... ok
+test_args_ns_conflict_is_rejected (__main__.TestConfigFrozen.test_args_ns_conflict_is_rejected) ... ok
+test_frozen_config_loads_and_locks (__main__.TestConfigFrozen.test_frozen_config_loads_and_locks) ... ok
+test_rejects_tampered_switches (__main__.TestConfigFrozen.test_rejects_tampered_switches) ... ok
+test_rejects_unknown_and_missing_keys (__main__.TestConfigFrozen.test_rejects_unknown_and_missing_keys) ... ok
+test_tile_params_match_task_sheet (__main__.TestConfigFrozen.test_tile_params_match_task_sheet) ... ok
+test_tile_report_rejects_recipe_change (__main__.TestConfigFrozen.test_tile_report_rejects_recipe_change) ... ok
+test_gray_input_is_not_wrongly_saturated (__main__.TestDinoPreprocess.test_gray_input_is_not_wrongly_saturated) ... ok
+test_matches_reference_for_all_cases (__main__.TestDinoPreprocess.test_matches_reference_for_all_cases) ... ok
+test_old_wrong_order_would_differ (__main__.TestDinoPreprocess.test_old_wrong_order_would_differ) ... ok
+test_white_and_gradient_finite (__main__.TestDinoPreprocess.test_white_and_gradient_finite) ... ok
+test_criteria_exceeded_stops_immediately (__main__.TestDriverEndToEndCPU.test_criteria_exceeded_stops_immediately) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_tqiskx13\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_tqiskx13\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_driver_full_flow_passes_with_identical_entries (__main__.TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_pct0lpaz\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_pct0lpaz\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_identity_mismatch_never_passes (__main__.TestDriverEndToEndCPU.test_identity_mismatch_never_passes)
+身份不符时不得 PASS，且在 B 首个前向之前就阻断（不依赖输出是否相同）。 ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_l6rb3nh4\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_l6rb3nh4\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_nonempty_run_dir_is_refused (__main__.TestDriverEndToEndCPU.test_nonempty_run_dir_is_refused) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_8b85_89i\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_8b85_89i\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_prereg_mismatch_blocks_before_any_load (__main__.TestDriverEndToEndCPU.test_prereg_mismatch_blocks_before_any_load) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_7qiyv6_c\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_7qiyv6_c\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_zero_quota_blocks_before_any_load (__main__.TestDriverEndToEndCPU.test_zero_quota_blocks_before_any_load) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_eb7do6p0\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_eb7do6p0\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:779: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_eb7do6p0\\case1.jpg'>
+  self._write_prereg(max_forwards=0)          # 预登记与总账一致：额度为 0
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:779: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_eb7do6p0\\case7.jpg'>
+  self._write_prereg(max_forwards=0)          # 预登记与总账一致：额度为 0
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_driver_refuses_without_prereg (__main__.TestFailurePropagation.test_driver_refuses_without_prereg) ... ok
+test_make_evidence_refuses_existing_run_dir_without_writing (__main__.TestFailurePropagation.test_make_evidence_refuses_existing_run_dir_without_writing)
+首版会先改写 evidence 再检查 run 目录；此测试固定在临时目录并核对无写入。 ... ok
+test_output_validation (__main__.TestFailurePropagation.test_output_validation) ... ok
+test_asset_fingerprint_covers_vae_and_dino_source (__main__.TestIdentityAndPrereg.test_asset_fingerprint_covers_vae_and_dino_source) ... ok
+test_identity_comparable_strips_entry_only (__main__.TestIdentityAndPrereg.test_identity_comparable_strips_entry_only) ... ok
+test_implementation_fingerprint_real (__main__.TestIdentityAndPrereg.test_implementation_fingerprint_real) ... ok
+test_identity_mismatch_blocks_before_b_first_forward (__main__.TestImmediateStop.test_identity_mismatch_blocks_before_b_first_forward) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_s_f4namw\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_s_f4namw\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_stops_after_first_call_failure_and_keeps_charge (__main__.TestImmediateStop.test_stops_after_first_call_failure_and_keeps_charge) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_v7in3o1f\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_v7in3o1f\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_stops_at_first_threshold_exceeded (__main__.TestImmediateStop.test_stops_at_first_threshold_exceeded) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_5xe1lztt\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_5xe1lztt\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_cli_help_does_not_load_model_or_cuda (__main__.TestImportSafety.test_cli_help_does_not_load_model_or_cuda) ... ok
+test_imports_do_not_pull_torch (__main__.TestImportSafety.test_imports_do_not_pull_torch) ... ok
+test_a_released_before_b_constructed (__main__.TestInstanceLifecycle.test_a_released_before_b_constructed) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_w531dqmq\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_w531dqmq\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_a_released_even_when_a_fails (__main__.TestInstanceLifecycle.test_a_released_even_when_a_fails) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_uqp6f17s\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_uqp6f17s\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_boundary_last_unit_allowed_then_refused (__main__.TestLedgerHardening.test_boundary_last_unit_allowed_then_refused) ... ok
+test_check_startable_refuses_when_time_exhausted (__main__.TestLedgerHardening.test_check_startable_refuses_when_time_exhausted) ... ok
+test_check_startable_refuses_zero_quota (__main__.TestLedgerHardening.test_check_startable_refuses_zero_quota) ... ok
+test_concurrent_lock_refused (__main__.TestLedgerHardening.test_concurrent_lock_refused) ... ok
+test_cross_attempt_accumulates_and_interruption_counts (__main__.TestLedgerHardening.test_cross_attempt_accumulates_and_interruption_counts) ... ok
+test_disk_budget (__main__.TestLedgerHardening.test_disk_budget) ... ok
+test_disk_is_cumulative_across_attempts (__main__.TestLedgerHardening.test_disk_is_cumulative_across_attempts) ... ok
+test_end_attempt_records_disk_and_wall (__main__.TestLedgerHardening.test_end_attempt_records_disk_and_wall) ... ok
+test_exclusive_lock_and_stale_takeover (__main__.TestLedgerHardening.test_exclusive_lock_and_stale_takeover) ... ok
+test_missing_ledger_without_init_refuses (__main__.TestLedgerHardening.test_missing_ledger_without_init_refuses) ... ok
+test_new_process_cannot_reset_quota (__main__.TestLedgerHardening.test_new_process_cannot_reset_quota) ... ok
+test_pid_state_tristate_and_unknown_fails_closed (__main__.TestLedgerHardening.test_pid_state_tristate_and_unknown_fails_closed) ... ok
+test_reserve_is_persisted_before_call_and_not_refunded (__main__.TestLedgerHardening.test_reserve_is_persisted_before_call_and_not_refunded) ... ok
+test_wall_stop (__main__.TestLedgerHardening.test_wall_stop) ... ok
+test_zero_quota_refuses (__main__.TestLedgerHardening.test_zero_quota_refuses) ... ok
+test_failed_call_marks_artifacts_not_produced (__main__.TestManifestSemantics.test_failed_call_marks_artifacts_not_produced) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_i7_pq3w4\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_i7_pq3w4\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_tensor_and_npy_hashes_are_separately_recomputable (__main__.TestManifestSemantics.test_tensor_and_npy_hashes_are_separately_recomputable) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_a00h79un\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_a00h79un\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_infer_core_blocks_nan_latent (__main__.TestNaNBeforeQuantization.test_infer_core_blocks_nan_latent) ... ok
+test_require_finite_blocks (__main__.TestNaNBeforeQuantization.test_require_finite_blocks) ... ok
+test_uint8_quantization_would_hide_nan_but_precheck_blocks (__main__.TestNaNBeforeQuantization.test_uint8_quantization_would_hide_nan_but_precheck_blocks) ... D:\Python\Lib\site-packages\torchvision\transforms\functional.py:282: RuntimeWarning: invalid value encountered in cast
+  npimg = (npimg * 255).astype(np.uint8)
+ok
+test_identity_mismatch_zero_b_forwards (__main__.TestParentChildIntegration.test_identity_mismatch_zero_b_forwards) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_2unrj_77\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_2unrj_77\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1348: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_2unrj_77\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1348: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_2unrj_77\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_missing_prereg_and_protocol_mismatch_never_succeed (__main__.TestParentChildIntegration.test_missing_prereg_and_protocol_mismatch_never_succeed) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_tcmqd1bf\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_tcmqd1bf\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1408: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_tcmqd1bf\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1408: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_tcmqd1bf\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_normal_run_charges_exactly_eight_and_passes_all_four_gates (__main__.TestParentChildIntegration.test_normal_run_charges_exactly_eight_and_passes_all_four_gates) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_vn1oai6s\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_vn1oai6s\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1303: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_vn1oai6s\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1303: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_vn1oai6s\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_second_forward_failure_charges_two_and_never_builds_b (__main__.TestParentChildIntegration.test_second_forward_failure_charges_two_and_never_builds_b) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_l6032xiu\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_l6032xiu\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1330: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_l6032xiu\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1330: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_l6032xiu\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_supervisor_recovery_does_not_erase_child_reservations (__main__.TestParentChildIntegration.test_supervisor_recovery_does_not_erase_child_reservations) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_xwa1bjs_\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_xwa1bjs_\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1388: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_xwa1bjs_\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1388: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_xwa1bjs_\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_timeout_confirms_child_exit_and_keeps_charge (__main__.TestParentChildIntegration.test_timeout_confirms_child_exit_and_keeps_charge)
+deadline 大于启动开销、小于 8 次慢调用：必须被监督终止并保留已扣额度。 ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_zzzuigfk\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_zzzuigfk\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1364: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_zzzuigfk\\case1.jpg'>
+  self._write_prereg(max_forwards=8)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1364: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_zzzuigfk\\case7.jpg'>
+  self._write_prereg(max_forwards=8)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_accepts_matching_protocol (__main__.TestProtocolBinding.test_accepts_matching_protocol) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_napx8cwe\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_napx8cwe\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1078: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_napx8cwe\\case1.jpg'>
+  pq = self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1078: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_napx8cwe\\case7.jpg'>
+  pq = self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_driver_blocks_on_protocol_mismatch_before_load (__main__.TestProtocolBinding.test_driver_blocks_on_protocol_mismatch_before_load) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_onexx6un\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_onexx6un\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1118: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_onexx6un\\case1.jpg'>
+  pq = self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1118: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_onexx6un\\case7.jpg'>
+  pq = self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_generator_freezes_eight_forwards_and_zero_warmups (__main__.TestProtocolBinding.test_generator_freezes_eight_forwards_and_zero_warmups) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_8712_5zy\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_8712_5zy\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_ledger_binding_mismatch_blocks (__main__.TestProtocolBinding.test_ledger_binding_mismatch_blocks) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_70uaop4i\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_70uaop4i\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_rejects_crop_change_and_wrong_samples (__main__.TestProtocolBinding.test_rejects_crop_change_and_wrong_samples) ... C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_e5n40j3e\\case1.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:603: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_e5n40j3e\\case7.jpg'>
+  self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1086: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_e5n40j3e\\case1.jpg'>
+  pq = self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\YUKINA~1\AppData\Local\Temp\pipe01_cpu_gate_up3epmc2\pipeline_baseline\tests\test_pipe01_cpu.py:1086: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_drv_e5n40j3e\\case7.jpg'>
+  pq = self._write_prereg()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_real_assets_init_control_flow (__main__.TestRealAssetsAssembly.test_real_assets_init_control_flow) ... ok
+test_real_assets_release_clears_modules (__main__.TestRealAssetsAssembly.test_real_assets_release_clears_modules) ... ok
+test_lora_missing_file_fails (__main__.TestSafeLoading.test_lora_missing_file_fails) ... ok
+test_lora_unsafe_payload_fails_closed (__main__.TestSafeLoading.test_lora_unsafe_payload_fails_closed) ... ok
+test_missing_or_wrong_dino_never_goes_online (__main__.TestSafeLoading.test_missing_or_wrong_dino_never_goes_online) ... ok
+test_no_torch_hub_calls_in_sources (__main__.TestSafeLoading.test_no_torch_hub_calls_in_sources)
+只禁止真实调用（torch.hub.xxx(）；说明性文字里提到 hub 不算违规。 ... ok
+test_no_weights_only_false_in_sources (__main__.TestSafeLoading.test_no_weights_only_false_in_sources) ... ok
+test_wrong_checkpoint_fails_strict (__main__.TestSafeLoading.test_wrong_checkpoint_fails_strict)
+指向一个能安全加载但不是 DINO 的文件 -> strict 键集必须报错（不静默）。 ... C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+ok
+test_local_seed_is_order_independent (__main__.TestSeedAndShapes.test_local_seed_is_order_independent) ... ok
+test_pad_and_crop_for_non_multiple_shapes (__main__.TestSeedAndShapes.test_pad_and_crop_for_non_multiple_shapes) ... ok
+test_both_entries_call_same_core (__main__.TestSharedCoreAndEntries.test_both_entries_call_same_core) ... ok
+test_model_dir_must_exist (__main__.TestSharedCoreAndEntries.test_model_dir_must_exist) ... ok
+test_offline_records_separate_io_timing (__main__.TestSharedCoreAndEntries.test_offline_records_separate_io_timing) ... ok
+test_png_encoder_is_shared_and_pixel_identical (__main__.TestSharedCoreAndEntries.test_png_encoder_is_shared_and_pixel_identical) ... ok
+test_prompt_must_be_empty (__main__.TestSharedCoreAndEntries.test_prompt_must_be_empty) ... ok
+test_child_within_deadline_completes (__main__.TestSupervisorHardWall.test_child_within_deadline_completes) ... ok
+test_timeout_terminates_child (__main__.TestSupervisorHardWall.test_timeout_terminates_child) ... ok
+
+----------------------------------------------------------------------
+Ran 86 tests in 103.525s
+
+OK

@@ -1,0 +1,62 @@
+{
+  "schema": "DELIV02-budget-escalation/1",
+  "batch": "DELIV02_20260918_073810",
+  "verdict": "STOP（额度不足以执行已冻结的验收矩阵）",
+  "frozen_matrix_requirement": {
+    "top": 16,
+    "top4k": 6,
+    "component": 27,
+    "note": "12 次 A/B + 4 次 C = 16 top（4K 6）；组件 = 参考 9 + 门槛 18（复用参考则为 18）"
+  },
+  "history": {
+    "component": 136,
+    "top": 22,
+    "top4k": 4,
+    "note": "R/R2/R3/DELIV-01/DELIV-01R 各账本 used 只读汇总"
+  },
+  "deliv02_allowance": {
+    "component": 48,
+    "top": 16,
+    "top4k": 6
+  },
+  "hard_caps": {
+    "component": 184,
+    "top": 38,
+    "top4k": 10
+  },
+  "consumed_by_aborted_attempts": {
+    "component": 29,
+    "top": 3,
+    "top4k": 0,
+    "causes": [
+      "attempt_ab2/c2：对象额度与磁盘额度不一致的 fail-closed 检查（0 次调用，脚本缺陷）",
+      "attempt_ab3：compare() 用 numpy 结果调用 torch.equal（脚本缺陷）→ 阶段 A 前三次调用后终止，消耗 top 3 + 组件 29"
+    ]
+  },
+  "remaining": {
+    "component": 19,
+    "top": 13,
+    "top4k": 6
+  },
+  "shortfall": {
+    "top": 3,
+    "component": 0,
+    "note": "组件 18 次可在剩余 19 内完成（复用已捕获参考）；顶层 16 次 > 剩余 13 次"
+  },
+  "fixed_defects": [
+    "Ledger.from_file：额度以磁盘唯一总账为准，对象/磁盘不一致即拒绝",
+    "唯一调用 ID 增加可配置前缀，跨 revision 重跑不再冲突",
+    "compare() 改用 pixel_io.u8_delta（numpy 安全）",
+    "终端 8 位恢复统一 pixel_io.to_u8（round、禁二次截断），CPU 前置检查 PASS"
+  ],
+  "options": [
+    "A：追加最小额度（top >=3）以完成冻结矩阵（12 + C4 = 16 top，4K 6）",
+    "B：显式批准本轮跳过 C（跨加载 4 次），只跑 12 次 A/B",
+    "C：以 STOP 结案，保留 A2 候选、pixel_io 修复与全部证据"
+  ],
+  "compliance": {
+    "no_rebuild": true,
+    "no_threshold_change": true,
+    "no_bypass": true
+  }
+}

@@ -1,0 +1,60 @@
+test_cli_exit_codes (test_delivery_cpu.TestDiskGuard.test_cli_exit_codes) ... ok
+test_ok_and_fail (test_delivery_cpu.TestDiskGuard.test_ok_and_fail) ... ok
+test_bad_input_shape_rejected (test_delivery_cpu.TestRunnerControlPlane.test_bad_input_shape_rejected) ... ok
+test_missing_model_file_rejected (test_delivery_cpu.TestRunnerControlPlane.test_missing_model_file_rejected) ... ok
+test_missing_recipe_rejected (test_delivery_cpu.TestRunnerControlPlane.test_missing_recipe_rejected) ... ok
+test_recipe_missing_key_fails_closed (test_delivery_cpu.TestRunnerControlPlane.test_recipe_missing_key_fails_closed) ... ok
+test_dit_params_match_core (test_delivery_cpu.TestTilingMathEquivalence.test_dit_params_match_core) ... ok
+test_gaussian_weights_and_grid_match_tiled_vae (test_delivery_cpu.TestTilingMathEquivalence.test_gaussian_weights_and_grid_match_tiled_vae) ... ok
+test_vae_params_match_core (test_delivery_cpu.TestTilingMathEquivalence.test_vae_params_match_core) ... ok
+test_packaging_rejects_non_ascii_name_and_wrong_count (test_delivery_cpu.TestZipGuards.test_packaging_rejects_non_ascii_name_and_wrong_count) ... ok
+test_const_and_varying_velocity_match_independent_formula (test_export_r01_r03_cpu.TestExpR01Fusion.test_const_and_varying_velocity_match_independent_formula) ... ok
+test_old_buggy_formula_differs (test_export_r01_r03_cpu.TestExpR01Fusion.test_old_buggy_formula_differs) ... ok
+test_zero_velocity_preserves_noise (test_export_r01_r03_cpu.TestExpR01Fusion.test_zero_velocity_preserves_noise) ... ok
+test_clean_chain_still_passes (test_export_r01_r03_cpu.TestExpR03NonFinite.test_clean_chain_still_passes) ... ok
+test_nan_inf_rejected_before_clamp_and_quantization (test_export_r01_r03_cpu.TestExpR03NonFinite.test_nan_inf_rejected_before_clamp_and_quantization) ... ok
+test_wavelet_would_mask_nonfinite (test_export_r01_r03_cpu.TestExpR03NonFinite.test_wavelet_would_mask_nonfinite) ... ok
+test_nonfinite_still_intercepted (test_export_r2_cpu.TestExpR08DecodeOrder.test_nonfinite_still_intercepted) ... ok
+test_per_tile_clamp_then_blend (test_export_r2_cpu.TestExpR08DecodeOrder.test_per_tile_clamp_then_blend) ... ok
+test_tampered_model_is_rejected_before_launch (test_export_r2_cpu.TestExpR09PreflightIdentity.test_tampered_model_is_rejected_before_launch) ... ok
+test_complete_set_passes (test_export_r2_cpu.TestExpR10SupervisorEvaluation.test_complete_set_passes) ... ok
+test_missing_4k_duplicate_empty_and_hash_error_fail (test_export_r2_cpu.TestExpR10SupervisorEvaluation.test_missing_4k_duplicate_empty_and_hash_error_fail) ... ok
+test_migration_over_limit_blocks (test_export_r2_cpu.TestExpR11Criteria.test_migration_over_limit_blocks) ... ok
+test_release_check_cpu_path (test_export_r2_cpu.TestExpR11Criteria.test_release_check_cpu_path) ... ok
+test_required_set_detects_missing_duplicate_empty (test_export_r2_cpu.TestExpR11Criteria.test_required_set_detects_missing_duplicate_empty) ... ok
+test_cross_process_accumulation (test_export_r_control_cpu.TestLedger.test_cross_process_accumulation) ... ok
+test_limits_enforced (test_export_r_control_cpu.TestLedger.test_limits_enforced) ... ok
+test_lock_not_auto_taken_over (test_export_r_control_cpu.TestLedger.test_lock_not_auto_taken_over) ... ok
+test_no_second_attempt (test_export_r_control_cpu.TestLedger.test_no_second_attempt) ... ok
+test_reserve_is_pre_charged_and_non_refundable (test_export_r_control_cpu.TestLedger.test_reserve_is_pre_charged_and_non_refundable) ... ok
+test_wall_clock_enforced (test_export_r_control_cpu.TestLedger.test_wall_clock_enforced) ... ok
+test_crash_leaves_ledger_inconsistent (test_export_r_control_cpu.TestSupervisorFaultInjection.test_crash_leaves_ledger_inconsistent) ... ok
+test_happy_path_all_true (test_export_r_control_cpu.TestSupervisorFaultInjection.test_happy_path_all_true) ... ok
+test_preflight_rejects_existing_lock (test_export_r_control_cpu.TestSupervisorFaultInjection.test_preflight_rejects_existing_lock) ... ok
+test_timeout_terminates_child_and_confirms_exit (test_export_r_control_cpu.TestSupervisorFaultInjection.test_timeout_terminates_child_and_confirms_exit) ... ok
+test_dead_pid_is_false (test_r_pid_probe_cpu.TestPidAlive.test_dead_pid_is_false) ... ok
+test_invalid_pid (test_r_pid_probe_cpu.TestPidAlive.test_invalid_pid) ... ok
+test_live_child_is_true (test_r_pid_probe_cpu.TestPidAlive.test_live_child_is_true) ... ok
+test_self_probe_is_safe (test_r_pid_probe_cpu.TestPidAlive.test_self_probe_is_safe) ... ok
+test_float16_output_supported (test_verify_logic_cpu.TestCompareCase.test_float16_output_supported) ... ok
+test_fp32_reference_and_lsb_detection (test_verify_logic_cpu.TestCompareCase.test_fp32_reference_and_lsb_detection) ... ok
+test_identical_cpu_tensors (test_verify_logic_cpu.TestCompareCase.test_identical_cpu_tensors) ... ok
+test_shape_mismatch_raises (test_verify_logic_cpu.TestCompareCase.test_shape_mismatch_raises) ... ok
+test_matches_cv2 (test_wavelet_cpu.TestBlur.test_matches_cv2) ... ok
+test_reflect_padding_used (test_wavelet_cpu.TestBlur.test_reflect_padding_used) ... ok
+test_matches_reference_within_1lsb (test_wavelet_cpu.TestEndToEndEquivalence.test_matches_reference_within_1lsb) ... ok
+test_output_range (test_wavelet_cpu.TestEndToEndEquivalence.test_output_range) ... ok
+test_shape_mismatch_rejected (test_wavelet_cpu.TestEndToEndEquivalence.test_shape_mismatch_rejected) ... ok
+test_ksize_from_sigma (test_wavelet_cpu.TestKernel.test_ksize_from_sigma) ... ok
+test_matches_cv2_kernel (test_wavelet_cpu.TestKernel.test_matches_cv2_kernel) ... ok
+test_half_boundary_is_truncated_not_rounded (test_wavelet_cpu.TestQuantization.test_half_boundary_is_truncated_not_rounded) ... ok
+test_matches_to_pil_image_truncation (test_wavelet_cpu.TestQuantization.test_matches_to_pil_image_truncation) ... ok
+test_scriptable (test_wavelet_cpu.TestScriptAndTrace.test_scriptable) ... ok
+test_traced_graph_is_shape_generic (test_wavelet_cpu.TestScriptAndTrace.test_traced_graph_is_shape_generic) ... C:\Users\Yuki Nagato\AppData\Local\Temp\export01r_gate_4er_jogg\export_baseline\chain.py:74: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if target.shape[2] != source.shape[2] or target.shape[3] != source.shape[3]:
+ok
+
+----------------------------------------------------------------------
+Ran 53 tests in 17.320s
+
+OK

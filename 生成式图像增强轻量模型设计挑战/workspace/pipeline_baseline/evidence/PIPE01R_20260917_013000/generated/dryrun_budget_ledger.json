@@ -1,0 +1,14 @@
+{
+ "task": "PIPE-01",
+ "created_at": "2026-09-17 00:17:03",
+ "max_forwards": 10,
+ "max_minutes": 30,
+ "max_gib": 4,
+ "forwards_reserved": 0,
+ "wall_seconds_total": 0.0,
+ "attempts": [],
+ "open_attempt": null,
+ "reservations": [],
+ "stale_locks": [],
+ "prereg_sha256": null
+}

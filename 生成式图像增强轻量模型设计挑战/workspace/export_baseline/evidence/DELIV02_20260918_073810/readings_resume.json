@@ -1,0 +1,185 @@
+{
+ "status": "FAIL",
+ "error": "AttributeError: 'list' object has no attribute 'forward_flexible'",
+ "traceback": "Traceback (most recent call last):\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\d02_resume_worker.py\", line 112, in main\n    out_a = a_runner.infer(x, timing={})\n  File \"D:\\Python\\Lib\\site-packages\\torch\\utils\\_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\delivery_runner.py\", line 209, in infer\n    return self._infer_body(image_tensor, prompt=prompt, timing=timing)\n           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\torch\\utils\\_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\delivery_runner.py\", line 233, in _infer_body\n    z1 = self._one_step(lq, gen, feats, lh, lw, lt, h_pos, w_pos)\n  File \"D:\\Python\\Lib\\site-packages\\torch\\utils\\_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\delivery_runner.py\", line 168, in _one_step\n    z1 = self.model.step(lq_latent[:, :, hi:he, wi:we].contiguous(),\n                         z[:, :, hi:he, wi:we].contiguous(),\n                         t_cur, t_nxt, feats[(hi, wi)])\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_verify.py\", line 118, in step\n    return self.dit(lq, z, tc, tn, feats)\n           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1751, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1762, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\chain.py\", line 247, in forward\n    u = self.dit.forward_flexible(torch.cat([lq_latent, z], dim=1), t_cur, t_nxt, [feats])\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'list' object has no attribute 'forward_flexible'\n",
+ "ledger": {
+  "limits": {
+   "top": 19,
+   "top4k": 6,
+   "component": 60,
+   "wall_s": 1200.0,
+   "disk_gib": 20.0
+  },
+  "used": {
+   "top": 9,
+   "top4k": 1,
+   "component": 58
+  },
+  "n_events": 76,
+  "open_attempt": {
+   "attempt_id": "cont3_resume",
+   "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+   "started_at": "2026-09-18 10:32:54",
+   "started_monotonic": 33274.2358359,
+   "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+   "source_sha256": "4099ae98c18bcfdc96bbfc1cc2991f0e06544108140545d85ce33a1108770366",
+   "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+   "status": "RUNNING"
+  },
+  "attempts": [
+   {
+    "attempt_id": "attempt_01",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 07:38:38",
+    "started_monotonic": 22817.8799339,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "611a43f3415c68fdb818eced0af057be66260da76ce9488c03c61b357fe074ab",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "BudgetExhausted: top 累计超限：本次 0 + 历史 22 > 硬上限 12",
+    "finished_at": "2026-09-18 07:38:38",
+    "elapsed_s": 0.008
+   },
+   {
+    "attempt_id": "attempt_c",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 07:38:47",
+    "started_monotonic": 22827.2982606,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "ed20ebf9cfade93a79e04198d3448c009f4e1e20554062b2aba48a3b96dc1dd0",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "BudgetExhausted: top 累计超限：本次 0 + 历史 22 > 硬上限 12",
+    "finished_at": "2026-09-18 07:38:49",
+    "elapsed_s": 2.467
+   },
+   {
+    "attempt_id": "attempt_ab2",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 07:58:52",
+    "started_monotonic": 24032.7127474,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "611a43f3415c68fdb818eced0af057be66260da76ce9488c03c61b357fe074ab",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "BudgetExhausted: ledger 磁盘额度与对象额度不一致：disk={'top': 16, 'top4k': 6, 'component': 48, 'wall_s': 1800.0, 'disk_gib': 20.0} obj={'top': 12, 'top4k': 4, 'component': 48, 'wall_s': 1800.0, 'disk_gib': 8.0}（缺项/不符一律拒绝）",
+    "finished_at": "2026-09-18 07:58:52",
+    "elapsed_s": 0.011
+   },
+   {
+    "attempt_id": "attempt_c2",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 07:59:02",
+    "started_monotonic": 24042.3112831,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "5a985e53bb23d0b738546148493cef6d1172834040d3b69c788bbeaf7c9101db",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "BudgetExhausted: ledger 磁盘额度与对象额度不一致：disk={'top': 16, 'top4k': 6, 'component': 48, 'wall_s': 1800.0, 'disk_gib': 20.0} obj={'top': 12, 'top4k': 4, 'component': 48, 'wall_s': 1800.0, 'disk_gib': 8.0}（缺项/不符一律拒绝）",
+    "finished_at": "2026-09-18 07:59:05",
+    "elapsed_s": 2.659
+   },
+   {
+    "attempt_id": "attempt_ab3",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 08:08:11",
+    "started_monotonic": 24591.2157703,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "611a43f3415c68fdb818eced0af057be66260da76ce9488c03c61b357fe074ab",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "TypeError: equal(): argument 'input' (position 1) must be Tensor, not numpy.ndarray",
+    "finished_at": "2026-09-18 08:09:25",
+    "elapsed_s": 74.296
+   },
+   {
+    "attempt_id": "attempt_c3",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 08:09:36",
+    "started_monotonic": 24676.6341038,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "6fc3d80925a578f60c8079c451ead6ac76303f3bd91dda15fc969befc74d0a4d",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\models\\\\exports\\\\DELIV02_20260918_073810\\\\npy\\\\B_512_r1.npy'",
+    "finished_at": "2026-09-18 08:09:40",
+    "elapsed_s": 3.987
+   },
+   {
+    "attempt_id": "attempt_ab4",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 08:17:27",
+    "started_monotonic": 25147.2710756,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "dceb74b9570c5656fcc458b14ce256623d42d5d15c0612fd251f7c78abbcce6b",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "BudgetExhausted: 重复调用 ID：p1_load_assets_for_reference（禁止双层预留/重复记账）",
+    "finished_at": "2026-09-18 08:17:27",
+    "elapsed_s": 0.013
+   },
+   {
+    "attempt_id": "attempt_c4",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 08:17:36",
+    "started_monotonic": 25156.8047652,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "6fc3d80925a578f60c8079c451ead6ac76303f3bd91dda15fc969befc74d0a4d",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "BudgetExhausted: 重复调用 ID：C_512（禁止双层预留/重复记账）",
+    "finished_at": "2026-09-18 08:17:39",
+    "elapsed_s": 2.646
+   },
+   {
+    "attempt_id": "cont1_ab",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 10:14:40",
+    "started_monotonic": 32180.5757615,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "f22b06b1780aa5995d1c67759408069618a1c2a14dc0386b310a0a20c4662caf",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "RuntimeError: B_512_1 vs A 未达严格同精度判据: max=7.843e-03 mean=4.109e-07 png_eq=False",
+    "finished_at": "2026-09-18 10:15:54",
+    "elapsed_s": 73.9
+   },
+   {
+    "attempt_id": "cont1_c",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 10:16:04",
+    "started_monotonic": 32264.8060666,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "2ffe39af9303ead2c9b40dc0335b5ce2047664594bcf7c2849c1f7ed7bec3233",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "RuntimeError: 阶段门禁：A/B 未 PASS（status=FAIL），C 执行器调用 0 次",
+    "finished_at": "2026-09-18 10:16:04",
+    "elapsed_s": 0.007
+   },
+   {
+    "attempt_id": "cont2_resume",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 10:24:36",
+    "started_monotonic": 32776.0016819,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "b876b25e0f7bfc245b2e91c74664c4a0d9b356c3d7597dd705cebe89d7cdcf66",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "FAIL",
+    "note": "RuntimeError: 量化前阶段 post 未达 max1e-5/mean1e-6：{'max_abs': 0.007843255996704102, 'mean_abs': 4.108662778889993e-07, 'passed': False}",
+    "finished_at": "2026-09-18 10:24:36",
+    "elapsed_s": 0.052
+   },
+   {
+    "attempt_id": "cont3_resume",
+    "run_dir": "C:\\models\\exports\\DELIV02_20260918_073810",
+    "started_at": "2026-09-18 10:32:54",
+    "started_monotonic": 33274.2358359,
+    "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+    "source_sha256": "4099ae98c18bcfdc96bbfc1cc2991f0e06544108140545d85ce33a1108770366",
+    "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "status": "RUNNING"
+   }
+  ]
+ }
+}

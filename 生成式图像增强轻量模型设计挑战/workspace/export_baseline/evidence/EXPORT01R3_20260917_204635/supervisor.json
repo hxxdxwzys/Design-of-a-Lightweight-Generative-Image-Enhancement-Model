@@ -1,0 +1,91 @@
+{
+ "schema": "EXPORT01R-supervisor/1",
+ "started_at": "2026-09-17 20:49:22",
+ "deadline_s": 1618.0,
+ "pid": 29848,
+ "preflight": {
+  "ledger_exists": true,
+  "lock_exists": false,
+  "disk_free_gib": 29.753,
+  "prereg_exists": true,
+  "model_exists": false,
+  "model_will_be_built": true,
+  "model_dir_exists": true,
+  "model_sha256": null,
+  "model_bytes": null,
+  "model_hash_expected": null,
+  "model_binding_ok": true,
+  "model_bytes_ok": true
+ },
+ "cmd": [
+  "D:\\Python\\python.exe",
+  "-u",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_worker.py",
+  "C:\\models\\exports\\EXPORT01R3_20260917_204635",
+  "C:\\models\\exports\\EXPORT01R3_20260917_204635\\ledger.json",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\EXPORT01R3_20260917_204635\\prereg_r3.json",
+  "C:\\models\\exports\\EXPORT01R3_20260917_204635\\model_dir",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\EXPORT01R3_20260917_204635"
+ ],
+ "worker_log": "C:\\models\\exports\\EXPORT01R3_20260917_204635.worker_log.txt",
+ "child_pid": 14064,
+ "process_tree": {
+  "descendants_before": [],
+  "descendants_after": [],
+  "remaining_alive": [],
+  "clean": true,
+  "unknown": false
+ },
+ "child_exit_code": 1,
+ "terminate_requested_at": null,
+ "kill_at": null,
+ "timed_out": false,
+ "wall_s": 73.43,
+ "finished_at": "2026-09-17 20:50:35",
+ "supervisor_success": false,
+ "ledger": {
+  "used": {
+   "top": 0,
+   "top4k": 0,
+   "component": 26
+  },
+  "limits": {
+   "top": 12,
+   "top4k": 4,
+   "component": 36,
+   "wall_s": 1618.0,
+   "disk_gib": 8.0
+  },
+  "n_events": 29,
+  "n_attempts": 1,
+  "open_attempt": null,
+  "last_attempt": {
+   "attempt_id": "attempt_01",
+   "run_dir": "C:\\models\\exports\\EXPORT01R3_20260917_204635",
+   "started_at": "2026-09-17 20:49:24",
+   "started_monotonic": 115383.3029033,
+   "prereg_sha256": "332d7bbaa7c273c4bdd17b1dc6fdab7037d71c8b777ce89c72754b4553056b2b",
+   "source_sha256": "c7aa55f20cf6261a0b8bf7b3115a0e741f257fdb888dfe4d8c0ddd8f02dc683c",
+   "model_sha256": null,
+   "status": "FAIL",
+   "note": "RuntimeError: 组件门槛未通过（不得开始完整 infer）：{\"verdict\": \"FAIL\", \"max_abs\": 0.6826171875}\n",
+   "finished_at": "2026-09-17 20:50:30",
+   "elapsed_s": 66.346
+  }
+ },
+ "ledger_consistent": true,
+ "checks": {
+  "readings_present": true,
+  "worker_status_ok": false,
+  "required_cases": [
+   "case1_crop512",
+   "case1_crop511x513",
+   "case1_full",
+   "case7_full"
+  ],
+  "n_top_used": 0,
+  "n_4k_used": 0
+ },
+ "worker_checks_pass": false,
+ "artifacts_verified": false
+}

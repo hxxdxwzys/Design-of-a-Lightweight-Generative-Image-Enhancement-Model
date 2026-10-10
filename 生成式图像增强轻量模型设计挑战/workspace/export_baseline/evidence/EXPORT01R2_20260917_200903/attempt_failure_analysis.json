@@ -1,0 +1,34 @@
+{
+  "schema": "EXPORT01R2-attempt-failure/1",
+  "batch": "EXPORT01R2_20260917_200903",
+  "attempt": "attempt_01",
+  "verdict": "FAIL",
+  "elapsed_s": 102.565,
+  "budget_consumed": {
+    "top": 5,
+    "top4k": 0,
+    "component": 2,
+    "wall_s": 102.565
+  },
+  "where": "阶段B首个调用 B_512_1 → ScriptModule.step（Traced TimestepEmbedder）",
+  "error_summary": "TorchScript RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!（出错算子：traced t_embedder 内 torch.mul(arange(device=cpu), CONSTANTS.c6)）",
+  "facts": [
+    "失败发生在复用件（sha256 7b815202…，来自 R1 构建）首次真实执行时；阶段A（eager 侧4次）已完成并落盘",
+    "同一 .pt 在 EXP-01 探针（pwsh-11）中曾以内存态 trace 成功执行；差别在于本批启用了冻结执行模式",
+    "R2 冻结执行模式包含 torch.jit.optimized_execution(False)：简单执行器下 arange(device=cpu) 与 trace 时烘焙的常量设备不一致",
+    "未产生任何成功记录；readings.json 为 FAIL、attempt 关闭、监督判决 ALL=False"
+  ],
+  "hypotheses_UNKNOWN": [
+    "常量设备在保存/加载或执行器切换时的具体传播路径未证实（需另外的组件级实验，属新授权）",
+    "EXP-01 旧件（sha 1bdafc4c…，CastOut 变体）是否同样受影响未验证（未执行过）"
+  ],
+  "fix_options_requiring_authorization": [
+    "A：重新导出 .pt，把 timestep embedding 的 arange/常量显式放到输入设备（数值语义不变，但改变了导出图 → §0B 明确未授权重建）",
+    "B：授权在默认（optimized）执行器下执行交付 runner（与 §0B 冻结执行模式冲突）",
+    "C：维持现状，本批以 FAIL 结案"
+  ],
+  "compliance": {
+    "auto_retry": false,
+    "gpu_after_failure": "已停止，仅做 CPU 读盘分析"
+  }
+}

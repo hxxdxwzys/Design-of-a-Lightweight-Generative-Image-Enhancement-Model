@@ -1,0 +1,19 @@
+{
+ "schema": "EXPORT01R2-prepare/1",
+ "at": "2026-09-17 20:09:04",
+ "old_model": {
+  "path": "C:\\models\\exports\\EXPORT01R_20260917_150506\\model_dir\\your_model.pt",
+  "sha256": "7b8152029e3d96cf90e0787b42949e680cdb3c1bdfce6f6be99452444283ccc6",
+  "bytes": 1343344555,
+  "verified_against_ruling": true
+ },
+ "copied_model": {
+  "path": "C:\\models\\exports\\EXPORT01R2_20260917_200903\\model_dir\\your_model.pt",
+  "sha256": "7b8152029e3d96cf90e0787b42949e680cdb3c1bdfce6f6be99452444283ccc6",
+  "bytes": 1343344555,
+  "byte_identical": true,
+  "hardlink": false
+ },
+ "bundle_id": "EXPORT01R2-1fa79d8a32213e0dfe70eabfb827a796",
+ "new_bundle_manifest": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\EXPORT01R2_20260917_200903\\bundle_manifest_r2.json"
+}

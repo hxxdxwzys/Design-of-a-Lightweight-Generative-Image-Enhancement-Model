@@ -1,0 +1,20 @@
+{
+ "deadline_s": 1800.0,
+ "poll_s": 0.5,
+ "started_at": "2026-09-17 07:28:21",
+ "started_monotonic": 67320.0964122,
+ "terminate_requested_at": null,
+ "kill_at": null,
+ "child_pid": 33032,
+ "child_exit_code": 0,
+ "child_exit_confirmed": true,
+ "timed_out": false,
+ "wall_s": 345.37580150000576,
+ "worker_log": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01.worker_log.txt",
+ "finished_at": "2026-09-17 07:34:06",
+ "attempt_id": "attempt_01_072821",
+ "run_dir": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01",
+ "prereg_sha256": "795d24efbaa83ecac658af7d423cf707b8bc2c3ecd4564607438f86a2d8b8d09",
+ "recovery_applied": false,
+ "lock_cleaned_by_supervisor": false
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "DELIV01-P1-escalation/1",
+  "batch": "DELIV01_20260917_211249",
+  "stage": "P1 组件门槛",
+  "verdict": "FAIL（匹配协议下的真实数值超阈值）",
+  "elapsed_s": 51.059,
+  "budget_remaining": {
+    "top": 24,
+    "top4k": 8,
+    "component": 74,
+    "wall_s": 2648.9,
+    "note": "P2/P3 阶段额度未动"
+  },
+  "protocol_verified": {
+    "flags_match": true,
+    "inputs_matched": true,
+    "same_input_repeats": "全部 0.0（三次 step 各自重复，相同输入）",
+    "note": "冻结开关与输入指纹在检查进程内实测一致，协议不再不对称"
+  },
+  "per_component": {
+    "dino_512": 0,
+    "step_t1p0_r0p0": 0,
+    "step_t0p5_r0p0": 0,
+    "step_t1p0_r0p5": 0,
+    "wavelet": 1.1920928955078125e-7,
+    "enc_512": {
+      "max_abs": 0.00390625,
+      "mean_abs": 0.000047477
+    },
+    "enc_1024": {
+      "max_abs": 0.00390625,
+      "mean_abs": 0.000048121
+    },
+    "dec_64": {
+      "max_abs": 0.006591796875,
+      "mean_abs": 0.0001599
+    },
+    "dec_128": {
+      "max_abs": 0.0084228515625,
+      "mean_abs": 0.00015084
+    }
+  },
+  "first_divergence": "VAE 编码器输出（enc_512/enc_1024 各 max 3.90625e-03 = 2^-8，fp16 量级上的 1 个 ULP 台阶），随后被 LightDecoder 放大到 6.6e-3/8.4e-3；DiT/DINO/wavelet 均逐位一致。",
+  "interpretation": [
+    "同一条数值链在 eager 与 JIT(optimized_execution(False)) 两条执行路径下，fp16 卷积/归一化的累加顺序或内核选择不同，产生 1 ULP 级差异",
+    "差异不是语义错误：step/dino 逐位一致、相同输入重复为 0、wavelet 与 CPU 参考一致",
+    "但按 §0D 组件判据 max≤1e-5 不得事后按 ULP 放宽 → 依规则停下升级"
+  ],
+  "gaps_found": [
+    "本次组件门槛未保存检查侧实际输出数组（§0D 要求双方输出留档）——下一 revision 必须补",
+    "尚未定位 VAE 编码器内部首个分歧算子（需下一 revision 的分段探针）"
+  ],
+  "options_for_architect": [
+    "A1：把组件判据的对照语义改为『同一产物跨进程/跨加载的保真度』(traced↔traced)，eager↔traced 只在链路层用既有迁移阈值 0.05/0.002 判定；不改模型/精度/阈值数值",
+    "A2：授权 VAE 编码器与 LightDecoder 走 fp32（改变该段数值路线，需显式批准）",
+    "A3：授权一次分段探针（组件额度内）定位 VAE 编码器内部首个分歧算子，再决定 A1/A2",
+    "B：本包以 FAIL 结案"
+  ],
+  "compliance": {
+    "auto_retry": false,
+    "note": "失败后仅 CPU 读盘分析；未跑 P2/P3；未改判据或精度"
+  }
+}

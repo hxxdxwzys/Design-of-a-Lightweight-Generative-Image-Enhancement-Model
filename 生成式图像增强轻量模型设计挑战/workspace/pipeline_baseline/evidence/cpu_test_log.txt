@@ -1,0 +1,35 @@
+test_args_ns_conflict_is_rejected (__main__.TestConfigFrozen.test_args_ns_conflict_is_rejected) ... ok
+test_frozen_config_loads_and_locks (__main__.TestConfigFrozen.test_frozen_config_loads_and_locks) ... ok
+test_rejects_tampered_switches (__main__.TestConfigFrozen.test_rejects_tampered_switches) ... ok
+test_rejects_unknown_and_missing_keys (__main__.TestConfigFrozen.test_rejects_unknown_and_missing_keys) ... ok
+test_tile_params_match_task_sheet (__main__.TestConfigFrozen.test_tile_params_match_task_sheet) ... ok
+test_tile_report_rejects_recipe_change (__main__.TestConfigFrozen.test_tile_report_rejects_recipe_change) ... ok
+test_driver_full_flow_passes_with_identical_entries (__main__.TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries) ... ok
+test_driver_marks_criteria_fail_instead_of_ok (__main__.TestDriverEndToEndCPU.test_driver_marks_criteria_fail_instead_of_ok) ... ok
+test_driver_refuses_without_prereg (__main__.TestDriverEndToEndCPU.test_driver_refuses_without_prereg) ... ok
+test_failure_does_not_write_success_manifest (__main__.TestFailurePropagation.test_failure_does_not_write_success_manifest) ... ok
+test_lora_missing_file_fails (__main__.TestFailurePropagation.test_lora_missing_file_fails) ... ok
+test_lora_unsafe_payload_fails_closed (__main__.TestFailurePropagation.test_lora_unsafe_payload_fails_closed) ... ok
+test_make_evidence_refuses_existing_run_dir (__main__.TestFailurePropagation.test_make_evidence_refuses_existing_run_dir) ... ok
+test_missing_dino_assets_do_not_go_online (__main__.TestFailurePropagation.test_missing_dino_assets_do_not_go_online) ... ok
+test_output_validation (__main__.TestFailurePropagation.test_output_validation) ... ok
+test_cli_help_does_not_load_model_or_cuda (__main__.TestImportSafety.test_cli_help_does_not_load_model_or_cuda) ... ok
+test_imports_do_not_pull_torch (__main__.TestImportSafety.test_imports_do_not_pull_torch) ... ok
+test_local_seed_is_order_independent (__main__.TestSeedAndShapes.test_local_seed_is_order_independent) ... ok
+test_pad_and_crop_for_non_multiple_shapes (__main__.TestSeedAndShapes.test_pad_and_crop_for_non_multiple_shapes) ... ok
+test_both_entries_call_same_core (__main__.TestSharedCoreAndEntries.test_both_entries_call_same_core) ... ok
+test_model_dir_must_exist (__main__.TestSharedCoreAndEntries.test_model_dir_must_exist) ... ok
+test_png_encoder_is_shared_and_pixel_identical (__main__.TestSharedCoreAndEntries.test_png_encoder_is_shared_and_pixel_identical) ... ok
+test_prompt_must_be_empty (__main__.TestSharedCoreAndEntries.test_prompt_must_be_empty) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 17.078s
+
+OK
+[pair] status=OK forwards=8 elapsed=1.0s
+[pair] case1_crop512  max=0.000e+00 mean=0.000e+00 png_identical=True pass=True
+[pair] case1_full     max=0.000e+00 mean=0.000e+00 png_identical=True pass=True
+[pair] case7_full     max=0.000e+00 mean=0.000e+00 png_identical=True pass=True
+[repeat] A_crop512_run        max=0.000e+00 mean=0.000e+00 pass=True
+[repeat] B_crop512_run        max=0.000e+00 mean=0.000e+00 pass=True
+[pair] status=CRITERIA_FAIL forwards=8 elapsed=0.9s

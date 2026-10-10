@@ -1,0 +1,141 @@
+{
+ "task": "PIPE-01R",
+ "generated_at": "2026-09-17 00:17:03",
+ "config_sha256": "1a2e44d7709168187b28e30ffa15b35f9f0f5431205ec9b983d50a9c90aca42a",
+ "asset_fingerprint": {
+  "base_weights": {
+   "path": "C:\\models\\finals\\preset\\ckpts\\VOSR_0.5B_os\\checkpoints\\ema_model.safetensors",
+   "bytes": 1948337520,
+   "sha256": "45b6687b4ce59fa3451300f9e0fdcaf2e729c15e65f444af210a7851dfa13203"
+  },
+  "lora": {
+   "path": "D:\\models\\vosr_lora\\v7\\lora_s5000.pt",
+   "bytes": 67435697,
+   "sha256": "8b5193eddf0cb1fa26deaca1fd86e754cfaf2d778fdf5cb92b1de130a954771b"
+  },
+  "light_decoder": {
+   "path": "C:\\models\\finals\\preset\\ckpts\\sd21_lwdecoder.pth",
+   "bytes": 52086482,
+   "sha256": "a326a5e5c4a2445ce970987695979f3d5e5413d39b98c73a2ddac0055d2cdf59"
+  },
+  "dinov2_ckpt": {
+   "path": "C:\\models\\finals\\preset\\ckpts\\torch_cache\\checkpoints\\dinov2_vitb14_pretrain.pth",
+   "bytes": 346378731,
+   "sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73"
+  },
+  "args_json": {
+   "path": "C:\\models\\finals\\preset\\ckpts\\VOSR_0.5B_os\\args.json",
+   "bytes": 769,
+   "sha256": "3f3d0d1637240fd02f6db5e340f1ecbc0642d403dd0e28896ba8b776762b26cd"
+  },
+  "config_json": {
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\config.json",
+   "bytes": 1668,
+   "sha256": "1a2e44d7709168187b28e30ffa15b35f9f0f5431205ec9b983d50a9c90aca42a"
+  },
+  "dinov2_repo_hubconf": {
+   "path": "C:\\models\\finals\\preset\\ckpts\\torch_cache\\facebookresearch_dinov2_main\\hubconf.py",
+   "sha256": "3e61e9c4d917389ccd4b2f177a0330c5c7619ed200803005c46b57f01eaa6457"
+  },
+  "dinov2_vision_transformer": {
+   "path": "C:\\models\\finals\\preset\\ckpts\\torch_cache\\facebookresearch_dinov2_main\\dinov2\\models\\vision_transformer.py",
+   "sha256": "df4834fc4208bfa0ae15e306364271dc984d613684bbdcbada8fd88c1556110f"
+  },
+  "ae_vae_dir": {
+   "dir": "C:\\models\\finals\\preset\\ckpts\\stable-diffusion-2-1-base\\vae",
+   "n_files": 2,
+   "files": {
+    "config.json": {
+     "bytes": 553,
+     "sha256": "424117cb534ce03497c41305ed868980123917b2b6abba4bbaa615e968772903"
+    },
+    "diffusion_pytorch_model.safetensors": {
+     "bytes": 334643276,
+     "sha256": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815"
+    }
+   }
+  }
+ },
+ "source_fingerprint": {
+  "D:\\models\\finals\\VOSR\\inference_vosr_onestep.py": {
+   "bytes": 21790,
+   "sha256": "e8c0cdcc92b9745b12bb627f93f03f5575b8a7058898aa5a4abdf9f7c932323a"
+  },
+  "D:\\models\\finals\\VOSR\\tiled_vae.py": {
+   "bytes": 9949,
+   "sha256": "ca55d3a15543bde32b53546a798133d9d2dcfdba994498254e3666b64e544344"
+  },
+  "D:\\models\\finals\\VOSR\\models\\lightningdit.py": {
+   "bytes": 24306,
+   "sha256": "a27fac143747effcb0dd70b0a2b12a51d92498f04ec3905996f580f8ecfb81cf"
+  },
+  "D:\\models\\finals\\VOSR\\models\\light_decoder.py": {
+   "bytes": 4398,
+   "sha256": "1ded3917a856476447603c02e4b08a8e0b25fbb57931a66e601d5e6903f7d8bd"
+  },
+  "D:\\tmp_timing\\vosr_lora_infer2.py": {
+   "bytes": 8434,
+   "sha256": "11b664d403f3b662067f7e221badb2c8724d8d3c3b0b825398985be0d66fb94b"
+  }
+ },
+ "implementation_fingerprint": {
+  "core.py": {
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\core.py",
+   "bytes": 32693,
+   "sha256": "65f76b8eb2d855e7ff8c1629a3cd728b0dfbaefa6b1d2467fce2a75bd800aa4b"
+  },
+  "runner.py": {
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\runner.py",
+   "bytes": 2360,
+   "sha256": "f9d82c973580ce69ab498969327b9c9fe09c9c0cac33a7ab754de4d2d87920e2"
+  },
+  "offline.py": {
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\offline.py",
+   "bytes": 4566,
+   "sha256": "18b2d36f23b742f6197667928df1bdc299ef0faf7d2b2ce4cdce7c026df23a6e"
+  },
+  "pair_verify.py": {
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\pair_verify.py",
+   "bytes": 23245,
+   "sha256": "ae77e3415520e2892ed28ec9bc302dc89c3ed59e6206f554149e639f32422942"
+  },
+  "make_evidence.py": {
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\make_evidence.py",
+   "bytes": 11153,
+   "sha256": "db5b9035a1ffa03fab10f5724e8a9d3a7cbb3ad62934dbfe79c9bf3ad5b7b7bd"
+  },
+  "config.json": {
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\config.json",
+   "bytes": 1668,
+   "sha256": "1a2e44d7709168187b28e30ffa15b35f9f0f5431205ec9b983d50a9c90aca42a"
+  },
+  "tests/test_pipe01_cpu.py": {
+   "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\tests\\test_pipe01_cpu.py",
+   "bytes": 35684,
+   "sha256": "0fe0114db7a4648b47bdffe165539d6c571032d5710ec380a7f3181299b73cf7"
+  }
+ },
+ "env": {
+  "python": "3.13.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.7.0+cu126",
+  "torchvision": "0.22.0+cu126",
+  "diffusers": "0.39.0",
+  "peft": "0.20.0",
+  "safetensors": "0.8.0",
+  "numpy": "2.4.6",
+  "cv2": "5.0.0"
+ },
+ "tile_config": {
+  "dit_tile_size_px": 512,
+  "dit_tile_latent": 64,
+  "dit_overlap_latent": 8,
+  "dit_effective_overlap_px": 64,
+  "dit_stride_px": 448,
+  "vae_tile_size_px": 1024,
+  "vae_tile_latent": 128,
+  "vae_overlap_latent": 16,
+  "vae_effective_overlap_px": 128,
+  "vae_stride_px": 896
+ }
+}

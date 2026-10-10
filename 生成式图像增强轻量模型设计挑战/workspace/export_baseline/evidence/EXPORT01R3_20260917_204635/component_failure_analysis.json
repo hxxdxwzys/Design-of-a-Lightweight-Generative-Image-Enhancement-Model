@@ -1,0 +1,49 @@
+{
+  "schema": "EXPORT01R3-component-failure/1",
+  "batch": "EXPORT01R3_20260917_204635",
+  "attempt": "attempt_01",
+  "verdict": "FAIL (组件门槛未通过，未开始完整 infer)",
+  "elapsed_s": 66.346,
+  "budget_consumed": {
+    "top": 0,
+    "top4k": 0,
+    "component": 26,
+    "wall_s": 66.346
+  },
+  "new_model": {
+    "sha256": "c3946096bcda7513d1a100975f73e08aa8f6ce24f4c7837642484038dd3f543d",
+    "note": "EXP-R13 设备修复已生效：全新进程执行不再抛 device 错误"
+  },
+  "positives": [
+    "dino_512 与三次 step（t=1.0/0.5/1.0，r=0.0/0.0/0.5）与 eager 参考逐位一致（max=mean=0.0）",
+    "wavelet max 1.19e-07、mean 2.5e-08（远低于判据）",
+    "组件门槛在完整 infer 之前正确阻断（未消耗任何 top 额度）"
+  ],
+  "failures": [
+    "enc_512 max 3.90625e-03（=2^-8，1 个 fp16 ULP）、mean 4.75e-05",
+    "enc_1024 max 3.90625e-03、mean 4.81e-05",
+    "dec_64 max 6.59e-03、mean 1.60e-04",
+    "dec_128 max 8.42e-03、mean 1.51e-04",
+    "step_*_vs_first_call 0.65/0.68 —— 检查脚本缺陷：把不同 (t,r) 输入当成重复对照"
+  ],
+  "diagnosis": {
+    "kind": "测量协议缺陷（非导出数值语义错误）",
+    "reasons": [
+      "eager 参考在构建进程内计算，该进程设置了冻结执行开关（确定性算法/cuDNN 确定性/TF32 关闭/CUBLAS workspace）",
+      "全新检查进程只继承环境变量，未设置 torch 进程内开关，因此卷积/矩阵乘的算法选择不同 → fp16 下 1 ULP 差异",
+      "对照关系不对称：参考侧与检查侧不满足“只改变被测变量”的条件",
+      "step_*_vs_first_call 比较的是不同 t/r 的输入，属脚本缺陷（不同输入不能作为重复证据）"
+    ],
+    "unknowns": [
+      "对齐执行开关后 VAE 编解码是否收敛到 1e-5 以下（未实测）"
+    ]
+  },
+  "requires_authorization": [
+    "A：按 §0C 的窄例外范围再授权一次组件阶段修复（对齐检查进程的 torch 开关 + 修正重复比较），随后重跑组件门槛与完整成对；",
+    "B：本批以 FAIL 结案。"
+  ],
+  "compliance": {
+    "auto_retry": false,
+    "gpu_after_failure": "已停止；仅做 CPU 读盘分析"
+  }
+}

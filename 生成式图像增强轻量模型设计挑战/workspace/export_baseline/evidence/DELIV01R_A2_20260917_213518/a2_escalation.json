@@ -1,0 +1,64 @@
+{
+  "schema": "DELIV01R-A2-escalation/1",
+  "stage": "P1（A2 候选 + 一次完整验证）",
+  "verdict": "FAIL（有效协议下新候选仍超阈值）→ 依 §0E 停下升级",
+  "new_candidate": {
+    "sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+    "vae_fp32": true,
+    "note": "VAE 编码器与 LightDecoder 用 FP32（父权重重新加载）；DiT/DINO fp16；嵌入/融合/wavelet 不变"
+  },
+  "chain_level_result": {
+    "call": "B_512_1 vs A（case1 中心 512 裁切，配方匹配的 eager 参考）",
+    "max_abs": 0.007843017578125,
+    "mean_abs": 4.109e-7,
+    "png_pixel_identical": false,
+    "criteria": {
+      "max_abs": 0.00001,
+      "mean_abs": 0.000001
+    },
+    "note": "mean 已达标（4.1e-7 ≤ 1e-6），max 仍超（7.84e-3 ≈ 1 个 uint8 级别，涉及极少数像素）"
+  },
+  "phase_state": {
+    "phaseA_completed": 4,
+    "phaseB_failed_at": "B_512_1",
+    "未进入4K": true
+  },
+  "protocol_validity": {
+    "flags_applied_in_all_gpu_children": true,
+    "eager_reference_recipe_matched": true,
+    "merge_probe_referenced_readonly": true
+  },
+  "budget": {
+    "component_used_cumulative": 98,
+    "component_cap": 96,
+    "component_overrun_reason": "merge 探针只读引用的路径写成旧 run 目录，回退为真跑（2 次）；保守计入不退款",
+    "top_used_cumulative": 17,
+    "top_cap": 24,
+    "top_waste": "12 次顶层预留被 a2_verify_worker 与 run_verification 双重预留消耗（脚本缺陷，已修）",
+    "top4k_used_cumulative": 4,
+    "top4k_cap": 8,
+    "new_candidate_used": 1,
+    "new_candidate_limit": 1,
+    "full_verification_attempts_used": 1,
+    "limit": 1
+  },
+  "disclosed_gaps": [
+    "A2 的组件级同配方对照被 recipe 缺 module_dtypes 影响，实际用了 fp16 eager 侧 → 该组数字无效（未再消耗组件额度重跑，因额度已触顶）",
+    "组件额度已超 2 次（96→98），保守计入不复位",
+    "12 次顶层预留因双预留浪费，累计 top 17/24"
+  ],
+  "interpretation": [
+    "A2 把 fp16 导出链的链路级 max 从 4.7e-2/7.8e-2 降到 7.84e-3，mean 降到 4.1e-7（达标）",
+    "残余差异集中在极少数像素（1 个 uint8 级别），与 wavelet 的 uint8 量化边界翻转一致",
+    "按 §0E 不得放宽阈值、不得构建第二种数值配方 → 停在升级点"
+  ],
+  "options": [
+    "A：授权一次附加执行 revision（组件额度需扩容），专门定位少数分歧像素（wavelet 量化边界 vs 解码器输出）",
+    "B：由 Architect 裁定判据语义（例如对 uint8 量化后像素允许 ≤1 级差异 / 以 mean≤1e-6 为主判据），不改模型",
+    "C：本包以 FAIL 结案，保留 A2 候选与全部证据"
+  ],
+  "compliance": {
+    "auto_retry": false,
+    "note": "未跑 P2/P3；未放宽判据；未构建第二种配方"
+  }
+}

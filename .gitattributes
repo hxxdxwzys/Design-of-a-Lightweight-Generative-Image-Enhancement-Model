@@ -1,0 +1,3 @@
+# Preserve source snapshots and evidence bytes on clone/checkout: manifests use SHA-256.
+/workspace/** -text
+/生成式图像增强轻量模型设计挑战/workspace/** -text

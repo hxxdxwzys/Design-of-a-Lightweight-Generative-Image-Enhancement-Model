@@ -33,3 +33,21 @@ submit_osediff/
 提交历史/
 生成式图像增强轻量模型设计挑战/workspace/hypir_submit/
 生成式图像增强轻量模型设计挑战/workspace/hy_db_submit/
+
+# Local model/data artifacts and runtime state; keep source and text evidence.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.npy
+*.npz
+*.zip
+*.pid
+*.bak
+*.ok
+.env
+.env.*
+!.env.example
+*.pem
+*.key

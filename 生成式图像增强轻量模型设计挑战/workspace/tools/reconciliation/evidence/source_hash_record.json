@@ -1,0 +1,70 @@
+{
+ "generated_at": "2026-09-16 19:20:04",
+ "review_recorded": {
+  "vosr_lora_infer2.py": "11b664d403f3b662067f7e221badb2c8724d8d3c3b0b825398985be0d66fb94b",
+  "train_vosr_lora.py": "61409f0ecd785a0a5070d234d7d156e97ffe483e4ff1b650511421800cddee46",
+  "preupload_gate.py": "acff56c784e703a2cb8513519098098cfc08ead8c0047c15840e84b1014c8478",
+  "score_pred2.py": "38e27eeda883279b1b674a99071d3035524de6ab4a4c15f6c62385937b949a15"
+ },
+ "checked": [
+  {
+   "file": "D:\\tmp_timing\\vosr_lora_infer2.py",
+   "review_recorded": "11b664d403f3b662067f7e221badb2c8724d8d3c3b0b825398985be0d66fb94b",
+   "current": "11b664d403f3b662067f7e221badb2c8724d8d3c3b0b825398985be0d66fb94b",
+   "drift": false,
+   "verified_at": "2026-09-16 19:20:04"
+  },
+  {
+   "file": "D:\\tmp_timing\\train_vosr_lora.py",
+   "review_recorded": "61409f0ecd785a0a5070d234d7d156e97ffe483e4ff1b650511421800cddee46",
+   "current": "61409f0ecd785a0a5070d234d7d156e97ffe483e4ff1b650511421800cddee46",
+   "drift": false,
+   "verified_at": "2026-09-16 19:20:04"
+  },
+  {
+   "file": "D:\\tmp_timing\\preupload_gate.py",
+   "review_recorded": "acff56c784e703a2cb8513519098098cfc08ead8c0047c15840e84b1014c8478",
+   "current": "acff56c784e703a2cb8513519098098cfc08ead8c0047c15840e84b1014c8478",
+   "drift": false,
+   "verified_at": "2026-09-16 19:20:04"
+  },
+  {
+   "file": "D:\\tmp_timing\\score_pred2.py",
+   "review_recorded": "38e27eeda883279b1b674a99071d3035524de6ab4a4c15f6c62385937b949a15",
+   "current": "38e27eeda883279b1b674a99071d3035524de6ab4a4c15f6c62385937b949a15",
+   "drift": false,
+   "verified_at": "2026-09-16 19:20:04"
+  }
+ ],
+ "any_drift": false,
+ "workcopy": {
+  "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\tools\\reconciliation\\preupload_gate_rcon.py",
+  "sha256": "3cc62222957f11ebdaf2eb0e63e3832c4a52dc697e0aa51fb7076d4ee1d1b7c7"
+ },
+ "tests": {
+  "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\tools\\reconciliation\\tests\\test_gate_failure_propagation.py",
+  "sha256": "60b5700b880d906168ac37814c83287027581dc93dfc642b9cc5ef63af4f0bbb"
+ },
+ "generator": {
+  "path": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\tools\\reconciliation\\evidence\\build_manifest.py",
+  "sha256": "3f52f338e09a92665293fc84bbcd9c2ac2719a1b92b8fafbcc6132b66b602c7e",
+  "computed_at": "2026-09-16 19:20:04"
+ },
+ "asset_path_drift": {
+  "file": "D:\\tmp_timing\\asset_profiles.json",
+  "verified_at": "2026-09-16 19:20:04",
+  "kind": "DRIFT",
+  "recorded_field": "assets.M24.zip",
+  "recorded_value": "C:/生成式图像增强轻量模型设计挑战/提交历史/Track2_CompliantM24——.zip",
+  "recorded_path_exists": false,
+  "archive_dir": "C:\\生成式图像增强轻量模型设计挑战\\提交历史",
+  "archive_zip_count": 18,
+  "archive_names_sample": [
+   "Track2_M24_v3——43.6951.zip",
+   "Track2_M24_v4——43.5844.zip",
+   "Track2_M24avg2——36.6414.zip"
+  ],
+  "status": "DRIFT",
+  "action": "仅登记为资产路径漂移；不按名称相似改指向（名称相似不等于同一对象）"
+ }
+}

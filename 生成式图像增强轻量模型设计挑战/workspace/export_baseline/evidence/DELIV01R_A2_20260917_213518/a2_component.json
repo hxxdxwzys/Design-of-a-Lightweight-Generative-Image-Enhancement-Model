@@ -1,0 +1,31 @@
+{
+ "schema": "DELIV01R-a2-component/1",
+ "checks": {
+  "enc_512": {
+   "max_abs": 0.0205078125,
+   "mean_abs": 0.000541067449375987,
+   "finite": true,
+   "passed": false
+  },
+  "enc_1024": {
+   "max_abs": 0.05224609375,
+   "mean_abs": 0.0005409159930422902,
+   "finite": true,
+   "passed": false
+  },
+  "dec_64": {
+   "max_abs": 0.0063226670026779175,
+   "mean_abs": 0.00015421013813465834,
+   "finite": true,
+   "passed": false
+  },
+  "dec_128": {
+   "max_abs": 0.006522096693515778,
+   "mean_abs": 0.00013968667190056294,
+   "finite": true,
+   "passed": false
+  }
+ },
+ "recipe_dtypes": {},
+ "verdict": "FAIL"
+}

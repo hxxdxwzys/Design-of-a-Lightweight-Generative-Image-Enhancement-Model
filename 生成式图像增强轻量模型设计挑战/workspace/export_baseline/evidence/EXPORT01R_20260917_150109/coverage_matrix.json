@@ -1,0 +1,38 @@
+{
+ "EXP-R01": [
+  "TestExpR01Fusion.test_zero_velocity_preserves_noise",
+  "TestExpR01Fusion.test_const_and_varying_velocity_match_independent_formula",
+  "TestExpR01Fusion.test_old_buggy_formula_differs"
+ ],
+ "EXP-R02": [
+  "r_control_scenarios:happy",
+  "r_control_scenarios:crash",
+  "TestSupervisorFaultInjection.test_happy_path_all_true",
+  "TestSupervisorFaultInjection.test_crash_leaves_ledger_inconsistent"
+ ],
+ "EXP-R03": [
+  "TestExpR03NonFinite.test_nan_inf_rejected_before_clamp_and_quantization",
+  "TestExpR03NonFinite.test_wavelet_would_mask_nonfinite"
+ ],
+ "EXP-R04": [
+  "TestLedger.test_reserve_is_pre_charged_and_non_refundable",
+  "TestLedger.test_limits_enforced",
+  "TestLedger.test_wall_clock_enforced",
+  "TestLedger.test_lock_not_auto_taken_over",
+  "TestLedger.test_cross_process_accumulation",
+  "TestPidAlive.test_self_probe_is_safe",
+  "r_control_scenarios:timeout",
+  "r_control_scenarios:prelock"
+ ],
+ "EXP-R05": [
+  "r_merge_probe.py（独立加载 fp32 父实例对照，attempt 内执行）"
+ ],
+ "EXP-R06": [
+  "r_build.py 内容哈希/CastIn 记录",
+  "r_verify.py 双方与重复 NPY 保存"
+ ],
+ "EXP-R07": [
+  "make_r_prereg.py 契约字段",
+  "r_supervisor.py 产物核验段"
+ ]
+}

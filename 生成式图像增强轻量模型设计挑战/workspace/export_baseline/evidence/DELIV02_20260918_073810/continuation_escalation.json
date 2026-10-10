@@ -1,0 +1,52 @@
+{
+  "schema": "DELIV02-continuation-escalation/1",
+  "batch": "DELIV02_20260918_073810",
+  "verdict": "STOP（续跑额度不足以完成冻结矩阵）",
+  "progress_this_continuation": {
+    "component_gate": "PASS（9 份参考重新生成 + 18 次检查；同配方 fp32 VAE 编码器/解码器）",
+    "A_side": "A_512_r1..r3 + A_511x513 完成并落盘（已通过 NPY 哈希校验）",
+    "B_512_1": "跨实现判据通过：max=7.843e-03（=2/255 边界内）、mean=4.109e-07、PNG 差异在受限范围内",
+    "pre_quantization_stages": "encode/features/noise/step/decode_raw 阶段实际数组对照**严格通过**（max<=1e-5、mean<=1e-6）",
+    "post_stage": "post（wavelet 量化后）max=7.843e-03 = 2/255，属矩阵第 2 行允许范围（脚本一度误按严格判据，已修正）"
+  },
+  "defects_this_round": [
+    "check_selection：B vs A 误用严格 check（已修：跨实现一律 pixel_pair_check）",
+    "stage_classification：post 误列为‘量化前’（已修）",
+    "merged_construction：patch_* 返回值被当作模型使用 → AttributeError，浪费 1 次顶层 + 1 次 4K"
+  ],
+  "budget": {
+    "caps": {
+      "top": 41,
+      "top4k": 10,
+      "component": 196
+    },
+    "used": {
+      "top": 31,
+      "top4k": 5,
+      "component": 194
+    },
+    "remaining": {
+      "top": 10,
+      "top4k": 5,
+      "component": 2
+    },
+    "needed_for_frozen_matrix": {
+      "top": 11,
+      "top4k": 6
+    },
+    "shortfall": {
+      "top": 1,
+      "top4k": 1
+    }
+  },
+  "options": [
+    "A：追加最小额度 top>=1、4K>=1，以完成 B 其余 5 次 + C 4 次（4K 6 中已耗 1）",
+    "B：显式批准跳过 C 并接受 4K 减少 1 次（与冻结矩阵不符，需批准）",
+    "C：以 STOP 结案，保留 A 侧证据、组件门槛 PASS 与全部阶段读数"
+  ],
+  "compliance": {
+    "no_rebuild": true,
+    "no_threshold_change": true,
+    "model_sha_unchanged": "98fe49b9992a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793"
+  }
+}

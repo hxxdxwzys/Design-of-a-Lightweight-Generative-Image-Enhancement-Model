@@ -1,0 +1,44 @@
+{
+ "schema": "EXPORT01R-readings/1",
+ "status": "FAIL",
+ "error": "RuntimeError: 合并对照探针失败：rror('merge probe %s 失败：%s' % (which, (cp.stderr or '')[-500:]))\nRuntimeError: merge probe peft 失败：    role(sys.argv[2], sys.argv[3])\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_merge_probe.py\", line 40, in role\n    model, _ = PBcore.build_dit(cfg, args, base_state=base_sd)\n               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\core.py\", line 303, in build_dit\n    from models.lightningdit import LightningDiT\nModuleNotFoundError: No module named 'models'\n\n",
+ "traceback": "Traceback (most recent call last):\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_worker.py\", line 70, in main\n    readings = r_verify.run_verification(run_dir, led, prereg_path, model_dir,\n                                         prereg['tolerances'], exp_dir)\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_verify.py\", line 214, in run_verification\n    raise RuntimeError('合并对照探针失败：%s' % readings['merge_probe']['error'])\nRuntimeError: 合并对照探针失败：rror('merge probe %s 失败：%s' % (which, (cp.stderr or '')[-500:]))\nRuntimeError: merge probe peft 失败：    role(sys.argv[2], sys.argv[3])\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_merge_probe.py\", line 40, in role\n    model, _ = PBcore.build_dit(cfg, args, base_state=base_sd)\n               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline\\core.py\", line 303, in build_dit\n    from models.lightningdit import LightningDiT\nModuleNotFoundError: No module named 'models'\n\n\n",
+ "ledger": {
+  "limits": {
+   "top": 12,
+   "top4k": 4,
+   "component": 48,
+   "wall_s": 1800.0,
+   "disk_gib": 8.0
+  },
+  "used": {
+   "top": 0,
+   "top4k": 0,
+   "component": 10
+  },
+  "n_events": 12,
+  "open_attempt": {
+   "attempt_id": "attempt_01",
+   "run_dir": "C:\\models\\exports\\EXPORT01R_20260917_150506",
+   "started_at": "2026-09-17 15:05:27",
+   "started_monotonic": 94746.9542376,
+   "prereg_sha256": "0aa47ddb9f7dc813ae1e8b693a5110807618626fc7c099985fd199ff6eaa8037",
+   "source_sha256": "c6a5ed5487c0b7da56125bff265984b01ccc7a86a35cfbb5d501d078b4b38d3c",
+   "model_sha256": null,
+   "status": "RUNNING"
+  },
+  "attempts": [
+   {
+    "attempt_id": "attempt_01",
+    "run_dir": "C:\\models\\exports\\EXPORT01R_20260917_150506",
+    "started_at": "2026-09-17 15:05:27",
+    "started_monotonic": 94746.9542376,
+    "prereg_sha256": "0aa47ddb9f7dc813ae1e8b693a5110807618626fc7c099985fd199ff6eaa8037",
+    "source_sha256": "c6a5ed5487c0b7da56125bff265984b01ccc7a86a35cfbb5d501d078b4b38d3c",
+    "model_sha256": null,
+    "status": "RUNNING"
+   }
+  ]
+ },
+ "elapsed_s": 66.778
+}

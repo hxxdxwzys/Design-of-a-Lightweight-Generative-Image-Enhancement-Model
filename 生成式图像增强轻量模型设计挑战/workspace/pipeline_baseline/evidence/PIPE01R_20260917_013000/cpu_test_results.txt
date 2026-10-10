@@ -1,0 +1,80 @@
+.TEST_OK test_pipe01_cpu.TestBudgetLedger.test_boundary_last_unit_allowed_then_refused
+.TEST_OK test_pipe01_cpu.TestBudgetLedger.test_concurrent_lock_refused
+.TEST_OK test_pipe01_cpu.TestBudgetLedger.test_cross_attempt_accumulates_and_interruption_counts
+.TEST_OK test_pipe01_cpu.TestBudgetLedger.test_disk_budget
+.TEST_OK test_pipe01_cpu.TestBudgetLedger.test_missing_ledger_without_init_refuses
+.TEST_OK test_pipe01_cpu.TestBudgetLedger.test_new_process_cannot_reset_quota
+.TEST_OK test_pipe01_cpu.TestBudgetLedger.test_reserve_is_persisted_before_call_and_not_refunded
+.TEST_OK test_pipe01_cpu.TestBudgetLedger.test_wall_stop
+.TEST_OK test_pipe01_cpu.TestBudgetLedger.test_zero_quota_refuses
+.TEST_OK test_pipe01_cpu.TestConfigFrozen.test_args_ns_conflict_is_rejected
+.TEST_OK test_pipe01_cpu.TestConfigFrozen.test_frozen_config_loads_and_locks
+.TEST_OK test_pipe01_cpu.TestConfigFrozen.test_rejects_tampered_switches
+.TEST_OK test_pipe01_cpu.TestConfigFrozen.test_rejects_unknown_and_missing_keys
+.TEST_OK test_pipe01_cpu.TestConfigFrozen.test_tile_params_match_task_sheet
+.TEST_OK test_pipe01_cpu.TestConfigFrozen.test_tile_report_rejects_recipe_change
+.TEST_OK test_pipe01_cpu.TestDinoPreprocess.test_gray_input_is_not_wrongly_saturated
+.TEST_OK test_pipe01_cpu.TestDinoPreprocess.test_matches_reference_for_all_cases
+.TEST_OK test_pipe01_cpu.TestDinoPreprocess.test_old_wrong_order_would_differ
+.TEST_OK test_pipe01_cpu.TestDinoPreprocess.test_white_and_gradient_finite
+.[pair] status=CRITERIA_FAIL calls=8 forwards_reserved=8 wall_total=1.0s
+[criteria] {"identity_equal": true, "all_calls_ok": true, "n_calls": 8, "pairs_ok": false, "repeat_ok": true, "budget_ok": true, "prereg_verified": true, "no_unsafe_load": true, "dino_loader": "local_source+local_ckpt(weights_only=True,strict=True), 无 torch.hub"}
+[pair] case1_crop512  max=1.000e-03 mean=1.000e-03 png_identical=False
+[pair] case1_full     max=1.000e-03 mean=1.000e-03 png_identical=False
+[pair] case7_full     max=1.000e-03 mean=1.000e-03 png_identical=False
+TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_criteria_fail_is_reported
+.[pair] status=OK calls=8 forwards_reserved=8 wall_total=1.0s
+[criteria] {"identity_equal": true, "all_calls_ok": true, "n_calls": 8, "pairs_ok": true, "repeat_ok": true, "budget_ok": true, "prereg_verified": true, "no_unsafe_load": true, "dino_loader": "local_source+local_ckpt(weights_only=True,strict=True), 无 torch.hub"}
+[pair] case1_crop512  max=0.000e+00 mean=0.000e+00 png_identical=True
+[pair] case1_full     max=0.000e+00 mean=0.000e+00 png_identical=True
+[pair] case7_full     max=0.000e+00 mean=0.000e+00 png_identical=True
+TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries
+.[pair] status=CRITERIA_FAIL calls=8 forwards_reserved=8 wall_total=1.0s
+[criteria] {"identity_equal": false, "identity_diff_keys": ["effective_fingerprint"], "all_calls_ok": true, "n_calls": 8, "pairs_ok": true, "repeat_ok": true, "budget_ok": true, "prereg_verified": true, "no_unsafe_load": true, "dino_loader": "local_source+local_ckpt(weights_only=True,strict=True), 无 torch.hub"}
+[pair] case1_crop512  max=0.000e+00 mean=0.000e+00 png_identical=True
+[pair] case1_full     max=0.000e+00 mean=0.000e+00 png_identical=True
+[pair] case7_full     max=0.000e+00 mean=0.000e+00 png_identical=True
+TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_identity_mismatch_fails_even_with_zero_diff
+.TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_nonempty_run_dir_is_refused
+.TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_prereg_mismatch_blocks_before_any_load
+.[pair] status=BUDGET_STOP calls=0 forwards_reserved=0 wall_total=0.0s
+TEST_OK test_pipe01_cpu.TestDriverEndToEndCPU.test_zero_quota_blocks_before_any_forward
+.TEST_OK test_pipe01_cpu.TestFailurePropagation.test_driver_refuses_without_prereg
+.TEST_OK test_pipe01_cpu.TestFailurePropagation.test_make_evidence_refuses_existing_run_dir_without_writing
+.TEST_OK test_pipe01_cpu.TestFailurePropagation.test_output_validation
+.TEST_OK test_pipe01_cpu.TestIdentityAndPrereg.test_asset_fingerprint_covers_vae_and_dino_source
+.TEST_OK test_pipe01_cpu.TestIdentityAndPrereg.test_identity_comparable_strips_entry_only
+.TEST_OK test_pipe01_cpu.TestIdentityAndPrereg.test_implementation_fingerprint_real
+.TEST_OK test_pipe01_cpu.TestImportSafety.test_cli_help_does_not_load_model_or_cuda
+.TEST_OK test_pipe01_cpu.TestImportSafety.test_imports_do_not_pull_torch
+.TEST_OK test_pipe01_cpu.TestNaNBeforeQuantization.test_infer_core_blocks_nan_latent
+.TEST_OK test_pipe01_cpu.TestNaNBeforeQuantization.test_require_finite_blocks
+D:\Python\Lib\site-packages\torchvision\transforms\functional.py:282: RuntimeWarning: invalid value encountered in cast
+  npimg = (npimg * 255).astype(np.uint8)
+.TEST_OK test_pipe01_cpu.TestNaNBeforeQuantization.test_uint8_quantization_would_hide_nan_but_precheck_blocks
+.TEST_OK test_pipe01_cpu.TestSafeLoading.test_lora_missing_file_fails
+.TEST_OK test_pipe01_cpu.TestSafeLoading.test_lora_unsafe_payload_fails_closed
+.TEST_OK test_pipe01_cpu.TestSafeLoading.test_missing_or_wrong_dino_never_goes_online
+.TEST_OK test_pipe01_cpu.TestSafeLoading.test_no_torch_hub_calls_in_sources
+.TEST_OK test_pipe01_cpu.TestSafeLoading.test_no_weights_only_false_in_sources
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+.TEST_OK test_pipe01_cpu.TestSafeLoading.test_wrong_checkpoint_fails_strict
+.TEST_OK test_pipe01_cpu.TestSeedAndShapes.test_local_seed_is_order_independent
+.TEST_OK test_pipe01_cpu.TestSeedAndShapes.test_pad_and_crop_for_non_multiple_shapes
+.TEST_OK test_pipe01_cpu.TestSharedCoreAndEntries.test_both_entries_call_same_core
+.TEST_OK test_pipe01_cpu.TestSharedCoreAndEntries.test_model_dir_must_exist
+.TEST_OK test_pipe01_cpu.TestSharedCoreAndEntries.test_offline_records_separate_io_timing
+.TEST_OK test_pipe01_cpu.TestSharedCoreAndEntries.test_png_encoder_is_shared_and_pixel_identical
+.TEST_OK test_pipe01_cpu.TestSharedCoreAndEntries.test_prompt_must_be_empty
+
+----------------------------------------------------------------------
+Ran 49 tests in 10.333s
+
+OK
+MACHINE_SUMMARY tests=49 failures=0 errors=0 skipped=0
+ISOLATED_RUN_DIR=C:\Users\YUKINA~1\AppData\Local\Temp\pipe01r_iso2_001748

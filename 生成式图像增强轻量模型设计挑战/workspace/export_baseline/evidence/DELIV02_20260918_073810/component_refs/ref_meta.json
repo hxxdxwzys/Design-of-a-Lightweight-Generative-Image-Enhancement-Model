@@ -1,0 +1,76 @@
+{
+ "inputs": [
+  "dec_128",
+  "dec_64",
+  "dino_512",
+  "enc_1024",
+  "enc_512",
+  "feats",
+  "latent",
+  "noise",
+  "wav_s",
+  "wav_t"
+ ],
+ "refs": [
+  "dec_128",
+  "dec_64",
+  "dino_512",
+  "enc_1024",
+  "enc_512",
+  "step_t0p5_r0p0",
+  "step_t1p0_r0p0",
+  "step_t1p0_r0p5",
+  "wavelet"
+ ],
+ "ref_sha256": {
+  "enc_512": "0974ac7d91178ee57c2883e3173c40471dd4a79c7690a60d3cccf245aad02fd0",
+  "enc_1024": "3c370f4d9e6e7a753270e4db75374b438a64c0e53143ae4aba3819f9c93aa508",
+  "dino_512": "3950274a42d7ae233270584717a6fcf2a079cdc17c53968ab1fe7922d12a2a7b",
+  "dec_64": "a67b64ef9fb1afff551f3a77d3ace48b26ae20b92015085916d88086cb1e0f34",
+  "dec_128": "76b9c1d03117d14f92ac07ec611be0e5cb8fc8251c50d153f9876036cf9aa148",
+  "wavelet": "735ded2557fcf41c1b30e1112b7802867f0d681a5c4680fecec986e87cf6f425",
+  "step_t1p0_r0p0": "82d7c95c7b141fc238a09ffa493bf9ece6cc788150a0f0e8d5dc3dd678f5a8d1",
+  "step_t0p5_r0p0": "9a8a5ce570aa84ee6ccc814b29e6f3e3d202a159cdc98105178a34cb75f17a8e",
+  "step_t1p0_r0p5": "cf495e1ce41bc2775d2dd87d83907734c297b55419afed0e95a508b100b39a94"
+ },
+ "inputs_sha256": {
+  "enc_512": "f18bcd8a26f7384663389cc52a276e719086b4484725026255cd6f54fd5aa75e",
+  "enc_1024": "dcc6cca7b0d13f0c264dcfc0a455f13058069341dd455be0e254c2a3f5821119",
+  "dino_512": "5059214ea2526d92b1a9bf066c4be2dea73a66544fe335b10a8c68875d9a06b9",
+  "latent": "c834d0ff45856ff41acdb6fabbbe964bac6b4630ceb09e31d719cb285de92b1a",
+  "noise": "6472e75bcadca7bf12747d68896762a9902d8c2652f0ea6d57a356c98b89f88f",
+  "feats": "3f97cb5fbd440787cd7a38fb153b66cb5ac1940c6444ef640ffac578e2dd197c",
+  "dec_64": "e5cbbbd1c05064e550f3b9843b5976a98c27610394ca936b9c273a4bca7266e4",
+  "dec_128": "216f2a8523bd04cf4e740a6d5d0d12b3c363ac20aab8c89dde2c9e695d8ec1a1",
+  "wav_t": "6c28672bf506e920b8182c446c7eadf559f861cf56a7609e2a02779320d22a83",
+  "wav_s": "cd808deb7d93d7a15c70a6a98d3e2044e0e54b7db83158934ccefd523d00ab6e"
+ },
+ "flags": {
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "deterministic_algorithms": true,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "cudnn_allow_tf32": false,
+  "matmul_allow_tf32": false,
+  "torch": "2.7.0+cu126"
+ },
+ "step_pairs": [
+  [
+   1.0,
+   0.0
+  ],
+  [
+   0.5,
+   0.0
+  ],
+  [
+   1.0,
+   0.5
+  ]
+ ],
+ "criteria": {
+  "max_abs": 1e-05,
+  "mean_abs": 1e-06,
+  "finite": true
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "note": "源参考（fp16 eager + 同一 runner 编排）的四个输出取自本预登记下的 attempt_2 phase-1；该次在 phase-2 首例因设备不匹配崩溃，未产生任何判定，phase-1 产物完整有效且按哈希固定。本 attempt 只执行重载侧，避免重复消耗 4K 前向额度（复用已在 C1 预算条款中允许，来源如实登记）。",
+ "aborted_attempt_log": "evidence_verify_c1_stdout2.txt",
+ "phase1_timings_s": {
+  "case1_crop512": 0.75,
+  "case1_full": 24.54,
+  "case7_full": 24.19,
+  "case1_crop511x513": 0.62
+ },
+ "runner_recipe_sha256": null,
+ "files": {}
+}

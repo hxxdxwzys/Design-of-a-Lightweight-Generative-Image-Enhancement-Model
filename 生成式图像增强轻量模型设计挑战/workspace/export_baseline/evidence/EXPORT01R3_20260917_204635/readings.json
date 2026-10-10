@@ -1,0 +1,44 @@
+{
+ "schema": "EXPORT01R-readings/1",
+ "status": "FAIL",
+ "error": "RuntimeError: 组件门槛未通过（不得开始完整 infer）：{\"verdict\": \"FAIL\", \"max_abs\": 0.6826171875}\n",
+ "traceback": "Traceback (most recent call last):\n  File \"C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\r_worker.py\", line 83, in main\n    raise RuntimeError('组件门槛未通过（不得开始完整 infer）：%s'\n                       % ((gate.stderr or gate.stdout or '')[-500:]))\nRuntimeError: 组件门槛未通过（不得开始完整 infer）：{\"verdict\": \"FAIL\", \"max_abs\": 0.6826171875}\n\n",
+ "ledger": {
+  "limits": {
+   "top": 12,
+   "top4k": 4,
+   "component": 36,
+   "wall_s": 1618.0,
+   "disk_gib": 8.0
+  },
+  "used": {
+   "top": 0,
+   "top4k": 0,
+   "component": 26
+  },
+  "n_events": 29,
+  "open_attempt": {
+   "attempt_id": "attempt_01",
+   "run_dir": "C:\\models\\exports\\EXPORT01R3_20260917_204635",
+   "started_at": "2026-09-17 20:49:24",
+   "started_monotonic": 115383.3029033,
+   "prereg_sha256": "332d7bbaa7c273c4bdd17b1dc6fdab7037d71c8b777ce89c72754b4553056b2b",
+   "source_sha256": "c7aa55f20cf6261a0b8bf7b3115a0e741f257fdb888dfe4d8c0ddd8f02dc683c",
+   "model_sha256": null,
+   "status": "RUNNING"
+  },
+  "attempts": [
+   {
+    "attempt_id": "attempt_01",
+    "run_dir": "C:\\models\\exports\\EXPORT01R3_20260917_204635",
+    "started_at": "2026-09-17 20:49:24",
+    "started_monotonic": 115383.3029033,
+    "prereg_sha256": "332d7bbaa7c273c4bdd17b1dc6fdab7037d71c8b777ce89c72754b4553056b2b",
+    "source_sha256": "c7aa55f20cf6261a0b8bf7b3115a0e741f257fdb888dfe4d8c0ddd8f02dc683c",
+    "model_sha256": null,
+    "status": "RUNNING"
+   }
+  ]
+ },
+ "elapsed_s": 66.344
+}

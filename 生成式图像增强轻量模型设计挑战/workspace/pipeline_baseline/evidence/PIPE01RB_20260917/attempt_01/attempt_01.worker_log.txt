@@ -1,0 +1,15 @@
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+C:\models\finals\preset\ckpts\torch_cache\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE encode]: pixel 3072x4096 -> latent 384x512, tile=128, overlap=16, grid=4x5
+[Tiled VAE decode]: latent 384x512, tile=128, overlap=16, grid=4x5
+[pair] status=OK calls=8 forwards_reserved=8 wall=313.5s

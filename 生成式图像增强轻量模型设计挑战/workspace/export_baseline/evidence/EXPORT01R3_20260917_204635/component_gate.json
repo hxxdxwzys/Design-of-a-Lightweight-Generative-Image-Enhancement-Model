@@ -1,0 +1,129 @@
+{
+ "schema": "EXPORT01R3-component-gate/1",
+ "checks": {},
+ "diffs": {
+  "enc_512": {
+   "max_abs": 0.00390625,
+   "mean_abs": 4.747746424982324e-05,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": false
+  },
+  "enc_1024": {
+   "max_abs": 0.00390625,
+   "mean_abs": 4.8121313739102334e-05,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    128,
+    128
+   ],
+   "passed": false
+  },
+  "dino_512": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    1024,
+    768
+   ],
+   "passed": true
+  },
+  "dec_64": {
+   "max_abs": 0.006591796875,
+   "mean_abs": 0.00015989899111445993,
+   "finite": true,
+   "shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "passed": false
+  },
+  "dec_128": {
+   "max_abs": 0.0084228515625,
+   "mean_abs": 0.00015083793550729752,
+   "finite": true,
+   "shape": [
+    1,
+    3,
+    1024,
+    1024
+   ],
+   "passed": false
+  },
+  "wavelet": {
+   "max_abs": 1.1920928955078125e-07,
+   "mean_abs": 2.5121456914689588e-08,
+   "finite": true,
+   "shape": [
+    1,
+    3,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "step_t1p0_r0p0": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "step_t0p5_r0p0": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "step_t0p5_r0p0_vs_first_call": {
+   "max_abs": 0.65087890625,
+   "mean_abs": 0.26035410165786743,
+   "passed": false
+  },
+  "step_t1p0_r0p5": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "step_t1p0_r0p5_vs_first_call": {
+   "max_abs": 0.6826171875,
+   "mean_abs": 0.16087836027145386,
+   "passed": false
+  }
+ },
+ "execution_mode": {
+  "jit_optimized_execution": false
+ },
+ "model_sha256": "c3946096bcda7513d1a100975f73e08aa8f6ce24f4c7837642484038dd3f543d",
+ "finite_all": true,
+ "verdict": "FAIL"
+}

@@ -1,0 +1,205 @@
+{
+ "schema": "DELIV01-component-gate/1",
+ "checks": {},
+ "diffs": {
+  "enc_512": {
+   "max_abs": 0.0205078125,
+   "mean_abs": 0.000541067449375987,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": false
+  },
+  "enc_1024": {
+   "max_abs": 0.05224609375,
+   "mean_abs": 0.0005409159930422902,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    128,
+    128
+   ],
+   "passed": false
+  },
+  "dino_512": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    1024,
+    768
+   ],
+   "passed": true
+  },
+  "dec_64": {
+   "max_abs": 0.006322011351585388,
+   "mean_abs": 0.00015421118587255478,
+   "finite": true,
+   "shape": [
+    1,
+    3,
+    512,
+    512
+   ],
+   "passed": false
+  },
+  "dec_128": {
+   "max_abs": 0.006522409617900848,
+   "mean_abs": 0.0001396880834363401,
+   "finite": true,
+   "shape": [
+    1,
+    3,
+    1024,
+    1024
+   ],
+   "passed": false
+  },
+  "wavelet": {
+   "max_abs": 1.1920928955078125e-07,
+   "mean_abs": 2.5121456914689588e-08,
+   "finite": true,
+   "shape": [
+    1,
+    3,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "enc_512_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "enc_1024_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "dec_64_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "dec_128_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "dino_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "wavelet_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "step_t1p0_r0p0": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "step_t1p0_r0p0_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "step_t0p5_r0p0": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "step_t0p5_r0p0_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  },
+  "step_t1p0_r0p5": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "finite": true,
+   "shape": [
+    1,
+    4,
+    64,
+    64
+   ],
+   "passed": true
+  },
+  "step_t1p0_r0p5_repeat_same_input": {
+   "max_abs": 0.0,
+   "mean_abs": 0.0,
+   "same_input": true,
+   "passed": true
+  }
+ },
+ "execution_mode": {
+  "jit_optimized_execution": false,
+  "flags": {
+   "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+   "deterministic_algorithms": true,
+   "cudnn_benchmark": false,
+   "cudnn_deterministic": true,
+   "cudnn_allow_tf32": false,
+   "matmul_allow_tf32": false,
+   "torch": "2.7.0+cu126"
+  },
+  "reference_flags": {
+   "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+   "deterministic_algorithms": true,
+   "cudnn_benchmark": false,
+   "cudnn_deterministic": true,
+   "cudnn_allow_tf32": false,
+   "matmul_allow_tf32": false,
+   "torch": "2.7.0+cu126"
+  },
+  "flags_match": true,
+  "flags_diff": {}
+ },
+ "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+ "input_fingerprints": {
+  "dec_128": "216f2a8523bd04cf4e740a6d5d0d12b3c363ac20aab8c89dde2c9e695d8ec1a1",
+  "dec_64": "e5cbbbd1c05064e550f3b9843b5976a98c27610394ca936b9c273a4bca7266e4",
+  "dino_512": "5059214ea2526d92b1a9bf066c4be2dea73a66544fe335b10a8c68875d9a06b9",
+  "enc_1024": "dcc6cca7b0d13f0c264dcfc0a455f13058069341dd455be0e254c2a3f5821119",
+  "enc_512": "f18bcd8a26f7384663389cc52a276e719086b4484725026255cd6f54fd5aa75e",
+  "feats": "3f97cb5fbd440787cd7a38fb153b66cb5ac1940c6444ef640ffac578e2dd197c",
+  "latent": "c834d0ff45856ff41acdb6fabbbe964bac6b4630ceb09e31d719cb285de92b1a",
+  "noise": "6472e75bcadca7bf12747d68896762a9902d8c2652f0ea6d57a356c98b89f88f",
+  "wav_s": "cd808deb7d93d7a15c70a6a98d3e2044e0e54b7db83158934ccefd523d00ab6e",
+  "wav_t": "6c28672bf506e920b8182c446c7eadf559f861cf56a7609e2a02779320d22a83"
+ },
+ "finite_all": true,
+ "verdict": "FAIL"
+}

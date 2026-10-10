@@ -1,0 +1,34 @@
+{
+ "key_contract": {
+  "model_n_keys": 669,
+  "file_n_keys": 669,
+  "missing_in_file": [],
+  "n_missing": 0,
+  "unexpected_in_file": [],
+  "n_unexpected": 0,
+  "shape_mismatch": [],
+  "n_shape_mismatch": 0,
+  "strict_load_would_pass": true,
+  "method": "meta device 构造 + safetensors 头部读取，未加载权重、未执行前向"
+ },
+ "lora_probe": {
+  "weights_only": true,
+  "payload_keys": [
+   "lora_config",
+   "step",
+   "variant"
+  ],
+  "variant": "v7",
+  "step": 5000,
+  "n_state_dict": 288,
+  "n_lora_keys": 288,
+  "lora_key_sample": [
+   "base_model.model.blocks.0.attn.proj.lora_A.default.weight",
+   "base_model.model.blocks.0.attn.proj.lora_B.default.weight",
+   "base_model.model.blocks.0.attn.qkv.lora_A.default.weight",
+   "base_model.model.blocks.0.attn.qkv.lora_B.default.weight",
+   "base_model.model.blocks.0.cross_attn.proj.lora_A.default.weight"
+  ],
+  "has_lora_config": true
+ }
+}

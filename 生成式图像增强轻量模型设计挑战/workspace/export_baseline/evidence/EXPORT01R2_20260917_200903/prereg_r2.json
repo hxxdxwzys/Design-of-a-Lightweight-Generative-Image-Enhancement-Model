@@ -1,0 +1,119 @@
+{
+ "schema": "EXPORT01R-prereg/1",
+ "cases": [
+  {
+   "name": "case1_crop512",
+   "source_file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case1.jpg",
+   "source_sha256": "4f6ac610c8d08dd3d16655ef46211b8b5dcaa5bb303886763aaa4162cc11a464",
+   "crop_box": [
+    1792,
+    1280,
+    2304,
+    1792
+   ],
+   "wh": [
+    512,
+    512
+   ],
+   "decoded_rgb_sha256": "cf98a4984599bd7bbbde819200420736ad727888d179ee9023adcc1fe17fb43a"
+  },
+  {
+   "name": "case1_crop511x513",
+   "source_file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case1.jpg",
+   "source_sha256": "4f6ac610c8d08dd3d16655ef46211b8b5dcaa5bb303886763aaa4162cc11a464",
+   "crop_box": [
+    1792,
+    1280,
+    2305,
+    1791
+   ],
+   "wh": [
+    513,
+    511
+   ],
+   "decoded_rgb_sha256": "db43b01832b04962159c10fb2b862adf6451b4002647a2616171609a560c266f"
+  },
+  {
+   "name": "case1_full",
+   "source_file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case1.jpg",
+   "source_sha256": "4f6ac610c8d08dd3d16655ef46211b8b5dcaa5bb303886763aaa4162cc11a464",
+   "crop_box": null,
+   "wh": [
+    4096,
+    3072
+   ],
+   "decoded_rgb_sha256": "2118743dd06c3409c511e8b0950e8c9ecf79d6fa9a1f30e99463eee36db2eaa1"
+  },
+  {
+   "name": "case7_full",
+   "source_file": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\赛题二\\测试集\\case7.jpg",
+   "source_sha256": "12450718a219c244ce75c5596bef3e195587fc79bbb58386849a057a56bddac4",
+   "crop_box": null,
+   "wh": [
+    4096,
+    3072
+   ],
+   "decoded_rgb_sha256": "db3d7d0992ac958eb963a98b92f7ea96cceb6db6d55a18edf2ffd0bf0a59399d"
+  }
+ ],
+ "call_plan": {
+  "A_512_repeat": 3,
+  "A_511x513": 1,
+  "B_512_repeat": 3,
+  "B_511x513": 1,
+  "pairs_4k": [
+   "case1_full",
+   "case7_full"
+  ],
+  "order": "A(512x3,511x513) -> release A -> B(512x3,511x513) -> case1 4K A/B -> case7 4K A/B",
+  "top_limit": 12,
+  "top4k_limit": 4
+ },
+ "batch": "EXPORT01R2",
+ "merge_probe_criteria": {
+  "max_abs": 1e-05,
+  "mean_abs": 1e-06,
+  "finite": true,
+  "note": "fp32 组件同输入对照（peft 未合并 vs merged），无 PNG 要求"
+ },
+ "tolerances": {
+  "same_precision_max_abs": 1e-05,
+  "same_precision_mean_abs": 1e-06,
+  "fp16_vs_fp32_max_abs_diagnostic": 0.05,
+  "fp16_vs_fp32_mean_abs_diagnostic": 0.002,
+  "wavelet_cpu_max_abs_vs_reference": 0.00784313725490196,
+  "wavelet_cpu_frac_pixels_diff_max": 0.001
+ },
+ "execution_mode": {
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "torch.use_deterministic_algorithms": "True(warn_only=False)",
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "cudnn_allow_tf32": false,
+  "matmul_allow_tf32": false,
+  "torch.jit.optimized_execution": false
+ },
+ "required_evidence": [
+  "双方与重复原始NPY及sha256",
+  "每阶段输出的sha256/finite",
+  "监督记录(pid/退出码/超时)",
+  "不可退款事件总账",
+  "bundle_manifest与bundle_id",
+  "执行模式开关记录"
+ ],
+ "stop_conditions": [
+  "首个真实异常",
+  "输出/重复/成对/迁移判据失败",
+  "身份或源码漂移",
+  "预算触顶且下一步需新额度",
+  "磁盘水位不足",
+  "监督失败"
+ ],
+ "budget": {
+  "top": 12,
+  "top4k": 4,
+  "component": 48,
+  "wall_s": 1800,
+  "disk_gib": 8
+ }
+}

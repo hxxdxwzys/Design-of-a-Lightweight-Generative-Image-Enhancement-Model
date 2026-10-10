@@ -1,0 +1,311 @@
+{
+ "schema": "PIPE01-cpu-gate/1",
+ "generated_at": "2026-09-17 07:24:02",
+ "isolated_dir": "C:\\Users\\YUKINA~1\\AppData\\Local\\Temp\\pipe01_cpu_gate_up3epmc2\\pipeline_baseline",
+ "pkg": "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\pipeline_baseline",
+ "open_issues": [],
+ "gates": [
+  {
+   "gate": "PIPE-R01_dino_preprocess",
+   "tests": [
+    "TestDinoPreprocess.test_matches_reference_for_all_cases",
+    "TestDinoPreprocess.test_gray_input_is_not_wrongly_saturated",
+    "TestDinoPreprocess.test_old_wrong_order_would_differ",
+    "TestDinoPreprocess.test_white_and_gradient_finite"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE-R02_safe_load_offline",
+   "tests": [
+    "TestSafeLoading.test_no_weights_only_false_in_sources",
+    "TestSafeLoading.test_no_torch_hub_calls_in_sources",
+    "TestSafeLoading.test_lora_unsafe_payload_fails_closed",
+    "TestSafeLoading.test_lora_missing_file_fails",
+    "TestSafeLoading.test_missing_or_wrong_dino_never_goes_online",
+    "TestSafeLoading.test_wrong_checkpoint_fails_strict"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE-R03_identity_and_prereg",
+   "tests": [
+    "TestIdentityAndPrereg.test_implementation_fingerprint_real",
+    "TestIdentityAndPrereg.test_asset_fingerprint_covers_vae_and_dino_source",
+    "TestIdentityAndPrereg.test_identity_comparable_strips_entry_only",
+    "TestDriverEndToEndCPU.test_identity_mismatch_never_passes",
+    "TestDriverEndToEndCPU.test_prereg_mismatch_blocks_before_any_load",
+    "TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE-R04_budget_ledger",
+   "tests": [
+    "TestBudgetLedger.test_zero_quota_refuses",
+    "TestBudgetLedger.test_reserve_is_persisted_before_call_and_not_refunded",
+    "TestBudgetLedger.test_boundary_last_unit_allowed_then_refused",
+    "TestBudgetLedger.test_cross_attempt_accumulates_and_interruption_counts",
+    "TestBudgetLedger.test_new_process_cannot_reset_quota",
+    "TestBudgetLedger.test_missing_ledger_without_init_refuses",
+    "TestBudgetLedger.test_wall_stop",
+    "TestBudgetLedger.test_concurrent_lock_refused",
+    "TestBudgetLedger.test_disk_budget",
+    "TestDriverEndToEndCPU.test_zero_quota_blocks_before_any_load",
+    "TestDriverEndToEndCPU.test_nonempty_run_dir_is_refused"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE-R05_nan_before_quantization",
+   "tests": [
+    "TestNaNBeforeQuantization.test_require_finite_blocks",
+    "TestNaNBeforeQuantization.test_uint8_quantization_would_hide_nan_but_precheck_blocks",
+    "TestNaNBeforeQuantization.test_infer_core_blocks_nan_latent"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE-R06_timing_and_unique_artifacts",
+   "tests": [
+    "TestSharedCoreAndEntries.test_offline_records_separate_io_timing",
+    "TestSharedCoreAndEntries.test_both_entries_call_same_core",
+    "TestSharedCoreAndEntries.test_png_encoder_is_shared_and_pixel_identical",
+    "TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE_R08_generation_manifest",
+   "tests": [
+    "TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries",
+    "TestDriverEndToEndCPU.test_criteria_exceeded_stops_immediately"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE_RA01_real_assembly_control_flow",
+   "tests": [
+    "TestRealAssetsAssembly.test_real_assets_init_control_flow"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE_RA02_immediate_stop",
+   "tests": [
+    "TestImmediateStop.test_stops_after_first_call_failure_and_keeps_charge",
+    "TestImmediateStop.test_identity_mismatch_blocks_before_b_first_forward",
+    "TestImmediateStop.test_stops_at_first_threshold_exceeded"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE_RA03_instance_release_order",
+   "tests": [
+    "TestInstanceLifecycle.test_a_released_before_b_constructed",
+    "TestInstanceLifecycle.test_a_released_even_when_a_fails",
+    "TestRealAssetsAssembly.test_real_assets_release_clears_modules"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE_RA04_lock_timeout_finalize",
+   "tests": [
+    "TestLedgerHardening.test_exclusive_lock_and_stale_takeover",
+    "TestLedgerHardening.test_pid_state_tristate_and_unknown_fails_closed",
+    "TestLedgerHardening.test_check_startable_refuses_zero_quota",
+    "TestLedgerHardening.test_check_startable_refuses_when_time_exhausted",
+    "TestLedgerHardening.test_disk_is_cumulative_across_attempts",
+    "TestLedgerHardening.test_end_attempt_records_disk_and_wall",
+    "TestSupervisorHardWall.test_timeout_terminates_child",
+    "TestSupervisorHardWall.test_child_within_deadline_completes"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE_RA05_protocol_and_ledger_binding",
+   "tests": [
+    "TestProtocolBinding.test_accepts_matching_protocol",
+    "TestProtocolBinding.test_rejects_crop_change_and_wrong_samples",
+    "TestProtocolBinding.test_generator_freezes_eight_forwards_and_zero_warmups",
+    "TestProtocolBinding.test_driver_blocks_on_protocol_mismatch_before_load",
+    "TestProtocolBinding.test_ledger_binding_mismatch_blocks"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE_RA06_shared_infer_timing_boundary",
+   "tests": [
+    "TestDriverEndToEndCPU.test_driver_full_flow_passes_with_identical_entries",
+    "TestSharedCoreAndEntries.test_offline_records_separate_io_timing"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE_RA07_manifest_hash_semantics",
+   "tests": [
+    "TestManifestSemantics.test_tensor_and_npy_hashes_are_separately_recomputable",
+    "TestManifestSemantics.test_failed_call_marks_artifacts_not_produced"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE_RB01_single_owner_control_chain",
+   "tests": [
+    "TestParentChildIntegration.test_normal_run_charges_exactly_eight_and_passes_all_four_gates",
+    "TestParentChildIntegration.test_missing_prereg_and_protocol_mismatch_never_succeed"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE_RB02_no_stale_ledger_overwrite",
+   "tests": [
+    "TestParentChildIntegration.test_supervisor_recovery_does_not_erase_child_reservations",
+    "TestParentChildIntegration.test_second_forward_failure_charges_two_and_never_builds_b",
+    "TestParentChildIntegration.test_timeout_confirms_child_exit_and_keeps_charge"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "PIPE_RB03_strict_protocol_and_four_gate_verdict",
+   "tests": [
+    "TestParentChildIntegration.test_identity_mismatch_zero_b_forwards",
+    "TestParentChildIntegration.test_normal_run_charges_exactly_eight_and_passes_all_four_gates"
+   ],
+   "all_present_ok": true
+  },
+  {
+   "gate": "retained_original_intent",
+   "tests": [
+    "TestConfigFrozen.test_frozen_config_loads_and_locks",
+    "TestConfigFrozen.test_rejects_tampered_switches",
+    "TestConfigFrozen.test_rejects_unknown_and_missing_keys",
+    "TestConfigFrozen.test_tile_params_match_task_sheet",
+    "TestConfigFrozen.test_tile_report_rejects_recipe_change",
+    "TestConfigFrozen.test_args_ns_conflict_is_rejected",
+    "TestSharedCoreAndEntries.test_prompt_must_be_empty",
+    "TestSharedCoreAndEntries.test_model_dir_must_exist",
+    "TestFailurePropagation.test_output_validation",
+    "TestFailurePropagation.test_driver_refuses_without_prereg",
+    "TestFailurePropagation.test_make_evidence_refuses_existing_run_dir_without_writing",
+    "TestSeedAndShapes.test_local_seed_is_order_independent",
+    "TestSeedAndShapes.test_pad_and_crop_for_non_multiple_shapes",
+    "TestImportSafety.test_imports_do_not_pull_torch",
+    "TestImportSafety.test_cli_help_does_not_load_model_or_cuda"
+   ],
+   "all_present_ok": true
+  }
+ ],
+ "isolated_exit_codes": {
+  "machine_runner": 0,
+  "unittest_verbose": 0
+ },
+ "coverage": {
+  "ran_tests": 86,
+  "failures": 0,
+  "errors": 0,
+  "verdict": "OK",
+  "missing": [],
+  "unmapped": []
+ },
+ "source_hashes_frozen": {
+  "core.py": {
+   "bytes": 35118,
+   "sha256": "1f85ed56652c8070de77a630d55856e9340f6d8c97c1dc2e7fd6ee2f3f3fb597"
+  },
+  "runner.py": {
+   "bytes": 2360,
+   "sha256": "f9d82c973580ce69ab498969327b9c9fe09c9c0cac33a7ab754de4d2d87920e2"
+  },
+  "offline.py": {
+   "bytes": 4910,
+   "sha256": "e8874ee88fa78f7c2183f3b1a9f8d1f52a26a193b3917e99d717caf0136caada"
+  },
+  "pair_verify.py": {
+   "bytes": 49787,
+   "sha256": "a7771a479e7934d7680cfb5ef94f7efff38e728100e36662aa7c58fc6582c5f9"
+  },
+  "make_evidence.py": {
+   "bytes": 13086,
+   "sha256": "e00e2ab39d79913d3e70bcc95caca154f869e948a467de434b52b4408976a2c0"
+  },
+  "config.json": {
+   "bytes": 1668,
+   "sha256": "1a2e44d7709168187b28e30ffa15b35f9f0f5431205ec9b983d50a9c90aca42a"
+  },
+  "tests/test_pipe01_cpu.py": {
+   "bytes": 68908,
+   "sha256": "43bc94ec4dfa0fe691014bd435e4739693080b1efaaf5a7c8ee171f9b91d2c3c"
+  }
+ },
+ "ra2_source_hashes": {
+  "core.py": "1f85ed56652c8070de77a630d55856e9340f6d8c97c1dc2e7fd6ee2f3f3fb597",
+  "runner.py": "f9d82c973580ce69ab498969327b9c9fe09c9c0cac33a7ab754de4d2d87920e2",
+  "offline.py": "e8874ee88fa78f7c2183f3b1a9f8d1f52a26a193b3917e99d717caf0136caada",
+  "pair_verify.py": "b6d5dafb397c8b3e64caf146811d40371649276154d598250a856541c9c329cc",
+  "make_evidence.py": "e00e2ab39d79913d3e70bcc95caca154f869e948a467de434b52b4408976a2c0",
+  "config.json": "1a2e44d7709168187b28e30ffa15b35f9f0f5431205ec9b983d50a9c90aca42a",
+  "tests/test_pipe01_cpu.py": "b353e5877d2f3657fe236af1dbdec32f4694a58d592b9f31aae49b677d92124d"
+ },
+ "ra2_unchanged": {
+  "core.py": true,
+  "runner.py": true,
+  "offline.py": true,
+  "pair_verify.py": false,
+  "make_evidence.py": true,
+  "config.json": true,
+  "tests/test_pipe01_cpu.py": false
+ },
+ "old_evidence_check": {
+  "evidence/cpu_test_log.txt": {
+   "expected_prefix": "ab69d618af002037",
+   "actual_prefix": "ab69d618af002037"
+  },
+  "evidence/hashes.json": {
+   "expected_prefix": "ce805c4bb6425cc1",
+   "actual_prefix": "ce805c4bb6425cc1"
+  },
+  "evidence/key_contract.json": {
+   "expected_prefix": "c987f5b7a9149af0",
+   "actual_prefix": "c987f5b7a9149af0"
+  },
+  "evidence/prereg_PIPE01.json": {
+   "expected_prefix": "a60c0085943b80fc",
+   "actual_prefix": "a60c0085943b80fc"
+  },
+  "evidence/summarize_run.py": {
+   "expected_prefix": "a56395062f3abc8f",
+   "actual_prefix": "a56395062f3abc8f"
+  },
+  "evidence/run_PIPE01_20260917_000000/summary.txt": {
+   "expected_prefix": "89582410bfb6a156",
+   "actual_prefix": "89582410bfb6a156"
+  },
+  "evidence/run_PIPE01_20260917_000000/paired_readings.json": {
+   "expected_prefix": "c2b586cb5efbf795",
+   "actual_prefix": "c2b586cb5efbf795"
+  },
+  "evidence/run_PIPE01_20260917_000000/gpu_run_log.txt": {
+   "expected_prefix": "bbced5478ac860d5",
+   "actual_prefix": "bbced5478ac860d5"
+  },
+  "evidence/run_PIPE01_20260917_000000/prereg.json": {
+   "expected_prefix": "a60c0085943b80fc",
+   "actual_prefix": "a60c0085943b80fc"
+  }
+ },
+ "old_evidence_unchanged": true,
+ "checks": {
+  "machine_runner_exit_0": true,
+  "unittest_verbose_exit_0": true,
+  "no_failures": true,
+  "no_errors": true,
+  "coverage_missing_empty": true,
+  "coverage_all_gates_ok": true,
+  "old_evidence_unchanged": true,
+  "config_unchanged_vs_ra2": true,
+  "runner_unchanged_vs_ra2": true
+ },
+ "verdict": "READY_FOR_RB_ATTEMPT_01",
+ "elapsed_s": 208.9
+}

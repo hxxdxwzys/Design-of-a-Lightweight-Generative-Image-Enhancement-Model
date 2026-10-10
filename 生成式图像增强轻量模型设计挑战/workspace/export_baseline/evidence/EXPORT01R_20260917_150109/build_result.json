@@ -1,0 +1,15 @@
+{
+ "started_at": "2026-09-17 15:05:27",
+ "assets_load_s": 37.355,
+ "patched_embedders": [
+  "t_embedder.mlp",
+  "r_embedder.mlp"
+ ],
+ "trace_s": 11.314,
+ "trace_component_forwards": 7,
+ "model_bytes": 1343344555,
+ "model_sha256": "7b8152029e3d96cf90e0787b42949e680cdb3c1bdfce6f6be99452444283ccc6",
+ "reload_ok_cpu": true,
+ "bundle_id": "EXPORT01R-623be0ab77effde267c02e0d2424e2af",
+ "finished_at": "2026-09-17 15:06:30"
+}

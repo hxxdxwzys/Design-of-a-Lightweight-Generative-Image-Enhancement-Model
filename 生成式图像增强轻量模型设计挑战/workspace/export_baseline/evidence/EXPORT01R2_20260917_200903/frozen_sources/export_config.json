@@ -1,0 +1,54 @@
+{
+  "_doc": "EXPORT-01 冻结转换配方与判据（C0 冻结；任何变更需重新预登记）。数值主体与 pipeline_baseline 同源：基座+VOSR LoRA scale0.8、一步 t=1->0、VAE posterior mode、DiT tile512/overlap32(有效64/stride448)、VAE tile1024/overlap32(有效128/stride896)、wavelet sigma5。",
+  "source_baseline_config": "生成式图像增强轻量模型设计挑战/workspace/pipeline_baseline/config.json",
+  "export_dtype": "float16",
+  "postprocess_dtype": "float32",
+  "noise_protocol": "runner 内 torch.Generator(seed=42) 生成 fp32 噪声后 .half() 显式传入 DiT（模块内无随机算子）",
+  "trace_specializations": {
+    "vae_enc": [
+      512,
+      1024
+    ],
+    "dino_feat": 448,
+    "dit_step": [
+      64,
+      64
+    ],
+    "dec": [
+      64,
+      128
+    ],
+    "wavelet": "shape-generic（trace 于 64x64，需在 4K 上验证）"
+  },
+  "tolerances": {
+    "same_precision_max_abs": 0.00001,
+    "same_precision_mean_abs": 0.000001,
+    "fp16_vs_fp32_max_abs_diagnostic": 0.05,
+    "fp16_vs_fp32_mean_abs_diagnostic": 0.002,
+    "wavelet_cpu_max_abs_vs_reference": 0.007843137254901961,
+    "wavelet_cpu_frac_pixels_diff_max": 0.001,
+    "_wavelet_note": "1 LSB(uint8) = 2/255；残差来源为卷积累加顺序（核公式已对齐 OpenCV，核差 2.8e-17），实测翻转像素占比 2e-5~4e-5"
+  },
+  "budgets": {
+    "c1_top_level_infers": 24,
+    "c1_top_level_4k_infers": 8,
+    "c1_component_probes": 64,
+    "c1_gpu_wall_minutes": 60,
+    "c2_images": 100,
+    "c2_gpu_wall_minutes": 150,
+    "c3_512_forwards": 4,
+    "c3_wall_minutes": 15,
+    "disk_new_peak_gib": 20,
+    "disk_free_floor_gib": 8
+  },
+  "package": {
+    "zip_max_bytes": 10000000000,
+    "model_dir_files": [
+      "your_model.pt",
+      "runner.py",
+      "models_export.json",
+      "config.json"
+    ],
+    "output_dir_glob": "output_dir/case*.jpg"
+  }
+}

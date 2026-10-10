@@ -1,0 +1,50 @@
+{
+ "schema": "DELIV02-control-tests/1",
+ "checks": {
+  "cap_n_plus_1_rejected": {
+   "passed": true,
+   "detail": "顶层 infer 超限 2"
+  },
+  "executor_not_called": {
+   "passed": true,
+   "detail": null
+  },
+  "reserve_then_exception_consumed": {
+   "passed": true,
+   "detail": null
+  },
+  "duplicate_call_id_rejected": {
+   "passed": true,
+   "detail": null
+  },
+  "from_file_missing_rejected": {
+   "passed": true,
+   "detail": null
+  },
+  "from_file_missing_fields_rejected": {
+   "passed": true,
+   "detail": null
+  },
+  "recipe_missing_dtypes_rejected": {
+   "passed": true,
+   "detail": null
+  },
+  "call_table_within_allowance": {
+   "passed": true,
+   "detail": {
+    "component": 29,
+    "top": 16,
+    "top4k": 6
+   }
+  },
+  "compare_real_array_no_typeerror": {
+   "passed": true,
+   "detail": "无历史数组可查（标记 NOT_RUN）"
+  },
+  "independent_decode_raw_replay_identical": {
+   "passed": true,
+   "detail": "无历史数组可查（标记 NOT_RUN）"
+  }
+ },
+ "verdict": "PASS"
+}

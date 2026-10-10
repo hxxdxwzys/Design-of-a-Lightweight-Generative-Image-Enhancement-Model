@@ -1,0 +1,37 @@
+{
+ "schema": "EXPORT01R-attempt-failure/1",
+ "attempt": "attempt_01",
+ "run_dir": "C:/models/exports/EXPORT01R_20260917_150506",
+ "verdict": "FAIL",
+ "started_at": "2026-09-17 15:05:xx",
+ "elapsed_s": 66.778,
+ "failure": {
+  "where": "r_merge_probe.py role(peft) -> PBcore.build_dit",
+  "error": "ModuleNotFoundError: No module named 'models'",
+  "cause": "探针脚本只调用了 ensure_offline_env，未调用 ensure_vosr_import_path，VOSR 的 models 包不在 sys.path",
+  "kind": "启动/协议缺陷（非模型数值失败）",
+  "fix": "已加入 PBcore.ensure_vosr_import_path(cfg)，并用 CPU 冒烟验证（构建 486,936,384 参数基座成功）"
+ },
+ "budget_consumed": {
+  "top": 0,
+  "top4k": 0,
+  "component": 10,
+  "wall_s": 66.78,
+  "breakdown": "build_load_assets 1 + 7 个 trace + merge_probe 2"
+ },
+ "budget_remaining": {
+  "top": 12,
+  "top4k": 4,
+  "component": 38,
+  "wall_s": 1733.2
+ },
+ "artifacts_produced": {
+  "model_dir": "your_model.pt 1,343,344,555 B（R01/R03 修复后的 fp16 完整数值链）",
+  "bundle_manifest": "bundle_id 与 parents/conversion/files/numeric_recipe 已写入",
+  "verification": "未执行（失败发生在合并对照探针，位于阶段 A 之前）"
+ },
+ "compliance": {
+  "auto_retry": false,
+  "note": "按 §0A 停止条件：首个真实异常即落盘 FAIL 并停止本批，不再补 GPU 探针，不自动 attempt_02，不刷新总账"
+ }
+}

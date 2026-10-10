@@ -1,0 +1,273 @@
+{
+ "status": "OK",
+ "note": "",
+ "attempt_id": "attempt_01_072821",
+ "wall_used_total_s": 308.05320850000135,
+ "forwards_reserved_total": 8,
+ "disk_used_total_bytes": 680318165,
+ "criteria": {
+  "max_abs_diff": 1e-05,
+  "mean_abs_diff": 1e-06,
+  "output_dtype": "float32",
+  "output_range": [
+   -1.0,
+   1.0
+  ],
+  "png_pixel_identity": "decoded RGB identical",
+  "identity": "A/B 完整身份逐字段相等（含 DINO/VAE/Decoder 有效参数与实现源码指纹）",
+  "load_safety": "weights_only=True 且无 torch.hub；strict 键集校验"
+ },
+ "criteria_detail": {
+  "identity_equal": true,
+  "all_calls_ok": true,
+  "n_calls": 8,
+  "n_expected_calls": 8,
+  "completed_protocol": true,
+  "pairs_ok": true,
+  "repeat_ok": true,
+  "timing_events_equal": true,
+  "no_unsafe_load": true,
+  "loaders": {
+   "A": {
+    "light_decoder_weights_only": true,
+    "dino_loader": "local source vit_base + torch.load(weights_only=True) + strict=True",
+    "dino_weights_only": true,
+    "dino_strict": true,
+    "dino_uses_torch_hub": false
+   },
+   "B": {
+    "light_decoder_weights_only": true,
+    "dino_loader": "local source vit_base + torch.load(weights_only=True) + strict=True",
+    "dino_weights_only": true,
+    "dino_strict": true,
+    "dino_uses_torch_hub": false
+   }
+  },
+  "budget_ok": true,
+  "disk_ok": true,
+  "prereg_verified": true,
+  "protocol_verified": true
+ },
+ "pairs": {
+  "case1_crop512": {
+   "max_abs_diff": 0.0,
+   "mean_abs_diff": 0.0,
+   "n": 786432,
+   "pass_max": true,
+   "pass_mean": true,
+   "png_identical": true,
+   "pass_png": true,
+   "a_tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_A_case1_crop512_r1.npy",
+   "b_tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_B_case1_crop512_r1.npy",
+   "a_png_sha256": "fb15dd5f293e9f5aa2b4ae66ef2721aa3abf782fcb6dcd2d535896bb122a4ed5",
+   "b_png_sha256": "fb15dd5f293e9f5aa2b4ae66ef2721aa3abf782fcb6dcd2d535896bb122a4ed5"
+  },
+  "case1_full": {
+   "max_abs_diff": 0.0,
+   "mean_abs_diff": 0.0,
+   "n": 37748736,
+   "pass_max": true,
+   "pass_mean": true,
+   "png_identical": true,
+   "pass_png": true,
+   "a_tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_A_case1_full_r2.npy",
+   "b_tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_B_case1_full_r2.npy",
+   "a_png_sha256": "d4e11b8ddbbfb4c0751b28a819102cae2b0f9921ae624dfee508896d18637e65",
+   "b_png_sha256": "d4e11b8ddbbfb4c0751b28a819102cae2b0f9921ae624dfee508896d18637e65"
+  },
+  "case7_full": {
+   "max_abs_diff": 0.0,
+   "mean_abs_diff": 0.0,
+   "n": 37748736,
+   "pass_max": true,
+   "pass_mean": true,
+   "png_identical": true,
+   "pass_png": true,
+   "a_tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_A_case7_full_r3.npy",
+   "b_tensor_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_B_case7_full_r3.npy",
+   "a_png_sha256": "ccfb07c79d99773f3505985f9ce9dc9f48021d1676e0f6d180101e36a80750ae",
+   "b_png_sha256": "ccfb07c79d99773f3505985f9ce9dc9f48021d1676e0f6d180101e36a80750ae"
+  }
+ },
+ "repeat_512": {
+  "A_crop512_repeat": {
+   "max_abs_diff": 0.0,
+   "mean_abs_diff": 0.0,
+   "n": 786432,
+   "pass_max": true,
+   "pass_mean": true,
+   "first_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_A_case1_crop512_r1.npy",
+   "second_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_A_case1_crop512_r4.npy"
+  },
+  "B_crop512_repeat": {
+   "max_abs_diff": 0.0,
+   "mean_abs_diff": 0.0,
+   "n": 786432,
+   "pass_max": true,
+   "pass_mean": true,
+   "first_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_B_case1_crop512_r1.npy",
+   "second_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_B_case1_crop512_r4.npy"
+  }
+ },
+ "timing_events": {
+  "A": [
+   [
+    "enter",
+    "to_device",
+    "prepare_features",
+    "one_step",
+    "decode",
+    "postprocess",
+    "exit"
+   ],
+   [
+    "enter",
+    "to_device",
+    "prepare_features",
+    "one_step",
+    "decode",
+    "postprocess",
+    "exit"
+   ],
+   [
+    "enter",
+    "to_device",
+    "prepare_features",
+    "one_step",
+    "decode",
+    "postprocess",
+    "exit"
+   ],
+   [
+    "enter",
+    "to_device",
+    "prepare_features",
+    "one_step",
+    "decode",
+    "postprocess",
+    "exit"
+   ]
+  ],
+  "B": [
+   [
+    "enter",
+    "to_device",
+    "prepare_features",
+    "one_step",
+    "decode",
+    "postprocess",
+    "exit"
+   ],
+   [
+    "enter",
+    "to_device",
+    "prepare_features",
+    "one_step",
+    "decode",
+    "postprocess",
+    "exit"
+   ],
+   [
+    "enter",
+    "to_device",
+    "prepare_features",
+    "one_step",
+    "decode",
+    "postprocess",
+    "exit"
+   ],
+   [
+    "enter",
+    "to_device",
+    "prepare_features",
+    "one_step",
+    "decode",
+    "postprocess",
+    "exit"
+   ]
+  ]
+ },
+ "identity_diff_keys": null,
+ "ledger": {
+  "task": "PIPE-01",
+  "created_at": "2026-09-17 07:28:12",
+  "max_forwards": 8,
+  "max_minutes": 30,
+  "max_gib": 4,
+  "forwards_reserved": 8,
+  "wall_seconds_total": 0.0,
+  "attempts": [],
+  "reservations": [
+   {
+    "where": "A:attempt_01_072821_A_case1_crop512_r1",
+    "used_after": 1,
+    "at": "2026-09-17 07:29:07"
+   },
+   {
+    "where": "A:attempt_01_072821_A_case1_full_r2",
+    "used_after": 2,
+    "at": "2026-09-17 07:29:09"
+   },
+   {
+    "where": "A:attempt_01_072821_A_case7_full_r3",
+    "used_after": 3,
+    "at": "2026-09-17 07:30:15"
+   },
+   {
+    "where": "A:attempt_01_072821_A_case1_crop512_r4",
+    "used_after": 4,
+    "at": "2026-09-17 07:31:21"
+   },
+   {
+    "where": "B:attempt_01_072821_B_case1_crop512_r1",
+    "used_after": 5,
+    "at": "2026-09-17 07:31:37"
+   },
+   {
+    "where": "B:attempt_01_072821_B_case1_full_r2",
+    "used_after": 6,
+    "at": "2026-09-17 07:31:38"
+   },
+   {
+    "where": "B:attempt_01_072821_B_case7_full_r3",
+    "used_after": 7,
+    "at": "2026-09-17 07:32:46"
+   },
+   {
+    "where": "B:attempt_01_072821_B_case1_crop512_r4",
+    "used_after": 8,
+    "at": "2026-09-17 07:33:54"
+   }
+  ],
+  "stale_locks": [],
+  "prereg_sha256": "795d24efbaa83ecac658af7d423cf707b8bc2c3ecd4564607438f86a2d8b8d09"
+ },
+ "criteria_all_pass": true,
+ "final_artifacts": {
+  "checked_calls": 8,
+  "errors": [],
+  "repeat": {
+   "A_crop512_repeat": {
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "n": 786432,
+    "pass_max": true,
+    "pass_mean": true,
+    "first_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_A_case1_crop512_r1.npy",
+    "second_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_A_case1_crop512_r4.npy"
+   },
+   "B_crop512_repeat": {
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "n": 786432,
+    "pass_max": true,
+    "pass_mean": true,
+    "first_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_B_case1_crop512_r1.npy",
+    "second_npy": "D:\\models\\pipeline_baseline\\PIPE01RB_20260917_021500\\attempt_01\\attempt_01_072821_B_case1_crop512_r4.npy"
+   }
+  },
+  "ok": true
+ },
+ "final_artifacts_ok": true,
+ "finished_at": "2026-09-17 07:34:04"
+}

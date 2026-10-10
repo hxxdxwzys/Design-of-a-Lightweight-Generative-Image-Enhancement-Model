@@ -1,0 +1,91 @@
+{
+ "schema": "EXPORT01R-supervisor/1",
+ "started_at": "2026-09-17 22:07:26",
+ "deadline_s": 2200.0,
+ "pid": 1888,
+ "preflight": {
+  "ledger_exists": true,
+  "lock_exists": false,
+  "disk_free_gib": 24.633,
+  "prereg_exists": true,
+  "model_exists": true,
+  "model_will_be_built": false,
+  "model_dir_exists": true,
+  "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+  "model_bytes": 1536683563,
+  "model_hash_expected": null,
+  "model_binding_ok": true,
+  "model_bytes_ok": true
+ },
+ "cmd": [
+  "D:\\Python\\python.exe",
+  "-u",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\a2_verify_worker.py",
+  "C:\\models\\exports\\DELIV01R_A2_20260917_213518",
+  "C:\\models\\exports\\DELIV01R_A2_20260917_213518\\ledger_verify2.json",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\DELIV01R_A2_20260917_213518\\prereg_a2v.json",
+  "C:\\models\\exports\\DELIV01R_A2_20260917_213518\\model_dir",
+  "C:\\生成式图像增强轻量模型设计挑战\\生成式图像增强轻量模型设计挑战\\workspace\\export_baseline\\evidence\\DELIV01R_A2_20260917_213518"
+ ],
+ "worker_log": "C:\\models\\exports\\DELIV01R_A2_20260917_213518.worker_log.txt",
+ "child_pid": 7028,
+ "process_tree": {
+  "descendants_before": [],
+  "descendants_after": [],
+  "remaining_alive": [],
+  "clean": true,
+  "unknown": false
+ },
+ "child_exit_code": 1,
+ "terminate_requested_at": null,
+ "kill_at": null,
+ "timed_out": false,
+ "wall_s": 55.049,
+ "finished_at": "2026-09-17 22:08:22",
+ "supervisor_success": false,
+ "ledger": {
+  "used": {
+   "top": 5,
+   "top4k": 0,
+   "component": 0
+  },
+  "limits": {
+   "top": 12,
+   "top4k": 8,
+   "component": 0,
+   "wall_s": 2200.0,
+   "disk_gib": 8.0
+  },
+  "n_events": 8,
+  "n_attempts": 1,
+  "open_attempt": null,
+  "last_attempt": {
+   "attempt_id": "attempt_verify",
+   "run_dir": "C:\\models\\exports\\DELIV01R_A2_20260917_213518",
+   "started_at": "2026-09-17 22:07:30",
+   "started_monotonic": 120069.7774693,
+   "prereg_sha256": "21e1cb4b34939ddd8be9ebe138fc06e7e8e69bd8dfef4a02cdf392f7027a3562",
+   "source_sha256": "fe187e1616ff994c3b9f3e14bd6fe41d3c154eb545eefe5998f76b17c7abc208",
+   "model_sha256": "98fe49b99e92a57988800ef3efd8e088c8846c1bb241dac1e4a70faf0fd73793",
+   "status": "FAIL",
+   "note": "RuntimeError: B_512_1 vs A 未达同精度判据: max=7.843e-03 mean=4.109e-07 png_eq=False",
+   "finished_at": "2026-09-17 22:08:17",
+   "elapsed_s": 46.974
+  }
+ },
+ "ledger_consistent": true,
+ "checks": {
+  "readings_present": true,
+  "worker_status_ok": false,
+  "required_cases": [
+   "case1_crop512",
+   "case1_crop511x513",
+   "case1_full",
+   "case7_full"
+  ],
+  "n_top_used": 5,
+  "n_4k_used": 0
+ },
+ "worker_checks_pass": false,
+ "artifacts_verified": false
+}

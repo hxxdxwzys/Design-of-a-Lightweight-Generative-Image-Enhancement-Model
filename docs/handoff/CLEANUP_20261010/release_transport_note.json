@@ -1,0 +1,8 @@
+{
+  "asset": "research-small-checkpoints.zip",
+  "initial_client_result": "TLS decryption exception while receiving upload response",
+  "independent_api_result": "asset state uploaded, byte count and SHA-256 digest match local archive",
+  "receipt_retry_issue": "release list lookup missed existing release; create returned 422 already_exists; lookup changed to exact tag endpoint",
+  "recovery": "re-run receipt collection using existing verified asset; no duplicate upload or asset replacement",
+  "source_files_deleted_before_recovery": false
+}

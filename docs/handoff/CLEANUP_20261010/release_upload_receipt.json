@@ -1,0 +1,50 @@
+{
+  "release_url": "https://github.com/hxxdxwzys/Design-of-a-Lightweight-Generative-Image-Enhancement-Model/releases/tag/project-archive-20261010",
+  "assets": [
+    {
+      "url": "https://github.com/hxxdxwzys/Design-of-a-Lightweight-Generative-Image-Enhancement-Model/releases/download/project-archive-20261010/Track2_TinyRefV3_original.zip",
+      "id": 626883612,
+      "remote_digest": "sha256:d3bf0bf602e9d2ec6459ace57753fd0188189aaacf7b1ca36fda5e1d590ca712",
+      "verified": true,
+      "name": "Track2_TinyRefV3_original.zip",
+      "bytes": 739646283,
+      "sha256": "d3bf0bf602e9d2ec6459ace57753fd0188189aaacf7b1ca36fda5e1d590ca712"
+    },
+    {
+      "url": "https://github.com/hxxdxwzys/Design-of-a-Lightweight-Generative-Image-Enhancement-Model/releases/download/project-archive-20261010/Track2_TinyRefV4t1_original.zip",
+      "id": 626885894,
+      "remote_digest": "sha256:9502384034af5fb4a87d9c89eeedc191eb89008c52dbbef75fa854193cc94bad",
+      "verified": true,
+      "name": "Track2_TinyRefV4t1_original.zip",
+      "bytes": 23951696,
+      "sha256": "9502384034af5fb4a87d9c89eeedc191eb89008c52dbbef75fa854193cc94bad"
+    },
+    {
+      "url": "https://github.com/hxxdxwzys/Design-of-a-Lightweight-Generative-Image-Enhancement-Model/releases/download/project-archive-20261010/Track2_TinyRefV3_Review_Final.zip",
+      "id": 626886097,
+      "remote_digest": "sha256:b7d71e71bbf08439c2a66707286b1fb489c2817697bc990de5cc1fddac3b027b",
+      "verified": true,
+      "name": "Track2_TinyRefV3_Review_Final.zip",
+      "bytes": 23213159,
+      "sha256": "b7d71e71bbf08439c2a66707286b1fb489c2817697bc990de5cc1fddac3b027b"
+    },
+    {
+      "url": "https://github.com/hxxdxwzys/Design-of-a-Lightweight-Generative-Image-Enhancement-Model/releases/download/project-archive-20261010/Track2_V4t1_EdgeFix_Review_20260927.zip",
+      "id": 626886272,
+      "remote_digest": "sha256:8a9c23ebf788494eb7b623a576038c8c6c9f22f7c269ac19c380e98c8124c58d",
+      "verified": true,
+      "name": "Track2_V4t1_EdgeFix_Review_20260927.zip",
+      "bytes": 23676442,
+      "sha256": "8a9c23ebf788494eb7b623a576038c8c6c9f22f7c269ac19c380e98c8124c58d"
+    },
+    {
+      "url": "https://github.com/hxxdxwzys/Design-of-a-Lightweight-Generative-Image-Enhancement-Model/releases/download/project-archive-20261010/research-small-checkpoints.zip",
+      "id": 626886559,
+      "remote_digest": "sha256:a2e69fced1d848437821f36d95b5edfa1d286de360dbd6e49d897ed127ba5fc5",
+      "verified": true,
+      "name": "research-small-checkpoints.zip",
+      "bytes": 1518789992,
+      "sha256": "a2e69fced1d848437821f36d95b5edfa1d286de360dbd6e49d897ed127ba5fc5"
+    }
+  ]
+}

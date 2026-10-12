@@ -1,10 +1,10 @@
-# 生成式图像增强轻量模型设计挑战（赛道二）
+# 生成式图像增强轻量模型设计挑战
 
 > **本文件是项目的唯一入口**：项目是什么、赛题硬约束、评分机制、当前成绩、怎么跑、有哪些坑。
 > 协作规则（角色 / 权限 / 纪律）⇒ `AGENTS.md`　｜　做到哪里了 ⇒ `docs/progress.md`　｜　现在做什么 ⇒ `docs/current_task.md`
 > 最后更新：2026-10-10（GitHub保存与磁盘清理）。下方9月23日状态/实验描述属于历史快照；当前结案和资产位置见以下入口。
 
-2026-10-10现状：用户已确认V3官方约70分（仓库记录70.1021）；V3正式复核材料已完成，实际提交及资格结果仍UNKNOWN。V4t1 EdgeFix是工程修订；9月27日训练研究未达到替换V3门槛。详情见对应最新handoff和`docs/current_task.md`。
+2026-10-10现状：已确认V3官方约70分（仓库记录70.1021）；V3正式复核材料已完成，实际提交及资格结果仍UNKNOWN。V4t1 EdgeFix是工程修订；9月27日训练研究未达到替换V3门槛。详情见对应最新handoff和`docs/current_task.md`。
 
 外置工具、台账、运行日志和配置已保存至 [`docs/handoff/CLEANUP_20261010/`](docs/handoff/CLEANUP_20261010/README.md)。V3/V4t1原包、两份正式复核包及去重小权重在 [GitHub Release](https://github.com/hxxdxwzys/Design-of-a-Lightweight-Generative-Image-Enhancement-Model/releases/tag/project-archive-20261010)。旧`D:/tmp_timing/`和`C:/models/exports/`内容已清理；A2原评分ZIP迁到`D:/project_archive_20261010/`。原始数据、基座、LoRA及当前正式工程仍保留本地。完整范围、恢复方法和限制见 [清理结案](docs/handoff/CLEANUP_20261010_磁盘清理与归档.md)。
 
